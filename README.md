@@ -1,5 +1,5 @@
 # Outsite Website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ab6a8e2-f4ba-42b8-a4dc-bc9d3d2e27e4/deploy-status)](https://app.netlify.com/sites/q-sales-7c35b2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52c3debd-da63-4ad3-b8c7-2d6b009fcac7/deploy-status)](https://app.netlify.com/sites/outsite/deploys)
 
 Outsite website built using [Nuxt.js docs](https://nuxtjs.org), [Vue.js](https://vuejs.org/), and [Tailwind CSS](https://tailwindcss.com/).
 

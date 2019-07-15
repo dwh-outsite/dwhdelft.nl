@@ -22,7 +22,7 @@ export default {
       amongst others.`
     },
     bar_buddy: {
-      title: 'Barbuddy Systeem',
+      title: 'Bar Buddy System',
       description: `If you are looking to come by on a Thursday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about Outsite but they can also introduce you to new people.`

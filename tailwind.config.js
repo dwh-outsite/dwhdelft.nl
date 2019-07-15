@@ -11,6 +11,10 @@ module.exports = {
           ...colors.pink,
           200: '#ff9ad8',
           400: '#FC66C2'
+        },
+        gray: {
+          ...colors.gray,
+          700: '#464044'
         }
       }
     }

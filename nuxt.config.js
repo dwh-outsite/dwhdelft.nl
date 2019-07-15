@@ -39,8 +39,20 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-i18n'
   ],
+
+  i18n: {
+    locales: [{ code: 'nl', iso: 'nl-NL', file: 'nl.js' }, { code: 'en', iso: 'en-US', file: 'en.js' }],
+    defaultLocale: 'nl',
+    langDir: 'lang/',
+    lazy: true,
+    vueI18n: {
+      fallbackLocale: 'nl'
+    }
+  },
+
   /*
    ** Axios module configuration
    */

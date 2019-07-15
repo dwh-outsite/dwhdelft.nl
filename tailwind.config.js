@@ -13,9 +13,17 @@ module.exports = {
           400: '#FC66C2'
         }
       }
+    },
+    aspectRatio: {
+      square: [1, 1],
+      '16/9': [16, 9],
+      '4/3': [4, 3],
+      '21/9': [21, 9]
     }
   },
-  variants: {},
+  variants: {
+    aspectRatio: ['responsive']
+  },
   plugins: [
     require('tailwind-heropatterns')({
       // as per tailwind docs you can pass variants
@@ -37,6 +45,8 @@ module.exports = {
         default: '0.4',
         '100': '1.0'
       }
-    })
+    }),
+    require('tailwindcss-responsive-embed')(),
+    require('tailwindcss-aspect-ratio')()
   ]
 }

@@ -127,6 +127,9 @@
         </div>
       </div>
     </section>
+    <section class="bg-white">
+      <Video />
+    </section>
     <section>
       Insta foto'
     </section>
@@ -140,16 +143,14 @@
 </template>
 
 <script>
-export default {}
+import Video from '~/components/Video'
+
+export default {
+  components: { Video }
+}
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-
 header {
   height: calc(190px * 4);
 }

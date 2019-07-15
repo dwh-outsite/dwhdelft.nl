@@ -7941,6 +7941,27 @@ tailwind-heropatterns@^0.0.7:
   dependencies:
     lodash "^4.17.11"
 
+tailwindcss-aspect-ratio@^1.0.1:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss-aspect-ratio/-/tailwindcss-aspect-ratio-1.0.3.tgz#7aa7cb73ffeeb9f69cedebbfd3980176b14a256f"
+  integrity sha512-burkG+yxTNp8REWMtFkRzXGdt+8/QR2LMRDHjQ37DV4Y7dk+f/WQtfZYFXXU2GKASrp6WidzrtN2z8OA/jilww==
+  dependencies:
+    lodash "^4.17.11"
+
+tailwindcss-aspect-ratio@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-aspect-ratio/-/tailwindcss-aspect-ratio-2.0.0.tgz#fdc455baf53801cbbeadbda570123bf41290b09f"
+  integrity sha512-2yP4tXnGqGfZQRpBZr2Tx8JthEzm/rx4AzB2b2pvmD4rHS0cOoibrN0jDiRhR/Vl5i/DKWvSfn2/nQu5DxAidA==
+  dependencies:
+    lodash "^4.17.11"
+
+tailwindcss-responsive-embed@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-responsive-embed/-/tailwindcss-responsive-embed-0.2.2.tgz#107ad430a8e456c188d34bd59645fed918389808"
+  integrity sha512-pjRSD7G1iUiFUaBq6XB6Vb+Oazk7fGfaRCm2If7jP7mPiuxXnQ5s8jE0ccJewPPWZmDtw7HiB/3kk9y9F7r9Fw==
+  dependencies:
+    tailwindcss-aspect-ratio "^1.0.1"
+
 tailwindcss@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.5.tgz#5145fd61f251be06a77748819e12fb126914095d"

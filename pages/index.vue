@@ -34,6 +34,18 @@
           <h2 class="text-2xl text-white mt-2 w-1/2 font-light">
             Een krachtige tagline om dat kracht bij te zetten. Leuk voor iedereen.
           </h2>
+          <div class="mt-8 flex">
+            <button
+              class="block bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow"
+            >
+              Join Outsite
+            </button>
+            <button
+              class="block ml-4 bg-white px-4 py-2 rounded text-gray-700 uppercase tracking-wider shadow font-semibold"
+            >
+              Watch video
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -156,7 +168,7 @@ header {
 }
 
 .hero {
-  @apply bg-pink-400 absolute w-full h-full;
+  @apply bg-gray-700 absolute w-full h-full;
   transform: skewY(-13deg);
   transform-origin: 0;
 }

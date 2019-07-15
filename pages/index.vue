@@ -29,7 +29,7 @@
       <div class="relative flex items-center h-full">
         <div class="container mx-auto">
           <h1 class="text-4xl text-white font-normal">
-            LHBT+ jongerenvereniging
+            {{ $t('welcome') }}
           </h1>
           <h2 class="text-2xl text-white mt-2 w-1/2 font-light">
             Een krachtige tagline om dat kracht bij te zetten. Leuk voor iedereen.

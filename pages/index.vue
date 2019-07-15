@@ -107,23 +107,53 @@
         </div>
       </div>
     </section>
-    <section class="bg-pink-200 bg-hero-falling-triangles w-full py-8">
+    <section class="bg-pink-200 bg-hero-falling-triangles w-full pt-8 pb-12">
       <div class="container mx-auto">
         <div class="text-center mb-4">
           <h1 class="text-white font-medium text-5xl">Kennismaken met <strong>Outsite</strong>?</h1>
         </div>
         <div class="flex justify-center">
           <div class="bg-white rounded shadow p-8 flex-1 mx-2">
-            <h2 class="text-xl font-bold">{{ $t('ways_to_join.kmg.title') }}</h2>
-            <p>
+            <div class="rounded-full w-16 h-16 p-4 bg-pink-400 mb-8 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current">
+                <path
+                  d="
+                    M7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1c2.15 0 4.2.4 6.1 1.09L12 16h-1.25L10 20H4l-.75-4H2L.9
+                    10.09A17.93 17.93 0 0 1 7 9zm8.31.17c1.32.18 2.59.48 3.8.92L18 16h-1.25L16
+                    20h-3.96l.37-2h1.25l1.65-8.83zM13 0a4 4 0 1 1-1.33 7.76 5.96 5.96 0 0 0 0-7.52C12.1.1 12.53 0 13 0z
+                  "
+                />
+              </svg>
+            </div>
+            <h2 class="text-xl font-bold mb-4 text-pink-400 uppercase tracking-wider">
+              {{ $t('ways_to_join.kmg.title') }}
+            </h2>
+            <p class="mb-8 text-lg">
               {{ $t('ways_to_join.kmg.description') }}
             </p>
+            <button
+              class="block bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow"
+            >
+              Join the KMG
+            </button>
           </div>
           <div class="bg-white rounded shadow p-8 flex-1 mx-2">
-            <h2 class="text-xl font-bold">{{ $t('ways_to_join.bar_buddy.title') }}</h2>
-            <p>
+            <div class="rounded-full w-16 h-16 p-5 bg-pink-400 mb-8 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current">
+                <path d="M9 18v-7L0 2V0h20v2l-9 9v7l5 1v1H4v-1l5-1zm2-10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+              </svg>
+            </div>
+            <h2 class="text-xl font-bold mb-4 text-pink-400 uppercase tracking-wider">
+              {{ $t('ways_to_join.bar_buddy.title') }}
+            </h2>
+            <p class="mb-8 text-lg">
               {{ $t('ways_to_join.bar_buddy.description') }}
             </p>
+            <button
+              class="block bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow"
+            >
+              Find a bar buddy
+            </button>
           </div>
         </div>
       </div>

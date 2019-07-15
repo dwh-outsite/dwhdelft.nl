@@ -29,10 +29,10 @@
       <div class="relative flex items-center h-full">
         <div class="container mx-auto">
           <h1 class="text-4xl text-white font-normal">
-            {{ $t('welcome') }}
+            {{ $t('hero.title') }}
           </h1>
           <h2 class="text-2xl text-white mt-2 w-1/2 font-light">
-            Een krachtige tagline om dat kracht bij te zetten. Leuk voor iedereen.
+            {{ $t('hero.subtitle') }}
           </h2>
         </div>
       </div>
@@ -40,14 +40,7 @@
     <section>
       <div class="container mx-auto py-16 flex">
         <div class="flex-1 w-1/2">
-          <p class="text-2xl leading-normal text-grey-darkest">
-            Outsite is de jongerenafdeling van de DWH (Delftse Werkgroep Homoseksualiteit). Wij zijn er voor iedereen
-            onder de 28 jaar die zich identificeert als LHBT+. Wij organiseren allerlei soorten activiteiten, van
-            borrelen op de donderdag tot grootse kwartaalfeesten en uitgaan in bijvoorbeeld Amsterdam, allemaal mogelijk
-            gemaakt door onze fantastische commissies en leden! De voornaamste manier om kennis te maken met de
-            vereniging is door deel te nemen aan de kennismakingsgroep (KMG) of door gebruik te maken van het bar buddy
-            systeem.
-          </p>
+          <p v-html="$t('description.text')" class="text-2xl leading-normal text-grey-darkest"></p>
         </div>
         <div class="flex-1 w-1/2">
           <div
@@ -109,19 +102,15 @@
         </div>
         <div class="flex justify-center">
           <div class="bg-white rounded shadow p-8 flex-1 mx-2">
-            <h2 class="text-xl font-bold">Kennismakingsgroep</h2>
+            <h2 class="text-xl font-bold">{{ $t('ways_to_join.kmg.title') }}</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad at odio eligendi corporis sit iste, assumenda
-              facere voluptatum, veniam necessitatibus recusandae quia alias. Eveniet voluptatem veritatis ratione.
-              Nesciunt, inventore molestiae?
+              {{ $t('ways_to_join.kmg.description') }}
             </p>
           </div>
           <div class="bg-white rounded shadow p-8 flex-1 mx-2">
-            <h2 class="text-xl font-bold">Bar buddy</h2>
+            <h2 class="text-xl font-bold">{{ $t('ways_to_join.bar_buddy.title') }}</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad at odio eligendi corporis sit iste, assumenda
-              facere voluptatum, veniam necessitatibus recusandae quia alias. Eveniet voluptatem veritatis ratione.
-              Nesciunt, inventore molestiae?
+              {{ $t('ways_to_join.bar_buddy.description') }}
             </p>
           </div>
         </div>

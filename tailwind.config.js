@@ -16,6 +16,9 @@ module.exports = {
           ...colors.gray,
           700: '#464044'
         }
+      },
+      inset: {
+        '-16': '-4rem'
       }
     },
     aspectRatio: {

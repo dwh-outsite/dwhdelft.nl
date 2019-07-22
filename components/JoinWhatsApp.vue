@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto container relative pb-16">
-    <div class="h-32 absolute -top-16 w-full p-4">
-      <div class="bg-white rounded shadow-xl w-full h-full flex justify-between items-center">
+    <div class="h-32 absolute -top-16 p-4 w-full text-center">
+      <div class="bg-white rounded shadow-xl h-full inline-flex justify-between items-center">
         <div class="text-2xl px-8 ">
           <WhatsAppLogo class="fill-current text-green-400 h-12 inline mr-4" />
           Stay up to date, join the <strong>Outsite Announcements</strong> WhatsApp group

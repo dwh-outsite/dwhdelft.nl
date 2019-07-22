@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto container relative pb-16">
+  <div class="mx-auto container relative">
     <div class="h-32 absolute -top-16 p-4 w-full text-center">
       <div class="bg-white rounded shadow-xl h-full inline-flex justify-between items-center">
         <div class="text-2xl px-8 ">

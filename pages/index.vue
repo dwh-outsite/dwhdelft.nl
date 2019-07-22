@@ -79,7 +79,21 @@
 
     <footer class="bg-gray-700">
       <JoinWhatsApp />
-      <Footer />
+      <Footer
+        left-title="Bestuur"
+        link-title="Vertrouwenspersoon"
+        link-destination="#"
+        right-title="Contact"
+        contact-email="bestuur@outsite.nl"
+        contact-address="Lange Geer 22<br />2611PV Delft"
+        dwh-description="Outsite is onderdeel van"
+      >
+        <template v-slot:board-members>
+          <BoardMember name="Casper Boone" role="Voorzitter" email="voorzitter@outsite.nl" />
+          <BoardMember name="Daan Verrer" role="Secretaris" email="secretaris@outsite.nl" />
+          <BoardMember name="Joël Abrahams" role="Penningmeester" email="penningmeester@outsite.nl" />
+        </template>
+      </Footer>
     </footer>
   </div>
 </template>
@@ -90,6 +104,7 @@ import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
 import Footer from '~/components/Footer'
+import BoardMember from '~/components/BoardMember'
 import JoinWhatsApp from '~/components/JoinWhatsApp'
 
 export default {
@@ -99,6 +114,7 @@ export default {
     JoinOptions,
     Video,
     Footer,
+    BoardMember,
     JoinWhatsApp
   }
 }

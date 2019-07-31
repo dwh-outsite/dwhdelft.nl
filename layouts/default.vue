@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nuxt />
+    <nuxt class="bg-white" />
 
-    <footer class="bg-gray-700">
+    <footer>
       <JoinWhatsApp />
       <Footer
         left-title="Bestuur"
@@ -48,6 +48,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: #464044;
 }
 
 *,

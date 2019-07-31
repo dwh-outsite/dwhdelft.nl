@@ -7,19 +7,26 @@
           <nuxt-link to="/" class="text-white text-xl font-semibold no-underline mr-4">
             Home
           </nuxt-link>
-          <nuxt-link to="/ander" class="text-white text-xl font-semibold no-underline mr-4">
+          <a href="/#join-outsite" class="text-white text-xl font-semibold no-underline mr-4">
+            Join Outsite
+          </a>
+          <a href="/#owee" class="text-white text-xl font-semibold no-underline mr-4">
+            OWee
+          </a>
+          <a
+            href="https://dwhdelft.nl/eatingout"
+            target="_blank"
+            class="text-white text-xl font-semibold no-underline mr-4"
+          >
             EatingOUT
-          </nuxt-link>
-          <nuxt-link to="/ander" class="text-white text-xl font-semibold no-underline mr-4">
-            Commissies
-          </nuxt-link>
-          <nuxt-link to="/ander" class="text-white text-xl font-semibold no-underline mr-4">
-            Kennismakingsgroep
-          </nuxt-link>
+          </a>
+          <a href="#contact" class="text-white text-xl font-semibold no-underline mr-4">
+            Contact
+          </a>
         </div>
         <div>
-          <a href="/dwh" class="text-white text-xl font-semibold no-underline mr-4">
-            DWH
+          <a href="https://dwhdelft.nl" class="text-white text-xl font-semibold no-underline mr-4">
+            <DWHLogo class="h-8 ml-2 fill-current" />
           </a>
         </div>
       </div>
@@ -39,11 +46,13 @@
 
 <script>
 import OutsiteLogo from '@/assets/images/outsite_logo.svg'
+import DWHLogo from '@/assets/images/dwh_logo.svg'
 
 export default {
   props: ['small'],
   components: {
-    OutsiteLogo
+    OutsiteLogo,
+    DWHLogo
   }
 }
 </script>

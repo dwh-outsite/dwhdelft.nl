@@ -15,18 +15,18 @@
 
     <section class="bg-gray-200 pt-12 pb-12">
       <div class="mx-auto container">
-        <h2 class="tracking-wide font-semibold uppercase text-2xl mb-12 mx-2 text-center">Aanmelden voor de KMG</h2>
-        <form class="w-2/3 mx-auto" name="kmg" method="POST" data-netlify="true">
+        <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">Aanmelden voor de KMG</h2>
+        <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true">
           <p class="form-element">
-            <label>Naam</label>
+            <label class="required">Naam</label>
             <input type="text" name="name" placeholder="Naam" required />
           </p>
           <p class="form-element">
-            <label>E-mailadres</label>
+            <label class="required">E-mailadres</label>
             <input type="email" name="email" placeholder="E-mailadres" required />
           </p>
           <p class="form-element">
-            <label>Geboortedatum</label>
+            <label class="required">Geboortedatum</label>
             <input type="text" name="dateofbirth" placeholder="Geboortedatum" required />
           </p>
           <p class="form-element">
@@ -42,7 +42,11 @@
             <textarea name="remarks" placeholder="Opmerkingen of vragen"></textarea>
           </p>
           <p class="my-8 text-right">
-            <button class="bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow">
+            <button
+              class="
+                bg-pink-400 hover:bg-pink-200 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow
+              "
+            >
               Aanmelden
             </button>
           </p>
@@ -99,5 +103,10 @@ export default {
 .form-element input,
 .form-element textarea {
   @apply bg-white rounded-lg block px-4 py-3 w-full;
+}
+
+.required::after {
+  @apply text-red-600;
+  content: '*';
 }
 </style>

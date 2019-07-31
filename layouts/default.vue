@@ -58,4 +58,12 @@ html {
 .button-pink:hover {
   @apply bg-pink-200;
 }
+
+.button-white {
+  @apply bg-white px-4 py-2 rounded text-gray-700 uppercase tracking-wider shadow font-semibold;
+}
+
+.button-white:hover {
+  @apply bg-gray-200;
+}
 </style>

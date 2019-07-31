@@ -9,14 +9,16 @@
           {{ $t('hero.subtitle') }}
         </h2>
         <div class="mt-8 flex">
-          <button class="block bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow">
-            Join Outsite
-          </button>
-          <button
-            class="block ml-4 bg-white px-4 py-2 rounded text-gray-700 uppercase tracking-wider shadow font-semibold"
-          >
-            Watch video
-          </button>
+          <a href="#join-outsite">
+            <button class="block button-pink">
+              Join Outsite
+            </button>
+          </a>
+          <a href="#video">
+            <button class="block ml-4 button-white">
+              Watch video
+            </button>
+          </a>
         </div>
       </Header>
     </header>
@@ -50,7 +52,7 @@
       <Activities title="Aankomende activiteiten" />
     </section>
 
-    <section class="bg-pink-200 bg-hero-falling-triangles">
+    <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
       <JoinOptions
         title="Kennismaken met <strong>Outsite</strong>?"
         left-icon="user-group"
@@ -69,7 +71,7 @@
       </JoinOptions>
     </section>
 
-    <section class="bg-white">
+    <section id="video" class="bg-white">
       <Video title="<strong>Outsite</strong> in 120 seconds" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 

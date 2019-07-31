@@ -17,9 +17,11 @@
           </p>
         </div>
         <div>
-          <button class="block bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow">
-            {{ leftButtonText }}
-          </button>
+          <nuxt-link to="/kmg">
+            <button class="block button-pink">
+              {{ leftButtonText }}
+            </button>
+          </nuxt-link>
         </div>
       </div>
       <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between">
@@ -35,9 +37,11 @@
           </p>
         </div>
         <div>
-          <button class="block bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow">
-            {{ rightButtonText }}
-          </button>
+          <nuxt-link to="/barbuddy">
+            <button class="block button-pink">
+              {{ rightButtonText }}
+            </button>
+          </nuxt-link>
         </div>
       </div>
     </div>

@@ -42,11 +42,7 @@
             <textarea name="remarks" placeholder="Opmerkingen of vragen"></textarea>
           </p>
           <p class="my-8 text-right">
-            <button
-              class="
-                bg-pink-400 hover:bg-pink-200 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow
-              "
-            >
+            <button class="button-pink">
               Aanmelden
             </button>
           </p>

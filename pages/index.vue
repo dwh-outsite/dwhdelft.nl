@@ -73,7 +73,28 @@
       <Video title="<strong>Outsite</strong> in 120 seconds" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <footer></footer>
+    <section class="bg-gray-200 text-center p-32">
+      <h2 class="text-3xl">OWee programma</h2>
+    </section>
+
+    <footer class="bg-gray-700">
+      <JoinWhatsApp />
+      <Footer
+        left-title="Bestuur"
+        link-title="Vertrouwenspersoon"
+        link-destination="#"
+        right-title="Contact"
+        contact-email="bestuur@outsite.nl"
+        contact-address="Lange Geer 22<br />2611PV Delft"
+        dwh-description="Outsite is onderdeel van"
+      >
+        <template v-slot:board-members>
+          <BoardMember name="Casper Boone" role="Voorzitter" email="voorzitter@outsite.nl" />
+          <BoardMember name="Daan Verrer" role="Secretaris" email="secretaris@outsite.nl" />
+          <BoardMember name="Joël Abrahams" role="Penningmeester" email="penningmeester@outsite.nl" />
+        </template>
+      </Footer>
+    </footer>
   </div>
 </template>
 
@@ -82,13 +103,19 @@ import Header from '~/components/Header'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
+import Footer from '~/components/Footer'
+import BoardMember from '~/components/BoardMember'
+import JoinWhatsApp from '~/components/JoinWhatsApp'
 
 export default {
   components: {
     Header,
     Activities,
     JoinOptions,
-    Video
+    Video,
+    Footer,
+    BoardMember,
+    JoinWhatsApp
   }
 }
 </script>
@@ -105,18 +132,5 @@ export default {
   content: '';
   z-index: -1;
   top: 0px;
-}
-
-footer {
-  @apply relative overflow-hidden;
-}
-
-footer::before {
-  @apply bg-gray-700 absolute w-full;
-  height: 2000px;
-  transform: skewY(-13deg);
-  content: '';
-  z-index: -1;
-  top: 300px;
 }
 </style>

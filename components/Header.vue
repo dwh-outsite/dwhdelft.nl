@@ -24,7 +24,11 @@
         </div>
       </div>
     </nav>
-    <div class="hero"></div>
+    <div class="hero">
+      <video autoplay muted loop class="w-full opacity-50">
+        <source src="/outsite_web_bg.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="relative flex items-center h-full">
       <div class="container mx-auto">
         <slot></slot>
@@ -49,8 +53,13 @@ export default {
 }
 
 .hero {
-  @apply bg-gray-700 absolute w-full h-full;
+  @apply bg-gray-700 absolute w-full h-full overflow-hidden;
   transform: skewY(-13deg);
+  transform-origin: 0;
+}
+
+.hero video {
+  transform: skewY(13deg);
   transform-origin: 0;
 }
 </style>

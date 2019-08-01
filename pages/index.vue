@@ -76,7 +76,12 @@
     </section>
 
     <section class="bg-gray-200">
-      <OWeeSchedule title="OWee Schedule 2019" />
+      <OWeeSchedule title="OWee Schedule 2019">
+        Van 18 t/m 22 augustus vindt de Delftse introductieweek, de OWee, plaats. Tijdens deze week organiseren wij
+        allerlei activiteiten om te laten zien wat voor vereniging wij zijn. Hierdoor kun jij erachter komen of Outsite
+        de vereniging is die bij je past. We hebben sowieso elke avond een leuk feestje, maar doen ook andere leuke
+        dingen die je hieronder in het schema kunt zien! We hopen je te zien tijdens de OWee!
+      </OWeeSchedule>
     </section>
   </div>
 </template>

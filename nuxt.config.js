@@ -83,6 +83,15 @@ export default {
           exclude: /(node_modules)/
         })
       }
+      config.module.rules.push({
+        test: /\.csv$/,
+        loader: 'csv-loader',
+        options: {
+          dynamicTyping: true,
+          header: false,
+          skipEmptyLines: true
+        }
+      })
     }
   },
   router: {

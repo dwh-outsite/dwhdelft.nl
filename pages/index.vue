@@ -75,8 +75,8 @@
       <Video title="<strong>Outsite</strong> in 120 seconds" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <section class="bg-gray-200 text-center p-32">
-      <h2 class="text-3xl">OWee programma</h2>
+    <section class="bg-gray-200">
+      <OWeeSchedule title="OWee Schedule 2019" />
     </section>
   </div>
 </template>
@@ -86,13 +86,15 @@ import Header from '~/components/Header'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
+import OWeeSchedule from '~/components/OWeeSchedule'
 
 export default {
   components: {
     Header,
     Activities,
     JoinOptions,
-    Video
+    Video,
+    OWeeSchedule
   }
 }
 </script>

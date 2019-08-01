@@ -42,7 +42,7 @@
             <textarea name="remarks" placeholder="Opmerkingen of vragen"></textarea>
           </p>
           <p class="my-8 text-right">
-            <button class="button-pink">
+            <button type="submit" class="button-pink">
               Aanmelden
             </button>
           </p>

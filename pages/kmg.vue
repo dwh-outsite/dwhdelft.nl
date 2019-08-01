@@ -15,6 +15,35 @@
 
     <section class="bg-gray-200 pt-12 pb-12">
       <div class="mx-auto container">
+        <form name="parte" method="POST" data-netlify="true">
+          <p>
+            <label>
+              Your Name:
+              <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email:
+              <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Role:
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
         <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">Aanmelden voor de KMG</h2>
         <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true">
           <p class="form-element">

@@ -28,12 +28,16 @@
             v-for="activity in activities"
             v-show="activity.day == currentDay"
             :key="activity.name"
-            class="py-2 border-b flex"
+            :class="['py-3 flex']"
           >
-            <div class="mr-4">{{ activity.start }} - {{ activity.end }}</div>
+            <div :class="['mr-4', activity.highlight ? 'text-pink-400' : '']">
+              {{ activity.start }} - {{ activity.end }}
+            </div>
             <div class="flex-1">
-              <strong>{{ activity.name }}</strong>
-              <p>{{ activity.descriptionDutch }}</p>
+              <strong :class="[activity.highlight ? 'text-pink-400' : '']">{{ activity.name }}</strong>
+              <p class="text-gray-700">
+                {{ $i18n.locale == 'en' ? activity.descriptionEnglish : activity.descriptionDutch }}
+              </p>
             </div>
           </div>
         </div>
@@ -61,7 +65,8 @@ export default {
           end: row[2],
           name: row[3],
           descriptionDutch: row[4],
-          descriptionEnglish: row[5]
+          descriptionEnglish: row[5],
+          highlight: row[6]
         }
       }),
       days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],

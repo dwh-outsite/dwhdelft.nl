@@ -4,9 +4,10 @@
       {{ title }}
     </h2>
     <p class="text-xl text-center leading-normal text-grey-darkest px-64">
-      Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding test test test
-      van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Je deelt met elkaar je coming-out
-      verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!
+      Van 18 t/m 22 augustus vindt de Delftse introductieweek, de OWee, plaats. Tijdens deze week organiseren wij
+      allerlei activiteiten om te laten zien wat voor vereniging wij zijn. Hierdoor kun jij erachter komen of Outsite de
+      vereniging is die bij je past. We hebben sowieso elke avond een leuk feestje, maar doen ook andere leuke dingen
+      die je hieronder in het schema kunt zien! We hopen je te zien tijdens de OWee!
     </p>
     <div class="flex mb-4">
       <div class="flex-1 mt-12 bg-white shadow-xl rounded p-8">
@@ -20,7 +21,7 @@
             ]"
             @click="currentDay = day"
           >
-            {{ day }}
+            {{ $t('days.' + day.toLowerCase()) }}
           </button>
         </div>
         <div class="mt-4">
@@ -70,7 +71,7 @@ export default {
         }
       }),
       days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
-      currentDay: 'Sunday'
+      currentDay: 'Monday'
     }
   }
 }

@@ -25,5 +25,14 @@ export default {
         voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jouw de ins en outs kan vertellen over de 
         vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`
     }
+  },
+  days: {
+    monday: 'Maandag',
+    tuesday: 'Dinsdag',
+    wednesday: 'Woensdag',
+    thursday: 'Donderdag',
+    friday: 'Vrijdag',
+    saturday: 'Zaterdag',
+    sunday: 'Zondag'
   }
 }

@@ -2,8 +2,10 @@
   <div>
     <nuxt />
 
-    <footer class="bg-gray-700">
-      <JoinWhatsApp />
+    <footer id="contact" class="bg-gray-700">
+      <JoinWhatsApp button-text="Join Now" button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer">
+        Stay up to date, join the <strong>Outsite Announcements</strong> WhatsApp group
+      </JoinWhatsApp>
       <Footer
         left-title="Bestuur"
         link-title="Vertrouwenspersoon"

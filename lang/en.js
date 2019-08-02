@@ -27,5 +27,14 @@ export default {
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about Outsite but they can also introduce you to new people.`
     }
+  },
+  days: {
+    monday: 'Monday',
+    tuesday: 'Tuesday',
+    wednesday: 'Wednesday',
+    thursday: 'Thursday',
+    friday: 'Friday',
+    saturday: 'Saturday',
+    sunday: 'Sunday'
   }
 }

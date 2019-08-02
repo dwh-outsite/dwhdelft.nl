@@ -1,8 +1,41 @@
 <template>
   <div>
     <nuxt />
+
+    <footer class="bg-gray-700">
+      <JoinWhatsApp />
+      <Footer
+        left-title="Bestuur"
+        link-title="Vertrouwenspersoon"
+        link-destination="#"
+        right-title="Contact"
+        contact-email="bestuur@outsite.nl"
+        contact-address="Lange Geer 22<br />2611PV Delft"
+        dwh-description="Outsite is onderdeel van"
+      >
+        <template v-slot:board-members>
+          <BoardMember name="Casper Boone" role="Voorzitter" email="voorzitter@outsite.nl" />
+          <BoardMember name="Daan Verrer" role="Secretaris" email="secretaris@outsite.nl" />
+          <BoardMember name="Joël Abrahams" role="Penningmeester" email="penningmeester@outsite.nl" />
+        </template>
+      </Footer>
+    </footer>
   </div>
 </template>
+
+<script>
+import Footer from '~/components/Footer'
+import BoardMember from '~/components/BoardMember'
+import JoinWhatsApp from '~/components/JoinWhatsApp'
+
+export default {
+  components: {
+    Footer,
+    BoardMember,
+    JoinWhatsApp
+  }
+}
+</script>
 
 <style>
 html {
@@ -17,39 +50,19 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.button-pink {
+  @apply bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.button-pink:hover {
+  @apply bg-pink-200;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.button-white {
+  @apply bg-white px-4 py-2 rounded text-gray-700 uppercase tracking-wider shadow font-semibold;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.button-white:hover {
+  @apply bg-gray-200;
 }
 </style>

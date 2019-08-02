@@ -1,5 +1,5 @@
 <template>
-  <div id="header" class="relative">
+  <div id="header" :class="[small ? 'header-small' : '', 'relative']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container mx-auto flex justify-between items-center">
         <OutsiteLogo class="h-16" />
@@ -41,6 +41,7 @@
 import OutsiteLogo from '@/assets/images/outsite_logo.svg'
 
 export default {
+  props: ['small'],
   components: {
     OutsiteLogo
   }
@@ -52,14 +53,26 @@ export default {
   height: calc(190px * 4);
 }
 
+#header.header-small {
+  height: calc(120px * 4);
+}
+
 .hero {
   @apply bg-gray-700 absolute w-full h-full overflow-hidden;
   transform: skewY(-13deg);
   transform-origin: 0;
 }
 
+#header.header-small .hero {
+  transform: skewY(-13deg);
+}
+
 .hero video {
   transform: skewY(13deg);
   transform-origin: 0;
+}
+
+#header.header-small .hero video {
+  transform: skewY(13deg);
 }
 </style>

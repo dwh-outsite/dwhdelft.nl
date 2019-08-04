@@ -24,7 +24,7 @@
     </header>
 
     <section>
-      <div class="container mx-auto px-4 py-16 md:flex">
+      <div class="container mx-auto px-4 pt-12 pb-24 md:flex">
         <div class="flex-1 md:w-1/2">
           <p class="text-2xl leading-normal text-grey-darkest" v-html="$t('description.text')"></p>
         </div>
@@ -114,7 +114,7 @@ export default {
 .information::before {
   @apply bg-gray-200 absolute w-full;
   height: 250%;
-  transform: skewY(-13deg);
+  transform: skewY(-7deg);
   content: '';
   z-index: -1;
   top: 0px;

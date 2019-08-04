@@ -8,13 +8,13 @@
       </Header>
     </header>
 
-    <section class="container mx-auto text-center pb-12 text-xl leading-normatext-grey-darkest">
-      <p class="px-64" v-html="$t('confidential_counsellor.description')" />
+    <section class="container px-4 mx-auto text-center pb-20 text-xl md:text-2xl leading-normal text-grey-darkest">
+      <p class="md:px-64 mb-8 mt-12 md:mt-0" v-html="$t('confidential_counsellor.description')" />
     </section>
 
     <section class="bg-gray-200 pt-12 pb-24">
-      <div class="mx-auto container flex justify-center">
-        <div class="bg-white rounded shadow-lg p-8 pr-48 text-lg">
+      <div class="mx-auto container px-4 flex justify-center">
+        <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg">
           <h4 class="font-semibold text-xl">Andreas Zafiropoulos</h4>
           <span class="text-gray-700">{{ $t('confidential_counsellor.title') }} Outsite</span>
           <span class="mt-8 block flex">

@@ -2,7 +2,9 @@
   <div id="header" :class="[small ? 'header-small' : '', 'relative']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
-        <OutsiteLogo class="h-16" />
+        <nuxt-link :to="localePath('index')">
+          <OutsiteLogo class="h-16" />
+        </nuxt-link>
         <div class="hidden md:block">
           <nuxt-link to="/" class="text-white text-xl font-semibold no-underline mr-4">
             Home

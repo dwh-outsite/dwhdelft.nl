@@ -8,7 +8,7 @@
       </Header>
     </header>
 
-    <section class="container px-4 mx-auto text-center pb-20 text-2xl leading-normatext-grey-darkest">
+    <section class="container px-4 mx-auto text-center pb-20 text-xl md:text-2xl leading-normal text-grey-darkest">
       <p class="md:px-64 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.bar_buddy.description') }}</p>
     </section>
 

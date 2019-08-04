@@ -34,5 +34,19 @@ export default {
     friday: 'Vrijdag',
     saturday: 'Zaterdag',
     sunday: 'Zondag'
+  },
+  confidential_counsellor: {
+    title: 'Vertrouwenspersoon',
+    description: `
+    Outsite heeft een vertrouwenspersoon met wie je contact kunt opzoeken om over vereniging gerelateerde en
+    persoonlijke problemen te praten indien je daar behoefte aan hebt.<br>
+    <br>
+    Alles wat besproken wordt met de vertrouwenspersoon is strikt vertrouwelijk. De vertrouwenspersoon opereert volledig
+    onafhankelijk van het Outsite en DWH bestuur. Alleen als de situatie het noodzaakt, en dan alleen met expliciete
+    persoonlijke toestemming, worden kwesties aan hen voorgelegd.<br>
+    <br>
+    Wees niet bang om contact op te nemen. De vertrouwenspersoon zal elke kwestie serieus behandelen en is er om je te
+    helpen.    
+    `
   }
 }

@@ -26,7 +26,7 @@
     <section>
       <div class="container mx-auto px-4 py-16 md:flex">
         <div class="flex-1 md:w-1/2">
-          <p class="text-2xl leading-normal text-grey-darkest" v-html="$t('description.text')"></p>
+          <p class="text-xl md:text-2xl leading-normal text-grey-darkest" v-html="$t('description.text')"></p>
         </div>
         <div class="flex-1 md:w-1/2">
           <div

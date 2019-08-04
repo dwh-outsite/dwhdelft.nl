@@ -9,7 +9,7 @@
       <Footer
         left-title="Bestuur"
         link-title="Vertrouwenspersoon"
-        link-destination="#"
+        :link-destination="localePath('confidential-counsellor')"
         right-title="Contact"
         contact-email="bestuur@outsite.nl"
         contact-address="Lange Geer 22<br />2611PV Delft"

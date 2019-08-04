@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-element {
+  @apply mb-4;
+}
+
+.form-element label:not(.radio) {
+  @apply uppercase text-sm tracking-wide font-semibold block mb-1;
+}
+
+.form-element label.radio {
+  @apply block mb-2;
+}
+
+.form-element label.radio input {
+  @apply mr-1;
+}
+
+.form-element input:not([type='radio']),
+.form-element textarea {
+  @apply bg-white rounded-lg block px-4 py-3 w-full;
+}
+
+.required::after {
+  @apply text-red-600;
+  content: '*';
+}

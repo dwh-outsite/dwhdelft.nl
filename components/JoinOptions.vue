@@ -1,10 +1,10 @@
 <template>
-  <div class="container mx-auto pt-8 pb-12">
-    <div class="text-center mb-4">
+  <div class="container px-4 mx-auto pt-8 pb-12">
+    <div class="text-center">
       <h1 class="text-white font-medium text-5xl" v-html="title"></h1>
     </div>
-    <div class="flex justify-center">
-      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between">
+    <div class="md:flex justify-center">
+      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-4">
         <div class="flex-1">
           <div class="rounded-full w-16 h-16 p-4 bg-pink-400 mb-8 text-white">
             <Zondicon :icon="leftIcon" class="fill-current" />
@@ -24,7 +24,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between">
+      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-4">
         <div class="flex-1">
           <div class="rounded-full w-16 h-16 p-5 bg-pink-400 mb-8 text-white">
             <Zondicon :icon="rightIcon" class="fill-current" />

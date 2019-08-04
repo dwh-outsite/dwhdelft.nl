@@ -8,8 +8,8 @@
       </Header>
     </header>
 
-    <section class="container mx-auto text-center pb-20 text-2xl leading-normatext-grey-darkest">
-      <p class="px-64 mb-8">{{ $t('ways_to_join.bar_buddy.description') }}</p>
+    <section class="container px-4 mx-auto text-center pb-20 text-2xl leading-normatext-grey-darkest">
+      <p class="md:px-64 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.bar_buddy.description') }}</p>
     </section>
 
     <section class="bg-gray-200 pt-12 pb-12">
@@ -75,31 +75,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.form-element {
-  @apply mb-4;
-}
-
-.form-element label:not(.radio) {
-  @apply uppercase text-sm tracking-wide font-semibold block mb-1;
-}
-
-.form-element label.radio {
-  @apply block mb-2;
-}
-
-.form-element label.radio input {
-  @apply mr-1;
-}
-
-.form-element input:not([type='radio']),
-.form-element textarea {
-  @apply bg-white rounded-lg block px-4 py-3 w-full;
-}
-
-.required::after {
-  @apply text-red-600;
-  content: '*';
-}
-</style>

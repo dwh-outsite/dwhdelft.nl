@@ -5,7 +5,7 @@
         <h1 class="text-4xl text-white font-normal">
           {{ $t('hero.title') }}
         </h1>
-        <h2 class="text-2xl text-white mt-2 w-1/2 font-light">
+        <h2 class="text-2xl text-white mt-2 font-light">
           {{ $t('hero.subtitle') }}
         </h2>
         <div class="mt-8 flex">
@@ -24,14 +24,16 @@
     </header>
 
     <section>
-      <div class="container mx-auto py-16 flex">
-        <div class="flex-1 w-1/2">
+      <div class="container mx-auto px-4 py-16 md:flex">
+        <div class="flex-1 md:w-1/2">
           <p class="text-2xl leading-normal text-grey-darkest" v-html="$t('description.text')"></p>
         </div>
-        <div class="flex-1 w-1/2">
+        <div class="flex-1 md:w-1/2">
           <div
             class="
-              rounded border-8 border-pink-200 mx-32 text-center uppercase text-4xl font-bold tracking-wide -mt-24"
+              rounded border-8 border-pink-200 mx-32 text-center uppercase text-4xl font-bold tracking-wide
+              mt-8 md:-mt-24
+            "
           >
             <div class="bg-pink-200 text-white py-2">
               Elke Donderdag

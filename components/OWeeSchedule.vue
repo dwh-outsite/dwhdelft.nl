@@ -1,18 +1,19 @@
 <template>
-  <div class="container mx-auto pt-12 pb-24">
+  <div class="container px-4 mx-auto pt-12 pb-12 md:pb-24">
     <h2 class="text-center tracking-wide font-semibold uppercase text-2xl mx-2 mb-6">
       {{ title }}
     </h2>
-    <p class="text-xl text-center leading-normal text-grey-darkest px-64">
+    <p class="text-xl text-center leading-normal text-grey-darkest md:px-64">
       <slot></slot>
     </p>
-    <div class="flex mb-4">
+    <div class="md:flex mb-4">
       <div class="flex-1 mt-12 bg-white shadow-xl rounded p-8">
-        <div>
+        <div class="-mt-2">
           <button
             v-for="day in days"
             :key="day"
             :class="[
+              'mt-2',
               'bg-pink-200 text-white rounded px-4 py-2 mr-2 uppercase tracking-wide text-sm shadow focus:outline-none',
               day === currentDay ? 'bg-pink-400 text-white font-semibold' : ''
             ]"
@@ -40,7 +41,7 @@
           </div>
         </div>
       </div>
-      <div class="w-2/5 px-8">
+      <div class="md:w-2/5 px-8">
         <OWeeLogo class="w-full" />
       </div>
     </div>

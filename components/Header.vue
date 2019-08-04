@@ -1,9 +1,9 @@
 <template>
   <div id="header" :class="[small ? 'header-small' : '', 'relative']">
     <nav class="absolute z-50 w-full mt-8">
-      <div class="container mx-auto flex justify-between items-center">
+      <div class="container px-4 mx-auto flex justify-between items-center">
         <OutsiteLogo class="h-16" />
-        <div>
+        <div class="hidden md:block">
           <nuxt-link to="/" class="text-white text-xl font-semibold no-underline mr-4">
             Home
           </nuxt-link>
@@ -32,12 +32,12 @@
       </div>
     </nav>
     <div class="hero">
-      <video autoplay muted loop class="w-full opacity-50">
+      <video autoplay muted loop class="hidden md:block w-full opacity-50">
         <source src="/outsite_web_bg.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="relative flex items-center h-full">
-      <div class="container mx-auto">
+      <div class="container px-4 mx-auto my-40">
         <slot></slot>
       </div>
     </div>
@@ -58,12 +58,14 @@ export default {
 </script>
 
 <style>
-#header {
-  height: calc(190px * 4);
-}
+@screen md {
+  #header {
+    height: calc(190px * 4);
+  }
 
-#header.header-small {
-  height: calc(120px * 4);
+  #header.header-small {
+    height: calc(120px * 4);
+  }
 }
 
 .hero {

@@ -70,22 +70,24 @@ export default {
   }
 }
 
-.hero {
-  @apply bg-gray-700 absolute w-full h-full overflow-hidden;
-  transform: skewY(-13deg);
-  transform-origin: 0;
+@media (min-width: 1900px) {
+  #header {
+    height: calc(240px * 4);
+  }
+
+  #header.header-small {
+    height: calc(120px * 4);
+  }
 }
 
-#header.header-small .hero {
-  transform: skewY(-13deg);
+.hero {
+  @apply bg-gray-700 absolute w-full h-full overflow-hidden;
+  transform: skewY(-7deg);
+  transform-origin: 0;
 }
 
 .hero video {
-  transform: skewY(13deg);
+  transform: skewY(7deg);
   transform-origin: 0;
-}
-
-#header.header-small .hero video {
-  transform: skewY(13deg);
 }
 </style>

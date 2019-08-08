@@ -40,15 +40,15 @@ export default {
   confidential_counsellor: {
     title: 'Confidential Counsellor',
     description: `
-      Outsite has a confidential counsellor with who you can get in contact about society related and personal issues,
+      Outsite has a confidential counsellor whom you can approach about society-related and personal issues,
       in case you feel like talking about them.<br>
       <br>
-      The contact with the trusted person is strictly confidential. The trusted person does operate separately from the
-      Outsite and the DWH boards. Only if the situation requires it, and then only with explicit permission from you,
-      issues will be communicated to them.<br>
+      All contact with the counsellor is strictly confidential and they operate independently from the board of
+      Outsite and that from DWH. Only if the situation requires it, and then only with explicit permission from you,
+      shall issues be communicated to them.<br>
       <br>
       Don’t be afraid to contact the confidential counsellor about something. The confidential counsellor will take
-      every issue serious, and is there to help you.
+      every issue seriously, and they're there to help you.
     `
   }
 }

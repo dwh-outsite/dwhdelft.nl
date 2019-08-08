@@ -38,7 +38,7 @@ export default {
   confidential_counsellor: {
     title: 'Vertrouwenspersoon',
     description: `
-    Outsite heeft een vertrouwenspersoon met wie je contact kunt opzoeken om over vereniging gerelateerde en
+    Outsite heeft een vertrouwenspersoon met wie je contact kunt opnemen om over vereniging-gerelateerde en
     persoonlijke problemen te praten indien je daar behoefte aan hebt.<br>
     <br>
     Alles wat besproken wordt met de vertrouwenspersoon is strikt vertrouwelijk. De vertrouwenspersoon opereert volledig

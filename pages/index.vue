@@ -56,7 +56,7 @@
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
       <JoinOptions
-        title="Kennismaken met <strong>Outsite</strong>?"
+        :title="$t('ways_to_join.title')"
         left-icon="user-group"
         :left-title="$t('ways_to_join.kmg.title')"
         :left-button-text="$t('ways_to_join.kmg.action')"

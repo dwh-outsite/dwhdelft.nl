@@ -13,12 +13,15 @@ export default {
       van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.`
   },
   ways_to_join: {
+    title: 'Kennismaken met <strong>Outsite</strong>?',
     kmg: {
       title: 'KennisMakingsGroepen (KMG)',
       description: `Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
         van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Je deelt met elkaar je coming-out
         verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
-      action: 'Doe mee aan de KMG'
+      action: 'Doe mee aan de KMG',
+      sign_up: 'Aanmelden voor de KMG',
+      next: 'De volgende KMG start in: <strong>september 2019</strong>'
     },
     bar_buddy: {
       title: 'Barbuddy Systeem',
@@ -62,12 +65,18 @@ export default {
         english: 'Engels',
         no_preference: 'Geen voorkeur'
       },
-      remarks: 'Heb je verder nog vragen?'
+      remarks: 'Heb je verder nog vragen?',
+      date_of_birth: 'Geboortedatum',
+      phone_number: 'Telefoonnummer',
+      residence: 'Woonplaats'
     },
     placeholder: {
       name: 'Naam',
       email: 'E-mailadres',
-      remarks: 'Opmerkingen of vragen'
+      remarks: 'Opmerkingen of vragen',
+      date_of_birth: 'Geboortedatum',
+      phone_number: 'Telefoonnummer',
+      residence: 'Naam van stad'
     },
     buttons: {
       sign_up: 'Aanmelden'

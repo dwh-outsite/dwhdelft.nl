@@ -14,13 +14,16 @@ export default {
       to others.`
   },
   ways_to_join: {
+    title: 'Ready to check out <strong>Outsite</strong>?',
     kmg: {
       title: 'Introduction Group (in dutch: KMG)',
       description: `It is twice a year that Outsite organizes the introduction groups. These groups are a chance to not
       get to know the society but also to become close to other LGBT+ youth, all under supervision of two experienced
       Outsite members. It is a chance to share your coming out stories in a close group and to visit queer parties
       amongst others.`,
-      action: 'Join the KMG'
+      action: 'Join the KMG',
+      sign_up: 'Sign up for the KMG',
+      next: 'The next KMG will start in: <strong>September 2019</strong>'
     },
     bar_buddy: {
       title: 'Bar Buddy System',
@@ -53,5 +56,32 @@ export default {
       Don’t be afraid to contact the confidential counsellor about something. The confidential counsellor will take
       every issue seriously, and they're there to help you.
     `
+  },
+  forms: {
+    label: {
+      name: 'Name',
+      email: 'Email address',
+      language: 'Language',
+      languages: {
+        dutch: 'Dutch',
+        english: 'English',
+        no_preference: 'No preference'
+      },
+      remarks: 'Do you have any further questions?',
+      date_of_birth: 'Date of birth',
+      phone_number: 'Phone number',
+      residence: 'City of residence'
+    },
+    placeholder: {
+      name: 'Name',
+      email: 'Email address',
+      remarks: 'Remarks or questions',
+      date_of_birth: 'Date of birth',
+      phone_number: 'Phone number',
+      residence: 'City name'
+    },
+    buttons: {
+      sign_up: 'Sign up'
+    }
   }
 }

@@ -59,10 +59,10 @@
         title="Kennismaken met <strong>Outsite</strong>?"
         left-icon="user-group"
         :left-title="$t('ways_to_join.kmg.title')"
-        left-button-text="Join the KMG"
+        :left-button-text="$t('ways_to_join.kmg.action')"
         right-icon="beverage"
         :right-title="$t('ways_to_join.bar_buddy.title')"
-        right-button-text="Find a Bar Buddy"
+        :right-button-text="$t('ways_to_join.bar_buddy.action')"
       >
         <template v-slot:left>
           {{ $t('ways_to_join.kmg.description') }}

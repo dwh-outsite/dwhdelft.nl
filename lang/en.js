@@ -19,14 +19,16 @@ export default {
       description: `It is twice a year that Outsite organizes the introduction groups. These groups are a chance to not
       get to know the society but also to become close to other LGBT+ youth, all under supervision of two experienced
       Outsite members. It is a chance to share your coming out stories in a close group and to visit queer parties
-      amongst others.`
+      amongst others.`,
+      action: 'Join the KMG'
     },
     bar_buddy: {
       title: 'Bar Buddy System',
       description: `If you are looking to come by on a Thursday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about Outsite but they can also introduce you to new people.`,
-      sign_up: 'Sign up for a bar buddy'
+      sign_up: 'Sign up for a bar buddy',
+      action: 'Find a bar buddy'
     }
   },
   days: {

@@ -14,7 +14,9 @@
 
     <section class="bg-gray-200 pt-12 pb-12">
       <div class="mx-auto container">
-        <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">Aanmelden voor een barbuddy</h2>
+        <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
+          {{ $t('ways_to_join.bar_buddy.sign_up') }}
+        </h2>
         <form
           class="w-2/3 mx-auto my-12"
           name="barbuddy"
@@ -29,35 +31,35 @@
             </label>
           </p>
           <p class="form-element">
-            <label class="required">Naam</label>
-            <input type="text" name="name" placeholder="Naam" required />
+            <label class="required">{{ $t('forms.label.name') }}</label>
+            <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
           </p>
           <p class="form-element">
-            <label class="required">E-mailadres</label>
-            <input type="email" name="email" placeholder="E-mailadres" required />
+            <label class="required">{{ $t('forms.label.email') }}</label>
+            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
           </p>
           <p class="form-element">
-            <label class="required">Taal</label>
+            <label class="required">{{ $t('forms.label.language') }}</label>
             <label class="radio">
               <input type="radio" name="language" value="dutch" checked />
-              Nederlands
+              {{ $t('forms.label.languages.dutch') }}
             </label>
             <label class="radio">
               <input type="radio" name="language" value="english" />
-              Engels
+              {{ $t('forms.label.languages.english') }}
             </label>
             <label class="radio">
               <input type="radio" name="language" value="no_preference" />
-              Geen voorkeur
+              {{ $t('forms.label.languages.no_preference') }}
             </label>
           </p>
           <p class="form-element">
-            <label>Heb je verder nog vragen?</label>
-            <textarea name="remarks" placeholder="Opmerkingen of vragen"></textarea>
+            <label>{{ $t('forms.label.remarks') }}</label>
+            <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>
           <p class="my-8 text-right">
             <button type="submit" class="button-pink">
-              Aanmelden
+              {{ $t('forms.buttons.sign_up') }}
             </button>
           </p>
         </form>

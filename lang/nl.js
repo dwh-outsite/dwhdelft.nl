@@ -21,9 +21,10 @@ export default {
     },
     bar_buddy: {
       title: 'Barbuddy Systeem',
-      description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemakt
+      description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
         voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jouw de ins en outs kan vertellen over de 
-        vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`
+        vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
+      sign_up: 'Aanmelden voor een barbuddy'
     }
   },
   days: {
@@ -48,5 +49,26 @@ export default {
     Wees niet bang om contact op te nemen. De vertrouwenspersoon zal elke kwestie serieus behandelen en is er om je te
     helpen.    
     `
+  },
+  forms: {
+    label: {
+      name: 'Naam',
+      email: 'E-mailadres',
+      language: 'Taal',
+      languages: {
+        dutch: 'Nederlands',
+        english: 'Engels',
+        no_preference: 'Geen voorkeur'
+      },
+      remarks: 'Heb je verder nog vragen?'
+    },
+    placeholder: {
+      name: 'Naam',
+      email: 'E-mailadres',
+      remarks: 'Opmerkingen of vragen'
+    },
+    buttons: {
+      sign_up: 'Aanmelden'
+    }
   }
 }

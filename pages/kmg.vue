@@ -8,9 +8,11 @@
       </Header>
     </header>
 
-    <section class="container px-4 mx-auto text-center pb-20 text-xl md:text-2xl leading-normal text-grey-darkest">
-      <p class="md:px-64 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.kmg.description') }}</p>
-      <p class="md:px-64" v-html="$t('ways_to_join.kmg.next')"></p>
+    <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
+      <div class="w-2/3 mx-auto">
+        <p class="my-12 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.kmg.description') }}</p>
+        <p class="my-12" v-html="$t('ways_to_join.kmg.next')"></p>
+      </div>
     </section>
 
     <section class="bg-gray-200 pt-12 pb-12">

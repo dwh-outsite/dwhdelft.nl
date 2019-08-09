@@ -83,5 +83,19 @@ export default {
     buttons: {
       sign_up: 'Sign up'
     }
+  },
+  footer: {
+    whatsapp: {
+      description: 'Stay up to date, join the <strong>Outsite Announcements</strong> WhatsApp group',
+      button: 'Join now'
+    },
+    leftTitle: 'Board',
+    rightTitle: 'Contact',
+    dwhDescription: 'Outsite is a part of',
+    board: {
+      president: 'President',
+      secretary: 'Secretary',
+      treasurer: 'Treasurer'
+    }
   }
 }

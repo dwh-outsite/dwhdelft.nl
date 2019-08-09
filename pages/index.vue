@@ -40,7 +40,6 @@
             </div>
             <div class="border-t-8 border-b-8 border-pink-200 text-5xl text-pink-200">
               22:00
-              <small class="text-sm block">Dit lelijke ding gaat weg</small>
             </div>
             <div class="bg-pink-200 text-white py-2">
               Open Baravond
@@ -77,7 +76,7 @@
       <Video title="<strong>Outsite</strong> in 120 seconds" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <section class="bg-gray-200">
+    <section id="owee" class="bg-gray-200">
       <OWeeSchedule title="OWee Schedule 2019">
         Van 18 t/m 22 augustus vindt de Delftse introductieweek, de OWee, plaats. Tijdens deze week organiseren wij
         allerlei activiteiten om te laten zien wat voor vereniging wij zijn. Hierdoor kun jij erachter komen of Outsite

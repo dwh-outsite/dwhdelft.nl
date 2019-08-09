@@ -81,5 +81,19 @@ export default {
     buttons: {
       sign_up: 'Aanmelden'
     }
+  },
+  footer: {
+    whatsapp: {
+      description: 'Blijf op de hoogte, join de <strong>Outsite Announcements</strong> WhatsApp groep',
+      button: 'Deelnemen'
+    },
+    leftTitle: 'Bestuur',
+    rightTitle: 'Contact',
+    dwhDescription: 'Outsite is onderdeel van',
+    board: {
+      president: 'Voorzitter',
+      secretary: 'Secretaris',
+      treasurer: 'Penningmeester'
+    }
   }
 }

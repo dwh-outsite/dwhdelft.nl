@@ -8,7 +8,7 @@
       </JoinWhatsApp>
       <Footer
         left-title="Bestuur"
-        link-title="Vertrouwenspersoon"
+        :link-title="$t('confidential_counsellor.title')"
         :link-destination="localePath('confidential-counsellor')"
         right-title="Contact"
         contact-email="bestuur@outsite.nl"

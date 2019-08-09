@@ -14,18 +14,24 @@ export default {
       to others.`
   },
   ways_to_join: {
+    title: 'Ready to check out <strong>Outsite</strong>?',
     kmg: {
       title: 'Introduction Group (in dutch: KMG)',
       description: `It is twice a year that Outsite organizes the introduction groups. These groups are a chance to not
       get to know the society but also to become close to other LGBT+ youth, all under supervision of two experienced
       Outsite members. It is a chance to share your coming out stories in a close group and to visit queer parties
-      amongst others.`
+      amongst others.`,
+      action: 'Join the KMG',
+      sign_up: 'Sign up for the KMG',
+      next: 'The next KMG will start in: <strong>September 2019</strong>'
     },
     bar_buddy: {
       title: 'Bar Buddy System',
       description: `If you are looking to come by on a Thursday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
-        about Outsite but they can also introduce you to new people.`
+        about Outsite but they can also introduce you to new people.`,
+      sign_up: 'Sign up for a bar buddy',
+      action: 'Find a bar buddy'
     }
   },
   days: {
@@ -40,15 +46,42 @@ export default {
   confidential_counsellor: {
     title: 'Confidential Counsellor',
     description: `
-      Outsite has a confidential counsellor with who you can get in contact about society related and personal issues,
+      Outsite has a confidential counsellor whom you can approach about society-related and personal issues,
       in case you feel like talking about them.<br>
       <br>
-      The contact with the trusted person is strictly confidential. The trusted person does operate separately from the
-      Outsite and the DWH boards. Only if the situation requires it, and then only with explicit permission from you,
-      issues will be communicated to them.<br>
+      All contact with the counsellor is strictly confidential and they operate independently from the board of
+      Outsite and that from DWH. Only if the situation requires it, and then only with explicit permission from you,
+      shall issues be communicated to them.<br>
       <br>
       Don’t be afraid to contact the confidential counsellor about something. The confidential counsellor will take
-      every issue serious, and is there to help you.
+      every issue seriously, and they're there to help you.
     `
+  },
+  forms: {
+    label: {
+      name: 'Name',
+      email: 'Email address',
+      language: 'Language',
+      languages: {
+        dutch: 'Dutch',
+        english: 'English',
+        no_preference: 'No preference'
+      },
+      remarks: 'Do you have any further questions?',
+      date_of_birth: 'Date of birth',
+      phone_number: 'Phone number',
+      residence: 'City of residence'
+    },
+    placeholder: {
+      name: 'Name',
+      email: 'Email address',
+      remarks: 'Remarks or questions',
+      date_of_birth: 'Date of birth',
+      phone_number: 'Phone number',
+      residence: 'City name'
+    },
+    buttons: {
+      sign_up: 'Sign up'
+    }
   }
 }

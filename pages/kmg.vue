@@ -10,12 +10,14 @@
 
     <section class="container px-4 mx-auto text-center pb-20 text-xl md:text-2xl leading-normal text-grey-darkest">
       <p class="md:px-64 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.kmg.description') }}</p>
-      <p class="md:px-64">De volgende KMG start in: <strong>september 2019</strong></p>
+      <p class="md:px-64" v-html="$t('ways_to_join.kmg.next')"></p>
     </section>
 
     <section class="bg-gray-200 pt-12 pb-12">
       <div class="mx-auto container">
-        <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">Aanmelden voor de KMG</h2>
+        <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
+          {{ $t('ways_to_join.kmg.sign_up') }}
+        </h2>
         <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <p class="hidden">
             <label>
@@ -24,32 +26,32 @@
             </label>
           </p>
           <p class="form-element">
-            <label class="required">Naam</label>
-            <input type="text" name="name" placeholder="Naam" required />
+            <label class="required">{{ $t('forms.label.name') }}</label>
+            <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
           </p>
           <p class="form-element">
-            <label class="required">E-mailadres</label>
-            <input type="email" name="email" placeholder="E-mailadres" required />
+            <label class="required">{{ $t('forms.label.email') }}</label>
+            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
           </p>
           <p class="form-element">
-            <label class="required">Geboortedatum</label>
-            <input type="text" name="dateofbirth" placeholder="Geboortedatum" required />
+            <label class="required">{{ $t('forms.label.date_of_birth') }}</label>
+            <input type="text" name="dateofbirth" :placeholder="$t('forms.placeholder.date_of_birth')" required />
           </p>
           <p class="form-element">
-            <label>Telefoonnummer</label>
-            <input type="text" name="phonenumber" placeholder="Telefoonnummer" />
+            <label>{{ $t('forms.label.phone_number') }}</label>
+            <input type="text" name="phonenumber" :placeholder="$t('forms.placeholder.phone_number')" />
           </p>
           <p class="form-element">
-            <label>Woonplaats</label>
-            <input type="text" name="city" placeholder="Woonplaats" />
+            <label>{{ $t('forms.label.residence') }}</label>
+            <input type="text" name="city" :placeholder="$t('forms.placeholder.residence')" />
           </p>
           <p class="form-element">
-            <label>Heb je verder nog vragen?</label>
-            <textarea name="remarks" placeholder="Opmerkingen of vragen"></textarea>
+            <label>{{ $t('forms.label.remarks') }}</label>
+            <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>
           <p class="my-8 text-right">
             <button type="submit" class="button-pink">
-              Aanmelden
+              {{ $t('forms.buttons.sign_up') }}
             </button>
           </p>
         </form>

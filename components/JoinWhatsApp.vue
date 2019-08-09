@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto container relative">
-    <div class="md:h-32 absolute -top-16 p-4 w-full text-center">
+    <div class="md:h-28 md:absolute -top-14 p-4 w-full text-center">
       <div class="bg-white rounded shadow-xl h-full md:inline-flex justify-between items-center">
         <div class="text-2xl py-4 px-8 flex items-center">
           <WhatsAppLogo class="fill-current text-green-400 h-32 md:h-12 mr-4" />

@@ -11,12 +11,12 @@
         <div class="mt-8 flex">
           <a href="#join-outsite">
             <button class="block button-pink">
-              Join Outsite
+              {{ $t('hero.leftButton') }}
             </button>
           </a>
           <a href="#video">
             <button class="block ml-4 button-white">
-              Watch video
+              {{ $t('hero.rightButton') }}
             </button>
           </a>
         </div>
@@ -59,9 +59,11 @@
         left-icon="user-group"
         :left-title="$t('ways_to_join.kmg.title')"
         :left-button-text="$t('ways_to_join.kmg.action')"
+        :left-url="localePath('kmg')"
         right-icon="beverage"
         :right-title="$t('ways_to_join.bar_buddy.title')"
         :right-button-text="$t('ways_to_join.bar_buddy.action')"
+        :right-url="localePath('barbuddy')"
       >
         <template v-slot:left>
           {{ $t('ways_to_join.kmg.description') }}

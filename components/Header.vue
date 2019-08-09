@@ -9,13 +9,10 @@
           <nuxt-link :to="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
             Home
           </nuxt-link>
-          <nuxt-link
-            :to="localePath('index') + '/#join-outsite'"
-            class="text-white text-xl font-semibold no-underline mr-4"
-          >
+          <a :href="localePath('index') + '#join-outsite'" class="text-white text-xl font-semibold no-underline mr-4">
             Join Outsite
-          </nuxt-link>
-          <a href="/#owee" class="text-white text-xl font-semibold no-underline mr-4">
+          </a>
+          <a :href="localePath('index') + '#owee'" class="text-white text-xl font-semibold no-underline mr-4">
             OWee
           </a>
           <a

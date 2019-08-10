@@ -17,7 +17,7 @@
           </p>
         </div>
         <div>
-          <nuxt-link to="/kmg">
+          <nuxt-link :to="leftUrl">
             <button class="block button-pink">
               {{ leftButtonText }}
             </button>
@@ -37,7 +37,7 @@
           </p>
         </div>
         <div>
-          <nuxt-link to="/barbuddy">
+          <nuxt-link :to="rightUrl">
             <button class="block button-pink">
               {{ rightButtonText }}
             </button>
@@ -52,7 +52,17 @@
 import Zondicon from 'vue-zondicons'
 
 export default {
-  props: ['title', 'leftIcon', 'leftTitle', 'leftButtonText', 'rightIcon', 'rightTitle', 'rightButtonText'],
+  props: [
+    'title',
+    'leftIcon',
+    'leftTitle',
+    'leftButtonText',
+    'rightIcon',
+    'rightTitle',
+    'rightButtonText',
+    'leftUrl',
+    'rightUrl'
+  ],
   components: { Zondicon }
 }
 </script>

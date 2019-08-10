@@ -6,13 +6,13 @@
           <OutsiteLogo class="h-16" />
         </nuxt-link>
         <div class="hidden md:block">
-          <nuxt-link to="/" class="text-white text-xl font-semibold no-underline mr-4">
+          <nuxt-link :to="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
             Home
           </nuxt-link>
-          <a href="/#join-outsite" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('index') + '#join-outsite'" class="text-white text-xl font-semibold no-underline mr-4">
             Join Outsite
           </a>
-          <a href="/#owee" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('index') + '#owee'" class="text-white text-xl font-semibold no-underline mr-4">
             OWee
           </a>
           <a

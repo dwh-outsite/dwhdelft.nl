@@ -6,6 +6,9 @@ module.exports = {
   separator: ':',
   theme: {
     extend: {
+      height: {
+        28: '7rem'
+      },
       colors: {
         pink: {
           ...colors.pink,
@@ -20,7 +23,8 @@ module.exports = {
         }
       },
       inset: {
-        '-16': '-4rem'
+        '-16': '-4rem',
+        '-14': '-3.5rem'
       }
     },
     aspectRatio: {

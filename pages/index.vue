@@ -26,7 +26,11 @@
     <section class="introduction">
       <div class="container mx-auto px-4 pt-12 pb-24 md:flex">
         <div class="flex-1 md:w-1/2">
-          <p class="text-xl md:text-2xl leading-normal text-gray-800" v-html="$t('description.text')"></p>
+          <p class="text-l md:text-xl leading-normal text-gray-800" v-html="$t('description.text')"></p>
+          <br />
+          <p class="text-l md:text-xl leading-normal text-pink-400">
+            <strong>{{ $t('description.invitation') }}</strong>
+          </p>
         </div>
         <div class="flex-1 md:w-1/2 panda-container">
           <Panda class="panda"></Panda>

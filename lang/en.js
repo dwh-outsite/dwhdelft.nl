@@ -13,7 +13,8 @@ export default {
       These activities are all organized by our fantastic committees and members! The best way to become acquainted with
       Outsite would be to take party in the introduction groups (which we call KMGs) or through the use of the bar buddy
       system: Where we will make sure there is someone ready at the bar to show you around and who could introduce you
-      to others.`
+      to others.`,
+    invitation: 'Come by during one of our bar nights: Every thursday night starting at 22:00.'
   },
   ways_to_join: {
     title: 'Ready to check out <strong>Outsite</strong>?',

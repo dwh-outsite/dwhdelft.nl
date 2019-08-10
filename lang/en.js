@@ -1,7 +1,9 @@
 export default {
   hero: {
     title: 'Outsite LGBT+ society',
-    subtitle: "Delft's society for queer youth"
+    subtitle: "Delft's society for queer youth",
+    leftButton: 'Join Outsite',
+    rightButton: 'Watch video'
   },
   description: {
     text: `Outsite is the part of DWH (Delftse Werkgroep Homoseksualiteit) specially for LGBT+ youth. We are there for
@@ -82,6 +84,20 @@ export default {
     },
     buttons: {
       sign_up: 'Sign up'
+    }
+  },
+  footer: {
+    whatsapp: {
+      description: 'Stay up to date, join the <strong>Outsite Announcements</strong> WhatsApp group',
+      button: 'Join now'
+    },
+    leftTitle: 'Board',
+    rightTitle: 'Contact',
+    dwhDescription: 'Outsite is a part of',
+    board: {
+      president: 'President',
+      secretary: 'Secretary',
+      treasurer: 'Treasurer'
     }
   }
 }

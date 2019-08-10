@@ -3,22 +3,25 @@
     <nuxt />
 
     <footer id="contact" class="bg-gray-700">
-      <JoinWhatsApp button-text="Join Now" button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer">
-        Stay up to date, join the <strong>Outsite Announcements</strong> WhatsApp group
+      <JoinWhatsApp
+        :button-text="$t('footer.whatsapp.button')"
+        button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer"
+      >
+        <span v-html="$t('footer.whatsapp.description')" />
       </JoinWhatsApp>
       <Footer
-        left-title="Bestuur"
+        :left-title="$t('footer.leftTitle')"
         :link-title="$t('confidential_counsellor.title')"
         :link-destination="localePath('confidential-counsellor')"
-        right-title="Contact"
+        :right-title="$t('footer.rightTitle')"
         contact-email="bestuur@outsite.nl"
         contact-address="Lange Geer 22<br />2611PV Delft"
-        dwh-description="Outsite is onderdeel van"
+        :dwh-description="$t('footer.dwhDescription')"
       >
         <template v-slot:board-members>
-          <BoardMember name="Casper Boone" role="Voorzitter" email="voorzitter@outsite.nl" />
-          <BoardMember name="Daan Verrer" role="Secretaris" email="secretaris@outsite.nl" />
-          <BoardMember name="Joël Abrahams" role="Penningmeester" email="penningmeester@outsite.nl" />
+          <BoardMember name="Casper Boone" :role="$t('footer.board.president')" email="voorzitter@outsite.nl" />
+          <BoardMember name="Daan Verrer" :role="$t('footer.board.secretary')" email="secretaris@outsite.nl" />
+          <BoardMember name="Joël Abrahams" :role="$t('footer.board.treasurer')" email="penningmeester@outsite.nl" />
         </template>
       </Footer>
     </footer>

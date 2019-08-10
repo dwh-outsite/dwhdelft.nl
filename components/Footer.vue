@@ -2,8 +2,8 @@
   <div>
     <div class="container px-4 mx-auto text-white">
       <div class="md:flex">
-        <div class="md:w-2/3 md:border-r border-gray-600 pt-48 md:pt-24">
-          <div class="md:flex mb-10 md:mr-12">
+        <div class="md:w-2/3 md:border-r border-gray-600 md:pt-20">
+          <div class="md:flex mb-8 md:mr-10">
             <div class="flex-1">
               <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ leftTitle }}</h3>
 
@@ -23,7 +23,7 @@
           </div>
         </div>
 
-        <div class="md:ml-10 md:pt-24 pb-8">
+        <div class="md:ml-10 md:pt-20 pb-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ rightTitle }}</h3>
           <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">

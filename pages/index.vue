@@ -23,29 +23,13 @@
       </Header>
     </header>
 
-    <section>
+    <section class="introduction">
       <div class="container mx-auto px-4 pt-12 pb-24 md:flex">
         <div class="flex-1 md:w-1/2">
           <p class="text-xl md:text-2xl leading-normal text-grey-darkest" v-html="$t('description.text')"></p>
         </div>
-        <div class="flex-1 md:w-1/2">
-          <div
-            class="
-              rounded border-8 border-pink-200 mx-32 text-center uppercase text-4xl font-bold tracking-wide
-              mt-8 md:-mt-24
-            "
-          >
-            <div class="bg-pink-200 text-white py-2">
-              Elke Donderdag
-            </div>
-            <div class="border-t-8 border-b-8 border-pink-200 text-5xl text-pink-200">
-              22:00
-              <small class="text-sm block">Dit lelijke ding gaat weg</small>
-            </div>
-            <div class="bg-pink-200 text-white py-2">
-              Open Baravond
-            </div>
-          </div>
+        <div class="flex-1 md:w-1/2 panda-container">
+          <Panda class="panda"></Panda>
         </div>
       </div>
     </section>
@@ -90,6 +74,7 @@
 
 <script>
 import Header from '~/components/Header'
+import Panda from '@/assets/images/outsite_panda_cropped.svg'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
@@ -98,6 +83,7 @@ import OWeeSchedule from '~/components/OWeeSchedule'
 export default {
   components: {
     Header,
+    Panda,
     Activities,
     JoinOptions,
     Video,
@@ -118,5 +104,24 @@ export default {
   content: '';
   z-index: -1;
   top: 0px;
+}
+
+.panda {
+  z-index: -2;
+
+  position: relative;
+  width: 100%;
+  height: inherit;
+
+  bottom: 0rem;
+  left: 5rem;
+}
+
+.panda-container {
+  height: inherit;
+}
+
+.introduction {
+  margin-bottom: -10rem;
 }
 </style>

@@ -51,7 +51,9 @@
     </section>
 
     <section class="information relative pt-12">
-      <Activities :title="$t('activities.title')" />
+      <OWeeSchedule :title="$t('owee.title')">
+        {{ $t('owee.description') }}
+      </OWeeSchedule>
     </section>
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
@@ -80,9 +82,7 @@
     </section>
 
     <section id="owee" class="bg-gray-200 md:pb-12">
-      <OWeeSchedule :title="$t('owee.title')">
-        {{ $t('owee.description') }}
-      </OWeeSchedule>
+      <Activities :title="$t('activities.title')" />
     </section>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 mx-auto pt-12 pb-12 md:pb-24">
+  <div class="container px-4 mx-auto py-12">
     <h2 class="text-center tracking-wide font-semibold uppercase text-2xl mx-2 mb-6">
       {{ title }}
     </h2>

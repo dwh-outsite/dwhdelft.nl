@@ -47,7 +47,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     'nuxt-i18n',
-    'nuxt-svg-loader'
+    'nuxt-svg-loader',
+    '@bazzite/nuxt-netlify'
   ],
 
   i18n: {
@@ -131,5 +132,14 @@ export default {
 
       return { x: 0, y: 0 }
     }
+  },
+
+  netlify: {
+    redirects: [
+      {
+        from: '/outcamp',
+        to: 'https://docs.google.com/forms/d/e/1FAIpQLSdQkRhEQR3e3q_fnOkseETCB4fXYQE-ObFUkMHJM0sYwGBgYg/viewform'
+      }
+    ]
   }
 }

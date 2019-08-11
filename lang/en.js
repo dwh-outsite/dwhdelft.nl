@@ -11,9 +11,9 @@ export default {
       Thursday night and quarterly LGBT+ parties to trips to other cities where we go out together.<br>
       <br>
       These activities are all organized by our fantastic committees and members! The best way to become acquainted with
-      Outsite would be to take party in the introduction groups (which we call KMGs) or through the use of the bar buddy
-      system: Where we will make sure there is someone ready at the bar to show you around and who could introduce you
-      to others.`
+      Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
+      system: Where we will make sure there is someone ready to show you around and who could introduce you to others.`,
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
   },
   ways_to_join: {
     title: 'Ready to check out <strong>Outsite</strong>?',

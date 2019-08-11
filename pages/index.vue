@@ -23,33 +23,34 @@
       </Header>
     </header>
 
-    <section>
-      <div class="container mx-auto px-4 pt-12 pb-24 md:flex">
-        <div class="flex-1 md:w-1/2">
-          <p class="text-xl md:text-2xl leading-normal text-gray-800" v-html="$t('description.text')"></p>
-        </div>
-        <div class="flex-1 md:w-1/2">
+    <section class="introduction">
+      <div class="container mx-auto pt-12 pb-24 md:flex">
+        <div class="flex-1 md:w-1/2 px-4">
+          <p class="text-lg md:text-xl leading-relaxed text-gray-800" v-html="$t('description.text')"></p>
           <div
             class="
-              rounded border-8 border-pink-200 mx-32 text-center uppercase text-4xl font-bold tracking-wide
-              mt-8 md:-mt-24
+              rounded shadow-xl bg-pink-400 text-lg md:text-xl text-white my-12 md:mt-10 p-4 relative
+              w-full md:w-auto md:inline-flex items-center
             "
           >
-            <div class="bg-pink-200 text-white py-2">
-              Elke Donderdag
+            <div
+              class="
+                rounded-full w-16 h-16 p-4 bg-white text-pink-400 shadow md:shadow-none
+                absolute -top-8 md:static
+              "
+            >
+              <Zondicon icon="explore" class="fill-current" />
             </div>
-            <div class="border-t-8 border-b-8 border-pink-200 text-5xl text-pink-200">
-              22:00
-            </div>
-            <div class="bg-pink-200 text-white py-2">
-              Open Baravond
-            </div>
+            <div class="mt-6 md:mt-0 md:ml-4" v-html="$t('description.invitation')" />
           </div>
+        </div>
+        <div class="flex-1 md:w-1/2 overflow-hidden md:overflow-visible">
+          <Panda class="panda"></Panda>
         </div>
       </div>
     </section>
 
-    <section class="information">
+    <section class="information relative">
       <Activities title="Aankomende activiteiten" />
     </section>
 
@@ -90,7 +91,10 @@
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
+
 import Header from '~/components/Header'
+import Panda from '@/assets/images/outsite_panda_cropped.svg'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
@@ -99,19 +103,17 @@ import OWeeSchedule from '~/components/OWeeSchedule'
 export default {
   components: {
     Header,
+    Panda,
     Activities,
     JoinOptions,
     Video,
-    OWeeSchedule
+    OWeeSchedule,
+    Zondicon
   }
 }
 </script>
 
 <style>
-.information {
-  @apply relative;
-}
-
 .information::before {
   @apply bg-gray-200 absolute w-full;
   height: 250%;
@@ -119,5 +121,20 @@ export default {
   content: '';
   z-index: -1;
   top: 0px;
+}
+
+.panda {
+  z-index: -2;
+
+  position: relative;
+  width: 100%;
+  height: inherit;
+
+  bottom: 0rem;
+  left: 5rem;
+}
+
+.introduction {
+  margin-bottom: -10rem;
 }
 </style>

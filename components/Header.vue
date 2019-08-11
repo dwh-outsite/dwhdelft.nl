@@ -2,13 +2,13 @@
   <div id="header" :class="[small ? 'header-small' : '', 'relative']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
-        <nuxt-link :to="localePath('index')">
+        <a :href="localePath('index')">
           <OutsiteLogo class="h-16" />
-        </nuxt-link>
+        </a>
         <div class="hidden md:block">
-          <nuxt-link :to="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
             Home
-          </nuxt-link>
+          </a>
           <a :href="localePath('index') + '#join-outsite'" class="text-white text-xl font-semibold no-underline mr-4">
             Join Outsite
           </a>

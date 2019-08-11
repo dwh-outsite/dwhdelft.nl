@@ -28,8 +28,10 @@
         </div>
         <div class="flex items-center">
           <div
-            class="rounded-full w-7 h-7 bg-white text-gray-700 mr-4 flex items-center justify-center overflow-hidden
-            border-2 border-white relative 
+            class="
+              rounded-full w-7 h-7 bg-white mr-1 md:mr-4 border-2 border-white
+              flex items-center justify-center 
+              overflow-hidden relative 
             "
           >
             <a v-if="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">

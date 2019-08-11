@@ -51,7 +51,7 @@
     </section>
 
     <section class="information relative">
-      <Activities title="Aankomende activiteiten" />
+      <Activities :title="$t('activities.title')" />
     </section>
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
@@ -76,15 +76,12 @@
     </section>
 
     <section id="video" class="bg-white">
-      <Video title="<strong>Outsite</strong> in 120 seconds" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
+      <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
     <section id="owee" class="bg-gray-200">
-      <OWeeSchedule title="OWee Schedule 2019">
-        Van 18 t/m 22 augustus vindt de Delftse introductieweek, de OWee, plaats. Tijdens deze week organiseren wij
-        allerlei activiteiten om te laten zien wat voor vereniging wij zijn. Hierdoor kun jij erachter komen of Outsite
-        de vereniging is die bij je past. We hebben sowieso elke avond een leuk feestje, maar doen ook andere leuke
-        dingen die je hieronder in het schema kunt zien! We hopen je te zien tijdens de OWee!
+      <OWeeSchedule :title="$t('owee.title')">
+        {{ $t('owee.description') }}
       </OWeeSchedule>
     </section>
   </div>

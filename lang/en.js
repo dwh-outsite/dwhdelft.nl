@@ -15,6 +15,9 @@ export default {
       system: Where we will make sure there is someone ready to show you around and who could introduce you to others.`,
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
   },
+  activities: {
+    title: 'Upcoming activities'
+  },
   ways_to_join: {
     title: 'Ready to check out <strong>Outsite</strong>?',
     kmg: {
@@ -36,14 +39,25 @@ export default {
       action: 'Find a bar buddy'
     }
   },
-  days: {
-    monday: 'Monday',
-    tuesday: 'Tuesday',
-    wednesday: 'Wednesday',
-    thursday: 'Thursday',
-    friday: 'Friday',
-    saturday: 'Saturday',
-    sunday: 'Sunday'
+  video: {
+    title: '<strong>Outsite</strong> in 120 seconds'
+  },
+  owee: {
+    title: 'OWee Schedule 2019',
+    description: `From the 18th of August till the 22nd of August Delft's student introduction weeek, the OWee, takes
+      place. During this week we organise all kinds of activities which will help you get to know Outsite, and see if
+      we are a good fit. We have a cool party every night, but also organise a lot of other fun things which you can
+      see below. We hope to see you during the OWee!
+     `,
+    days: {
+      monday: 'Monday',
+      tuesday: 'Tuesday',
+      wednesday: 'Wednesday',
+      thursday: 'Thursday',
+      friday: 'Friday',
+      saturday: 'Saturday',
+      sunday: 'Sunday'
+    }
   },
   confidential_counsellor: {
     title: 'Confidential Counsellor',

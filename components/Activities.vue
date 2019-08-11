@@ -1,7 +1,7 @@
 <template>
-  <div class="container px-4 mx-auto pt-24 pb-16">
+  <div class="container px-4 mx-auto py-12">
     <div class="text-center">
-      <h1 class="tracking-wide font-semibold uppercase text-2xl mb-12 mx-2">
+      <h1 class="tracking-wide font-semibold uppercase text-2xl mb-6 mx-2">
         {{ title }}
       </h1>
     </div>

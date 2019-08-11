@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <section class="information relative">
+    <section class="information relative pt-12">
       <Activities :title="$t('activities.title')" />
     </section>
 
@@ -79,7 +79,7 @@
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <section id="owee" class="bg-gray-200">
+    <section id="owee" class="bg-gray-200 md:pb-12">
       <OWeeSchedule :title="$t('owee.title')">
         {{ $t('owee.description') }}
       </OWeeSchedule>

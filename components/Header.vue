@@ -32,12 +32,12 @@
             border-2 border-white relative 
             "
           >
-            <nuxt-link v-if="$i18n.locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
+            <a v-if="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
               <GBFlag />
-            </nuxt-link>
-            <nuxt-link v-if="$i18n.locale == 'en'" :to="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+            </a>
+            <a v-if="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
               <NLFlag />
-            </nuxt-link>
+            </a>
           </div>
           <a href="https://dwhdelft.nl" class="text-white text-xl font-semibold no-underline mr-4">
             <DWHLogo class="h-8 ml-2 fill-current" />

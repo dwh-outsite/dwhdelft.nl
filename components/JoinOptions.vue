@@ -17,11 +17,11 @@
           </p>
         </div>
         <div>
-          <nuxt-link :to="leftUrl">
+          <a :href="leftUrl">
             <button class="block button-pink">
               {{ leftButtonText }}
             </button>
-          </nuxt-link>
+          </a>
         </div>
       </div>
       <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-4">
@@ -37,11 +37,11 @@
           </p>
         </div>
         <div>
-          <nuxt-link :to="rightUrl">
+          <a :href="rightUrl">
             <button class="block button-pink">
               {{ rightButtonText }}
             </button>
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>

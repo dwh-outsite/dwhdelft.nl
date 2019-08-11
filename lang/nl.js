@@ -15,6 +15,9 @@ export default {
       van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.`,
     invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 22:00</strong>'
   },
+  activities: {
+    title: 'Aankomende activiteiten'
+  },
   ways_to_join: {
     title: 'Kennismaken met <strong>Outsite</strong>?',
     kmg: {
@@ -35,14 +38,24 @@ export default {
       sign_up: 'Aanmelden voor een barbuddy'
     }
   },
-  days: {
-    monday: 'Maandag',
-    tuesday: 'Dinsdag',
-    wednesday: 'Woensdag',
-    thursday: 'Donderdag',
-    friday: 'Vrijdag',
-    saturday: 'Zaterdag',
-    sunday: 'Zondag'
+  video: {
+    title: '<strong>Outsite</strong> in 120 seconden'
+  },
+  owee: {
+    title: 'OWee Programma 2019',
+    description: `Van 18 t/m 22 augustus vindt de Delftse introductieweek, de OWee, plaats. Tijdens deze week
+      organiseren wij allerlei activiteiten om te laten zien wat voor vereniging wij zijn. Hierdoor kun jij erachter
+      komen of Outsite de vereniging is die bij je past. We hebben sowieso elke avond een leuk feestje, maar doen ook
+      andere leuke dingen die je hieronder in het schema kunt zien! We hopen je te zien tijdens de OWee!`,
+    days: {
+      monday: 'Maandag',
+      tuesday: 'Dinsdag',
+      wednesday: 'Woensdag',
+      thursday: 'Donderdag',
+      friday: 'Vrijdag',
+      saturday: 'Zaterdag',
+      sunday: 'Zondag'
+    }
   },
   confidential_counsellor: {
     title: 'Vertrouwenspersoon',

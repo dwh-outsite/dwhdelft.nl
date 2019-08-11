@@ -3,7 +3,7 @@
     <h2 class="text-center tracking-wide font-semibold uppercase text-2xl mx-2 mb-6">
       {{ title }}
     </h2>
-    <p class="text-xl text-center leading-normal text-grey-darkest md:px-64">
+    <p class="text-xl text-center leading-normal text-grey-darkest xl:px-64">
       <slot></slot>
     </p>
     <div class="md:flex mb-4">
@@ -19,7 +19,7 @@
             ]"
             @click="currentDay = day"
           >
-            {{ $t('days.' + day.toLowerCase()) }}
+            {{ $t('owee.days.' + day.toLowerCase()) }}
           </button>
         </div>
         <div class="mt-4">

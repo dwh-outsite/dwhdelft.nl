@@ -7,7 +7,11 @@ module.exports = {
   theme: {
     extend: {
       height: {
+        7: '1.75rem',
         28: '7rem'
+      },
+      width: {
+        7: '1.75rem'
       },
       colors: {
         pink: {

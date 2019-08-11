@@ -26,7 +26,21 @@
             Contact
           </a>
         </div>
-        <div>
+        <div class="flex items-center">
+          <div
+            class="
+              rounded-full w-7 h-7 bg-white mr-1 md:mr-4 border-2 border-white
+              flex items-center justify-center 
+              overflow-hidden relative 
+            "
+          >
+            <a v-if="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
+              <GBFlag />
+            </a>
+            <a v-if="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+              <NLFlag />
+            </a>
+          </div>
           <a href="https://dwhdelft.nl" class="text-white text-xl font-semibold no-underline mr-4">
             <DWHLogo class="h-8 ml-2 fill-current" />
           </a>
@@ -49,12 +63,16 @@
 <script>
 import OutsiteLogo from '@/assets/images/outsite_logo.svg'
 import DWHLogo from '@/assets/images/dwh_logo.svg'
+import NLFlag from '@/assets/images/flags/nl.svg'
+import GBFlag from '@/assets/images/flags/gb.svg'
 
 export default {
   props: ['small'],
   components: {
     OutsiteLogo,
-    DWHLogo
+    DWHLogo,
+    NLFlag,
+    GBFlag
   }
 }
 </script>

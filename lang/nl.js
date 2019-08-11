@@ -13,7 +13,7 @@ export default {
       Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
       kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
       van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.`,
-    invitation: 'Kom gerust langs op onze baravond: Elke donderdag vanaf 22:00.'
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 22:00</strong>'
   },
   ways_to_join: {
     title: 'Kennismaken met <strong>Outsite</strong>?',

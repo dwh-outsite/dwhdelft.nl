@@ -24,21 +24,33 @@
     </header>
 
     <section class="introduction">
-      <div class="container mx-auto px-4 pt-12 pb-24 md:flex">
-        <div class="flex-1 md:w-1/2">
-          <p class="text-l md:text-xl leading-normal text-gray-800" v-html="$t('description.text')"></p>
-          <br />
-          <p class="text-l md:text-xl leading-normal text-pink-400">
-            <strong>{{ $t('description.invitation') }}</strong>
-          </p>
+      <div class="container mx-auto pt-12 pb-24 md:flex">
+        <div class="flex-1 md:w-1/2 px-4">
+          <p class="text-lg md:text-xl leading-relaxed text-gray-800" v-html="$t('description.text')"></p>
+          <div
+            class="
+              rounded shadow-xl bg-pink-400 text-lg md:text-xl text-white my-12 md:mt-10 p-4 relative
+              w-full md:w-auto md:inline-flex items-center
+            "
+          >
+            <div
+              class="
+                rounded-full w-16 h-16 p-4 bg-white text-pink-400 shadow md:shadow-none
+                absolute -top-8 md:static
+              "
+            >
+              <Zondicon icon="explore" class="fill-current" />
+            </div>
+            <div class="mt-6 md:mt-0 md:ml-4" v-html="$t('description.invitation')" />
+          </div>
         </div>
-        <div class="flex-1 md:w-1/2 panda-container">
+        <div class="flex-1 md:w-1/2 overflow-hidden md:overflow-visible">
           <Panda class="panda"></Panda>
         </div>
       </div>
     </section>
 
-    <section class="information">
+    <section class="information relative">
       <Activities title="Aankomende activiteiten" />
     </section>
 
@@ -79,6 +91,8 @@
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
+
 import Header from '~/components/Header'
 import Panda from '@/assets/images/outsite_panda_cropped.svg'
 import Activities from '~/components/Activities'
@@ -93,16 +107,13 @@ export default {
     Activities,
     JoinOptions,
     Video,
-    OWeeSchedule
+    OWeeSchedule,
+    Zondicon
   }
 }
 </script>
 
 <style>
-.information {
-  @apply relative;
-}
-
 .information::before {
   @apply bg-gray-200 absolute w-full;
   height: 250%;
@@ -121,10 +132,6 @@ export default {
 
   bottom: 0rem;
   left: 5rem;
-}
-
-.panda-container {
-  height: inherit;
 }
 
 .introduction {

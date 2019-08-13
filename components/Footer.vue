@@ -18,7 +18,7 @@
               </a>
             </div>
             <div class="mt-8 md:mt-0">
-              <img src="~/assets/images/board17.png" class="w-full md:w-auto md:h-64 shadow-xl" />
+              <img src="~/assets/images/board17.jpg" class="w-full md:w-auto md:h-64 shadow-xl" />
             </div>
           </div>
         </div>

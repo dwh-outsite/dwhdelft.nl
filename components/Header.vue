@@ -48,7 +48,7 @@
       </div>
     </nav>
     <div class="hero">
-      <video autoplay muted loop class="hidden md:block w-full opacity-50">
+      <video id="headervid" preload="metadata" muted loop class="hidden md:block w-full opacity-50">
         <source src="/outsite_web_bg.mp4" type="video/mp4" />
       </video>
     </div>
@@ -73,6 +73,11 @@ export default {
     DWHLogo,
     NLFlag,
     GBFlag
+  },
+  mounted() {
+    window.addEventListener('load', () => {
+      document.getElementById('headervid').play()
+    })
   }
 }
 </script>

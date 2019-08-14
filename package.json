@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "csv-loader": "^3.0.2",
-    "moment": "^2.24.0",
+    "dayjs": "^1.8.15",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.12.7",
     "nuxt-svg-loader": "^1.0.1",
@@ -44,6 +44,7 @@
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.2.2",
     "nodemon": "^1.18.9",
+    "nuxt-purgecss": "^0.2.1",
     "prettier": "^1.16.4",
     "tailwind-heropatterns": "^0.0.7",
     "tailwindcss": "^1.0.5"

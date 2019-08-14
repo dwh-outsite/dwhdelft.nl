@@ -19,7 +19,7 @@
 
 <script>
 import axios from 'axios'
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 export default {
   props: ['title'],
@@ -29,20 +29,18 @@ export default {
     }
   },
   mounted() {
-    moment.locale('nl')
     axios.get('/activities.json').then(response => {
       this.activities = response.data.data.sort((a, b) => a.start_time.localeCompare(b.start_time)).splice(0, 3)
     })
   },
   methods: {
     formatDate(date) {
-      moment.locale(this.$i18n.locale)
 
       if (this.$i18n.locale === 'nl') {
-        return moment(date).format('D MMMM YYYY [om] HH:mm uur')
+        return dayjs(date).format('D MMMM YYYY [om] HH:mm uur')
       }
 
-      return moment(date).format('MMMM Do, YYYY [at] h:mm A')
+      return dayjs(date).format('MMMM Do, YYYY [at] h:mm A')
     }
   }
 }

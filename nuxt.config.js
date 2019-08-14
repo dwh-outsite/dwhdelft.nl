@@ -47,6 +47,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     'nuxt-i18n',
+    'nuxt-purgecss',
     'nuxt-svg-loader',
     '@bazzite/nuxt-netlify'
   ],
@@ -75,6 +76,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    extractCSS: true,
     postcss: {
       plugins: {
         tailwindcss: path.resolve(__dirname, './tailwind.config.js')

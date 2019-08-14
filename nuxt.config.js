@@ -141,6 +141,11 @@ export default {
       {
         from: '/outcamp',
         to: 'https://docs.google.com/forms/d/e/1FAIpQLSdQkRhEQR3e3q_fnOkseETCB4fXYQE-ObFUkMHJM0sYwGBgYg/viewform'
+      },
+      {
+        from: 'https://outsite.netlify.com/*',
+        to: 'https://outsite.nl/:splat',
+        status: '301!' 
       }
     ]
   }

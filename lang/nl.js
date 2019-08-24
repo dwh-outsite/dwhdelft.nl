@@ -32,7 +32,7 @@ export default {
     bar_buddy: {
       title: 'Barbuddy Systeem',
       description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
-        voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jouw de ins en outs kan vertellen over de 
+        voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de 
         vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
       action: 'Vind een barbuddy',
       sign_up: 'Aanmelden voor een barbuddy'

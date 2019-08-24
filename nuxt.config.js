@@ -143,6 +143,10 @@ export default {
         to: 'https://docs.google.com/forms/d/e/1FAIpQLSdQkRhEQR3e3q_fnOkseETCB4fXYQE-ObFUkMHJM0sYwGBgYg/viewform'
       },
       {
+        from: '/eatingout',
+        to: 'https://dwhdelft.nl/eatingout/'
+      }, 
+      {
         from: 'https://outsite.netlify.com/*',
         to: 'https://outsite.nl/:splat',
         status: '301!' 

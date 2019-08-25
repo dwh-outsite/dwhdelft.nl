@@ -16,7 +16,21 @@ export default {
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
   },
   activities: {
-    title: 'Upcoming activities'
+    title: 'Upcoming activities',
+    defaults: {
+      bar: {
+        banner_title: 'Weekly open bar night',
+        banner_subtitle: 'Age limit 28 years',
+        title: 'Bar Night',
+        date: 'Every Thursday from 10pm'
+      },
+      eating_out: {
+        banner_title: 'Weekly dinner',
+        banner_subtitle: 'Members only, registration required',
+        title: 'EatingOUT',
+        date: 'Every Tuesday at 7pm'
+      }
+    }
   },
   ways_to_join: {
     title: 'Ready to check out <strong>Outsite</strong>?',

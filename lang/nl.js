@@ -16,7 +16,21 @@ export default {
     invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 22:00</strong>'
   },
   activities: {
-    title: 'Aankomende activiteiten'
+    title: 'Aankomende activiteiten',
+    defaults: {
+      bar: {
+        banner_title: 'Wekelijkse open baravond',
+        banner_subtitle: 'Leeftijdsgrens 28 jaar',
+        title: 'Baravond',
+        date: 'Elke donderdag vanaf 22.00 uur'
+      },
+      eating_out: {
+        banner_title: 'Wekelijkse eettafel',
+        banner_subtitle: 'Alleen voor leden, aanmelden verplicht',
+        title: 'EatingOUT',
+        date: 'Elke dinsdag om 19.00 uur'
+      }
+    }
   },
   ways_to_join: {
     title: 'Kennismaken met <strong>Outsite</strong>?',

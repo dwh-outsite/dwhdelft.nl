@@ -7,11 +7,13 @@
     </div>
     <div class="md:flex justify-center">
       <div v-for="activity in activities" :key="activity.name" class="bg-white rounded shadow flex-1 mx-2 mt-4">
-        <img :src="activity.cover.source" class="rounded-t" />
-        <div class="p-4 pt-3">
-          <h3 class="text-pink-400 text-xl font-bold">{{ activity.name }}</h3>
-          <span class="text-gray-500">{{ formatDate(activity.start_time) }}</span>
-        </div>
+        <a :href="'https://www.facebook.com/events/' + activity.id" target="_blank">
+          <img :src="activity.cover.source" class="rounded-t" />
+          <div class="p-4 pt-3">
+            <h3 class="text-pink-400 text-xl font-bold">{{ activity.name }}</h3>
+            <span class="text-gray-500">{{ formatDate(activity.start_time) }}</span>
+          </div>
+        </a>
       </div>
       <div v-if="activities.length < 3" class="bg-white rounded shadow flex-1 mx-2 mt-4">
         <div class="flex flex-col h-full">
@@ -20,15 +22,15 @@
               <Zondicon icon="beverage" class="fill-current" />
             </div>
             <h3 class="text-xl font-bold uppercase tracking-wide text-white text-center">
-              Wekelijkse open baravond
+              {{ $t('activities.defaults.bar.banner_title') }}
             </h3>
             <h4 class="uppercase tracking-wide text-white text-center">
-              Leeftijdsgrens 28 jaar
+              {{ $t('activities.defaults.bar.banner_subtitle') }}
             </h4>
           </div>
           <div class="p-4 pt-3">
-            <h3 class="text-pink-400 text-xl font-bold">Baravond</h3>
-            <span class="text-gray-500">Elke donderdag vanaf 22.00 uur</span>
+            <h3 class="text-pink-400 text-xl font-bold">{{ $t('activities.defaults.bar.title') }}</h3>
+            <span class="text-gray-500">{{ $t('activities.defaults.bar.date') }}</span>
           </div>
         </div>
       </div>
@@ -40,15 +42,15 @@
                 <Zondicon icon="location-food" class="fill-current" />
               </div>
               <h3 class="text-xl font-bold uppercase tracking-wide text-white text-center">
-                Wekelijkse eettafel
+                {{ $t('activities.defaults.eating_out.banner_title') }}
               </h3>
               <h4 class="uppercase tracking-wide text-white text-center">
-                Alleen voor leden, aanmelden verplicht
+                {{ $t('activities.defaults.eating_out.banner_subtitle') }}
               </h4>
             </div>
             <div class="p-4 pt-3">
-              <h3 class="text-pink-400 text-xl font-bold">EatingOUT</h3>
-              <span class="text-gray-500">Elke dinsdag om 19.00 uur</span>
+              <h3 class="text-pink-400 text-xl font-bold">{{ $t('activities.defaults.eating_out.title') }}</h3>
+              <span class="text-gray-500">{{ $t('activities.defaults.eating_out.date') }}</span>
             </div>
           </div>
         </a>
@@ -81,7 +83,7 @@ export default {
         return dayjs(date).format('D MMMM YYYY [om] HH:mm uur')
       }
 
-      return dayjs(date).format('MMMM Do, YYYY [at] h:mm A')
+      return dayjs(date).format('MMMM D, YYYY [at] h:mm A')
     }
   }
 }

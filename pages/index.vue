@@ -50,10 +50,8 @@
       </div>
     </section>
 
-    <section id="owee" class="information relative pt-12">
-      <OWeeSchedule :title="$t('owee.title')">
-        {{ $t('owee.description') }}
-      </OWeeSchedule>
+    <section class="information relative pt-12">
+      <Activities :title="$t('activities.title')" />
     </section>
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
@@ -81,8 +79,10 @@
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <section class="bg-gray-200 md:pb-12">
-      <Activities :title="$t('activities.title')" />
+    <section id="owee" class="bg-gray-200 md:pb-12">
+      <OWeeSchedule :title="$t('owee.title')">
+        {{ $t('owee.description') }}
+      </OWeeSchedule>
     </section>
   </div>
 </template>

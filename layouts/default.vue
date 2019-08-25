@@ -19,9 +19,10 @@
         :dwh-description="$t('footer.dwhDescription')"
       >
         <template v-slot:board-members>
-          <BoardMember name="Casper Boone" :role="$t('footer.board.president')" email="voorzitter@outsite.nl" />
-          <BoardMember name="Daan Verrer" :role="$t('footer.board.secretary')" email="secretaris@outsite.nl" />
-          <BoardMember name="Joël Abrahams" :role="$t('footer.board.treasurer')" email="penningmeester@outsite.nl" />
+          <BoardMember name="Niv Bharos" :role="$t('footer.board.president')" email="voorzitter@outsite.nl" />
+          <BoardMember name="Ivo Brands" :role="$t('footer.board.secretary')" email="secretaris@outsite.nl" />
+          <BoardMember name="Bouke Stoelinga" :role="$t('footer.board.treasurer')" email="penningmeester@outsite.nl" />
+          <BoardMember name="Eva Pelk" :role="$t('footer.board.external_affairs')" email="extern@outsite.nl" />
         </template>
       </Footer>
     </footer>

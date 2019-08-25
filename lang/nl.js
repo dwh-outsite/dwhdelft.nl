@@ -123,7 +123,8 @@ export default {
     board: {
       president: 'Voorzitter',
       secretary: 'Secretaris',
-      treasurer: 'Penningmeester'
+      treasurer: 'Penningmeester',
+      external_affairs: 'Extern'
     }
   }
 }

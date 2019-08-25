@@ -20,15 +20,15 @@
               <Zondicon icon="beverage" class="fill-current" />
             </div>
             <h3 class="text-xl font-bold uppercase tracking-wide text-white text-center">
-              Wekelijkse open baravond
+              {{ $t('activities.defaults.bar.banner_title') }}
             </h3>
             <h4 class="uppercase tracking-wide text-white text-center">
-              Leeftijdsgrens 28 jaar
+              {{ $t('activities.defaults.bar.banner_subtitle') }}
             </h4>
           </div>
           <div class="p-4 pt-3">
-            <h3 class="text-pink-400 text-xl font-bold">Baravond</h3>
-            <span class="text-gray-500">Elke donderdag vanaf 22.00 uur</span>
+            <h3 class="text-pink-400 text-xl font-bold">{{ $t('activities.defaults.bar.title') }}</h3>
+            <span class="text-gray-500">{{ $t('activities.defaults.bar.date') }}</span>
           </div>
         </div>
       </div>
@@ -40,15 +40,15 @@
                 <Zondicon icon="location-food" class="fill-current" />
               </div>
               <h3 class="text-xl font-bold uppercase tracking-wide text-white text-center">
-                Wekelijkse eettafel
+                {{ $t('activities.defaults.eating_out.banner_title') }}
               </h3>
               <h4 class="uppercase tracking-wide text-white text-center">
-                Alleen voor leden, aanmelden verplicht
+                {{ $t('activities.defaults.eating_out.banner_subtitle') }}
               </h4>
             </div>
             <div class="p-4 pt-3">
-              <h3 class="text-pink-400 text-xl font-bold">EatingOUT</h3>
-              <span class="text-gray-500">Elke dinsdag om 19.00 uur</span>
+              <h3 class="text-pink-400 text-xl font-bold">{{ $t('activities.defaults.eating_out.title') }}</h3>
+              <span class="text-gray-500">{{ $t('activities.defaults.eating_out.date') }}</span>
             </div>
           </div>
         </a>
@@ -81,7 +81,7 @@ export default {
         return dayjs(date).format('D MMMM YYYY [om] HH:mm uur')
       }
 
-      return dayjs(date).format('MMMM Do, YYYY [at] h:mm A')
+      return dayjs(date).format('MMMM D, YYYY [at] h:mm A')
     }
   }
 }

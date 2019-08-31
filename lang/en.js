@@ -125,7 +125,8 @@ export default {
     board: {
       president: 'President',
       secretary: 'Secretary',
-      treasurer: 'Treasurer'
+      treasurer: 'Treasurer',
+      external_affairs: 'External Affairs'
     }
   }
 }

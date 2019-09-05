@@ -41,7 +41,11 @@ export default {
         verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
       sign_up: 'Aanmelden voor de KMG',
-      next: 'De volgende KMG start in: <strong>september 2019</strong>'
+      next: `<strong>De KennisMakingsGroep van september is vol</strong>, maar maak je geen zorgen! In februari zal er
+        een nieuwe groep van start gaan. Je kunt je daar al voor aanmelden, geef dat dan even aan in de comments van
+        je aanmelding. In de tussentijd ben je natuurlijk van harte welkom op de donderdag baravonden vanaf 22.00! Je
+        kunt ook een <a href="/barbuddy" class="text-pink-400">barbuddy</a> aanvragen die je de ins en outs van de
+        vereniging kan vertellen en je kan voorstellen aan wat mensen.`
     },
     bar_buddy: {
       title: 'Barbuddy Systeem',

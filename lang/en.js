@@ -42,7 +42,11 @@ export default {
       amongst others.`,
       action: 'Join the KMG',
       sign_up: 'Sign up for the KMG',
-      next: 'The next KMG will start in: <strong>September 2019</strong>'
+      next: `<strong>The Introduction Group of September is full</strong>, but don’t worry! In February there will be
+      another Introduction Group starting. You can already register for that one, please let us know in the comments
+      that you would like to join that one. In the mean time you are ofcourse very welcome every Thursday from 10pm at
+      the regular bar evenings! You can also ask for a <a href="/en/barbuddy" class="text-pink-400">barbuddy</a> who can
+      show you around and introduce you to some people.`
     },
     bar_buddy: {
       title: 'Bar Buddy System',

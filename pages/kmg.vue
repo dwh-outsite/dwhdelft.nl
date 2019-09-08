@@ -54,6 +54,25 @@
             <input type="text" name="city" :placeholder="$t('forms.placeholder.residence')" />
           </p>
           <p class="form-element">
+            <label class="required">{{ $t('forms.label.language') }}</label>
+            <label class="radio">
+              <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
+              {{ $t('forms.label.languages.dutch') }}
+            </label>
+            <label class="radio">
+              <input type="radio" name="language" value="english" :checked="$i18n.locale == 'en'" />
+              {{ $t('forms.label.languages.english') }}
+            </label>
+            <label class="radio">
+              <input type="radio" name="language" value="no_preference" />
+              {{ $t('forms.label.languages.no_preference') }}
+            </label>
+          </p>
+          <p class="form-element">
+            <label>{{ $t('forms.label.pronouns') }}</label>
+            <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+          </p>
+          <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>

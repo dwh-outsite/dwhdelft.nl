@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="flex-1 md:w-1/2 overflow-hidden md:overflow-visible relative">
-          <Panda class="panda"></Panda>
+          <Panda class="panda relative md:absolute"></Panda>
         </div>
       </div>
     </section>
@@ -123,7 +123,6 @@ export default {
 .panda {
   z-index: -2;
 
-  position: absolute;
   width: 100%;
   height: inherit;
 

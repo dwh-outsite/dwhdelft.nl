@@ -91,7 +91,7 @@ export default {
   },
   forms: {
     label: {
-      name: 'Naam',
+      name: 'Hoe mogen we je noemen?',
       email: 'E-mailadres',
       language: 'Taal',
       languages: {

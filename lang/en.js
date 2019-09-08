@@ -93,7 +93,7 @@ export default {
   },
   forms: {
     label: {
-      name: 'Name',
+      name: 'How should we call you?',
       email: 'Email address',
       language: 'Language',
       languages: {

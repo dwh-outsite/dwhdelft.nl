@@ -9,8 +9,8 @@
     </header>
 
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="w-2/3 mx-auto">
-        <p class="my-12 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.bar_buddy.description') }}</p>
+      <div class="md:w-2/3 mx-4 md:mx-auto">
+        <p class="mt-8 mb-4 md:mt-0 md:mb-12" v-html="$t('ways_to_join.bar_buddy.description')" />
       </div>
     </section>
 
@@ -20,7 +20,7 @@
           {{ $t('ways_to_join.bar_buddy.sign_up') }}
         </h2>
         <form
-          class="w-2/3 mx-auto my-12"
+          class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12"
           name="barbuddy"
           method="POST"
           data-netlify="true"
@@ -59,7 +59,7 @@
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>
-          <p class="my-8 text-right">
+          <p class="mt-8 md:my-8 text-right">
             <button type="submit" class="button-pink">
               {{ $t('forms.buttons.sign_up') }}
             </button>

@@ -1,5 +1,5 @@
 <template>
-  <div id="header" :class="[small ? 'header-small' : '', 'relative']">
+  <div id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
         <a :href="localePath('index')">
@@ -47,11 +47,12 @@
         </div>
       </div>
     </nav>
-    <div class="hero">
-      <video id="headervid" preload="metadata" muted loop class="hidden md:block w-full opacity-50">
+    <div class="video-container">
+      <video id="headervid" preload="metadata" muted loop class="opacity-50">
         <source src="/outsite_web_bg.mp4" type="video/mp4" />
       </video>
     </div>
+    <div class="hero"></div>
     <div class="relative flex items-center h-full">
       <div class="container px-4 mx-auto my-40">
         <slot></slot>
@@ -104,13 +105,33 @@ export default {
 }
 
 .hero {
-  @apply bg-gray-700 absolute w-full h-full overflow-hidden;
+  @apply bg-white absolute w-full;
   transform: skewY(-7deg);
   transform-origin: 0;
+  height: 100rem;
+  bottom: -100rem;
 }
 
-.hero video {
-  transform: skewY(7deg);
-  transform-origin: 0;
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

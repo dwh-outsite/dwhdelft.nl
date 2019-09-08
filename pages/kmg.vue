@@ -69,6 +69,10 @@
             </label>
           </p>
           <p class="form-element">
+            <label>{{ $t('forms.label.pronouns') }}</label>
+            <input type="text" name="name" :placeholder="$t('forms.placeholder.pronouns')" />
+          </p>
+          <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>

@@ -104,7 +104,8 @@ export default {
       remarks: 'Do you have any further questions?',
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
-      residence: 'City of residence'
+      residence: 'City of residence',
+      pronouns: 'Pronouns'
     },
     placeholder: {
       name: 'Name',
@@ -112,7 +113,8 @@ export default {
       remarks: 'Remarks or questions',
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
-      residence: 'City name'
+      residence: 'City name',
+      pronouns: 'e.g. she/her, he/him, they/them'
     },
     buttons: {
       sign_up: 'Sign up'

@@ -102,7 +102,8 @@ export default {
       remarks: 'Heb je verder nog vragen?',
       date_of_birth: 'Geboortedatum',
       phone_number: 'Telefoonnummer',
-      residence: 'Woonplaats'
+      residence: 'Woonplaats',
+      pronouns: 'Pronouns'
     },
     placeholder: {
       name: 'Naam',
@@ -110,7 +111,8 @@ export default {
       remarks: 'Opmerkingen of vragen',
       date_of_birth: 'Geboortedatum',
       phone_number: 'Telefoonnummer',
-      residence: 'Naam van stad'
+      residence: 'Naam van stad',
+      pronouns: 'bv. zij/haar, hij/hem, hen/hun'
     },
     buttons: {
       sign_up: 'Aanmelden'

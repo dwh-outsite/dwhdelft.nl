@@ -43,11 +43,11 @@
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
             <label class="radio">
-              <input type="radio" name="language" value="dutch" checked />
+              <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
               {{ $t('forms.label.languages.dutch') }}
             </label>
             <label class="radio">
-              <input type="radio" name="language" value="english" />
+              <input type="radio" name="language" value="english" :checked="$i18n.locale == 'en'" />
               {{ $t('forms.label.languages.english') }}
             </label>
             <label class="radio">

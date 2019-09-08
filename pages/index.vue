@@ -79,7 +79,7 @@
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <section id="eating-out" class="bg-gray-200">
+    <section id="eatingout" class="bg-gray-200">
       <EatingOut />
     </section>
   </div>

@@ -14,6 +14,9 @@ module.exports = {
       width: {
         7: '1.75rem'
       },
+      maxWidth: {
+        56: '14rem'
+      },
       colors: {
         pink: {
           ...colors.pink,

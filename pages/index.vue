@@ -29,8 +29,8 @@
           <p class="text-lg md:text-xl leading-relaxed text-gray-800" v-html="$t('description.text')"></p>
           <div
             class="
-              rounded shadow-xl bg-pink-400 text-lg md:text-xl text-white my-12 md:mt-10 p-4 relative
-              w-full md:w-auto md:inline-flex items-center
+              rounded shadow-xl bg-pink-400 text-lg md:text-xl text-white my-12 md:mt-10 md:mb-24 p-4 relative
+              w-full md:w-auto md:inline-flex items-center 
             "
           >
             <div
@@ -44,7 +44,7 @@
             <div class="mt-6 md:mt-0 md:ml-4" v-html="$t('description.invitation')" />
           </div>
         </div>
-        <div class="flex-1 md:w-1/2 overflow-hidden md:overflow-visible">
+        <div class="flex-1 md:w-1/2 overflow-hidden md:overflow-visible relative">
           <Panda class="panda"></Panda>
         </div>
       </div>
@@ -123,7 +123,7 @@ export default {
 .panda {
   z-index: -2;
 
-  position: relative;
+  position: absolute;
   width: 100%;
   height: inherit;
 

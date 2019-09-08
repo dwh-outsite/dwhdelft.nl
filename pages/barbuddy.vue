@@ -57,7 +57,7 @@
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
-            <input type="text" name="name" :placeholder="$t('forms.placeholder.pronouns')" />
+            <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>

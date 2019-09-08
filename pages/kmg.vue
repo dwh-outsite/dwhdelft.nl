@@ -9,9 +9,9 @@
     </header>
 
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="w-2/3 mx-auto">
-        <p class="my-12 mb-8 mt-12 md:mt-0">{{ $t('ways_to_join.kmg.description') }}</p>
-        <p class="my-12" v-html="$t('ways_to_join.kmg.next')"></p>
+      <div class="md:w-2/3 mx-4 md:mx-auto">
+        <p class="my-8 md:mt-0 md:mb-12">{{ $t('ways_to_join.kmg.description') }}</p>
+        <p class="mb-4 md:my-12" v-html="$t('ways_to_join.kmg.next')"></p>
       </div>
     </section>
 
@@ -20,7 +20,13 @@
         <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
           {{ $t('ways_to_join.kmg.sign_up') }}
         </h2>
-        <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form
+          class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12"
+          name="kmg"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
           <p class="hidden">
             <label>
               Don’t fill this out if you're human:
@@ -51,7 +57,7 @@
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>
-          <p class="my-8 text-right">
+          <p class="mt-8 md:my-8 text-right">
             <button type="submit" class="button-pink">
               {{ $t('forms.buttons.sign_up') }}
             </button>

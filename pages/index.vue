@@ -79,10 +79,8 @@
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
     </section>
 
-    <section id="owee" class="bg-gray-200 md:pb-12">
-      <OWeeSchedule :title="$t('owee.title')">
-        {{ $t('owee.description') }}
-      </OWeeSchedule>
+    <section id="eatingout" class="bg-gray-200">
+      <EatingOut />
     </section>
   </div>
 </template>
@@ -95,7 +93,7 @@ import Panda from '@/assets/images/outsite_panda_cropped.svg'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
-import OWeeSchedule from '~/components/OWeeSchedule'
+import EatingOut from '~/components/EatingOut'
 
 export default {
   components: {
@@ -104,7 +102,7 @@ export default {
     Activities,
     JoinOptions,
     Video,
-    OWeeSchedule,
+    EatingOut,
     Zondicon
   }
 }

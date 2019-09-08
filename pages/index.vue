@@ -23,7 +23,7 @@
       </Header>
     </header>
 
-    <section class="introduction">
+    <section class="introduction overflow-x-hidden">
       <div class="container mx-auto pt-12 pb-24 md:flex">
         <div class="flex-1 md:w-1/2 px-4">
           <p class="text-lg md:text-xl leading-relaxed text-gray-800" v-html="$t('description.text')"></p>

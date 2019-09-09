@@ -43,8 +43,8 @@
 
     <hr class="border-b border-gray-600 m-0" />
 
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex">
+    <div class="container mx-auto px-4 py-4 md:flex justify-between items-center">
+      <div class="flex justify-center md:justify-start">
         <a href="https://instagram.com/outsite_delft" target="_blank">
           <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
             <InstagramIcon class="fill-current w-6" />
@@ -66,7 +66,11 @@
           </div>
         </a>
       </div>
-      <a href="https://dwhdelft.nl/" target="_blank" class="text-gray-400 hover:text-white flex justify-end">
+      <a
+        href="https://dwhdelft.nl/"
+        target="_blank"
+        class="text-gray-400 hover:text-white flex justify-center md:justify-end pt-4 md:pt-0"
+      >
         {{ dwhDescription }}
         <DWHLogo class="h-8 ml-2 fill-current" />
       </a>

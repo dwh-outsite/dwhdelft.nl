@@ -43,8 +43,34 @@
 
     <hr class="border-b border-gray-600 m-0" />
 
-    <div class="container mx-auto px-4">
-      <a href="https://dwhdelft.nl/" target="_blank" class="text-gray-400 hover:text-white flex py-4 justify-end">
+    <div class="container mx-auto px-4 py-4 md:flex justify-between items-center">
+      <div class="flex justify-center md:justify-start">
+        <a href="https://instagram.com/outsite_delft" target="_blank">
+          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
+            <InstagramIcon class="fill-current w-6" />
+          </div>
+        </a>
+        <a href="https://facebook.com/outsite" target="_blank">
+          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
+            <FacebookIcon class="fill-current w-6" />
+          </div>
+        </a>
+        <a href="https://youtube.com/channel/UCtsabdS5sH7EA-DjLkBPLfQ" target="_blank">
+          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
+            <YouTubeIcon class="fill-current w-6" />
+          </div>
+        </a>
+        <a href="https://github.com/dwh-outsite/outsite.nl" target="_blank">
+          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700">
+            <GitHubIcon class="fill-current w-6" />
+          </div>
+        </a>
+      </div>
+      <a
+        href="https://dwhdelft.nl/"
+        target="_blank"
+        class="text-gray-400 hover:text-white flex justify-center md:justify-end pt-4 md:pt-0"
+      >
         {{ dwhDescription }}
         <DWHLogo class="h-8 ml-2 fill-current" />
       </a>
@@ -55,6 +81,10 @@
 <script>
 import Zondicon from 'vue-zondicons'
 import DWHLogo from '@/assets/images/dwh_logo.svg'
+import InstagramIcon from '@/assets/images/social/instagram.svg'
+import FacebookIcon from '@/assets/images/social/facebook.svg'
+import GitHubIcon from '@/assets/images/social/github.svg'
+import YouTubeIcon from '@/assets/images/social/youtube.svg'
 
 export default {
   props: [
@@ -69,7 +99,11 @@ export default {
   ],
   components: {
     Zondicon,
-    DWHLogo
+    DWHLogo,
+    InstagramIcon,
+    FacebookIcon,
+    GitHubIcon,
+    YouTubeIcon
   }
 }
 </script>

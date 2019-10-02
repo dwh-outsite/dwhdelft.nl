@@ -147,6 +147,10 @@ export default {
         to: 'https://dwhdelft.nl/eatingout/'
       }, 
       {
+        from: '/song',
+        to: 'https://www.youtube.com/watch?v=YMMchSpbIJo'
+      }, 
+      {
         from: 'https://outsite.netlify.com/*',
         to: 'https://outsite.nl/:splat',
         status: '301!' 

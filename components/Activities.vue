@@ -61,6 +61,7 @@
 
 <script>
 import dayjs from 'dayjs'
+import 'dayjs/locale/nl'
 import Zondicon from 'vue-zondicons'
 import activities from '~/static/activities.json'
 
@@ -75,6 +76,7 @@ export default {
   methods: {
     formatDate(date) {
       if (this.$i18n.locale === 'nl') {
+        dayjs.locale('nl')
         return dayjs(date).format('D MMMM YYYY [om] HH:mm uur')
       }
 

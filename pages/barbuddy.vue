@@ -14,7 +14,44 @@
       </div>
     </section>
 
-    <section class="bg-gray-200 pt-12 pb-12">
+    <section class="bg-pink-200">
+      <div class="container px-4 mx-auto pt-8 pb-12">
+        <div class="text-center">
+          <h1 class="text-white font-medium text-5xl" v-html="$t('ways_to_join.bar_buddy.barbuddies_title')" />
+        </div>
+        <div class="md:flex flex-wrap -mx-4 mt-2">
+          <div v-for="buddy in barbuddies" :key="buddy.name" class="w-1/2 p-2">
+            <div class="bg-white rounded shadow p-8">
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center">
+                  <div class="rounded-full w-12 h-12 p-3 bg-pink-400 text-white">
+                    <Zondicon icon="user" class="fill-current" />
+                  </div>
+                  <h2 class="text-2xl font-bold ml-3 text-pink-400 uppercase tracking-wider">
+                    {{ buddy.name }}
+                  </h2>
+                </div>
+                <button class="block button-pink flex items-center" @click="meetWith(buddy)">
+                  {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
+                  <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
+                </button>
+              </div>
+              <p :class="['text-lg relative', buddy.readMore ? 'pb-8' : 'clamp-lines']">
+                <span class="absolute bottom-0 right-0 flex">
+                  <span class="w-32 block white-gradient" />
+                  <a class="text-pink-400 bg-white cursor-pointer" @click="buddy.readMore = !buddy.readMore">
+                    {{ $t('ways_to_join.bar_buddy.' + (buddy.readMore ? 'read_less' : 'read_more')) }}
+                  </a>
+                </span>
+                {{ buddy.bio }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="bg-gray-200 pt-12 pb-12">
       <div class="mx-auto container">
         <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
           {{ $t('ways_to_join.bar_buddy.sign_up') }}
@@ -37,10 +74,6 @@
             <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
           </p>
           <p class="form-element">
-            <label class="required">{{ $t('forms.label.email') }}</label>
-            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
-          </p>
-          <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
             <label class="radio">
               <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
@@ -56,8 +89,27 @@
             </label>
           </p>
           <p class="form-element">
+            <label class="required">{{ $t('forms.label.email') }}</label>
+            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
+          </p>
+          <p class="form-element">
+            <label>{{ $t('forms.label.phone_number') }}</label>
+            <input type="text" name="phonenumber" :placeholder="$t('forms.placeholder.phone_number')" />
+          </p>
+          <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+          </p>
+          <p class="form-element">
+            <label class="required">{{ $t('forms.label.barbuddy') }}</label>
+            <label class="radio">
+              <input type="radio" name="barbuddy" value="no_preference" checked="true" />
+              {{ $t('forms.label.languages.no_preference') }}
+            </label>
+            <label v-for="buddy in barbuddies" :key="buddy.name" class="radio">
+              <input type="radio" name="barbuddy" :value="buddy.name" :checked="buddy.selected" />
+              {{ buddy.name }}
+            </label>
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
@@ -75,11 +127,47 @@
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
 import Header from '~/components/Header'
 
 export default {
   components: {
-    Header
+    Header,
+    Zondicon
+  },
+  data() {
+    return {
+      barbuddies: Object.keys(this.$t('barbuddies')).map(name => {
+        return {
+          name,
+          bio: this.$t('barbuddies.' + name),
+          readMore: false,
+          selected: false
+        }
+      })
+    }
+  },
+  methods: {
+    meetWith(buddy) {
+      this.barbuddies.forEach(buddy => {
+        buddy.selected = false
+      })
+      window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
+      buddy.selected = true
+    }
   }
 }
 </script>
+
+<style>
+.clamp-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.white-gradient {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1));
+}
+</style>

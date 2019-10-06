@@ -7,10 +7,18 @@
     </div>
     <div class="md:flex justify-center">
       <div v-for="activity in activities" :key="activity.name" class="bg-white rounded shadow flex-1 mx-2 mt-4">
-        <a :href="'https://www.facebook.com/events/' + activity.id" target="_blank">
-          <img :src="activity.cover.source" class="rounded-t" />
-          <div class="p-4 pt-3">
-            <h3 class="text-pink-400 text-xl font-bold">{{ activity.name }}</h3>
+        <a
+          :href="'https://www.facebook.com/events/' + activity.id"
+          target="_blank"
+          class="flex flex-col justify-between h-full"
+        >
+          <div>
+            <img :src="activity.cover.source" class="rounded-t" />
+            <div class="px-4 pt-3">
+              <h3 class="text-pink-400 text-xl font-bold">{{ activity.name }}</h3>
+            </div>
+          </div>
+          <div class="px-4 pb-4">
             <span class="text-gray-500">{{ formatDate(activity.start_time) }}</span>
           </div>
         </a>

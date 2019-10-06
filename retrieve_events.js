@@ -8,5 +8,5 @@ axios
       process.env.FACEBOOK_PAGE_ACCESS_TOKEN
   )
   .then(response => {
-    fs.writeFile('dist/activities.json', JSON.stringify(response.data), 'utf8', () => {})
+    fs.writeFile('static/activities.json', JSON.stringify(response.data), 'utf8', () => {})
   })

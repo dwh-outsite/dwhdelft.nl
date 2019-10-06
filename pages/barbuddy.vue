@@ -19,9 +19,9 @@
         <div class="text-center">
           <h1 class="text-white font-medium text-5xl" v-html="$t('ways_to_join.bar_buddy.barbuddies_title')" />
         </div>
-        <div class="md:flex flex-wrap -mx-4 mt-2">
-          <div v-for="buddy in barbuddies" :key="buddy.name" class="w-1/2 p-2">
-            <div class="bg-white rounded shadow p-8">
+        <div class="md:flex flex-wrap -mx-2 mt-2">
+          <div v-for="buddy in barbuddies" :key="buddy.name" class="md:w-1/2 p-2">
+            <div class="bg-white rounded shadow p-6 md:p-8">
               <div class="flex justify-between items-center mb-4">
                 <div class="flex items-center">
                   <div class="rounded-full w-12 h-12 p-3 bg-pink-400 text-white">
@@ -31,7 +31,7 @@
                     {{ buddy.name }}
                   </h2>
                 </div>
-                <button class="block button-pink flex items-center" @click="meetWith(buddy)">
+                <button class="button-pink flex items-center hidden md:block" @click="meetWith(buddy)">
                   {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
                   <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
                 </button>
@@ -45,6 +45,10 @@
                 </span>
                 {{ buddy.bio }}
               </p>
+              <button class="button-pink flex items-center mt-4 block md:hidden" @click="meetWith(buddy)">
+                {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
+                <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
+              </button>
             </div>
           </div>
         </div>

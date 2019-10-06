@@ -39,7 +39,7 @@
               <p :class="['text-lg relative', buddy.readMore ? 'pb-8' : 'clamp-lines']">
                 <span class="absolute bottom-0 right-0 flex">
                   <span class="w-32 block white-gradient" />
-                  <a class="text-pink-400 bg-white cursor-pointer" @click="buddy.readMore = !buddy.readMore">
+                  <a class="text-pink-400 bg-white cursor-pointer" @click="readMore(buddy)">
                     {{ $t('ways_to_join.bar_buddy.' + (buddy.readMore ? 'read_less' : 'read_more')) }}
                   </a>
                 </span>
@@ -158,6 +158,9 @@ export default {
       })
       window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
       buddy.selected = true
+    },
+    readMore(buddy) {
+      buddy.readMore = !buddy.readMore
     }
   }
 }

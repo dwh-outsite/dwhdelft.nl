@@ -31,7 +31,7 @@
                     {{ buddy.name }}
                   </h2>
                 </div>
-                <button class="button-pink flex items-center hidden md:block" @click="meetWith(buddy)">
+                <button class="button-pink flex items-center hidden md:flex" @click="meetWith(buddy)">
                   {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
                   <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
                 </button>
@@ -45,7 +45,7 @@
                 </span>
                 {{ buddy.bio }}
               </p>
-              <button class="button-pink flex items-center mt-4 block md:hidden" @click="meetWith(buddy)">
+              <button class="button-pink flex items-center mt-4 flex md:hidden" @click="meetWith(buddy)">
                 {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
                 <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
               </button>

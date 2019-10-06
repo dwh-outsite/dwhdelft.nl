@@ -60,22 +60,17 @@
 </template>
 
 <script>
-import axios from 'axios'
 import dayjs from 'dayjs'
 import Zondicon from 'vue-zondicons'
+import activities from '~/static/activities.json'
 
 export default {
   props: ['title'],
   components: { Zondicon },
   data() {
     return {
-      activities: []
+      activities: activities.data.sort((a, b) => a.start_time.localeCompare(b.start_time)).splice(0, 3)
     }
-  },
-  mounted() {
-    axios.get('/activities.json').then(response => {
-      this.activities = response.data.data.sort((a, b) => a.start_time.localeCompare(b.start_time)).splice(0, 3)
-    })
   },
   methods: {
     formatDate(date) {

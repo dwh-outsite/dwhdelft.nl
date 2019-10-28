@@ -143,6 +143,10 @@ export default {
         to: 'https://docs.google.com/forms/d/e/1FAIpQLSdQkRhEQR3e3q_fnOkseETCB4fXYQE-ObFUkMHJM0sYwGBgYg/viewform'
       },
       {
+        from: '/outcamp-feedback',
+        to: 'https://docs.google.com/forms/d/e/1FAIpQLSf5AuHalc878zZiQDK5YEiCp-9qDZh1jPWMrJSGibN_cqhkrQ/viewform'
+      },
+      {
         from: '/eatingout',
         to: 'https://dwhdelft.nl/eatingout/'
       }, 

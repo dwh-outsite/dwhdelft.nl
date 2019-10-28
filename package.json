@@ -20,6 +20,7 @@
     "cross-env": "^5.2.0",
     "csv-loader": "^3.0.2",
     "dayjs": "^1.8.15",
+    "firebase": "^7.2.2",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.12.7",
     "nuxt-svg-loader": "^1.0.1",

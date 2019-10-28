@@ -60,68 +60,60 @@
         <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
           {{ $t('ways_to_join.bar_buddy.sign_up') }}
         </h2>
-        <form
-          class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12"
-          name="barbuddy"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
-          <p class="hidden">
-            <label>
-              Don’t fill this out if you're human:
-              <input name="bot-field" />
-            </label>
-          </p>
+        <div v-if="formStatus === 'finished'">
+          Form sucessfully submitted
+        </div>
+        <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
           <p class="form-element">
             <label class="required">{{ $t('forms.label.name') }}</label>
-            <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
+            <input v-model="form.name" type="text" :placeholder="$t('forms.placeholder.name')" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
             <label class="radio">
-              <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
+              <input v-model="form.language" type="radio" value="dutch" />
               {{ $t('forms.label.languages.dutch') }}
             </label>
             <label class="radio">
-              <input type="radio" name="language" value="english" :checked="$i18n.locale == 'en'" />
+              <input v-model="form.language" type="radio" value="english" />
               {{ $t('forms.label.languages.english') }}
             </label>
             <label class="radio">
-              <input type="radio" name="language" value="no_preference" />
+              <input v-model="form.language" type="radio" value="no_preference" />
               {{ $t('forms.label.languages.no_preference') }}
             </label>
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
-            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
+            <input v-model="form.email" type="email" :placeholder="$t('forms.placeholder.email')" required />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.phone_number') }}</label>
-            <input type="text" name="phonenumber" :placeholder="$t('forms.placeholder.phone_number')" />
+            <input v-model="form.phoneNumber" type="text" :placeholder="$t('forms.placeholder.phone_number')" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
-            <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+            <input v-model="form.pronouns" type="text" :placeholder="$t('forms.placeholder.pronouns')" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.barbuddy') }}</label>
             <label class="radio">
-              <input type="radio" name="barbuddy" value="no_preference" checked="true" />
+              <input v-model="form.barbuddy" type="radio" value="no_preference" />
               {{ $t('forms.label.languages.no_preference') }}
             </label>
             <label v-for="buddy in barbuddies" :key="buddy.name" class="radio">
-              <input type="radio" name="barbuddy" :value="buddy.name" :checked="buddy.selected" />
+              <input v-model="form.barbuddy" type="radio" :value="buddy.name" :checked="buddy.selected" />
               {{ buddy.name }}
             </label>
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
-            <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
+            <textarea v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>
+          <div id="recaptcha" />
           <p class="mt-8 md:my-8 text-right">
-            <button type="submit" class="button-pink">
-              {{ $t('forms.buttons.sign_up') }}
+            <button type="submit" class="button-pink" :disabled="formStatus === 'loading'">
+              {{ formStatus === 'loading' ? 'Loading' : $t('forms.buttons.sign_up') }}
             </button>
           </p>
         </form>
@@ -132,6 +124,7 @@
 
 <script>
 import Zondicon from 'vue-zondicons'
+import submitFormToFirebase from '~/modules/firebase-submitter'
 import Header from '~/components/Header'
 
 export default {
@@ -148,7 +141,17 @@ export default {
           readMore: false,
           selected: false
         }
-      })
+      }),
+      form: {
+        name: '',
+        language: this.$i18n.locale === 'nl' ? 'dutch' : 'english',
+        email: '',
+        phoneNumber: '',
+        pronouns: '',
+        barbuddy: 'no_preference',
+        remarks: ''
+      },
+      formStatus: 'start'
     }
   },
   methods: {
@@ -161,6 +164,20 @@ export default {
     },
     readMore(buddy) {
       buddy.readMore = !buddy.readMore
+    },
+    submit(event) {
+      event.preventDefault()
+
+      this.formStatus = 'loading'
+
+      submitFormToFirebase('kennismaken@dwhdelft.nl', 'barbuddy', this.form)
+        .then(() => {
+          this.formStatus = 'finished'
+          window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
+        })
+        .catch(() => {
+          alert('An error occurred. If this keeps happening, please send us an email.')
+        })
     }
   }
 }

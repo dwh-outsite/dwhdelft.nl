@@ -122,7 +122,12 @@ export default {
       pronouns: 'bv. zij/haar, hij/hem, hen/hun'
     },
     buttons: {
-      sign_up: 'Aanmelden'
+      sign_up: 'Aanmelden',
+      loading: 'Laden'
+    },
+    success: {
+      heading: 'Het formulier is succesvol verstuurd',
+      barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.'
     }
   },
   footer: {

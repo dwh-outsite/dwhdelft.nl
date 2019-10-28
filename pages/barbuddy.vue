@@ -61,7 +61,17 @@
           {{ $t('ways_to_join.bar_buddy.sign_up') }}
         </h2>
         <div v-if="formStatus === 'finished'">
-          Form sucessfully submitted
+          <div class="mx-auto container px-4 my-8 flex justify-center">
+            <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg flex items-center">
+              <div class="rounded-full w-16 h-16 p-3 bg-pink-400 text-white">
+                <Zondicon icon="checkmark-outline" class="fill-current w-10" />
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-xl">{{ $t('forms.success.heading') }}</h4>
+                <span class="text-gray-700">{{ $t('forms.success.barbuddy') }}</span>
+              </div>
+            </div>
+          </div>
         </div>
         <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
           <p class="form-element">
@@ -113,7 +123,7 @@
           <div id="recaptcha" />
           <p class="mt-8 md:my-8 text-right">
             <button type="submit" class="button-pink" :disabled="formStatus === 'loading'">
-              {{ formStatus === 'loading' ? 'Loading' : $t('forms.buttons.sign_up') }}
+              {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
             </button>
           </p>
         </form>

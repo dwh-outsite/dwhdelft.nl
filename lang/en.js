@@ -124,7 +124,12 @@ export default {
       pronouns: 'e.g. she/her, he/him, they/them'
     },
     buttons: {
-      sign_up: 'Sign up'
+      sign_up: 'Sign up',
+      loading: 'Loading'
+    },
+    success: {
+      heading: 'The form has been submitted successfully',
+      barbuddy: 'The bar buddy you selected will contact you as soon as possible.'
     }
   },
   footer: {

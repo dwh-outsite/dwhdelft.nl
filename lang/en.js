@@ -58,7 +58,7 @@ export default {
       sign_up: 'Sign up for a bar buddy',
       action: 'Find a bar buddy',
       meet_up_with: 'Meet up with',
-      barbuddies_title: 'Our <strong>Barbuddies</strong>',
+      barbuddies_title: 'Our <strong>Bar Buddies</strong>',
       read_more: 'Read more',
       read_less: 'Collapse'
     }

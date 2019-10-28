@@ -148,8 +148,7 @@ export default {
         return {
           name,
           bio: this.$t('barbuddies.' + name),
-          readMore: false,
-          selected: false
+          readMore: false
         }
       }),
       form: {
@@ -166,11 +165,8 @@ export default {
   },
   methods: {
     meetWith(buddy) {
-      this.barbuddies.forEach(buddy => {
-        buddy.selected = false
-      })
+      this.form.barbuddy = buddy.name
       window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
-      buddy.selected = true
     },
     readMore(buddy) {
       buddy.readMore = !buddy.readMore

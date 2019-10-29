@@ -1,3 +1,5 @@
+import barbuddies from '~/lang/en_barbuddies.js'
+
 export default {
   hero: {
     title: 'Outsite LGBT+ society',
@@ -54,7 +56,11 @@ export default {
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about Outsite but they can also introduce you to new people.`,
       sign_up: 'Sign up for a bar buddy',
-      action: 'Find a bar buddy'
+      action: 'Find a bar buddy',
+      meet_up_with: 'Meet up with',
+      barbuddies_title: 'Our <strong>Bar Buddies</strong>',
+      read_more: 'Read more',
+      read_less: 'Collapse'
     }
   },
   video: {
@@ -105,7 +111,8 @@ export default {
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
       residence: 'City of residence',
-      pronouns: 'Pronouns'
+      pronouns: 'Pronouns',
+      barbuddy: 'Who would you like to meet?'
     },
     placeholder: {
       name: 'Name',
@@ -117,7 +124,12 @@ export default {
       pronouns: 'e.g. she/her, he/him, they/them'
     },
     buttons: {
-      sign_up: 'Sign up'
+      sign_up: 'Sign up',
+      loading: 'Loading'
+    },
+    success: {
+      heading: 'The form has been submitted successfully',
+      barbuddy: 'The bar buddy you selected will contact you as soon as possible.'
     }
   },
   footer: {
@@ -134,5 +146,6 @@ export default {
       treasurer: 'Treasurer',
       external_affairs: 'External Affairs'
     }
-  }
+  },
+  barbuddies
 }

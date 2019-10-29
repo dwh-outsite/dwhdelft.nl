@@ -1,3 +1,5 @@
+import barbuddies from '~/lang/nl_barbuddies.js'
+
 export default {
   hero: {
     title: 'Outsite LGBT+ vereniging',
@@ -53,7 +55,11 @@ export default {
         voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de 
         vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
       action: 'Vind een barbuddy',
-      sign_up: 'Aanmelden voor een barbuddy'
+      sign_up: 'Aanmelden voor een barbuddy',
+      meet_up_with: 'Afspreken met',
+      barbuddies_title: 'Onze <strong>Barbuddies</strong>',
+      read_more: 'Lees meer',
+      read_less: 'Inklappen'
     }
   },
   video: {
@@ -103,7 +109,8 @@ export default {
       date_of_birth: 'Geboortedatum',
       phone_number: 'Telefoonnummer',
       residence: 'Woonplaats',
-      pronouns: 'Pronouns'
+      pronouns: 'Pronouns',
+      barbuddy: 'Met wie wil je afspreken?'
     },
     placeholder: {
       name: 'Naam',
@@ -115,7 +122,12 @@ export default {
       pronouns: 'bv. zij/haar, hij/hem, hen/hun'
     },
     buttons: {
-      sign_up: 'Aanmelden'
+      sign_up: 'Aanmelden',
+      loading: 'Laden'
+    },
+    success: {
+      heading: 'Het formulier is succesvol verstuurd',
+      barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.'
     }
   },
   footer: {
@@ -132,5 +144,6 @@ export default {
       treasurer: 'Penningmeester',
       external_affairs: 'Extern'
     }
-  }
+  },
+  barbuddies
 }

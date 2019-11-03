@@ -3,7 +3,7 @@
     <div class="md:container mx-auto">
       <div class="md:flex">
         <div class="flex-1 pt-12 pb-20 px-4">
-          <div class="rounded-full w-20 h-20 p-6 bg-pink-400 mt-2 mb-8 text-white mx-auto">
+          <div class="rounded-full w-20 h-20 p-6 bg-purple-500 mt-2 mb-8 text-white mx-auto">
             <Zondicon icon="location-food" class="fill-current" />
           </div>
           <h3 class="text-3xl font-semibold text-center">
@@ -21,7 +21,7 @@
             <div class="divider-content h-full flex items-center px-4 md:pl-16">
               <div class="mx-auto md:mx-0">
                 <a href="https://dwhdelft.nl/eatingout" target="_blank">
-                  <button class="block button-white z-50 text-pink-400 text-left">
+                  <button class="block button-white z-50 text-purple-500 text-left">
                     <div class="flex items-center">
                       <div class="max-w-56">Meld je aan voor aankomende dinsdag</div>
                       <div><Zondicon icon="cheveron-outline-right" class="h-8" /></div>
@@ -49,7 +49,7 @@ export default {
 
 <style>
 .triangle {
-  @apply bg-pink-200 w-full absolute;
+  @apply bg-purple-300 w-full absolute;
   transform: skewY(-7deg);
   transform-origin: 0;
   height: 10rem;
@@ -57,12 +57,12 @@ export default {
 }
 
 .divider {
-  @apply bg-pink-200 h-full py-8;
+  @apply bg-purple-300 h-full py-8;
 }
 
 @screen md {
   .divider {
-    @apply bg-pink-200 h-full absolute;
+    @apply bg-purple-300 h-full absolute;
     transform: skewX(-7deg);
     transform-origin: 0;
     width: 100rem;

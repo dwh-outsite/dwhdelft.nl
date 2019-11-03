@@ -15,7 +15,7 @@
           <div>
             <img :src="activity.cover.source" class="rounded-t" />
             <div class="px-4 pt-3">
-              <h3 class="text-pink-400 text-xl font-bold">{{ activity.name }}</h3>
+              <h3 class="text-purple-500 text-xl font-bold">{{ activity.name }}</h3>
             </div>
           </div>
           <div class="px-4 pb-4">
@@ -25,8 +25,8 @@
       </div>
       <div v-if="activities.length < 3" class="bg-white rounded shadow flex-1 mx-2 mt-4">
         <div class="flex flex-col h-full">
-          <div class="flex-1 bg-pink-200 py-4">
-            <div class="rounded-full w-20 h-20 p-6 bg-white mt-2 mb-6 text-pink-400 mx-auto">
+          <div class="flex-1 bg-purple-300 py-4">
+            <div class="rounded-full w-20 h-20 p-6 bg-white mt-2 mb-6 text-purple-500 mx-auto">
               <Zondicon icon="beverage" class="fill-current" />
             </div>
             <h3 class="text-xl font-bold uppercase tracking-wide text-white text-center">
@@ -37,7 +37,7 @@
             </h4>
           </div>
           <div class="p-4 pt-3">
-            <h3 class="text-pink-400 text-xl font-bold">{{ $t('activities.defaults.bar.title') }}</h3>
+            <h3 class="text-purple-500 text-xl font-bold">{{ $t('activities.defaults.bar.title') }}</h3>
             <span class="text-gray-500">{{ $t('activities.defaults.bar.date') }}</span>
           </div>
         </div>
@@ -45,8 +45,8 @@
       <div v-if="activities.length < 2" class="bg-white rounded shadow flex-1 mx-2 mt-4">
         <a href="https://dwhdelft.nl/eatingout">
           <div class="flex flex-col h-full">
-            <div class="flex-1 bg-pink-200 py-4">
-              <div class="rounded-full w-20 h-20 p-6 bg-white mt-2 mb-6 text-pink-400 mx-auto">
+            <div class="flex-1 bg-purple-300 py-4">
+              <div class="rounded-full w-20 h-20 p-6 bg-white mt-2 mb-6 text-purple-500 mx-auto">
                 <Zondicon icon="location-food" class="fill-current" />
               </div>
               <h3 class="text-xl font-bold uppercase tracking-wide text-white text-center">
@@ -57,7 +57,7 @@
               </h4>
             </div>
             <div class="p-4 pt-3">
-              <h3 class="text-pink-400 text-xl font-bold">{{ $t('activities.defaults.eating_out.title') }}</h3>
+              <h3 class="text-purple-500 text-xl font-bold">{{ $t('activities.defaults.eating_out.title') }}</h3>
               <span class="text-gray-500">{{ $t('activities.defaults.eating_out.date') }}</span>
             </div>
           </div>

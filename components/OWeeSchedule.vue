@@ -14,8 +14,8 @@
             :key="day"
             :class="[
               'mt-2',
-              'bg-pink-200 text-white rounded px-4 py-2 mr-2 uppercase tracking-wide text-sm shadow focus:outline-none',
-              day === currentDay ? 'bg-pink-400 text-white font-semibold' : ''
+              'bg-purple-300 text-white rounded px-4 py-2 mr-2 uppercase tracking-wide text-sm shadow focus:outline-none',
+              day === currentDay ? 'bg-purple-500 text-white font-semibold' : ''
             ]"
             @click="currentDay = day"
           >
@@ -29,11 +29,11 @@
             :key="activity.name"
             :class="['py-3 flex']"
           >
-            <div :class="['mr-4', activity.highlight ? 'text-pink-400' : '']">
+            <div :class="['mr-4', activity.highlight ? 'text-purple-500' : '']">
               {{ activity.start }} - {{ activity.end }}
             </div>
             <div class="flex-1">
-              <strong :class="[activity.highlight ? 'text-pink-400' : '']">{{ activity.name }}</strong>
+              <strong :class="[activity.highlight ? 'text-purple-500' : '']">{{ activity.name }}</strong>
               <p class="text-gray-700">
                 {{ $i18n.locale == 'en' ? activity.descriptionEnglish : activity.descriptionDutch }}
               </p>

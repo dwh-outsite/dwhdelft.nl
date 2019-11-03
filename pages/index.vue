@@ -29,13 +29,13 @@
           <p class="text-lg md:text-xl leading-relaxed text-gray-800" v-html="$t('description.text')"></p>
           <div
             class="
-              rounded shadow-xl bg-pink-400 text-lg md:text-xl text-white my-12 md:mt-10 md:mb-24 p-4 relative
+              rounded shadow-xl bg-purple-500 text-lg md:text-xl text-white my-12 md:mt-10 md:mb-24 p-4 relative
               w-full md:w-auto md:inline-flex items-center 
             "
           >
             <div
               class="
-                rounded-full w-16 h-16 p-4 bg-white text-pink-400 shadow md:shadow-none
+                rounded-full w-16 h-16 p-4 bg-white text-purple-500 shadow md:shadow-none
                 absolute -top-8 md:static
               "
             >
@@ -54,7 +54,7 @@
       <Activities :title="$t('activities.title')" />
     </section>
 
-    <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
+    <section id="join-outsite" class="bg-purple-300 bg-hero-falling-triangles">
       <JoinOptions
         :title="$t('ways_to_join.title')"
         left-icon="user-group"

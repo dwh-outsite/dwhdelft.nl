@@ -14,7 +14,7 @@
       </div>
     </section>
 
-    <section class="bg-pink-200">
+    <section class="bg-purple-300">
       <div class="container px-4 mx-auto pt-8 pb-12">
         <div class="text-center">
           <h1 class="text-white font-medium text-5xl" v-html="$t('ways_to_join.bar_buddy.barbuddies_title')" />
@@ -24,10 +24,10 @@
             <div class="bg-white rounded shadow p-6 md:p-8">
               <div class="flex justify-between items-center mb-4">
                 <div class="flex items-center">
-                  <div class="rounded-full w-12 h-12 p-3 bg-pink-400 text-white">
+                  <div class="rounded-full w-12 h-12 p-3 bg-purple-500 text-white">
                     <Zondicon icon="user" class="fill-current" />
                   </div>
-                  <h2 class="text-2xl font-bold ml-3 text-pink-400 uppercase tracking-wider">
+                  <h2 class="text-2xl font-bold ml-3 text-purple-500 uppercase tracking-wider">
                     {{ buddy.name }}
                   </h2>
                 </div>
@@ -39,7 +39,7 @@
               <p :class="['text-lg relative', buddy.readMore ? 'pb-8' : 'clamp-lines']">
                 <span class="absolute bottom-0 right-0 flex">
                   <span class="w-32 block white-gradient" />
-                  <a class="text-pink-400 bg-white cursor-pointer" @click="readMore(buddy)">
+                  <a class="text-purple-500 bg-white cursor-pointer" @click="readMore(buddy)">
                     {{ $t('ways_to_join.bar_buddy.' + (buddy.readMore ? 'read_less' : 'read_more')) }}
                   </a>
                 </span>
@@ -63,7 +63,7 @@
         <div v-if="formStatus === 'finished'">
           <div class="mx-auto container px-4 my-8 flex justify-center">
             <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg flex items-center">
-              <div class="rounded-full w-16 h-16 p-3 bg-pink-400 text-white">
+              <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
                 <Zondicon icon="checkmark-outline" class="fill-current w-10" />
               </div>
               <div class="ml-4">

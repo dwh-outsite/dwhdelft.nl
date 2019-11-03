@@ -57,11 +57,11 @@ html {
 }
 
 .button-pink {
-  @apply bg-pink-400 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
+  @apply bg-purple-500 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
 }
 
 .button-pink:hover {
-  @apply bg-pink-200;
+  @apply bg-purple-300;
 }
 
 .button-white {

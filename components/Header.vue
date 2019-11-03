@@ -3,14 +3,14 @@
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
         <a :href="localePath('index')">
-          <OutsiteLogo class="h-16" />
+          <DWHLogo class="h-16 fill-current text-white" />
         </a>
         <div class="hidden md:block">
           <a :href="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
             Home
           </a>
           <a :href="localePath('index') + '#join-outsite'" class="text-white text-xl font-semibold no-underline mr-4">
-            Join Outsite
+            Join DWH
           </a>
           <a :href="localePath('index') + '#eatingout'" class="text-white text-xl font-semibold no-underline mr-4">
             EatingOUT
@@ -34,17 +34,9 @@
               <NLFlag />
             </a>
           </div>
-          <a href="https://dwhdelft.nl" class="text-white text-xl font-semibold no-underline mr-4">
-            <DWHLogo class="h-8 ml-2 fill-current" />
-          </a>
         </div>
       </div>
     </nav>
-    <div class="video-container">
-      <video id="headervid" preload="metadata" muted loop class="opacity-50">
-        <source src="/outsite_web_bg.mp4" type="video/mp4" />
-      </video>
-    </div>
     <div class="hero"></div>
     <div class="relative flex items-center h-full">
       <div class="container px-4 mx-auto my-40">
@@ -55,7 +47,6 @@
 </template>
 
 <script>
-import OutsiteLogo from '@/assets/images/outsite_logo.svg'
 import DWHLogo from '@/assets/images/dwh_logo.svg'
 import NLFlag from '@/assets/images/flags/nl.svg'
 import GBFlag from '@/assets/images/flags/gb.svg'
@@ -63,7 +54,6 @@ import GBFlag from '@/assets/images/flags/gb.svg'
 export default {
   props: ['small'],
   components: {
-    OutsiteLogo,
     DWHLogo,
     NLFlag,
     GBFlag
@@ -103,28 +93,5 @@ export default {
   transform-origin: 0;
   height: 100rem;
   bottom: -100rem;
-}
-
-.video-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.video-container video {
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none;
-
-  width: auto;
-  height: auto;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 </style>

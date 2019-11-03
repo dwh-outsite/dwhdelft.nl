@@ -1,7 +1,7 @@
-# Outsite Website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/52c3debd-da63-4ad3-b8c7-2d6b009fcac7/deploy-status)](https://app.netlify.com/sites/outsite/deploys)
+# DWH Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/267389a7-6a04-4d23-85c1-0956dfd672a1/deploy-status)](https://app.netlify.com/sites/dwh/deploys)
 
-Outsite website built using [Nuxt.js docs](https://nuxtjs.org), [Vue.js](https://vuejs.org/), and [Tailwind CSS](https://tailwindcss.com/).
+DWH website built using [Nuxt.js docs](https://nuxtjs.org), [Vue.js](https://vuejs.org/), and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Build Setup
 

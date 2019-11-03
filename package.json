@@ -1,7 +1,7 @@
 {
-  "name": "outsite.nl",
+  "name": "dwhdelft.nl",
   "version": "1.0.0",
-  "description": "Outsite website",
+  "description": "DWH website",
   "author": "Casper Boone",
   "private": true,
   "scripts": {

@@ -21,10 +21,10 @@ export default {
     title: 'Aankomende activiteiten',
     defaults: {
       bar: {
-        banner_title: 'Wekelijkse open baravond',
-        banner_subtitle: 'Leeftijdsgrens 28 jaar',
+        banner_title: 'Wekelijkse baravond',
+        banner_subtitle: 'Open voor iedereen',
         title: 'Baravond',
-        date: 'Elke donderdag vanaf 22.00 uur'
+        date: 'Elke vrijdag vanaf 22.00 uur'
       },
       eating_out: {
         banner_title: 'Wekelijkse eettafel',
@@ -142,7 +142,8 @@ export default {
       president: 'Voorzitter',
       secretary: 'Secretaris',
       treasurer: 'Penningmeester',
-      external_affairs: 'Extern'
+      youth: 'Bestuurslid Jongeren',
+      general: 'Algemeen Bestuurslid'
     }
   },
   barbuddies

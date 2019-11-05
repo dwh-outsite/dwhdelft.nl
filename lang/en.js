@@ -21,10 +21,10 @@ export default {
     title: 'Upcoming activities',
     defaults: {
       bar: {
-        banner_title: 'Weekly open bar night',
-        banner_subtitle: 'Age limit 28 years',
+        banner_title: 'Weekly bar night',
+        banner_subtitle: 'Open for everyone',
         title: 'Bar Night',
-        date: 'Every Thursday from 10pm'
+        date: 'Every Friday from 10pm'
       },
       eating_out: {
         banner_title: 'Weekly dinner',
@@ -144,7 +144,8 @@ export default {
       president: 'President',
       secretary: 'Secretary',
       treasurer: 'Treasurer',
-      external_affairs: 'External Affairs'
+      youth: 'Commissioner Youth',
+      general: 'Comissioner'
     }
   },
   barbuddies

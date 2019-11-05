@@ -19,10 +19,12 @@
         :dwh-description="$t('footer.dwhDescription')"
       >
         <template v-slot:board-members>
-          <BoardMember name="Niv Bharos" :role="$t('footer.board.president')" email="voorzitter@outsite.nl" />
-          <BoardMember name="Ivo Brands" :role="$t('footer.board.secretary')" email="secretaris@outsite.nl" />
-          <BoardMember name="Bouke Stoelinga" :role="$t('footer.board.treasurer')" email="penningmeester@outsite.nl" />
-          <BoardMember name="Eva Pelk" :role="$t('footer.board.external_affairs')" email="extern@outsite.nl" />
+          <BoardMember name="Robert Baart" :role="$t('footer.board.president')" email="voorzitter@dwhdelft.nl" />
+          <BoardMember name="Nick van Loo" :role="$t('footer.board.secretary')" email="secretaris@dwhdelft.nl" />
+          <BoardMember name="Quinten Star" :role="$t('footer.board.treasurer')" email="penningmeester@dwhdelft.nl" />
+          <BoardMember name="Casper Boone" :role="$t('footer.board.youth')" email="jongeren@dwhdelft.nl" />
+          <BoardMember name="Jelle Vos" :role="$t('footer.board.general')" email="promo@dwhdelft.nl" />
+          <BoardMember name="Jeroen Wegdam" :role="$t('footer.board.general')" email="pand@dwhdelft.nl" />
         </template>
       </Footer>
     </footer>

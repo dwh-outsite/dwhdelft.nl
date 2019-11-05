@@ -75,7 +75,7 @@
     </section>
 
     <section id="video" class="bg-white">
-      <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
+      <RecurringEvents :title="$t('video.title')" />
     </section>
 
     <section id="eatingout" class="bg-gray-200">
@@ -90,7 +90,7 @@ import Zondicon from 'vue-zondicons'
 import Header from '~/components/Header'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
-import Video from '~/components/Video'
+import RecurringEvents from '~/components/RecurringEvents'
 import EatingOut from '~/components/EatingOut'
 
 export default {
@@ -98,7 +98,7 @@ export default {
     Header,
     Activities,
     JoinOptions,
-    Video,
+    RecurringEvents,
     EatingOut,
     Zondicon
   }

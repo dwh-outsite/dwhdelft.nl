@@ -2,20 +2,22 @@ import barbuddies from '~/lang/nl_barbuddies.js'
 
 export default {
   hero: {
-    title: 'Outsite LGBT+ vereniging',
-    subtitle: 'Delftse queer jongerenvereniging',
-    leftButton: 'Kom naar Outsite',
+    title: 'DWH LGBT+ vereniging',
+    subtitle: 'Delftse queervereniging',
+    leftButton: 'Kom naar DWH',
     rightButton: 'Bekijk video'
   },
   description: {
-    text: `Outsite is het onderdeel van DWH (Delftse Werkgroep Homoseksualiteit) speciaal voor jongeren. Wij zijn er
-      voor iedereen onder de 28 jaar die zich identificeert als LHBT+. Outsite organiseert allerlei activiteiten: van
-      een borrel elke donderdagavond en grote LHBT+ feesten elk kwartaal tot gezamenlijk uitgaan in andere steden. <br>
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ultrices mauris, at congue lectus. Sed
+      sagittis, risus in rhoncus pretium, risus ex suscipit nisl, vitae finibus metus dui vel dui. Morbi iaculis, ex at
+      blandit suscipit, nulla quam tincidunt urna, id consectetur nulla risus non erat. Fusce pretium nisl a tristique
+      interdum.
       <br>
-      Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
-      kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
-      van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.`,
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 22:00</strong>'
+      <br>
+      Vivamus ipsum risus, gravida eu porta auctor, tincidunt eget risus. Vestibulum imperdiet luctus leo, a vestibulum 
+      massa ullamcorper sit amet. Suspendisse potenti. Quisque laoreet convallis diam, nec sollicitudin eros vestibulum 
+      eget. In est nulla, mollis quis posuere sed, lobortis vitae metus.`,
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke vrijdag vanaf 22:00</strong>'
   },
   activities: {
     title: 'Aankomende activiteiten',
@@ -35,10 +37,10 @@ export default {
     }
   },
   ways_to_join: {
-    title: 'Kennismaken met <strong>Outsite</strong>?',
+    title: 'Kennismaken met <strong>DWH</strong>?',
     kmg: {
       title: 'KennisMakingsGroepen (KMG)',
-      description: `Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
+      description: `Twee keer per jaar organiseert DWH de KMG. In een kennismakingsgroep maak je onder begeleiding
         van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Je deelt met elkaar je coming-out
         verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
@@ -63,37 +65,7 @@ export default {
     }
   },
   video: {
-    title: '<strong>Outsite</strong> in 120 seconden'
-  },
-  owee: {
-    title: 'OWee Programma 2019',
-    description: `Van 18 t/m 22 augustus vindt de Delftse introductieweek, de OWee, plaats. Tijdens deze week
-      organiseren wij allerlei activiteiten om te laten zien wat voor vereniging wij zijn. Hierdoor kun jij erachter
-      komen of Outsite de vereniging is die bij je past. We hebben sowieso elke avond een leuk feestje, maar doen ook
-      andere leuke dingen die je hieronder in het schema kunt zien! We hopen je te zien tijdens de OWee!`,
-    days: {
-      monday: 'Maandag',
-      tuesday: 'Dinsdag',
-      wednesday: 'Woensdag',
-      thursday: 'Donderdag',
-      friday: 'Vrijdag',
-      saturday: 'Zaterdag',
-      sunday: 'Zondag'
-    }
-  },
-  confidential_counsellor: {
-    title: 'Vertrouwenspersoon',
-    description: `
-    Outsite heeft een vertrouwenspersoon met wie je contact kunt opnemen om over vereniging-gerelateerde en
-    persoonlijke problemen te praten indien je daar behoefte aan hebt.<br>
-    <br>
-    Alles wat besproken wordt met de vertrouwenspersoon is strikt vertrouwelijk. De vertrouwenspersoon opereert volledig
-    onafhankelijk van het Outsite en DWH bestuur. Alleen als de situatie het noodzaakt, en dan alleen met expliciete
-    persoonlijke toestemming, worden kwesties aan hen voorgelegd.<br>
-    <br>
-    Wees niet bang om contact op te nemen. De vertrouwenspersoon zal elke kwestie serieus behandelen en is er om je te
-    helpen.    
-    `
+    title: '<strong>DWH</strong> in 120 seconden'
   },
   forms: {
     label: {
@@ -131,13 +103,12 @@ export default {
     }
   },
   footer: {
-    whatsapp: {
-      description: 'Blijf op de hoogte, join de <strong>Outsite Announcements</strong> WhatsApp groep',
-      button: 'Deelnemen'
+    newsletter: {
+      description: 'Blijf op de hoogte, meld je aan voor de <strong>DWH nieuwsbrief</strong>',
+      button: 'Aanmelden'
     },
     leftTitle: 'Bestuur',
     rightTitle: 'Contact',
-    dwhDescription: 'Outsite is onderdeel van',
     board: {
       president: 'Voorzitter',
       secretary: 'Secretaris',

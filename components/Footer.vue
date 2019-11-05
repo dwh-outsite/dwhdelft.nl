@@ -8,17 +8,9 @@
               <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ leftTitle }}</h3>
 
               <slot name="board-members" class="mb-2"></slot>
-
-              <a
-                :href="linkDestination"
-                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-              >
-                {{ linkTitle }}
-                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-              </a>
             </div>
             <div class="mt-8 md:mt-0">
-              <img src="~/assets/images/board18.jpg" class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl" />
+              board pic
             </div>
           </div>
         </div>
@@ -45,22 +37,17 @@
 
     <div class="container mx-auto px-4 py-4 md:flex justify-between items-center">
       <div class="flex justify-center md:justify-start">
-        <a href="https://instagram.com/outsite_delft" target="_blank">
+        <a href="https://instagram.com/dwh_delft" target="_blank">
           <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
             <InstagramIcon class="fill-current w-6" />
           </div>
         </a>
-        <a href="https://facebook.com/outsite" target="_blank">
+        <a href="https://facebook.com/DWHDelft" target="_blank">
           <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
             <FacebookIcon class="fill-current w-6" />
           </div>
         </a>
-        <a href="https://youtube.com/channel/UCtsabdS5sH7EA-DjLkBPLfQ" target="_blank">
-          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3">
-            <YouTubeIcon class="fill-current w-6" />
-          </div>
-        </a>
-        <a href="https://github.com/dwh-outsite/outsite.nl" target="_blank">
+        <a href="https://github.com/dwh-outsite/dwhdelft.nl" target="_blank">
           <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700">
             <GitHubIcon class="fill-current w-6" />
           </div>
@@ -71,7 +58,7 @@
         target="_blank"
         class="text-gray-400 hover:text-white flex justify-center md:justify-end pt-4 md:pt-0"
       >
-        {{ dwhDescription }}
+        &copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}
         <DWHLogo class="h-8 ml-2 fill-current" />
       </a>
     </div>
@@ -79,31 +66,26 @@
 </template>
 
 <script>
+import dayjs from 'dayjs'
 import Zondicon from 'vue-zondicons'
 import DWHLogo from '@/assets/images/dwh_logo.svg'
 import InstagramIcon from '@/assets/images/social/instagram.svg'
 import FacebookIcon from '@/assets/images/social/facebook.svg'
 import GitHubIcon from '@/assets/images/social/github.svg'
-import YouTubeIcon from '@/assets/images/social/youtube.svg'
 
 export default {
-  props: [
-    'left-title',
-    'right-title',
-    'link-title',
-    'link-destination',
-    'board-image',
-    'contact-email',
-    'contact-address',
-    'dwh-description'
-  ],
+  props: ['left-title', 'right-title', 'board-image', 'contact-email', 'contact-address', 'dwh-description'],
   components: {
     Zondicon,
     DWHLogo,
     InstagramIcon,
     FacebookIcon,
-    GitHubIcon,
-    YouTubeIcon
+    GitHubIcon
+  },
+  data() {
+    return {
+      year: dayjs().format('YYYY')
+    }
   }
 }
 </script>

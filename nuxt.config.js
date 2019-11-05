@@ -9,7 +9,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Outsite - LHBT+ vereniging Delft',
+    title: 'DWH - LHBT+ vereniging Delft',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -138,27 +138,12 @@ export default {
 
   netlify: {
     redirects: [
-      {
-        from: '/outcamp',
-        to: 'https://docs.google.com/forms/d/e/1FAIpQLSdQkRhEQR3e3q_fnOkseETCB4fXYQE-ObFUkMHJM0sYwGBgYg/viewform'
-      },
-      {
-        from: '/outcamp-feedback',
-        to: 'https://docs.google.com/forms/d/e/1FAIpQLSf5AuHalc878zZiQDK5YEiCp-9qDZh1jPWMrJSGibN_cqhkrQ/viewform'
-      },
-      {
-        from: '/eatingout',
-        to: 'https://dwhdelft.nl/eatingout/'
-      }, 
-      {
-        from: '/song',
-        to: 'https://www.youtube.com/watch?v=YMMchSpbIJo'
-      }, 
-      {
-        from: 'https://outsite.netlify.com/*',
-        to: 'https://outsite.nl/:splat',
-        status: '301!' 
-      }
+      // TODO: Add this redirect once the site live
+      // {
+      //   from: 'https://dwh.netlify.com/*',
+      //   to: 'https://dwhdelft.nl/:splat',
+      //   status: '301!'
+      // }
     ]
   }
 }

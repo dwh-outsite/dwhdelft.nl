@@ -9,7 +9,7 @@
           {{ $t('hero.subtitle') }}
         </h2>
         <div class="mt-8 flex">
-          <a href="#join-outsite">
+          <a href="#join-dwh">
             <button class="block button-pink">
               {{ $t('hero.leftButton') }}
             </button>
@@ -44,9 +44,6 @@
             <div class="mt-6 md:mt-0 md:ml-4" v-html="$t('description.invitation')" />
           </div>
         </div>
-        <div class="flex-1 md:w-1/2 overflow-hidden md:overflow-visible relative">
-          <Panda class="panda relative md:absolute"></Panda>
-        </div>
       </div>
     </section>
 
@@ -54,7 +51,7 @@
       <Activities :title="$t('activities.title')" />
     </section>
 
-    <section id="join-outsite" class="bg-purple-300 bg-hero-falling-triangles">
+    <section id="join-dwh" class="bg-purple-300 bg-hero-falling-triangles">
       <JoinOptions
         :title="$t('ways_to_join.title')"
         left-icon="user-group"
@@ -89,7 +86,6 @@
 import Zondicon from 'vue-zondicons'
 
 import Header from '~/components/Header'
-import Panda from '@/assets/images/outsite_panda_cropped.svg'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
@@ -98,7 +94,6 @@ import EatingOut from '~/components/EatingOut'
 export default {
   components: {
     Header,
-    Panda,
     Activities,
     JoinOptions,
     Video,

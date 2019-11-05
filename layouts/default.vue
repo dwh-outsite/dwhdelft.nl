@@ -3,18 +3,16 @@
     <nuxt />
 
     <footer id="contact" class="bg-gray-700">
-      <JoinWhatsApp
-        :button-text="$t('footer.whatsapp.button')"
+      <JoinNewsletter
+        :button-text="$t('footer.newsletter.button')"
         button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer"
       >
-        <span v-html="$t('footer.whatsapp.description')" />
-      </JoinWhatsApp>
+        <span v-html="$t('footer.newsletter.description')" />
+      </JoinNewsletter>
       <Footer
         :left-title="$t('footer.leftTitle')"
-        :link-title="$t('confidential_counsellor.title')"
-        :link-destination="localePath('confidential-counsellor')"
         :right-title="$t('footer.rightTitle')"
-        contact-email="bestuur@outsite.nl"
+        contact-email="bestuur@dwhdelft.nl"
         contact-address="Lange Geer 22<br />2611PV Delft"
         :dwh-description="$t('footer.dwhDescription')"
       >
@@ -34,13 +32,13 @@
 <script>
 import Footer from '~/components/Footer'
 import BoardMember from '~/components/BoardMember'
-import JoinWhatsApp from '~/components/JoinWhatsApp'
+import JoinNewsletter from '~/components/JoinNewsletter'
 
 export default {
   components: {
     Footer,
     BoardMember,
-    JoinWhatsApp
+    JoinNewsletter
   }
 }
 </script>

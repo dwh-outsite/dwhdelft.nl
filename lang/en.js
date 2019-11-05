@@ -2,20 +2,22 @@ import barbuddies from '~/lang/en_barbuddies.js'
 
 export default {
   hero: {
-    title: 'Outsite LGBT+ society',
-    subtitle: "Delft's society for queer youth",
-    leftButton: 'Join Outsite',
+    title: 'DWH LGBT+ society',
+    subtitle: "Delft's society for queer people",
+    leftButton: 'Join DWH',
     rightButton: 'Watch video'
   },
   description: {
-    text: `Outsite is the part of DWH (Delftse Werkgroep Homoseksualiteit) specially for LGBT+ youth. We are there for
-      everybody who identifies as such. As a society we organise all kinds of activities, ranging from drinks every
-      Thursday night and quarterly LGBT+ parties to trips to other cities where we go out together.<br>
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ultrices mauris, at congue lectus. Sed
+      sagittis, risus in rhoncus pretium, risus ex suscipit nisl, vitae finibus metus dui vel dui. Morbi iaculis, ex at
+      blandit suscipit, nulla quam tincidunt urna, id consectetur nulla risus non erat. Fusce pretium nisl a tristique
+      interdum.
       <br>
-      These activities are all organized by our fantastic committees and members! The best way to become acquainted with
-      Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
-      system: Where we will make sure there is someone ready to show you around and who could introduce you to others.`,
-    invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
+      <br>
+      Vivamus ipsum risus, gravida eu porta auctor, tincidunt eget risus. Vestibulum imperdiet luctus leo, a vestibulum 
+      massa ullamcorper sit amet. Suspendisse potenti. Quisque laoreet convallis diam, nec sollicitudin eros vestibulum 
+      eget. In est nulla, mollis quis posuere sed, lobortis vitae metus.`,
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Friday starting at 22:00</strong>'
   },
   activities: {
     title: 'Upcoming activities',
@@ -35,26 +37,26 @@ export default {
     }
   },
   ways_to_join: {
-    title: 'Ready to check out <strong>Outsite</strong>?',
+    title: 'Ready to check out <strong>DWH</strong>?',
     kmg: {
       title: 'Introduction Group (in dutch: KMG)',
-      description: `It is twice a year that Outsite organizes the introduction groups. These groups are a chance to not
+      description: `It is twice a year that DWH organizes the introduction groups. These groups are a chance to not
       get to know the society but also to become close to other LGBT+ youth, all under supervision of two experienced
-      Outsite members. It is a chance to share your coming out stories in a close group and to visit queer parties
+      DWH members. It is a chance to share your coming out stories in a close group and to visit queer parties
       amongst others.`,
       action: 'Join the KMG',
       sign_up: 'Sign up for the KMG',
       next: `<strong>The Introduction Group of September is full</strong>, but don’t worry! In February there will be
       another Introduction Group starting. You can already register for that one, please let us know in the comments
-      that you would like to join that one. In the mean time you are ofcourse very welcome every Thursday from 10pm at
+      that you would like to join that one. In the mean time you are ofcourse very welcome every Friday from 10pm at
       the regular bar evenings! You can also ask for a <a href="/en/barbuddy" class="text-purple-500">barbuddy</a> who
       can show you around and introduce you to some people.`
     },
     bar_buddy: {
       title: 'Bar Buddy System',
-      description: `If you are looking to come by on a Thursday night but you are not yet familiar with the society you
+      description: `If you are looking to come by on a Friday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
-        about Outsite but they can also introduce you to new people.`,
+        about DWH but they can also introduce you to new people.`,
       sign_up: 'Sign up for a bar buddy',
       action: 'Find a bar buddy',
       meet_up_with: 'Meet up with',
@@ -64,38 +66,7 @@ export default {
     }
   },
   video: {
-    title: '<strong>Outsite</strong> in 120 seconds'
-  },
-  owee: {
-    title: 'OWee Schedule 2019',
-    description: `From the 18th of August till the 22nd of August Delft's student introduction weeek, the OWee, takes
-      place. During this week we organise all kinds of activities which will help you get to know Outsite, and see if
-      we are a good fit. We have a cool party every night, but also organise a lot of other fun things which you can
-      see below. We hope to see you during the OWee!
-     `,
-    days: {
-      monday: 'Monday',
-      tuesday: 'Tuesday',
-      wednesday: 'Wednesday',
-      thursday: 'Thursday',
-      friday: 'Friday',
-      saturday: 'Saturday',
-      sunday: 'Sunday'
-    }
-  },
-  confidential_counsellor: {
-    title: 'Confidential Counsellor',
-    description: `
-      Outsite has a confidential counsellor whom you can approach about society-related and personal issues,
-      in case you feel like talking about them.<br>
-      <br>
-      All contact with the counsellor is strictly confidential and they operate independently from the board of
-      Outsite and that from DWH. Only if the situation requires it, and then only with explicit permission from you,
-      shall issues be communicated to them.<br>
-      <br>
-      Don’t be afraid to contact the confidential counsellor about something. The confidential counsellor will take
-      every issue seriously, and they're there to help you.
-    `
+    title: '<strong>DWH</strong> in 120 seconds'
   },
   forms: {
     label: {
@@ -133,13 +104,12 @@ export default {
     }
   },
   footer: {
-    whatsapp: {
-      description: 'Stay up to date, join the <strong>Outsite Announcements</strong> WhatsApp group',
-      button: 'Join now'
+    newsletter: {
+      description: 'Stay up to date, subscribe to the <strong>DWH newsletter</strong>',
+      button: 'Subscribe now'
     },
     leftTitle: 'Board',
     rightTitle: 'Contact',
-    dwhDescription: 'Outsite is a part of',
     board: {
       president: 'President',
       secretary: 'Secretary',

@@ -9,7 +9,7 @@
           <a :href="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
             Home
           </a>
-          <a :href="localePath('index') + '#join-outsite'" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('index') + '#join-dwh'" class="text-white text-xl font-semibold no-underline mr-4">
             Join DWH
           </a>
           <a :href="localePath('index') + '#eatingout'" class="text-white text-xl font-semibold no-underline mr-4">

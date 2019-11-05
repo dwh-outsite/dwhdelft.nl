@@ -49,7 +49,7 @@ export default {
 
 <style>
 .triangle {
-  @apply bg-purple-300 w-full absolute;
+  @apply bg-purple-400 w-full absolute;
   transform: skewY(-7deg);
   transform-origin: 0;
   height: 10rem;
@@ -57,12 +57,12 @@ export default {
 }
 
 .divider {
-  @apply bg-purple-300 h-full py-8;
+  @apply bg-purple-400 h-full py-8;
 }
 
 @screen md {
   .divider {
-    @apply bg-purple-300 h-full absolute;
+    @apply bg-purple-400 h-full absolute;
     transform: skewX(-7deg);
     transform-origin: 0;
     width: 100rem;

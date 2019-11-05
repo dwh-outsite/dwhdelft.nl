@@ -1,8 +1,8 @@
 <template>
-  <p class="leading-tight mb-6">
+  <div class="leading-tight mb-6 md:w-1/2">
     <strong>{{ name }}</strong> | {{ role }}<br />
     <span class="text-gray-400">{{ email }}</span>
-  </p>
+  </div>
 </template>
 
 <script>

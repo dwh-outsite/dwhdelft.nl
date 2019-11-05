@@ -3,15 +3,10 @@
     <div class="container px-4 mx-auto text-white">
       <div class="md:flex">
         <div class="md:w-2/3 md:border-r border-gray-600 xl:pt-20">
-          <div class="md:flex mb-8 md:mr-4 xl:mr-10">
-            <div class="flex-1">
-              <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ leftTitle }}</h3>
+          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ leftTitle }}</h3>
 
-              <slot name="board-members" class="mb-2"></slot>
-            </div>
-            <div class="mt-8 md:mt-0">
-              board pic
-            </div>
+          <div class="flex flex-wrap">
+            <slot name="board-members"></slot>
           </div>
         </div>
 
@@ -23,12 +18,31 @@
             </div>
             <div class="ml-3" v-html="contactEmail" />
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center mb-4">
+            <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
+              <Zondicon icon="phone" class="fill-current w-4" />
+            </div>
+            <div class="ml-3" v-html="contactPhone" />
+          </div>
+          <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="map" class="fill-current w-4" />
             </div>
-            <div class="ml-3" v-html="contactAddress" />
+            <div class="ml-3 leading-tight" v-html="contactAddress" />
           </div>
+          <div class="flex items-center mb-4">
+            <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
+              <Zondicon icon="box" class="fill-current w-4" />
+            </div>
+            <div class="ml-3 leading-tight" v-html="contactCoc" />
+          </div>
+          <a
+            :href="anbiLinkDestination"
+            class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+          >
+            ANBI
+            <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+          </a>
         </div>
       </div>
     </div>
@@ -74,7 +88,17 @@ import FacebookIcon from '@/assets/images/social/facebook.svg'
 import GitHubIcon from '@/assets/images/social/github.svg'
 
 export default {
-  props: ['left-title', 'right-title', 'board-image', 'contact-email', 'contact-address', 'dwh-description'],
+  props: [
+    'left-title',
+    'right-title',
+    'board-image',
+    'contact-email',
+    'contact-phone',
+    'contact-address',
+    'contact-coc',
+    'dwh-description',
+    'anbi-link-destination'
+  ],
   components: {
     Zondicon,
     DWHLogo,

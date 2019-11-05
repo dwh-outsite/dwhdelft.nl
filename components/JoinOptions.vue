@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 mx-auto pt-8 pb-12">
+  <div class="container px-4 mx-auto pt-8 md:pt-0 pb-12 md:pb-8">
     <div class="md:flex justify-center">
       <div class="flex-1 mx-2 flex items-end mt-4">
         <div class="text-white">
@@ -8,7 +8,7 @@
           <p class="text-lg md:pr-40" v-html="outsiteHint" />
         </div>
       </div>
-      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-4">
+      <div class="bg-white rounded-lg md:rounded-t-none p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0">
         <div class="flex-1">
           <div class="rounded-full w-16 h-16 p-5 bg-purple-500 mb-8 text-white">
             <Zondicon :icon="boxIcon" class="fill-current" />

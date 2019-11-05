@@ -38,19 +38,10 @@ export default {
   },
   ways_to_join: {
     title: 'Kennismaken met <strong>DWH</strong>?',
-    kmg: {
-      title: 'KennisMakingsGroepen (KMG)',
-      description: `Twee keer per jaar organiseert DWH de KMG. In een kennismakingsgroep maak je onder begeleiding
-        van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Je deelt met elkaar je coming-out
-        verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
-      action: 'Doe mee aan de KMG',
-      sign_up: 'Aanmelden voor de KMG',
-      next: `<strong>De KennisMakingsGroep van september is vol</strong>, maar maak je geen zorgen! In februari zal er
-        een nieuwe groep van start gaan. Je kunt je daar al voor aanmelden, geef dat dan even aan in de comments van
-        je aanmelding. In de tussentijd ben je natuurlijk van harte welkom op de donderdag baravonden vanaf 22.00! Je
-        kunt ook een <a href="/barbuddy" class="text-purple-500">barbuddy</a> aanvragen die je de ins en outs van de
-        vereniging kan vertellen en je kan voorstellen aan wat mensen.`
-    },
+    description: `Je bent altijd welkom op een vrijdagavond tijdens een baravond. Vind je dit spannend? Dan kun je
+      gebruik maken van ons barbuddysysteem!`,
+    outsite_hint: `Ben je 28 jaar of jonger? Kijk dan ook eens bij 
+      <a href="https://outsite.nl/" class="font-bold">Outsite</a>, het jongerendeel van de vereniging.`,
     bar_buddy: {
       title: 'Barbuddy Systeem',
       description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak

@@ -38,20 +38,10 @@ export default {
   },
   ways_to_join: {
     title: 'Ready to check out <strong>DWH</strong>?',
-    kmg: {
-      title: 'Introduction Group (in dutch: KMG)',
-      description: `It is twice a year that DWH organizes the introduction groups. These groups are a chance to not
-      get to know the society but also to become close to other LGBT+ youth, all under supervision of two experienced
-      DWH members. It is a chance to share your coming out stories in a close group and to visit queer parties
-      amongst others.`,
-      action: 'Join the KMG',
-      sign_up: 'Sign up for the KMG',
-      next: `<strong>The Introduction Group of September is full</strong>, but don’t worry! In February there will be
-      another Introduction Group starting. You can already register for that one, please let us know in the comments
-      that you would like to join that one. In the mean time you are ofcourse very welcome every Friday from 10pm at
-      the regular bar evenings! You can also ask for a <a href="/en/barbuddy" class="text-purple-500">barbuddy</a> who
-      can show you around and introduce you to some people.`
-    },
+    description: `You're always welcome on a Friday night during a bar night. Do you think this is too exciting or
+    frightening? Then you can make use of our bar buddy system!`,
+    outsite_hint: `Are you 28 years or younger? Take a look at 
+      <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.`,
     bar_buddy: {
       title: 'Bar Buddy System',
       description: `If you are looking to come by on a Friday night but you are not yet familiar with the society you

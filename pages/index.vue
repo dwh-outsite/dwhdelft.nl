@@ -51,22 +51,24 @@
       <Activities :title="$t('activities.title')" />
     </section>
 
-    <section id="join-dwh" class="bg-purple-300 bg-hero-falling-triangles">
+    <section id="join-dwh" class="bg-purple-400">
       <JoinOptions
         :title="$t('ways_to_join.title')"
+        :description="$t('ways_to_join.description')"
+        :outsite-hint="$t('ways_to_join.outsite_hint')"
         left-icon="user-group"
         :left-title="$t('ways_to_join.kmg.title')"
         :left-button-text="$t('ways_to_join.kmg.action')"
         :left-url="localePath('kmg')"
-        right-icon="beverage"
-        :right-title="$t('ways_to_join.bar_buddy.title')"
-        :right-button-text="$t('ways_to_join.bar_buddy.action')"
-        :right-url="localePath('barbuddy')"
+        box-icon="beverage"
+        :box-title="$t('ways_to_join.bar_buddy.title')"
+        :box-button-text="$t('ways_to_join.bar_buddy.action')"
+        :box-url="localePath('barbuddy')"
       >
         <template v-slot:left>
           {{ $t('ways_to_join.kmg.description') }}
         </template>
-        <template v-slot:right>
+        <template v-slot:box>
           {{ $t('ways_to_join.bar_buddy.description') }}
         </template>
       </JoinOptions>

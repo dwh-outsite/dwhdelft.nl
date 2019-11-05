@@ -13,7 +13,9 @@
           class="flex flex-col justify-between h-full"
         >
           <div>
-            <img :src="activity.cover.source" class="rounded-t" />
+            <div class="aspect-ratio-fb relative">
+              <img :src="activity.cover.source" class="rounded-t absolute w-full h-full" />
+            </div>
             <div class="px-4 pt-3">
               <h3 class="text-purple-500 text-xl font-bold">{{ activity.name }}</h3>
             </div>

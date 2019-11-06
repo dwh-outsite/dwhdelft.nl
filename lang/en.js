@@ -8,15 +8,15 @@ export default {
     rightButton: 'Watch video'
   },
   description: {
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ultrices mauris, at congue lectus. Sed
-      sagittis, risus in rhoncus pretium, risus ex suscipit nisl, vitae finibus metus dui vel dui. Morbi iaculis, ex at
-      blandit suscipit, nulla quam tincidunt urna, id consectetur nulla risus non erat. Fusce pretium nisl a tristique
-      interdum.
+    text: `DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for
+      LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance. As the
+      latter, we give lectures at schools, have introduction groups for newly out people and organise public events
+      arounds dates like coming out day.
       <br>
       <br>
-      Vivamus ipsum risus, gravida eu porta auctor, tincidunt eget risus. Vestibulum imperdiet luctus leo, a vestibulum 
-      massa ullamcorper sit amet. Suspendisse potenti. Quisque laoreet convallis diam, nec sollicitudin eros vestibulum 
-      eget. In est nulla, mollis quis posuere sed, lobortis vitae metus.`,
+      As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
+      nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
+      beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!`,
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Friday starting at 22:00</strong>'
   },
   activities: {
@@ -40,7 +40,7 @@ export default {
     title: 'Ready to check out <strong>DWH</strong>?',
     description: `You're always welcome on a Friday night during a bar night. Do you think this is too exciting or
     frightening? Then you can make use of our bar buddy system!`,
-    outsite_hint: `Are you 28 years or younger? Take a look at 
+    outsite_hint: `Are you 28 years or younger? Take a look at
       <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.`,
     bar_buddy: {
       title: 'Bar Buddy System',

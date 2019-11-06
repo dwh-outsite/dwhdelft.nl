@@ -37,9 +37,12 @@
         </div>
       </div>
     </nav>
+    <div class="image-container">
+      <img src="~/assets/images/cover.jpg" class="opacity-50" />
+    </div>
     <div class="hero"></div>
     <div class="relative flex items-center h-full">
-      <div class="container px-4 mx-auto my-40">
+      <div class="container px-4 mx-auto mt-40 mb-48">
         <slot></slot>
       </div>
     </div>
@@ -93,5 +96,20 @@ export default {
   transform-origin: 0;
   height: 100rem;
   bottom: -100rem;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

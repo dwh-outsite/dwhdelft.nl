@@ -5,7 +5,7 @@
         <div class="md:w-2/3 md:border-r border-gray-600 xl:pt-20">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ leftTitle }}</h3>
 
-          <div class="flex flex-wrap">
+          <div class="md:flex flex-wrap">
             <slot name="board-members"></slot>
           </div>
         </div>

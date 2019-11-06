@@ -4,16 +4,16 @@
       <strong>DWH</strong>
       is vier avonden geopend
     </h2>
-    <div class="md:flex -mx-2">
+    <div class="md:flex flex-wrap justify-center -mx-2">
       <div
         v-for="event in events"
         :key="event.name"
-        class="flex-1 mx-2 rounded shadow bg-purple-100 flex flex-col justify-between mb-4 md:mb-0"
+        class="lg:flex-1 mx-2 mb-4 lg:mb-0 md:w-1/3 lg:w-auto rounded shadow bg-purple-100 flex flex-col"
       >
         <div class="p-6 md:mb-6">
           <div class="flex mb-2">
             <h4 class="flex-1 text-purple-500 font-semibold text-2xl" v-text="event.name" />
-            <div v-if="event.note" class="flex items-center">
+            <div v-if="event.note" class="ml-4 text-center flex items-center">
               <div class="bg-purple-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider" v-text="event.note" />
             </div>
           </div>
@@ -25,7 +25,7 @@
             <div class="border-l border-purple-200 pl-3 py-2" v-text="event.time" />
           </div>
           <p>
-            Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.
+            {{ event.description }}
           </p>
         </div>
         <a
@@ -54,6 +54,7 @@ export default {
           note: 'Alleen leden',
           day: 'Dinsdag',
           time: '19:00',
+          description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.',
           buttonText: 'Aanmelden',
           buttonLink: '/eatingout'
         },
@@ -61,6 +62,7 @@ export default {
           name: 'Fillum',
           day: 'Woensdag',
           time: '21:15',
+          description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.',
           buttonText: 'Bekijk Programma',
           buttonLink: 'http://homodelft.nl/films/'
         },
@@ -69,13 +71,15 @@ export default {
           note: 'Max. 28 jaar',
           day: 'Donderdag',
           time: '22:00',
+          description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.',
           buttonText: 'Ga naar Outsite.nl',
           buttonLink: 'https://outsite.nl/'
         },
         {
           name: 'Vrijdagbar',
           day: 'Vrijdag',
-          time: '22:00'
+          time: '22:00',
+          description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.'
         }
       ]
     }

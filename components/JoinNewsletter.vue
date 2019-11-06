@@ -1,33 +1,71 @@
 <template>
   <div class="mx-auto container relative">
-    <div class="xl:h-28 xl:absolute -top-14 p-4 w-full text-center">
+    <div class="xl:h-40 xl:absolute -top-20 p-4 w-full text-center">
       <div class="bg-white rounded shadow-xl h-full xl:inline-flex justify-between items-center">
-        <div class="text-2xl py-4 px-8 flex items-center">
-          <WhatsAppLogo class="fill-current text-green-400 h-32 md:h-20 xl:h-12 mr-4" />
-          <div><slot></slot></div>
-        </div>
-        <a
-          :href="buttonTarget"
-          target="_blank"
+        <div
           class="
-            bg-green-400 h-full block px-8 text-white text-xl font-bold tracking-wider uppercase
-            flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r 
+            bg-blue-400 h-full block px-8 text-white text-xl font-bold tracking-wider uppercase
+            flex items-center justify-center py-2 rounded-t xl:rounded-t-none xl:rounded-l 
           "
         >
-          <div>{{ buttonText }}</div>
-        </a>
+          <Zondicon icon="envelope" class="fill-current text-white h-16" />
+        </div>
+        <form
+          id="mc-embedded-subscribe-form"
+          action="https://dwhdelft.us3.list-manage.com/subscribe/post?u=8c9a6403988df86ce2cfd009e&amp;id=275d74c087"
+          method="post"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+          @submit="submitForm()"
+        >
+          <div class="py-4 px-8 flex items-center justify-center">
+            <div>
+              <div class="text-2xl mb-3"><slot></slot></div>
+              <div class="flex justify-center">
+                <input
+                  v-model="email"
+                  type="email"
+                  :placeholder="$t('forms.placeholder.email')"
+                  name="EMAIL"
+                  class="bg-gray-200 rounded-lg block px-4 py-2 w-full mr-4"
+                  required
+                />
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_8c9a6403988df86ce2cfd009e_275d74c087" tabindex="-1" value="" />
+                </div>
+                <button class="bg-blue-400 px-4 py-2 rounded-lg text-white uppercase font-semibold tracking-wider">
+                  {{ buttonText }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import WhatsAppLogo from '@/assets/images/whatsapp_logo.svg'
+import Zondicon from 'vue-zondicons'
 
 export default {
   props: ['button-text', 'button-target'],
   components: {
-    WhatsAppLogo
+    Zondicon
+  },
+  data() {
+    return {
+      email: ''
+    }
+  },
+  methods: {
+    submitForm() {
+      setTimeout(() => {
+        this.email = ''
+      }, 3000)
+    }
   }
 }
 </script>

@@ -34,7 +34,8 @@ module.exports = {
       inset: {
         '-8': '-2rem',
         '-16': '-4rem',
-        '-14': '-3.5rem'
+        '-14': '-3.5rem',
+        '-20': '-5rem'
       }
     },
     aspectRatio: {

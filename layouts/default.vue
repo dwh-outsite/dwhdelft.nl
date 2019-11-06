@@ -3,10 +3,7 @@
     <nuxt />
 
     <footer id="contact" class="bg-gray-700">
-      <JoinNewsletter
-        :button-text="$t('footer.newsletter.button')"
-        button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer"
-      >
+      <JoinNewsletter :button-text="$t('footer.newsletter.button')">
         <span v-html="$t('footer.newsletter.description')" />
       </JoinNewsletter>
       <Footer

@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto container relative">
-    <div class="xl:h-40 xl:absolute -top-20 p-4 w-full text-center">
-      <div class="bg-white rounded shadow-xl h-full xl:inline-flex justify-between items-center">
+  <div class="">
+    <div class="xl:h-32 w-full">
+      <div class="bg-white rounded shadow-xl h-full xl:inline-flex items-center">
         <div
           class="
             bg-blue-400 h-full block px-8 text-white text-xl font-bold tracking-wider uppercase
@@ -20,7 +20,7 @@
           novalidate
           @submit="submitForm()"
         >
-          <div class="py-4 px-8 flex items-center justify-center">
+          <div class="py-4 px-8 flex items-center justify-center text-black">
             <div>
               <div class="text-2xl mb-3"><slot></slot></div>
               <div class="flex justify-center">

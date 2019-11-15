@@ -2,7 +2,7 @@
   <div class="overflow-y-hidden md:overflow-x-hidden">
     <div class="md:container mx-auto">
       <div class="md:flex">
-        <div class="flex-1 pt-12 pb-20 lg:pb-24 px-4">
+        <div class="flex-1 pt-12 pb-12 px-4">
           <div class="rounded-full w-20 h-20 p-6 bg-purple-500 mt-2 mb-8 text-white mx-auto">
             <Zondicon icon="location-food" class="fill-current" />
           </div>

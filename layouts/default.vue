@@ -3,9 +3,6 @@
     <nuxt />
 
     <footer id="contact" class="bg-gray-700">
-      <JoinNewsletter :button-text="$t('footer.newsletter.button')">
-        <span v-html="$t('footer.newsletter.description')" />
-      </JoinNewsletter>
       <Footer
         :left-title="$t('footer.leftTitle')"
         :right-title="$t('footer.rightTitle')"
@@ -22,6 +19,11 @@
           <BoardMember name="Jelle Vos" :role="$t('footer.board.general')" email="promotie@dwhdelft.nl" />
           <BoardMember name="Quinten Star" :role="$t('footer.board.treasurer')" email="penningmeester@dwhdelft.nl" />
           <BoardMember name="Jeroen Wegdam" :role="$t('footer.board.general')" email="pand@dwhdelft.nl" />
+        </template>
+        <template v-slot:newsletter>
+          <JoinNewsletter :button-text="$t('footer.newsletter.button')">
+            <span v-html="$t('footer.newsletter.description')" />
+          </JoinNewsletter>
         </template>
       </Footer>
     </footer>

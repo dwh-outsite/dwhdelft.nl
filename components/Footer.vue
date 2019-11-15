@@ -2,15 +2,18 @@
   <div>
     <div class="container px-4 mx-auto text-white">
       <div class="md:flex">
-        <div class="md:w-2/3 md:border-r border-gray-600 xl:pt-20">
+        <div class="md:w-2/3 md:border-r border-gray-600 pt-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ leftTitle }}</h3>
 
           <div class="md:flex flex-wrap">
             <slot name="board-members"></slot>
           </div>
+          <div class="mt-2 md:mb-8 mr-10">
+            <slot name="newsletter"></slot>
+          </div>
         </div>
 
-        <div class="md:ml-4 xl:ml-10 xl:pt-20 pb-8">
+        <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider">{{ rightTitle }}</h3>
           <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">

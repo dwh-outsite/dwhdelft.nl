@@ -15,6 +15,12 @@
           <a :href="localePath('index') + '#eatingout'" class="text-white text-xl font-semibold no-underline mr-4">
             EatingOUT
           </a>
+          <a :href="localePath('education')" class="text-white text-xl font-semibold no-underline mr-4">
+            Voorlichting
+          </a>
+          <a :href="localePath('andersblad')" class="text-white text-xl font-semibold no-underline mr-4">
+            Andersblad
+          </a>
           <a href="#contact" class="text-white text-xl font-semibold no-underline mr-4">
             Contact
           </a>

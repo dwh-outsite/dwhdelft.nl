@@ -85,6 +85,8 @@ export default {
   },
   methods: {
     formatDate(date) {
+      date = date.slice(0, -2) + ':' + date.slice(-2)
+
       if (this.$i18n.locale === 'nl') {
         dayjs.locale('nl')
         return dayjs(date).format('D MMMM YYYY [om] HH:mm uur')

@@ -144,6 +144,10 @@ export default {
       //   to: 'https://dwhdelft.nl/:splat',
       //   status: '301!'
       // }
+      {
+        from: '/eatingout',
+        to: 'https://docs.google.com/forms/d/e/1FAIpQLScc8iucZVSq2_jAG2SrW5Ib8XuZQ_uaipcMzoqeXNOBiRKyxQ/viewform'
+      }
     ]
   }
 }

@@ -14,7 +14,6 @@
         contact-phone="06-37560270"
         contact-coc="KvK: 40398035<br />RSIN: 807864250"
         :anbi-link-destination="localePath('anbi')"
-        :dwh-description="$t('footer.dwhDescription')"
       >
         <template v-slot:board-members>
           <BoardMember name="Robert Baart" :role="$t('footer.board.president')" email="voorzitter@dwhdelft.nl" />

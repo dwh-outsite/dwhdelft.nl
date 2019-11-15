@@ -96,7 +96,6 @@ export default {
     'contact-phone',
     'contact-address',
     'contact-coc',
-    'dwh-description',
     'anbi-link-destination'
   ],
   components: {

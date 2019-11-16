@@ -39,13 +39,24 @@
             </div>
             <div class="ml-3 leading-tight" v-html="contactCoc" />
           </div>
-          <a
-            :href="anbiLinkDestination"
-            class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-          >
-            ANBI
-            <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-          </a>
+          <div class="mb-2">
+            <a
+              :href="anbiLinkDestination"
+              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+            >
+              ANBI
+              <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+            </a>
+          </div>
+          <div class="mb-2">
+            <a
+              :href="localePath('signup')"
+              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+            >
+              {{ $t('signup.title') }}
+              <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

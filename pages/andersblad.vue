@@ -29,7 +29,7 @@
                 <div class="flex-1 ml-4 flex flex-col justify-center">
                   <h3 class="text-2xl font-semibold">{{ edition.name }}</h3>
                   <h4 class="text-xl">{{ edition.title }}</h4>
-                  <p class="text-lg">{{ edition.publishDate }}</p>
+                  <p class="text-lg text-gray-600">{{ edition.publishDate }}</p>
                 </div>
               </div>
             </a>
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import GoogleDrive from '~/src/GoogleDrive'
 import Header from '~/components/Header'
 
 export default {
@@ -54,25 +54,17 @@ export default {
     }
   },
   mounted() {
-    axios
-      .get(
-        `https://www.googleapis.com/drive/v3/files` +
-          `?orderBy=name desc` +
-          `&q='1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM'%20in%20parents` +
-          `&fields=files(id, name, webContentLink, webViewLink, thumbnailLink)` +
-          `&key=AIzaSyDwi_l2R3qDWkh2HN8_AmIpy7mk8Ij7nk8`
-      )
-      .then(response => {
-        this.editions = response.data.files.map(file => {
-          return {
-            ...file,
-            filename: file.name,
-            name: file.name.substr(0, file.name.indexOf(',')),
-            title: file.name.slice(file.name.indexOf(', ') + 2, file.name.lastIndexOf(',')),
-            publishDate: file.name.slice(file.name.lastIndexOf(',') + 1, -4)
-          }
-        })
+    GoogleDrive.listFiles('1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM').then(files => {
+      this.editions = files.map(file => {
+        return {
+          ...file,
+          filename: file.name,
+          name: file.name.substr(0, file.name.indexOf(',')),
+          title: file.name.slice(file.name.indexOf(', ') + 2, file.name.lastIndexOf(',')),
+          publishDate: file.name.slice(file.name.lastIndexOf(', ') + 2, -4)
+        }
       })
+    })
   }
 }
 </script>

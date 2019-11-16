@@ -14,7 +14,7 @@
       </div>
     </section>
 
-    <section class="bg-purple-400">
+    <section class="bg-purple-400" v-if="editions.length > 0">
       <div class="container px-4 mx-auto pt-8 pb-12">
         <div class="text-center mb-6">
           <h1 class="text-white font-medium text-5xl" v-html="$t('andersblad.list_title')" />

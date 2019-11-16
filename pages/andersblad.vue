@@ -58,7 +58,6 @@ export default {
       this.editions = files.map(file => {
         return {
           ...file,
-          filename: file.name,
           name: file.name.substr(0, file.name.indexOf(',')),
           title: file.name.slice(file.name.indexOf(', ') + 2, file.name.lastIndexOf(',')),
           publishDate: file.name.slice(file.name.lastIndexOf(', ') + 2, -4)

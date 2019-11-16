@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 mx-auto pt-16 md:pb-24">
+  <div class="container px-4 mx-auto py-16 md:pb-24">
     <h2 class="text-center text-purple-500 font-medium text-5xl mb-12 leading-tight">
       <strong>DWH</strong>
       is vier avonden geopend

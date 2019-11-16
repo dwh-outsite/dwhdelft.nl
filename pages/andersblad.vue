@@ -60,7 +60,7 @@ export default {
           ...file,
           name: file.name.substr(0, file.name.indexOf(',')),
           title: file.name.slice(file.name.indexOf(', ') + 2, file.name.lastIndexOf(',')),
-          publishDate: file.name.slice(file.name.lastIndexOf(', ') + 2, -4)
+          publishDate: file.name.slice(file.name.lastIndexOf(', ') + 2)
         }
       })
     })

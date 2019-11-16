@@ -82,8 +82,7 @@
         </a>
       </div>
       <a
-        href="https://dwhdelft.nl/"
-        target="_blank"
+        :href="localePath('index')"
         class="text-gray-400 hover:text-white flex justify-center md:justify-end pt-4 md:pt-0"
       >
         &copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}

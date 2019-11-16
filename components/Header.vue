@@ -5,30 +5,14 @@
         <a :href="localePath('index')">
           <DWHLogo class="h-16 fill-current text-white" />
         </a>
-        <div
-          :class="[
-            `absolute md:static top-16 bg-white md:bg-transparent w-full md:w-auto `,
-            `-ml-4 md:ml-0 p-4 md:p-0 text-xl font-semibold md:text-white`,
-            showMenu ? '' : 'hidden md:block'
-          ]"
-        >
-          <a :href="localePath('index')" class="block md:inline no-underline mr-4 my-2">
-            Home
+        <div v-if="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
+          <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
+            {{ item.title }}
           </a>
-          <a :href="localePath('index') + '#join-dwh'" class="block md:inline no-underline mr-4 my-2">
-            Join DWH
-          </a>
-          <a :href="localePath('index') + '#eatingout'" class="block md:inline no-underline mr-4 my-2">
-            EatingOUT
-          </a>
-          <a :href="localePath('education')" class="block md:inline no-underline mr-4 my-2">
-            Voorlichting
-          </a>
-          <a :href="localePath('andersblad')" class="block md:inline no-underline mr-4 my-2">
-            Andersblad
-          </a>
-          <a href="#contact" class="block md:inline no-underline mr-4 my-2">
-            Contact
+        </div>
+        <div class="hidden md:block text-xl font-semibold text-white">
+          <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
+            {{ item.title }}
           </a>
         </div>
         <div class="flex">
@@ -88,7 +72,15 @@ export default {
   },
   data() {
     return {
-      showMenu: false
+      showMenu: false,
+      menu: [
+        { title: 'Home', url: this.localePath('index') },
+        { title: 'Join DWH', url: this.localePath('index') + '#join-dwh' },
+        { title: 'EatingOUT', url: this.localePath('index') + '#eatingout' },
+        { title: 'Voorlichting', url: this.localePath('education') },
+        { title: 'Andersblad', url: this.localePath('andersblad') },
+        { title: 'Contact', url: '#contact' }
+      ]
     }
   },
   mounted() {

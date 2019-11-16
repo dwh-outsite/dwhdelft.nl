@@ -1,11 +1,11 @@
 <template>
   <div class="">
     <div class="xl:h-32 w-full">
-      <div class="bg-white rounded shadow-xl h-full xl:inline-flex items-center">
+      <div class="bg-white rounded-lg shadow-xl h-full xl:inline-flex items-center">
         <div
           class="
             bg-blue-400 h-full block px-8 text-white text-xl font-bold tracking-wider uppercase
-            flex items-center justify-center py-2 rounded-t xl:rounded-t-none xl:rounded-l 
+            flex items-center justify-center py-2 rounded-t-lg xl:rounded-t-none xl:rounded-l-lg
           "
         >
           <Zondicon icon="envelope" class="fill-current text-white h-16" />

@@ -8,7 +8,7 @@
           <div class="md:flex flex-wrap">
             <slot name="board-members"></slot>
           </div>
-          <div class="mt-2 md:mb-8 mr-10">
+          <div class="mt-2 md:mb-8 md:mr-10">
             <slot name="newsletter"></slot>
           </div>
         </div>

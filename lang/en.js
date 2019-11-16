@@ -96,7 +96,7 @@ export default {
   footer: {
     newsletter: {
       description: 'Stay up to date, subscribe to the <strong>DWH newsletter</strong>',
-      button: 'Subscribe now'
+      button: 'Subscribe'
     },
     leftTitle: 'Board',
     rightTitle: 'Contact',
@@ -116,5 +116,35 @@ export default {
       format. The magazine is (partly) in Dutch.
     `,
     list_title: 'Editions'
+  },
+  education: {
+    title: 'Education',
+    main_text: `
+      Who doesn’t remember puberty? A period with many changes… Hair begins to grow in places, you start being
+      independent from your parents and you fall in love for the first time! But what if you fall in love with someone
+      of the same gender?<br />
+      <br />
+      Many LGBT youngsters can’t cope with this and don’t dare to come out because they fear they might be victims of
+      bullying. In high schools, the word gay is unfortunately too often used as a term of abuse. When asked about what
+      homosexuality means, the stereotypes, the most creative words for sex, and even pedophilia come up. This shows
+      that young people don’t often have a grasp of what constitutes homosexuality, which sometimes can result in
+      incomprehension and harassment.<br />
+      <br />
+      Through education we can show the young people that homosexuality is not that strange. By breaking stereotypes and
+      explaining the sexual diversity terms, we get the youth to think actively about homosexuality and its meaning for
+      themselves. Experience shows that after being informed, young people have more respect for sexual diversity and
+      more importantly, for each other!<br />
+      <br />
+      DWH characterizes itself for having a predominantly young and enthusiastic team of educators. Through this small
+      age difference with the high school students it is often easy for them to relate and identify to our educators.
+      Do you want DWH to come to your school? Send us an email at
+      <a href="mailto:voorlichting@dwhdelft.nl" class="text-purple-500">voorlichting@dwhdelft.nl</a>.<br />
+      <br />
+      See you soon!<br />
+      Jeroen en Justin<br />
+      Education Coordinators<br />
+      <br />
+      P.S. Are you a member of DWH and would you like to become an educator? Send us an email!
+    `
   }
 }

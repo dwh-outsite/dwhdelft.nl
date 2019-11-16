@@ -6,9 +6,11 @@
           <DWHLogo class="h-16 fill-current text-white" />
         </a>
         <div
-          v-if="showMenu"
-          class="absolute md:static top-16 bg-white md:bg-transparent w-full md:w-auto 
-                -ml-4 md:ml-0 p-4 md:p-0 text-xl font-semibold md:text-white"
+          :class="[
+            `absolute md:static top-16 bg-white md:bg-transparent w-full md:w-auto `,
+            `-ml-4 md:ml-0 p-4 md:p-0 text-xl font-semibold md:text-white`,
+            showMenu ? '' : 'hidden md:block'
+          ]"
         >
           <a :href="localePath('index')" class="block md:inline no-underline mr-4 my-2">
             Home
@@ -47,7 +49,7 @@
           <div
             class="
               rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white
-              flex items-center justify-center 
+              flex items-center justify-center md:hidden
               overflow-hidden relative
             "
             @click="showMenu = !showMenu"

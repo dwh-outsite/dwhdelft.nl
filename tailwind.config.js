@@ -12,10 +12,13 @@ module.exports = {
         80: '20rem'
       },
       width: {
-        7: '1.75rem'
+        7: '1.75rem',
+        96: '24rem'
       },
       margin: {
-        '-4': '-1rem'
+        '-4': '-1rem',
+        '-7': '-1.75rem',
+        '-8': '-2rem'
       },
       maxWidth: {
         56: '14rem'

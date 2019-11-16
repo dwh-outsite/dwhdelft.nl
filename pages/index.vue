@@ -25,12 +25,12 @@
 
     <section class="introduction overflow-x-hidden">
       <div class="container mx-auto pt-12 pb-24 md:flex">
-        <div class="flex-1 md:w-1/2 px-4">
+        <div class="flex-1 md:w-1/2 px-4 md:pr-16">
           <p class="text-lg md:text-xl leading-relaxed text-gray-800" v-html="$t('description.text')"></p>
           <div
             class="
-              rounded shadow-xl bg-purple-500 text-lg md:text-xl text-white my-12 md:mt-10 md:mb-24 p-4 relative
-              w-full md:w-auto md:inline-flex items-center 
+              flex-1 rounded shadow-xl bg-purple-500 text-lg md:text-xl text-white my-12 md:mt-10 md:mb-24 p-4 relative
+              w-full md:w-auto md:inline-flex items-center
             "
           >
             <div
@@ -42,6 +42,11 @@
               <Zondicon icon="explore" class="fill-current" />
             </div>
             <div class="mt-6 md:mt-0 md:ml-4" v-html="$t('description.invitation')" />
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="bg-white p-4 border rotate shadow-lg z-50 mr-8 -mt-7">
+            <img src="~/assets/images/building.jpg" class="w-96" />
           </div>
         </div>
       </div>
@@ -127,5 +132,9 @@ export default {
 
 .introduction {
   margin-bottom: -10rem;
+}
+
+.rotate {
+  transform: rotate(5deg);
 }
 </style>

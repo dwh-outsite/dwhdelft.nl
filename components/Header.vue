@@ -126,6 +126,7 @@ export default {
   transform-origin: 0;
   height: 100rem;
   bottom: -100rem;
+  z-index: 0;
 }
 
 .image-container {

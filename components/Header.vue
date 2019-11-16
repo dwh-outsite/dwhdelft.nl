@@ -5,30 +5,34 @@
         <a :href="localePath('index')">
           <DWHLogo class="h-16 fill-current text-white" />
         </a>
-        <div class="hidden md:block">
-          <a :href="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
+        <div
+          v-if="showMenu"
+          class="absolute md:static top-16 bg-white md:bg-transparent w-full md:w-auto 
+                -ml-4 md:ml-0 p-4 md:p-0 text-xl font-semibold md:text-white"
+        >
+          <a :href="localePath('index')" class="block md:inline no-underline mr-4 my-2">
             Home
           </a>
-          <a :href="localePath('index') + '#join-dwh'" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('index') + '#join-dwh'" class="block md:inline no-underline mr-4 my-2">
             Join DWH
           </a>
-          <a :href="localePath('index') + '#eatingout'" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('index') + '#eatingout'" class="block md:inline no-underline mr-4 my-2">
             EatingOUT
           </a>
-          <a :href="localePath('education')" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('education')" class="block md:inline no-underline mr-4 my-2">
             Voorlichting
           </a>
-          <a :href="localePath('andersblad')" class="text-white text-xl font-semibold no-underline mr-4">
+          <a :href="localePath('andersblad')" class="block md:inline no-underline mr-4 my-2">
             Andersblad
           </a>
-          <a href="#contact" class="text-white text-xl font-semibold no-underline mr-4">
+          <a href="#contact" class="block md:inline no-underline mr-4 my-2">
             Contact
           </a>
         </div>
-        <div class="flex items-center">
+        <div class="flex">
           <div
             class="
-              rounded-full w-7 h-7 bg-white mr-1 md:mr-4 border-2 border-white
+              rounded-full w-7 h-7 bg-white mr-3 md:mr-4 border-2 border-white
               flex items-center justify-center 
               overflow-hidden relative 
             "
@@ -39,6 +43,17 @@
             <a v-if="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
               <NLFlag />
             </a>
+          </div>
+          <div
+            class="
+              rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white
+              flex items-center justify-center 
+              overflow-hidden relative
+            "
+            @click="showMenu = !showMenu"
+          >
+            <Zondicon v-if="!showMenu" icon="menu" class="fill-current w-full" />
+            <Zondicon v-if="showMenu" icon="close" class="fill-current w-full" />
           </div>
         </div>
       </div>
@@ -56,6 +71,7 @@
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
 import DWHLogo from '@/assets/images/dwh_logo.svg'
 import NLFlag from '@/assets/images/flags/nl.svg'
 import GBFlag from '@/assets/images/flags/gb.svg'
@@ -65,7 +81,13 @@ export default {
   components: {
     DWHLogo,
     NLFlag,
-    GBFlag
+    GBFlag,
+    Zondicon
+  },
+  data() {
+    return {
+      showMenu: false
+    }
   },
   mounted() {
     window.addEventListener('load', () => {

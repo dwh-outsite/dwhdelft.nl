@@ -129,7 +129,7 @@ export default {
       Het verenigingsblad van DWH verschijnt meerdere malen per jaar. Eerdere edities zijn hier te downloaden in PDF 
       formaat.
     `,
-    list_title: 'Edities'
+    list_title: '<strong>Andersblad</strong> Edities'
   },
   anbi: {
     title: 'ANBI',

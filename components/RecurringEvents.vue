@@ -8,7 +8,8 @@
       <div
         v-for="event in events"
         :key="event.name"
-        class="lg:flex-1 mx-2 mb-4 lg:mb-0 md:w-1/3 lg:w-auto rounded shadow bg-purple-100 flex flex-col"
+        class="lg:flex-1 mx-2 mb-4 lg:mb-0 md:w-1/3 lg:w-auto rounded shadow bg-purple-100 flex flex-col 
+          justify-between"
       >
         <div class="p-6 md:mb-6">
           <div class="flex mb-2">

@@ -82,11 +82,6 @@ export default {
         { title: 'Contact', url: '#contact' }
       ]
     }
-  },
-  mounted() {
-    window.addEventListener('load', () => {
-      document.getElementById('headervid').play()
-    })
   }
 }
 </script>

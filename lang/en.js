@@ -55,8 +55,40 @@ export default {
       read_less: 'Collapse'
     }
   },
-  video: {
-    title: '<strong>DWH</strong> in 120 seconds'
+  recurring_events: {
+    announcement: '<strong>DWH</strong> is open 4 nights a week',
+    eating_out: {
+      name: 'EatingOUT',
+      note: 'Alleen leden',
+      day: 'Dinsdag',
+      time: '19:00',
+      description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.',
+      buttonText: 'Aanmelden',
+      buttonLink: '/eatingout'
+    },
+    fillum: {
+      name: 'Fillum',
+      day: 'Woensdag',
+      time: '21:15',
+      description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.',
+      buttonText: 'Bekijk Programma',
+      buttonLink: 'http://homodelft.nl/films/'
+    },
+    outsite: {
+      name: 'Outsite',
+      note: 'Max. 28 jaar',
+      day: 'Donderdag',
+      time: '22:00',
+      description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.',
+      buttonText: 'Ga naar Outsite.nl',
+      buttonLink: 'https://outsite.nl/'
+    },
+    friday: {
+      name: 'Vrijdagbar',
+      day: 'Vrijdag',
+      time: '22:00',
+      description: 'Een leuke avond om lekker te eten. Dat is gezellig en handig. Wat een spektakel.'
+    }
   },
   forms: {
     label: {

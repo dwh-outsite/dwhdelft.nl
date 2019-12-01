@@ -79,8 +79,8 @@
       </JoinOptions>
     </section>
 
-    <section id="video" class="bg-white">
-      <RecurringEvents :title="$t('video.title')" />
+    <section id="recurring_events" class="bg-white">
+      <RecurringEvents :announcement="$t('recurring_events.announcement')" />
     </section>
 
     <section id="eatingout" class="bg-gray-200">

@@ -55,8 +55,44 @@ export default {
       read_less: 'Inklappen'
     }
   },
-  video: {
-    title: '<strong>DWH</strong> in 120 seconden'
+  recurring_events: {
+    announcement: '<strong>DWH</strong> is elke week op 4 avonden open',
+    eating_out: {
+      name: 'EatingOUT',
+      note: 'Alleen leden',
+      day: 'Dinsdag',
+      time: '19:00',
+      description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
+      één van onze leden.`,
+      buttonText: 'Aanmelden',
+      buttonLink: '/eatingout'
+    },
+    fillum: {
+      name: 'Fillum',
+      day: 'Woensdag',
+      time: '21:15',
+      description: `Dé queer filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
+      aan de beurt.`,
+      buttonText: 'Bekijk Programma',
+      buttonLink: 'http://homodelft.nl/films/'
+    },
+    outsite: {
+      name: 'Outsite',
+      note: 'Max. 28 jaar',
+      day: 'Donderdag',
+      time: '22:00',
+      description: `Een avond voor iedereen van 28 of jonger. Hou jij van een feestje of drink je liever een drankje aan
+       de bar? Beiden zijn mogelijk bij Outsite!`,
+      buttonText: 'Ga naar Outsite.nl',
+      buttonLink: 'https://outsite.nl/'
+    },
+    friday: {
+      name: 'Vrijdagbar',
+      day: 'Vrijdag',
+      time: '22:00',
+      description: `Vrijdag is de open baravond van heel DWH. Van jong tot oud: Iedereen is welkom om een drankje te
+      komen drinken!`
+    }
   },
   forms: {
     label: {
@@ -126,7 +162,7 @@ export default {
   andersblad: {
     title: 'Andersblad',
     main_text: `
-      Het verenigingsblad van DWH verschijnt meerdere malen per jaar. Eerdere edities zijn hier te downloaden in PDF 
+      Het verenigingsblad van DWH verschijnt meerdere malen per jaar. Eerdere edities zijn hier te downloaden in PDF
       formaat.
     `,
     list_title: '<strong>Andersblad</strong> Edities'
@@ -204,9 +240,9 @@ export default {
       na over homoseksualiteit. Uit ervaring blijkt dat de jongeren na de voorlichting meer respect hebben voor seksuele
       diversiteiten en, nog veel belangrijker, voor elkaar!<br />
       <br />
-      DWH kenmerkt zichzelf door een enthousiast en overwegend jong team aan voorlichters. Door dit kleine 
+      DWH kenmerkt zichzelf door een enthousiast en overwegend jong team aan voorlichters. Door dit kleine
       leeftijdsverschil met de middelbare scholieren is het vaak gemakkelijk voor hen zich te identificeren met onze
-      voorlichters. Wilt u dat DWH bij uw school langskomt? Neem dan contact met ons op door te mailen naar 
+      voorlichters. Wilt u dat DWH bij uw school langskomt? Neem dan contact met ons op door te mailen naar
       <a href="mailto:voorlichting@dwhdelft.nl" class="text-purple-500">voorlichting@dwhdelft.nl</a>.<br />
       <br />
       Tot snel!<br />

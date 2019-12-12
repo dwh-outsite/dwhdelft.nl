@@ -57,42 +57,44 @@ export default {
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is open 4 nights a week',
-    eating_out: {
-      name: 'EatingOUT',
-      note: 'Members only',
-      day: 'Tuesday',
-      time: '19:00',
-      description: `On tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
-      members.`,
-      buttonText: 'Sign Up',
-      buttonLink: '/eatingout'
-    },
-    fillum: {
-      name: 'Fillum',
-      day: 'Wednesday',
-      time: '21:15',
-      description: `The one and only queer movie night in Delft: Come by to enjoy another classic or a newly released
-      queer movie.`,
-      buttonText: 'Check Programme',
-      buttonLink: 'http://homodelft.nl/films/'
-    },
-    outsite: {
-      name: 'Outsite',
-      note: 'Max. 28 years old',
-      day: 'Thursday',
-      time: '22:00',
-      description: `A bar night for everyone aged 28 or under. If you like the occasional party or enjoy a drink at the
-      bar instead, Outsite is the right place for you!`,
-      buttonText: 'Head to Outsite.nl',
-      buttonLink: 'https://outsite.nl/en'
-    },
-    friday: {
-      name: 'Friday Bar Night',
-      day: 'Friday',
-      time: '22:00',
-      description: `Friday night is an open bar night for DWH as whole. Young or old: Every is welcome to have a drink
-      at our bar!`
-    }
+    events: [
+      {
+        name: 'EatingOUT',
+        note: 'Members only',
+        day: 'Tuesday',
+        time: '19:00',
+        description: `On tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
+          members.`,
+        buttonText: 'Sign Up',
+        buttonLink: '/eatingout'
+      },
+      {
+        name: 'Fillum',
+        day: 'Wednesday',
+        time: '21:15',
+        description: `The one and only queer movie night in Delft: Come by to enjoy another classic or a newly released
+          queer movie.`,
+        buttonText: 'Check Programme',
+        buttonLink: 'http://homodelft.nl/films/'
+      },
+      {
+        name: 'Outsite',
+        note: 'Max. 28 years old',
+        day: 'Thursday',
+        time: '22:00',
+        description: `A bar night for everyone aged 28 or under. If you like the occasional party or enjoy a drink at
+          the bar instead, Outsite is the right place for you!`,
+        buttonText: 'Head to Outsite.nl',
+        buttonLink: 'https://outsite.nl/en'
+      },
+      {
+        name: 'Friday Bar Night',
+        day: 'Friday',
+        time: '22:00',
+        description: `Friday night is an open bar night for DWH as whole. Young or old: Every is welcome to have a drink
+          at our bar!`
+      }
+    ]
   },
   forms: {
     label: {

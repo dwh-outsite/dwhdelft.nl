@@ -3,7 +3,7 @@
     <h2 class="text-center text-purple-500 font-medium text-5xl mb-12 leading-tight" v-html="announcement" />
     <div class="md:flex flex-wrap justify-center -mx-2">
       <div
-        v-for="event in events"
+        v-for="event in $t('recurring_events.events')"
         :key="event.name"
         class="lg:flex-1 mx-2 mb-4 lg:mb-0 md:w-1/3 lg:w-auto rounded shadow bg-purple-100 flex flex-col
           justify-between"
@@ -43,44 +43,6 @@ import Zondicon from 'vue-zondicons'
 
 export default {
   props: ['title', 'url', 'announcement'],
-  components: { Zondicon },
-  data() {
-    return {
-      events: [
-        {
-          name: this.$t('recurring_events.eating_out.name'),
-          note: this.$t('recurring_events.eating_out.note'),
-          day: this.$t('recurring_events.eating_out.day'),
-          time: this.$t('recurring_events.eating_out.time'),
-          description: this.$t('recurring_events.eating_out.description'),
-          buttonText: this.$t('recurring_events.eating_out.buttonText'),
-          buttonLink: this.$t('recurring_events.eating_out.buttonLink')
-        },
-        {
-          name: this.$t('recurring_events.fillum.name'),
-          day: this.$t('recurring_events.fillum.day'),
-          time: this.$t('recurring_events.fillum.time'),
-          description: this.$t('recurring_events.fillum.description'),
-          buttonText: this.$t('recurring_events.fillum.buttonText'),
-          buttonLink: this.$t('recurring_events.fillum.buttonLink')
-        },
-        {
-          name: this.$t('recurring_events.outsite.name'),
-          note: this.$t('recurring_events.outsite.note'),
-          day: this.$t('recurring_events.outsite.day'),
-          time: this.$t('recurring_events.outsite.time'),
-          description: this.$t('recurring_events.outsite.description'),
-          buttonText: this.$t('recurring_events.outsite.buttonText'),
-          buttonLink: this.$t('recurring_events.outsite.buttonLink')
-        },
-        {
-          name: this.$t('recurring_events.friday.name'),
-          day: this.$t('recurring_events.friday.day'),
-          time: this.$t('recurring_events.friday.time'),
-          description: this.$t('recurring_events.friday.description')
-        }
-      ]
-    }
-  }
+  components: { Zondicon }
 }
 </script>

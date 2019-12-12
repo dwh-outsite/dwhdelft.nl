@@ -113,6 +113,9 @@ export default {
   forms: {
     label: {
       name: 'How should we call you?',
+      firstname: 'First Name',
+      lastname: 'Last Name',
+      initials: 'Initials',
       email: 'Email address',
       language: 'Language',
       languages: {
@@ -124,17 +127,27 @@ export default {
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
       residence: 'City of residence',
+      address: 'Address',
+      postal_code: 'Postal Code',
       pronouns: 'Pronouns',
-      barbuddy: 'Who would you like to meet?'
+      barbuddy: 'Who would you like to meet?',
+      membership_fee: 'Membership Fee (see below)',
+      iban: 'IBAN number for payment by direct debit'
     },
     placeholder: {
       name: 'Name',
+      firstname: 'First name',
+      lastname: 'Last name',
+      initials: 'Initials (for example Q.B.)',
       email: 'Email address',
       remarks: 'Remarks or questions',
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
       residence: 'City name',
-      pronouns: 'e.g. she/her, he/him, they/them'
+      address: 'Address',
+      postal_code: 'Postal code (for example 2611PV)',
+      pronouns: 'e.g. she/her, he/him, they/them',
+      iban: 'IBAN number'
     },
     buttons: {
       sign_up: 'Sign up',
@@ -142,7 +155,8 @@ export default {
     },
     success: {
       heading: 'The form has been submitted successfully',
-      barbuddy: 'The bar buddy you selected will contact you as soon as possible.'
+      barbuddy: 'The bar buddy you selected will contact you as soon as possible.',
+      membership: 'We will send you an e-mail soon to confirm your membership.'
     }
   },
   footer: {
@@ -198,5 +212,38 @@ export default {
       <br />
       P.S. Are you a member of DWH and would you like to become an educator? Send us an email!
     `
+  },
+  signup: {
+    title: 'Membership Signup',
+    main_text: `
+      By becoming a member you support us in the things that we find important, like the introduction groups, education
+      at secondary schools, the movie night, the bar nights and all other activities at DWH.<br />
+      <br />
+      As a member you receive the magazine from DWH: the Andersblad, and you can join the EatingOUT where you can enjoy
+      a cheap and delicious meal.
+    `,
+    fee_description: `
+      The contribution fee of DWH is a minimum of € 48,50 / € 25,00  per year. A higher amount is of course very
+      welcome.<br />
+      <br />
+      In a general assembly meeting, it was decided that the price differentiation for the membership fee is based on
+      the ability to pay. In order not to make it too complicated, we use the following rule of thumb: For people aged
+      under 25 or from pension age, the reduced fee of at least € 25,00 is applied.
+      All other members pay the standard fee of € 48,50.<br />
+      <br />
+      There are exceptions:
+      <ul class="list-disc ml-8">
+        <li>People who would get the reduced rate but earn enough to pay for the standard rate, should pay the standard
+            rate.</li>
+        <li>People who would not get the reduced rate but can’t financially cope with paying the standard rate can
+            contact the treasurer.</li>
+        <li>When there is a change in the situation that would effect any of the above exceptions, it should be reported
+            to the treasurer.</li>
+      </ul>
+    `,
+    fees: {
+      full: 'Regular (€ 48,50)',
+      discounted: 'Reduced (€ 25,00)'
+    }
   }
 }

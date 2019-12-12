@@ -84,7 +84,12 @@
     </section>
 
     <section id="eatingout" class="bg-gray-200">
-      <EatingOut />
+      <EatingOut
+        :title="$t('eating_out.title')"
+        :subtitle="$t('eating_out.subtitle')"
+        :button="$t('eating_out.button')"
+        :notes="$t('eating_out.notes')"
+      />
     </section>
   </div>
 </template>

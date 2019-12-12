@@ -104,6 +104,12 @@ export default {
       }
     ]
   },
+  eating_out: {
+    title: 'EatingOUT: Onze wekelijkse eettafel',
+    subtitle: 'Elke dinsdag eten voor maar 4 euro',
+    button: 'Meld je aan voor aankomende dinsdag',
+    notes: ['Alleen voor leden', 'Aanmelden verplicht']
+  },
   forms: {
     label: {
       name: 'Hoe mogen we je noemen?',

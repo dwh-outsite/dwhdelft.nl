@@ -10,7 +10,7 @@
 
     <section class="container mx-auto  text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <div v-if="$i18n.locale == 'en'" class="shadow bg-purple-300 p-4 rounded mb-8 inline-flex items-center">
+        <div v-if="$i18n.locale == 'en'" class="shadow bg-purple-500 p-4 rounded mb-8 inline-flex items-center">
           <div
             class="
               rounded-full w-7 h-7 bg-white mr-2 border-2 border-white

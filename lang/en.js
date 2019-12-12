@@ -1,6 +1,14 @@
 import barbuddies from '~/lang/en_barbuddies.js'
 
 export default {
+  menu: [
+    { title: 'Home', url: localePath => localePath('index') },
+    { title: 'Join DWH', url: localePath => localePath('index') + '#join-dwh' },
+    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
+    { title: 'Education', url: localePath => localePath('education') },
+    { title: 'Andersblad', url: localePath => localePath('andersblad') },
+    { title: 'Contact', url: () => '#contact' }
+  ],
   hero: {
     title: 'DWH LGBT+ society',
     subtitle: "Delft's society for queer people",

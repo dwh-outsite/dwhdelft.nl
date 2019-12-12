@@ -73,14 +73,9 @@ export default {
   data() {
     return {
       showMenu: false,
-      menu: [
-        { title: 'Home', url: this.localePath('index') },
-        { title: 'Join DWH', url: this.localePath('index') + '#join-dwh' },
-        { title: 'EatingOUT', url: this.localePath('index') + '#eatingout' },
-        { title: 'Voorlichting', url: this.localePath('education') },
-        { title: 'Andersblad', url: this.localePath('andersblad') },
-        { title: 'Contact', url: '#contact' }
-      ]
+      menu: this.$t('menu').map(item => {
+        return { title: item.title, url: item.url(this.localePath) }
+      })
     }
   }
 }

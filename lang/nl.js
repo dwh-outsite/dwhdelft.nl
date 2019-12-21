@@ -13,7 +13,7 @@ export default {
     title: 'DWH LGBT+ vereniging',
     subtitle: 'Delftse queervereniging',
     leftButton: 'Kom naar DWH',
-    rightButton: 'Bekijk video'
+    rightButton: 'Openingstijden'
   },
   description: {
     text: `DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek

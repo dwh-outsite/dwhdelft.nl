@@ -14,7 +14,7 @@
               {{ $t('hero.leftButton') }}
             </button>
           </a>
-          <a href="#video">
+          <a href="#recurring_events">
             <button class="block ml-4 button-white">
               {{ $t('hero.rightButton') }}
             </button>
@@ -90,7 +90,7 @@
         :button="$t('eating_out.button')"
         :notes="$t('eating_out.notes')"
       />
-    </section>
+    </section> -->
   </div>
 </template>
 

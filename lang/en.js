@@ -12,8 +12,8 @@ export default {
   hero: {
     title: 'DWH LGBT+ society',
     subtitle: "Delft's society for queer people",
-    leftButton: 'Join DWH',
-    rightButton: 'Watch video'
+    leftButton: 'Check out DWH',
+    rightButton: 'Opening Hours'
   },
   description: {
     text: `DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for

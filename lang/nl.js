@@ -82,7 +82,7 @@ export default {
         time: '21:15',
         description: `Dé queer filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
           aan de beurt.`,
-        buttonText: 'Bekijk Programma',
+        buttonText: 'Bekijk Programma <small>(voor leden)</small>',
         buttonLink: 'http://homodelft.nl/films/'
       },
       {

@@ -82,7 +82,7 @@ export default {
         time: '21:15',
         description: `The one and only queer movie night in Delft: Come by to enjoy another classic or a newly released
           queer movie.`,
-        buttonText: 'Check Programme',
+        buttonText: 'Check Programme <small>(For Members)</small>',
         buttonLink: 'http://homodelft.nl/films/'
       },
       {

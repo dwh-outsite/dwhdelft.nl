@@ -73,14 +73,16 @@
 import dayjs from 'dayjs'
 import 'dayjs/locale/nl'
 import Zondicon from 'vue-zondicons'
-import activities from '~/static/activities.json'
+import activitiesFile from '~/static/activities.json'
 
 export default {
   props: ['title'],
   components: { Zondicon },
   data() {
     return {
-      activities: activities.data.sort((a, b) => a.start_time.localeCompare(b.start_time)).splice(0, 3)
+      activities: JSON.parse(JSON.stringify(activitiesFile))
+        .data.sort((a, b) => a.start_time.localeCompare(b.start_time))
+        .splice(0, 3)
     }
   },
   methods: {

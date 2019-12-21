@@ -90,7 +90,7 @@
         :button="$t('eating_out.button')"
         :notes="$t('eating_out.notes')"
       />
-    </section> -->
+    </section>
   </div>
 </template>
 

@@ -39,6 +39,7 @@ module.exports = {
       },
       inset: {
         16: '4rem',
+        '-3': '-.75rem',
         '-8': '-2rem',
         '-14': '-3.5rem',
         '-16': '-4rem',

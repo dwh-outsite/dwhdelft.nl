@@ -67,6 +67,11 @@ export default {
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is elke week op 4 avonden open',
+    saturday: {
+      title: `Vanaf <strong>18 januari</strong> zijn we ook op <strong>zaterdag</strong> geopend vanaf
+        <strong>21:00 uur</strong>!`,
+      note: `Open voor iedereen`
+    },
     events: [
       {
         name: 'EatingOUT',

@@ -35,6 +35,18 @@
         />
       </div>
     </div>
+    <div class="mt-12 flex justify-center">
+      <div class="shadow bg-purple-500 p-4 rounded mb-8 inline-flex relative">
+        <div class="rounded-full w-7 h-7 bg-white mr-3 flex items-center justify-center">
+          <Zondicon icon="arrow-thin-right" class="w-4 text-purple-500 fill-current" />
+        </div>
+        <div class="flex-1 text-lg font-semibold text-white" v-html="$t('recurring_events.saturday.title')" />
+        <div
+          class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider absolute right-0 -top-3 h-6 shadow mr-4"
+          v-text="$t('recurring_events.saturday.note')"
+        />
+      </div>
+    </div>
   </div>
 </template>
 

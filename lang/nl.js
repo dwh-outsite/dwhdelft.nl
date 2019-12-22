@@ -10,8 +10,8 @@ export default {
     { title: 'Contact', url: () => '#contact' }
   ],
   hero: {
-    title: 'DWH LGBT+ vereniging',
-    subtitle: 'Delftse queervereniging',
+    title: 'LHBT+ vereniging sinds 1968',
+    subtitle: 'Voor iedereen in Delft en omgeving!',
     leftButton: 'Kom naar DWH',
     rightButton: 'Openingstijden'
   },

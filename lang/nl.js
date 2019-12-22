@@ -55,6 +55,8 @@ export default {
       description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
         voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de
         vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
+      thursday_note: `Jonger dan 28? Kijk dan bij <a href="https://outsite.nl/barbuddy" class="underline">Outsite</a> om
+        langs te komen op donderdag`,
       action: 'Vind een barbuddy',
       sign_up: 'Aanmelden voor een barbuddy',
       meet_up_with: 'Afspreken met',

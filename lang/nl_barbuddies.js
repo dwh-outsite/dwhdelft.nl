@@ -16,26 +16,23 @@ export default {
   binnenkwam, en dat was voor de Kennismakingsgroep. Dat bleek echter een goede beslissing te zijn, want DWH/Outsite
   is een superfijne plek met lieve mensen en leuke activiteiten.
   `,
+  Dennis: `
+  Hoi, ik ben Dennis, begin dertig en dagelijks vlieg ik door heel Europa. Daarnaast ben ik al een aantal jaar actief
+  binnen deze vereniging. Ik heb onder andere kennismakingsgroepen en activiteiten georganiseerd. Ook geef ik
+  voorlichting op scholen. Ik help graag mensen de drempel over want het is een hele leuke tent waar ik veel mensen heb
+  leren kennen en mijn vriendengroep heb uitgebreid.
+  `,
+  Govert: `
+  Hoi ik ben Govert, eind twintig. Momenteel student bouwkunde en ik geef les op een middelbare school. Zeer actief
+  binnen DWH. DWH is voor mij een leuke groep mensen, heel divers. En ook een plek om allerlei dingen te organiseren en
+  ook om over jezelf te leren. Ik kom er al een aantal jaren met heel veel plezier. Ik vind het heel leuk om nieuwe
+  mensen kennis te laten maken met de vereniging en de mensen die er rondlopen.
+  `,
   Andreas: `
   Hey, ik ben Andreas, begin twintig en in mijn bachelor Lucht- & Ruimtevaarttechniek. Ik ben erg actief binnen
   DWH/Outsite en vind het superleuk nieuwe mensen te leren kennen en ze onze vereniging te laten zien. Voor mij is het
   een plek waar je jezelf kan zijn en waar allerlei soorten activiteiten worden georganiseerd waar je aan kunt
   deelnemen.
-  `,
-  Niv: `
-  Hey! Ik ben Niv, 21 en bezig met mijn bachelor Technische Natuurkunde. Inmiddels heb ik helemaal mijn plekje
-  gevonden bij DWH (kmg ouder en organiseer dit jaar de OWee), maar in het begin was dat zeker nog spannend. Ik leerde
-  al snel mensen kennen, die ik nu als hele goede vrienden beschouw. De bijzondere en aardige mensen bij de vereniging
-  maken het ontzettend leuk! Als je het nog een beetje spannend vindt om langs te komen, begrijp ik dat volkomen; dat
-  hadden we allemaal toen we voor het eerst het pand binnen stapten. Hopelijk kan ik het als barbuddy iets makkelijker
-  voor je maken!
-  `,
-  Robert: `
-  Hoi, ik ben Robert, 27, en heb aan de TU Computer Science gestudeerd. Ik hou van lekker eten, cocktails,
-  volleyballen, rokken die goed swirlen, dungeons & dragons spelen met vrienden en dagjes uit naar een spa. Verder ben
-  ik ondertussen al zo’n vier jaar lid bij DWH/Outsite. In die tijd heb ik hier een vriendje gevonden, ben ik veel
-  zekerder over hoe ik me identificeer en heb ik superlieve vrienden leren kennen. Het lijkt me altijd leuk nog meer
-  vrienden te maken en binnen de vereniging te introduceren!
   `,
   Wessel: `
   Hey! Ik ben Wessel, 24 jaar en ik studeer Lucht- en Ruimtevaart Techniek. Toen ik via de KMG Outsite binnenkwam

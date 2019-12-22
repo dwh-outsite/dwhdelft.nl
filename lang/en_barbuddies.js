@@ -14,6 +14,24 @@ export default {
   turned out to be a great decision though, because DWH/Outsite is just a really nice place with lovely people and fun
   activities.
   `,
+  Mariana: `
+  Hello! I’m Mariana, I’m in my late twenties, from Portugal and I have been living in the Netherlands for 6 years. I
+  studied here at TU Delft and then I stayed for work. I joined DWH early on and was on the board of Outsite for a year
+  and I currently help with the women’s events. I’ve met many good friend through DWH and I’m always glad to meet new
+  people and introduce them to DWH since it helped me so much when I came to the Netherlands.
+  `,
+  Dennis: `
+  Hello, I’m Dennis! I’m still in the beginnings of my thirties and travel all over Europe on a daily basis. I’ve been
+  an active volunteer for this association for a couple of years now. I have organized introduction groups an all kind
+  of other activities. I also gave education classes at schools about sexual diversity. I would like to be your barbuddy
+  because it’s a nice spot to hang out and I’ve met a lot of new and interesting people within this association.
+  `,
+  Govert: `
+  Hello I’m Govert, at the end of my twenties. I study architecture and I’m a teacher a high school. I’m a very active
+  volunteer within DWH. In my opinion, DWH stands for a niceand really diverse group of people. A place to organize lots
+  of things and also a place to learn a lot about yourself. I really like meeting new people and introducing them to
+  this awesome association.
+  `,
   Andreas: `
   Hey, I’m Andreas, in my early twenties and an Aerospace student. I am a very active member of DWH/Outsite and I love
   meeting new people and showing them our society. For me it is a place where you can be yourself and can participated
@@ -26,12 +44,6 @@ export default {
   members (and maybe I can share a couple of recipes or comment on the last RPDR episode while doing so). You won’t
   regret coming to DWH for a drink, a dance, or just a chat, and you will feel the love and support of our beautiful
   community.
-  `,
-  Niv: `
-  Hey! I’m Niv, 21 yo and studying Applied Physics. In the meantime, I found my place in this cool association (I’m a
-  KMG parent and I organise the OWee this year). When I first stepped foot into the building, I was so nervous! I soon
-  met some really nice and special people, which I consider to be my close friends now. If you feel nervous about coming
-  to DWH/Outsite, I totally get it; that’s how we all felt the first time. I hope I can make it easier for you!
   `,
   Wessel: `
   Heya! I'm Wessel, 24 years old and I study Aerospace engineering. When I joined Outsite by joining the KMG, the

@@ -55,6 +55,8 @@ export default {
       description: `If you are looking to come by on a Friday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about DWH but they can also introduce you to new people.`,
+      thursday_note: `28 years or younger? Check <a href="https://outsite.nl/barbuddy" class="underline">Outsite</a> to
+        visit us on a Thursday`,
       sign_up: 'Sign up for a bar buddy',
       action: 'Find a bar buddy',
       meet_up_with: 'Meet up with',

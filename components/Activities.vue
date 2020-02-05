@@ -15,7 +15,7 @@
           <div>
             <div
               :style="'background-image: url(' + activity.cover.source + ');'"
-              class="aspect-ratio-fb relative overflow-hidden bg-cover bg-center"
+              class="aspect-ratio-fb relative overflow-hidden bg-cover bg-center rounded-t"
             />
             <div class="px-4 pt-3">
               <h3 class="text-purple-500 text-xl font-bold">{{ activity.name }}</h3>

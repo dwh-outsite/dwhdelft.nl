@@ -68,7 +68,7 @@ export default {
   recurring_events: {
     announcement: '<strong>DWH</strong> is open 4 nights a week',
     saturday: {
-      title: `Starting <strong>18 January</strong> we are also opened on <strong>Saturdays</strong> from
+      title: `<strong>Soon</strong> we will also opened on <strong>Saturdays</strong> from
         <strong>9pm</strong>!`,
       note: `Open for everyone`
     },

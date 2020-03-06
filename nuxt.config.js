@@ -150,6 +150,10 @@ export default {
       {
         from: '/outsite',
         to: 'https://outsite.nl'
+      },
+      {
+        from: '/nldoet',
+        to: 'https://docs.google.com/forms/d/1IXgfc5k9G9LByasP9812fcZ_xNQqNUcl3riNHvJNjxM/viewform'
       }
     ]
   }

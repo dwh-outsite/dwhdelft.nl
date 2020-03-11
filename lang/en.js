@@ -11,7 +11,7 @@ export default {
   ],
   hero: {
     title: 'LGBT+ association since 1968',
-    subtitle: 'For everyone from the Delft area!',
+    subtitle: 'For everyone in the Delft area!',
     leftButton: 'Check out DWH',
     rightButton: 'Opening Hours'
   },
@@ -78,8 +78,8 @@ export default {
         note: 'Members only',
         day: 'Tuesday',
         time: '19:00',
-        description: `On tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
-          members.`,
+        description: `On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
+          members, sometimes with an activity afterwards.`,
         buttonText: 'Sign Up',
         buttonLink: '/eatingout'
       },
@@ -87,9 +87,9 @@ export default {
         name: 'Fillum',
         day: 'Wednesday',
         time: '21:15',
-        description: `The one and only queer movie night in Delft: Come by to enjoy another classic or a newly released
-          queer movie.`,
-        buttonText: 'Check Programme <small>(For Members)</small>',
+        description: `The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
+          old classics.`,
+        buttonText: 'Programme <small>(For Members)</small>',
         buttonLink: 'http://homodelft.nl/films/'
       },
       {
@@ -97,17 +97,17 @@ export default {
         note: 'Max. 28 years old',
         day: 'Thursday',
         time: '22:00',
-        description: `A bar night for everyone aged 28 or under. If you like the occasional party or enjoy a drink at
-          the bar instead, Outsite is the right place for you!`,
+        description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
+          website for upcoming events and more.`,
         buttonText: 'Head to Outsite.nl',
         buttonLink: 'https://outsite.nl/en'
       },
       {
-        name: 'Friday Bar Night',
+        name: 'Open Bar Night',
         day: 'Friday',
         time: '22:00',
-        description: `Friday night is an open bar night for DWH as whole. Young or old: Every is welcome to have a drink
-          at our bar!`
+        description: `Friday night is thé queer bar night of Delft. Meet new people, come dance at our regular parties,
+          and join one of our many events!`
       }
     ]
   },

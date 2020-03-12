@@ -79,7 +79,7 @@ export default {
         day: 'Dinsdag',
         time: '19:00',
         description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
-          één van onze leden.`,
+          één van onze leden, met soms een activiteit achteraf.`,
         buttonText: 'Aanmelden',
         buttonLink: '/eatingout'
       },
@@ -87,9 +87,9 @@ export default {
         name: 'Fillum',
         day: 'Woensdag',
         time: '21:15',
-        description: `Dé queer filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
+        description: `Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
           aan de beurt.`,
-        buttonText: 'Bekijk Programma <small>(voor leden)</small>',
+        buttonText: 'Programma <small>(voor leden)</small>',
         buttonLink: 'http://homodelft.nl/films/'
       },
       {
@@ -97,17 +97,17 @@ export default {
         note: 'Max. 28 jaar',
         day: 'Donderdag',
         time: '22:00',
-        description: `Een avond voor iedereen van 28 of jonger. Hou jij van een feestje of drink je liever een drankje
-          aan de bar? Beiden zijn mogelijk bij Outsite!`,
+        description: `Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
+          Outsite website voor aankomende events!`,
         buttonText: 'Ga naar Outsite.nl',
         buttonLink: 'https://outsite.nl/'
       },
       {
-        name: 'Vrijdagbar',
+        name: 'Open Bar',
         day: 'Vrijdag',
         time: '22:00',
-        description: `Vrijdag is de open baravond van heel DWH. Van jong tot oud: Iedereen is welkom om een drankje te
-          komen drinken!`
+        description: `Vrijdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
+          feesten en doe mee met een van onze vele events!`
       }
     ]
   },
@@ -197,7 +197,7 @@ export default {
       gegevens te publiceren op haar internetsite. Hier vindt u deze gegevens van DWH overzichtelijk bij elkaar.<br />
       <br />
       <strong>Naam</strong><br />
-      Vereniging Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
+      Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
       De verkorte naam van de vereniging is DWH.<br />
       <br />
       <strong>Rechtspersonen Samenwerkingsverbanden Informatie Nummer</strong><br />

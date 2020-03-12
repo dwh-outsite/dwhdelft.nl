@@ -11,7 +11,7 @@ export default {
   ],
   hero: {
     title: 'LGBT+ association since 1968',
-    subtitle: 'For everyone from the Delft area!',
+    subtitle: 'For everyone in the Delft area!',
     leftButton: 'Check out DWH',
     rightButton: 'Opening Hours'
   },
@@ -78,8 +78,8 @@ export default {
         note: 'Members only',
         day: 'Tuesday',
         time: '19:00',
-        description: `On tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
-          members.`,
+        description: `On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
+          members, sometimes with an activity afterwards.`,
         buttonText: 'Sign Up',
         buttonLink: '/eatingout'
       },
@@ -87,9 +87,9 @@ export default {
         name: 'Fillum',
         day: 'Wednesday',
         time: '21:15',
-        description: `The one and only queer movie night in Delft: Come by to enjoy another classic or a newly released
-          queer movie.`,
-        buttonText: 'Check Programme <small>(For Members)</small>',
+        description: `The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
+          old classics.`,
+        buttonText: 'Programme <small>(For Members)</small>',
         buttonLink: 'http://homodelft.nl/films/'
       },
       {
@@ -97,17 +97,17 @@ export default {
         note: 'Max. 28 years old',
         day: 'Thursday',
         time: '22:00',
-        description: `A bar night for everyone aged 28 or under. If you like the occasional party or enjoy a drink at
-          the bar instead, Outsite is the right place for you!`,
+        description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
+          website for upcoming events and more.`,
         buttonText: 'Head to Outsite.nl',
         buttonLink: 'https://outsite.nl/en'
       },
       {
-        name: 'Friday Bar Night',
+        name: 'Open Bar Night',
         day: 'Friday',
         time: '22:00',
-        description: `Friday night is an open bar night for DWH as whole. Young or old: Every is welcome to have a drink
-          at our bar!`
+        description: `Friday night is thé queer bar night of Delft. Meet new people, come dance at our regular parties,
+          and join one of our many events!`
       }
     ]
   },
@@ -189,6 +189,61 @@ export default {
       format. The magazine is (partly) in Dutch.
     `,
     list_title: 'Editions'
+  },
+  anbi: {
+    title: 'ANBI',
+    main_text: `
+      DWH has been designated a public benefit institution (in Dutch: algemeen nut beogende instelling or ANBI) by the
+      tax authority. An ANBI should have certain information available on their website. For convenience, we have
+      collected them all on this page. This English version is provided as an extra convenience, the official version is
+      the Dutch page.<br />
+      <br />
+      <strong>Name</strong><br />
+      Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
+      The shortened name of the association is DWH.<br />
+      <br />
+      <strong>Rechtspersonen Samenwerkingsverbanden Informatie Nummer</strong><br />
+      RSIN: 807864250<br />
+      <br />
+      <strong>Goal</strong><br />
+      DWH is thé association by and for LGBT+ people in Delft that looks out for the LGBT+ community and their needs in
+      this city and independently promotes the emancipation and awareness of LGBT+ people. DWH does this as much as
+      possible in collaboration with other organisations at a local, national and international level.<br />
+      <br />
+      The vision of the association is as follows:<br />
+      <ul class="list-disc ml-8">
+        <li>DWH fights hetero normativity and promotes the acceptation and itegration of LGBT+ lifestyles;</li>
+        <li>DWH stimulates societal discussion, awareness and change on issues of homosexuality, bisexuality and
+            transgenders;</li>
+        <li>DWH creates a friendly and safe environment as a basis for LGBT+ emancipation;</li>
+        <li>DWH involves as many people as possible, inside and outside the association, with participation and
+            organisation of its activities;</li>
+        <li>DWH connects people. Specifically also the various subgroups in the association.</li>
+      </ul>
+      <br />
+      <strong>Recompense policy</strong><br />
+      The board members as well as other volunteers at DWH are unpaid. The board does have the means to provide
+      compensation to members and volunteers for costs they incurred because of the association, which is done in
+      accordance with the budget and reasonable bounds of good faith and fair dealing as it is commonly done in broader
+      society. In practice only expenses claims pertaining to tasks performed in service of DWH are compensated.
+      By the statutes of DWH the consent of the general assembly is required for starting, changing or terminating
+      employment contracts.
+    `,
+    annual_report: `
+      <strong>Report of past activities</strong><br />
+      For a report of past activities we refer the reader to our annual report. Each year DWH creates and approves an
+      annual report which contains among other things an account of completed activities over the preceding year.
+      The most recent such report can be found here:
+    `,
+    annual_plan: `
+      <strong>Policy plan</strong><br />
+      For the policy plan we refer the reader to the annual plan. The most recent annual plan can be found here:
+    `,
+    financial: `
+      <strong>Financial account</strong><br />
+      For a financial account we refer the reader to the annual account. Each year DWH creates and approves the annual
+      account in which the financial report and account of the preceding year is recorded.
+    `
   },
   education: {
     title: 'Education',

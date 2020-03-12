@@ -1,6 +1,6 @@
 <template>
   <div class="container px-4 mx-auto py-16 md:pb-24">
-    <h2 class="text-center text-purple-500 font-medium text-5xl mb-12 leading-tight" v-html="announcement" />
+    <h2 v-html="announcement" class="text-center text-purple-500 font-medium text-5xl mb-12 leading-tight" />
     <div class="md:flex flex-wrap justify-center -mx-2">
       <div
         v-for="event in $t('recurring_events.events')"
@@ -10,9 +10,9 @@
       >
         <div class="p-6 md:mb-6">
           <div class="flex mb-2">
-            <h4 class="flex-1 text-purple-500 font-semibold text-2xl" v-text="event.name" />
+            <h4 v-text="event.name" class="flex-1 text-purple-500 font-semibold text-2xl" />
             <div v-if="event.note" class="ml-4 text-center flex items-center">
-              <div class="bg-purple-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider" v-text="event.note" />
+              <div v-text="event.note" class="bg-purple-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider" />
             </div>
           </div>
           <div class="bg-white rounded px-3 mb-4 tracking-wider flex items-center border border-purple-200">
@@ -20,7 +20,7 @@
             <div class="flex-1 py-2">
               {{ event.day }}
             </div>
-            <div class="border-l border-purple-200 pl-3 py-2" v-text="event.time" />
+            <div v-text="event.time" class="border-l border-purple-200 pl-3 py-2" />
           </div>
           <p>
             {{ event.description }}
@@ -28,10 +28,10 @@
         </div>
         <a
           v-if="event.buttonText"
-          class="bg-purple-500 hover:bg-purple-300 py-3 rounded-b text-white
-                 uppercase font-semibold tracking-wider text-center"
           :href="event.buttonLink"
           v-html="event.buttonText"
+          class="bg-purple-500 hover:bg-purple-300 py-3 rounded-b text-white
+                 uppercase font-semibold tracking-wider text-center"
         />
       </div>
     </div>
@@ -40,10 +40,10 @@
         <div class="rounded-full w-7 h-7 bg-white mr-3 flex items-center justify-center">
           <Zondicon icon="arrow-thin-right" class="w-4 text-purple-500 fill-current" />
         </div>
-        <div class="flex-1 text-lg font-semibold text-white" v-html="$t('recurring_events.saturday.title')" />
+        <div v-html="$t('recurring_events.saturday.title')" class="flex-1 text-lg font-semibold text-white" />
         <div
-          class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider absolute right-0 -top-3 h-6 shadow mr-4"
           v-text="$t('recurring_events.saturday.note')"
+          class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider absolute right-0 -top-3 h-6 shadow mr-4"
         />
       </div>
     </div>
@@ -54,7 +54,7 @@
 import Zondicon from 'vue-zondicons'
 
 export default {
-  props: ['title', 'url', 'announcement'],
-  components: { Zondicon }
+  components: { Zondicon },
+  props: ['title', 'url', 'announcement']
 }
 </script>

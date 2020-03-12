@@ -31,12 +31,12 @@
             </a>
           </div>
           <div
+            @click="showMenu = !showMenu"
             class="
               rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white
               flex items-center justify-center md:hidden
               overflow-hidden relative
             "
-            @click="showMenu = !showMenu"
           >
             <Zondicon v-if="!showMenu" icon="menu" class="fill-current w-full" />
             <Zondicon v-if="showMenu" icon="close" class="fill-current w-full" />
@@ -63,13 +63,13 @@ import NLFlag from '@/assets/images/flags/nl.svg'
 import GBFlag from '@/assets/images/flags/gb.svg'
 
 export default {
-  props: ['small'],
   components: {
     DWHLogo,
     NLFlag,
     GBFlag,
     Zondicon
   },
+  props: ['small'],
   data() {
     return {
       showMenu: false,

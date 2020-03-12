@@ -15,7 +15,7 @@ export default {
           <foreignObject width="100%" height="100%" x="0" y="0" externalResourcesRequired="true">
           <span xmlns="http://www.w3.org/1999/xhtml" style="
             color: rgb(255, 255, 255);
-            font: 16px / 20px &quot;Source Sans Pro&quot;, -apple-system, system-ui, &quot;Segoe UI&quot;, 
+            font: 16px / 20px &quot;Source Sans Pro&quot;, -apple-system, system-ui, &quot;Segoe UI&quot;,
                   Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
             font-kerning: auto;
             font-optical-sizing: auto;

@@ -19,6 +19,8 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'max-len': ["error", { "code": 120 }]
+    'max-len': ["error", { "code": 120 }],
+    'vue/require-prop-types': "off",
+    'vue/require-default-prop': "off"
   }
 }

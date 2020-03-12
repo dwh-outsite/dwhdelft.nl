@@ -10,7 +10,7 @@
 
     <section class="container mx-auto  text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p class="mt-8 md:mt-0 mb-8" v-html="$t('education.main_text')" />
+        <p v-html="$t('education.main_text')" class="mt-8 md:mt-0 mb-8" />
       </div>
     </section>
   </div>

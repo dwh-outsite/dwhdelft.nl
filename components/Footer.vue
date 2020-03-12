@@ -19,25 +19,25 @@
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="envelope" class="fill-current w-4" />
             </div>
-            <div class="ml-3" v-html="contactEmail" />
+            <div v-html="contactEmail" class="ml-3" />
           </div>
           <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="phone" class="fill-current w-4" />
             </div>
-            <div class="ml-3" v-html="contactPhone" />
+            <div v-html="contactPhone" class="ml-3" />
           </div>
           <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="map" class="fill-current w-4" />
             </div>
-            <div class="ml-3 leading-tight" v-html="contactAddress" />
+            <div v-html="contactAddress" class="ml-3 leading-tight" />
           </div>
           <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="box" class="fill-current w-4" />
             </div>
-            <div class="ml-3 leading-tight" v-html="contactCoc" />
+            <div v-html="contactCoc" class="ml-3 leading-tight" />
           </div>
           <div class="mb-2">
             <a
@@ -109,16 +109,6 @@ import FacebookIcon from '@/assets/images/social/facebook.svg'
 import GitHubIcon from '@/assets/images/social/github.svg'
 
 export default {
-  props: [
-    'left-title',
-    'right-title',
-    'board-image',
-    'contact-email',
-    'contact-phone',
-    'contact-address',
-    'contact-coc',
-    'anbi-link-destination'
-  ],
   components: {
     Zondicon,
     DWHLogo,
@@ -126,6 +116,16 @@ export default {
     FacebookIcon,
     GitHubIcon
   },
+  props: [
+    'leftTitle',
+    'rightTitle',
+    'boardImage',
+    'contactEmail',
+    'contactPhone',
+    'contactAddress',
+    'contactCoc',
+    'anbiLinkDestination'
+  ],
   data() {
     return {
       year: dayjs().format('YYYY')

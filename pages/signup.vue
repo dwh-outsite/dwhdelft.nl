@@ -10,7 +10,7 @@
 
     <section class="container mx-auto mb-12 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p class="mt-8 md:mt-0 mb-8" v-html="$t('signup.main_text')" />
+        <p v-html="$t('signup.main_text')" class="mt-8 md:mt-0 mb-8" />
       </div>
     </section>
 
@@ -32,18 +32,18 @@
             </div>
           </div>
         </div>
-        <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
+        <form v-if="formStatus !== 'finished'" @submit="submit" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
           <p class="form-element">
             <label class="required">{{ $t('forms.label.firstname') }}</label>
-            <input v-model="form.firstname" type="text" :placeholder="$t('forms.placeholder.firstname')" required />
+            <input v-model="form.firstname" :placeholder="$t('forms.placeholder.firstname')" type="text" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.initials') }}</label>
-            <input v-model="form.initials" type="text" :placeholder="$t('forms.placeholder.initials')" required />
+            <input v-model="form.initials" :placeholder="$t('forms.placeholder.initials')" type="text" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.lastname') }}</label>
-            <input v-model="form.lastname" type="text" :placeholder="$t('forms.placeholder.lastname')" required />
+            <input v-model="form.lastname" :placeholder="$t('forms.placeholder.lastname')" type="text" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
@@ -74,7 +74,7 @@
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
-            <input v-model="form.email" type="email" :placeholder="$t('forms.placeholder.email')" required />
+            <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.phone_number') }}</label>
@@ -82,7 +82,7 @@
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
-            <input v-model="form.pronouns" type="text" :placeholder="$t('forms.placeholder.pronouns')" />
+            <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.membership_fee') }}</label>
@@ -97,7 +97,7 @@
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.iban') }}</label>
-            <input v-model="form.iban" type="text" :placeholder="$t('forms.placeholder.iban')" required />
+            <input v-model="form.iban" :placeholder="$t('forms.placeholder.iban')" type="text" required />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
@@ -105,7 +105,7 @@
           </p>
           <div id="recaptcha" />
           <p class="mt-8 md:my-8 text-right">
-            <button type="submit" class="button-pink" :disabled="formStatus === 'loading'">
+            <button :disabled="formStatus === 'loading'" type="submit" class="button-pink">
               {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
             </button>
           </p>

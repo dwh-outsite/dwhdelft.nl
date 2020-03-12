@@ -103,7 +103,7 @@ export default {
         buttonLink: 'https://outsite.nl/'
       },
       {
-        name: 'Vrijdagbar',
+        name: 'Open Bar',
         day: 'Vrijdag',
         time: '22:00',
         description: `Vrijdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
@@ -197,7 +197,7 @@ export default {
       gegevens te publiceren op haar internetsite. Hier vindt u deze gegevens van DWH overzichtelijk bij elkaar.<br />
       <br />
       <strong>Naam</strong><br />
-      Vereniging Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
+      Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
       De verkorte naam van de vereniging is DWH.<br />
       <br />
       <strong>Rechtspersonen Samenwerkingsverbanden Informatie Nummer</strong><br />

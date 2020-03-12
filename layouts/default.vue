@@ -6,19 +6,19 @@
       <Footer
         :left-title="$t('footer.leftTitle')"
         :right-title="$t('footer.rightTitle')"
+        :anbi-link-destination="localePath('anbi')"
         contact-email="bestuur@dwhdelft.nl"
         contact-address="Lange Geer 22<br />2611PV Delft"
         contact-phone="06-37560270"
         contact-coc="KvK: 40398035<br />RSIN: 807864250"
-        :anbi-link-destination="localePath('anbi')"
       >
         <template v-slot:board-members>
-          <BoardMember name="Robert Baart" :role="$t('footer.board.president')" email="voorzitter@dwhdelft.nl" />
-          <BoardMember name="Casper Boone" :role="$t('footer.board.youth')" email="jongeren@dwhdelft.nl" />
-          <BoardMember name="Nick van Loo" :role="$t('footer.board.secretary')" email="secretaris@dwhdelft.nl" />
-          <BoardMember name="Jelle Vos" :role="$t('footer.board.general')" email="promotie@dwhdelft.nl" />
-          <BoardMember name="Quinten Star" :role="$t('footer.board.treasurer')" email="penningmeester@dwhdelft.nl" />
-          <BoardMember name="Jeroen Wegdam" :role="$t('footer.board.general')" email="pand@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.president')" name="Robert Baart" email="voorzitter@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.youth')" name="Casper Boone" email="jongeren@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.secretary')" name="Nick van Loo" email="secretaris@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.general')" name="Jelle Vos" email="promotie@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.treasurer')" name="Quinten Star" email="penningmeester@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.general')" name="Jeroen Wegdam" email="pand@dwhdelft.nl" />
         </template>
         <template v-slot:newsletter>
           <JoinNewsletter :button-text="$t('footer.newsletter.button')">

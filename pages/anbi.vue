@@ -10,13 +10,13 @@
 
     <section class="container mx-auto  text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <div class="mt-8 md:mt-0 mb-8" v-html="$t('anbi.main_text')" />
-        <div class="mb-4" v-html="$t('anbi.annual_report')" />
-        <FilesList folderId="1SEhPdLmDC-MxwcqiRnaMlAcvoPgnq16a" />
-        <div class="mb-4" v-html="$t('anbi.annual_plan')" />
-        <FilesList folderId="1Y_3eX7L6RKOnFMCi1m3YP4Dkwc9Ibw2Y" />
-        <div class="mb-4" v-html="$t('anbi.financial')" />
-        <FilesList folderId="1wOt93uBOFba4lHrf6In1YZJPzT4L9Doi" />
+        <div v-html="$t('anbi.main_text')" class="mt-8 md:mt-0 mb-8" />
+        <div v-html="$t('anbi.annual_report')" class="mb-4" />
+        <FilesList folder-id="1SEhPdLmDC-MxwcqiRnaMlAcvoPgnq16a" />
+        <div v-html="$t('anbi.annual_plan')" class="mb-4" />
+        <FilesList folder-id="1Y_3eX7L6RKOnFMCi1m3YP4Dkwc9Ibw2Y" />
+        <div v-html="$t('anbi.financial')" class="mb-4" />
+        <FilesList folder-id="1wOt93uBOFba4lHrf6In1YZJPzT4L9Doi" />
       </div>
     </section>
   </div>

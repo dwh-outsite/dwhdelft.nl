@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-xl p-4 rounded-lg mb-12 bg-gray-200" v-if="files.length > 0">
+  <div v-if="files.length > 0" class="shadow-xl p-4 rounded-lg mb-12 bg-gray-200">
     <div class="-mb-4 text-lg">
       <div v-for="file in files" :key="file.id">
         <a :href="file.webViewLink" target="_blank">

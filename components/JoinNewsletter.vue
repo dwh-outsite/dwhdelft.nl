@@ -12,13 +12,13 @@
         </div>
         <form
           id="mc-embedded-subscribe-form"
+          @submit="submitForm()"
           action="https://dwhdelft.us3.list-manage.com/subscribe/post?u=8c9a6403988df86ce2cfd009e&amp;id=275d74c087"
           method="post"
           name="mc-embedded-subscribe-form"
           class="validate"
           target="_blank"
           novalidate
-          @submit="submitForm()"
         >
           <div class="py-4 px-8 flex items-center justify-center text-black">
             <div>
@@ -26,8 +26,8 @@
               <div class="flex justify-center">
                 <input
                   v-model="email"
-                  type="email"
                   :placeholder="$t('forms.placeholder.email')"
+                  type="email"
                   name="EMAIL"
                   class="bg-gray-200 rounded-lg block px-4 py-2 w-full mr-4"
                   required
@@ -51,10 +51,10 @@
 import Zondicon from 'vue-zondicons'
 
 export default {
-  props: ['button-text', 'button-target'],
   components: {
     Zondicon
   },
+  props: ['buttonText', 'buttonTarget'],
   data() {
     return {
       email: ''

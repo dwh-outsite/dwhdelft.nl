@@ -3,9 +3,9 @@
     <div class="md:flex justify-center">
       <div class="flex-1 mx-2 flex items-end mt-4">
         <div class="text-white">
-          <h1 class="font-medium leading-none text-5xl mb-4" v-html="title"></h1>
-          <p class="text-lg md:pr-40 mb-4" v-html="description" />
-          <p class="text-lg md:pr-40" v-html="outsiteHint" />
+          <h1 v-html="title" class="font-medium leading-none text-5xl mb-4"></h1>
+          <p v-html="description" class="text-lg md:pr-40 mb-4" />
+          <p v-html="outsiteHint" class="text-lg md:pr-40" />
         </div>
       </div>
       <div class="bg-white rounded-lg md:rounded-t-none p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0">
@@ -36,7 +36,7 @@
 import Zondicon from 'vue-zondicons'
 
 export default {
-  props: ['title', 'description', 'outsiteHint', 'boxIcon', 'boxTitle', 'boxButtonText', 'boxUrl'],
-  components: { Zondicon }
+  components: { Zondicon },
+  props: ['title', 'description', 'outsiteHint', 'boxIcon', 'boxTitle', 'boxButtonText', 'boxUrl']
 }
 </script>

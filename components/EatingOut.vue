@@ -6,8 +6,8 @@
           <div class="rounded-full w-20 h-20 p-6 bg-purple-500 mt-2 mb-8 text-white mx-auto">
             <Zondicon icon="location-food" class="fill-current" />
           </div>
-          <h3 class="text-3xl font-semibold text-center" v-text="title" />
-          <h4 class="text-xl tracking-wide text-center" v-text="subtitle" />
+          <h3 v-text="title" class="text-3xl font-semibold text-center" />
+          <h4 v-text="subtitle" class="text-xl tracking-wide text-center" />
         </div>
         <div class="relative">
           <div class="triangle md:hidden" />
@@ -19,7 +19,7 @@
                 <a href="/eatingout" target="_blank">
                   <button class="block button-white z-50 text-purple-500 text-left mb-2">
                     <div class="flex items-center">
-                      <div class="max-w-56" v-text="button" />
+                      <div v-text="button" class="max-w-56" />
                       <div><Zondicon icon="cheveron-outline-right" class="h-8" /></div>
                     </div>
                   </button>
@@ -40,8 +40,8 @@
 import Zondicon from 'vue-zondicons'
 
 export default {
-  props: ['title', 'subtitle', 'button', 'notes'],
-  components: { Zondicon }
+  components: { Zondicon },
+  props: ['title', 'subtitle', 'button', 'notes']
 }
 </script>
 

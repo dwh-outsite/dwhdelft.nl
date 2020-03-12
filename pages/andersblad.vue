@@ -10,14 +10,14 @@
 
     <section class="container mx-auto mb-12 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p class="mt-8 md:mt-0 mb-8" v-html="$t('andersblad.main_text')" />
+        <p v-html="$t('andersblad.main_text')" class="mt-8 md:mt-0 mb-8" />
       </div>
     </section>
 
-    <section class="bg-purple-400" v-if="editions.length > 0">
+    <section v-if="editions.length > 0" class="bg-purple-400">
       <div class="container px-4 mx-auto pt-8 pb-12">
         <div class="text-center mb-6">
-          <h1 class="text-white font-medium text-5xl" v-html="$t('andersblad.list_title')" />
+          <h1 v-html="$t('andersblad.list_title')" class="text-white font-medium text-5xl" />
         </div>
         <div class="flex flex-wrap justify-center">
           <div v-for="edition in editions" :key="edition.id" class="md:w-1/3 p-4">

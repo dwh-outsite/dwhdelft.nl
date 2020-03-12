@@ -53,7 +53,10 @@ export default {
   ],
 
   i18n: {
-    locales: [{ code: 'nl', iso: 'nl-NL', file: 'nl.js' }, { code: 'en', iso: 'en-US', file: 'en.js' }],
+    locales: [
+      { code: 'nl', iso: 'nl-NL', file: 'nl.js' },
+      { code: 'en', iso: 'en-US', file: 'en.js' }
+    ],
     defaultLocale: 'nl',
     langDir: 'lang/',
     lazy: true,

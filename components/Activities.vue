@@ -77,8 +77,8 @@ import Zondicon from 'vue-zondicons'
 import activitiesFile from '~/static/activities.json'
 
 export default {
-  props: ['title'],
   components: { Zondicon },
+  props: ['title'],
   data() {
     return {
       activities: JSON.parse(JSON.stringify(activitiesFile))

@@ -197,7 +197,7 @@ export default {
       gegevens te publiceren op haar internetsite. Hier vindt u deze gegevens van DWH overzichtelijk bij elkaar.<br />
       <br />
       <strong>Naam</strong><br />
-      Vereniging Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
+      Delftse Werkgroep Homoseksualiteit (D.W.H.)<br />
       De verkorte naam van de vereniging is DWH.<br />
       <br />
       <strong>Rechtspersonen Samenwerkingsverbanden Informatie Nummer</strong><br />

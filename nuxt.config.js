@@ -125,6 +125,10 @@ export default {
       {
         from: '/nldoet',
         to: 'https://docs.google.com/forms/d/1IXgfc5k9G9LByasP9812fcZ_xNQqNUcl3riNHvJNjxM/viewform'
+      },
+      {
+        from: '/discord',
+        to: 'https://discord.gg/RDwtnRK'
       }
     ]
   }

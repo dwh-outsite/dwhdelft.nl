@@ -253,10 +253,8 @@ export default {
       <br />
       Veel LHBT+ jongeren weten zich hier geen raad mee en durven het niet te vertellen omdat ze bijvoorbeeld bang zijn
       het doelwit te worden van pesterijen. Op de middelbare scholen wordt, jammer genoeg, het woord homo nog vaak
-      genoeg als scheldwoord gebruikt. Wanneer vervolgens gevraagd wordt wat homoseksualiteit inhoudt, komen vaak de
-      stereotyperingen, de meest veelzijdige termen voor seks en soms zelfs termen als pedofilie naar boven. Hieruit
-      blijkt dat de jongeren vaak geen goed besef hebben van wat homoseksualiteit inhoudt, met soms onbegrip en
-      pesterijen tot gevolg.<br />
+      genoeg als scheldwoord gebruikt. Het blijkt dat de jongeren vaak geen goed besef hebben van wat homoseksualiteit
+      inhoudt, met soms onbegrip en pesterijen tot gevolg.<br />
       <br />
       Door voorlichting te geven zien de jongeren in dat homoseksualiteit eigenlijk helemaal niet vreemd is. Zo worden
       de stereotyperingen doorbroken, de termen binnen seksuele diversiteit behandeld en denken de jongeren zelf actief

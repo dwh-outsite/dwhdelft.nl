@@ -253,10 +253,9 @@ export default {
       of the same gender?<br />
       <br />
       Many LGBT youngsters can’t cope with this and don’t dare to come out because they fear they might be victims of
-      bullying. In high schools, the word gay is unfortunately too often used as a term of abuse. When asked about what
-      homosexuality means, the stereotypes, the most creative words for sex, and even pedophilia come up. This shows
-      that young people don’t often have a grasp of what constitutes homosexuality, which sometimes can result in
-      incomprehension and harassment.<br />
+      bullying. In high schools, the word gay is unfortunately too often used as a term of abuse. This shows that young
+      people often don’t have a grasp of what constitutes homosexuality, which sometimes can result in incomprehension
+      and harassment.<br />
       <br />
       Through education we can show the young people that homosexuality is not that strange. By breaking stereotypes and
       explaining the sexual diversity terms, we get the youth to think actively about homosexuality and its meaning for

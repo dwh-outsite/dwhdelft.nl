@@ -21,7 +21,8 @@ module.exports = {
         '-8': '-2rem'
       },
       maxWidth: {
-        56: '14rem'
+        56: '14rem',
+        '1/2': '50%'
       },
       colors: {
         pink: {
@@ -43,7 +44,8 @@ module.exports = {
         '-8': '-2rem',
         '-14': '-3.5rem',
         '-16': '-4rem',
-        '-20': '-5rem'
+        '-20': '-5rem',
+        '-40': '-10rem'
       }
     },
     aspectRatio: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 mx-auto py-16 md:pb-24">
+  <div class="container px-4 mx-auto py-16">
     <h2 class="text-center text-purple-500 font-medium text-5xl mb-12 leading-tight" v-html="announcement" />
     <div class="md:flex flex-wrap justify-center -mx-2">
       <div
@@ -35,7 +35,7 @@
         />
       </div>
     </div>
-    <div class="mt-12 flex justify-center">
+    <div class="mt-16 flex justify-center">
       <div class="shadow bg-purple-500 p-4 rounded mb-8 inline-flex relative">
         <div class="rounded-full w-7 h-7 bg-white mr-3 flex items-center justify-center">
           <Zondicon icon="arrow-thin-right" class="w-4 text-purple-500 fill-current" />

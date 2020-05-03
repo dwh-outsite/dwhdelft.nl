@@ -6,8 +6,8 @@
       </h1>
     </div>
     <a :href="localePath('krans')">
-      <div class="flex bg-white rounded shadow mx-2 mt-4">
-        <div class="w-1/3 p-8">
+      <div class="md:flex bg-white rounded shadow mx-2 mt-4">
+        <div class="md:w-1/3 p-8">
           <Krans class="h-64 mx-auto" />
         </div>
         <div class="flex-1 bg-purple-500 p-8">
@@ -19,7 +19,7 @@
 
           <h3
             v-text="$t('remembrance_day.wreath_laying.title')"
-            class="text-white leading-none text-center md:text-left text-5xl mb-10 md:text-6xl parisienne"
+            class="text-white leading-none text-5xl mb-10 md:text-6xl parisienne"
           />
 
           <button class="block button-white">

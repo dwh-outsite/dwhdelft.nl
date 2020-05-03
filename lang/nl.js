@@ -310,18 +310,27 @@ export default {
     title: 'DWH Kranslegging',
     title_label: 'Dodenherdenking 2020',
     description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dolor sed diam accumsan congue. Pellentesque
-      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu lectus
-      placerat nulla vehicula sollicitudin eget vitae mi.<br />
+      Op 4 mei herdenken we samen alle slachtoffers van oorlogen. Dit jaar is anders dan andere jaren. Misschien bezocht
+      je net als vele van ons elk jaar de lokale herdenking met familie of vrienden, dit jaar is het echter niet veilig
+      om fysiek samen te zijn. Daarom staan we met deze website stil bij alle Nederlanders die tijdens de Tweede
+      Wereldoorlog zijn omgekomen of vermoord en alle Nederlanders die hierna zijn omgekomen in oorlogssituaties of
+      vredesmissies. We vragen we je samen met ons stil te staan door je aan te sluiten bij onze virtuele kranslegging.
       <br />
-      Duis rhoncus erat ut nisi aliquam ultricies. Phasellus vitae dui eu lorem lacinia viverra. Phasellus convallis
-      bibendum diam, ac tincidunt augue fermentum auctor. Vestibulum consequat est augue, quis volutpat elit
-      facilisis a. Sed vitae justo auctor sem laoreet scelerisque. Phasellus ultricies pharetra odio non rhoncus.
-      Proin ipsum est, feugiat in purus at, aliquam vulputate neque.<br />
       <br />
-      Nunc venenatis cursus efficitur. Cras odio quam, cursus id porta nec, elementum vitae nisi. Sed efficitur erat
-      quis gravida facilisis. Sed laoreet felis id eleifend sodales. In hac habitasse platea dictumst. Proin feugiat
-      dolor ac neque maximus placerat.
+      Wij willen hier in het bijzonder stilstaan bij de onderdrukking en vervolging van LHBT+’ers over de hele wereld,
+      tijdens en ook na de Tweede Wereldoorlog. De oorlog heeft er ook een grote rol in gespeeld. Hoewel in Nederland
+      weinig LHBT+’ers direct vervolgd werden, werden de eerste stappen vooruit die LHBT+ emancipatie had gemaakt teniet
+      gedaan. Zo werd de eerste transgender kliniek ter wereld, in Berlijn, vernietigd en alle archieven verbrand. De
+      wereld zou tot de jaren ‘70 moeten wachten op de tweede.<br />
+      <br />
+      Stilstaan bij deze geschiedenis is ook een aansporing om waakzaam te blijven. We zijn trots op het
+      vooruitstrevende land waar we in leven, maar we moeten in gedachte houden dan vooruitgang en emancipatie niet
+      vanzelfsprekend zijn. Een terugval kan plaatsvinden als onze aandacht verslapt.<br />
+      <br />
+      Hierin kunnen we ook niet egoïstisch zijn. Onze vrijheid om te zijn we we zijn en lief te hebben wie we liefhebben
+      hangt, zo leert de geschiedenis, samen met de vrijheid van anderen om op hun manier zichzelf te zijn. Vrijheid heb
+      je alleen samen. Hetzelfde is terug te zien in de huidige crisis: we kunnen het alleen samen. Laten we samen
+      stilstaan bij het verleden en het heden en deze les ook na deze crisis niet vergeten.
     `,
     wreath_laying: {
       title: 'Leg samen een virtuele krans',

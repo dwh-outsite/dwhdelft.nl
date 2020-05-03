@@ -311,18 +311,26 @@ export default {
     title: 'DWH Wreath-Laying',
     title_label: 'Remembrance Day 2020',
     description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dolor sed diam accumsan congue. Pellentesque
-      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu lectus
-      placerat nulla vehicula sollicitudin eget vitae mi.<br />
+      On Remembrance Day we commemorate all victims of wars together. This year is different from other years. Maybe you
+      visit, like many of us, the local commemoration of Remembrance Day with your family or friends every year. This
+      year however, it’s not safe to physically be together. This is why we want to remember via this website all Dutch
+      victims of World War II and military conflicts and peacekeeping missions after this. We ask you to commemorate
+      together with us, by joining our virtual wreath-laying below.<br />
       <br />
-      Duis rhoncus erat ut nisi aliquam ultricies. Phasellus vitae dui eu lorem lacinia viverra. Phasellus convallis
-      bibendum diam, ac tincidunt augue fermentum auctor. Vestibulum consequat est augue, quis volutpat elit
-      facilisis a. Sed vitae justo auctor sem laoreet scelerisque. Phasellus ultricies pharetra odio non rhoncus.
-      Proin ipsum est, feugiat in purus at, aliquam vulputate neque.<br />
+      In particular we want to remember the oppression and persecution of LGBT+ people across the world, during and
+      after the second World War. The war played a large role in it. Though few LGBT+ people in the Netherlands were
+      directly persecuted, the first steps forward LGBT+ emancipation had made were unmade. The first transgender clinic
+      of the world, in Berlin, was destroyed and its archives burned. The world would have to wait until the seventies
+      for the second one.<br />
       <br />
-      Nunc venenatis cursus efficitur. Cras odio quam, cursus id porta nec, elementum vitae nisi. Sed efficitur erat
-      quis gravida facilisis. Sed laoreet felis id eleifend sodales. In hac habitasse platea dictumst. Proin feugiat
-      dolor ac neque maximus placerat.
+      Remembering our history also spurs us on to stay vigilant. We are proud of all the progress made in this country,
+      but we must remember that progress and emancipation are not a given. It can halt or relapse if our attention
+      lapses.<br />
+      <br />
+      In this, we cannot be selfish. Our freedom to be who we are and love whom we love is, as history tells us,
+      entwined with the rights of others to be themselves in their way. Freedom kept is freedom shared. The same goes in
+      the current crisis: no single group can stop it, only shared responsibility can. Let us remember the past and the
+      present, and not forget this lesson after this crisis either.
     `,
     wreath_laying: {
       title: 'Lay a wreath together with us',

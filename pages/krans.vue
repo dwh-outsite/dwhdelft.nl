@@ -15,7 +15,7 @@
         <Krans class="w-4/5 md:w-1/2 mx-auto mt-4 md:mt-0 mb-8" />
         <p
           v-html="$t('remembrance_day.description')"
-          class="text-xl md:text-2xl md:text-center leading-normal text-gray-800 mb-12"
+          class="text-xl md:text-center leading-normal text-gray-800 mb-12"
         />
         <div class="flex md:justify-center mb-4">
           <div class="bg-purple-100 rounded px-3 mr-2 tracking-wider flex items-center border border-purple-100">

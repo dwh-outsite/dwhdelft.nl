@@ -307,7 +307,7 @@ export default {
     }
   },
   remembrance_day: {
-    title: 'DWH Kranslegging',
+    title: 'Kranslegging DWH',
     title_label: 'Dodenherdenking 2020',
     description: `
       Op 4 mei herdenken we samen alle slachtoffers van oorlogen. Dit jaar is anders dan andere jaren. Misschien bezocht
@@ -350,7 +350,7 @@ export default {
       `
     },
     video_description: `
-      Vorig jaar, in 2019, legden toenmalig DWH voorzitter Michel Fleur en toenmalig Outsite voorzitter Casper Boone
+      Vorig jaar, in 2019, legden toenmalig DWH-voorzitter Michel Fleur en toenmalig Outsite-voorzitter Casper Boone
       bloemen tijdens dodenherdenking in Delft namens DWH.
     `
   }

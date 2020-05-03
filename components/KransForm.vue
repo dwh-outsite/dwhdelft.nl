@@ -4,9 +4,10 @@
       <Zondicon icon="badge" class="fill-current" />
     </div>
 
-    <h2 class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider">
-      Virtuele krans leggen
-    </h2>
+    <h2
+      v-text="$t('remembrance_day.form.title')"
+      class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider"
+    />
 
     <div v-if="state === 'present' || state === 'finished'">
       <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
@@ -14,9 +15,7 @@
           <Zondicon icon="checkmark-outline" class="fill-current w-10" />
         </div>
         <div class="ml-4">
-          <h4 class="text-xl leading-tight">
-            Bedankt! Je bent één van de kransleggers.
-          </h4>
+          <h4 v-text="$t('remembrance_day.form.thank_you')" class="text-xl leading-tight" />
         </div>
       </div>
     </div>
@@ -27,10 +26,7 @@
         <input v-model="form.name" :placeholder="$t('forms.placeholder.name')" type="text" required />
       </p>
 
-      <p class="text-xs mb-4">
-        Bij het verzenden van dit formulier geef je DWH toestemming om je naam op deze pagina te publiceren. Na afloop
-        van de actie zullen je gegevens worden verwijderd. Neem voor vragen contact op via onderstaande gegevens.
-      </p>
+      <p v-text="$t('remembrance_day.form.disclaimer')" class="text-xs mb-4" />
 
       <button :disabled="state === 'loading'" type="submit" class="button-pink">
         {{ state === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}

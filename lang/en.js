@@ -306,5 +306,45 @@ export default {
       full: 'Regular (€ 48,50)',
       discounted: 'Reduced (€ 25,00)'
     }
+  },
+  remembrance_day: {
+    title: 'DWH Wreath-Laying',
+    title_label: 'Remembrance Day 2020',
+    description: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dolor sed diam accumsan congue. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu lectus
+      placerat nulla vehicula sollicitudin eget vitae mi.<br />
+      <br />
+      Duis rhoncus erat ut nisi aliquam ultricies. Phasellus vitae dui eu lorem lacinia viverra. Phasellus convallis
+      bibendum diam, ac tincidunt augue fermentum auctor. Vestibulum consequat est augue, quis volutpat elit
+      facilisis a. Sed vitae justo auctor sem laoreet scelerisque. Phasellus ultricies pharetra odio non rhoncus.
+      Proin ipsum est, feugiat in purus at, aliquam vulputate neque.<br />
+      <br />
+      Nunc venenatis cursus efficitur. Cras odio quam, cursus id porta nec, elementum vitae nisi. Sed efficitur erat
+      quis gravida facilisis. Sed laoreet felis id eleifend sodales. In hac habitasse platea dictumst. Proin feugiat
+      dolor ac neque maximus placerat.
+    `,
+    wreath_laying: {
+      title: 'Lay a wreath together with us',
+      description: `
+        This year we do not have the possibility to lay a phisical wreath, therefore we ask you to lay a virtual wreath,
+        together with us. Below you find the virtual wreath-layers so far.
+      `,
+      board_label_dwh: 'DWH Board',
+      board_label_outsite: 'Outsite Board'
+    },
+    form: {
+      title: 'Lay a virtual wreath',
+      thank_you: 'Thank you, you are one of the wreath-layers.',
+      disclaimer: `
+        By submitting this form, you agree to give DWH the permission to publicly publish your name on this page. Your
+        data will be removed when this page is taken down. In case of any questions, please contact us via the contact
+        details below.
+      `
+    },
+    video_description: `
+      Last year, in 2019, DWH president Michel Fleur en Outsite president Casper Boone laid flowers on behalf of DWH
+      during the commemoration of Remembrance Day in Delft.
+    `
   }
 }

@@ -305,5 +305,44 @@ export default {
       full: 'Normaal (€ 48,50)',
       discounted: 'Gereduceerd (€ 25,00)'
     }
+  },
+  remembrance_day: {
+    title: 'DWH Kranslegging',
+    title_label: 'Dodenherdenking 2020',
+    description: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dolor sed diam accumsan congue. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu lectus
+      placerat nulla vehicula sollicitudin eget vitae mi.<br />
+      <br />
+      Duis rhoncus erat ut nisi aliquam ultricies. Phasellus vitae dui eu lorem lacinia viverra. Phasellus convallis
+      bibendum diam, ac tincidunt augue fermentum auctor. Vestibulum consequat est augue, quis volutpat elit
+      facilisis a. Sed vitae justo auctor sem laoreet scelerisque. Phasellus ultricies pharetra odio non rhoncus.
+      Proin ipsum est, feugiat in purus at, aliquam vulputate neque.<br />
+      <br />
+      Nunc venenatis cursus efficitur. Cras odio quam, cursus id porta nec, elementum vitae nisi. Sed efficitur erat
+      quis gravida facilisis. Sed laoreet felis id eleifend sodales. In hac habitasse platea dictumst. Proin feugiat
+      dolor ac neque maximus placerat.
+    `,
+    wreath_laying: {
+      title: 'Leg samen een virtuele krans',
+      description: `
+        Dit jaar hebben wij niet de mogelijkheid om een fysieke krans te leggen, daarom vragen we jou om samen met ons
+        een virtuele krans te leggen. Hieronder zie je de virtuele kransleggers waar jij je bij aansluit.
+      `,
+      board_label_dwh: 'Bestuur DWH',
+      board_label_outsite: 'Bestuur Outsite'
+    },
+    form: {
+      title: 'Virtuele krans leggen',
+      thank_you: 'Bedankt! Je bent één van de kransleggers.',
+      disclaimer: `
+        Bij het verzenden van dit formulier geef je DWH toestemming om je naam op deze pagina te publiceren. Na afloop
+        van de actie zullen je gegevens worden verwijderd. Neem voor vragen contact op via onderstaande gegevens.
+      `
+    },
+    video_description: `
+      Vorig jaar, in 2019, legden toenmalig DWH voorzitter Michel Fleur en toenmalig Outsite voorzitter Casper Boone
+      bloemen tijdens dodenherdenking in Delft namens DWH.
+    `
   }
 }

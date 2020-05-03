@@ -311,26 +311,26 @@ export default {
     title_label: 'Dodenherdenking 2020',
     description: `
       Op 4 mei herdenken we samen alle slachtoffers van oorlogen. Dit jaar is anders dan andere jaren. Misschien bezocht
-      je net als vele van ons elk jaar de lokale herdenking met familie of vrienden, dit jaar is het echter niet veilig
-      om fysiek samen te zijn. Daarom staan we met deze website stil bij alle Nederlanders die tijdens de Tweede
+      je net als velen van ons elk jaar de lokale herdenking met familie of vrienden, dit jaar is het echter niet veilig
+      om fysiek samen te zijn. Daarom staan we op deze website stil bij alle Nederlanders die tijdens de Tweede
       Wereldoorlog zijn omgekomen of vermoord en alle Nederlanders die hierna zijn omgekomen in oorlogssituaties of
-      vredesmissies. We vragen we je samen met ons stil te staan door je aan te sluiten bij onze virtuele kranslegging.
+      vredesmissies. We vragen je samen met ons stil te staan door je aan te sluiten bij onze virtuele kranslegging.
       <br />
       <br />
       Wij willen hier in het bijzonder stilstaan bij de onderdrukking en vervolging van LHBT+’ers over de hele wereld,
       tijdens en ook na de Tweede Wereldoorlog. De oorlog heeft er ook een grote rol in gespeeld. Hoewel in Nederland
-      weinig LHBT+’ers direct vervolgd werden, werden de eerste stappen vooruit die LHBT+ emancipatie had gemaakt teniet
-      gedaan. Zo werd de eerste transgender kliniek ter wereld, in Berlijn, vernietigd en alle archieven verbrand. De
-      wereld zou tot de jaren ‘70 moeten wachten op de tweede.<br />
+      weinig LHBT+’ers direct vervolgd werden, werden de eerste stappen in de emancipatie van LHBT+’ers teniet gedaan.
+      Zo werd de eerste transgenderkliniek ter wereld, in Berlijn, vernietigd en werden alle archieven verbrand. De
+      wereld zou tot de jaren ‘70 moeten wachten op een tweede kliniek.<br />
       <br />
       Stilstaan bij deze geschiedenis is ook een aansporing om waakzaam te blijven. We zijn trots op het
       vooruitstrevende land waar we in leven, maar we moeten in gedachte houden dan vooruitgang en emancipatie niet
       vanzelfsprekend zijn. Een terugval kan plaatsvinden als onze aandacht verslapt.<br />
       <br />
-      Hierin kunnen we ook niet egoïstisch zijn. Onze vrijheid om te zijn we we zijn en lief te hebben wie we liefhebben
-      hangt, zo leert de geschiedenis, samen met de vrijheid van anderen om op hun manier zichzelf te zijn. Vrijheid heb
-      je alleen samen. Hetzelfde is terug te zien in de huidige crisis: we kunnen het alleen samen. Laten we samen
-      stilstaan bij het verleden en het heden en deze les ook na deze crisis niet vergeten.
+      Hierin kunnen we ook niet egoïstisch zijn. Onze vrijheid om te zijn wie we zijn en lief te hebben wie we
+      liefhebben hangt, zo leert de geschiedenis, samen met de vrijheid van anderen om op hun manier zichzelf te zijn.
+      Vrijheid heb je alleen samen. Hetzelfde is terug te zien in de huidige crisis: we kunnen het alleen samen. Laten
+      we samen stilstaan bij het verleden en het heden en deze les ook na deze crisis niet vergeten.
     `,
     wreath_laying: {
       title: 'Leg samen een virtuele krans',

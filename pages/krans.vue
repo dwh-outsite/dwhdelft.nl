@@ -124,7 +124,7 @@ export default {
   },
   data() {
     return {
-      dwhBoard: ['Robert Baart', 'Nick van Loo', 'Quinten Star', 'Casper Boone', 'Jelle Vos', 'Jeroen'],
+      dwhBoard: ['Robert Baart', 'Nick van Loo', 'Quinten Star', 'Casper Boone', 'Jelle Vos', 'Jeroen Wegdam'],
       outsiteBoard: ['Niv Bharos', 'Ivo Brands', 'Bouke Stoelinga', 'Eva Pelk'],
       participants: []
     }

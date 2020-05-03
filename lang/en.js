@@ -306,5 +306,53 @@ export default {
       full: 'Regular (€ 48,50)',
       discounted: 'Reduced (€ 25,00)'
     }
+  },
+  remembrance_day: {
+    title: 'DWH Wreath-Laying',
+    title_label: 'Remembrance Day 2020',
+    description: `
+      On Remembrance Day we commemorate all victims of wars together. This year is different from other years. Maybe you
+      visit, like many of us, the local commemoration of Remembrance Day with your family or friends every year. This
+      year however, it’s not safe to physically be together. This is why we want to remember via this website all Dutch
+      victims of World War II and military conflicts and peacekeeping missions after this. We ask you to commemorate
+      together with us, by joining our virtual wreath-laying below.<br />
+      <br />
+      In particular we want to remember the oppression and persecution of LGBT+ people across the world, during and
+      after the second World War. The war played a large role in it. Though few LGBT+ people in the Netherlands were
+      directly persecuted, the first steps forward LGBT+ emancipation had made were unmade. The first transgender clinic
+      of the world, in Berlin, was destroyed and its archives burned. The world would have to wait until the seventies
+      for the second one.<br />
+      <br />
+      Remembering our history also spurs us on to stay vigilant. We are proud of all the progress made in this country,
+      but we must remember that progress and emancipation are not a given. It can halt or relapse if our attention
+      lapses.<br />
+      <br />
+      In this, we cannot be selfish. Our freedom to be who we are and love whom we love is, as history tells us,
+      entwined with the rights of others to be themselves in their way. Freedom kept is freedom shared. The same goes in
+      the current crisis: no single group can stop it, only shared responsibility can. Let us remember the past and the
+      present, and not forget this lesson after this crisis either.
+    `,
+    wreath_laying: {
+      title: 'Lay a wreath together with us',
+      description: `
+        This year we do not have the possibility to lay a phisical wreath, therefore we ask you to lay a virtual wreath,
+        together with us. Below you find the virtual wreath-layers so far.
+      `,
+      board_label_dwh: 'DWH Board',
+      board_label_outsite: 'Outsite Board'
+    },
+    form: {
+      title: 'Lay a virtual wreath',
+      thank_you: 'Thank you, you are one of the wreath-layers.',
+      disclaimer: `
+        By submitting this form, you agree to give DWH the permission to publicly publish your name on this page. Your
+        data will be removed when this page is taken down. In case of any questions, please contact us via the contact
+        details below.
+      `
+    },
+    video_description: `
+      Last year, in 2019, former DWH president Michel Fleur and former Outsite president Casper Boone laid flowers on
+      behalf of DWH during the commemoration of Remembrance Day in Delft.
+    `
   }
 }

@@ -343,8 +343,8 @@ export default {
       `
     },
     video_description: `
-      Last year, in 2019, DWH president Michel Fleur en Outsite president Casper Boone laid flowers on behalf of DWH
-      during the commemoration of Remembrance Day in Delft.
+      Last year, in 2019, former DWH president Michel Fleur and former Outsite president Casper Boone laid flowers on
+      behalf of DWH during the commemoration of Remembrance Day in Delft.
     `
   }
 }

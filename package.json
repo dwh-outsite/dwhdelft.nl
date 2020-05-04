@@ -14,8 +14,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@bazzite/nuxt-netlify": "^0.1.1",
-    "@nuxtjs/axios": "^5.3.6",
+    "@aceforth/nuxt-netlify": "^1.0.0",
+    "@nuxtjs/axios": "^5.10.2",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "csv-loader": "^3.0.2",

@@ -9,7 +9,7 @@
       class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider"
     />
 
-    <div v-if="state === 'present' || state === 'finished'">
+    <div v-if="state === 'present' || state === 'finished' || state === 'expired'">
       <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
         <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
           <Zondicon icon="checkmark-outline" class="fill-current w-10" />
@@ -47,7 +47,7 @@ export default {
       form: {
         name: ''
       },
-      state: 'start'
+      state: 'expired'
     }
   },
   mounted() {

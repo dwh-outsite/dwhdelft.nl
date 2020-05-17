@@ -108,12 +108,12 @@
 <script>
 import Zondicon from 'vue-zondicons'
 
+import Krans from '@/assets/images/krans.svg'
+
 import readFromFirebase from '~/modules/firebase-reader'
 
 import Header from '~/components/Header'
 import KransForm from '~/components/KransForm'
-
-import Krans from '@/assets/images/krans.svg'
 
 export default {
   components: {

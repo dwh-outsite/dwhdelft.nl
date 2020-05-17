@@ -343,7 +343,7 @@ export default {
     },
     form: {
       title: 'Lay a virtual wreath',
-      thank_you: 'Thank you, you are one of the wreath-layers.',
+      thank_you: 'Thank you! It is no longer possible to participate.',
       disclaimer: `
         By submitting this form, you agree to give DWH the permission to publicly publish your name on this page. Your
         data will be removed when this page is taken down. In case of any questions, please contact us via the contact

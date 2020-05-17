@@ -5,31 +5,7 @@
         {{ title }}
       </h1>
     </div>
-    <a :href="localePath('krans')">
-      <div class="md:flex bg-white rounded shadow mx-2 mt-4">
-        <div class="md:w-1/3 p-8">
-          <Krans class="h-64 mx-auto" />
-        </div>
-        <div class="flex-1 bg-purple-500 p-8">
-          <div
-            v-text="$t('remembrance_day.title_label')"
-            class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider inline"
-          />
-          <h2 v-text="$t('remembrance_day.title')" class="text-4xl text-white font-normal mt-2 mb-6" />
-
-          <h3
-            v-text="$t('remembrance_day.wreath_laying.title')"
-            class="text-white leading-none text-5xl mb-10 md:text-6xl parisienne"
-          />
-
-          <button class="block button-white">
-            {{ $t('remembrance_day.form.title') }}
-            &raquo;
-          </button>
-        </div>
-      </div>
-    </a>
-    <div v-if="false" class="md:flex justify-center">
+    <div class="md:flex justify-center">
       <div v-for="activity in activities" :key="activity.name" class="bg-white rounded shadow flex-1 mx-2 mt-4">
         <a
           :href="'https://www.facebook.com/events/' + activity.id"
@@ -100,10 +76,8 @@ import 'dayjs/locale/nl'
 import Zondicon from 'vue-zondicons'
 import activitiesFile from '~/static/activities.json'
 
-import Krans from '@/assets/images/krans.svg'
-
 export default {
-  components: { Zondicon, Krans },
+  components: { Zondicon },
   props: ['title'],
   data() {
     return {

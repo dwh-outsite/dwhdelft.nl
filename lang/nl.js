@@ -343,7 +343,7 @@ export default {
     },
     form: {
       title: 'Virtuele krans leggen',
-      thank_you: 'Bedankt! Je bent één van de kransleggers.',
+      thank_you: 'Bedankt! Het is niet meer mogelijk deel te nemen.',
       disclaimer: `
         Bij het verzenden van dit formulier geef je DWH toestemming om je naam op deze pagina te publiceren. Na afloop
         van de actie zullen je gegevens worden verwijderd. Neem voor vragen contact op via onderstaande gegevens.

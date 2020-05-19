@@ -306,6 +306,48 @@ export default {
       discounted: 'Gereduceerd (€ 25,00)'
     }
   },
+  bookings: {
+    title: 'Reserveren',
+    title_label: 'Events',
+    description: `
+      Algemene tekst?
+    `,
+    form_information: {
+      title: 'Reserveren in tijden van COVID-19',
+      description: `
+        Vanaf 1 juni werken wij met reserveringen. Om het voor iedereen zo veilig en eerlijk mogelijk te houden,
+        hanteren wij daarbij de volgende regels.
+      `,
+      rules: [
+        'Reserveringen kunnen alleen individueel gedaan worden',
+        'Gasten kunnen maximaal 1 reservering open hebben staan',
+        'De avonden zijn verdeeld in tijdsloten of hebben andere openingstijden',
+        'De reservering vervalt 1 uur na aanvang van het tijdslot',
+        'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken'
+      ],
+      rules_disclaimer: `
+        We begrijpen dat bovenstaande regels niet voor iedereen het meest ideaal zullen zijn. Dit is hoe we vanaf 1 juni
+        weer open gaan, maar tegelijkertijd zullen we kijken hoe de nieuwe werkwijze zich in de praktijk uit zal pakken.
+        Waar nodig zullen we de regels aanpassen om het voor iedereen zo leuk mogelijk te maken.
+      `
+    },
+    form: {
+      title: 'Reserveren',
+      thank_you: `
+        Bedankt voor het reserveren! Je ontvangt een e-mail met je reserveringsbewijs. Lukt het je uiteindelijk toch
+        niet om aanwezig te zijn? Via de mail die je ontvangt kun je je reservering annuleren.
+      `,
+      disclaimer: `
+        Bij het verzenden van dit formulier geef je DWH toestemming om je gegevens op te slaan en te verwerken. Je 
+        gegevens worden alleen gebruikt voor het controleren van reserveringen en voor de mogelijkheid om contact
+        met je op te nemen. Neem voor vragen contact op via onderstaande contactgegevens.
+      `
+    },
+    video_description: `
+      Vorig jaar, in 2019, legden toenmalig DWH-voorzitter Michel Fleur en toenmalig Outsite-voorzitter Casper Boone
+      bloemen tijdens dodenherdenking in Delft namens DWH.
+    `
+  },
   remembrance_day: {
     title: 'Kranslegging DWH',
     title_label: 'Dodenherdenking 2020',

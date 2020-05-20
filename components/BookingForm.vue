@@ -84,36 +84,7 @@ export default {
         email: '',
         event_id: undefined
       },
-      events: [
-        {
-          id: 1,
-          name: 'Outsite (28-)',
-          date: 'Donderdag 02-06',
-          time: '21.00 - 0.00',
-          available_seats: 23
-        },
-        {
-          id: 2,
-          name: 'Open Bar',
-          date: 'Vrijdag 04-06',
-          time: '21.00 - 0.00',
-          available_seats: 0
-        },
-        {
-          id: 3,
-          name: 'Outsite',
-          date: 'Donderdag 07-06',
-          time: '21.00 - 0.00',
-          available_seats: 23
-        },
-        {
-          id: 4,
-          name: 'Open Bar',
-          date: 'Zaterdag 09-06',
-          time: '21.00 - 0.00',
-          available_seats: 23
-        }
-      ],
+      events: [],
       state: 'start'
     }
   },

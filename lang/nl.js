@@ -343,9 +343,11 @@ export default {
         met je op te nemen. Neem voor vragen contact op via onderstaande contactgegevens.
       `
     },
-    video_description: `
-      Vorig jaar, in 2019, legden toenmalig DWH-voorzitter Michel Fleur en toenmalig Outsite-voorzitter Casper Boone
-      bloemen tijdens dodenherdenking in Delft namens DWH.
+    canceled: `
+      Je reservering is geannuleerd. Indien gewenst kun je hieronder een nieuwe reservering plaatsen.
+    `,
+    information: `
+      Exra informatie.
     `
   },
   remembrance_day: {

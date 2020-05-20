@@ -12,6 +12,14 @@
 
     <section class="container mx-auto relative px-4">
       <div class="pb-16 md:w-2/3 m-auto">
+        <div v-if="$route.query.canceled" class="bg-purple-100 rounded p-4 text-lg flex items-center mb-12">
+          <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
+            <Zondicon icon="information-outline" class="fill-current w-10" />
+          </div>
+          <div class="ml-4">
+            <h4 v-text="$t('bookings.canceled')" class="text-xl leading-tight" />
+          </div>
+        </div>
         <p v-text="$t('bookings.description')" class="text-xl md:text-center leading-normal text-gray-800 mb-12" />
       </div>
     </section>
@@ -40,22 +48,22 @@
       </div>
     </section>
 
-    <section class="my-12 md:mt-32 md:mb-24">
-      <div class="container mx-auto px-4">
-        <p class="md:w-2/3 mx-auto text-xl leading-normal md:text-center mb-4 md:mb-8">
-          Eventueel extra informatie.
-        </p>
+    <section class="container mx-auto relative px-4 my-12 md:mt-32">
+      <div class="pb-16 md:w-2/3 m-auto">
+        <p v-text="$t('bookings.information')" class="text-xl md:text-center leading-normal text-gray-800 mb-12" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
 import Header from '~/components/Header'
 import BookingForm from '~/components/BookingForm'
 
 export default {
   components: {
+    Zondicon,
     Header,
     BookingForm
   },

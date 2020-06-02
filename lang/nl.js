@@ -313,17 +313,19 @@ export default {
       Algemene tekst?
     `,
     form_information: {
-      title: 'Reserveren in tijden van COVID-19',
+      title: '<strong>Reserveren</strong> in tijden van COVID-19',
       description: `
         Vanaf 1 juni werken wij met reserveringen. Om het voor iedereen zo veilig en eerlijk mogelijk te houden,
         hanteren wij daarbij de volgende regels.
       `,
       rules: [
-        'Reserveringen kunnen alleen individueel gedaan worden',
         'Gasten kunnen maximaal 1 reservering open hebben staan',
         'De avonden zijn verdeeld in tijdsloten of hebben andere openingstijden',
         'De reservering vervalt 1 uur na aanvang van het tijdslot',
-        'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken'
+        'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken',
+        'Tweepersoonsplekken zijn bedoeld voor mensen uit hetzelfde huishouden',
+        `Als er geen tweepersoonsplekken meer beschikbaar zijn en je wilt wel met twee personen komen, dan kun je twee
+        maal individueel reserveren. Mits mogelijk kun je alsnog bij elkaar gaan zitten`
       ],
       rules_disclaimer: `
         We begrijpen dat bovenstaande regels niet voor iedereen het meest ideaal zullen zijn. Dit is hoe we vanaf 1 juni

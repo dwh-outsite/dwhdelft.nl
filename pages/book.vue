@@ -31,7 +31,7 @@
         </div>
         <div class="flex-1 pt-16 md:pl-16">
           <h2
-            v-text="$t('bookings.form_information.title')"
+            v-html="$t('bookings.form_information.title')"
             class="text-white leading-none text-center md:text-left text-5xl mb-6 md:text-6xl"
           />
           <p v-text="$t('bookings.form_information.description')" class="text-white text-xl" />
@@ -66,11 +66,6 @@ export default {
     Zondicon,
     Header,
     BookingForm
-  },
-  data() {
-    return {
-      dwhBoard: ['Robert Baart', 'Nick van Loo', 'Quinten Star', 'Casper Boone', 'Jelle Vos', 'Jeroen Wegdam']
-    }
   }
 }
 </script>

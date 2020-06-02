@@ -44,16 +44,62 @@
               form.event_id == event.id ? 'border-2 border-purple-500' : '',
               event.available_seats == 0 ? 'text-gray-400' : 'cursor-pointer'
             ]"
-            class="bg-purple-100 rounded-md mt-2 mr-2 shadow w-40"
+            class="bg-purple-100 rounded-md mt-2 mr-2 shadow w-40 overflow-hidden"
           >
             <div
               v-text="event.name"
               :class="event.available_seats == 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"
-              class="px-3 py-1 font-bold rounded-t"
+              class="px-3 py-1 font-bold"
             />
             <div class="px-3 py-2 text-sm">
               <div v-text="formatDate(event.start)" class="capitalize" />
               <div>{{ formatTime(event.start) }} - {{ formatTime(event.end) }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="selectedEvent" class="form-element-gray">
+        <label class="required">Type Zitplek</label>
+        <div class="flex text-center">
+          <div
+            @click="selectTwoseat(false)"
+            :class="form.twoseat ? '' : 'border-2 border-purple-500'"
+            class="flex-1 mr-1 shadow bg-purple-100 rounded overflow-hidden cursor-pointer"
+          >
+            <div class="flex h-full">
+              <div class="px-4 bg-purple-500 flex flex-col justify-center">
+                <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
+                  <Zondicon v-if="!form.twoseat" icon="checkmark" class="fill-current" />
+                </div>
+              </div>
+              <div class="py-2 flex-1 flex flex-col justify-center">
+                Eenpersoonszitplaats
+              </div>
+            </div>
+          </div>
+          <div
+            @click="selectTwoseat(true)"
+            :class="[
+              form.twoseat ? 'border-2 border-purple-500' : '',
+              selectedEvent.available_twoseats > 0 ? 'cursor-pointer' : ''
+            ]"
+            class="flex-1 ml-1 shadow bg-purple-100 rounded overflow-hidden"
+          >
+            <div class="flex h-full">
+              <div
+                :class="selectedEvent.available_twoseats > 0 ? 'bg-purple-500' : 'bg-purple-200'"
+                class="px-4 flex flex-col justify-center"
+              >
+                <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
+                  <Zondicon v-if="form.twoseat" icon="checkmark" class="fill-current" />
+                </div>
+              </div>
+              <div class="py-2 flex-1 flex flex-col justify-center">
+                Tweepersoonszitplaats
+                <div v-if="selectedEvent.available_twoseats > 0" class="text-sm">(binnen 1,5 meter)</div>
+                <div v-else class="text-sm">Niet meer beschikbaar</div>
+              </div>
             </div>
           </div>
         </div>
@@ -74,6 +120,9 @@ import axios from 'axios'
 import dayjs from 'dayjs'
 import 'dayjs/locale/nl'
 
+// const apiUrl = 'https://reserveer.dwhdelft.nl'
+const apiUrl = 'https://bar-bookings.test'
+
 export default {
   components: { Zondicon },
   data() {
@@ -82,15 +131,17 @@ export default {
       form: {
         name: '',
         email: '',
-        event_id: undefined
+        event_id: undefined,
+        twoseat: false
       },
       events: [],
+      selectedEvent: undefined,
       state: 'start'
     }
   },
   mounted() {
     axios
-      .get('https://reserveer.dwhdelft.nl/api/events')
+      .get(apiUrl + '/api/events')
       .then(response => {
         // eslint-disable-next-line no-console
         console.log(response.data.data)
@@ -104,6 +155,14 @@ export default {
     selectEvent(event) {
       if (event.available_seats > 0) {
         this.form.event_id = event.id
+        this.selectedEvent = event
+      }
+    },
+    selectTwoseat(twoseat) {
+      if (twoseat && this.selectedEvent.available_twoseats > 0) {
+        this.form.twoseat = true
+      } else {
+        this.form.twoseat = false
       }
     },
     submit(event) {
@@ -117,7 +176,7 @@ export default {
       this.state = 'loading'
 
       axios
-        .post('https://reserveer.dwhdelft.nl/api/bookings', this.form)
+        .post(apiUrl + '/api/bookings', this.form)
         .then(() => {
           this.state = 'finished'
         })

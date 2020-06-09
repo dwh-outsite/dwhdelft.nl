@@ -5,19 +5,19 @@
       <div
         v-for="event in $t('recurring_events.events')"
         :key="event.name"
-        class="lg:flex-1 mx-2 mb-4 lg:mb-0 md:w-1/3 lg:w-auto rounded shadow bg-purple-100 flex flex-col
+        class="lg:flex-1 mx-2 mb-4 lg:mb-4 md:w-5/12 lg:w-auto rounded shadow bg-purple-100 flex flex-col
           justify-between"
       >
         <div class="p-6 md:mb-6">
           <div class="flex mb-2">
-            <h4 v-text="event.name" class="flex-1 text-purple-500 font-semibold text-2xl" />
+            <h4 v-text="event.name" class="flex-1 text-purple-500 font-semibold text-2xl mb-2" />
             <div v-if="event.note" class="ml-4 text-center flex items-center">
               <div v-text="event.note" class="bg-purple-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider" />
             </div>
           </div>
           <div class="bg-white rounded px-3 mb-4 tracking-wider flex items-center border border-purple-200">
             <Zondicon icon="calendar" class="fill-current h-4 inline mr-2 text-purple-500" />
-            <div class="flex-1 py-2">
+            <div class="flex-1 py-2 pr-2">
               {{ event.day }}
             </div>
             <div v-text="event.time" class="border-l border-purple-200 pl-3 py-2" />

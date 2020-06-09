@@ -127,6 +127,10 @@ export default {
         to: 'https://docs.google.com/forms/d/1IXgfc5k9G9LByasP9812fcZ_xNQqNUcl3riNHvJNjxM/viewform'
       },
       {
+        from: '/protocol',
+        to: 'https://docs.google.com/document/d/1wKbk5_DnEJnF2DNBinUyBWCICEogRnUs_VWS60juqNg/'
+      },
+      {
         from: '/discord',
         to: 'https://discord.gg/RDwtnRK'
       }

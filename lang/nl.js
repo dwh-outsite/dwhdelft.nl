@@ -309,18 +309,37 @@ export default {
   bookings: {
     title: 'Reserveren',
     title_label: 'Events',
+    description_title: '<strong>Welkom terug</strong> bij DWH',
     description: `
-      Algemene tekst?
+      We zijn blij je weer te kunnen verwelkomen in deze tijden van Corona! Hoewel op een andere manier dan normaal,
+      kun je de komende tijd weer bij ons terecht voor een gezellige baravond, een leuke film of een lekkere maaltijd.
+      <br />
+      <br />
+      We vragen je bij je bezoek rekening te houden met een aantal zaken. Allereerst is het verplicht een reservering
+      te maken, dat kan hieronder. Reserveringen zijn individueel en bij binnenkomst kun je een plekje uitzoeken aan
+      een van onze 2-4 persoons tafels (waaraan iedereen op 1,5 meter afstand zit). Kom je samen met iemand uit
+      hetzelfde huishouden, dan zijn er een aantal tweepersoonsplekken beschikbaar.
+      <br />
+      <br />
+      Bij binnenkomst vragen we je je handen te ontsmetten en een aantal vragen over je gezondheid te beantwoorden. 
+      Daarna kun je een leuk plekje uitkiezen waar je wilt gaan zitten. Je wordt tijdens een baravond aan tafel bediend,
+      hiermee voorkomen we dat je veel moet rondlopen en paden met andere bezoekers moet kruisen. Het is de bedoeling
+      dat je aan dezelfde tafel blijft zitten, helaas kun je niet van tafel wisselen tijdens de avond. Daarnaast vragen
+      we je gangpaden niet onnodig bezet te houden, het is niet de bedoeling gesprekken te voeren bij andere tafels.
+      Op deze manier houden we het voor iedereen veilig en verantwoord.
+      <br />
+      <br />
+      Heb je vragen of leuke suggesties? Neem contact op via de contactgegevens onderaan deze pagina.
     `,
     form_information: {
       title: '<strong>Reserveren</strong> in tijden van COVID-19',
       description: `
-        Vanaf 1 juni werken wij met reserveringen. Om het voor iedereen zo veilig en eerlijk mogelijk te houden,
+        Vanaf 18 juni werken wij met reserveringen. Om het voor iedereen zo veilig en eerlijk mogelijk te houden,
         hanteren wij daarbij de volgende regels.
       `,
       rules: [
+        'We zijn tijdelijk open voor <strong>alleen leden</strong>',
         'Gasten kunnen maximaal 1 reservering open hebben staan',
-        'De avonden zijn verdeeld in tijdsloten of hebben andere openingstijden',
         'De reservering vervalt 1 uur na aanvang van het tijdslot',
         'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken',
         'Tweepersoonsplekken zijn bedoeld voor mensen uit hetzelfde huishouden',
@@ -343,14 +362,25 @@ export default {
         Bij het verzenden van dit formulier geef je DWH toestemming om je gegevens op te slaan en te verwerken. Je 
         gegevens worden alleen gebruikt voor het controleren van reserveringen en voor de mogelijkheid om contact
         met je op te nemen. Neem voor vragen contact op via onderstaande contactgegevens.
-      `
+      `,
+      validation: {
+        A_guest_can_only_have_one_open_booking: `
+          Je hebt al een actieve reservering voor een event de komende tijd. Je kunt maximaal 1 openstaande
+          reservering hebben.
+        `
+      }
     },
     canceled: `
       Je reservering is geannuleerd. Indien gewenst kun je hieronder een nieuwe reservering plaatsen.
     `,
-    information: `
-      Exra informatie.
-    `
+    general_rules: [
+      'Was regelmatig je handen',
+      'Hoest en nies in je elleboog',
+      'Betaal contactloos met je telefoon of pinpas',
+      'Schud geen handen en sla de knuffels over',
+      'Houd 1,5 meter afstand tot anderen',
+      'Heb je klachten? Blijf thuis!'
+    ]
   },
   remembrance_day: {
     title: 'Kranslegging DWH',

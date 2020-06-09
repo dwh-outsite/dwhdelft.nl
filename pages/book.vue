@@ -11,7 +11,7 @@
     </header>
 
     <section class="container mx-auto relative px-4">
-      <div class="pb-16 md:w-2/3 m-auto">
+      <div class="pb-16 m-auto">
         <div v-if="$route.query.canceled" class="bg-purple-100 rounded p-4 text-lg flex items-center mb-12">
           <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
             <Zondicon icon="information-outline" class="fill-current w-10" />
@@ -20,7 +20,11 @@
             <h4 v-text="$t('bookings.canceled')" class="text-xl leading-tight" />
           </div>
         </div>
-        <p v-text="$t('bookings.description')" class="text-xl md:text-center leading-normal text-gray-800 mb-12" />
+        <h2
+          v-html="$t('bookings.description_title')"
+          class="text-purple-400 leading-none text-center md:text-left text-5xl mb-12 md:text-6xl"
+        />
+        <p v-html="$t('bookings.description')" class="text-2xl leading-normal text-gray-800 mb-12" />
       </div>
     </section>
 
@@ -39,7 +43,7 @@
             <div
               v-for="rule in $t('bookings.form_information.rules')"
               :key="rule"
-              v-text="rule"
+              v-html="rule"
               class="bg-purple-400 text-white rounded p-4 mb-2"
             />
           </div>
@@ -49,8 +53,25 @@
     </section>
 
     <section class="container mx-auto relative px-4 my-12 md:mt-32">
-      <div class="pb-16 md:w-2/3 m-auto">
-        <p v-text="$t('bookings.information')" class="text-xl md:text-center leading-normal text-gray-800 mb-12" />
+      <div class="flex flex-wrap -mx-2">
+        <CoronaRule :text="$t('bookings.general_rules[0]')">
+          <WashHandsIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
+        </CoronaRule>
+        <CoronaRule :text="$t('bookings.general_rules[1]')">
+          <CoughIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
+        </CoronaRule>
+        <CoronaRule :text="$t('bookings.general_rules[2]')">
+          <ContactLessIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
+        </CoronaRule>
+        <CoronaRule :text="$t('bookings.general_rules[3]')">
+          <HandshakeIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
+        </CoronaRule>
+        <CoronaRule :text="$t('bookings.general_rules[4]')">
+          <DistanceIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
+        </CoronaRule>
+        <CoronaRule :text="$t('bookings.general_rules[5]')">
+          <HomeIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
+        </CoronaRule>
       </div>
     </section>
   </div>
@@ -58,14 +79,30 @@
 
 <script>
 import Zondicon from 'vue-zondicons'
+
+import ContactLessIcon from '@/assets/images/corona/contactless.svg'
+import CoughIcon from '@/assets/images/corona/cough.svg'
+import DistanceIcon from '@/assets/images/corona/distance.svg'
+import HandshakeIcon from '@/assets/images/corona/handshake.svg'
+import HomeIcon from '@/assets/images/corona/home.svg'
+import WashHandsIcon from '@/assets/images/corona/wash-hands.svg'
+
 import Header from '~/components/Header'
 import BookingForm from '~/components/BookingForm'
+import CoronaRule from '~/components/CoronaRule'
 
 export default {
   components: {
     Zondicon,
     Header,
-    BookingForm
+    BookingForm,
+    CoronaRule,
+    ContactLessIcon,
+    CoughIcon,
+    DistanceIcon,
+    HandshakeIcon,
+    HomeIcon,
+    WashHandsIcon
   }
 }
 </script>

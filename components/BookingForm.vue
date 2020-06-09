@@ -48,7 +48,7 @@
           >
             <div
               v-text="event.name"
-              :class="event.available_seats == 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"
+              :class="event.available_seats <= 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"
               class="px-3 py-1 font-bold"
             />
             <div class="px-3 py-2 text-sm">
@@ -143,8 +143,6 @@ export default {
     axios
       .get(apiUrl + '/api/events')
       .then(response => {
-        // eslint-disable-next-line no-console
-        console.log(response.data.data)
         this.events = response.data.data
       })
       .catch(() => {
@@ -184,7 +182,9 @@ export default {
           this.state = 'start'
 
           if (error.response.data.errors) {
-            this.errors = Object.values(error.response.data.errors).flat()
+            this.errors = Object.values(error.response.data.errors)
+              .flat()
+              .map(this.translateError)
           } else {
             alert('An error occurred. If this keeps happening, please send us an email.')
           }
@@ -204,6 +204,15 @@ export default {
       }
 
       return dayjs(date).format('h:mm A')
+    },
+    translateError(error) {
+      const key = error.replace(/ /g, '_').replace(/\./g, '')
+
+      if (this.$te('bookings.form.validation.' + key)) {
+        return this.$t('bookings.form.validation.' + key)
+      }
+
+      return error
     }
   }
 }

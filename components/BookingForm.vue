@@ -120,8 +120,7 @@ import axios from 'axios'
 import dayjs from 'dayjs'
 import 'dayjs/locale/nl'
 
-// const apiUrl = 'https://reserveer.dwhdelft.nl'
-const apiUrl = 'https://bar-bookings.test'
+const apiUrl = 'https://reserveer.dwhdelft.nl'
 
 export default {
   components: { Zondicon },

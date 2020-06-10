@@ -36,17 +36,15 @@
       <div class="form-element-gray">
         <label class="required">Tijdslot</label>
         <div class="flex flex-wrap">
-          <div
-            v-for="event in events"
-            :key="event.id"
-            @click="selectEvent(event)"
-            :class="[
-              form.event_id == event.id ? 'border-2 border-purple-500' : '',
-              event.available_seats == 0 ? 'text-gray-400' : 'cursor-pointer'
-            ]"
-            class="w-full md:w-1/3"
-          >
-            <div class="bg-purple-100 rounded-md mt-2 mr-2 shadow overflow-hidden">
+          <div v-for="event in events" :key="event.id" class="w-full md:w-1/3">
+            <div
+              @click="selectEvent(event)"
+              :class="[
+                form.event_id == event.id ? 'border-2 border-purple-500' : '',
+                event.available_seats == 0 ? 'text-gray-400' : 'cursor-pointer'
+              ]"
+              class="bg-purple-100 rounded-md mt-2 mr-2 shadow overflow-hidden"
+            >
               <div
                 v-text="event.name"
                 :class="event.available_seats <= 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"

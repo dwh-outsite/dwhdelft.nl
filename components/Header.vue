@@ -5,43 +5,6 @@
         <a :href="localePath('index')">
           <DWHLogo class="h-16 fill-current text-white" />
         </a>
-        <div v-if="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
-          <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
-            {{ item.title }}
-          </a>
-        </div>
-        <div class="hidden md:block text-xl font-semibold text-white">
-          <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
-            {{ item.title }}
-          </a>
-        </div>
-        <div class="flex">
-          <div
-            class="
-              rounded-full w-7 h-7 bg-white mr-3 md:mr-4 border-2 border-white
-              flex items-center justify-center 
-              overflow-hidden relative 
-            "
-          >
-            <a v-if="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
-              <GBFlag />
-            </a>
-            <a v-if="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
-              <NLFlag />
-            </a>
-          </div>
-          <div
-            @click="showMenu = !showMenu"
-            class="
-              rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white
-              flex items-center justify-center md:hidden
-              overflow-hidden relative
-            "
-          >
-            <Zondicon v-if="!showMenu" icon="menu" class="fill-current w-full" />
-            <Zondicon v-if="showMenu" icon="close" class="fill-current w-full" />
-          </div>
-        </div>
       </div>
     </nav>
     <div class="image-container">

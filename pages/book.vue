@@ -49,29 +49,6 @@
         <div class="md:w-1/2 pt-8 md:pt-40"></div>
       </div>
     </section>
-
-    <section class="container mx-auto relative px-4 mt-12 mb-2 md:mt-32 md:mb-12">
-      <div class="flex flex-wrap -mx-2">
-        <CoronaRule :text="$t('bookings.general_rules[0]')">
-          <WashHandsIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[1]')">
-          <CoughIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[2]')">
-          <ContactLessIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[3]')">
-          <HandshakeIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[4]')">
-          <DistanceIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[5]')">
-          <HomeIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-      </div>
-    </section>
   </div>
 </template>
 

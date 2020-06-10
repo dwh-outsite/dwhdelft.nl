@@ -44,16 +44,18 @@
               form.event_id == event.id ? 'border-2 border-purple-500' : '',
               event.available_seats == 0 ? 'text-gray-400' : 'cursor-pointer'
             ]"
-            class="bg-purple-100 rounded-md mt-2 mr-2 shadow w-full md:w-40 overflow-hidden"
+            class="w-full md:w-1/3"
           >
-            <div
-              v-text="event.name"
-              :class="event.available_seats <= 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"
-              class="px-3 py-1 font-bold"
-            />
-            <div class="px-3 py-2 text-sm">
-              <div v-text="formatDate(event.start)" class="capitalize" />
-              <div>{{ formatTime(event.start) }} - {{ formatTime(event.end) }}</div>
+            <div class="bg-purple-100 rounded-md mt-2 mr-2 shadow overflow-hidden">
+              <div
+                v-text="event.name"
+                :class="event.available_seats <= 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"
+                class="px-3 py-1 font-bold"
+              />
+              <div class="px-3 py-2 text-sm">
+                <div v-text="formatDate(event.start)" class="capitalize" />
+                <div>{{ formatTime(event.start) }} - {{ formatTime(event.end) }}</div>
+              </div>
             </div>
           </div>
         </div>

@@ -59,57 +59,6 @@
         </div>
       </div>
 
-      <div v-if="selectedEvent" class="form-element-gray">
-        <label class="required">Type Zitplek</label>
-        <div class="md:flex text-center">
-          <div
-            @click="selectTwoseat(false)"
-            :class="form.twoseat ? '' : 'border-2 border-purple-500'"
-            class="flex-1 md:mr-1 mb-2 md:mb-0 h-16 shadow bg-purple-100 rounded overflow-hidden cursor-pointer"
-          >
-            <div class="flex h-full">
-              <div class="px-4 bg-purple-500 flex flex-col justify-center">
-                <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
-                  <Zondicon v-if="!form.twoseat" icon="checkmark" class="fill-current" />
-                </div>
-              </div>
-              <div
-                v-text="$t('bookings.form.seats.one_person_seat')"
-                class="py-2 flex-1 flex flex-col justify-center"
-              />
-            </div>
-          </div>
-          <div
-            @click="selectTwoseat(true)"
-            :class="[
-              form.twoseat ? 'border-2 border-purple-500' : '',
-              selectedEvent.available_twoseats > 0 ? 'cursor-pointer' : ''
-            ]"
-            class="flex-1 md:ml-1 h-16 shadow bg-purple-100 rounded overflow-hidden"
-          >
-            <div class="flex h-full">
-              <div
-                :class="selectedEvent.available_twoseats > 0 ? 'bg-purple-500' : 'bg-purple-200'"
-                class="px-4 flex flex-col justify-center"
-              >
-                <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
-                  <Zondicon v-if="form.twoseat" icon="checkmark" class="fill-current" />
-                </div>
-              </div>
-              <div class="py-2 flex-1 flex flex-col justify-center">
-                {{ $t('bookings.form.seats.two_person_seat') }}
-                <div
-                  v-if="selectedEvent.available_twoseats > 0"
-                  v-text="$t('bookings.form.seats.within_distance')"
-                  class="text-sm"
-                />
-                <div v-else v-text="$t('bookings.form.seats.unavailable')" class="text-sm" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <p v-text="$t('bookings.form.disclaimer')" class="text-sm mb-4" />
 
       <button :disabled="state === 'loading'" type="submit" class="button-pink">

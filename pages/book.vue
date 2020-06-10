@@ -38,9 +38,7 @@
           </div>
           <div v-text="$t('bookings.form_information.rules_disclaimer')" class="text-sm text-white" />
         </div>
-        <div class="md:w-1/2 pt-8 md:pt-40">
-          <BookingForm />
-        </div>
+        <div class="md:w-1/2 pt-8 md:pt-40"></div>
       </div>
     </section>
 
@@ -70,8 +68,6 @@
 </template>
 
 <script>
-import Zondicon from 'vue-zondicons'
-
 import ContactLessIcon from '@/assets/images/corona/contactless.svg'
 import CoughIcon from '@/assets/images/corona/cough.svg'
 import DistanceIcon from '@/assets/images/corona/distance.svg'
@@ -80,14 +76,11 @@ import HomeIcon from '@/assets/images/corona/home.svg'
 import WashHandsIcon from '@/assets/images/corona/wash-hands.svg'
 
 import Header from '~/components/Header'
-import BookingForm from '~/components/BookingForm'
 import CoronaRule from '~/components/CoronaRule'
 
 export default {
   components: {
-    Zondicon,
     Header,
-    BookingForm,
     CoronaRule,
     ContactLessIcon,
     CoughIcon,

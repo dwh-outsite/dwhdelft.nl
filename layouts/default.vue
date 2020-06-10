@@ -20,11 +20,7 @@
           <BoardMember :role="$t('footer.board.treasurer')" name="Quinten Star" email="penningmeester@dwhdelft.nl" />
           <BoardMember :role="$t('footer.board.general')" name="Jeroen Wegdam" email="pand@dwhdelft.nl" />
         </template>
-        <template v-slot:newsletter>
-          <JoinNewsletter :button-text="$t('footer.newsletter.button')">
-            <span v-html="$t('footer.newsletter.description')" />
-          </JoinNewsletter>
-        </template>
+        <template v-slot:newsletter></template>
       </Footer>
     </footer>
   </div>
@@ -33,13 +29,11 @@
 <script>
 import Footer from '~/components/Footer'
 import BoardMember from '~/components/BoardMember'
-import JoinNewsletter from '~/components/JoinNewsletter'
 
 export default {
   components: {
     Footer,
-    BoardMember,
-    JoinNewsletter
+    BoardMember
   },
   head() {
     return {

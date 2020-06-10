@@ -13,10 +13,10 @@
               overflow-hidden relative 
             "
           >
-            <a v-if="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
+            <a v-show="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
               <GBFlag />
             </a>
-            <a v-if="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+            <a v-show="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
               <NLFlag />
             </a>
           </div>

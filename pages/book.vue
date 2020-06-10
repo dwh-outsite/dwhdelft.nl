@@ -13,29 +13,29 @@
 </template>
 
 <script>
-import Zondicon from 'vue-zondicons'
+// import Zondicon from 'vue-zondicons'
 
-import ContactLessIcon from '@/assets/images/corona/contactless.svg'
-import CoughIcon from '@/assets/images/corona/cough.svg'
-import DistanceIcon from '@/assets/images/corona/distance.svg'
-import HandshakeIcon from '@/assets/images/corona/handshake.svg'
-import HomeIcon from '@/assets/images/corona/home.svg'
-import WashHandsIcon from '@/assets/images/corona/wash-hands.svg'
+// import ContactLessIcon from '@/assets/images/corona/contactless.svg'
+// import CoughIcon from '@/assets/images/corona/cough.svg'
+// import DistanceIcon from '@/assets/images/corona/distance.svg'
+// import HandshakeIcon from '@/assets/images/corona/handshake.svg'
+// import HomeIcon from '@/assets/images/corona/home.svg'
+// import WashHandsIcon from '@/assets/images/corona/wash-hands.svg'
 
 import Header from '~/components/Header'
-import CoronaRule from '~/components/CoronaRule'
+// import CoronaRule from '~/components/CoronaRule'
 
 export default {
   components: {
-    Zondicon,
-    Header,
-    CoronaRule,
-    ContactLessIcon,
-    CoughIcon,
-    DistanceIcon,
-    HandshakeIcon,
-    HomeIcon,
-    WashHandsIcon
+    // Zondicon,
+    Header
+    // CoronaRule,
+    // ContactLessIcon,
+    // CoughIcon,
+    // DistanceIcon,
+    // HandshakeIcon,
+    // HomeIcon,
+    // WashHandsIcon
   }
 }
 </script>

@@ -5,7 +5,7 @@
         <a :href="localePath('index')">
           <DWHLogo class="h-16 fill-current text-white" />
         </a>
-        <div v-if="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
+        <div v-show="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
           <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
             {{ item.title }}
           </a>
@@ -23,10 +23,10 @@
               overflow-hidden relative 
             "
           >
-            <a v-if="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
+            <a v-show="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
               <GBFlag />
             </a>
-            <a v-if="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+            <a v-show="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
               <NLFlag />
             </a>
           </div>
@@ -38,8 +38,8 @@
               overflow-hidden relative
             "
           >
-            <Zondicon v-if="!showMenu" icon="menu" class="fill-current w-full" />
-            <Zondicon v-if="showMenu" icon="close" class="fill-current w-full" />
+            <Zondicon v-show="!showMenu" icon="menu" class="fill-current w-full" />
+            <Zondicon v-show="showMenu" icon="close" class="fill-current w-full" />
           </div>
         </div>
       </div>

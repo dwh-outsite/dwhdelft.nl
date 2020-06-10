@@ -12,7 +12,7 @@
 
     <section class="container mx-auto relative pt-12 md:pt-6 px-4">
       <div class="pb-16 m-auto">
-        <div v-if="$route.query.canceled" class="bg-purple-100 rounded p-4 text-lg flex items-center mb-12">
+        <div v-show="$route.query.canceled" class="bg-purple-100 rounded p-4 text-lg flex items-center mb-12">
           <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
             <Zondicon icon="information-outline" class="fill-current w-10" />
           </div>

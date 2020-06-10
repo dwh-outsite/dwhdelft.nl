@@ -10,7 +10,7 @@
       </Header>
     </header>
 
-    <section class="container mx-auto relative px-4">
+    <section class="container mx-auto relative pt-12 md:pt-0 px-4">
       <div class="pb-16 m-auto">
         <div v-if="$route.query.canceled" class="bg-purple-100 rounded p-4 text-lg flex items-center mb-12">
           <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
@@ -22,21 +22,18 @@
         </div>
         <h2
           v-html="$t('bookings.description_title')"
-          class="text-purple-400 leading-none text-center md:text-left text-5xl mb-12 md:text-6xl"
+          class="text-purple-400 leading-none text-5xl mb-6 md:4mb-12 md:text-6xl HAALWEG"
         />
-        <p v-html="$t('bookings.description')" class="text-2xl leading-normal text-gray-800 mb-12" />
+        <p v-html="$t('bookings.description')" class="text-xl md:text-2xl leading-normal text-gray-800 md:mb-12" />
       </div>
     </section>
 
     <section class="information relative pb-12 md:pb-20">
       <div class="mx-auto container px-4 md:flex">
-        <div class="md:w-1/2 pt-8 md:pt-40">
-          <BookingForm />
-        </div>
         <div class="flex-1 pt-16 md:pl-16">
           <h2
             v-html="$t('bookings.form_information.title')"
-            class="text-white leading-none text-center md:text-left text-5xl mb-6 md:text-6xl"
+            class="text-white leading-none text-5xl mb-6 md:text-6xl"
           />
           <p v-text="$t('bookings.form_information.description')" class="text-white text-xl" />
           <div class="my-4 text-xl">
@@ -49,10 +46,13 @@
           </div>
           <div v-text="$t('bookings.form_information.rules_disclaimer')" class="text-sm text-white" />
         </div>
+        <div class="md:w-1/2 pt-8 md:pt-40">
+          <BookingForm />
+        </div>
       </div>
     </section>
 
-    <section class="container mx-auto relative px-4 my-12 md:mt-32">
+    <section class="container mx-auto relative px-4 mt-12 mb-2 md:mt-32 md:mb-12">
       <div class="flex flex-wrap -mx-2">
         <CoronaRule :text="$t('bookings.general_rules[0]')">
           <WashHandsIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />

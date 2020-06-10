@@ -6,7 +6,7 @@
 
     <h2 v-text="$t('bookings.form.title')" class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider" />
 
-    <div v-if="state === 'finished'">
+    <div v-show="state === 'finished'">
       <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
         <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
           <Zondicon icon="checkmark-outline" class="fill-current w-10" />
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <form v-if="state == 'start' || state == 'loading'" @submit="submit">
+    <form v-show="state == 'start' || state == 'loading'" @submit="submit">
       <div v-for="error in errors" :key="error" class="bg-red-200 border-1 border-red-400 rounded p-2 mb-4">
         <strong>{{ $t('bookings.form.oops') }}</strong>
         {{ error }}
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <div v-if="selectedEvent" class="form-element-gray">
+      <div v-show="selectedEvent.id" class="form-element-gray">
         <label class="required">Type Zitplek</label>
         <div class="md:flex text-center">
           <div
@@ -70,7 +70,7 @@
             <div class="flex h-full">
               <div class="px-4 bg-purple-500 flex flex-col justify-center">
                 <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
-                  <Zondicon v-if="!form.twoseat" icon="checkmark" class="fill-current" />
+                  <Zondicon v-show="!form.twoseat" icon="checkmark" class="fill-current" />
                 </div>
               </div>
               <div
@@ -93,17 +93,21 @@
                 class="px-4 flex flex-col justify-center"
               >
                 <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
-                  <Zondicon v-if="form.twoseat" icon="checkmark" class="fill-current" />
+                  <Zondicon v-show="form.twoseat" icon="checkmark" class="fill-current" />
                 </div>
               </div>
               <div class="py-2 flex-1 flex flex-col justify-center">
                 {{ $t('bookings.form.seats.two_person_seat') }}
                 <div
-                  v-if="selectedEvent.available_twoseats > 0"
+                  v-show="selectedEvent.available_twoseats > 0"
                   v-text="$t('bookings.form.seats.within_distance')"
                   class="text-sm"
                 />
-                <div v-else v-text="$t('bookings.form.seats.unavailable')" class="text-sm" />
+                <div
+                  v-show="selectedEvent.available_twoseats <= 0"
+                  v-text="$t('bookings.form.seats.unavailable')"
+                  class="text-sm"
+                />
               </div>
             </div>
           </div>
@@ -139,7 +143,7 @@ export default {
         twoseat: false
       },
       events: [],
-      selectedEvent: undefined,
+      selectedEvent: { available_twoseats: -1 },
       state: 'start'
     }
   },

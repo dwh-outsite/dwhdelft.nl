@@ -22,7 +22,7 @@
         </div>
         <h2
           v-html="$t('bookings.description_title')"
-          class="text-purple-400 leading-none text-5xl mb-6 md:4mb-12 md:text-6xl HAALWEG"
+          class="text-purple-400 leading-none text-5xl mb-6 md:mb-12 md:text-6xl"
         />
         <p v-html="$t('bookings.description')" class="text-xl md:text-2xl leading-normal text-gray-800 md:mb-12" />
       </div>

@@ -354,6 +354,12 @@ export default {
     },
     form: {
       title: 'Reserveren',
+      seats: {
+        one_person_seat: 'Eenpersoonszitplaats',
+        two_person_seat: 'Tweepersoonszitplaats',
+        within_distance: '(binnen 1,5 meter)',
+        unavailable: 'Niet meer beschikbaar'
+      },
       thank_you: `
         Bedankt voor het reserveren! Je ontvangt een e-mail met je reserveringsbewijs. Lukt het je uiteindelijk toch
         niet om aanwezig te zijn? Via de mail die je ontvangt kun je je reservering annuleren.
@@ -363,6 +369,7 @@ export default {
         gegevens worden alleen gebruikt voor het controleren van reserveringen en voor de mogelijkheid om contact
         met je op te nemen. Neem voor vragen contact op via onderstaande contactgegevens.
       `,
+      oops: 'Oeps.',
       validation: {
         A_guest_can_only_have_one_open_booking: `
           Je hebt al een actieve reservering voor een event de komende tijd. Je kunt maximaal 1 openstaande

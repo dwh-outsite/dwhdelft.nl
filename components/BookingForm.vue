@@ -19,7 +19,7 @@
 
     <form v-if="state == 'start' || state == 'loading'" @submit="submit">
       <div v-for="error in errors" :key="error" class="bg-red-200 border-1 border-red-400 rounded p-2 mb-4">
-        <strong>Oeps.</strong>
+        <strong>{{ $t('bookings.form.oops') }}</strong>
         {{ error }}
       </div>
 
@@ -44,7 +44,7 @@
               form.event_id == event.id ? 'border-2 border-purple-500' : '',
               event.available_seats == 0 ? 'text-gray-400' : 'cursor-pointer'
             ]"
-            class="bg-purple-100 rounded-md mt-2 mr-2 shadow w-40 overflow-hidden"
+            class="bg-purple-100 rounded-md mt-2 mr-2 shadow w-full md:w-40 overflow-hidden"
           >
             <div
               v-text="event.name"
@@ -61,11 +61,11 @@
 
       <div v-if="selectedEvent" class="form-element-gray">
         <label class="required">Type Zitplek</label>
-        <div class="flex text-center">
+        <div class="md:flex text-center">
           <div
             @click="selectTwoseat(false)"
             :class="form.twoseat ? '' : 'border-2 border-purple-500'"
-            class="flex-1 mr-1 shadow bg-purple-100 rounded overflow-hidden cursor-pointer"
+            class="flex-1 md:mr-1 mb-2 md:mb-0 h-16 shadow bg-purple-100 rounded overflow-hidden cursor-pointer"
           >
             <div class="flex h-full">
               <div class="px-4 bg-purple-500 flex flex-col justify-center">
@@ -73,9 +73,10 @@
                   <Zondicon v-if="!form.twoseat" icon="checkmark" class="fill-current" />
                 </div>
               </div>
-              <div class="py-2 flex-1 flex flex-col justify-center">
-                Eenpersoonszitplaats
-              </div>
+              <div
+                v-text="$t('bookings.form.seats.one_person_seat')"
+                class="py-2 flex-1 flex flex-col justify-center"
+              />
             </div>
           </div>
           <div
@@ -84,7 +85,7 @@
               form.twoseat ? 'border-2 border-purple-500' : '',
               selectedEvent.available_twoseats > 0 ? 'cursor-pointer' : ''
             ]"
-            class="flex-1 ml-1 shadow bg-purple-100 rounded overflow-hidden"
+            class="flex-1 md:ml-1 h-16 shadow bg-purple-100 rounded overflow-hidden"
           >
             <div class="flex h-full">
               <div
@@ -96,9 +97,13 @@
                 </div>
               </div>
               <div class="py-2 flex-1 flex flex-col justify-center">
-                Tweepersoonszitplaats
-                <div v-if="selectedEvent.available_twoseats > 0" class="text-sm">(binnen 1,5 meter)</div>
-                <div v-else class="text-sm">Niet meer beschikbaar</div>
+                {{ $t('bookings.form.seats.two_person_seat') }}
+                <div
+                  v-if="selectedEvent.available_twoseats > 0"
+                  v-text="$t('bookings.form.seats.within_distance')"
+                  class="text-sm"
+                />
+                <div v-else v-text="$t('bookings.form.seats.unavailable')" class="text-sm" />
               </div>
             </div>
           </div>

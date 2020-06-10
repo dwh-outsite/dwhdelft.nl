@@ -1,12 +1,40 @@
 <template>
   <div>
     <nuxt />
+
+    <footer id="contact" class="bg-gray-700">
+      <Footer
+        :left-title="$t('footer.leftTitle')"
+        :right-title="$t('footer.rightTitle')"
+        :anbi-link-destination="localePath('anbi')"
+        contact-email="bestuur@dwhdelft.nl"
+        contact-address="Lange Geer 22<br />2611PV Delft"
+        contact-phone="06-37560270"
+        contact-coc="KvK: 40398035<br />RSIN: 807864250"
+      >
+        <template v-slot:board-members>
+          <BoardMember :role="$t('footer.board.president')" name="Robert Baart" email="voorzitter@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.youth')" name="Casper Boone" email="jongeren@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.secretary')" name="Nick van Loo" email="secretaris@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.general')" name="Jelle Vos" email="promotie@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.treasurer')" name="Quinten Star" email="penningmeester@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.general')" name="Jeroen Wegdam" email="pand@dwhdelft.nl" />
+        </template>
+        <template v-slot:newsletter></template>
+      </Footer>
+    </footer>
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
+import BoardMember from '~/components/BoardMember'
+
 export default {
-  components: {},
+  components: {
+    Footer,
+    BoardMember
+  },
   head() {
     return {
       meta: [

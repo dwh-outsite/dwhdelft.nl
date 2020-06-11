@@ -34,7 +34,7 @@
       </p>
 
       <div class="form-element-gray">
-        <label class="required">Tijdslot</label>
+        <label v-text="$t('bookings.form.time_slot')" class="required" />
         <div class="flex flex-wrap">
           <div v-for="event in events" :key="event.id" class="w-full md:w-1/3">
             <div
@@ -60,7 +60,7 @@
       </div>
 
       <div v-show="selectedEvent.id" class="form-element-gray">
-        <label class="required">Type Zitplek</label>
+        <label v-text="$t('bookings.form.seat_type')" class="required" />
         <div class="md:flex text-center">
           <div
             @click="selectTwoseat(false)"
@@ -117,7 +117,7 @@
       <p v-text="$t('bookings.form.disclaimer')" class="text-sm mb-4" />
 
       <button :disabled="state === 'loading'" type="submit" class="button-pink">
-        {{ state === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
+        {{ state === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.submit') }}
       </button>
     </form>
   </div>

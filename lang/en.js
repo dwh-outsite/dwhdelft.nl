@@ -4,6 +4,7 @@ export default {
   menu: [
     { title: 'Home', url: localePath => localePath('index') },
     { title: 'Join DWH', url: localePath => localePath('index') + '#join-dwh' },
+    { title: 'Reservations', url: localePath => localePath('book') },
     { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
     { title: 'Education', url: localePath => localePath('education') },
     { title: 'Andersblad', url: localePath => localePath('andersblad') },
@@ -67,10 +68,9 @@ export default {
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is open 4 nights a week',
-    saturday: {
-      title: `<strong>Soon</strong> we will also opened on <strong>Saturdays</strong> from
-        <strong>9pm</strong>!`,
-      note: `Open for everyone`
+    button: {
+      title: `<strong>Book a table</strong> for one of our activities`,
+      note: `Bookings are mandatory due to COVID-19`
     },
     events: [
       {
@@ -96,7 +96,7 @@ export default {
         name: 'Outsite',
         note: 'Max. 28 years old',
         day: 'Thursday',
-        time: '22:00',
+        time: '21:00',
         description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
           website for upcoming events and more.`,
         buttonText: 'Head to Outsite.nl',
@@ -104,10 +104,10 @@ export default {
       },
       {
         name: 'Open Bar Night',
-        day: 'Friday',
-        time: '22:00',
-        description: `Friday night is thé queer bar night of Delft. Meet new people, come dance at our regular parties,
-          and join one of our many events!`
+        day: 'Saturday',
+        time: '21:00',
+        description: `Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
+          parties, and join one of our many events!`
       }
     ]
   },

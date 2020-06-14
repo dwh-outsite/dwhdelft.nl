@@ -4,6 +4,7 @@ export default {
   menu: [
     { title: 'Home', url: localePath => localePath('index') },
     { title: 'Kom naar DWH', url: localePath => localePath('index') + '#join-dwh' },
+    { title: 'Reserveren', url: localePath => localePath('book') },
     { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
     { title: 'Voorlichting', url: localePath => localePath('education') },
     { title: 'Andersblad', url: localePath => localePath('andersblad') },
@@ -67,10 +68,9 @@ export default {
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is elke week op 4 avonden open',
-    saturday: {
-      title: `<strong>Binnenkort</strong> zijn we ook op <strong>zaterdag</strong> geopend vanaf
-        <strong>21:00 uur</strong>!`,
-      note: `Open voor iedereen`
+    button: {
+      title: `<strong>Reserveer</strong> nu voor één van onze activiteiten`,
+      note: `Reserveren verplicht i.v.m. COVID-19`
     },
     events: [
       {
@@ -96,7 +96,7 @@ export default {
         name: 'Outsite',
         note: 'Max. 28 jaar',
         day: 'Donderdag',
-        time: '22:00',
+        time: '21:00',
         description: `Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
           Outsite website voor aankomende events!`,
         buttonText: 'Ga naar Outsite.nl',
@@ -104,9 +104,9 @@ export default {
       },
       {
         name: 'Open Bar',
-        day: 'Vrijdag',
-        time: '22:00',
-        description: `Vrijdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
+        day: 'Zaterdag',
+        time: '21:00',
+        description: `Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
           feesten en doe mee met een van onze vele events!`
       }
     ]

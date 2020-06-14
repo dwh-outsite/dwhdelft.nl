@@ -363,6 +363,9 @@ export default {
       },
       time_slot: `Tijdslot`,
       seat_type: `Type Zitplek`,
+      soon: `
+        Het is binnenkort mogelijk om via deze pagina je reservering te plaatsen. Tot snel!
+      `,
       thank_you: `
         Bedankt voor het reserveren! Je ontvangt een e-mail met je reserveringsbewijs. Lukt het je uiteindelijk toch
         niet om aanwezig te zijn? Via de mail die je ontvangt kun je je reservering annuleren.

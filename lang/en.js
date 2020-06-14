@@ -365,6 +365,9 @@ export default {
       },
       time_slot: `Timeslot`,
       seat_type: `Type of Seat`,
+      soon: `
+        It will soon be possible to book a table via this page. Hope to see you soon!
+      `,
       thank_you: `
         Thank you for making a reservation! You will receive an e-mail with your proof of reservation. If you need to
         cancel, you can do so via the e-mail you will receive. 

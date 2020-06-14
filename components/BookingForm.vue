@@ -6,6 +6,17 @@
 
     <h2 v-text="$t('bookings.form.title')" class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider" />
 
+    <div v-show="state === 'soon'">
+      <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
+        <div class="rounded-full w-16 h-16 p-4 bg-purple-500 text-white">
+          <Zondicon icon="calendar" class="fill-current w-8" />
+        </div>
+        <div class="ml-4">
+          <h4 v-text="$t('bookings.form.soon')" class="text-xl leading-tight" />
+        </div>
+      </div>
+    </div>
+
     <div v-show="state === 'finished'">
       <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
         <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
@@ -144,7 +155,7 @@ export default {
       },
       events: [],
       selectedEvent: { available_twoseats: -1 },
-      state: 'start'
+      state: dayjs().isBefore('2020-06-15 12:00') ? 'soon' : 'start'
     }
   },
   mounted() {

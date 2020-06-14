@@ -129,6 +129,10 @@ export default {
       {
         from: '/discord',
         to: 'https://discord.gg/RDwtnRK'
+      },
+      {
+        from: '/reserveer',
+        to: 'https://dwhdelft.nl/book'
       }
     ]
   }

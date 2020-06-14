@@ -4,6 +4,7 @@ export default {
   menu: [
     { title: 'Home', url: localePath => localePath('index') },
     { title: 'Join DWH', url: localePath => localePath('index') + '#join-dwh' },
+    { title: 'Reservations', url: localePath => localePath('book') },
     { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
     { title: 'Education', url: localePath => localePath('education') },
     { title: 'Andersblad', url: localePath => localePath('andersblad') },
@@ -67,10 +68,9 @@ export default {
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is open 4 nights a week',
-    saturday: {
-      title: `<strong>Soon</strong> we will also opened on <strong>Saturdays</strong> from
-        <strong>9pm</strong>!`,
-      note: `Open for everyone`
+    button: {
+      title: `<strong>Book a table</strong> for one of our activities`,
+      note: `Bookings are mandatory due to COVID-19`
     },
     events: [
       {
@@ -96,7 +96,7 @@ export default {
         name: 'Outsite',
         note: 'Max. 28 years old',
         day: 'Thursday',
-        time: '22:00',
+        time: '21:00',
         description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
           website for upcoming events and more.`,
         buttonText: 'Head to Outsite.nl',
@@ -104,10 +104,10 @@ export default {
       },
       {
         name: 'Open Bar Night',
-        day: 'Friday',
-        time: '22:00',
-        description: `Friday night is thé queer bar night of Delft. Meet new people, come dance at our regular parties,
-          and join one of our many events!`
+        day: 'Saturday',
+        time: '21:00',
+        description: `Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
+          parties, and join one of our many events!`
       }
     ]
   },
@@ -158,6 +158,7 @@ export default {
     },
     buttons: {
       sign_up: 'Sign up',
+      submit: 'Submit',
       loading: 'Loading'
     },
     success: {
@@ -306,6 +307,94 @@ export default {
       full: 'Regular (€ 48,50)',
       discounted: 'Reduced (€ 25,00)'
     }
+  },
+  bookings: {
+    title: 'Reservations',
+    title_label: 'Events',
+    description_title: '<strong>Welcome back</strong> at DWH',
+    description: `
+      We are happy to welcome you again in these times of corona! Although it will be different than usual,
+      you can enjoy a fun bar evening, a cool movie or a nice meal with your friends at our building.
+      <br />
+      <br />
+      We ask you to pay special attention to a few matters. First of all, it is required to make a table booking, 
+      you can do so below. Bookings are individual and upon entrance you can choose your seat at one of our tables 
+      for 2-4 persons (everybody will sit 1.5 metres apart). Are you visiting with somebody from your own household?
+      Then we have several seats for two persons available, where you are allowed to stay within 1.5 metres of each
+      other. 
+      <br />
+      <br />
+      Upon entrance we ask you to desinfect your hands and to answer a few mandatory questions about your health.
+      Afterwards you can choose the seat you would like to sit. At the barevening you will be served at your table,
+      with this measure we want to prevent you from walking too much and crossing paths with other visitors. You are
+      meant to sit at the same table, unfortunately you can't switch seats during the evening. Aside from this, we
+      ask you to not keep the aisles occupied when it's not necessary: you are not suppose to have conversations at
+      other tables. This way, we can keep it safe and responsible for everybody. 
+      <br />
+      <br />
+      Do you have questions or a nice suggestion? Contact us via the information at the bottom of this page.
+    `,
+    form_information: {
+      title: '<strong>Book a table</strong> in times of COVID-19',
+      description: `
+      From the 18th of June we work with reservations. To keep it as safe and fair as possible for everybody, we apply 
+      the following measures.
+      `,
+      rules: [
+        'We are temporarily open for <strong>members only<strong>',
+        'Guests can only have one open booking at a time',
+        'The reservation expires 1 hour after the start of the timeslot',
+        'Moving a reservation is possible by cancelling via the confirmation mail and making a new reservation',
+        'Two-seaters are meant for people from the same household',
+        `If there are no two-seaters available anymore and you want to come with two persons, you can make two
+        individual reservations. If it is possible, you can still sit together.`
+      ],
+      rules_disclaimer: `
+        We understand that these measures may not be the most ideal measures for everybody. This is how we will open
+        from June 18th, but at the same time we will observe how this new method is going to work in practice. If
+        necessary, we will adjust the measures to keep it as fun as possible for everybody.
+      `
+    },
+    form: {
+      title: 'Reservation',
+      seats: {
+        one_person_seat: 'Individual seat',
+        two_person_seat: 'Two-person seat',
+        within_distance: '(within 1.5 metre)',
+        unavailable: 'No longer available'
+      },
+      time_slot: `Timeslot`,
+      seat_type: `Type of Seat`,
+      soon: `
+        It will soon be possible to book a table via this page. Hope to see you soon!
+      `,
+      thank_you: `
+        Thank you for making a reservation! You will receive an e-mail with your proof of reservation. If you need to
+        cancel, you can do so via the e-mail you will receive. 
+      `,
+      disclaimer: `
+      By sending this form you allow DWH to safe your information and to process it. Your information will only be used 
+      to check reservations and for the possibility to get in touch with you. If you have more questions, please contact
+      us via the information below.  
+      `,
+      oops: 'Oops.',
+      validation: {
+        A_guest_can_only_have_one_open_booking: `
+          You already have an active reservation for the coming days. You can only have one open booking at a time. 
+        `
+      }
+    },
+    canceled: `
+      Your reservation is cancelled. If you want, you can make a new reservation down below. 
+    `,
+    general_rules: [
+      'Wash your hands regularly',
+      'Cough and sneeze in your elbow',
+      'Pay contactless with your phone of card',
+      "Don't shake hands and say no to hugs",
+      'Keep a distance of 1.5 metres from others',
+      'Do you have health complaints? Stay home!'
+    ]
   },
   remembrance_day: {
     title: 'DWH Wreath-Laying',

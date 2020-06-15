@@ -47,7 +47,7 @@ export default {
   },
   ways_to_join: {
     title: 'Kennismaken met <strong>DWH</strong>?',
-    description: `Je bent altijd welkom op een vrijdagavond tijdens een baravond. Vind je dit spannend? Dan kun je
+    description: `Je bent altijd welkom op een zaterdagavond tijdens een baravond. Vind je dit spannend? Dan kun je
       gebruik maken van ons barbuddysysteem!`,
     outsite_hint: `Ben je 28 jaar of jonger? Kijk dan ook eens bij
       <a href="https://outsite.nl/" class="font-bold">Outsite</a>, het jongerendeel van de vereniging.`,

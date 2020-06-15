@@ -26,7 +26,7 @@ export default {
       As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
       nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
       beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!`,
-    invitation: 'Come by during one of our bar nights:<br> <strong>Every Friday starting at 22:00</strong>'
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Saturday starting at 21:00</strong>'
   },
   activities: {
     title: 'Upcoming activities',
@@ -35,7 +35,7 @@ export default {
         banner_title: 'Weekly bar night',
         banner_subtitle: 'Open for everyone',
         title: 'Bar Night',
-        date: 'Every Friday from 10pm'
+        date: 'Every Saturday from 9pm'
       },
       eating_out: {
         banner_title: 'Weekly dinner',
@@ -47,13 +47,13 @@ export default {
   },
   ways_to_join: {
     title: 'Ready to check out <strong>DWH</strong>?',
-    description: `You're always welcome on a Friday night during a bar night. Do you think this is too exciting or
+    description: `You're always welcome on a Saturday night during a bar night. Do you think this is too exciting or
     frightening? Then you can make use of our bar buddy system!`,
     outsite_hint: `Are you 28 years or younger? Take a look at
       <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.`,
     bar_buddy: {
       title: 'Bar Buddy System',
-      description: `If you are looking to come by on a Friday night but you are not yet familiar with the society you
+      description: `If you are looking to come by on a Saturday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about DWH but they can also introduce you to new people.`,
       thursday_note: `28 years or younger? Check <a href="https://outsite.nl/barbuddy" class="underline">Outsite</a> to

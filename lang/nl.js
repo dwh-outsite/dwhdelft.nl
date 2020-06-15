@@ -26,7 +26,7 @@ export default {
       Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
       baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
       bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!`,
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke vrijdag vanaf 22:00</strong>'
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf 21:00</strong>'
   },
   activities: {
     title: 'Aankomende activiteiten',
@@ -35,7 +35,7 @@ export default {
         banner_title: 'Wekelijkse baravond',
         banner_subtitle: 'Open voor iedereen',
         title: 'Baravond',
-        date: 'Elke vrijdag vanaf 22.00 uur'
+        date: 'Elke zaterdag vanaf 21.00 uur'
       },
       eating_out: {
         banner_title: 'Wekelijkse eettafel',

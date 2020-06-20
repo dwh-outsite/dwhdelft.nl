@@ -137,6 +137,10 @@ export default {
       {
         from: '/reserveer',
         to: 'https://dwhdelft.nl/book'
+      },
+      {
+        from: '/review',
+        to: 'https://docs.google.com/forms/d/e/1FAIpQLSeOvE7kHgjnLIuSOwW5DpcIqtRah9alPnZQXanhvZ34Fu9HNg/viewform'
       }
     ]
   }

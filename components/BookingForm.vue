@@ -187,7 +187,8 @@ const DINNER_TEAMS = [
   { emoji: '🍝', name: 'Kitchen Helpers' },
   { emoji: '⏰', name: 'In a hurry' },
   { emoji: '🧽 ', name: 'Washing up' },
-  { emoji: '👩‍🍳', name: 'Cookies' }
+  { emoji: '👩‍🍳', name: 'Cookies' },
+  { emoji: '🍻', name: 'Bartender' }
 ]
 const DINNER_RESTRICTIONS = ['Meat', 'Fish', 'Seafood', 'Cheese', 'Nuts', 'Dairy']
 

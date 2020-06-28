@@ -116,8 +116,8 @@
 
       <div v-show="selectedEvent.event_type_id === 'dinner'" class="form-element-gray">
         <label class="required">Team</label>
-        <div class="flex flex-wrap -mx-1">
-          <div v-for="team in teams" :key="team" class="w-1/2 p-1">
+        <div class="md:flex flex-wrap -mx-1">
+          <div v-for="team in teams" :key="team" class="md:w-1/2 p-1">
             <div
               @click="dinnerForm.team = team"
               :class="[
@@ -134,8 +134,8 @@
 
       <div v-show="selectedEvent.event_type_id === 'dinner'" class="form-element">
         <label class="form-element-label">I don't eat...</label>
-        <div class="flex">
-          <div class="w-1/2 flex flex-wrap -m-1">
+        <div class="md:flex">
+          <div class="md:w-1/2 flex flex-wrap -m-1">
             <div
               v-for="restriction in restrictions"
               :key="restriction"
@@ -147,11 +147,11 @@
               ]"
             />
           </div>
-          <div class="flex-1 w-1/2 ml-2">
+          <div class="flex-1 md:w-1/2 mt-2 md:mt-0 md:ml-2">
             <div
               :class="[
                 dinnerForm.otherDiet.length > 0 ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
-                'bg-purple-100 rounded px-1 py-1 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow'
+                'bg-purple-100 rounded px-1 py-2 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow'
               ]"
             >
               <span class="px-2">Other:</span>

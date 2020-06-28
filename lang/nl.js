@@ -316,18 +316,19 @@ export default {
       kun je de komende tijd weer bij ons terecht voor een gezellige baravond, een leuke film of een lekkere maaltijd.
       <br />
       <br />
-      We vragen je bij je bezoek rekening te houden met een aantal zaken. Allereerst is het verplicht een reservering
-      te maken, dat kan hieronder. Reserveringen zijn individueel en bij binnenkomst kun je een plekje uitzoeken aan
-      een van onze 2-4 persoons tafels (waaraan iedereen op 1,5 meter afstand zit). Kom je samen met iemand uit
-      hetzelfde huishouden, dan zijn er een aantal tweepersoonsplekken beschikbaar.
+      We vragen je bij je bezoek rekening te houden met een aantal zaken. Allereerst stellen wij het op prijs als je
+      vooraf een <strong>reservering</strong> maakt, dat kan hieronder. Reserveringen zijn individueel en bij
+      binnenkomst kun je een plekje uitzoeken aan een van onze 2-4 persoons tafels (waaraan iedereen op 1,5 meter
+      afstand zit). Kom je samen met iemand uit hetzelfde huishouden, dan zijn er een aantal tweepersoonsplekken
+      beschikbaar. Je kunt ook langskomen zonder vooraf te reserveren, we maken dan <strong>on the spot</strong>
+      een reservering voor je.
       <br />
       <br />
-      Bij binnenkomst vragen we je je handen te ontsmetten en een aantal vragen over je gezondheid te beantwoorden. 
-      Daarna kun je een leuk plekje uitkiezen waar je wilt gaan zitten. Je wordt tijdens een baravond aan tafel bediend,
-      hiermee voorkomen we dat je veel moet rondlopen en paden met andere bezoekers moet kruisen. Het is de bedoeling
-      dat je aan dezelfde tafel blijft zitten, helaas kun je niet van tafel wisselen tijdens de avond. Daarnaast vragen
-      we je gangpaden niet onnodig bezet te houden, het is niet de bedoeling gesprekken te voeren bij andere tafels.
-      Op deze manier houden we het voor iedereen veilig en verantwoord.
+      Bij binnenkomst vragen we je je handen te ontsmetten waarna kun je een leuk plekje uitkiezen waar je wilt gaan
+      zitten. Je wordt tijdens een baravond aan tafel bediend, hiermee voorkomen we dat je veel moet rondlopen en
+      paden met andere bezoekers moet kruisen. Daarnaast vragen we je gangpaden niet onnodig bezet te houden, het
+      is niet de bedoeling gesprekken te voeren bij andere tafels. Op deze manier houden we het voor iedereen 
+      <strong>veilig en verantwoord</strong>.
       <br />
       <br />
       Heb je vragen of leuke suggesties? Neem contact op via de contactgegevens onderaan deze pagina.
@@ -335,12 +336,10 @@ export default {
     form_information: {
       title: '<strong>Reserveren</strong> in tijden van COVID-19',
       description: `
-        Vanaf 18 juni werken wij met reserveringen. Om het voor iedereen zo veilig en eerlijk mogelijk te houden,
-        hanteren wij daarbij de volgende regels.
+        Je kunt links een reservering maken voor een event en/of tijdslot naar keuze. Om het voor iedereen zo veilig
+        en eerlijk mogelijk te houden, hanteren wij daarbij de volgende regels.
       `,
       rules: [
-        'We zijn tijdelijk open voor <strong>alleen leden</strong>',
-        'Gasten kunnen maximaal 1 reservering open hebben staan',
         'De reservering vervalt 1 uur na aanvang van het tijdslot',
         'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken',
         'Tweepersoonsplekken zijn bedoeld voor mensen uit hetzelfde huishouden',
@@ -348,9 +347,9 @@ export default {
         maal individueel reserveren. Mits mogelijk kun je alsnog bij elkaar gaan zitten`
       ],
       rules_disclaimer: `
-        We begrijpen dat bovenstaande regels niet voor iedereen het meest ideaal zullen zijn. Dit is hoe we vanaf 1 juni
-        weer open gaan, maar tegelijkertijd zullen we kijken hoe de nieuwe werkwijze zich in de praktijk uit zal pakken.
-        Waar nodig zullen we de regels aanpassen om het voor iedereen zo leuk mogelijk te maken.
+        We begrijpen dat bovenstaande regels niet voor iedereen het meest ideaal zullen zijn. Zodra het kan en waar
+        nodig zullen we de regels aanpassen om het voor iedereen zo leuk mogelijk te maken. Suggesties zijn altijd
+        welkom via de contactgegevens onderaan deze pagina.
       `
     },
     form: {

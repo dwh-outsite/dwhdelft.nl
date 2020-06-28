@@ -317,19 +317,19 @@ export default {
       you can enjoy a fun bar evening, a cool movie or a nice meal with your friends at our building.
       <br />
       <br />
-      We ask you to pay special attention to a few matters. First of all, it is required to make a table booking, 
-      you can do so below. Bookings are individual and upon entrance you can choose your seat at one of our tables 
-      for 2-4 persons (everybody will sit 1.5 metres apart). Are you visiting with somebody from your own household?
-      Then we have several seats for two persons available, where you are allowed to stay within 1.5 metres of each
-      other. 
+      We ask you to pay special attention to a few matters. First of all, we appreciate if you make a
+      <strong>table booking</strong>, you can do so below. Bookings are individual and upon entrance you can
+      choose your seat at one of our tables for 2-4 persons (everybody will sit 1.5 metres apart). Are you
+      visiting with somebody from your own household? Then we have several seats for two persons available,
+      where you are allowed to stay within 1.5 metres of each other. You are also welcome without a booking,
+      in that case we will make a booking for you <strong>on the spot</strong>.
       <br />
       <br />
-      Upon entrance we ask you to desinfect your hands and to answer a few mandatory questions about your health.
-      Afterwards you can choose the seat you would like to sit. At the barevening you will be served at your table,
-      with this measure we want to prevent you from walking too much and crossing paths with other visitors. You are
-      meant to sit at the same table, unfortunately you can't switch seats during the evening. Aside from this, we
-      ask you to not keep the aisles occupied when it's not necessary: you are not suppose to have conversations at
-      other tables. This way, we can keep it safe and responsible for everybody. 
+      Upon entrance we ask you to desinfect your hands, afterwards you can choose the seat you would like to
+      sit. At the barevening you will be served at your table, with this measure we want to prevent you from
+      walking too much and crossing paths with other visitors. Aside from this, we ask you to not keep the
+      aisles occupied when it's not necessary: you are not suppose to have conversations at other tables.
+      This way, we can keep it <strong>safe and responsible</strong> for everybody. 
       <br />
       <br />
       Do you have questions or a nice suggestion? Contact us via the information at the bottom of this page.
@@ -337,12 +337,10 @@ export default {
     form_information: {
       title: '<strong>Book a table</strong> in times of COVID-19',
       description: `
-      From the 18th of June we work with reservations. To keep it as safe and fair as possible for everybody, we apply 
-      the following measures.
+      On the left you can make a reservation for a seat during one of our events. To keep it as safe and fair as
+      possible for everybody, we apply the following measures.
       `,
       rules: [
-        'We are temporarily open for <strong>members only<strong>',
-        'Guests can only have one open booking at a time',
         'The reservation expires 1 hour after the start of the timeslot',
         'Moving a reservation is possible by cancelling via the confirmation mail and making a new reservation',
         'Two-seaters are meant for people from the same household',
@@ -350,9 +348,9 @@ export default {
         individual reservations. If it is possible, you can still sit together.`
       ],
       rules_disclaimer: `
-        We understand that these measures may not be the most ideal measures for everybody. This is how we will open
-        from June 18th, but at the same time we will observe how this new method is going to work in practice. If
-        necessary, we will adjust the measures to keep it as fun as possible for everybody.
+        We understand that these measures may not be the most ideal measures for everybody. When possible and if
+        necessary, we will adjust the measures to keep it as fun as possible for everybody. Any suggestions are
+        always welcome via the contact details below.
       `
     },
     form: {

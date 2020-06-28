@@ -6,17 +6,6 @@
 
     <h2 v-text="$t('bookings.form.title')" class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider" />
 
-    <div v-show="state === 'soon'">
-      <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
-        <div class="rounded-full w-16 h-16 p-4 bg-purple-500 text-white">
-          <Zondicon icon="calendar" class="fill-current w-8" />
-        </div>
-        <div class="ml-4">
-          <h4 v-text="$t('bookings.form.soon')" class="text-xl leading-tight" />
-        </div>
-      </div>
-    </div>
-
     <div v-show="state === 'finished'">
       <div class="bg-purple-100 rounded p-4 text-lg flex items-center">
         <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
@@ -125,6 +114,58 @@
         </div>
       </div>
 
+      <div v-show="selectedEvent.event_type_id === 'dinner'" class="form-element-gray">
+        <label class="required">Team</label>
+        <div class="flex flex-wrap -mx-1">
+          <div v-for="team in teams" :key="team" class="w-1/2 p-1">
+            <div
+              @click="dinnerForm.team = team"
+              :class="[
+                team === dinnerForm.team ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
+                'bg-purple-100 rounded px-3 py-2 tracking-wider flex items-center cursor-pointer shadow'
+              ]"
+            >
+              <span class="mr-3">{{ team.emoji }}</span>
+              {{ team.name }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-show="selectedEvent.event_type_id === 'dinner'" class="form-element">
+        <label class="form-element-label">I don't eat...</label>
+        <div class="flex">
+          <div class="w-1/2 flex flex-wrap -m-1">
+            <div
+              v-for="restriction in restrictions"
+              :key="restriction"
+              v-text="restriction"
+              @click="toggleRestriction(restriction)"
+              :class="[
+                dinnerForm.diet.includes(restriction) ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
+                'bg-purple-100 rounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow'
+              ]"
+            />
+          </div>
+          <div class="flex-1 w-1/2 ml-2">
+            <div
+              :class="[
+                dinnerForm.otherDiet.length > 0 ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
+                'bg-purple-100 rounded px-1 py-1 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow'
+              ]"
+            >
+              <span class="px-2">Other:</span>
+              <input
+                v-model="dinnerForm.otherDiet"
+                type="text"
+                class="mr-2 inline text-black"
+                placeholder="Other Restrictions"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <p v-text="$t('bookings.form.disclaimer')" class="text-sm mb-4" />
 
       <button :disabled="state === 'loading'" type="submit" class="button-pink">
@@ -140,7 +181,15 @@ import axios from 'axios'
 import dayjs from 'dayjs'
 import 'dayjs/locale/nl'
 
-const apiUrl = 'https://reserveer.dwhdelft.nl'
+const apiUrl = 'https://bar-bookings.test'
+
+const DINNER_TEAMS = [
+  { emoji: '🍝', name: 'Kitchen Helpers' },
+  { emoji: '⏰', name: 'In a hurry' },
+  { emoji: '🧽 ', name: 'Washing up' },
+  { emoji: '👩‍🍳', name: 'Cookies' }
+]
+const DINNER_RESTRICTIONS = ['Meat', 'Fish', 'Seafood', 'Cheese', 'Nuts', 'Dairy']
 
 export default {
   components: { Zondicon },
@@ -151,11 +200,19 @@ export default {
         name: '',
         email: '',
         event_id: undefined,
-        twoseat: false
+        twoseat: false,
+        custom_fields: {}
       },
       events: [],
       selectedEvent: { available_twoseats: -1 },
-      state: dayjs().isBefore('2020-06-15 12:00') ? 'soon' : 'start'
+      state: 'start',
+      teams: DINNER_TEAMS,
+      restrictions: DINNER_RESTRICTIONS,
+      dinnerForm: {
+        team: DINNER_TEAMS[0],
+        diet: [],
+        otherDiet: ''
+      }
     }
   },
   mounted() {
@@ -188,6 +245,13 @@ export default {
       if (this.form.event_id === undefined) {
         this.errors.push('You have to select one of the timeslots.')
         return
+      }
+
+      if (this.selectedEvent.event_type_id === 'dinner') {
+        this.form.custom_fields = {
+          team: this.dinnerForm.team.name,
+          diet: [...this.dinnerForm.diet, ...(this.dinnerForm.otherDiet.length > 0 ? [this.dinnerForm.otherDiet] : [])]
+        }
       }
 
       this.state = 'loading'
@@ -232,6 +296,13 @@ export default {
       }
 
       return error
+    },
+    toggleRestriction(restriction) {
+      if (this.dinnerForm.diet.includes(restriction)) {
+        this.dinnerForm.diet.splice(this.dinnerForm.diet.indexOf(restriction), 1)
+      } else {
+        this.dinnerForm.diet.push(restriction)
+      }
     }
   }
 }

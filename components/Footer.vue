@@ -80,7 +80,7 @@
             <GitHubIcon class="fill-current w-6" />
           </div>
         </a>
-        <a href="http://www.sponsorkliks.com/partners.php?club=4338&v=website&cn=NL&ln=nl" target="_blank">
+        <a href="https://www.sponsorkliks.com/partners.php?club=4338" target="_blank">
           <div
             class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold
             items-center hover:bg-gray-300"

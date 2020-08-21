@@ -191,6 +191,12 @@ export default {
     `,
     list_title: 'Editions'
   },
+  chatgroepen: {
+    title: 'Chat Groups',
+    main_text: `
+       The members of DWH use multiple online channels to stay in touch when not on-site.
+    `
+  },
   anbi: {
     title: 'ANBI',
     main_text: `

@@ -191,6 +191,12 @@ export default {
     `,
     list_title: '<strong>Andersblad</strong> Edities'
   },
+  chatgroepen: {
+    title: 'Chat Groepen',
+    main_text: `
+       De leden van DWH gebruiken meerdere online kanalan om buiten het pand om met elkaar in contact te blijven.
+    `
+  },
   anbi: {
     title: 'ANBI',
     main_text: `

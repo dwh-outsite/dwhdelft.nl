@@ -38,10 +38,7 @@
           :class="form.ggd_consent ? 'bg-purple-500 border-purple-500' : 'hover:bg-purple-300 border-purple-300 '"
           class="w-8 h-8 rounded-lg border bg-gray-200"
         />
-        <div class="flex-1 ml-2">
-          Ik geef toestemming om mijn gegevens te delen met de GGD wanneer deze worden opgevraagd ten behoeve van een
-          bron- en contactonderzoek.
-        </div>
+        <div v-text="$t('bookings.form.ggd_consent')" class="flex-1 ml-2" />
       </div>
 
       <p v-show="form.ggd_consent" class="form-element-gray">

@@ -135,6 +135,10 @@ export default {
         to: 'https://discord.gg/RDwtnRK'
       },
       {
+        from: '/sponsorkliks',
+        to: 'https://www.sponsorkliks.com/partners.php?club=4338'
+      },
+      {
         from: '/reserveer',
         to: 'https://dwhdelft.nl/book'
       },

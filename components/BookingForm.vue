@@ -33,6 +33,22 @@
         <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
       </p>
 
+      <div @click="form.ggd_consent = !form.ggd_consent" class="form-element-gray flex items-center cursor-pointer">
+        <div
+          :class="form.ggd_consent ? 'bg-purple-500 border-purple-500' : 'hover:bg-purple-300 border-purple-300 '"
+          class="w-8 h-8 rounded-lg border bg-gray-200"
+        />
+        <div class="flex-1 ml-2">
+          Ik geef toestemming om mijn gegevens te delen met de GGD wanneer deze worden opgevraagd ten behoeve van een
+          bron- en contactonderzoek.
+        </div>
+      </div>
+
+      <p v-show="form.ggd_consent" class="form-element-gray">
+        <label class="required">{{ $t('forms.label.phone_number') }}</label>
+        <input v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" type="phone_number" />
+      </p>
+
       <div class="form-element-gray">
         <label v-text="$t('bookings.form.time_slot')" class="required" />
         <div class="flex flex-wrap">
@@ -200,6 +216,8 @@ export default {
       form: {
         name: '',
         email: '',
+        ggd_consent: false,
+        phone_number: '',
         event_id: undefined,
         twoseat: false,
         custom_fields: {}

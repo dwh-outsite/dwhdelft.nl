@@ -354,6 +354,10 @@ export default {
     },
     form: {
       title: 'Reserveren',
+      ggd_consent: `
+        Ik geef toestemming om mijn gegevens te delen met de GGD wanneer deze worden opgevraagd ten behoeve van een
+        bron- en contactonderzoek.
+      `,
       seats: {
         one_person_seat: 'Eenpersoonszitplaats',
         two_person_seat: 'Tweepersoonszitplaats',

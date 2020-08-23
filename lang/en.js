@@ -355,6 +355,10 @@ export default {
     },
     form: {
       title: 'Reservation',
+      ggd_consent: `
+        I consent to share my information with the municipal health service (GGD) to support contact tracing if
+        requested.
+      `,
       seats: {
         one_person_seat: 'Individual seat',
         two_person_seat: 'Two-person seat',

@@ -192,9 +192,11 @@ export default {
     list_title: '<strong>Andersblad</strong> Edities'
   },
   chatgroepen: {
-    title: 'Chat Groepen',
+    title: 'Chatgroepen',
     main_text: `
-       De leden van DWH gebruiken meerdere online kanalan om buiten het pand om met elkaar in contact te blijven.
+      We spreken elkaar buiten de baravonden om natuurlijk ook graag, en voor alllerlei interesses en doelen zijn 
+      daarom chatgroepen ontstaan. Omdat je maar net moet weten dat die er zijn hebben we hieronder een fabulous 
+      overzichtje voor je gemaakt!
     `
   },
   anbi: {

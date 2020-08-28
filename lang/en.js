@@ -192,10 +192,15 @@ export default {
     list_title: 'Editions'
   },
   chatgroepen: {
-    title: 'Chat Groups',
+    title: 'Chat groups',
     main_text: `
-       The members of DWH use multiple online channels to stay in touch when not on-site.
-    `
+      Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
+      whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
+      overview!
+    `,
+    general_title: 'General',
+    volunteer_title: 'Volunteering',
+    interests_title: 'Interests'
   },
   anbi: {
     title: 'ANBI',

@@ -197,7 +197,10 @@ export default {
       We spreken elkaar buiten de baravonden om natuurlijk ook graag, en voor alllerlei interesses en doelen zijn 
       daarom chatgroepen ontstaan. Omdat je maar net moet weten dat die er zijn hebben we hieronder een fabulous 
       overzichtje voor je gemaakt!
-    `
+    `,
+    general_title: 'Algemeen',
+    volunteer_title: 'Vrijwilligers',
+    interests_title: 'Interesses'
   },
   anbi: {
     title: 'ANBI',

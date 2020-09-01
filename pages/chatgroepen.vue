@@ -29,7 +29,7 @@
                   </h2>
                 </div>
               </div>
-              <p :class="'text-lg relative clamp-lines'">
+              <p :class="'text-lg relative pb-8'">
                 {{ group.description }}
               </p>
             </div>
@@ -63,9 +63,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.clamp-lines {
-  height: 100px;
-}
-</style>

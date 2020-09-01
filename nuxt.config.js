@@ -139,6 +139,10 @@ export default {
         to: 'https://dwhdelft.nl/book'
       },
       {
+        from: '/chatgroepen',
+        to: 'https://dwhdelft.nl/chatgroups'
+      },
+      {
         from: '/review',
         to: 'https://docs.google.com/forms/d/e/1FAIpQLSeOvE7kHgjnLIuSOwW5DpcIqtRah9alPnZQXanhvZ34Fu9HNg/viewform'
       }

@@ -79,7 +79,6 @@ export default {
         'Darkrooms & Daddies': 'https://chat.whatsapp.com/KCmnuJBNhbzKTjOtt7nkS8',
         'Gender Blender': 'https://chat.whatsapp.com/LkLFvzAt26b4dJzlgBV7pO',
         Minecraft: 'https://chat.whatsapp.com/1A7sMvswOjoAvIMF4E4hpK',
-        Podcasts: 'https://chat.whatsapp.com/KUBOUtsJvhyGidndriZQf5',
         'Politics & Discussion': 'https://chat.whatsapp.com/CSfNGQlryhU8XyRxrQaLpR',
         Strijders: 'https://chat.whatsapp.com/KcS3hC4ZVk391Kqcwnc3I5'
       }

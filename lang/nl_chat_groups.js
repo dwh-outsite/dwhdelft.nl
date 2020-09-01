@@ -52,10 +52,6 @@ export default {
       Van grootse build contests tot queestes diep de nieuwe Nether in tot lekker chillen met de bijtjes in hun 
       sanctuary, er is iets voor je op onze server, en in deze chat vind je mensen om mee te spelen.
     `,
-    Podcasts: `
-      Heb jij ook altijd earphones in onderweg of tijdens de studie, en kijk je altijd verward op als mensen vragen wat
-      voor muziek je luistert? Praat hier gezellig over al je favoriete podcasts.
-    `,
     'Politics & Discussion': `
       Als je graag praat over het laatste nieuws in queer en algemene politiek, diep op onderwerpen in wil gaan of
       mensen zoekt om mee naar een domonstratie te gaan, dit is de chat daarvoor.

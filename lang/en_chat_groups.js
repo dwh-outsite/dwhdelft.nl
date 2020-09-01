@@ -8,9 +8,9 @@ export default {
       Originally the party squad chat but now also another general chat. A lively chat with a lot of conversation which
       tends to have more younger members.
     `,
-    'Outsite Announcements': `
-      Don't want to be in a busy chat but like updates about upcoming youth events? Join the announcements chats to 
-      receive just those and nothing else.
+    Announcements: `
+      Don't want to be in the busy Outsite chat but like updates about upcoming youth events? Join the announcements 
+      chat to receive just those and nothing else.
     `,
     Discord: `
       Want to talk to some people outside of our regular events? Play a game or watch a show together, the discord is 
@@ -32,10 +32,6 @@ export default {
     `
   },
   Interests: {
-    'Age of Empires': `
-      We have no LAN party without some empires being crushed and others building their sixth wall to hold the tide. 
-      Are your town centers always producing villagers or do you need more practice? Either way, join!
-    `,
     'Chicks before Ducks': `
       If you are interested and identify anything chick-ish you can join our group 😊 (decide for yourself we don’t 
       shutOUT anyone) 
@@ -60,7 +56,7 @@ export default {
       Do you always walk with earphones in yet look up confused when people ask what music you like? Discuss all your
       favorite podcasts here.
     `,
-    'Politics and Discussion': `
+    'Politics & Discussion': `
       If you like to discuss the latest in queer and general politics, discuss topics for hours or are looking for 
       people to attend a protest with, this is the place to be. 
     `,

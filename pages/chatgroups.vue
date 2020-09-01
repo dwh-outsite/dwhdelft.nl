@@ -3,41 +3,39 @@
     <header>
       <Header small="true">
         <h1 class="text-4xl text-white font-normal">
-          {{ $t('chatgroepen.title') }}
+          {{ $t('chatgroups.title') }}
         </h1>
       </Header>
     </header>
 
     <section class="container mx-auto mb-12 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p v-html="$t('chatgroepen.main_text')" class="mt-8 md:mt-0 mb-8" />
+        <p v-html="$t('chatgroups.main_text')" class="mt-8 md:mt-0 mb-8" />
       </div>
     </section>
 
-    <section class="bg-purple-300">
-      <div v-for="category in chatGroups" :key="category.title" class="container px-4 mx-auto pt-8 pb-12">
-        <div class="text-center mb-6">
-          <h1 class="text-white font-medium text-5xl">{{ category.title }}</h1>
-        </div>
+    <section class="bg-purple-400 pb-4 md:py-12">
+      <div
+        v-for="(category, categoryTitle) in $t('chatgroups.categories')"
+        :key="category.title"
+        class="container px-4 mx-auto pt-8 md:pb-12"
+      >
+        <h1 v-html="categoryTitle" class="text-white font-medium text-5xl leading-none mb-6" />
         <div class="md:flex flex-wrap -mx-2 mt-2">
-          <div v-for="group in category.items" :key="group.name" class="md:w-1/2 p-2">
-            <div class="bg-white rounded shadow p-6 md:p-8">
-              <div class="flex justify-between items-center mb-4">
-                <div class="flex items-center">
-                  <h2 class="text-2xl font-bold ml-3 text-purple-500 uppercase tracking-wider">
-                    {{ group.name }}
-                  </h2>
-                </div>
-                <div class="flex">
-                  <a v-if="group.name in chatLinks" :href="chatLinks[group.name]" target="_blank">
-                    <button class="block button-pink">
-                      {{ $t('chatgroepen.join') }}
-                    </button>
-                  </a>
-                </div>
+          <div v-for="(description, groupName) in category" :key="groupName" class="md:w-1/2 p-2">
+            <div class="bg-white rounded-lg shadow p-6 md:p-8">
+              <div class="flex justify-between items-center h-12 mb-4">
+                <h2 class="text-2xl font-bold text-purple-500 uppercase tracking-wider">
+                  {{ groupName }}
+                </h2>
+                <a v-show="groupName in chatLinks" :href="chatLinks[groupName]" target="_blank">
+                  <button class="button-pink">
+                    {{ $t('chatgroups.join') }}
+                  </button>
+                </a>
               </div>
-              <p :class="'text-lg relative pb-8'">
-                {{ group.description }}
+              <p class="text-xl">
+                {{ description }}
               </p>
             </div>
           </div>
@@ -49,30 +47,18 @@
 
 <script>
 import Header from '~/components/Header'
+
 export default {
   components: {
     Header
   },
   data() {
     return {
-      chatGroups: Object.keys(this.$t('chatGroups')).map(category => {
-        return {
-          title: category,
-          items: Object.keys(this.$t('chatGroups.' + category)).map(name => {
-            return {
-              name,
-              description: this.$t('chatGroups.' + category + '.' + name)
-            }
-          })
-        }
-      }),
       chatLinks: {
-        // DWH: '',
-        // Outsite: '',
+        Outsite: 'https://outsite.nl/#contact',
         Announcements: 'https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer',
-        Discord: 'https://outsite.nl/discord',
+        Discord: 'https://dwhdelft.nl/discord',
         EatingOUT: 'https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV',
-        // 'Thursday bar': '',
         'Saturday bar': 'https://chat.whatsapp.com/DjwXYRiaO1ZEhZS1vUOYjp',
         'Chicks before Ducks': 'https://chat.whatsapp.com/HNu9CDB4jH78s0qP6SAvI5',
         ChocOUT: 'https://chat.whatsapp.com/JcZdNnnXhLTDleFtgtYyAn',

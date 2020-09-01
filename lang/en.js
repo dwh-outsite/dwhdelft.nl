@@ -192,18 +192,19 @@ export default {
     `,
     list_title: 'Editions'
   },
-  chatgroepen: {
+  chatgroups: {
     title: 'Chat groups',
     join: 'Join',
     main_text: `
       Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
       whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
-      overview!<br />
-      Would you like to join any of them without a link? Send a message to the association phone (+31 6 3756 0270) 
-      with the chats you'd like to join.
-    `
+      overview!<br /><br />
+      Would you like to join any of them without a link? Send a message to the 
+      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
+      association phone (+31 6 3756 0270)</a> with the chats you'd like to join.
+    `,
+    categories: chatGroups
   },
-  chatGroups,
   anbi: {
     title: 'ANBI',
     main_text: `

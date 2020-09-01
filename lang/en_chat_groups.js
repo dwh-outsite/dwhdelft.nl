@@ -1,5 +1,5 @@
 export default {
-  General: {
+  '<strong>General</strong> groups': {
     DWH: `
       The general chat of the association. Join for event announcements and fun conversations. Slightly less busy and
       aimed more at older members than the Outsite chat.
@@ -17,11 +17,7 @@ export default {
       the place to talk.
     `
   },
-  Volunteering: {
-    EatingOUT: `
-      The chat for everyone interested in cooking on Tuesdays. Are you a kitchen pro or would you like to be? Join the 
-      chat and cook for a crowd, on your own or with someone more experienced.
-    `,
+  'Groups for <strong>volunteers</strong>': {
     'Thursday bar': `
       Bartending is one of the funnest things to do, you get to talk to all the people who visit and everyone loves you
       as you're bringing them new drinks! Join this chat if you'd like to bartend on Thursday.
@@ -29,9 +25,13 @@ export default {
     'Saturday bar': `
       Bartending is one of the funnest things to do, you get to talk to all the people who visit and everyone loves you
       as you're bringing them new drinks! Join this chat if you'd like to bartend on Saturday.
+    `,
+    EatingOUT: `
+      The chat for everyone interested in cooking on Tuesdays. Are you a kitchen pro or would you like to be? Join the 
+      chat and cook for a crowd, on your own or with someone more experienced.
     `
   },
-  Interests: {
+  'Groups for <strong>various interests</strong>': {
     'Chicks before Ducks': `
       If you are interested and identify anything chick-ish you can join our group 😊 (decide for yourself we don’t 
       shutOUT anyone) 

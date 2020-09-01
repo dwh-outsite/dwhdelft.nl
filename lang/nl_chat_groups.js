@@ -1,5 +1,5 @@
 export default {
-  Algemeen: {
+  '<strong>Algemene</strong> groepen': {
     DWH: `
       De algemene chat van de vereniging. Kom erbij voor aankondigingen en leuke gesprekken. Deze chat is ietsje minder
       druk en meer gericht op alle leeftijden dan de Outsite chat.
@@ -17,11 +17,7 @@ export default {
       te kijken of gewoon bij te kletsen, de Discord is er om op te praten.
     `
   },
-  Vrijwilligers: {
-    EatingOUT: `
-      De chat voor iedereen geïnteresseerd op dinsdag te koken. Ben jij een keukenpro of wil je dat zijn? Kom de chat
-      in en kook voor een grote groep, in je eentje of eerst met iemand met ervaring.
-    `,
+  'Groepen voor <strong>vrijwilligers</strong>': {
     'Thursday bar': `
       Bartenden is een van de leukste dingen om te doen; je maakt met iedereen een praatje en iedereen houdt van je
       want je bezorgd nieuwe drankjes! Join deze chat  als je op donderdag wil bartenden.
@@ -29,9 +25,13 @@ export default {
     'Saturday bar': `
       Bartenden is een van de leukste dingen om te doen; je maakt met iedereen een praatje en iedereen houdt van je
       want je bezorgd nieuwe drankjes! Join deze chat  als je op zaterdag wil bartenden.
+    `,
+    EatingOUT: `
+      De chat voor iedereen geïnteresseerd op dinsdag te koken. Ben jij een keukenpro of wil je dat zijn? Kom de chat
+      in en kook voor een grote groep, in je eentje of eerst met iemand met ervaring.
     `
   },
-  Interesses: {
+  'Groepen voor <strong>verschillende interesses</strong>': {
     'Chicks before Ducks': `
       Als je je identificeert als iets chick-achtigs en je geïnteresseerd bent ben je welkom in deze groep! (Beslis 
       voor jezelf, er wordt niemand ge-shutOUT)

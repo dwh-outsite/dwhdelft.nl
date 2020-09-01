@@ -192,18 +192,19 @@ export default {
     `,
     list_title: '<strong>Andersblad</strong> Edities'
   },
-  chatgroepen: {
+  chatgroups: {
     title: 'Chatgroepen',
     join: 'Join',
     main_text: `
       We spreken elkaar buiten de baravonden om natuurlijk ook graag, en voor alllerlei interesses en doelen zijn 
       daarom chatgroepen ontstaan. Omdat je maar net moet weten dat die er zijn hebben we hieronder een fabulous 
-      overzichtje voor je gemaakt!<br />
-      Wil je in een van deze chats maar is er geen join link? Stuur een berichtje naar de verenigingstelefoon 
-      (+31 6 3756 0270) met de chat waar je aan toegevoegd zou willen worden.
-    `
+      overzichtje voor je gemaakt!<br /><br />
+      Wil je in een van deze chats maar is er geen join link? Stuur een berichtje naar de 
+      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
+      verenigingstelefoon (+31 6 3756 0270)</a> met de chat waar je aan toegevoegd zou willen worden.
+    `,
+    categories: chatGroups
   },
-  chatGroups,
   anbi: {
     title: 'ANBI',
     main_text: `

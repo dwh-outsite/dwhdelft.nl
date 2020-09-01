@@ -8,9 +8,9 @@ export default {
       Oorspronkelijk de party  squad chat maar nu ook een algemene chat. Een levendige chat waar veel in gepraat wordt,
       en waar vooral de wat jongere leden uithangen.
     `,
-    'Outsite Announcements': `
-      Als je niet in zo'n drukke chat wil zitten maar wel updates wil over aankomende jongerenactiviteiten, dan is dit 
-      de chat voor jou. Hier alleen aankondigingen, niks anders.
+    Announcements: `
+      Als je niet in de drukke Outsite chat wil zitten maar wel updates wil over aankomende jongerenactiviteiten, dan 
+      is dit de chat voor jou. Hier alleen aankondigingen, niks anders.
     `,
     Discord: `
       Wil je ook weleens praten praten en niet alleen chatten buiten de vereniging? Of het nou is om te gamen, een serie
@@ -32,10 +32,6 @@ export default {
     `
   },
   Interesses: {
-    'Age of Empires': `
-      We hebben geen LAN party zonder onder de voeten gelopen empires en anderen die hun zesde verdedigingsmuur bouwen
-      als laatste hoop. Draaien jouw town centers volop of kan je nog wat leren? Dit is de chat voor jou!
-    `,
     'Chicks before Ducks': `
       Als je je identificeert als iets chick-achtigs en je geïnteresseerd bent ben je welkom in deze groep! (Beslis 
       voor jezelf, er wordt niemand ge-shutOUT)
@@ -60,9 +56,9 @@ export default {
       Heb jij ook altijd earphones in onderweg of tijdens de studie, en kijk je altijd verward op als mensen vragen wat
       voor muziek je luistert? Praat hier gezellig over al je favoriete podcasts.
     `,
-    'Politics and Discussion': `
-      Als je graag discussieert over het laatste nieuws in queer en algemene politiek, diep op onderwerpen in wil gaan
-      of mensen zoekt om mee naar een domonstratie te gaan, dit is de chat daarvoor.
+    'Politics & Discussion': `
+      Als je graag praat over het laatste nieuws in queer en algemene politiek, diep op onderwerpen in wil gaan of
+      mensen zoekt om mee naar een domonstratie te gaan, dit is de chat daarvoor.
     `,
     Strijders: `
       Studeren kan zwaar zijn, zeker in je eentje. In deze groep spreken we af om samen te studeren, op de TU of zoals

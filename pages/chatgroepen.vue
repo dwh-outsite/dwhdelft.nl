@@ -28,6 +28,13 @@
                     {{ group.name }}
                   </h2>
                 </div>
+                <div class="flex">
+                  <a v-if="group.name in chatLinks" :href="chatLinks[group.name]" target="_blank">
+                    <button class="block button-pink">
+                      {{ $t('chatgroepen.join') }}
+                    </button>
+                  </a>
+                </div>
               </div>
               <p :class="'text-lg relative pb-8'">
                 {{ group.description }}
@@ -58,7 +65,24 @@ export default {
             }
           })
         }
-      })
+      }),
+      chatLinks: {
+        // DWH: '',
+        // Outsite: '',
+        Announcements: 'https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer',
+        Discord: 'https://outsite.nl/discord',
+        EatingOUT: 'https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV',
+        // 'Thursday bar': '',
+        'Saturday bar': 'https://chat.whatsapp.com/DjwXYRiaO1ZEhZS1vUOYjp',
+        'Chicks before Ducks': 'https://chat.whatsapp.com/HNu9CDB4jH78s0qP6SAvI5',
+        ChocOUT: 'https://chat.whatsapp.com/JcZdNnnXhLTDleFtgtYyAn',
+        'Darkrooms & Daddies': 'https://chat.whatsapp.com/KCmnuJBNhbzKTjOtt7nkS8',
+        'Gender Blender': 'https://chat.whatsapp.com/LkLFvzAt26b4dJzlgBV7pO',
+        Minecraft: 'https://chat.whatsapp.com/1A7sMvswOjoAvIMF4E4hpK',
+        Podcasts: 'https://chat.whatsapp.com/KUBOUtsJvhyGidndriZQf5',
+        'Politics & Discussion': 'https://chat.whatsapp.com/CSfNGQlryhU8XyRxrQaLpR',
+        Strijders: 'https://chat.whatsapp.com/KcS3hC4ZVk391Kqcwnc3I5'
+      }
     }
   }
 }

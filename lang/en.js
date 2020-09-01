@@ -1,4 +1,5 @@
 import barbuddies from '~/lang/en_barbuddies.js'
+import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
   menu: [
@@ -192,11 +193,17 @@ export default {
     list_title: 'Editions'
   },
   chatgroepen: {
-    title: 'Chat Groups',
+    title: 'Chat groups',
+    join: 'Join',
     main_text: `
-       The members of DWH use multiple online channels to stay in touch when not on-site.
+      Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
+      whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
+      overview!<br />
+      Would you like to join any of them without a link? Send a message to the association phone (+31 6 3756 0270) 
+      with the chats you'd like to join.
     `
   },
+  chatGroups,
   anbi: {
     title: 'ANBI',
     main_text: `
@@ -361,6 +368,10 @@ export default {
     },
     form: {
       title: 'Reservation',
+      ggd_consent: `
+        I consent to share my information with the municipal health service (GGD) to support contact tracing if
+        requested.
+      `,
       seats: {
         one_person_seat: 'Individual seat',
         two_person_seat: 'Two-person seat',

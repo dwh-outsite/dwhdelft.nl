@@ -1,4 +1,5 @@
 import barbuddies from '~/lang/nl_barbuddies.js'
+import chatGroups from '~/lang/nl_chat_groups.js'
 
 export default {
   menu: [
@@ -192,11 +193,17 @@ export default {
     list_title: '<strong>Andersblad</strong> Edities'
   },
   chatgroepen: {
-    title: 'Chat Groepen',
+    title: 'Chatgroepen',
+    join: 'Join',
     main_text: `
-       De leden van DWH gebruiken meerdere online kanalan om buiten het pand om met elkaar in contact te blijven.
+      We spreken elkaar buiten de baravonden om natuurlijk ook graag, en voor alllerlei interesses en doelen zijn 
+      daarom chatgroepen ontstaan. Omdat je maar net moet weten dat die er zijn hebben we hieronder een fabulous 
+      overzichtje voor je gemaakt!<br />
+      Wil je in een van deze chats maar is er geen join link? Stuur een berichtje naar de verenigingstelefoon 
+      (+31 6 3756 0270) met de chat waar je aan toegevoegd zou willen worden.
     `
   },
+  chatGroups,
   anbi: {
     title: 'ANBI',
     main_text: `
@@ -360,6 +367,10 @@ export default {
     },
     form: {
       title: 'Reserveren',
+      ggd_consent: `
+        Ik geef toestemming om mijn gegevens te delen met de GGD wanneer deze worden opgevraagd ten behoeve van een
+        bron- en contactonderzoek.
+      `,
       seats: {
         one_person_seat: 'Eenpersoonszitplaats',
         two_person_seat: 'Tweepersoonszitplaats',

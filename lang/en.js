@@ -1,4 +1,5 @@
 import barbuddies from '~/lang/en_barbuddies.js'
+import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
   menu: [
@@ -202,6 +203,7 @@ export default {
       with the chats you'd like to join.
     `
   },
+  chatGroups,
   anbi: {
     title: 'ANBI',
     main_text: `

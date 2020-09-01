@@ -52,10 +52,6 @@ export default {
       From grand build contests to quests deep into the new Nether to just chilling with the bees in the bee sanctuary,
       there's something to do for you on our Minecraft server, and this chat is where we find people to play with.
     `,
-    Podcasts: `
-      Do you always walk with earphones in yet look up confused when people ask what music you like? Discuss all your
-      favorite podcasts here.
-    `,
     'Politics & Discussion': `
       If you like to discuss the latest in queer and general politics, discuss topics for hours or are looking for 
       people to attend a protest with, this is the place to be. 

@@ -196,11 +196,10 @@ export default {
     main_text: `
       Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
       whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
-      overview!
-    `,
-    general_title: 'General',
-    volunteer_title: 'Volunteering',
-    interests_title: 'Interests'
+      overview!<br />
+      Would you like to join any of them? Send a message to the association phone (+31 6 3756 0270) with the chats
+      you'd like to join.
+    `
   },
   anbi: {
     title: 'ANBI',

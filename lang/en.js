@@ -1,4 +1,5 @@
 import barbuddies from '~/lang/en_barbuddies.js'
+import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
   menu: [
@@ -191,6 +192,19 @@ export default {
     `,
     list_title: 'Editions'
   },
+  chatgroups: {
+    title: 'Chat groups',
+    join: 'Join',
+    main_text: `
+      Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
+      whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
+      overview!<br /><br />
+      Want to join a group but don't see a link? Send a message to the
+      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
+      association phone (+31 6 3756 0270)</a> with the chats you'd like to join.
+    `,
+    categories: chatGroups
+  },
   anbi: {
     title: 'ANBI',
     main_text: `
@@ -329,7 +343,7 @@ export default {
       sit. At the barevening you will be served at your table, with this measure we want to prevent you from
       walking too much and crossing paths with other visitors. Aside from this, we ask you to not keep the
       aisles occupied when it's not necessary: you are not suppose to have conversations at other tables.
-      This way, we can keep it <strong>safe and responsible</strong> for everybody. 
+      This way, we can keep it <strong>safe and responsible</strong> for everybody.
       <br />
       <br />
       Do you have questions or a nice suggestion? Contact us via the information at the bottom of this page.
@@ -372,22 +386,22 @@ export default {
       `,
       thank_you: `
         Thank you for making a reservation! You will receive an e-mail with your proof of reservation. If you need to
-        cancel, you can do so via the e-mail you will receive. 
+        cancel, you can do so via the e-mail you will receive.
       `,
       disclaimer: `
-      By sending this form you allow DWH to safe your information and to process it. Your information will only be used 
+      By sending this form you allow DWH to safe your information and to process it. Your information will only be used
       to check reservations and for the possibility to get in touch with you. If you have more questions, please contact
-      us via the information below.  
+      us via the information below.
       `,
       oops: 'Oops.',
       validation: {
         A_guest_can_only_have_one_open_booking: `
-          You already have an active reservation for the coming days. You can only have one open booking at a time. 
+          You already have an active reservation for the coming days. You can only have one open booking at a time.
         `
       }
     },
     canceled: `
-      Your reservation is cancelled. If you want, you can make a new reservation down below. 
+      Your reservation is cancelled. If you want, you can make a new reservation down below.
     `,
     general_rules: [
       'Wash your hands regularly',

@@ -55,7 +55,6 @@ export default {
   data() {
     return {
       chatLinks: {
-        Outsite: 'https://outsite.nl/#contact',
         Announcements: 'https://outsite.nl/#contact',
         Discord: 'https://dwhdelft.nl/discord',
         EatingOUT: 'https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV',

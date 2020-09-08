@@ -149,6 +149,22 @@ export default {
       {
         from: '/review',
         to: 'https://docs.google.com/forms/d/e/1FAIpQLSeOvE7kHgjnLIuSOwW5DpcIqtRah9alPnZQXanhvZ34Fu9HNg/viewform'
+      },
+      {
+        from: '/welkom',
+        to: 'https://reserveer.dwhdelft.nl/visitor/welcome'
+      },
+      {
+        from: '/welcome',
+        to: 'https://reserveer.dwhdelft.nl/visitor/welcome'
+      },
+      {
+        from: '/tafel',
+        to: 'https://reserveer.dwhdelft.nl/visitor'
+      },
+      {
+        from: '/table',
+        to: 'https://reserveer.dwhdelft.nl/visitor'
       }
     ]
   }

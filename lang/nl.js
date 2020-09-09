@@ -355,6 +355,8 @@ export default {
       `,
       rules: [
         'De reservering vervalt 1 uur na aanvang van het tijdslot',
+        `Je kunt maximaal één openstaande reservering hebben voor de donderdag- en zaterdagavond, na afloop kun je
+        direct weer een nieuwe reservering maken. Zo zorgen we ervoor dat iedereen af en toe langs kan komen`,
         'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken',
         'Tweepersoonsplekken zijn bedoeld voor mensen uit hetzelfde huishouden',
         `Als er geen tweepersoonsplekken meer beschikbaar zijn en je wilt wel met twee personen komen, dan kun je twee

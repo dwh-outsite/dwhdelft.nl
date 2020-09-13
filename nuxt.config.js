@@ -165,6 +165,10 @@ export default {
       {
         from: '/table',
         to: 'https://reserveer.dwhdelft.nl/visitor'
+      },
+      {
+        from: '/events.ics',
+        to: 'https://calendar.google.com/calendar/ical/dwhdelft.nl_st9n90454d4r9ps5alm2vdjobo%40group.calendar.google.com/public/basic.ics'
       }
     ]
   }

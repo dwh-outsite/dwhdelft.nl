@@ -169,6 +169,10 @@ export default {
       {
         from: '/events.ics',
         to: 'https://calendar.google.com/calendar/ical/dwhdelft.nl_st9n90454d4r9ps5alm2vdjobo%40group.calendar.google.com/public/basic.ics'
+      },
+      {
+        from: '/bartender',
+        to: 'https://docs.google.com/forms/d/e/1FAIpQLSeC3cf0TVhHkGqXUMEHR5Bq4BZ7uactHgG9m0tCO6MV_1r55w/viewform'
       }
     ]
   }

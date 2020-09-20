@@ -153,7 +153,7 @@ export default {
 
       this.formStatus = 'loading'
 
-      submitFormToFirebase('jongeren@dwhdelft.nl', 'membership', this.form)
+      submitFormToFirebase('ledenadministratie@dwhdelft.nl', 'membership', this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })

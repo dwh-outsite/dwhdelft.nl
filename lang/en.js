@@ -27,7 +27,7 @@ export default {
       As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
       nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
       beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!`,
-    invitation: 'Come by during one of our bar nights:<br> <strong>Every Saturday starting at 21:00</strong>'
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Saturday starting at 19:00</strong>'
   },
   activities: {
     title: 'Upcoming activities',
@@ -78,7 +78,7 @@ export default {
         name: 'EatingOUT',
         note: 'Members only',
         day: 'Tuesday',
-        time: '19:00',
+        time: '18:30',
         description: `On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
           members, sometimes with an activity afterwards.`,
         buttonText: 'Sign Up',
@@ -87,7 +87,7 @@ export default {
       {
         name: 'Fillum',
         day: 'Wednesday',
-        time: '21:15',
+        time: '19:30',
         description: `The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
           old classics.`,
         buttonText: 'Programme <small>(For Members)</small>',
@@ -97,7 +97,7 @@ export default {
         name: 'Outsite',
         note: 'Max. 28 years old',
         day: 'Thursday',
-        time: '21:00',
+        time: '19:00',
         description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
           website for upcoming events and more.`,
         buttonText: 'Head to Outsite.nl',
@@ -106,7 +106,7 @@ export default {
       {
         name: 'Open Bar Night',
         day: 'Saturday',
-        time: '21:00',
+        time: '19:00',
         description: `Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
           parties, and join one of our many events!`
       }

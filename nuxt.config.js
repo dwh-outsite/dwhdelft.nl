@@ -173,6 +173,10 @@ export default {
       {
         from: '/bartender',
         to: 'https://docs.google.com/forms/d/e/1FAIpQLSeC3cf0TVhHkGqXUMEHR5Bq4BZ7uactHgG9m0tCO6MV_1r55w/viewform'
+      },
+      {
+        from: '/kunstwerk',
+        to: 'https://kunstwerk.dwhdelft.nl'
       }
     ]
   }

@@ -78,7 +78,7 @@ export default {
         name: 'EatingOUT',
         note: 'Alleen leden',
         day: 'Dinsdag',
-        time: '19:00',
+        time: '18:30',
         description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
           één van onze leden, met soms een activiteit achteraf.`,
         buttonText: 'Aanmelden',
@@ -87,7 +87,7 @@ export default {
       {
         name: 'Fillum',
         day: 'Woensdag',
-        time: '21:15',
+        time: '19:30',
         description: `Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
           aan de beurt.`,
         buttonText: 'Programma <small>(voor leden)</small>',
@@ -97,7 +97,7 @@ export default {
         name: 'Outsite',
         note: 'Max. 28 jaar',
         day: 'Donderdag',
-        time: '21:00',
+        time: '19:00',
         description: `Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
           Outsite website voor aankomende events!`,
         buttonText: 'Ga naar Outsite.nl',
@@ -106,7 +106,7 @@ export default {
       {
         name: 'Open Bar',
         day: 'Zaterdag',
-        time: '21:00',
+        time: '19:00',
         description: `Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
           feesten en doe mee met een van onze vele events!`
       }

@@ -36,13 +36,13 @@ export default {
         banner_title: 'Weekly bar night',
         banner_subtitle: 'Open for everyone',
         title: 'Bar Night',
-        date: 'Every Saturday from 9pm'
+        date: 'Every Saturday from 7pm'
       },
       eating_out: {
         banner_title: 'Weekly dinner',
         banner_subtitle: 'Members only, registration required',
         title: 'EatingOUT',
-        date: 'Every Tuesday at 7pm'
+        date: 'Every Tuesday at 6.30pm'
       }
     }
   },

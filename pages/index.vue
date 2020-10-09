@@ -10,13 +10,20 @@
         </h2>
         <div class="mt-8 flex">
           <a href="#join-dwh">
-            <button class="block button-pink">
+            <button class="block button-white">
               {{ $t('hero.leftButton') }}
             </button>
           </a>
           <a href="#recurring_events">
             <button class="block ml-4 button-white">
               {{ $t('hero.rightButton') }}
+            </button>
+          </a>
+        </div>
+        <div class="mt-8 flex">
+          <a href="codpanel">
+            <button class="block button-pink">
+              {{ $t('cod_panel.title') }}
             </button>
           </a>
         </div>

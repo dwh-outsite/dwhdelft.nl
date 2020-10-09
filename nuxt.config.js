@@ -115,6 +115,10 @@ export default {
         status: '301!'
       },
       {
+        from: '/codpanel',
+        to: 'https://youtube.com/watch?v=8DUSrf6P82g'
+      },
+      {
         from: '/eatingout',
         to: 'https://dwhdelft.nl/book'
       },

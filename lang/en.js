@@ -46,9 +46,6 @@ export default {
       }
     }
   },
-  cod_panel: {
-    title: '▶ Panel: Acceptance in Diverse Communities'
-  },
   ways_to_join: {
     title: 'Ready to check out <strong>DWH</strong>?',
     description: `You're always welcome on a Saturday night during a bar night. Do you think this is too exciting or

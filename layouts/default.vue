@@ -13,7 +13,7 @@
         contact-coc="KvK: 40398035<br />RSIN: 807864250"
       >
         <template v-slot:board-members>
-          <BoardMember :role="$t('footer.board.president')" name="Robert Baart" email="voorzitter@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.president')" name="Robbie Baart" email="voorzitter@dwhdelft.nl" />
           <BoardMember :role="$t('footer.board.youth')" name="Casper Boone" email="jongeren@dwhdelft.nl" />
           <BoardMember :role="$t('footer.board.secretary')" name="Nick van Loo" email="secretaris@dwhdelft.nl" />
           <BoardMember :role="$t('footer.board.general')" name="Jelle Vos" email="promotie@dwhdelft.nl" />

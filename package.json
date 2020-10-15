@@ -16,6 +16,7 @@
   "dependencies": {
     "@aceforth/nuxt-netlify": "^1.0.0",
     "@nuxtjs/axios": "^5.10.2",
+    "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "csv-loader": "^3.0.2",

@@ -27,7 +27,7 @@ export default {
       Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
       baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
       bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!`,
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf 19:00</strong>'
+    invitation: 'Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.'
   },
   activities: {
     title: 'Aankomende activiteiten',
@@ -73,12 +73,15 @@ export default {
       title: `<strong>Reserveer</strong> nu voor één van onze activiteiten`,
       note: `Reserveren verplicht i.v.m. COVID-19`
     },
+    closed_notice: {
+      title: `Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.`
+    },
     events: [
       {
         name: 'EatingOUT',
         note: 'Alleen leden',
         day: 'Dinsdag',
-        time: '18:30',
+        time: '----',
         description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
           één van onze leden, met soms een activiteit achteraf.`,
         buttonText: 'Aanmelden',
@@ -87,7 +90,7 @@ export default {
       {
         name: 'Fillum',
         day: 'Woensdag',
-        time: '19:30',
+        time: '----',
         description: `Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
           aan de beurt.`,
         buttonText: 'Programma <small>(voor leden)</small>',
@@ -97,7 +100,7 @@ export default {
         name: 'Outsite',
         note: 'Max. 28 jaar',
         day: 'Donderdag',
-        time: '19:00',
+        time: '----',
         description: `Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
           Outsite website voor aankomende events!`,
         buttonText: 'Ga naar Outsite.nl',
@@ -106,7 +109,7 @@ export default {
       {
         name: 'Open Bar',
         day: 'Zaterdag',
-        time: '19:00',
+        time: '----',
         description: `Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
           feesten en doe mee met een van onze vele events!`
       }

@@ -181,6 +181,10 @@ export default {
       {
         from: '/kunstwerk',
         to: 'https://kunstwerk.dwhdelft.nl'
+      },
+      {
+        from: '/whatsapp',
+        to: 'http://wa.me/0031637560270'
       }
     ]
   }

@@ -391,9 +391,9 @@ export default {
         cancel, you can do so via the e-mail you will receive.
       `,
       disclaimer: `
-      By submitting this form you allow DWH to save your information and to process it. Your information will only be used
-      to check reservations and for the possibility to get in touch with you. If you have more questions, please contact
-      us via the information below.
+      By submitting this form you allow DWH to save your information and to process it. Your information will only be
+      used to check reservations and for the possibility to get in touch with you. If you have more questions, please
+      contact us via the information below.
       `,
       oops: 'Oops.',
       validation: {

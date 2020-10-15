@@ -41,15 +41,6 @@
           </div>
           <div class="mb-2">
             <a
-              :href="anbiLinkDestination"
-              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-            >
-              ANBI
-              <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-            </a>
-          </div>
-          <div class="mb-2">
-            <a
               :href="localePath('signup')"
               class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
             >
@@ -83,10 +74,16 @@
         <a href="/sponsorkliks" target="_blank">
           <div
             class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold
-            items-center hover:bg-gray-300"
+            items-center hover:bg-gray-300 mr-6"
           >
             <span class="text-teal-900">Sponsor</span><span class="text-teal-600">kliks</span>
           </div>
+        </a>
+        <a :href="localePath('anbi')" class="text-white font-bold inline-flex items-center text-gray-400 mr-3">
+          ANBI
+        </a>
+        <a :href="localePath('privacy')" class="text-white font-bold inline-flex items-center text-gray-400">
+          Privacy
         </a>
       </div>
       <a

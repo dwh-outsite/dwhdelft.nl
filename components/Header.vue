@@ -48,9 +48,12 @@
       <img src="~/assets/images/cover.jpg" class="opacity-50" />
     </div>
     <div class="hero"></div>
-    <div class="relative flex items-center h-full">
-      <div class="container px-4 mx-auto mt-40 mb-48">
+    <div class="container px-4 mx-auto relative md:flex items-center justify-between h-full">
+      <div class="mt-40 mb-10 md:mb-48">
         <slot></slot>
+      </div>
+      <div class="md:w-1/3 mb-20 md:mb-0">
+        <ArtPiece />
       </div>
     </div>
   </div>
@@ -62,12 +65,15 @@ import DWHLogo from '@/assets/images/dwh_logo.svg'
 import NLFlag from '@/assets/images/flags/nl.svg'
 import GBFlag from '@/assets/images/flags/gb.svg'
 
+import ArtPiece from '@/components/campaigns/ArtPiece'
+
 export default {
   components: {
     DWHLogo,
     NLFlag,
     GBFlag,
-    Zondicon
+    Zondicon,
+    ArtPiece
   },
   props: ['small'],
   data() {

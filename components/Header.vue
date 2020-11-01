@@ -52,7 +52,7 @@
       <div class="mt-40 mb-10 md:mb-48">
         <slot></slot>
       </div>
-      <div class="md:w-1/3 mb-20 md:mb-0">
+      <div v-show="!small" class="md:w-1/3 mb-20 md:mb-0">
         <ArtPiece />
       </div>
     </div>

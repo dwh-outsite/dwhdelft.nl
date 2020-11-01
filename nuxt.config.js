@@ -186,6 +186,10 @@ export default {
       {
         from: '/whatsapp',
         to: 'http://wa.me/0031637560270'
+      },
+      {
+        from: '/studieplekken',
+        to: 'https://docs.google.com/spreadsheets/d/1iLAygG2SY7bhi8k9F8WghvYrCthpdF11c_PIlrRQ3Yg/edit?usp=sharing'
       }
     ]
   }

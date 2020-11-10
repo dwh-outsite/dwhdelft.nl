@@ -16,7 +16,7 @@
           <div class="divider">
             <div class="divider-content h-full flex items-center px-4 md:pl-16">
               <div class="mx-auto md:mx-0">
-                <a href="/eatingout" target="_blank">
+                <a href="https://dwhdelft.nl/eatingout" target="_blank">
                   <button class="block button-white z-50 text-purple-500 text-left mb-2">
                     <div class="flex items-center">
                       <div v-text="button" class="max-w-56" />

@@ -71,7 +71,7 @@
             <GitHubIcon class="fill-current w-6" />
           </div>
         </a>
-        <a href="/sponsorkliks" target="_blank">
+        <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
           <div
             class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold
             items-center hover:bg-gray-300 mr-6"

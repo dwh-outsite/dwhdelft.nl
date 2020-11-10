@@ -85,7 +85,7 @@ export default {
         description: `On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
           members, sometimes with an activity afterwards.`,
         buttonText: 'Sign Up',
-        buttonLink: '/eatingout'
+        buttonLink: 'https://dwhdelft.nl/eatingout'
       },
       {
         name: 'Fillum',

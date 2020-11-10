@@ -85,7 +85,7 @@ export default {
         description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
           één van onze leden, met soms een activiteit achteraf.`,
         buttonText: 'Aanmelden',
-        buttonLink: '/eatingout'
+        buttonLink: 'https://dwhdelft.nl/eatingout'
       },
       {
         name: 'Fillum',

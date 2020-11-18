@@ -325,22 +325,22 @@ export default {
     }
   },
   steunons: {
-    title: 'Steun ons',
+    title: 'Steun Ons',
     volunteering: `<strong>Vrijwilligers</strong><br />
-      De DWH draait volledig op vrijwilligers. Ieder jaar zetten er weer meer dan 100 mensen zich ieder in
-      als vrijwilliger voor de DWH. Vrijwilligers organiseren onze activiteiten, staan achter de bar, geven voorlichting
+      DWH draait volledig op vrijwilligers. Ieder jaar zetten er weer meer dan 100 mensen zich ieder in
+      als vrijwilliger voor DWH. Vrijwilligers organiseren onze activiteiten, staan achter de bar, geven voorlichting
       op scholen en nog zoveel meer. Wilt u zich ook inzetten als vrijwilliger spreek ons dan eens aan in de bar of
-      stuur ons een mailtje naar <a href="mailto:bestuur@dwhdelft.nl" class="text-purple-500">bestuur@dwhdelft.nl</a>.`,
+      stuur ons een mailtje via <a href="mailto:bestuur@dwhdelft.nl" class="text-purple-500">bestuur@dwhdelft.nl</a>.`,
     membership_title: '<strong>Lidmaatschap</strong>',
     membership_post: `Meer informatie en inschrijven kan via deze
       <a href="https://dwhdelft.nl/signup/" class="text-purple-500">link</a>.`,
     donate: `<strong>Doneren</strong><br />
-      Door te doneren aan de DWH kunt u ons extra financieel ondersteunen. Extra geld
+      Door te doneren aan DWH kunt u ons extra financieel ondersteunen. Extra geld
       kunnen wij altijd goed gebruiken om nog meer te kunnen organiseren voor de LHBT+ 
       gemeenschap in het organiseren van activiteiten, het bieden van een ontmoetingsplek,
       het geven van voorlichting (op scholen) en nog veel meer.<br />
       <br />
-      U kunt een donatie aan de DWH doen door een overboeking te maken naar
+      U kunt een donatie aan DWH doen door een overboeking te maken naar
       IBAN: NL75 INGB 0003 2492 37 t.n.v. DWH ledenadministratie.
       Wilt u jaarlijks een gift doen en dit vastleggen dan kunt u het
       onderstaande formulier invullen en mailen naar
@@ -357,12 +357,12 @@ export default {
       <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken"
       class="text-purple-500">website van de belastingdienst</a>.<br />
       <br />
-      Voor verdere vragen over het doneren aan de DWH kunt u stellen door deze te mailen
+      Verdere vragen over het doneren aan DWH kunt u stellen door deze te mailen
       naar <a href="mailto:penningmeester@dwhdelft.nl" class="text-purple-500">
       penningmeester@dwhdelft.nl</a>`,
     andersblad_ads: `<strong>Adverteren in het Andersblad</strong><br />
       Het <a href="https://dwhdelft.nl/andersblad" class="text-purple-500">
-      Andersblad</a> is het verenigingsblad van de DWH dat 3 keer per jaar verschijnt
+      Andersblad</a> is het verenigingsblad van DWH dat 3 keer per jaar verschijnt
       (rond eind april, augustus en december). Het Andersblad staat altijd bomvol leuke
       artikelen, opinies, verslagen, foto’s en veel meer. Het blad wordt verspreid onder
       al onze leden en vele externe partners. De oplage is meer dan 300 exemplaren voor
@@ -374,7 +374,7 @@ export default {
     sponsorkliks: `<strong>Sponsorkliks</strong><br />
        Door uw aankopen bij verschillende aangesloten webwinkels bij Sponsorkliks via onze
        link <a href="https://dwhdelft.nl/sponsorkliks" class="text-purple-500">
-       dwhdelft.nl/sponsorkliks</a> te doen  kunt u de DWH gratis sponsoren.
+       dwhdelft.nl/sponsorkliks</a> te doen  kunt u DWH gratis sponsoren.
        Voor iedere aankoop krijgen wij een kleine commissie. Geld dat binnenkomt via
        Sponsorkliks komt direct als extra budget bij een van onze (roterende) commissies
        terecht. Zo draagt u op een makkelijke manier bij aan het mogelijk maken van meer

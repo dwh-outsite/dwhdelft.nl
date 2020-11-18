@@ -326,18 +326,18 @@ export default {
     }
   },
   steunons: {
-    title: 'Support us',
+    title: 'Support Us',
     volunteering: `<strong>Volunteers</strong><br />
       DWH is fully dependent on its volunteers. Every year there are more than a 100
-      volunteers active in the DWH. Our volunteers organize a lot of activities, are
-      bartending, giving education in schools, and so much more. Would you like to be a
-      volunteer? Approach us in the bar or send us a mail to
+      volunteers active in DWH. Our volunteers organize a lot of activities, bartend,
+      give education in schools, and so much more. Would you like to be a
+      volunteer? Approach us in the bar or send us an email at
       <a href="mailto:bestuur@dwhdelft.nl" class="text-purple-500">bestuur@dwhdelft.nl</a>.`,
     membership_title: '<strong>Membership</strong>',
     membership_post: `More information and signup form can be found by following this
       <a href="https://dwhdelft.nl/en/signup/" class="text-purple-500">link</a>.`,
     donate: `<strong>Donating</strong><br />
-      By donating you can support the DWH financially. Extra funds could always be put to
+      By donating you can support DWH financially. Extra funds could always be put to
       good use to organize more activities for the LGBT+ community, offering a meeting
       place for LGBT+ people, giving education on schools and so much more.<br />
       <br />
@@ -357,24 +357,24 @@ export default {
       <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken"
       class="text-purple-500">website of the Dutch tax authorities</a><br />
       <br />
-      For any further questions about donating to the DWH please send us a mail to
+      For any further questions about donating to DWH please send us a mail to
       <a href="mailto:penningmeester@dwhdelft.nl" class="text-purple-500">
       penningmeester@dwhdelft.nl</a>`,
     andersblad_ads: `<strong>Adverteren in het Andersblad</strong><br />
       The <a href="https://dwhdelft.nl/en/andersblad" class="text-purple-500">
-      Andersblad</a> is the magazine of the DWH. It has 3 issues every year (at the end
+      Andersblad</a> is the magazine of DWH. It has 3 issues every year (at the end
       of April, Agusust and December). The Andersblad is always full of great articles,
       opinion pieces, photo’s and much more. The magazine is distributed among all our
       members and our many partners. There are always more than 300 copies produced for
       every issue.<br />
       <br />
-      There are opportunities for you to advertise in our magazine. Send a mail to
+      There are opportunities for you to advertise in our magazine. Send an email to
       <a href="mailto:penningmeester@dwhdelft.nl" class="text-purple-500">
       penningmeester@dwhdelft.nl</a> for the current rates and options.`,
     sponsorkliks: `<strong>Sponsorkliks</strong><br />
       By ordering goods online through our Sponsorkliks link
       <a href="https://dwhdelft.nl/sponsorkliks" class="text-purple-500">
-      dwhdelft.nl/sponsorkliks</a> you can sponsor the DWH for free! For every purchase
+      dwhdelft.nl/sponsorkliks</a> you can sponsor DWH for free! For every purchase
       through our link we will get a small commission fee. Money that we get through
       Sponsorkliks is directly added to one of our (rotating) committees. This way you
       can help us in an easy way to realize our goals and organize more activities.`

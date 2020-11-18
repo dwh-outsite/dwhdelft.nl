@@ -82,8 +82,11 @@
         <a :href="localePath('anbi')" class="text-white font-bold inline-flex items-center text-gray-400 mr-3">
           ANBI
         </a>
-        <a :href="localePath('privacy')" class="text-white font-bold inline-flex items-center text-gray-400">
+        <a :href="localePath('privacy')" class="text-white font-bold inline-flex items-center text-gray-400 mr-3">
           Privacy
+        </a>
+        <a :href="localePath('steunons')" class="text-white font-bold inline-flex items-center text-gray-400">
+          {{ $t('steunons.title') }}
         </a>
       </div>
       <a

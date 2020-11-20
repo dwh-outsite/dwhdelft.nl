@@ -11,19 +11,6 @@
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
         <p v-html="$t('ways_to_join.bar_buddy.description')" class="mt-8 mb-4 md:mt-0 md:mb-12" />
-
-        <div class="shadow bg-purple-500 p-4 rounded mb-8 inline-flex items-center">
-          <div
-            class="
-              rounded-full w-7 h-7 bg-white mr-2 border-2 border-white
-              flex items-center justify-center
-              overflow-hidden relative
-            "
-          >
-            <Zondicon icon="arrow-thin-right" class="w-4 text-purple-500 fill-current" />
-          </div>
-          <div v-html="$t('ways_to_join.bar_buddy.thursday_note')" class="text-lg font-semibold text-white flex-1" />
-        </div>
       </div>
     </section>
 

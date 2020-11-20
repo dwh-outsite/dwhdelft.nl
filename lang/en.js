@@ -53,7 +53,7 @@ export default {
     outsite_hint: `Are you 28 years or younger? Take a look at
       <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.`,
     bar_buddy: {
-      title: 'Bar Buddy System',
+      title: 'Bar Buddies',
       description: `If you are looking to come by on a Saturday night but you are not yet familiar with the society you
         can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
         about DWH but they can also introduce you to new people.`,

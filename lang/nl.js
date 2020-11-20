@@ -53,7 +53,7 @@ export default {
     outsite_hint: `Ben je 28 jaar of jonger? Kijk dan ook eens bij
       <a href="https://outsite.nl/" class="font-bold">Outsite</a>, het jongerendeel van de vereniging.`,
     bar_buddy: {
-      title: 'Barbuddy Systeem',
+      title: 'Barbuddies',
       description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
         voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de
         vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,

@@ -190,6 +190,10 @@ export default {
       {
         from: '/studieplekken',
         to: 'https://docs.google.com/spreadsheets/d/1iLAygG2SY7bhi8k9F8WghvYrCthpdF11c_PIlrRQ3Yg/edit?usp=sharing'
+      },
+      {
+        from: '/christmasdinner',
+        to: 'https://forms.gle/RJMd75V1h5XVz34S8'
       }
     ]
   }

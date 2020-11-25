@@ -44,13 +44,17 @@ export default {
       Hou je van Dungeon & Dragons of soortgelijke roleplaying games? Dit is dé chat voor alle alignment memes waar je
       op hoopte/ voor vreesde en een plek om nieuwe medespelers te vinden!
     `,
+    'Drag Race Gurls': `
+      Kijk je alle afleveringen inclusief Untucked, en spreek je alleen nog maar in Drag Race quotes? Als je dat niet
+      al deed wees gewaarschuwd, na een weekje in deze chat wel ;)
+    `,
     'Gender Blender': `
       Ben je trans, non-binary of gender non-conforming? Join de Gender Blender en praat over binders, leuke jurkjes of 
       de rare dingen die cis-mensen genderen, en doe mee met onze activiteiten.
     `,
-    Minecraft: `
-      Van grootse build contests tot queestes diep de nieuwe Nether in tot lekker chillen met de bijtjes in hun 
-      sanctuary, er is iets voor je op onze server, en in deze chat vind je mensen om mee te spelen.
+    'Minecraft/Among Us': `
+      Van grootse Minecraft bouw wedstrijden of spelen met de bijen in de bijentuin, tot zus en sus onderscheiden in
+      Among Us, deze chat is voor alle gaymers onder ons.
     `,
     'Politics & Discussion': `
       Als je graag praat over het laatste nieuws in queer en algemene politiek, diep op onderwerpen in wil gaan of

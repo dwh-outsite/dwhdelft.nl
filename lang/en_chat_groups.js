@@ -44,13 +44,17 @@ export default {
       Do you like Dungeons & Dragons or similar roleplaying games? This is the chat for all the alignment memes you
       could ever want and a place to find new people to play with.
     `,
+    'Drag Race Gurls': `
+      Do you watch all the episodes as well as untucked and do you only speak in Drag Race quotes? If you don't
+      already, you will after just one week in this chat ;)
+    `,
     'Gender Blender': `
       Are you trans, non-binary or gender non-conforming? Join the Gender Blender and talk all about binders, the
       spinniest of dresses, or all the weird stuff cis people asign gender to, all among friends.
     `,
-    Minecraft: `
-      From grand build contests to quests deep into the new Nether to just chilling with the bees in the bee sanctuary,
-      there's something to do for you on our Minecraft server, and this chat is where we find people to play with.
+    'Minecraft/Among Us': `
+      Whether it's Minecraft build contests and chilling with the bees in the bee sanctuary, or figuring out sis from 
+      sus in Among Us, this chat is for all you gaymers out there.
     `,
     'Politics & Discussion': `
       If you like to discuss the latest in queer and general politics, discuss topics for hours or are looking for

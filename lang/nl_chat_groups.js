@@ -18,17 +18,17 @@ export default {
     `
   },
   'Groepen voor <strong>vrijwilligers</strong>': {
-    'Thursday bar': `
+    Bartenders: `
       Bartenden is een van de leukste dingen om te doen; je maakt met iedereen een praatje en iedereen houdt van je
-      want je bezorgd nieuwe drankjes! Join deze chat  als je op donderdag wil bartenden.
-    `,
-    'Saturday bar': `
-      Bartenden is een van de leukste dingen om te doen; je maakt met iedereen een praatje en iedereen houdt van je
-      want je bezorgd nieuwe drankjes! Join deze chat  als je op zaterdag wil bartenden.
+      want je bezorgd nieuwe drankjes! Join deze chat als je een keertje wilt bartenden!
     `,
     EatingOUT: `
       De chat voor iedereen geïnteresseerd op dinsdag te koken. Ben jij een keukenpro of wil je dat zijn? Kom de chat
       in en kook voor een grote groep, in je eentje of eerst met iemand met ervaring.
+    `,
+    'Online Activities': `
+      Zolang onze bar dicht is gaat de vereniging lekker online door! Wil jij ook iets organiseren nu we vooral online
+      zijn? Join dan deze chat om mensen te vinden waarmee je dat kan doen :)
     `
   },
   'Groepen voor <strong>verschillende interesses</strong>': {

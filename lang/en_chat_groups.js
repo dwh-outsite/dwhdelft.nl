@@ -18,17 +18,17 @@ export default {
     `
   },
   'Groups for <strong>volunteers</strong>': {
-    'Thursday bar': `
+    Bartenders: `
       Bartending is one of the most fun things to do, you get to talk to all the people who visit and everyone loves you
-      as you're bringing them new drinks! Join this chat if you'd like to bartend on Thursday.
-    `,
-    'Saturday bar': `
-      Bartending is one of the most fun things to do, you get to talk to all the people who visit and everyone loves you
-      as you're bringing them new drinks! Join this chat if you'd like to bartend on Saturday.
+      as you're bringing them new drinks! Join this chat if you'd like to bartend sometime!
     `,
     EatingOUT: `
       The chat for everyone interested in cooking on Tuesdays. Are you a kitchen pro or would you like to be? Join the
       chat and cook for a crowd, on your own or with someone more experienced.
+    `,
+    'Online Activities': `
+      While our bar is closed our association continues online! If you'd like to help organise one of the many things
+      we do while we exist mostly online, be sure to join this chat and find people to organise it with you :)
     `
   },
   'Groups for <strong>various interests</strong>': {

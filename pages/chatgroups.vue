@@ -57,13 +57,15 @@ export default {
       chatLinks: {
         Announcements: 'https://outsite.nl/#contact',
         Discord: 'https://dwhdelft.nl/discord',
+        Bartenders: 'https://chat.whatsapp.com/ESKloORRKlD5J6mNMw4OV0',
         EatingOUT: 'https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV',
-        'Saturday bar': 'https://chat.whatsapp.com/DjwXYRiaO1ZEhZS1vUOYjp',
+        'Online Activities': 'https://chat.whatsapp.com/KzLpqZLUZUdItqKJetDdzP',
         'Chicks before Ducks': 'https://chat.whatsapp.com/HNu9CDB4jH78s0qP6SAvI5',
         ChocOUT: 'https://chat.whatsapp.com/JcZdNnnXhLTDleFtgtYyAn',
         'Darkrooms & Daddies': 'https://chat.whatsapp.com/KCmnuJBNhbzKTjOtt7nkS8',
+        'Drag Race Gurls': 'https://chat.whatsapp.com/KQ4JHeT0AMi0hRZdiY3hR5',
         'Gender Blender': 'https://chat.whatsapp.com/LkLFvzAt26b4dJzlgBV7pO',
-        Minecraft: 'https://chat.whatsapp.com/1A7sMvswOjoAvIMF4E4hpK',
+        'Minecraft/Among Us': 'https://chat.whatsapp.com/1A7sMvswOjoAvIMF4E4hpK',
         'Politics & Discussion': 'https://chat.whatsapp.com/CSfNGQlryhU8XyRxrQaLpR',
         Strijders: 'https://chat.whatsapp.com/KcS3hC4ZVk391Kqcwnc3I5'
       }

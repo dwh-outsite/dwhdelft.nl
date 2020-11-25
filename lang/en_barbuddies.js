@@ -1,8 +1,19 @@
 export default {
-  Andreas: `
-  Hey, I’m Andreas, in my mid twenties and an Aerospace student. I am a very active member of DWH and I love
-  meeting new people and showing them our society. For me it is a place where you can be yourself and can participated
-  in all sorts of fun activities.
+  Carlos: `
+  Hey hola! I'm Carlos, a 24-year-old Spaniard, studying MSc Design for Interaction. I've been in DWH for a bit 
+  over three years now, and have found not only good people; but also an amazing opportunity. An opportunity to 
+  exchange experiences and enrich each other's lives, a way to get to know people outside your own bubble, your own 
+  country, your own culture. Also bartending is just fun af. I can introduce you to the grooviest (do folks say that 
+  anymore?) people; and have long (and fiery) debates about activism, art or music. Or basically any other thing. If 
+  you're feeling isolated or insecure, I think coming to DWH and letting yourself be warmly welcomed is one of 
+  the best things you can do.
+  `,
+  Charlie: `
+  Hi, I'm Charlie. I'm 18 years old and I study Applied Mathematics at The Hague University of Applied Sciences. I've 
+  only been a member for about a year, but I'm already sure I'll be here for many more to come! I've become an active 
+  member; I regularly volunteer as a bartender, organised the OWee once, and am currently on the board of Outsite. 
+  When I first came to the bar I was welcomed by some lovely people who made me feel at home, and I hope to now do 
+  that for others. You'll find me on almost every barnight, and I'm always happy to have a chat!
   `,
   Jeff: `
   Hi, my name is Jeff. I'm in my late twenties, and I study Computer Science at TU Delft. I've been a member of DWH
@@ -11,9 +22,14 @@ export default {
   turned out to be a great decision though, because DWH is just a really nice place with lovely people and fun
   activities.
   `,
+  Andreas: `
+  Hey, I’m Andreas, in my mid twenties and an Aerospace student. I am a very active member of DWH and I love
+  meeting new people and showing them our society. For me it is a place where you can be yourself and can participated
+  in all sorts of fun activities.
+  `,
   Mariana: `
   Hello! I’m Mariana, I’m in my early thirties, from Portugal and I have been living in the Netherlands for 6 years. I
-  studied here at TU Delft and then I stayed for work. I joined DWH early on and was on the board of DWH for a year
+  studied here at TU Delft and then I stayed for work. I joined DWH early on and was on the board of Outsite for a year
   and I currently help with the women’s events. I’ve met many good friend through DWH and I’m always glad to meet new
   people and introduce them to DWH since it helped me so much when I came to the Netherlands.
   `,
@@ -25,7 +41,7 @@ export default {
   `,
   Govert: `
   Hello I’m Govert, at the start of my thirties. I study architecture and I’m a teacher a high school. I’m a very active
-  volunteer within DWH. In my opinion, DWH stands for a niceand really diverse group of people. A place to organize lots
+  volunteer within DWH. In my opinion, DWH stands for a nice and really diverse group of people. A place to organize lots
   of things and also a place to learn a lot about yourself. I really like meeting new people and introducing them to
   this awesome association.
   `,
@@ -34,15 +50,6 @@ export default {
   KMG parent and I organise the OWee this year). When I first stepped foot into the building, I was so nervous! I soon
   met some really nice and special people, which I consider to be my close friends now. If you feel nervous about coming
   to DWH, I totally get it; that’s how we all felt the first time. I hope I can make it easier for you!
-  `,
-  Carlos: `
-  Hey hola! I'm Carlos, a 24-year-old Spaniard, studying MSc Design for Interaction. I've been in DWH for a bit 
-  over three years now, and have found not only good people; but also an amazing opportunity. An opportunity to 
-  exchange experiences and enrich each other's lives, a way to get to know people outside your own bubble, your own 
-  country, your own culture. Also bartending is just fun af. I can introduce you to the grooviest (do folks say that 
-  anymore?) people; and have long (and fiery) debates about activism, art or music. Or basically any other thing. If 
-  you're feeling isolated or insecure, I think coming to DWH and letting yourself be warmly welcomed is one of 
-  the best things you can do.
   `,
   Wessel: `
   Heya! I'm Wessel, 24 years old and I study Aerospace engineering. When I joined DWH by joining the KMG, the

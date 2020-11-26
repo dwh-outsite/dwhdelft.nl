@@ -1,13 +1,15 @@
 <template>
   <div class="overflow-y-hidden md:overflow-x-hidden">
-    <div class="md:max-w-6xl mx-auto">
+    <div class="mx-auto">
       <div class="md:flex">
-        <div class="flex-1 pt-12 pb-24 md:pb-12 px-4">
-          <div class="rounded-full w-20 h-20 p-6 bg-purple-500 mt-2 mb-8 text-white mx-auto">
-            <Zondicon icon="location-food" class="fill-current" />
+        <div class="flex-1 pt-12 pb-20 px-4 md:pr-40 background text-white text-shadow flex flex-col items-end">
+          <div>
+            <div class="rounded-full w-20 h-20 p-6 bg-purple-400 mt-2 mb-8 text-white mx-auto">
+              <Zondicon icon="location-food" class="fill-current" />
+            </div>
+            <h3 v-text="title" class="text-3xl font-semibold text-center" />
+            <h4 v-text="subtitle" class="text-xl tracking-wide text-center" />
           </div>
-          <h3 v-text="title" class="text-3xl font-semibold text-center" />
-          <h4 v-text="subtitle" class="text-xl tracking-wide text-center" />
         </div>
         <div class="relative">
           <div class="triangle md:hidden" />
@@ -45,7 +47,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.background {
+  @apply bg-cover;
+  background-image: url(../assets/images/photos/eatingout/eatingout.jpg);
+}
+
 .triangle {
   @apply bg-purple-400 w-full absolute;
   transform: skewY(-7deg);
@@ -60,7 +67,7 @@ export default {
 
 @screen md {
   .divider {
-    @apply bg-purple-400 h-full absolute;
+    @apply bg-purple-400 h-full absolute -ml-8;
     transform: skewX(-7deg);
     transform-origin: 0;
     width: 100rem;
@@ -72,5 +79,9 @@ export default {
     transform: skewX(7deg);
     transform-origin: 0;
   }
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 </style>

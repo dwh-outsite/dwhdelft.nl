@@ -182,7 +182,6 @@ export default {
       president: 'Voorzitter',
       secretary: 'Secretaris',
       treasurer: 'Penningmeester',
-      youth: 'Bestuurslid Jongeren',
       general: 'Algemeen Bestuurslid'
     }
   },

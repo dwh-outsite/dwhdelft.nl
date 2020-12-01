@@ -182,7 +182,6 @@ export default {
       president: 'President',
       secretary: 'Secretary',
       treasurer: 'Treasurer',
-      youth: 'Commissioner Youth',
       general: 'Comissioner'
     }
   },

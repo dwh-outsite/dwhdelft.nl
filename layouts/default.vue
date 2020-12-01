@@ -14,11 +14,9 @@
       >
         <template v-slot:board-members>
           <BoardMember :role="$t('footer.board.president')" name="Robbie Baart" email="voorzitter@dwhdelft.nl" />
-          <BoardMember :role="$t('footer.board.youth')" name="Casper Boone" email="jongeren@dwhdelft.nl" />
-          <BoardMember :role="$t('footer.board.secretary')" name="Nick van Loo" email="secretaris@dwhdelft.nl" />
-          <BoardMember :role="$t('footer.board.general')" name="Jelle Vos" email="promotie@dwhdelft.nl" />
           <BoardMember :role="$t('footer.board.treasurer')" name="Quinten Star" email="penningmeester@dwhdelft.nl" />
-          <BoardMember :role="$t('footer.board.general')" name="Jeroen Wegdam" email="pand@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.secretary')" name="Dries Stuij" email="secretaris@dwhdelft.nl" />
+          <BoardMember :role="$t('footer.board.general')" name="Jelle Vos" email="promotie@dwhdelft.nl" />
         </template>
         <template v-slot:newsletter></template>
       </Footer>

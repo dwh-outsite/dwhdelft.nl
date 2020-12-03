@@ -194,6 +194,10 @@ export default {
       {
         from: '/christmasdinner',
         to: 'https://forms.gle/RJMd75V1h5XVz34S8'
+      },
+      {
+        from: '/survey',
+        to: 'https://forms.gle/XjVmWY7LyApGgdPC9'
       }
     ]
   }

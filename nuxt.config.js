@@ -198,6 +198,10 @@ export default {
       {
         from: '/survey',
         to: 'https://forms.gle/XjVmWY7LyApGgdPC9'
+      },
+      {
+        from: '/youtube',
+        to: 'https://www.youtube.com/channel/UCtsabdS5sH7EA-DjLkBPLfQ'
       }
     ]
   }

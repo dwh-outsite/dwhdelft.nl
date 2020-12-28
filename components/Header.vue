@@ -108,7 +108,6 @@ export default {
   methods: {
     constructLocaleUrl(rawUrl) {
       if (rawUrl.includes('#')) {
-        console.log(`${rawUrl} heeft #`)
         if (rawUrl.startsWith('#')) {
           return rawUrl
         }
@@ -116,8 +115,6 @@ export default {
 
         return this.localePath(parts[0]) + `#${parts[1]}`
       }
-      console.log(`${rawUrl} zit erachter`)
-
       return this.localePath(rawUrl)
     },
   },

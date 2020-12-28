@@ -163,14 +163,6 @@ export default {
     },
   },
   barbuddies,
-  andersblad: {
-    title: 'Andersblad',
-    main_text: `
-      The association magazine of DWH is published several times a year. Earlier editions can be seen here in PDF
-      format. The magazine is (partly) in Dutch.
-    `,
-    list_title: 'Editions',
-  },
   chatgroups: {
     title: 'Chat groups',
     join: 'Join',

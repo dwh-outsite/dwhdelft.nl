@@ -163,14 +163,6 @@ export default {
     },
   },
   barbuddies,
-  andersblad: {
-    title: 'Andersblad',
-    main_text: `
-      Het verenigingsblad van DWH verschijnt meerdere malen per jaar. Eerdere edities zijn hier te downloaden in PDF
-      formaat.
-    `,
-    list_title: '<strong>Andersblad</strong> Edities',
-  },
   chatgroups: {
     title: 'Chatgroepen',
     join: 'Join',

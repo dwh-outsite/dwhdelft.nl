@@ -54,7 +54,7 @@ nl:
     </header>
 
     <section class="container mx-auto text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="px-4 md:mx-auto py-32 md:mt-0 space-y-6 md:text-columns-2 xl:text-columns-3">
+      <div class="px-4 md:mx-auto py-32 space-y-6 md:text-columns-2 xl:text-columns-3">
         <p v-for="paragraph in $t('main_text')" :key="paragraph" v-html="paragraph" />
       </div>
     </section>

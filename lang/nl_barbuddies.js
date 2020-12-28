@@ -79,5 +79,5 @@ export default {
   saxofoon te spelen en loop ik vaak rond op DWH. Ik heb hier zelf helemaal mijn plek gevonden en wil ook graag
   dat andere mensen zich hier thuis kunnen voelen dus heb ik mezelf opgegeven als barbuddy. Kom gezellig een praatje
   maken en als je het leuk vind stel ik je ook voor aan een aantal andere DWHers.
-  `
+  `,
 }

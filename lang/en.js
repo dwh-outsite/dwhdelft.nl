@@ -3,19 +3,19 @@ import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
   menu: [
-    { title: 'Home', url: localePath => localePath('index') },
-    { title: 'Join DWH', url: localePath => localePath('index') + '#join-dwh' },
-    { title: 'Reservations', url: localePath => localePath('book') },
-    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
-    { title: 'Education', url: localePath => localePath('education') },
-    { title: 'Andersblad', url: localePath => localePath('andersblad') },
-    { title: 'Contact', url: () => '#contact' }
+    { title: 'Home', url: (localePath) => localePath('index') },
+    { title: 'Join DWH', url: (localePath) => localePath('index') + '#join-dwh' },
+    { title: 'Reservations', url: (localePath) => localePath('book') },
+    { title: 'EatingOUT', url: (localePath) => localePath('index') + '#eatingout' },
+    { title: 'Education', url: (localePath) => localePath('education') },
+    { title: 'Andersblad', url: (localePath) => localePath('andersblad') },
+    { title: 'Contact', url: () => '#contact' },
   ],
   hero: {
     title: 'LGBT+ association since 1968',
     subtitle: 'For everyone in the Delft area!',
     leftButton: 'Check out DWH',
-    rightButton: 'Opening Hours'
+    rightButton: 'Opening Hours',
   },
   description: {
     text: `DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for
@@ -27,7 +27,7 @@ export default {
       As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
       nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
       beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!`,
-    invitation: `We are <strong>temporarily closed</strong> due to COVID-19.`
+    invitation: `We are <strong>temporarily closed</strong> due to COVID-19.`,
   },
   activities: {
     title: 'Upcoming activities',
@@ -36,15 +36,15 @@ export default {
         banner_title: 'Weekly bar night',
         banner_subtitle: 'Open for everyone',
         title: 'Bar Night',
-        date: 'Every Saturday from 7pm'
+        date: 'Every Saturday from 7pm',
       },
       eating_out: {
         banner_title: 'Weekly dinner',
         banner_subtitle: 'Members only, registration required',
         title: 'EatingOUT',
-        date: 'Every Tuesday at 6.30pm'
-      }
-    }
+        date: 'Every Tuesday at 6.30pm',
+      },
+    },
   },
   ways_to_join: {
     title: 'Ready to check out <strong>DWH</strong>?',
@@ -64,17 +64,17 @@ export default {
       meet_up_with: 'Meet up with',
       barbuddies_title: 'Our <strong>Bar Buddies</strong>',
       read_more: 'Read more',
-      read_less: 'Collapse'
-    }
+      read_less: 'Collapse',
+    },
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is open 4 nights a week',
     button: {
       title: `<strong>Book a table</strong> for one of our activities`,
-      note: `Bookings are mandatory due to COVID-19`
+      note: `Bookings are mandatory due to COVID-19`,
     },
     closed_notice: {
-      title: `We are <strong>temporarily closed</strong> due to COVID-19.`
+      title: `We are <strong>temporarily closed</strong> due to COVID-19.`,
     },
     events: [
       {
@@ -85,7 +85,7 @@ export default {
         description: `On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
           members, sometimes with an activity afterwards.`,
         buttonText: 'Sign Up',
-        buttonLink: 'https://dwhdelft.nl/eatingout'
+        buttonLink: 'https://dwhdelft.nl/eatingout',
       },
       {
         name: 'Fillum',
@@ -94,7 +94,7 @@ export default {
         description: `The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
           old classics.`,
         buttonText: 'Programme <small>(For Members)</small>',
-        buttonLink: 'http://homodelft.nl/films/'
+        buttonLink: 'http://homodelft.nl/films/',
       },
       {
         name: 'Outsite',
@@ -104,22 +104,22 @@ export default {
         description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
           website for upcoming events and more.`,
         buttonText: 'Head to Outsite.nl',
-        buttonLink: 'https://outsite.nl/en'
+        buttonLink: 'https://outsite.nl/en',
       },
       {
         name: 'Open Bar Night',
         day: 'Saturday',
         time: '----',
         description: `Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
-          parties, and join one of our many events!`
-      }
-    ]
+          parties, and join one of our many events!`,
+      },
+    ],
   },
   eating_out: {
     title: 'EatingOUT: Our weekly dinner',
     subtitle: 'Every Tuesday, for just 4 euros',
     button: 'Sign up for the next EatingOUT now',
-    notes: ['Members only', 'Sign-up required']
+    notes: ['Members only', 'Sign-up required'],
   },
   forms: {
     label: {
@@ -132,7 +132,7 @@ export default {
       languages: {
         dutch: 'Dutch',
         english: 'English',
-        no_preference: 'No preference'
+        no_preference: 'No preference',
       },
       remarks: 'Do you have any further questions?',
       date_of_birth: 'Date of birth',
@@ -143,7 +143,7 @@ export default {
       pronouns: 'Pronouns',
       barbuddy: 'Who would you like to meet?',
       membership_fee: 'Membership Fee (see below)',
-      iban: 'IBAN number for payment by direct debit'
+      iban: 'IBAN number for payment by direct debit',
     },
     placeholder: {
       name: 'Name',
@@ -158,32 +158,18 @@ export default {
       address: 'Address',
       postal_code: 'Postal code (for example 2611PV)',
       pronouns: 'e.g. she/her, he/him, they/them',
-      iban: 'IBAN number'
+      iban: 'IBAN number',
     },
     buttons: {
       sign_up: 'Sign up',
       submit: 'Submit',
-      loading: 'Loading'
+      loading: 'Loading',
     },
     success: {
       heading: 'The form has been submitted successfully',
       barbuddy: 'The bar buddy you selected will contact you as soon as possible.',
-      membership: 'We will send you an e-mail soon to confirm your membership.'
-    }
-  },
-  footer: {
-    newsletter: {
-      description: 'Stay up to date, subscribe to the <strong>DWH newsletter</strong>',
-      button: 'Subscribe'
+      membership: 'We will send you an e-mail soon to confirm your membership.',
     },
-    leftTitle: 'Board',
-    rightTitle: 'Contact',
-    board: {
-      president: 'President',
-      secretary: 'Secretary',
-      treasurer: 'Treasurer',
-      general: 'Comissioner'
-    }
   },
   barbuddies,
   andersblad: {
@@ -192,7 +178,7 @@ export default {
       The association magazine of DWH is published several times a year. Earlier editions can be seen here in PDF
       format. The magazine is (partly) in Dutch.
     `,
-    list_title: 'Editions'
+    list_title: 'Editions',
   },
   chatgroups: {
     title: 'Chat groups',
@@ -205,7 +191,7 @@ export default {
       <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
       association phone (+31 6 3756 0270)</a> with the chats you'd like to join.
     `,
-    categories: chatGroups
+    categories: chatGroups,
   },
   anbi: {
     title: 'ANBI',
@@ -260,7 +246,7 @@ export default {
       <strong>Financial account</strong><br />
       For a financial account we refer the reader to the annual account. Each year DWH creates and approves the annual
       account in which the financial report and account of the preceding year is recorded.
-    `
+    `,
   },
   education: {
     title: 'Education',
@@ -289,7 +275,7 @@ export default {
       Education Coordinators<br />
       <br />
       P.S. Are you a member of DWH and would you like to become an educator? Send us an email!
-    `
+    `,
   },
   signup: {
     title: 'Membership Signup',
@@ -321,8 +307,8 @@ export default {
     `,
     fees: {
       full: 'Regular (€ 48,50)',
-      discounted: 'Reduced (€ 25,00)'
-    }
+      discounted: 'Reduced (€ 25,00)',
+    },
   },
   steunons: {
     title: 'Support Us',
@@ -376,7 +362,7 @@ export default {
       dwhdelft.nl/sponsorkliks</a> you can sponsor DWH for free! For every purchase
       through our link we will get a small commission fee. Money that we get through
       Sponsorkliks is directly added to one of our (rotating) committees. This way you
-      can help us in an easy way to realize our goals and organize more activities.`
+      can help us in an easy way to realize our goals and organize more activities.`,
   },
   bookings: {
     title: 'Reservations',
@@ -417,13 +403,13 @@ export default {
         'Moving a reservation is possible by cancelling via the confirmation mail and making a new reservation',
         'Two-seaters are meant for people from the same household',
         `If there are no two-seaters available anymore and you want to come with two persons, you can make two
-        individual reservations. If it is possible, you can still sit together.`
+        individual reservations. If it is possible, you can still sit together.`,
       ],
       rules_disclaimer: `
         We understand that these measures may not be the most ideal measures for everybody. When possible and if
         necessary, we will adjust the measures to keep it as fun as possible for everybody. Any suggestions are
         always welcome via the contact details below.
-      `
+      `,
     },
     form: {
       title: 'Reservation',
@@ -435,7 +421,7 @@ export default {
         one_person_seat: 'Individual seat',
         two_person_seat: 'Two-person seat',
         within_distance: '(within 1.5 metre)',
-        unavailable: 'No longer available'
+        unavailable: 'No longer available',
       },
       time_slot: `Timeslot`,
       seat_type: `Type of Seat`,
@@ -455,8 +441,8 @@ export default {
       validation: {
         A_guest_can_only_have_one_open_booking: `
           You already have an active reservation for the coming days. You can only have one open booking at a time.
-        `
-      }
+        `,
+      },
     },
     canceled: `
       Your reservation is cancelled. If you want, you can make a new reservation down below.
@@ -467,8 +453,8 @@ export default {
       'Pay contactless with your phone of card',
       "Don't shake hands and say no to hugs",
       'Keep a distance of 1.5 metres from others',
-      'Do you have health complaints? Stay home!'
-    ]
+      'Do you have health complaints? Stay home!',
+    ],
   },
   remembrance_day: {
     title: 'DWH Wreath-Laying',
@@ -502,7 +488,7 @@ export default {
         together with us. Below you find the virtual wreath-layers so far.
       `,
       board_label_dwh: 'DWH Board',
-      board_label_outsite: 'Outsite Board'
+      board_label_outsite: 'Outsite Board',
     },
     form: {
       title: 'Lay a virtual wreath',
@@ -511,11 +497,11 @@ export default {
         By submitting this form, you agree to give DWH the permission to publicly publish your name on this page. Your
         data will be removed when this page is taken down. In case of any questions, please contact us via the contact
         details below.
-      `
+      `,
     },
     video_description: `
       Last year, in 2019, former DWH president Michel Fleur and former Outsite president Casper Boone laid flowers on
       behalf of DWH during the commemoration of Remembrance Day in Delft.
-    `
-  }
+    `,
+  },
 }

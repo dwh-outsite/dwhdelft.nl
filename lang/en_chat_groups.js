@@ -15,7 +15,7 @@ export default {
     Discord: `
       Want to talk to some people outside of our regular events? Play a game or watch a show together, the discord is
       the place to talk.
-    `
+    `,
   },
   'Groups for <strong>volunteers</strong>': {
     Bartenders: `
@@ -29,7 +29,7 @@ export default {
     'Online Activities': `
       While our bar is closed our association continues online! If you'd like to help organise one of the many things
       we do while we exist mostly online, be sure to join this chat and find people to organise it with you :)
-    `
+    `,
   },
   'Groups for <strong>various interests</strong>': {
     'Chicks before Ducks': `
@@ -63,6 +63,6 @@ export default {
     Strijders: `
       Studying can be hard, especially on your own. In this group we plan to study together, at the TU or now in our
       own bar, and even just the fancy coffee breaks are worth it :)
-    `
-  }
+    `,
+  },
 }

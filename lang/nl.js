@@ -1,21 +1,24 @@
+import footer from '~/lang/nl/footer.js'
+
 import barbuddies from '~/lang/nl_barbuddies.js'
 import chatGroups from '~/lang/nl_chat_groups.js'
 
 export default {
+  footer,
   menu: [
-    { title: 'Home', url: localePath => localePath('index') },
-    { title: 'Kom naar DWH', url: localePath => localePath('index') + '#join-dwh' },
-    { title: 'Reserveren', url: localePath => localePath('book') },
-    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
-    { title: 'Voorlichting', url: localePath => localePath('education') },
-    { title: 'Andersblad', url: localePath => localePath('andersblad') },
-    { title: 'Contact', url: () => '#contact' }
+    { title: 'Home', url: (localePath) => localePath('index') },
+    { title: 'Kom naar DWH', url: (localePath) => localePath('index') + '#join-dwh' },
+    { title: 'Reserveren', url: (localePath) => localePath('book') },
+    { title: 'EatingOUT', url: (localePath) => localePath('index') + '#eatingout' },
+    { title: 'Voorlichting', url: (localePath) => localePath('education') },
+    { title: 'Andersblad', url: (localePath) => localePath('andersblad') },
+    { title: 'Contact', url: () => '#contact' },
   ],
   hero: {
     title: 'LHBT+ vereniging sinds 1968',
     subtitle: 'Voor iedereen in Delft en omgeving!',
     leftButton: 'Kom naar DWH',
-    rightButton: 'Openingstijden'
+    rightButton: 'Openingstijden',
   },
   description: {
     text: `DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek
@@ -27,7 +30,7 @@ export default {
       Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
       baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
       bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!`,
-    invitation: 'Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.'
+    invitation: 'Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.',
   },
   activities: {
     title: 'Aankomende activiteiten',
@@ -36,15 +39,15 @@ export default {
         banner_title: 'Wekelijkse baravond',
         banner_subtitle: 'Open voor iedereen',
         title: 'Baravond',
-        date: 'Elke zaterdag vanaf 19.00 uur'
+        date: 'Elke zaterdag vanaf 19.00 uur',
       },
       eating_out: {
         banner_title: 'Wekelijkse eettafel',
         banner_subtitle: 'Alleen voor leden, aanmelden verplicht',
         title: 'EatingOUT',
-        date: 'Elke dinsdag om 18.30 uur'
-      }
-    }
+        date: 'Elke dinsdag om 18.30 uur',
+      },
+    },
   },
   ways_to_join: {
     title: 'Kennismaken met <strong>DWH</strong>?',
@@ -64,17 +67,17 @@ export default {
       meet_up_with: 'Afspreken met',
       barbuddies_title: 'Onze <strong>Barbuddies</strong>',
       read_more: 'Lees meer',
-      read_less: 'Inklappen'
-    }
+      read_less: 'Inklappen',
+    },
   },
   recurring_events: {
     announcement: '<strong>DWH</strong> is elke week op 4 avonden open',
     button: {
       title: `<strong>Reserveer</strong> nu voor één van onze activiteiten`,
-      note: `Reserveren verplicht i.v.m. COVID-19`
+      note: `Reserveren verplicht i.v.m. COVID-19`,
     },
     closed_notice: {
-      title: `Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.`
+      title: `Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.`,
     },
     events: [
       {
@@ -85,7 +88,7 @@ export default {
         description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
           één van onze leden, met soms een activiteit achteraf.`,
         buttonText: 'Aanmelden',
-        buttonLink: 'https://dwhdelft.nl/eatingout'
+        buttonLink: 'https://dwhdelft.nl/eatingout',
       },
       {
         name: 'Fillum',
@@ -94,7 +97,7 @@ export default {
         description: `Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
           aan de beurt.`,
         buttonText: 'Programma <small>(voor leden)</small>',
-        buttonLink: 'http://homodelft.nl/films/'
+        buttonLink: 'http://homodelft.nl/films/',
       },
       {
         name: 'Outsite',
@@ -104,22 +107,22 @@ export default {
         description: `Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
           Outsite website voor aankomende events!`,
         buttonText: 'Ga naar Outsite.nl',
-        buttonLink: 'https://outsite.nl/'
+        buttonLink: 'https://outsite.nl/',
       },
       {
         name: 'Open Bar',
         day: 'Zaterdag',
         time: '----',
         description: `Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
-          feesten en doe mee met een van onze vele events!`
-      }
-    ]
+          feesten en doe mee met een van onze vele events!`,
+      },
+    ],
   },
   eating_out: {
     title: 'EatingOUT: Onze wekelijkse eettafel',
     subtitle: 'Elke dinsdag eten voor maar 4 euro',
     button: 'Meld je aan voor aankomende dinsdag',
-    notes: ['Alleen voor leden', 'Aanmelden verplicht']
+    notes: ['Alleen voor leden', 'Aanmelden verplicht'],
   },
   forms: {
     label: {
@@ -132,7 +135,7 @@ export default {
       languages: {
         dutch: 'Nederlands',
         english: 'Engels',
-        no_preference: 'Geen voorkeur'
+        no_preference: 'Geen voorkeur',
       },
       remarks: 'Heb je verder nog vragen?',
       date_of_birth: 'Geboortedatum',
@@ -143,7 +146,7 @@ export default {
       pronouns: 'Pronouns',
       barbuddy: 'Met wie wil je afspreken?',
       membership_fee: 'Tariefgroep Contributie (zie onderaan deze pagina)',
-      iban: 'IBAN nummer voor betaling via automatisch incasso'
+      iban: 'IBAN nummer voor betaling via automatisch incasso',
     },
     placeholder: {
       name: 'Naam',
@@ -158,32 +161,18 @@ export default {
       address: 'Straat en Huisnummer',
       postal_code: 'Postcode (bijvoorbeeld 2611PV)',
       pronouns: 'bv. zij/haar, hij/hem, hen/hun',
-      iban: 'IBAN nummer'
+      iban: 'IBAN nummer',
     },
     buttons: {
       sign_up: 'Aanmelden',
       submit: 'Verzenden',
-      loading: 'Laden'
+      loading: 'Laden',
     },
     success: {
       heading: 'Het formulier is succesvol verstuurd',
       barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.',
-      membership: 'We sturen je binnenkort een bevestiging van je lidmaatschap.'
-    }
-  },
-  footer: {
-    newsletter: {
-      description: 'Blijf op de hoogte, meld je aan voor de <strong>DWH nieuwsbrief</strong>',
-      button: 'Aanmelden'
+      membership: 'We sturen je binnenkort een bevestiging van je lidmaatschap.',
     },
-    leftTitle: 'Bestuur',
-    rightTitle: 'Contact',
-    board: {
-      president: 'Voorzitter',
-      secretary: 'Secretaris',
-      treasurer: 'Penningmeester',
-      general: 'Algemeen Bestuurslid'
-    }
   },
   barbuddies,
   andersblad: {
@@ -192,7 +181,7 @@ export default {
       Het verenigingsblad van DWH verschijnt meerdere malen per jaar. Eerdere edities zijn hier te downloaden in PDF
       formaat.
     `,
-    list_title: '<strong>Andersblad</strong> Edities'
+    list_title: '<strong>Andersblad</strong> Edities',
   },
   chatgroups: {
     title: 'Chatgroepen',
@@ -205,7 +194,7 @@ export default {
       <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
       verenigingstelefoon (+31 6 3756 0270)</a> met de chat waar je aan toegevoegd zou willen worden.
     `,
-    categories: chatGroups
+    categories: chatGroups,
   },
   anbi: {
     title: 'ANBI',
@@ -259,7 +248,7 @@ export default {
       <strong>Financiële verantwoording</strong><br />
       Voor een financiële verantwoording wordt verwezen naar de jaarrekening. Jaarlijks stelt DWH de jaarrekening vast
       waarin de financiële verantwoording over het afgelopen jaar wordt vastgelegd.
-    `
+    `,
   },
   education: {
     title: 'Voorlichting',
@@ -288,7 +277,7 @@ export default {
       Coördinatoren voorlichting<br />
       <br />
       P.S. Lid van DWH en wil je misschien zelf voorlichter worden? Stuur ons dan ook een mail!
-    `
+    `,
   },
   signup: {
     title: 'Inschrijven als DWH lid',
@@ -320,8 +309,8 @@ export default {
     `,
     fees: {
       full: 'Normaal (€ 48,50)',
-      discounted: 'Gereduceerd (€ 25,00)'
-    }
+      discounted: 'Gereduceerd (€ 25,00)',
+    },
   },
   steunons: {
     title: 'Steun Ons',
@@ -377,7 +366,7 @@ export default {
        Voor iedere aankoop krijgen wij een kleine commissie. Geld dat binnenkomt via
        Sponsorkliks komt direct als extra budget bij een van onze (roterende) commissies
        terecht. Zo draagt u op een makkelijke manier bij aan het mogelijk maken van meer
-       leuke activiteiten en het realiseren van onze doelen.`
+       leuke activiteiten en het realiseren van onze doelen.`,
   },
   bookings: {
     title: 'Reserveren',
@@ -418,13 +407,13 @@ export default {
         'Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe reservering te maken',
         'Tweepersoonsplekken zijn bedoeld voor mensen uit hetzelfde huishouden',
         `Als er geen tweepersoonsplekken meer beschikbaar zijn en je wilt wel met twee personen komen, dan kun je twee
-        maal individueel reserveren. Mits mogelijk kun je alsnog bij elkaar gaan zitten`
+        maal individueel reserveren. Mits mogelijk kun je alsnog bij elkaar gaan zitten`,
       ],
       rules_disclaimer: `
         We begrijpen dat bovenstaande regels niet voor iedereen het meest ideaal zullen zijn. Zodra het kan en waar
         nodig zullen we de regels aanpassen om het voor iedereen zo leuk mogelijk te maken. Suggesties zijn altijd
         welkom via de contactgegevens onderaan deze pagina.
-      `
+      `,
     },
     form: {
       title: 'Reserveren',
@@ -436,7 +425,7 @@ export default {
         one_person_seat: 'Eenpersoonszitplaats',
         two_person_seat: 'Tweepersoonszitplaats',
         within_distance: '(binnen 1,5 meter)',
-        unavailable: 'Niet meer beschikbaar'
+        unavailable: 'Niet meer beschikbaar',
       },
       time_slot: `Tijdslot`,
       seat_type: `Type Zitplek`,
@@ -457,8 +446,8 @@ export default {
         A_guest_can_only_have_one_open_booking: `
           Je hebt al een actieve reservering voor een event de komende tijd. Je kunt maximaal 1 openstaande
           reservering hebben.
-        `
-      }
+        `,
+      },
     },
     canceled: `
       Je reservering is geannuleerd. Indien gewenst kun je hieronder een nieuwe reservering plaatsen.
@@ -469,8 +458,8 @@ export default {
       'Betaal contactloos met je telefoon of pinpas',
       'Schud geen handen en sla de knuffels over',
       'Houd 1,5 meter afstand tot anderen',
-      'Heb je klachten? Blijf thuis!'
-    ]
+      'Heb je klachten? Blijf thuis!',
+    ],
   },
   remembrance_day: {
     title: 'Kranslegging DWH',
@@ -505,7 +494,7 @@ export default {
         een virtuele krans te leggen. Hieronder zie je de virtuele kransleggers waar jij je bij aansluit.
       `,
       board_label_dwh: 'Bestuur DWH',
-      board_label_outsite: 'Bestuur Outsite'
+      board_label_outsite: 'Bestuur Outsite',
     },
     form: {
       title: 'Virtuele krans leggen',
@@ -513,11 +502,11 @@ export default {
       disclaimer: `
         Bij het verzenden van dit formulier geef je DWH toestemming om je naam op deze pagina te publiceren. Na afloop
         van de actie zullen je gegevens worden verwijderd. Neem voor vragen contact op via onderstaande gegevens.
-      `
+      `,
     },
     video_description: `
       Vorig jaar, in 2019, legden toenmalig DWH-voorzitter Michel Fleur en toenmalig Outsite-voorzitter Casper Boone
       bloemen tijdens dodenherdenking in Delft namens DWH.
-    `
-  }
+    `,
+  },
 }

@@ -1,50 +1,34 @@
 @tailwind base;
 @tailwind components;
+
+
+html {
+  @apply bg-gray-700 antialiased;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  font-size: 16px;
+  /* word-spacing: 1px; 
+   -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; */
+}
+
+.button-pink {
+  @apply bg-purple-500 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
+}
+
+.button-pink:hover {
+  @apply bg-purple-300;
+}
+
+.button-white {
+  @apply bg-white px-4 py-2 rounded text-gray-700 uppercase tracking-wider shadow font-semibold;
+}
+
+.button-white:hover {
+  @apply bg-gray-200;
+}
+
 @tailwind utilities;
-
-.form-element {
-  @apply mb-4;
-}
-
-.form-element label:not(.radio), .form-element-label {
-  @apply uppercase text-sm tracking-wide font-semibold block mb-1;
-}
-
-.form-element label.radio {
-  @apply block mb-2;
-}
-
-.form-element label.radio input {
-  @apply mr-1;
-}
-
-.form-element input:not([type='radio']),
-.form-element textarea {
-  @apply bg-white rounded-lg block px-4 py-3 w-full;
-}
-
-.form-element-gray {
-  @apply mb-4;
-}
-
-.form-element-gray label:not(.radio) {
-  @apply uppercase text-sm tracking-wide font-semibold block mb-1;
-}
-
-.form-element-gray label.radio {
-  @apply block mb-2;
-}
-
-.form-element-gray label.radio input {
-  @apply mr-1;
-}
-
-.form-element-gray input:not([type='radio']),
-.form-element-gray textarea {
-  @apply bg-gray-200 rounded-lg block px-4 py-3 w-full;
-}
-
-.required::after {
-  @apply text-red-600;
-  content: '*';
-}

@@ -15,7 +15,7 @@ export default {
     Discord: `
       Wil je ook weleens praten praten en niet alleen chatten buiten de vereniging? Of het nou is om te gamen, een serie
       te kijken of gewoon bij te kletsen, de Discord is er om op te praten.
-    `
+    `,
   },
   'Groepen voor <strong>vrijwilligers</strong>': {
     Bartenders: `
@@ -29,7 +29,7 @@ export default {
     'Online Activities': `
       Zolang onze bar dicht is gaat de vereniging lekker online door! Wil jij ook iets organiseren nu we vooral online
       zijn? Join dan deze chat om mensen te vinden waarmee je dat kan doen :)
-    `
+    `,
   },
   'Groepen voor <strong>verschillende interesses</strong>': {
     'Chicks before Ducks': `
@@ -63,6 +63,6 @@ export default {
     Strijders: `
       Studeren kan zwaar zijn, zeker in je eentje. In deze groep spreken we af om samen te studeren, op de TU of zoals
       nu in onze eigen bar, en alleen al de fancy koffiepauzes maken het het waard :)
-    `
-  }
+    `,
+  },
 }

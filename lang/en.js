@@ -2,15 +2,6 @@ import barbuddies from '~/lang/en_barbuddies.js'
 import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
-  menu: [
-    { title: 'Home', url: (localePath) => localePath('index') },
-    { title: 'Join DWH', url: (localePath) => localePath('index') + '#join-dwh' },
-    { title: 'Reservations', url: (localePath) => localePath('book') },
-    { title: 'EatingOUT', url: (localePath) => localePath('index') + '#eatingout' },
-    { title: 'Education', url: (localePath) => localePath('education') },
-    { title: 'Andersblad', url: (localePath) => localePath('andersblad') },
-    { title: 'Contact', url: () => '#contact' },
-  ],
   hero: {
     title: 'LGBT+ association since 1968',
     subtitle: 'For everyone in the Delft area!',
@@ -246,35 +237,6 @@ export default {
       <strong>Financial account</strong><br />
       For a financial account we refer the reader to the annual account. Each year DWH creates and approves the annual
       account in which the financial report and account of the preceding year is recorded.
-    `,
-  },
-  education: {
-    title: 'Education',
-    main_text: `
-      Who doesn’t remember puberty? A period with many changes… Hair begins to grow in places, you start being
-      independent from your parents and you fall in love for the first time! But what if you fall in love with someone
-      of the same gender?<br />
-      <br />
-      Many LGBT youngsters can’t cope with this and don’t dare to come out because they fear they might be victims of
-      bullying. In high schools, the word gay is unfortunately too often used as a term of abuse. This shows that young
-      people often don’t have a grasp of what constitutes homosexuality, which sometimes can result in incomprehension
-      and harassment.<br />
-      <br />
-      Through education we can show the young people that homosexuality is not that strange. By breaking stereotypes and
-      explaining the sexual diversity terms, we get the youth to think actively about homosexuality and its meaning for
-      themselves. Experience shows that after being informed, young people have more respect for sexual diversity and
-      more importantly, for each other!<br />
-      <br />
-      DWH characterizes itself for having a predominantly young and enthusiastic team of educators. Through this small
-      age difference with the high school students it is often easy for them to relate and identify to our educators.
-      Do you want DWH to come to your school? Send us an email at
-      <a href="mailto:voorlichting@dwhdelft.nl" class="text-purple-500">voorlichting@dwhdelft.nl</a>.<br />
-      <br />
-      See you soon!<br />
-      Jeroen en Justin<br />
-      Education Coordinators<br />
-      <br />
-      P.S. Are you a member of DWH and would you like to become an educator? Send us an email!
     `,
   },
   signup: {

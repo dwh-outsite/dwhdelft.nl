@@ -1,19 +1,7 @@
-import footer from '~/lang/nl/footer.js'
-
 import barbuddies from '~/lang/nl_barbuddies.js'
 import chatGroups from '~/lang/nl_chat_groups.js'
 
 export default {
-  footer,
-  menu: [
-    { title: 'Home', url: (localePath) => localePath('index') },
-    { title: 'Kom naar DWH', url: (localePath) => localePath('index') + '#join-dwh' },
-    { title: 'Reserveren', url: (localePath) => localePath('book') },
-    { title: 'EatingOUT', url: (localePath) => localePath('index') + '#eatingout' },
-    { title: 'Voorlichting', url: (localePath) => localePath('education') },
-    { title: 'Andersblad', url: (localePath) => localePath('andersblad') },
-    { title: 'Contact', url: () => '#contact' },
-  ],
   hero: {
     title: 'LHBT+ vereniging sinds 1968',
     subtitle: 'Voor iedereen in Delft en omgeving!',
@@ -248,35 +236,6 @@ export default {
       <strong>Financiële verantwoording</strong><br />
       Voor een financiële verantwoording wordt verwezen naar de jaarrekening. Jaarlijks stelt DWH de jaarrekening vast
       waarin de financiële verantwoording over het afgelopen jaar wordt vastgelegd.
-    `,
-  },
-  education: {
-    title: 'Voorlichting',
-    main_text: `
-      Wie kan het zich niet herinneren, de puberteit? Een periode waar veel in verandert… Zo begint de groei van
-      beharing, maak je je los van je ouders en word je voor het eerst verliefd! Maar wat nou als je op iemand verliefd
-      wordt van je eigen geslacht?<br />
-      <br />
-      Veel LHBT+ jongeren weten zich hier geen raad mee en durven het niet te vertellen omdat ze bijvoorbeeld bang zijn
-      het doelwit te worden van pesterijen. Op de middelbare scholen wordt, jammer genoeg, het woord homo nog vaak
-      genoeg als scheldwoord gebruikt. Het blijkt dat de jongeren vaak geen goed besef hebben van wat homoseksualiteit
-      inhoudt, met soms onbegrip en pesterijen tot gevolg.<br />
-      <br />
-      Door voorlichting te geven zien de jongeren in dat homoseksualiteit eigenlijk helemaal niet vreemd is. Zo worden
-      de stereotyperingen doorbroken, de termen binnen seksuele diversiteit behandeld en denken de jongeren zelf actief
-      na over homoseksualiteit. Uit ervaring blijkt dat de jongeren na de voorlichting meer respect hebben voor seksuele
-      diversiteiten en, nog veel belangrijker, voor elkaar!<br />
-      <br />
-      DWH kenmerkt zichzelf door een enthousiast en overwegend jong team aan voorlichters. Door dit kleine
-      leeftijdsverschil met de middelbare scholieren is het vaak gemakkelijk voor hen zich te identificeren met onze
-      voorlichters. Wilt u dat DWH bij uw school langskomt? Neem dan contact met ons op door te mailen naar
-      <a href="mailto:voorlichting@dwhdelft.nl" class="text-purple-500">voorlichting@dwhdelft.nl</a>.<br />
-      <br />
-      Tot snel!<br />
-      Jeroen en Justin<br />
-      Coördinatoren voorlichting<br />
-      <br />
-      P.S. Lid van DWH en wil je misschien zelf voorlichter worden? Stuur ons dan ook een mail!
     `,
   },
   signup: {

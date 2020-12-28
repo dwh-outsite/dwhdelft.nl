@@ -50,13 +50,13 @@ export default {
   i18n: {
     locales: [
       { code: 'nl', iso: 'nl-NL', file: 'nl.js' },
-      { code: 'en', iso: 'en-US', file: 'en.js' }
+      { code: 'en', iso: 'en-US', file: 'en.js' },
     ],
     defaultLocale: 'nl',
     langDir: 'lang/',
     lazy: true,
     vueI18n: {
-      fallbackLocale: 'nl'
+      fallbackLocale: 'nl',
     },
     vueI18nLoader: true,
   },

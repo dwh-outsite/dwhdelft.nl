@@ -72,7 +72,7 @@ nl:
       </div>
     </nav>
     <div class="image-container">
-      <img src="~/assets/images/cover.jpg" class="opacity-50" />
+      <img src="~/assets/images/photos/cover.jpg" class="opacity-50" />
     </div>
     <div class="hero"></div>
     <div class="relative flex items-center h-full">

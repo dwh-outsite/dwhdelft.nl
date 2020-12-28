@@ -2,41 +2,6 @@ import barbuddies from '~/lang/en_barbuddies.js'
 import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
-  hero: {
-    title: 'LGBT+ association since 1968',
-    subtitle: 'For everyone in the Delft area!',
-    leftButton: 'Check out DWH',
-    rightButton: 'Opening Hours',
-  },
-  description: {
-    text: `DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for
-      LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance. As the
-      latter, we give lectures at schools, have introduction groups for newly out people and organise public events
-      arounds dates like coming out day.
-      <br>
-      <br>
-      As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
-      nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
-      beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!`,
-    invitation: `We are <strong>temporarily closed</strong> due to COVID-19.`,
-  },
-  activities: {
-    title: 'Upcoming activities',
-    defaults: {
-      bar: {
-        banner_title: 'Weekly bar night',
-        banner_subtitle: 'Open for everyone',
-        title: 'Bar Night',
-        date: 'Every Saturday from 7pm',
-      },
-      eating_out: {
-        banner_title: 'Weekly dinner',
-        banner_subtitle: 'Members only, registration required',
-        title: 'EatingOUT',
-        date: 'Every Tuesday at 6.30pm',
-      },
-    },
-  },
   ways_to_join: {
     title: 'Ready to check out <strong>DWH</strong>?',
     description: `You're always welcome on a Saturday night during a bar night. Do you think this is too exciting or
@@ -57,60 +22,6 @@ export default {
       read_more: 'Read more',
       read_less: 'Collapse',
     },
-  },
-  recurring_events: {
-    announcement: '<strong>DWH</strong> is open 4 nights a week',
-    button: {
-      title: `<strong>Book a table</strong> for one of our activities`,
-      note: `Bookings are mandatory due to COVID-19`,
-    },
-    closed_notice: {
-      title: `We are <strong>temporarily closed</strong> due to COVID-19.`,
-    },
-    events: [
-      {
-        name: 'EatingOUT',
-        note: 'Members only',
-        day: 'Tuesday',
-        time: '----',
-        description: `On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
-          members, sometimes with an activity afterwards.`,
-        buttonText: 'Sign Up',
-        buttonLink: 'https://dwhdelft.nl/eatingout',
-      },
-      {
-        name: 'Fillum',
-        day: 'Wednesday',
-        time: '----',
-        description: `The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
-          old classics.`,
-        buttonText: 'Programme <small>(For Members)</small>',
-        buttonLink: 'http://homodelft.nl/films/',
-      },
-      {
-        name: 'Outsite',
-        note: 'Max. 28 years old',
-        day: 'Thursday',
-        time: '----',
-        description: `Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
-          website for upcoming events and more.`,
-        buttonText: 'Head to Outsite.nl',
-        buttonLink: 'https://outsite.nl/en',
-      },
-      {
-        name: 'Open Bar Night',
-        day: 'Saturday',
-        time: '----',
-        description: `Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
-          parties, and join one of our many events!`,
-      },
-    ],
-  },
-  eating_out: {
-    title: 'EatingOUT: Our weekly dinner',
-    subtitle: 'Every Tuesday, for just 4 euros',
-    button: 'Sign up for the next EatingOUT now',
-    notes: ['Members only', 'Sign-up required'],
   },
   forms: {
     label: {

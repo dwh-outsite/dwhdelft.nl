@@ -2,41 +2,6 @@ import barbuddies from '~/lang/nl_barbuddies.js'
 import chatGroups from '~/lang/nl_chat_groups.js'
 
 export default {
-  hero: {
-    title: 'LHBT+ vereniging sinds 1968',
-    subtitle: 'Voor iedereen in Delft en omgeving!',
-    leftButton: 'Kom naar DWH',
-    rightButton: 'Openingstijden',
-  },
-  description: {
-    text: `DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek
-      voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
-      tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en
-      allerlei openbare events rond dagen als coming out dag.
-      <br>
-      <br>
-      Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
-      baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
-      bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!`,
-    invitation: 'Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.',
-  },
-  activities: {
-    title: 'Aankomende activiteiten',
-    defaults: {
-      bar: {
-        banner_title: 'Wekelijkse baravond',
-        banner_subtitle: 'Open voor iedereen',
-        title: 'Baravond',
-        date: 'Elke zaterdag vanaf 19.00 uur',
-      },
-      eating_out: {
-        banner_title: 'Wekelijkse eettafel',
-        banner_subtitle: 'Alleen voor leden, aanmelden verplicht',
-        title: 'EatingOUT',
-        date: 'Elke dinsdag om 18.30 uur',
-      },
-    },
-  },
   ways_to_join: {
     title: 'Kennismaken met <strong>DWH</strong>?',
     description: `Je bent altijd welkom op een zaterdagavond tijdens een baravond. Vind je dit spannend? Dan kun je
@@ -57,60 +22,6 @@ export default {
       read_more: 'Lees meer',
       read_less: 'Inklappen',
     },
-  },
-  recurring_events: {
-    announcement: '<strong>DWH</strong> is elke week op 4 avonden open',
-    button: {
-      title: `<strong>Reserveer</strong> nu voor één van onze activiteiten`,
-      note: `Reserveren verplicht i.v.m. COVID-19`,
-    },
-    closed_notice: {
-      title: `Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.`,
-    },
-    events: [
-      {
-        name: 'EatingOUT',
-        note: 'Alleen leden',
-        day: 'Dinsdag',
-        time: '----',
-        description: `Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
-          één van onze leden, met soms een activiteit achteraf.`,
-        buttonText: 'Aanmelden',
-        buttonLink: 'https://dwhdelft.nl/eatingout',
-      },
-      {
-        name: 'Fillum',
-        day: 'Woensdag',
-        time: '----',
-        description: `Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
-          aan de beurt.`,
-        buttonText: 'Programma <small>(voor leden)</small>',
-        buttonLink: 'http://homodelft.nl/films/',
-      },
-      {
-        name: 'Outsite',
-        note: 'Max. 28 jaar',
-        day: 'Donderdag',
-        time: '----',
-        description: `Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
-          Outsite website voor aankomende events!`,
-        buttonText: 'Ga naar Outsite.nl',
-        buttonLink: 'https://outsite.nl/',
-      },
-      {
-        name: 'Open Bar',
-        day: 'Zaterdag',
-        time: '----',
-        description: `Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
-          feesten en doe mee met een van onze vele events!`,
-      },
-    ],
-  },
-  eating_out: {
-    title: 'EatingOUT: Onze wekelijkse eettafel',
-    subtitle: 'Elke dinsdag eten voor maar 4 euro',
-    button: 'Meld je aan voor aankomende dinsdag',
-    notes: ['Alleen voor leden', 'Aanmelden verplicht'],
   },
   forms: {
     label: {

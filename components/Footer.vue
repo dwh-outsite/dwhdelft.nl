@@ -99,42 +99,49 @@ nl:
     <hr class="border-b border-gray-600 m-0" />
 
     <div class="container mx-auto px-4 py-4 md:flex justify-between items-center">
-      <div class="flex justify-center md:justify-start">
-        <a href="https://instagram.com/dwh_delft" target="_blank">
-          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
-            <InstagramIcon class="fill-current w-6" />
-          </div>
-        </a>
-        <a href="https://facebook.com/DWHDelft" target="_blank">
-          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
-            <FacebookIcon class="fill-current w-6" />
-          </div>
-        </a>
-        <a href="https://github.com/dwh-outsite/dwhdelft.nl" target="_blank">
-          <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
-            <GitHubIcon class="fill-current w-6" />
-          </div>
-        </a>
-        <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
-          <div
-            class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold items-center hover:bg-gray-300 mr-6"
+      <div class="md:flex">
+        <div class="flex justify-center md:justify-start">
+          <a href="https://instagram.com/dwh_delft" target="_blank">
+            <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
+              <InstagramIcon class="fill-current w-6" />
+            </div>
+          </a>
+          <a href="https://facebook.com/DWHDelft" target="_blank">
+            <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
+              <FacebookIcon class="fill-current w-6" />
+            </div>
+          </a>
+          <a href="https://github.com/dwh-outsite/dwhdelft.nl" target="_blank">
+            <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
+              <GitHubIcon class="fill-current w-6" />
+            </div>
+          </a>
+          <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
+            <div
+              class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold items-center hover:bg-gray-300 md:mr-6"
+            >
+              Sponsor<span class="text-green-600">kliks</span>
+            </div>
+          </a>
+        </div>
+        <div class="flex justify-center md:justify-start mt-4 md:mt-0">
+          <a :href="localePath('anbi')" class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3">
+            ANBI
+          </a>
+          <a
+            :href="localePath('privacy')"
+            class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
           >
-            <span class="text-teal-900">Sponsor</span><span class="text-teal-600">kliks</span>
-          </div>
-        </a>
-        <a :href="localePath('anbi')" class="text-white font-bold inline-flex items-center text-gray-400 mr-3">
-          ANBI
-        </a>
-        <a :href="localePath('privacy')" class="text-white font-bold inline-flex items-center text-gray-400 mr-3">
-          Privacy
-        </a>
-        <a :href="localePath('steunons')" class="text-white font-bold inline-flex items-center text-gray-400">
-          {{ $t('steunons.title') }}
-        </a>
+            Privacy
+          </a>
+          <a :href="localePath('steunons')" class="font-bold inline-flex items-center text-gray-400 hover:text-white">
+            {{ $t('steunons.title') }}
+          </a>
+        </div>
       </div>
       <a
         :href="localePath('index')"
-        class="text-gray-400 hover:text-white flex justify-center md:justify-end pt-4 md:pt-0"
+        class="text-gray-400 hover:text-white text-xs md:text-base flex items-center justify-center md:justify-end pt-4 md:pt-0"
       >
         &copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}
         <DWHLogo class="h-8 ml-2 fill-current" />

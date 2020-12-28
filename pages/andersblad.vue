@@ -19,11 +19,9 @@ nl:
       </Header>
     </header>
 
-    <section class="container mx-auto mb-12 text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p class="py-8" v-html="$t('main_text')" />
-      </div>
-    </section>
+    <PageIntroText>
+      <p v-html="$t('main_text')" />
+    </PageIntroText>
 
     <section v-if="editions.length > 0" class="bg-purple-400">
       <div class="container px-4 mx-auto pt-8 pb-12">

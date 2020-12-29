@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-if="$i18n.locale == 'en'" class="shadow bg-purple-500 p-4 rounded mb-8 inline-flex items-center">
+  <section class="flex justify-center">
+    <div v-if="$i18n.locale == 'en'" class="shadow bg-purple-500 p-4 rounded inline-flex items-center">
       <div
         class="rounded-full w-7 h-7 bg-white mr-2 border-2 border-white flex items-center justify-center overflow-hidden relative"
       >
@@ -8,7 +8,7 @@
       </div>
       <div class="text-lg font-semibold text-white">This page is only available in Dutch.</div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

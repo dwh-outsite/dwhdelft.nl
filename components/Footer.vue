@@ -15,6 +15,9 @@ en:
     - name: Jelle Vos
       role: Commissioner
       email: promotie@dwhdelft.nl
+  links:
+    support_us: Support Us
+    sign_up: Join DWH as a member
 nl:
   boardTitle: Bestuur
   contactTitle: Contact
@@ -31,6 +34,9 @@ nl:
     - name: Jelle Vos
       role: Algemeen Bestuurslid
       email: promotie@dwhdelft.nl
+  links:
+    support_us: Steun Ons
+    sign_up: Inschrijven als DWH lid
 </i18n>
 
 <template>
@@ -88,7 +94,7 @@ nl:
               :href="localePath('signup')"
               class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
             >
-              {{ $t('signup.title') }}
+              {{ $t('links.sign_up') }}
               <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
             </a>
           </div>
@@ -138,10 +144,10 @@ nl:
             Privacy
           </nuxt-link>
           <nuxt-link
-            :to="localePath('/steunons')"
+            :to="localePath('/support-us')"
             class="font-bold inline-flex items-center text-gray-400 hover:text-white"
           >
-            {{ $t('steunons.title') }}
+            {{ $t('links.support_us') }}
           </nuxt-link>
         </div>
       </div>

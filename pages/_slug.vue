@@ -6,10 +6,12 @@
       </Header>
     </header>
 
+    <language-warning v-if="showLanguageWarning" />
+
     <ColumnLayout v-if="content.layout === 'column'">
       <nuxt-content class="content" :document="content" />
     </ColumnLayout>
-    <ArticleLayout v-if="content.layout === 'article'">
+    <ArticleLayout v-else-if="content.layout === 'article'">
       <nuxt-content class="content" :document="content" />
     </ArticleLayout>
     <div v-else>This layout is not available.</div>
@@ -17,21 +19,28 @@
 </template>
 
 <script>
+import LanguageWarning from '~/components/LanguageWarning.vue'
+
 export default {
+  components: { LanguageWarning },
   async asyncData(context) {
+    let showLanguageWarning = false
+
     const { $content, params, app, error } = context
-    const slug = params.slug
+    const slug = params.slug.replace('-', '_')
     const content = await $content(`pages/${slug}.${app.i18n.locale}`)
       .fetch()
-      .catch(() =>
-        $content(`pages/${slug}.${app.i18n.defaultLocale}`)
+      .catch(() => {
+        showLanguageWarning = true
+
+        return $content(`pages/${slug}.${app.i18n.defaultLocale}`)
           .fetch()
           .catch(() => {
             error({ statusCode: 404, message: 'Page not found' })
           })
-      )
+      })
 
-    return { content }
+    return { content, showLanguageWarning }
   },
 }
 </script>

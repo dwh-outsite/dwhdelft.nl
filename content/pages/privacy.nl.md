@@ -3,8 +3,6 @@ title: Privacy
 layout: article
 ---
 
-<language-warning></language-warning>
-
 Delftse Werkgroep Homoseksualiteit<br>
 Lange Geer 22<br>
 2611 PV Delft<br>

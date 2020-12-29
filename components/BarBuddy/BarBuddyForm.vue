@@ -82,7 +82,7 @@ export default {
       this.formStatus = 'loading'
 
       new Firebase()
-        .submitAndSendEmail('mail@casperboone.nl', 'barbuddy', this.form)
+        .submitAndSendEmail('kennismaken@dwhdelft.nl', 'barbuddy', this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })

@@ -39,37 +39,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.content h1 {
-  @apply font-bold mt-6 mb-1 text-2xl;
-}
-
-.content h2 {
-  @apply font-bold mt-2 mb-1 text-xl;
-}
-
-.content h3 {
-  @apply font-bold;
-}
-
-.content p {
-  @apply mb-4;
-}
-
-.content a {
-  @apply text-purple-600;
-}
-
-.content a:hover {
-  @apply text-purple-800 underline;
-}
-
-.content ul {
-  @apply mb-3 -mt-3;
-}
-
-.content li {
-  @apply list-disc mb-1 ml-6;
-}
-</style>

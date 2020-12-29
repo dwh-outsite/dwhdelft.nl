@@ -45,40 +45,6 @@ export default {
     },
     success: {
       heading: 'Het formulier is succesvol verstuurd',
-      membership: 'We sturen je binnenkort een bevestiging van je lidmaatschap.',
-    },
-  },
-  signup: {
-    title: 'Inschrijven als DWH lid',
-    main_text: `
-      Door lid te worden steun je ons in díe dingen die we zo belangrijk vinden, zoals de kennismakingsgroep,
-      voorlichting op middelbare scholen, filmavond, baravonden en alle andere activiteiten bij DWH.<br />
-      <br />
-      Als lid ontvang je het blad van DWH: het Andersblad en mag je bij de EatingOUT aanschuiven waar je lekker,
-      gezellig en goedkoop kunt eten.
-    `,
-    fee_description: `
-      De contributie van DWH bedraagt minimaal € 48,50 / € 25,00 per jaar. Een hogere bijdrage is natuurlijk van harte
-      welkom.<br />
-      <br />
-      In de algemene ledenvergadering is besloten dat DWH prijsdifferentiatie voor de contributie gebruikt, op basis van
-      draagkracht. Om het niet al te ingewikkeld te maken, is er een vuistregel opgesteld: Voor mensen met een leeftijd
-      tot en met 25 jaar, of vanaf de pensioengerechtigde leeftijd, geldt een gereduceerd tarief van tenminste € 25,00.
-      Alle andere leden betalen de normale contributie van € 48,50.<br />
-      <br />
-      Er zijn uitzonderingen:
-      <ul class="list-disc ml-8">
-        <li>Mensen die aan de hand van de vuistregel korting op de contributie zouden krijgen, doch genoeg verdienen
-            voor het normale tarief, behoren dat normale tarief ook te betalen.</li>
-        <li>Mensen die aan de hand van de vuistregel geen korting op de contributie krijgen doch het financieel niet
-            kunnen bolwerken om het (normale) tarief te betalen, kunnen zich wenden tot de penningmeester.</li>
-        <li>Wanneer een verandering optreedt in de situatie die effect heeft op een van bovenstaande uitzonderingen,
-            dient dit aan de penningmeester gemeld te worden.</li>
-      </ul>
-    `,
-    fees: {
-      full: 'Normaal (€ 48,50)',
-      discounted: 'Gereduceerd (€ 25,00)',
     },
   },
   bookings: {

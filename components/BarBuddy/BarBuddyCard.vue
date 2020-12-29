@@ -10,21 +10,20 @@ nl:
 </i18n>
 
 <template>
-  <div class="bg-white rounded shadow p-6 md:p-8">
-    <div class="flex justify-between items-center mb-4">
-      <div class="flex items-center">
-        <div class="rounded-full w-12 h-12 p-3 bg-purple-500 text-white">
-          <Zondicon icon="user" class="fill-current" />
-        </div>
-        <h2 class="text-2xl font-bold ml-3 text-purple-500 uppercase tracking-wider">
-          {{ buddy.name }}
-        </h2>
+  <ActionCard :title="buddy.name">
+    <template v-slot:icon>
+      <div class="rounded-full w-12 h-12 p-3 bg-purple-500 text-white mr-3">
+        <Zondicon icon="user" class="fill-current" />
       </div>
-      <button class="button-pink flex items-center hidden md:flex" @click="$emit('meet', buddy)">
+    </template>
+
+    <template v-slot:button>
+      <PrimaryButton class="flex items-center" @click="$emit('meet', buddy)">
         {{ $t('meet_up_with') }} {{ buddy.name }}
         <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
-      </button>
-    </div>
+      </PrimaryButton>
+    </template>
+
     <div :class="['text-lg relative', expanded ? 'pb-8' : 'clamp-lines']">
       <span class="absolute z-10 bottom-0 right-0 flex">
         <span class="w-32 block white-gradient" />
@@ -34,11 +33,7 @@ nl:
       </span>
       {{ buddy[$i18n.locale] }}
     </div>
-    <button class="button-pink flex items-center mt-4 flex md:hidden" @click="$emit('meet', buddy)">
-      {{ $t('meet_up_with') }} {{ buddy.name }}
-      <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
-    </button>
-  </div>
+  </ActionCard>
 </template>
 
 <script>

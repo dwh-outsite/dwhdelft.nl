@@ -1,5 +1,3 @@
-import chatGroups from '~/lang/en_chat_groups.js'
-
 export default {
   forms: {
     label: {
@@ -49,19 +47,6 @@ export default {
       heading: 'The form has been submitted successfully',
       membership: 'We will send you an e-mail soon to confirm your membership.',
     },
-  },
-  chatgroups: {
-    title: 'Chat groups',
-    join: 'Join',
-    main_text: `
-      Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
-      whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
-      overview!<br /><br />
-      Want to join a group but don't see a link? Send a message to the
-      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
-      association phone (+31 6 3756 0270)</a> with the chats you'd like to join.
-    `,
-    categories: chatGroups,
   },
   signup: {
     title: 'Membership Signup',

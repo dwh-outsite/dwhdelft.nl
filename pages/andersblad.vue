@@ -13,9 +13,7 @@ nl:
 
 <template>
   <div>
-    <Header small="true">
-      <h1 class="text-4xl text-white font-normal" v-text="$t('title')" />
-    </Header>
+    <SmallHeader>{{ $t('title') }}</SmallHeader>
 
     <PageIntroText>
       <p v-html="$t('main_text')" />

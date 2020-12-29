@@ -19,11 +19,9 @@ nl:
 
 <template>
   <div>
-    <Header small="true">
-      <h1 class="text-4xl text-white font-normal">
-        {{ $t('title') }}
-      </h1>
-    </Header>
+    <SmallHeader>
+      {{ $t('title') }}
+    </SmallHeader>
 
     <PageIntroText>
       <p v-html="$t('description')" />
@@ -52,10 +50,7 @@ nl:
 </template>
 
 <script>
-import Header from '~/components/Header'
-
 export default {
-  components: { Header },
   async asyncData({ $content, app }) {
     const barBuddies = await $content('barbuddies')
       .where({ [app.i18n.locale]: { $type: 'string' } })

@@ -1,10 +1,6 @@
 <template>
   <div>
-    <header>
-      <Header small="true">
-        <h1 class="text-4xl text-white font-normal" v-text="content.title" />
-      </Header>
-    </header>
+    <SmallHeader>{{ content.title }}</SmallHeader>
 
     <language-warning v-if="showLanguageWarning" />
 

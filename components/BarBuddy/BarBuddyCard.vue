@@ -32,7 +32,7 @@ nl:
           {{ $t('' + (expanded ? 'read_less' : 'read_more')) }}
         </a>
       </span>
-      <nuxt-content :document="buddy" />
+      {{ buddy[$i18n.locale] }}
     </div>
     <button class="button-pink flex items-center mt-4 flex md:hidden" @click="$emit('meet', buddy)">
       {{ $t('meet_up_with') }} {{ buddy.name }}

@@ -58,7 +58,7 @@ export default {
   components: { Header },
   async asyncData({ $content, app }) {
     const barBuddies = await $content('barbuddies')
-      .where({ slug: { $regex: `${app.i18n.locale}$` } })
+      .where({ [app.i18n.locale]: { $type: 'string' } })
       .fetch()
 
     return { barBuddies }

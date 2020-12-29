@@ -50,9 +50,9 @@ nl:
           <p class="mb-8 text-lg" v-text="$t('bar_buddy.description')" />
         </div>
         <div>
-          <a :href="localePath('barbuddy')">
+          <nuxt-link :to="localePath('barbuddy')">
             <button class="block button-pink" v-text="$t('bar_buddy.action')" />
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>

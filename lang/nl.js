@@ -1,28 +1,6 @@
-import barbuddies from '~/lang/nl_barbuddies.js'
 import chatGroups from '~/lang/nl_chat_groups.js'
 
 export default {
-  ways_to_join: {
-    title: 'Kennismaken met <strong>DWH</strong>?',
-    description: `Je bent altijd welkom op een zaterdagavond tijdens een baravond. Vind je dit spannend? Dan kun je
-      gebruik maken van ons barbuddysysteem!`,
-    outsite_hint: `Ben je 28 jaar of jonger? Kijk dan ook eens bij
-      <a href="https://outsite.nl/" class="font-bold">Outsite</a>, het jongerendeel van de vereniging.`,
-    bar_buddy: {
-      title: 'Barbuddies',
-      description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
-        voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de
-        vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
-      thursday_note: `Jonger dan 28? Kijk dan bij <a href="https://outsite.nl/barbuddy" class="underline">Outsite</a> om
-        langs te komen op donderdag`,
-      action: 'Vind een barbuddy',
-      sign_up: 'Aanmelden voor een barbuddy',
-      meet_up_with: 'Afspreken met',
-      barbuddies_title: 'Onze <strong>Barbuddies</strong>',
-      read_more: 'Lees meer',
-      read_less: 'Inklappen',
-    },
-  },
   forms: {
     label: {
       name: 'Hoe mogen we je noemen?',
@@ -69,11 +47,9 @@ export default {
     },
     success: {
       heading: 'Het formulier is succesvol verstuurd',
-      barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.',
       membership: 'We sturen je binnenkort een bevestiging van je lidmaatschap.',
     },
   },
-  barbuddies,
   chatgroups: {
     title: 'Chatgroepen',
     join: 'Join',

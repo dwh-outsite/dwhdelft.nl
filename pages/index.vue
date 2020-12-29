@@ -35,20 +35,18 @@ nl:
 
 <template>
   <div>
-    <header>
-      <Header>
-        <h1 class="text-4xl text-white font-normal" v-text="$t('hero.title')" />
-        <h2 class="text-2xl text-white mt-2 font-light" v-text="$t('hero.subtitle')" />
-        <div class="mt-8 flex">
-          <a href="#join-dwh">
-            <button class="block button-pink" v-text="$t('hero.leftButton')" />
-          </a>
-          <a href="#recurring_events">
-            <button class="block ml-4 button-white" v-text="$t('hero.rightButton')" />
-          </a>
-        </div>
-      </Header>
-    </header>
+    <Header>
+      <h1 class="text-4xl text-white font-normal" v-text="$t('hero.title')" />
+      <h2 class="text-2xl text-white mt-2 font-light" v-text="$t('hero.subtitle')" />
+      <div class="mt-8 flex">
+        <a href="#join-dwh">
+          <button class="block button-pink" v-text="$t('hero.leftButton')" />
+        </a>
+        <a href="#recurring_events">
+          <button class="block ml-4 button-white" v-text="$t('hero.rightButton')" />
+        </a>
+      </div>
+    </Header>
 
     <section class="introduction overflow-x-hidden">
       <div class="container mx-auto pt-12 pb-24 md:flex">

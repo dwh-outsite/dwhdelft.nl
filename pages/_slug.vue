@@ -23,10 +23,9 @@ import LanguageWarning from '~/components/LanguageWarning.vue'
 
 export default {
   components: { LanguageWarning },
-  async asyncData(context) {
+  async asyncData({ $content, params, app, error }) {
     let showLanguageWarning = false
 
-    const { $content, params, app, error } = context
     const slug = params.slug.replace('-', '_')
     const content = await $content(`pages/${slug}.${app.i18n.locale}`)
       .fetch()

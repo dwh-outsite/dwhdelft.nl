@@ -1,28 +1,6 @@
-import barbuddies from '~/lang/en_barbuddies.js'
 import chatGroups from '~/lang/en_chat_groups.js'
 
 export default {
-  ways_to_join: {
-    title: 'Ready to check out <strong>DWH</strong>?',
-    description: `You're always welcome on a Saturday night during a bar night. Do you think this is too exciting or
-    frightening? Then you can make use of our bar buddy system!`,
-    outsite_hint: `Are you 28 years or younger? Take a look at
-      <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.`,
-    bar_buddy: {
-      title: 'Bar Buddies',
-      description: `If you are looking to come by on a Saturday night but you are not yet familiar with the society you
-        can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
-        about DWH but they can also introduce you to new people.`,
-      thursday_note: `28 years or younger? Check <a href="https://outsite.nl/barbuddy" class="underline">Outsite</a> to
-        visit us on a Thursday`,
-      sign_up: 'Sign up for a bar buddy',
-      action: 'Find a bar buddy',
-      meet_up_with: 'Meet up with',
-      barbuddies_title: 'Our <strong>Bar Buddies</strong>',
-      read_more: 'Read more',
-      read_less: 'Collapse',
-    },
-  },
   forms: {
     label: {
       name: 'How should we call you?',
@@ -69,11 +47,9 @@ export default {
     },
     success: {
       heading: 'The form has been submitted successfully',
-      barbuddy: 'The bar buddy you selected will contact you as soon as possible.',
       membership: 'We will send you an e-mail soon to confirm your membership.',
     },
   },
-  barbuddies,
   chatgroups: {
     title: 'Chat groups',
     join: 'Join',
@@ -119,60 +95,6 @@ export default {
       full: 'Regular (€ 48,50)',
       discounted: 'Reduced (€ 25,00)',
     },
-  },
-  steunons: {
-    title: 'Support Us',
-    volunteering: `<strong>Volunteers</strong><br />
-      DWH is fully dependent on its volunteers. Every year there are more than a 100
-      volunteers active in DWH. Our volunteers organize a lot of activities, bartend,
-      give education in schools, and so much more. Would you like to be a
-      volunteer? Approach us in the bar or send us an email at
-      <a href="mailto:bestuur@dwhdelft.nl" class="text-purple-500">bestuur@dwhdelft.nl</a>.`,
-    membership_title: '<strong>Membership</strong>',
-    membership_post: `More information and signup form can be found by following this
-      <a href="https://dwhdelft.nl/en/signup/" class="text-purple-500">link</a>.`,
-    donate: `<strong>Donating</strong><br />
-      By donating you can support DWH financially. Extra funds could always be put to
-      good use to organize more activities for the LGBT+ community, offering a meeting
-      place for LGBT+ people, giving education on schools and so much more.<br />
-      <br />
-      You can donate by transferring money to IBAN: NL75 INGB 0003 2492 37 t.n.v.
-      DWH ledenadministratie. If you want to gift yearly and put it on paper you can
-      fill in the form below and send it to
-      <a href="mailto:penningmeester@dwhdelft.nl" class="text-purple-500">
-      penningmeester@dwhdelft.nl</a> By also filling out the direct debit (incasso)
-      form the donation can be done automatically every year.<br />
-      <br />
-      <strong>Tax deduction</strong><br />
-      The Delftse Werkgroep Homoseksualiteit (DWH) has an
-      <a href="https://dwhdelft.nl/en/anbi/" class="text-purple-500">ANBI
-      (public benefit institution) status</a>. Under certain conditions your donation might
-      be tax deductible. For the exact conditions for which this tax deduction applies we
-      refer to the 
-      <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/gift-aftrekken"
-      class="text-purple-500">website of the Dutch tax authorities</a><br />
-      <br />
-      For any further questions about donating to DWH please send us a mail to
-      <a href="mailto:penningmeester@dwhdelft.nl" class="text-purple-500">
-      penningmeester@dwhdelft.nl</a>`,
-    andersblad_ads: `<strong>Adverteren in het Andersblad</strong><br />
-      The <a href="https://dwhdelft.nl/en/andersblad" class="text-purple-500">
-      Andersblad</a> is the magazine of DWH. It has 3 issues every year (at the end
-      of April, Agusust and December). The Andersblad is always full of great articles,
-      opinion pieces, photo’s and much more. The magazine is distributed among all our
-      members and our many partners. There are always more than 300 copies produced for
-      every issue.<br />
-      <br />
-      There are opportunities for you to advertise in our magazine. Send an email to
-      <a href="mailto:penningmeester@dwhdelft.nl" class="text-purple-500">
-      penningmeester@dwhdelft.nl</a> for the current rates and options.`,
-    sponsorkliks: `<strong>Sponsorkliks</strong><br />
-      By ordering goods online through our Sponsorkliks link
-      <a href="https://dwhdelft.nl/sponsorkliks" class="text-purple-500">
-      dwhdelft.nl/sponsorkliks</a> you can sponsor DWH for free! For every purchase
-      through our link we will get a small commission fee. Money that we get through
-      Sponsorkliks is directly added to one of our (rotating) committees. This way you
-      can help us in an easy way to realize our goals and organize more activities.`,
   },
   bookings: {
     title: 'Reservations',

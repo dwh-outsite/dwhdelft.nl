@@ -34,7 +34,7 @@ nl:
 </i18n>
 
 <template>
-  <div id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
+  <header id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
         <nuxt-link :to="localePath('index')">
@@ -80,7 +80,7 @@ nl:
         <slot></slot>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

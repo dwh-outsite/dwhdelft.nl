@@ -13,11 +13,9 @@ nl:
 
 <template>
   <div>
-    <header>
-      <Header small="true">
-        <h1 class="text-4xl text-white font-normal" v-text="$t('title')" />
-      </Header>
-    </header>
+    <Header small="true">
+      <h1 class="text-4xl text-white font-normal" v-text="$t('title')" />
+    </Header>
 
     <PageIntroText>
       <p v-html="$t('main_text')" />

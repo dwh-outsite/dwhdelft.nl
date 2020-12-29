@@ -31,6 +31,53 @@ html {
   @apply bg-gray-200;
 }
 
+.form-element {
+  @apply mb-4;
+}
+
+.form-element label:not(.radio), .form-element-label {
+  @apply uppercase text-sm tracking-wide font-semibold block mb-1;
+}
+
+.form-element label.radio {
+  @apply block mb-2;
+}
+
+.form-element label.radio input {
+  @apply mr-1;
+}
+
+.form-element input:not([type='radio']),
+.form-element textarea {
+  @apply bg-white rounded-lg block px-4 py-3 w-full;
+}
+
+.form-element-gray {
+  @apply mb-4;
+}
+
+.form-element-gray label:not(.radio) {
+  @apply uppercase text-sm tracking-wide font-semibold block mb-1;
+}
+
+.form-element-gray label.radio {
+  @apply block mb-2;
+}
+
+.form-element-gray label.radio input {
+  @apply mr-1;
+}
+
+.form-element-gray input:not([type='radio']),
+.form-element-gray textarea {
+  @apply bg-gray-200 rounded-lg block px-4 py-3 w-full;
+}
+
+.required::after {
+  @apply text-red-600;
+  content: '*';
+}
+
 @tailwind utilities;
 
 @layer utilities {

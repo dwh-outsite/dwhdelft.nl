@@ -38,6 +38,8 @@ export default {
     'nuxt-i18n',
     // https://www.npmjs.com/package/nuxt-svg-loader
     'nuxt-svg-loader',
+    // https://content.nuxtjs.org/
+    '@nuxt/content',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

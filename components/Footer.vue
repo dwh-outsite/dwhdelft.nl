@@ -125,18 +125,24 @@ nl:
           </a>
         </div>
         <div class="flex justify-center md:justify-start mt-4 md:mt-0">
-          <a :href="localePath('anbi')" class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3">
+          <nuxt-link
+            :to="localePath('/anbi')"
+            class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
+          >
             ANBI
-          </a>
-          <a
-            :href="localePath('privacy')"
+          </nuxt-link>
+          <nuxt-link
+            :to="localePath('/privacy')"
             class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
           >
             Privacy
-          </a>
-          <a :href="localePath('steunons')" class="font-bold inline-flex items-center text-gray-400 hover:text-white">
+          </nuxt-link>
+          <nuxt-link
+            :to="localePath('/steunons')"
+            class="font-bold inline-flex items-center text-gray-400 hover:text-white"
+          >
             {{ $t('steunons.title') }}
-          </a>
+          </nuxt-link>
         </div>
       </div>
       <a

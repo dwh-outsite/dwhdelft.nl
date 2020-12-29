@@ -10,7 +10,7 @@ en:
     - title: EatingOUT
       url: index#eatingout
     - title: Education
-      url: education
+      url: /education
     - title: Andersblad
       url: andersblad
     - title: Contact
@@ -26,7 +26,7 @@ nl:
     - title: EatingOUT
       url: index#eatingout
     - title: Voorlichting
-      url: education
+      url: /education
     - title: Andersblad
       url: andersblad
     - title: Contact
@@ -37,29 +37,29 @@ nl:
   <div id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
-        <a :href="localePath('index')">
+        <nuxt-link :to="localePath('index')">
           <DWHLogo class="h-16 fill-current text-white" />
-        </a>
+        </nuxt-link>
         <div v-show="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
-          <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
+          <nuxt-link v-for="item in menu" :key="item.url" :to="item.url" class="block md:inline no-underline mr-4 my-2">
             {{ item.title }}
-          </a>
+          </nuxt-link>
         </div>
         <div class="hidden md:block text-xl font-semibold text-white">
-          <a v-for="item in menu" :key="item.url" :href="item.url" class="block md:inline no-underline mr-4 my-2">
+          <nuxt-link v-for="item in menu" :key="item.url" :to="item.url" class="block md:inline no-underline mr-4 my-2">
             {{ item.title }}
-          </a>
+          </nuxt-link>
         </div>
         <div class="flex">
           <div
             class="rounded-full w-7 h-7 bg-white mr-3 md:mr-4 border-2 border-white flex items-center justify-center overflow-hidden relative"
           >
-            <a v-show="$i18n.locale == 'nl'" :href="switchLocalePath('en')" class="block h-6 w-8 absolute">
+            <nuxt-link v-show="$i18n.locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
               <GBFlag />
-            </a>
-            <a v-show="$i18n.locale == 'en'" :href="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+            </nuxt-link>
+            <nuxt-link v-show="$i18n.locale == 'en'" :to="switchLocalePath('nl')" class="block h-6 w-8 absolute">
               <NLFlag />
-            </a>
+            </nuxt-link>
           </div>
           <div
             class="rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white flex items-center justify-center md:hidden overflow-hidden relative"

@@ -19,9 +19,17 @@
 <script>
 export default {
   async asyncData(context) {
-    const { $content, params, app } = context
+    const { $content, params, app, error } = context
     const slug = params.slug
-    const content = await $content(`pages/${slug}.${app.i18n.locale}`).fetch()
+    const content = await $content(`pages/${slug}.${app.i18n.locale}`)
+      .fetch()
+      .catch(() =>
+        $content(`pages/${slug}.${app.i18n.defaultLocale}`)
+          .fetch()
+          .catch(() => {
+            error({ statusCode: 404, message: 'Page not found' })
+          })
+      )
 
     return { content }
   },

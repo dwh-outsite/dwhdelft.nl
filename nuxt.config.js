@@ -75,6 +75,7 @@ export default {
     defaultLocale: 'nl',
     langDir: 'assets/lang/',
     lazy: true,
+    detectBrowserLanguage: false,
     vueI18n: {
       fallbackLocale: 'nl',
     },

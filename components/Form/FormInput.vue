@@ -22,7 +22,7 @@
 export default {
   props: {
     required: { type: Boolean, default: false },
-    value: Object,
+    value: [String, Boolean, Number],
     placeholder: String,
     type: { type: String, default: 'text' },
   },

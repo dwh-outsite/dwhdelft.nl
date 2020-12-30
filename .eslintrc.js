@@ -13,5 +13,6 @@ module.exports = {
   rules: {
     'vue/require-prop-types': 0,
     'vue/no-v-html': 0,
+    'vue/require-default-prop': 0,
   },
 }

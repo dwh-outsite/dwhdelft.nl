@@ -104,9 +104,9 @@ nl:
 
     <hr class="border-b border-gray-600 m-0" />
 
-    <div class="container mx-auto px-4 py-4 md:flex justify-between items-center">
-      <div class="md:flex">
-        <div class="flex justify-center md:justify-start">
+    <div class="container mx-auto px-4 py-4 lg:flex justify-between items-center">
+      <div class="lg:flex">
+        <div class="flex justify-center lg:justify-start">
           <a href="https://instagram.com/dwh_delft" target="_blank">
             <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
               <InstagramIcon class="fill-current w-6" />
@@ -124,13 +124,13 @@ nl:
           </a>
           <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
             <div
-              class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold items-center hover:bg-gray-300 md:mr-6"
+              class="rounded-full h-10 px-3 py-2 bg-white text-gray-700 uppercase tracking-wide text-sm flex font-semibold items-center hover:bg-gray-300 lg:mr-6"
             >
               Sponsor<span class="text-green-600">kliks</span>
             </div>
           </a>
         </div>
-        <div class="flex justify-center md:justify-start mt-4 md:mt-0">
+        <div class="flex justify-center lg:justify-start mt-4 lg:mt-0">
           <nuxt-link
             :to="localePath('/anbi')"
             class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
@@ -153,7 +153,7 @@ nl:
       </div>
       <a
         :href="localePath('index')"
-        class="text-gray-400 hover:text-white text-xs md:text-base flex items-center justify-center md:justify-end pt-4 md:pt-0"
+        class="text-gray-400 hover:text-white text-xs lg:text-base flex items-center justify-center lg:justify-end pt-4 lg:pt-0"
       >
         &copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}
         <DWHLogo class="h-8 ml-2 fill-current" />

@@ -33,7 +33,7 @@ nl:
         </div>
         <div class="relative md:w-2/5">
           <div class="divider">
-            <div class="divider-content h-full flex items-center px-4 md:pl-16">
+            <div class="divider-content h-full flex items-center px-4 md:pl-8 lg:pl-16">
               <div class="mx-auto md:mx-0">
                 <a href="https://dwhdelft.nl/eatingout" target="_blank">
                   <button class="button-white text-left mb-2">

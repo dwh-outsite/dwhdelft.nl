@@ -45,7 +45,7 @@ nl:
             {{ item.title }}
           </nuxt-link>
         </div>
-        <div class="hidden md:block text-xl font-semibold text-white">
+        <div class="hidden md:block px-4 text-xl font-semibold text-white">
           <nuxt-link v-for="item in menu" :key="item.url" :to="item.url" class="block md:inline no-underline mr-4 my-2">
             {{ item.title }}
           </nuxt-link>

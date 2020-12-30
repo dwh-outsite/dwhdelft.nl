@@ -37,8 +37,8 @@ nl:
       <div class="flex-1 mx-2 flex items-end mt-4">
         <div class="text-white">
           <h1 class="font-medium leading-none text-5xl mb-4" v-html="$t('title')"></h1>
-          <p class="text-lg md:pr-40 mb-4" v-html="$t('description')" />
-          <p class="text-lg md:pr-40" v-html="$t('outsite_hint')" />
+          <p class="text-lg lg:pr-40 mb-4" v-html="$t('description')" />
+          <p class="text-lg lg:pr-40" v-html="$t('outsite_hint')" />
         </div>
       </div>
       <div class="bg-white rounded-lg md:rounded-t-none p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0">

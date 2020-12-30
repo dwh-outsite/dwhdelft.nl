@@ -50,7 +50,7 @@ nl:
 
     <section class="introduction overflow-x-hidden">
       <div class="container mx-auto pt-12 pb-24 md:flex">
-        <div class="flex-1 px-4 md:pr-32">
+        <div class="flex-1 px-4 lg:pr-32">
           <p
             v-for="paragraph in $t('description.text')"
             :key="paragraph"
@@ -59,7 +59,7 @@ nl:
           />
           <Invitation :content="$t('description.invitation')" />
         </div>
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
           <div class="bg-white p-4 border rotate shadow-lg relative z-50 mr-8 -mt-7">
             <img src="~/assets/images/photos/building.jpg" class="w-96" />
           </div>

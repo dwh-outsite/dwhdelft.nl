@@ -25,7 +25,7 @@ nl:
           <h1 class="text-white font-medium text-5xl" v-html="$t('list_title')" />
         </div>
         <div class="flex flex-wrap justify-center">
-          <div v-for="edition in editions" :key="edition.id" class="md:w-1/3 p-4">
+          <div v-for="edition in editions" :key="edition.id" class="md:w-1/2 xl:w-1/3 p-4">
             <a :href="edition.webViewLink" target="_blank">
               <div class="shadow-xl p-6 rounded-lg bg-white hover:bg-purple-100 hover:text-purple-500 flex">
                 <div>

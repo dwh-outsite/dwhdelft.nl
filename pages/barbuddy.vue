@@ -30,8 +30,8 @@ nl:
     <section class="bg-purple-300">
       <div class="container px-4 mx-auto pt-8 pb-12">
         <h1 class="text-white text-center font-medium text-5xl mb-8" v-html="$t('bar_buddies_title')" />
-        <div class="md:flex flex-wrap -mx-2 mt-2">
-          <div v-for="buddy in barBuddies" :key="buddy.name" class="md:w-1/2 p-2">
+        <div class="lg:flex flex-wrap -mx-2 mt-2">
+          <div v-for="buddy in barBuddies" :key="buddy.name" class="lg:w-1/2 p-2">
             <BarBuddyCard :buddy="buddy" @meet="meetWith(buddy)" />
           </div>
         </div>

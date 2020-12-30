@@ -34,12 +34,12 @@ nl:
       </div>
     </section>
 
-    <section class="booking-form-section relative pb-12 md:pb-24">
-      <div class="mx-auto container px-4 md:flex flex-row-reverse">
-        <div class="flex-1 pt-16 md:pl-16">
+    <section class="booking-form-section relative pb-16 lg:pb-24">
+      <div class="mx-auto container px-4 lg:flex flex-row-reverse">
+        <div class="flex-1 pt-16 lg:pl-16">
           <nuxt-content class="booking-rules-content text-white text-xl" :document="bookingRules" />
         </div>
-        <div class="md:w-1/2 pt-8 md:pt-40">
+        <div class="lg:w-1/2 pt-8 lg:pt-40">
           <BookingForm />
         </div>
       </div>

@@ -45,7 +45,7 @@ nl:
       >
         <h1 class="text-white font-medium text-5xl leading-none mb-6" v-html="categoryName" />
         <div class="md:flex flex-wrap mt-2">
-          <div v-for="group in chatGroupsByCategory[category]" :key="group.name" class="md:w-1/2 p-2">
+          <div v-for="group in chatGroupsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
             <ActionCard :title="group.name" class="h-full">
               <template v-slot:button>
                 <a v-show="group.url" :href="group.url" target="_blank">

@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@aceforth/nuxt-netlify@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@aceforth/nuxt-netlify/-/nuxt-netlify-1.1.0.tgz#ad45117532a17477f8134473ca6dd179df2d20bf"
+  integrity sha512-dppObGjvr1IRuE70aAvXfNtxZjbHpBCu17Lr54rggbYT/k1n5qh3yqQQ1pkJzH/gRlcKNqqxGYiNtLTP2gJraQ==
+  dependencies:
+    consola "^2.14.0"
+    fs-extra "^9.0.1"
+    lodash.template "^4.5.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -3466,7 +3475,7 @@ connect@^3.7.0:
     parseurl "~1.3.3"
     utils-merge "1.0.1"
 
-consola@^2.10.0, consola@^2.11.3, consola@^2.15.0, consola@^2.3.2, consola@^2.6.0, consola@^2.9.0:
+consola@^2.10.0, consola@^2.11.3, consola@^2.14.0, consola@^2.15.0, consola@^2.3.2, consola@^2.6.0, consola@^2.9.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.0.tgz#40fc4eefa4d2f8ef2e2806147f056ea207fcc0e9"
   integrity sha512-vlcSGgdYS26mPf7qNi+dCisbhiyDnrN1zaRbw3CSuc2wGOMEGGPsp46PdRG5gqXwgtJfjxDkxRNAgRPr1B77vQ==

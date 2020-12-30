@@ -1,3 +1,6 @@
+import fs from 'fs'
+import path from 'path'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -41,6 +44,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://marquez.co/docs/nuxt-netlify/
+    '@aceforth/nuxt-netlify',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -75,4 +80,19 @@ export default {
     },
     vueI18nLoader: true,
   },
+
+  // Netlify configuration (https://marquez.co/docs/nuxt-netlify/)
+  netlify: {
+    redirects: createRedirects().concat([
+      {
+        from: 'https://dwh.netlify.com/*',
+        to: 'https://dwhdelft.nl/:splat',
+        status: '301!',
+      },
+    ]),
+  },
+}
+
+function createRedirects(directory = 'content/redirects') {
+  return fs.readdirSync(directory).map((fileName) => JSON.parse(fs.readFileSync(path.join(directory, fileName))))
 }

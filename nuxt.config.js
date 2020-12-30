@@ -11,14 +11,11 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: `
-          DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek
-          voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
-          tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en
-          allerlei openbare events rond dagen als coming out dag.
-        `,
+        content:
+          'DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek ' +
+          'voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie.',
       },
-      { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'DWH Delft' }
+      { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'DWH Delft' },
     ],
     link: [
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },

@@ -11,6 +11,7 @@ axios
     fs.writeFile('static/activities.json', JSON.stringify(response.data), 'utf8', () => {})
   })
   .catch((error) => {
+    // eslint-disable-next-line no-console
     console.log(error)
     process.exit(1)
   })

@@ -4,13 +4,29 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'dwhdelft.nl',
+    title: 'DWH - LHBT+ vereniging Delft',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: `
+          DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek
+          voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
+          tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en
+          allerlei openbare events rond dagen als coming out dag.
+        `,
+      },
+      { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'DWH Delft' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+      { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#e31c79' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -55,7 +71,7 @@ export default {
       { code: 'en', iso: 'en-US', file: 'en.js' },
     ],
     defaultLocale: 'nl',
-    langDir: 'lang/',
+    langDir: 'assets/lang/',
     lazy: true,
     vueI18n: {
       fallbackLocale: 'nl',

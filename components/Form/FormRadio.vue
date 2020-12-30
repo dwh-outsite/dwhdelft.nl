@@ -8,7 +8,7 @@
 <script>
 export default {
   props: {
-    value: Object,
+    value: [String, Boolean, Number],
     option: String,
     label: String,
   },

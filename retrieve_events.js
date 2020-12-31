@@ -7,6 +7,11 @@ axios
       '?fields=name,cover,start_time&limit=100&time_filter=upcoming&access_token=' +
       process.env.FACEBOOK_PAGE_ACCESS_TOKEN
   )
-  .then(response => {
+  .then((response) => {
     fs.writeFile('static/activities.json', JSON.stringify(response.data), 'utf8', () => {})
+  })
+  .catch((error) => {
+    // eslint-disable-next-line no-console
+    console.log(error)
+    process.exit(1)
   })

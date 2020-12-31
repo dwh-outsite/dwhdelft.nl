@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+html {
+  @apply bg-gray-700 antialiased;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.button-pink {
+  @apply bg-purple-500 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
+}
+
+.button-pink:hover {
+  @apply bg-purple-300;
+}
+
+.button-white {
+  @apply bg-white px-4 py-2 rounded text-gray-700 uppercase tracking-wider shadow font-semibold;
+}
+
+.button-white:hover {
+  @apply bg-gray-200;
+}
 
 .form-element {
   @apply mb-4;
@@ -47,4 +70,52 @@
 .required::after {
   @apply text-red-600;
   content: '*';
+}
+
+.content h1 {
+  @apply font-bold mt-6 mb-1 text-2xl;
+}
+
+.content h2 {
+  @apply font-bold mt-2 mb-1 text-xl;
+}
+
+.content h3 {
+  @apply font-bold;
+}
+
+.content p {
+  @apply mb-4;
+}
+
+.content a {
+  @apply text-purple-600;
+}
+
+.content a:hover {
+  @apply text-purple-800 underline;
+}
+
+.content ul {
+  @apply mb-3 -mt-3;
+}
+
+.content li {
+  @apply list-disc mb-1 ml-6;
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .text-columns-1 {
+      columns: 1;
+    }
+    .text-columns-2 {
+      columns: 2;
+    }
+    .text-columns-3 {
+      columns: 3;
+    }
+  }
 }

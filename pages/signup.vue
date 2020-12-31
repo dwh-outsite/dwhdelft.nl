@@ -1,115 +1,96 @@
+<i18n lang="yaml">
+en:
+  title: Membership Signup
+  main_text:
+    - By becoming a member you support us in the things that we find important, like the introduction groups, education
+      at secondary schools, the movie night, the bar nights and all other activities at DWH.
+    - 'As a member you receive the magazine from DWH: the Andersblad, and you can join the EatingOUT where you can enjoy
+      a cheap and delicious meal.'
+  form_success: We will send you an e-mail soon to confirm your membership.
+nl:
+  title: Inschrijven als DWH lid
+  main_text:
+    - Door lid te worden steun je ons in díe dingen die we zo belangrijk vinden, zoals de kennismakingsgroep,
+      voorlichting op middelbare scholen, filmavond, baravonden en alle andere activiteiten bij DWH.
+    - 'Als lid ontvang je het blad van DWH: het Andersblad en mag je bij de EatingOUT aanschuiven waar je lekker,
+      gezellig en goedkoop kunt eten.'
+  form_success: We sturen je binnenkort een bevestiging van je lidmaatschap.
+</i18n>
+
 <template>
   <div>
-    <header>
-      <Header small="true">
-        <h1 class="text-4xl text-white font-normal">
-          {{ $t('signup.title') }}
-        </h1>
-      </Header>
-    </header>
+    <SmallHeader>{{ $t('title') }}</SmallHeader>
 
-    <section class="container mx-auto mb-12 text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p v-html="$t('signup.main_text')" class="mt-8 md:mt-0 mb-8" />
-      </div>
-    </section>
+    <PageIntroText>
+      <p v-for="text in $t('main_text')" :key="text" class="mb-4" v-html="text" />
+    </PageIntroText>
 
     <section id="form" class="bg-gray-200 pt-12 pb-12">
       <div class="mx-auto container">
         <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
-          {{ $t('signup.title') }}
+          {{ $t('title') }}
         </h2>
-        <div v-if="formStatus === 'finished'">
-          <div class="mx-auto container px-4 my-8 flex justify-center">
-            <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg flex items-center">
-              <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
-                <Zondicon icon="checkmark-outline" class="fill-current w-10" />
-              </div>
-              <div class="ml-4">
-                <h4 class="font-semibold text-xl">{{ $t('forms.success.heading') }}</h4>
-                <span class="text-gray-700">{{ $t('forms.success.membership') }}</span>
-              </div>
-            </div>
-          </div>
+
+        <div v-if="formStatus === 'finished'" class="my-8 flex justify-center">
+          <FormCompleted class="md:pr-48" :title="$t('forms.success.heading')" :subtitle="$t('form_success')" />
         </div>
-        <form v-if="formStatus !== 'finished'" @submit="submit" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.firstname') }}</label>
-            <input v-model="form.firstname" :placeholder="$t('forms.placeholder.firstname')" type="text" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.initials') }}</label>
-            <input v-model="form.initials" :placeholder="$t('forms.placeholder.initials')" type="text" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.lastname') }}</label>
-            <input v-model="form.lastname" :placeholder="$t('forms.placeholder.lastname')" type="text" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.language') }}</label>
-            <label class="radio">
-              <input v-model="form.language" type="radio" value="dutch" />
-              {{ $t('forms.label.languages.dutch') }}
-            </label>
-            <label class="radio">
-              <input v-model="form.language" type="radio" value="english" />
-              {{ $t('forms.label.languages.english') }}
-            </label>
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.date_of_birth') }}</label>
-            <input v-model="form.date_of_birth" :placeholder="$t('forms.placeholder.date_of_birth')" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.address') }}</label>
-            <input v-model="form.address" :placeholder="$t('forms.placeholder.address')" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.postal_code') }}</label>
-            <input v-model="form.postal_code" :placeholder="$t('forms.placeholder.postal_code')" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.residence') }}</label>
-            <input v-model="form.residence" :placeholder="$t('forms.placeholder.residence')" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.email') }}</label>
-            <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.phone_number') }}</label>
-            <input v-model="form.phoneNumber" :placeholder="$t('forms.placeholder.phone_number')" required />
-          </p>
-          <p class="form-element">
-            <label>{{ $t('forms.label.pronouns') }}</label>
-            <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.membership_fee') }}</label>
-            <label class="radio">
-              <input v-model="form.membership_fee" type="radio" value="full" />
-              {{ $t('signup.fees.full') }}
-            </label>
-            <label class="radio">
-              <input v-model="form.membership_fee" type="radio" value="discounted" />
-              {{ $t('signup.fees.discounted') }}
-            </label>
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.iban') }}</label>
-            <input v-model="form.iban" :placeholder="$t('forms.placeholder.iban')" type="text" required />
-          </p>
-          <p class="form-element">
-            <label>{{ $t('forms.label.remarks') }}</label>
-            <textarea v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
-          </p>
-          <div id="recaptcha" />
+
+        <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
+          <FormElement :label="$t('forms.label.firstname')" required="true">
+            <FormInput v-model="form.firstname" :placeholder="$t('forms.placeholder.firstname')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.initials')" required="true">
+            <FormInput v-model="form.initials" :placeholder="$t('forms.placeholder.initials')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.lastname')" required="true">
+            <FormInput v-model="form.lastname" :placeholder="$t('forms.placeholder.lastname')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.language')" required="true">
+            <FormRadio v-model="form.language" :label="$t('forms.label.languages.dutch')" option="dutch" />
+            <FormRadio v-model="form.language" :label="$t('forms.label.languages.english')" option="english" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.date_of_birth')" required="true">
+            <FormInput v-model="form.date_of_birth" :placeholder="$t('forms.placeholder.date_of_birth')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.address')" required="true">
+            <FormInput v-model="form.address" :placeholder="$t('forms.placeholder.address')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.postal_code')" required="true">
+            <FormInput v-model="form.postal_code" :placeholder="$t('forms.placeholder.postal_code')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.residence')" required="true">
+            <FormInput v-model="form.residence" :placeholder="$t('forms.placeholder.residence')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.email')" required="true">
+            <FormInput v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.phone_number')" required="true">
+            <FormInput v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.pronouns')">
+            <FormInput v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.membership_fee')" required="true">
+            <FormRadio
+              v-for="(fee, key) in feesInformation.fees"
+              :key="key"
+              v-model="form.membership_fee"
+              :label="fee"
+              :option="key"
+            />
+          </FormElement>
+          <FormElement :label="$t('forms.label.iban')" required="true">
+            <FormInput v-model="form.iban" :placeholder="$t('forms.placeholder.iban')" />
+          </FormElement>
+          <FormElement :label="$t('forms.label.remarks')">
+            <FormInput v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')" type="textarea" />
+          </FormElement>
           <p class="mt-8 md:my-8 text-right">
-            <button :disabled="formStatus === 'loading'" type="submit" class="button-pink">
+            <PrimaryButton :disabled="formStatus === 'loading'" type="submit">
               {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
-            </button>
+            </PrimaryButton>
           </p>
-          <p v-html="$t('signup.fee_description')" class="mt-12" />
+          <nuxt-content class="content mt-12" :document="feesInformation" />
         </form>
       </div>
     </section>
@@ -117,14 +98,11 @@
 </template>
 
 <script>
-import Zondicon from 'vue-zondicons'
-import submitFormToFirebase from '~/modules/firebase-submitter'
-import Header from '~/components/Header'
+import Firebase from '~/src/Firebase'
 
 export default {
-  components: {
-    Header,
-    Zondicon
+  async asyncData({ $content, params, app, error }) {
+    return { feesInformation: await $content(`signup/fees.${app.i18n.locale}`).fetch() }
   },
   data() {
     return {
@@ -142,9 +120,9 @@ export default {
         pronouns: '',
         membership_fee: 'full',
         iban: '',
-        remarks: ''
+        remarks: '',
       },
-      formStatus: 'start'
+      formStatus: 'start',
     }
   },
   methods: {
@@ -153,7 +131,8 @@ export default {
 
       this.formStatus = 'loading'
 
-      submitFormToFirebase('ledenadministratie@dwhdelft.nl', 'membership', this.form)
+      new Firebase()
+        .submitAndSendEmail('mail@casperboone.nl', 'membership', this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
@@ -161,7 +140,7 @@ export default {
         .catch(() => {
           alert('An error occurred. If this keeps happening, please send us an email.')
         })
-    }
-  }
+    },
+  },
 }
 </script>

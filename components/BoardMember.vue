@@ -31,7 +31,7 @@ export default {
       const base64Encoded = Buffer.from(image).toString('base64')
 
       return `data:image/svg+xml;charset=utf-8;base64,${base64Encoded}`
-    }
-  }
+    },
+  },
 }
 </script>

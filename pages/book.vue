@@ -1,14 +1,20 @@
+<i18n lang="yaml">
+en:
+  title: Reservations
+  title_label: Events
+  canceled: Your reservation is cancelled. If you want, you can make a new reservation down below.
+nl:
+  title: Reserveren
+  title_label: Events
+  canceled: Je reservering is geannuleerd. Indien gewenst kun je hieronder een nieuwe reservering plaatsen.
+</i18n>
+
 <template>
   <div>
-    <header>
-      <Header small="true">
-        <div
-          v-text="$t('bookings.title_label')"
-          class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider inline"
-        />
-        <h1 v-text="$t('bookings.title')" class="text-4xl text-white font-normal mt-2" />
-      </Header>
-    </header>
+    <Header small="true">
+      <div class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider inline" v-text="$t('title_label')" />
+      <h1 class="text-4xl text-white font-normal mt-2" v-text="$t('title')" />
+    </Header>
 
     <section class="container mx-auto relative pt-12 md:pt-6 px-4">
       <div class="pb-16 m-auto">
@@ -17,62 +23,30 @@
             <Zondicon icon="information-outline" class="fill-current w-10" />
           </div>
           <div class="ml-4">
-            <h4 v-text="$t('bookings.canceled')" class="text-xl leading-tight" />
+            <h4 class="text-xl leading-tight" v-text="$t('canceled')" />
           </div>
         </div>
-        <h2
-          v-html="$t('bookings.description_title')"
-          class="text-purple-400 leading-none text-5xl mb-6 md:mb-12 md:text-6xl"
+
+        <nuxt-content
+          class="text-xl md:text-2xl leading-normal text-gray-800 md:mb-12 content intro-content"
+          :document="intro"
         />
-        <p v-html="$t('bookings.description')" class="text-xl md:text-2xl leading-normal text-gray-800 md:mb-12" />
       </div>
     </section>
 
-    <section class="information relative pb-12 md:pb-20">
-      <div class="mx-auto container px-4 md:flex flex-row-reverse">
-        <div class="flex-1 pt-16 md:pl-16">
-          <h2
-            v-html="$t('bookings.form_information.title')"
-            class="text-white leading-none text-5xl mb-6 md:text-6xl"
-          />
-          <p v-text="$t('bookings.form_information.description')" class="text-white text-xl" />
-          <div class="my-4 text-xl">
-            <div
-              v-for="rule in $t('bookings.form_information.rules')"
-              :key="rule"
-              v-html="rule"
-              class="bg-purple-400 text-white rounded p-4 mb-2"
-            />
-          </div>
-          <div v-text="$t('bookings.form_information.rules_disclaimer')" class="text-sm text-white" />
+    <section class="booking-form-section relative pb-16 lg:pb-24">
+      <div class="mx-auto container px-4 lg:flex flex-row-reverse">
+        <div class="flex-1 pt-16 lg:pl-16">
+          <nuxt-content class="booking-rules-content text-white text-xl" :document="bookingRules" />
         </div>
-        <div class="md:w-1/2 pt-8 md:pt-40">
+        <div class="lg:w-1/2 pt-8 lg:pt-40">
           <BookingForm />
         </div>
       </div>
     </section>
 
-    <section class="container mx-auto relative px-4 mt-12 mb-2 md:mt-32 md:mb-12">
-      <div class="flex flex-wrap -mx-2">
-        <CoronaRule :text="$t('bookings.general_rules[0]')">
-          <WashHandsIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[1]')">
-          <CoughIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[2]')">
-          <ContactLessIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[3]')">
-          <HandshakeIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[4]')">
-          <DistanceIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-        <CoronaRule :text="$t('bookings.general_rules[5]')">
-          <HomeIcon class="h-20 w-20 mr-4 text-purple-600 fill-current" />
-        </CoronaRule>
-      </div>
+    <section class="container mx-auto relative px-4 mt-12 mb-2 md:mt-32 md:pb-12">
+      <CoronaRules class="flex flex-wrap -mx-2" />
     </section>
   </div>
 </template>
@@ -80,46 +54,44 @@
 <script>
 import Zondicon from 'vue-zondicons'
 
-import ContactLessIcon from '@/assets/images/corona/contactless.svg'
-import CoughIcon from '@/assets/images/corona/cough.svg'
-import DistanceIcon from '@/assets/images/corona/distance.svg'
-import HandshakeIcon from '@/assets/images/corona/handshake.svg'
-import HomeIcon from '@/assets/images/corona/home.svg'
-import WashHandsIcon from '@/assets/images/corona/wash-hands.svg'
-
-import Header from '~/components/Header'
-import BookingForm from '~/components/BookingForm'
-import CoronaRule from '~/components/CoronaRule'
-
 export default {
-  components: {
-    Zondicon,
-    Header,
-    BookingForm,
-    CoronaRule,
-    ContactLessIcon,
-    CoughIcon,
-    DistanceIcon,
-    HandshakeIcon,
-    HomeIcon,
-    WashHandsIcon
-  }
+  components: { Zondicon },
+  async asyncData({ $content, params, app }) {
+    return {
+      intro: await $content(`bookings/intro.${app.i18n.locale}`).fetch(),
+      bookingRules: await $content(`bookings/booking_rules.${app.i18n.locale}`).fetch(),
+    }
+  },
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
-
-.menu-title {
-  font-family: 'Parisienne', cursive;
-}
-
-.information::before {
+.booking-form-section::before {
   @apply bg-purple-500 absolute w-full;
   height: 100%;
   transform: skewY(-7deg);
   content: '';
   z-index: -1;
   top: 0px;
+}
+
+.intro-content h1 {
+  @apply text-purple-400 leading-none text-5xl mb-6 md:mb-12 md:text-6xl font-normal;
+}
+
+.booking-rules-content h1 {
+  @apply leading-none text-5xl mb-6 md:text-6xl;
+}
+
+.booking-rules-content ul {
+  @apply my-4 text-xl;
+}
+
+.booking-rules-content ul li {
+  @apply bg-purple-400 text-white rounded p-4 mb-2;
+}
+
+.booking-rules-content blockquote {
+  @apply text-sm;
 }
 </style>

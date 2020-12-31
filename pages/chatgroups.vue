@@ -1,43 +1,60 @@
+<i18n lang="yaml">
+en:
+  title: Chat Groups
+  join: Join
+  main_text:
+    - Talking to each other doesn't stop outside our bar nights, and for all the many interests and goals we have a
+      whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
+      overview!
+    - Want to join a group but don't see a link? Send a message to the
+      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
+      association phone (+31 6 3756 0270)</a> with the chats you'd like to join.
+  categories:
+    general: <strong>General</strong> groups
+    volunteers: Groups for <strong>volunteers</strong>
+    interests: Groepen voor <strong>verschillende interesses</strong>
+nl:
+  title: Chatgroepen
+  join: Deelnemen
+  main_text:
+    - We spreken elkaar buiten de baravonden om natuurlijk ook graag, en voor alllerlei interesses en doelen zijn
+      daarom chatgroepen ontstaan. Omdat je maar net moet weten dat die er zijn hebben we hieronder een fabulous
+      overzichtje voor je gemaakt!
+    - Wil je in een van deze chats maar is er geen join link? Stuur een berichtje naar de
+      <a href="https://dwhdelft.nl/whatsapp" target="_blank" class="text-purple-500">
+      verenigingstelefoon (+31 6 3756 0270)</a> met de chat waar je aan toegevoegd zou willen worden.
+  categories:
+    general: <strong>Algemene</strong> Groepen
+    volunteers: Groepen voor <strong>vrijwilligers</strong>
+    interests: Groups for <strong>various interests</strong>
+</i18n>
+
 <template>
   <div>
-    <header>
-      <Header small="true">
-        <h1 class="text-4xl text-white font-normal">
-          {{ $t('chatgroups.title') }}
-        </h1>
-      </Header>
-    </header>
+    <SmallHeader>{{ $t('title') }}</SmallHeader>
 
-    <section class="container mx-auto mb-12 text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p v-html="$t('chatgroups.main_text')" class="mt-8 md:mt-0 mb-8" />
-      </div>
-    </section>
+    <PageIntroText>
+      <p v-for="text in $t('main_text')" :key="text" class="mb-4" v-html="text" />
+    </PageIntroText>
 
     <section class="bg-purple-400 pb-4 md:py-12">
       <div
-        v-for="(category, categoryTitle) in $t('chatgroups.categories')"
-        :key="category.title"
+        v-for="(categoryName, category) in $t('categories')"
+        :key="category"
         class="container px-4 mx-auto pt-8 md:pb-12"
       >
-        <h1 v-html="categoryTitle" class="text-white font-medium text-5xl leading-none mb-6" />
-        <div class="md:flex flex-wrap -mx-2 mt-2">
-          <div v-for="(description, groupName) in category" :key="groupName" class="md:w-1/2 p-2">
-            <div class="bg-white rounded-lg shadow p-6 md:p-8">
-              <div class="flex justify-between items-center h-12 mb-4">
-                <h2 class="text-2xl font-bold text-purple-500 uppercase tracking-wider">
-                  {{ groupName }}
-                </h2>
-                <a v-show="groupName in chatLinks" :href="chatLinks[groupName]" target="_blank">
-                  <button class="button-pink">
-                    {{ $t('chatgroups.join') }}
-                  </button>
+        <h1 class="text-white font-medium text-5xl leading-none mb-6" v-html="categoryName" />
+        <div class="md:flex flex-wrap mt-2">
+          <div v-for="group in chatGroupsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
+            <ActionCard :title="group.name" class="h-full">
+              <template v-slot:button>
+                <a v-show="group.url" :href="group.url" target="_blank">
+                  <PrimaryButton>{{ $t('join') }}</PrimaryButton>
                 </a>
-              </div>
-              <p class="text-xl">
-                {{ description }}
-              </p>
-            </div>
+              </template>
+
+              <p class="text-xl" v-text="group[`description_${$i18n.locale}`]" />
+            </ActionCard>
           </div>
         </div>
       </div>
@@ -46,30 +63,29 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
+const groupBy = (items, key) =>
+  items.reduce(
+    (result, item) => ({
+      ...result,
+      [item[key]]: [...(result[item[key]] || []), item],
+    }),
+    {}
+  )
 
 export default {
-  components: {
-    Header
+  async asyncData({ $content, app }) {
+    const chatGroups = await $content(`chatgroups`, { deep: true }).fetch()
+
+    const chatGroupsByCategory = groupBy(
+      chatGroups
+        .map((group) => {
+          return { ...group, category: group.dir.substring(group.dir.lastIndexOf('/') + 1) }
+        })
+        .sort((a, b) => (a.name > b.name ? 1 : -1)),
+      'category'
+    )
+
+    return { chatGroupsByCategory }
   },
-  data() {
-    return {
-      chatLinks: {
-        Announcements: 'https://outsite.nl/#contact',
-        Discord: 'https://dwhdelft.nl/discord',
-        Bartenders: 'https://chat.whatsapp.com/ESKloORRKlD5J6mNMw4OV0',
-        EatingOUT: 'https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV',
-        'Online Activities': 'https://chat.whatsapp.com/KzLpqZLUZUdItqKJetDdzP',
-        'Chicks before Ducks': 'https://chat.whatsapp.com/HNu9CDB4jH78s0qP6SAvI5',
-        ChocOUT: 'https://chat.whatsapp.com/JcZdNnnXhLTDleFtgtYyAn',
-        'Darkrooms & Daddies': 'https://chat.whatsapp.com/KCmnuJBNhbzKTjOtt7nkS8',
-        'Drag Race Gurls': 'https://chat.whatsapp.com/KQ4JHeT0AMi0hRZdiY3hR5',
-        'Gender Blender': 'https://chat.whatsapp.com/LkLFvzAt26b4dJzlgBV7pO',
-        'Minecraft/Among Us': 'https://chat.whatsapp.com/1A7sMvswOjoAvIMF4E4hpK',
-        'Politics & Discussion': 'https://chat.whatsapp.com/CSfNGQlryhU8XyRxrQaLpR',
-        Strijders: 'https://chat.whatsapp.com/KcS3hC4ZVk391Kqcwnc3I5'
-      }
-    }
-  }
 }
 </script>

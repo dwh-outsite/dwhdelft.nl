@@ -1,115 +1,91 @@
+<i18n lang="yaml">
+en:
+  hero:
+    title: LGBT+ association since 1968
+    subtitle: For everyone in the Delft area!
+    leftButton: Check out DWH
+    rightButton: Opening Hours
+  description:
+    text:
+      - DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for
+        LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance. As the
+        latter, we give lectures at schools, have introduction groups for newly out people and organise public events
+        arounds dates like coming out day.
+      - 'As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
+        nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
+        beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!'
+    invitation: We are <strong>temporarily closed</strong> due to COVID-19.
+nl:
+  hero:
+    title: LHBT+ vereniging sinds 1968
+    subtitle: Voor iedereen in Delft en omgeving!
+    leftButton: Kom naar DWH
+    rightButton: Openingstijden
+  description:
+    text:
+      - DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek
+        voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
+        tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en
+        allerlei openbare events rond dagen als coming out dag.
+      - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
+        baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
+        bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!'
+    invitation: Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.
+</i18n>
+
 <template>
   <div>
-    <header>
-      <Header>
-        <h1 class="text-4xl text-white font-normal">
-          {{ $t('hero.title') }}
-        </h1>
-        <h2 class="text-2xl text-white mt-2 font-light">
-          {{ $t('hero.subtitle') }}
-        </h2>
-        <div class="mt-8 flex">
-          <a href="#join-dwh">
-            <button class="block button-pink">
-              {{ $t('hero.leftButton') }}
-            </button>
-          </a>
-          <a href="#recurring_events">
-            <button class="block ml-4 button-white">
-              {{ $t('hero.rightButton') }}
-            </button>
-          </a>
-        </div>
-      </Header>
-    </header>
+    <Header>
+      <h1 class="text-4xl text-white font-normal" v-text="$t('hero.title')" />
+      <h2 class="text-2xl text-white mt-2 font-light" v-text="$t('hero.subtitle')" />
+      <div class="mt-8 flex">
+        <a href="#join-dwh">
+          <button class="block button-pink" v-text="$t('hero.leftButton')" />
+        </a>
+        <a href="#recurring_events">
+          <button class="block ml-4 button-white" v-text="$t('hero.rightButton')" />
+        </a>
+      </div>
+    </Header>
 
     <section class="introduction overflow-x-hidden">
       <div class="container mx-auto pt-12 pb-24 md:flex">
-        <div class="flex-1 md:w-1/2 px-4 md:pr-16">
-          <p v-html="$t('description.text')" class="text-lg md:text-xl leading-relaxed text-gray-800"></p>
-          <div
-            class="
-              flex-1 rounded shadow-xl bg-purple-500 text-lg md:text-xl text-white my-12 md:mt-10 md:mb-24 p-4 relative
-              w-full md:w-auto md:inline-flex items-center
-            "
-          >
-            <div
-              class="
-                rounded-full w-16 h-16 p-4 bg-white text-purple-500 shadow md:shadow-none
-                absolute -top-8 md:static
-              "
-            >
-              <Zondicon icon="explore" class="fill-current" />
-            </div>
-            <div v-html="$t('description.invitation')" class="mt-6 md:mt-0 md:ml-4" />
-          </div>
+        <div class="flex-1 px-4 lg:pr-32">
+          <p
+            v-for="paragraph in $t('description.text')"
+            :key="paragraph"
+            class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
+            v-html="paragraph"
+          />
+          <Invitation :content="$t('description.invitation')" />
         </div>
-        <div class="hidden md:block">
-          <div class="bg-white p-4 border rotate shadow-lg z-50 mr-8 -mt-7">
-            <img src="~/assets/images/building.jpg" class="w-96" />
+        <div class="hidden lg:block">
+          <div class="bg-white p-4 border rotate shadow-lg relative z-50 mr-8 -mt-7">
+            <img src="~/assets/images/photos/building.jpg" class="w-96" />
           </div>
         </div>
       </div>
     </section>
 
     <section class="information relative pt-12">
-      <Activities :title="$t('activities.title')" />
+      <div class="z-10 relative">
+        <Activities />
+      </div>
     </section>
 
-    <section id="join-dwh" class="bg-purple-400">
-      <JoinOptions
-        :title="$t('ways_to_join.title')"
-        :description="$t('ways_to_join.description')"
-        :outsite-hint="$t('ways_to_join.outsite_hint')"
-        :box-title="$t('ways_to_join.bar_buddy.title')"
-        :box-button-text="$t('ways_to_join.bar_buddy.action')"
-        :box-url="localePath('barbuddy')"
-        box-icon="beverage"
-      >
-        <template v-slot:left>
-          {{ $t('ways_to_join.kmg.description') }}
-        </template>
-        <template v-slot:box>
-          {{ $t('ways_to_join.bar_buddy.description') }}
-        </template>
-      </JoinOptions>
+    <section id="join-dwh" class="bg-purple-400 relative z-10">
+      <JoinOptions />
     </section>
 
-    <section id="recurring_events" class="bg-white">
-      <RecurringEvents :announcement="$t('recurring_events.announcement')" />
+    <section id="recurring_events" class="bg-white relative z-10">
+      <RecurringEvents />
     </section>
 
     <section id="eatingout" class="bg-gray-200">
-      <EatingOut
-        :title="$t('eating_out.title')"
-        :subtitle="$t('eating_out.subtitle')"
-        :button="$t('eating_out.button')"
-        :notes="$t('eating_out.notes')"
-      />
+      <EatingOut />
     </section>
   </div>
 </template>
-
-<script>
-import Zondicon from 'vue-zondicons'
-
-import Header from '~/components/Header'
-import Activities from '~/components/Activities'
-import JoinOptions from '~/components/JoinOptions'
-import RecurringEvents from '~/components/RecurringEvents'
-import EatingOut from '~/components/EatingOut'
-
-export default {
-  components: {
-    Header,
-    Activities,
-    JoinOptions,
-    RecurringEvents,
-    EatingOut,
-    Zondicon
-  }
-}
-</script>
 
 <style>
 .information::before {
@@ -117,7 +93,7 @@ export default {
   height: 250%;
   transform: skewY(-7deg);
   content: '';
-  z-index: -1;
+  z-index: 0;
   top: 0px;
 }
 

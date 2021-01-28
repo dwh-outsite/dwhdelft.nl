@@ -3,7 +3,7 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Robbie Baart
+    - name: Rory Baart
       role: President
       email: voorzitter@dwhdelft.nl
     - name: Dries Stuij
@@ -22,7 +22,7 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Robbie Baart
+    - name: Rory Baart
       role: Voorzitter
       email: voorzitter@dwhdelft.nl
     - name: Dries Stuij

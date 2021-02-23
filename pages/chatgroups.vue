@@ -12,7 +12,7 @@ en:
   categories:
     general: <strong>General</strong> groups
     volunteers: Groups for <strong>volunteers</strong>
-    interests: Groepen voor <strong>verschillende interesses</strong>
+    interests: Groups for <strong>various interests</strong>
 nl:
   title: Chatgroepen
   join: Deelnemen
@@ -26,7 +26,7 @@ nl:
   categories:
     general: <strong>Algemene</strong> Groepen
     volunteers: Groepen voor <strong>vrijwilligers</strong>
-    interests: Groups for <strong>various interests</strong>
+    interests: Groepen voor <strong>verschillende interesses</strong>
 </i18n>
 
 <template>

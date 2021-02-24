@@ -73,7 +73,7 @@ export default {
         .map((group) => {
           return { ...group, category: group.dir.substring(group.dir.lastIndexOf('/') + 1) }
         })
-        .sort((a, b) => (a.name > b.name ? 1 : -1)),
+        .sort((a, b) => (a.order > b.order ? 1 : -1)),
       'category'
     )
 

@@ -6,8 +6,8 @@ en:
     - Text
   categories:
     skincare: <strong>Skincare</strong> products
-    skin and eyebrows: <strong>Skin</strong> and <strong>eyebrow</strong> makeup
-    eyes and lips: <strong>Eye</strong> and <strong>lip</strong> makeup
+    skin_and_eyebrows: <strong>Skin</strong> and <strong>eyebrow</strong> makeup
+    eyes_and_lips: <strong>Eye</strong> and <strong>lip</strong> makeup
     tools: <strong>Tools</strong>
 nl:
   title: Makeup Workshop
@@ -16,8 +16,8 @@ nl:
     - Text
   categories:
     skincare: Producten voor <strong>huidverzorging</strong>
-    skin and eyebrows: Makeup voor <strong>huid</strong> en <strong>wenkbrauwen</strong>
-    eyes and lips: Makeup voor <strong>ogen</strong> en <strong>lippen</strong>
+    skin_and_eyebrows: Makeup voor <strong>huid</strong> en <strong>wenkbrauwen</strong>
+    eyes_and_lips: Makeup voor <strong>ogen</strong> en <strong>lippen</strong>
     tools: <strong>Tools</strong>
 </i18n>
 
@@ -37,15 +37,11 @@ nl:
       >
         <h1 class="text-white font-medium text-5xl leading-none mb-6" v-html="categoryName" />
         <div class="md:flex flex-wrap mt-2">
-          <div v-for="group in chatGroupsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
-            <ActionCard :title="group.name" class="h-full">
-              <template v-slot:button>
-                <a v-show="group.url" :href="group.url" target="_blank">
-                  <PrimaryButton>{{ $t('join') }}</PrimaryButton>
-                </a>
-              </template>
+          <div v-for="group in productsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
+            <ActionCard :title="group[`name_${$i18n.locale}`]" class="h-full">
+              <template v-slot:button></template>
 
-              <p class="text-xl" v-text="group[`description_${$i18n.locale}`]" />
+              <p class="text-xl" v-html="group[`description_${$i18n.locale}`]" />
             </ActionCard>
           </div>
         </div>
@@ -68,7 +64,7 @@ export default {
   async asyncData({ $content, app }) {
     const products = await $content(`makeup`, { deep: true }).fetch()
 
-    const chatGroupsByCategory = groupBy(
+    const productsByCategory = groupBy(
       products
         .map((group) => {
           return { ...group, category: group.dir.substring(group.dir.lastIndexOf('/') + 1) }
@@ -76,8 +72,7 @@ export default {
         .sort((a, b) => (a.order > b.order ? 1 : -1)),
       'category'
     )
-
-    return { chatGroupsByCategory }
+    return { productsByCategory }
   },
 }
 </script>

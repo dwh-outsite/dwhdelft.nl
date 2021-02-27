@@ -1,6 +1,7 @@
 ---
 Order: 2
-name: Eyeliner
+name_nl: testnl
+name_en: test
 description_nl:
   Text
 

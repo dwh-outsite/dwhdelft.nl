@@ -1,8 +1,9 @@
 ---
 order: 0
-name: Primer
+name_nl: Primer
+name_en: Primer
 description_nl:
-  Text <strong>test</strong>
+  Text
 
 description_en:
   Text

@@ -1,6 +1,7 @@
 ---
 order: 1
-name: Eyeshadow
+name_nl: Oogschaduw
+name_en: Eyeshadow
 description_nl:
   Text
 

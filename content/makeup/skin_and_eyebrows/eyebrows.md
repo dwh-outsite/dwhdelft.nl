@@ -1,6 +1,7 @@
 ---
 order: 3
-name: Eyebrows
+name_nl: Wenkbrauwen
+name_en: Eyebrows
 description_nl:
   Text
 

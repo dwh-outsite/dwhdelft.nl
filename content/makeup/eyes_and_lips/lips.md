@@ -1,6 +1,7 @@
 ---
 order: 4
-name: Lips
+name_nl: Lippen
+name_en: Lips
 description_nl:
   Text
 

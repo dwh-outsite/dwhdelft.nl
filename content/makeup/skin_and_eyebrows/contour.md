@@ -1,6 +1,7 @@
 ---
 order: 1
-name: Contour
+name_nl: Contour
+name_en: Contour
 description_nl:
   Text
   

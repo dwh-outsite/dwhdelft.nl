@@ -1,6 +1,7 @@
 ---
 order: 3
-name: Mascara
+name_nl: Mascara
+name_en: Mascara
 description_nl:
   Text
 

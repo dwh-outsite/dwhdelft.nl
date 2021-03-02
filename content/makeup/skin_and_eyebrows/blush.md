@@ -1,6 +1,7 @@
 ---
 order: 2
-name: Blush
+name_nl: Blush
+name_en: Blush
 description_nl:
   Text
 

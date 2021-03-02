@@ -1,9 +1,12 @@
 ---
 order: 0
-name: Cleanser
+name_nl: Reiniging
+name_en: Cleanser
 description_nl:
-  Text
+  <strong>Simple - purifying facial wash</strong> (Kruidvat) of <br/> 
+  <strong>Laneige - multi deep clean cleanser</strong> (online)
   
 description_en:
-  Text
+  <strong>Simple - purifying facial wash</strong> (Kruidvat) or <br/> 
+  <strong>Laneige - multi deep clean cleanser</strong> (online)
 ---

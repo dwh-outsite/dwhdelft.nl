@@ -1,6 +1,7 @@
 ---
 order: 0
-name: Foundation
+name_nl: Foundation
+name_en: Foundation
 description_nl:
   Text
 

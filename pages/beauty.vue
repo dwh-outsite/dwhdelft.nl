@@ -8,7 +8,7 @@ en:
     skincare: 'Part 1: <strong>skincare</strong>'
     CS: Part 2 <strong>coming soon</strong>
 nl:
-  title: Beauty Workshop
+  title: Beauty Workshops
   main_text:
     - Heb jij interesse in makeup maar geen idee hoe je moet beginnen? Dan zit je hier goed! Met de <strong>DWH Beauty Workshops</strong> leer je alles over huidverzorging, makeup, en algemene schoonheidstips in een inclusieve en oordeelvrije omgeving.
     - Alle workshops zijn op Zoom, dus je hebt eigen producten nodig om mee te doen. Als je nog niet weet wat je nodig hebt, bekijk dan onze lijst met voorgestelde producten hieronder!

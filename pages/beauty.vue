@@ -7,7 +7,7 @@ en:
     - Not a member of DWH? Sign up for free at dwhdelft.nl/beautysignup
   categories:
     skincare: 'Part 1: <strong>skincare</strong>'
-    CS: Part 2 <strong>coming soon</strong>
+    CS: 'Part 2: <strong>coming soon</strong>'
 nl:
   title: Beauty Workshops
   main_text:
@@ -16,7 +16,7 @@ nl:
     - Ben je geen lid van DWH? Meld je dan gratis aan via dwhdelft.nl/beautysignup
   categories:
     skincare: 'Deel 1: <strong>huidverzorging</strong>'
-    CS: Deel 2 <strong>coming soon</strong>
+    CS: 'Deel 2: <strong>coming soon</strong>'
 </i18n>
 
 <template>
@@ -38,7 +38,6 @@ nl:
           <div v-for="group in productsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
             <ActionCard :title="group[`name_${$i18n.locale}`]" class="h-full">
               <template v-slot:button></template>
-
               <p class="text-xl" v-html="group[`description_${$i18n.locale}`]" />
             </ActionCard>
           </div>

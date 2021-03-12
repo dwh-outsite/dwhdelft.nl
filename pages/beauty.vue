@@ -4,7 +4,7 @@ en:
   main_text:
     - Do you have an interest in makeup but no clue how to get started? You're in the right place! With the <strong>DWH Beauty Workshops</strong> you can learn all about skincare, makeup, and general beauty tips in an inclusive and judgement-free environment.
     - All workshops will be on Zoom, so you'll need your own products to follow along. If you're unsure of what to get, check out our list of suggested products below!
-    - Not a member of DWH? Sign up for free at <strong>dwhdelft.nl/beautysignup</strong>
+    - "Not a member of DWH? Sign up for free at <a href=\"dwhdelft.nl/beautysignup\">dwhdelft.nl/beautysignup</a>"
   categories:
     skincare: 'Part 1: <strong>skincare</strong>'
     CS: 'Part 2: <strong>coming soon</strong>'
@@ -13,7 +13,7 @@ nl:
   main_text:
     - Heb jij interesse in makeup maar geen idee hoe je moet beginnen? Dan zit je hier goed! Met de <strong>DWH Beauty Workshops</strong> leer je alles over huidverzorging, makeup, en algemene schoonheidstips in een inclusieve en oordeelvrije omgeving.
     - Alle workshops zijn op Zoom, dus je hebt eigen producten nodig om mee te doen. Als je nog niet weet wat je nodig hebt, bekijk dan onze lijst met voorgestelde producten hieronder!
-    - Ben je geen lid van DWH? Meld je dan gratis aan via <strong>dwhdelft.nl/beautysignup</strong>
+    - "Ben je geen lid van DWH? Meld je dan gratis aan via <a href=\"dwhdelft.nl/beautysignup\">dwhdelft.nl/beautysignup</a>"
   categories:
     skincare: 'Deel 1: <strong>huidverzorging</strong>'
     CS: 'Deel 2: <strong>coming soon</strong>'
@@ -24,7 +24,7 @@ nl:
     <SmallHeader>{{ $t('title') }}</SmallHeader>
 
     <PageIntroText>
-      <p v-for="text in $t('main_text')" :key="text" class="mb-4" v-html="text" />
+      <p v-for="text in $t('main_text')" :key="text" class="content mb-4" v-html="text" />
     </PageIntroText>
 
     <section class="bg-purple-400 pb-4 md:py-12">

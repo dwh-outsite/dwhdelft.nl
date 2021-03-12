@@ -60,7 +60,7 @@ const groupBy = (items, key) =>
 
 export default {
   async asyncData({ $content, app }) {
-    const products = await $content(`makeup`, { deep: true }).fetch()
+    const products = await $content(`beauty`, { deep: true }).fetch()
 
     const productsByCategory = groupBy(
       products

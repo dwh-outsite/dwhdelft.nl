@@ -21,7 +21,7 @@ export default {
       pronouns: 'Pronouns',
       barbuddy: 'Who would you like to meet?',
       membership_fee: 'Membership Fee (see below)',
-      iban: 'IBAN number for payment by direct debit',
+      iban: 'IBAN number for payment by direct debit (no spaces)',
     },
     placeholder: {
       name: 'Name',

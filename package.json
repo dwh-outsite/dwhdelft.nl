@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.2",
-    "core-js": "^3.6.5",
+    "core-js": "^3.9.1",
     "dayjs": "^1.9.8",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.16.0",

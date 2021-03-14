@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- TODO: Fix required on line 16 -->
     <textarea
       v-if="type === 'textarea'"
       :value="value"
@@ -12,7 +13,7 @@
       :value="value"
       :placeholder="placeholder"
       :type="type"
-      :required="$parent.required"
+      :required="$parent.required && false"
       @input="$emit('input', $event.target.value)"
     />
   </div>

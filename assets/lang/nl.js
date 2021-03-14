@@ -21,7 +21,7 @@ export default {
       pronouns: 'Pronouns',
       barbuddy: 'Met wie wil je afspreken?',
       membership_fee: 'Tariefgroep Contributie (zie onderaan deze pagina)',
-      iban: 'IBAN nummer voor betaling via automatisch incasso',
+      iban: 'IBAN nummer voor betaling via automatisch incasso (geen spaties)',
     },
     placeholder: {
       name: 'Naam',

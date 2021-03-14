@@ -36,39 +36,51 @@ nl:
         </div>
 
         <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
+          <FormValidationMessage :errors="validationErrors" />
           <FormElement :label="$t('forms.label.firstname')" required="true">
             <FormInput v-model="form.firstname" :placeholder="$t('forms.placeholder.firstname')" />
+            <FormValidation name="firstname" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.initials')" required="true">
             <FormInput v-model="form.initials" :placeholder="$t('forms.placeholder.initials')" />
+            <FormValidation name="initials" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.lastname')" required="true">
             <FormInput v-model="form.lastname" :placeholder="$t('forms.placeholder.lastname')" />
+            <FormValidation name="lastname" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.language')" required="true">
             <FormRadio v-model="form.language" :label="$t('forms.label.languages.dutch')" option="dutch" />
             <FormRadio v-model="form.language" :label="$t('forms.label.languages.english')" option="english" />
+            <FormValidation name="language" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.date_of_birth')" required="true">
             <FormInput v-model="form.date_of_birth" :placeholder="$t('forms.placeholder.date_of_birth')" />
+            <FormValidation name="date_of_birth" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.address')" required="true">
             <FormInput v-model="form.address" :placeholder="$t('forms.placeholder.address')" />
+            <FormValidation name="address" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.postal_code')" required="true">
             <FormInput v-model="form.postal_code" :placeholder="$t('forms.placeholder.postal_code')" />
+            <FormValidation name="postal_code" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.residence')" required="true">
             <FormInput v-model="form.residence" :placeholder="$t('forms.placeholder.residence')" />
+            <FormValidation name="residence" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.email')" required="true">
             <FormInput v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" />
+            <FormValidation name="email" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.phone_number')" required="true">
             <FormInput v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" />
+            <FormValidation name="phone_number" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.pronouns')">
             <FormInput v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+            <FormValidation name="pronouns" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.membership_fee')" required="true">
             <FormRadio
@@ -78,12 +90,15 @@ nl:
               :label="fee"
               :option="key"
             />
+            <FormValidation name="membership_fee" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.iban')" required="true">
             <FormInput v-model="form.iban" :placeholder="$t('forms.placeholder.iban')" />
+            <FormValidation name="iban" :errors="validationErrors" />
           </FormElement>
           <FormElement :label="$t('forms.label.remarks')">
             <FormInput v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')" type="textarea" />
+            <FormValidation name="remarks" :errors="validationErrors" />
           </FormElement>
           <p class="mt-8 md:my-8 text-right">
             <PrimaryButton :disabled="formStatus === 'loading'" type="submit">
@@ -98,7 +113,7 @@ nl:
 </template>
 
 <script>
-import Firebase from '~/src/Firebase'
+import ReMemberForm from '~/src/ReMemberForm'
 
 export default {
   async asyncData({ $content, params, app, error }) {
@@ -122,6 +137,7 @@ export default {
         iban: '',
         remarks: '',
       },
+      validationErrors: {},
       formStatus: 'start',
     }
   },
@@ -131,14 +147,16 @@ export default {
 
       this.formStatus = 'loading'
 
-      new Firebase()
-        .submitAndSendEmail('mail@casperboone.nl', 'membership', this.form)
+      new ReMemberForm('membership')
+        .submit(this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
-        .catch(() => {
-          alert('An error occurred. If this keeps happening, please send us an email.')
+        .catch((validationError) => {
+          this.formStatus = 'validation-error'
+          this.validationErrors = validationError.errors()
+          window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
     },
   },

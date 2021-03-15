@@ -47,7 +47,7 @@ nl:
         <div class="md:flex flex-wrap mt-2">
           <div v-for="group in chatGroupsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
             <ActionCard :title="group.name" class="h-full">
-              <template v-slot:button>
+              <template #button>
                 <a v-show="group.url" :href="group.url" target="_blank">
                   <PrimaryButton>{{ $t('join') }}</PrimaryButton>
                 </a>

@@ -37,7 +37,7 @@ nl:
         <div class="md:flex flex-wrap mt-2">
           <div v-for="group in productsByCategory[category]" :key="group.name" class="lg:w-1/2 p-2">
             <ActionCard :title="group[`name_${$i18n.locale}`]" class="h-full">
-              <template v-slot:button></template>
+              <template #button></template>
               <p class="text-xl" v-html="group[`description_${$i18n.locale}`]" />
             </ActionCard>
           </div>

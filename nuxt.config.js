@@ -68,6 +68,11 @@ export default {
     '@nuxt/content',
   ],
 
+  // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)
+  tailwindcss: {
+    jit: true,
+  },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 

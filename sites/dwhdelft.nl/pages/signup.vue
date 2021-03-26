@@ -113,7 +113,7 @@ nl:
 </template>
 
 <script>
-import ReMemberForm from '~/src/ReMemberForm'
+import ReMemberForm from '../../../src/ReMemberForm'
 
 export default {
   async asyncData({ $content, params, app, error }) {

@@ -3,7 +3,6 @@
     <SmallHeader>{{ content.title }}</SmallHeader>
 
     <language-warning v-if="showLanguageWarning" />
-
     <ColumnLayout v-if="content.layout === 'column'">
       <nuxt-content class="content" :document="content" />
     </ColumnLayout>
@@ -15,7 +14,7 @@
 </template>
 
 <script>
-import LanguageWarning from '~/components/LanguageWarning.vue'
+import LanguageWarning from '../../../components/LanguageWarning.vue'
 
 export default {
   components: { LanguageWarning },

@@ -1,8 +1,14 @@
 {
-  "name": "dwhdelft.nl",
+  "name": "@dwh-sites/base",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "sites/*"
+  ],
   "scripts": {
+    "dev:outsite.nl": "yarn workspace @dwh-sites/outsite.nl dev",
+    "dev:dwhdelft.nl": "yarn workspace @dwh-sites/dwhdelft.nl dev",
+    "generate:dwhdelft.nl": "yarn workspace @dwh-sites/dwhdelft.nl generate",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -14,11 +20,12 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/svg": "^0.1.12",
     "core-js": "^3.6.5",
     "dayjs": "^1.9.8",
     "nuxt": "^2.15.3",
+    "nuxt-extend": "^0.0.3",
     "nuxt-i18n": "^6.22.1",
-    "nuxt-svg-loader": "^1.2.0",
     "vue-zondicons": "^0.1.10"
   },
   "devDependencies": {

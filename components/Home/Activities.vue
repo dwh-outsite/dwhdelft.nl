@@ -105,6 +105,8 @@ import 'dayjs/locale/nl'
 import Zondicon from 'vue-zondicons'
 import activitiesFile from '~/static/activities.json'
 
+// const activitiesFile = '[]'
+
 export default {
   components: { Zondicon },
   props: ['title'],

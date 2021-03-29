@@ -15,7 +15,7 @@
 
 <script>
 import Zondicon from 'vue-zondicons'
-import GoogleDrive from '~/src/GoogleDrive'
+import GoogleDrive from '#/src/GoogleDrive'
 
 export default {
   components: {

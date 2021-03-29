@@ -61,7 +61,7 @@ nl:
         </div>
         <div class="hidden lg:block">
           <div class="bg-white p-4 border rotate shadow-lg relative z-50 mr-8 -mt-7">
-            <img src="~/assets/images/photos/building.jpg" class="w-96" />
+            <img src="../../../assets/images/photos/building.jpg" class="w-96" />
           </div>
         </div>
       </div>

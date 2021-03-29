@@ -46,7 +46,7 @@ nl:
 </template>
 
 <script>
-import GoogleDrive from '~/src/GoogleDrive'
+import GoogleDrive from '#/src/GoogleDrive'
 
 export default {
   data() {

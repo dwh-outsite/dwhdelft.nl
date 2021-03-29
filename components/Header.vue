@@ -72,7 +72,7 @@ nl:
       </div>
     </nav>
     <div class="image-container">
-      <img src="~/assets/images/photos/cover.jpg" class="opacity-50" />
+      <img src="../assets/images/photos/cover.jpg" class="opacity-50" />
     </div>
     <div class="hero"></div>
     <div class="relative flex items-center h-full">
@@ -85,9 +85,9 @@ nl:
 
 <script>
 import Zondicon from 'vue-zondicons'
-import DWHLogo from '@/assets/images/dwh_logo.svg'
-import NLFlag from '@/assets/images/flags/nl.svg'
-import GBFlag from '@/assets/images/flags/gb.svg'
+import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
+import NLFlag from '#/assets/images/flags/nl.svg?inline'
+import GBFlag from '#/assets/images/flags/gb.svg?inline'
 
 export default {
   components: {

@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 
 export default {
+  rootDir: __dirname,
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -29,21 +31,26 @@ export default {
     ],
   },
 
+  // Aliases (https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-alias)
+  alias: {
+    '#': path.resolve(__dirname, '../../'),
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['~/assets/css/tailwind.css'],
+  css: [path.resolve(__dirname, '../../assets/css/tailwind.css')],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: [
-    '~/components/',
-    '~/components/bar_buddies',
-    '~/components/bookings',
-    '~/components/content_layouts',
-    '~/components/Form',
-    '~/components/global',
-    '~/components/Home',
+    path.resolve(__dirname, '../../components/'),
+    path.resolve(__dirname, '../../components/bar_buddies'),
+    path.resolve(__dirname, '../../components/bookings'),
+    path.resolve(__dirname, '../../components/content_layouts'),
+    path.resolve(__dirname, '../../components/Form'),
+    path.resolve(__dirname, '../../components/global'),
+    path.resolve(__dirname, '../../components/Home'),
   ],
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
@@ -54,6 +61,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://marquez.co/docs/nuxt-netlify/
     '@aceforth/nuxt-netlify',
+    // https://github.com/nuxt-community/svg-module
+    '@nuxtjs/svg',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -62,8 +71,6 @@ export default {
     '@nuxtjs/axios',
     // https://i18n.nuxtjs.org/
     'nuxt-i18n',
-    // https://www.npmjs.com/package/nuxt-svg-loader
-    'nuxt-svg-loader',
     // https://content.nuxtjs.org/
     '@nuxt/content',
   ],
@@ -71,6 +78,12 @@ export default {
   // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)
   tailwindcss: {
     jit: true,
+    configPath: '../../tailwind.config.js',
+    config: {
+      purge: {
+        content: ['../../components/**/**.vue'],
+      },
+    },
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -86,13 +99,18 @@ export default {
       { code: 'en', iso: 'en-US', file: 'en.js' },
     ],
     defaultLocale: 'nl',
-    langDir: 'assets/lang/',
+    langDir: '../../assets/lang/',
     lazy: true,
     detectBrowserLanguage: false,
     vueI18n: {
       fallbackLocale: 'nl',
     },
     vueI18nLoader: true,
+  },
+
+  // NuxtJS Content Configuration https://content.nuxtjs.org/configuration
+  content: {
+    dir: '../../content',
   },
 
   // Netlify configuration (https://marquez.co/docs/nuxt-netlify/)
@@ -107,6 +125,6 @@ export default {
   },
 }
 
-function createRedirects(directory = 'content/redirects') {
+function createRedirects(directory = '../../content/redirects') {
   return fs.readdirSync(directory).map((fileName) => JSON.parse(fs.readFileSync(path.join(directory, fileName))))
 }

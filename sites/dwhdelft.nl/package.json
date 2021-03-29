@@ -1,0 +1,13 @@
+
+{
+  "name": "@dwh-sites/dwhdelft.nl",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "analyze": "nuxt build --analyze",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "production": "node retrieve_events.js && nuxt generate"
+  }
+}

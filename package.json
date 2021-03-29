@@ -6,14 +6,11 @@
     "sites/*"
   ],
   "scripts": {
-    "dev:outsite.nl": "yarn workspace @dwh-sites/outsite.nl dev",
-    "dev:dwhdelft.nl": "yarn workspace @dwh-sites/dwhdelft.nl dev",
-    "generate:dwhdelft.nl": "yarn workspace @dwh-sites/dwhdelft.nl generate",
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "production": "node retrieve_events.js && nuxt generate",
+    "dev": "node cli.js dev",
+    "build": "node cli.js build",
+    "start": "node cli.js start",
+    "generate": "node cli.js generate",
+    "production": "node cli.js production",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js"
   },
@@ -35,10 +32,12 @@
     "@nuxtjs/tailwindcss": "^4.0.2",
     "autoprefixer": "^10",
     "babel-eslint": "^10.1.0",
+    "commander": "^7.2.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "inquirer": "^8.0.0",
     "postcss": "^8.2.8",
     "prettier": "^2.1.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"

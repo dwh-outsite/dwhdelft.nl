@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import { resolve } from 'path'
 
 export default {
   rootDir: __dirname,
@@ -34,7 +33,7 @@ export default {
 
   // Aliases (https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-alias)
   alias: {
-    '#': resolve(__dirname, '../../'),
+    '#': path.resolve(__dirname, '../../'),
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

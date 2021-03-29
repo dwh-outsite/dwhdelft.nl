@@ -85,9 +85,9 @@ nl:
 
 <script>
 import Zondicon from 'vue-zondicons'
-import DWHLogo from '../assets/images/dwh_logo.svg?inline'
-import NLFlag from '../assets/images/flags/nl.svg?inline'
-import GBFlag from '../assets/images/flags/gb.svg?inline'
+import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
+import NLFlag from '#/assets/images/flags/nl.svg?inline'
+import GBFlag from '#/assets/images/flags/gb.svg?inline'
 
 export default {
   components: {

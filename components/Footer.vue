@@ -165,10 +165,10 @@ nl:
 <script>
 import dayjs from 'dayjs'
 import Zondicon from 'vue-zondicons'
-import DWHLogo from '../assets/images/dwh_logo.svg?inline'
-import InstagramIcon from '../assets/images/social/instagram.svg?inline'
-import FacebookIcon from '../assets/images/social/facebook.svg?inline'
-import GitHubIcon from '../assets/images/social/github.svg?inline'
+import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
+import InstagramIcon from '#/assets/images/social/instagram.svg?inline'
+import FacebookIcon from '#/assets/images/social/facebook.svg?inline'
+import GitHubIcon from '#/assets/images/social/github.svg?inline'
 
 export default {
   components: {

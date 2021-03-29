@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import GBFlag from '../assets/images/flags/gb.svg?inline'
+import GBFlag from '#/assets/images/flags/gb.svg?inline'
 
 export default {
   components: { GBFlag },

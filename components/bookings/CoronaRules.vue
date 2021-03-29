@@ -41,12 +41,12 @@ nl:
 </template>
 
 <script>
-import ContactLessIcon from '../../assets/images/corona/contactless.svg?inline'
-import CoughIcon from '../../assets/images/corona/cough.svg?inline'
-import DistanceIcon from '../../assets/images/corona/distance.svg?inline'
-import HandshakeIcon from '../../assets/images/corona/handshake.svg?inline'
-import HomeIcon from '../../assets/images/corona/home.svg?inline'
-import WashHandsIcon from '../../assets/images/corona/wash-hands.svg?inline'
+import ContactLessIcon from '#/assets/images/corona/contactless.svg?inline'
+import CoughIcon from '#/assets/images/corona/cough.svg?inline'
+import DistanceIcon from '#/assets/images/corona/distance.svg?inline'
+import HandshakeIcon from '#/assets/images/corona/handshake.svg?inline'
+import HomeIcon from '#/assets/images/corona/home.svg?inline'
+import WashHandsIcon from '#/assets/images/corona/wash-hands.svg?inline'
 
 export default {
   components: {

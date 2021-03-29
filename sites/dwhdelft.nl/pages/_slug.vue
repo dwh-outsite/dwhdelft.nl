@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import LanguageWarning from '../../../components/LanguageWarning.vue'
+import LanguageWarning from '#/components/LanguageWarning.vue'
 
 export default {
   components: { LanguageWarning },

@@ -8,3 +8,17 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap',
+      },
+    ],
+  },
+}
+</script>

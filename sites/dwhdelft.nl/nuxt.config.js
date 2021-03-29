@@ -44,13 +44,13 @@ export default {
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: [
-    '../../components/',
-    '../../components/bar_buddies',
-    '../../components/bookings',
-    '../../components/content_layouts',
-    '../../components/Form',
-    '../../components/global',
-    '../../components/Home',
+    path.resolve(__dirname, '../../components/'),
+    path.resolve(__dirname, '../../components/bar_buddies'),
+    path.resolve(__dirname, '../../components/bookings'),
+    path.resolve(__dirname, '../../components/content_layouts'),
+    path.resolve(__dirname, '../../components/Form'),
+    path.resolve(__dirname, '../../components/global'),
+    path.resolve(__dirname, '../../components/Home'),
   ],
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)

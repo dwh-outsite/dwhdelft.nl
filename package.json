@@ -18,7 +18,7 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/svg": "^0.1.12",
-    "core-js": "^3.10.1",
+    "core-js": "^3.11.0",
     "dayjs": "^1.9.8",
     "nuxt": "^2.15.4",
     "nuxt-i18n": "^6.24.0",

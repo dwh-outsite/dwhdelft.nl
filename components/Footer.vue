@@ -15,6 +15,9 @@ en:
     - name: Jelle Vos
       role: Commissioner
       email: promotie@dwhdelft.nl
+    - name: Charlie Verboom
+      role: Commissioner
+      email: jongeren@dwhdelft.nl
   links:
     support_us: Support Us
     sign_up: Join DWH as a member
@@ -34,6 +37,9 @@ nl:
     - name: Jelle Vos
       role: Algemeen Bestuurslid
       email: promotie@dwhdelft.nl
+    - name: Charlie Verboom
+      role: Algemeen Bestuurslid
+      email: jongeren@dwhdelft.nl
   links:
     support_us: Steun Ons
     sign_up: Inschrijven als DWH lid

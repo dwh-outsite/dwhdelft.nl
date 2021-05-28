@@ -6,18 +6,12 @@ en:
     - name: Rory Baart
       role: President
       email: voorzitter@dwhdelft.nl
-    - name: Dries Stuij
+    - name: Charlie Verboom
       role: Secretary
       email: secretaris@dwhdelft.nl
-    - name: Quinten Star
+    - name: Dries Stuij
       role: Treasurer
       email: penningmeester@dwhdelft.nl
-    - name: Jelle Vos
-      role: Commissioner
-      email: promotie@dwhdelft.nl
-    - name: Charlie Verboom
-      role: Commissioner
-      email: jongeren@dwhdelft.nl
   links:
     support_us: Support Us
     sign_up: Join DWH as a member
@@ -28,18 +22,12 @@ nl:
     - name: Rory Baart
       role: Voorzitter
       email: voorzitter@dwhdelft.nl
-    - name: Dries Stuij
+    - name: Charlie Verboom
       role: Secretaris
       email: secretaris@dwhdelft.nl
-    - name: Quinten Star
+    - name: Dries Stuij
       role: Penningmeester
       email: penningmeester@dwhdelft.nl
-    - name: Jelle Vos
-      role: Algemeen Bestuurslid
-      email: promotie@dwhdelft.nl
-    - name: Charlie Verboom
-      role: Algemeen Bestuurslid
-      email: jongeren@dwhdelft.nl
   links:
     support_us: Steun Ons
     sign_up: Inschrijven als DWH lid

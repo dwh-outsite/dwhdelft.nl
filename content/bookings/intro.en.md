@@ -16,4 +16,7 @@ walking too much and crossing paths with other visitors. Aside from this, we ask
 aisles occupied when it's not necessary: you are not suppose to have conversations at other tables.
 This way, we can keep it **safe and responsible** for everybody.
 
+**Face masks are mandatory** while you're not at your table. Don't forget to use your mask while
+visiting the toilet or leaving the bar.
+
 Do you have questions or a nice suggestion? Contact us via the information at the bottom of this page.

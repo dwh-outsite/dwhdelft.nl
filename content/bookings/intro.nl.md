@@ -15,4 +15,7 @@ paden met andere bezoekers moet kruisen. Daarnaast vragen we je gangpaden niet o
 is niet de bedoeling gesprekken te voeren bij andere tafels. Op deze manier houden we het voor iedereen 
 **veilig en verantwoord**.
 
+Het dragen van een **mondkapje is verplicht** tenzij je aan je tafel zit. Vergeet het mondkapje niet
+op te op te doen bij toiletbezoek of vertrek.
+
 Heb je vragen of leuke suggesties? Neem contact op via de contactgegevens onderaan deze pagina.

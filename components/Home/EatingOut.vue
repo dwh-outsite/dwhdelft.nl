@@ -69,7 +69,7 @@ export default {
 <style scoped>
 .background {
   @apply bg-cover;
-  background-image: url(../../assets/images/photos/eatingout/eatingout.jpg);
+  background-image: url(#/assets/images/photos/eatingout/eatingout.jpg);
 }
 
 .triangle {

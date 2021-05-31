@@ -1,52 +1,28 @@
-<i18n lang="yaml">
-en:
-  menu:
-    - title: Home
-      url: index
-    - title: Join DWH
-      url: index#join-dwh
-    - title: Reservations
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
-    - title: Education
-      url: /education
-    - title: Andersblad
-      url: andersblad
-    - title: Contact
-      url: '#contact'
-nl:
-  menu:
-    - title: Home
-      url: index
-    - title: Kom naar DWH
-      url: index#join-dwh
-    - title: Reserveren
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
-    - title: Voorlichting
-      url: /education
-    - title: Andersblad
-      url: andersblad
-    - title: Contact
-      url: '#contact'
-</i18n>
-
 <template>
   <header id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
         <nuxt-link :to="localePath('index')">
-          <DWHLogo class="h-16 fill-current text-white" />
+          <slot name="logo" />
         </nuxt-link>
         <div v-show="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
-          <nuxt-link v-for="item in menu" :key="item.url" :to="item.url" class="block md:inline no-underline mr-4 my-2">
+          <nuxt-link
+            v-for="item in menuItems"
+            :key="item.url"
+            :to="item.url"
+            class="block md:inline no-underline mr-4 my-2"
+          >
             {{ item.title }}
           </nuxt-link>
+          <slot name="mobile-menu-extension"></slot>
         </div>
         <div class="hidden md:block px-4 text-xl font-semibold text-white">
-          <nuxt-link v-for="item in menu" :key="item.url" :to="item.url" class="block md:inline no-underline mr-4 my-2">
+          <nuxt-link
+            v-for="item in menuItems"
+            :key="item.url"
+            :to="item.url"
+            class="block md:inline no-underline mr-4 my-2"
+          >
             {{ item.title }}
           </nuxt-link>
         </div>
@@ -61,6 +37,7 @@ nl:
               <NLFlag />
             </nuxt-link>
           </div>
+          <slot name="menu-extension"></slot>
           <div
             class="rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white flex items-center justify-center md:hidden overflow-hidden relative"
             @click="showMenu = !showMenu"
@@ -71,10 +48,8 @@ nl:
         </div>
       </div>
     </nav>
-    <div class="image-container">
-      <img src="../assets/images/photos/cover.jpg" class="opacity-50" />
-    </div>
-    <div class="hero"></div>
+    <slot name="background"></slot>
+    <div :class="bg ? bg : 'bg-white'" class="hero"></div>
     <div class="relative flex items-center h-full">
       <div class="container px-4 mx-auto mt-40 mb-48">
         <slot></slot>
@@ -85,22 +60,20 @@ nl:
 
 <script>
 import Zondicon from 'vue-zondicons'
-import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
 import NLFlag from '#/assets/images/flags/nl.svg?inline'
 import GBFlag from '#/assets/images/flags/gb.svg?inline'
 
 export default {
   components: {
-    DWHLogo,
     NLFlag,
     GBFlag,
     Zondicon,
   },
-  props: ['small'],
+  props: ['menu', 'small', 'bg'],
   data() {
     return {
       showMenu: false,
-      menu: Object.values(this.$t('menu')).map((item) => {
+      menuItems: Object.values(this.menu).map((item) => {
         return { title: item.title, url: this.constructLocaleUrl(item.url) }
       }),
     }
@@ -143,7 +116,7 @@ export default {
 }
 
 .hero {
-  @apply bg-white absolute w-full;
+  @apply absolute w-full;
   transform: skewY(-7deg);
   transform-origin: 0;
   height: 100rem;
@@ -164,5 +137,28 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

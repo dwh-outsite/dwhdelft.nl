@@ -1475,6 +1475,11 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.12.tgz#431ec342a7195622f86688bbda82e3166ce8cb28"
   integrity sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==
 
+"@tailwindcss/aspect-ratio@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.2.1.tgz#a7ce776688b8218d9559a6918f0bccc58f0f16dd"
+  integrity sha512-aDFi80aHQ3JM3symJ5iKU70lm151ugIGFCI0yRZGpyjgQSDS+Fbe93QwypC1tCEllQE8p0S7TUu20ih1b9IKLA==
+
 "@tailwindcss/jit@^0.1.7":
   version "0.1.17"
   resolved "https://registry.yarnpkg.com/@tailwindcss/jit/-/jit-0.1.17.tgz#0fe54a6bd9473c3c1a5cb622ba771d69117a3d49"
@@ -6479,7 +6484,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3, lodash@^4.17.5:
+lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.3, lodash@^4.17.5:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -10007,6 +10012,20 @@ tailwind-config-viewer@^1.5.1:
     open "^7.0.4"
     portfinder "^1.0.26"
     replace-in-file "^6.1.0"
+
+tailwind-heropatterns@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/tailwind-heropatterns/-/tailwind-heropatterns-0.0.8.tgz#280a39c469f996873237b4fe7caab3cb3a1f7c23"
+  integrity sha512-no7lc5K9TF5Jy8GyfIq/F1/nS2HbwGPObwaeauRQJLZybE41BkCCVyew23O1m3ljYSE436YwHdNuphxfKF7ZgA==
+  dependencies:
+    lodash "^4.17.11"
+
+tailwindcss-aspect-ratio@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-aspect-ratio/-/tailwindcss-aspect-ratio-3.0.0.tgz#4f9fc7ca0f3468373290faaa8b92652157bee6a4"
+  integrity sha512-syVueHOdk0u6S9lFSQQxHwsYS+9AJ0tp1WWBB+vAwmJYzc9g/2OLwq4mHpigYue6t3PUgTSbRi9unQd7WEDjGQ==
+  dependencies:
+    lodash "^4.17.15"
 
 tailwindcss@^2.0.4:
   version "2.0.4"

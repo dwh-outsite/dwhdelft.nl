@@ -111,17 +111,15 @@ nl:
     <div class="mt-16 flex justify-center">
       <a :href="localePath('book')">
         <button
-          class="
-            shadow bg-purple-500 p-4 rounded inline-flex items-center relative hover:bg-purple-400 focus:outline-none
-            "
+          class="shadow bg-purple-500 p-4 rounded inline-flex items-center relative hover:bg-purple-400 focus:outline-none"
         >
-          <div v-html="$t('button.title')" class="text-left flex-1 text-xl font-semibold text-white" />
+          <div class="text-left flex-1 text-xl font-semibold text-white" v-html="$t('button.title')" />
           <div class="rounded-full w-12 h-12 bg-white ml-4 flex items-center justify-center">
             <Zondicon icon="cheveron-outline-right" class="w-8 text-purple-500 fill-current" />
           </div>
           <div
-            v-text="$t('button.note')"
             class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider absolute left-0 -top-3 shadow ml-4"
+            v-text="$t('button.note')"
           />
         </button>
       </a>

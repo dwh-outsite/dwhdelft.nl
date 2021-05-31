@@ -11,7 +11,7 @@ en:
       banner_title: Weekly dinner
       banner_subtitle: Members only, registration required
       title: EatingOUT
-      date: Every Tuesday at 6.30pm
+      date: Every Monday at 6.30pm
 nl:
   title: Aankomende activiteiten
   defaults:
@@ -24,7 +24,7 @@ nl:
       banner_title: Wekelijkse eettafel
       banner_subtitle: Alleen voor leden, aanmelden verplicht
       title: EatingOUT
-      date: Elke dinsdag om 18.30 uur
+      date: Elke maandag om 18.30 uur
 </i18n>
 
 <template>

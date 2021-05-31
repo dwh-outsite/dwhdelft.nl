@@ -2,9 +2,9 @@
 name: EatingOUT
 url: https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV
 description_nl:
-  De chat voor iedereen geïnteresseerd op dinsdag te koken. Ben jij een keukenpro of wil je dat zijn? Kom de chat
+  De chat voor iedereen geïnteresseerd op maandag te koken. Ben jij een keukenpro of wil je dat zijn? Kom de chat
   in en kook voor een grote groep, in je eentje of eerst met iemand met ervaring.
 description_en:
-  The chat for everyone interested in cooking on Tuesdays. Are you a kitchen pro or would you like to be? Join the
+  The chat for everyone interested in cooking on Mondays. Are you a kitchen pro or would you like to be? Join the
   chat and cook for a crowd, on your own or with someone more experienced.
 ---

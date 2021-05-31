@@ -14,7 +14,7 @@ en:
       - 'As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
         nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
         beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!'
-    invitation: We are <strong>temporarily closed</strong> due to COVID-19.
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf 21:00</strong>'
 nl:
   hero:
     title: LHBT+ vereniging sinds 1968
@@ -30,7 +30,7 @@ nl:
       - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
         baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
         bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!'
-    invitation: Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf 21:00</strong>'
 </i18n>
 
 <template>

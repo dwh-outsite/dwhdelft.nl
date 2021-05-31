@@ -1,15 +1,15 @@
 <i18n lang="yaml">
 en:
   title: 'EatingOUT: Our weekly dinner'
-  subtitle: Every Tuesday, for just 4 euros
+  subtitle: Every Monday, for just 4 euros
   button: Sign up for the next EatingOUT now
   notes:
     - Members only
     - Sign-up required
 nl:
   title: 'EatingOUT: Onze wekelijkse eettafel'
-  subtitle: Elke dinsdag eten voor maar 4 euro
-  button: Meld je aan voor aankomende dinsdag
+  subtitle: Elke maandag eten voor maar 4 euro
+  button: Meld je aan voor aankomende maandag
   notes:
     - Alleen voor leden
     - Aanmelden verplicht

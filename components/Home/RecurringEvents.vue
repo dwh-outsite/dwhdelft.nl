@@ -4,15 +4,13 @@ en:
   button:
     title: <strong>Book a table</strong> for one of our activities
     note: Bookings are mandatory due to COVID-19
-  closed_notice:
-    title: We are <strong>temporarily closed</strong> due to COVID-19.
   events:
     - name: EatingOUT
       note: Members only
-      day: Tuesday
-      time: '----'
+      day: Monday
+      time: '18:30'
       description: |-
-        On Tuesdays we gather around the dinner table to enjoy a delicious meal cooked by one of our
+        On Mondays we gather around the dinner table to enjoy a delicious meal cooked by one of our
         members, sometimes with an activity afterwards.
       buttonText: Sign Up
       buttonLink: https://dwhdelft.nl/eatingout
@@ -21,13 +19,13 @@ en:
       time: '----'
       description: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
-        old classics.
+        old classics. <em>Temporarily closed due to COVID-19.</em>
       buttonText: Programme <small>(For Members)</small>
       buttonLink: http://homodelft.nl/films/
     - name: Outsite
       note: Max. 28 years old
       day: Thursday
-      time: '----'
+      time: '19:00'
       description: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
         website for upcoming events and more.
@@ -35,7 +33,7 @@ en:
       buttonLink: https://outsite.nl/en
     - name: Open Bar Night
       day: Saturday
-      time: '----'
+      time: '19:00'
       description: |-
         Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
         parties, and join one of our many events!
@@ -44,15 +42,13 @@ nl:
   button:
     title: <strong>Reserveer</strong> nu voor één van onze activiteiten
     note: Reserveren verplicht i.v.m. COVID-19
-  closed_notice:
-    title: Wij zijn <strong>tijdelijk gesloten</strong> vanwege COVID-19.
   events:
     - name: EatingOUT
       note: Alleen leden
-      day: Dinsdag
-      time: '----'
+      day: Maandag
+      time: '18:30'
       description: |-
-        Elke dinsdagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
+        Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
         één van onze leden, met soms een activiteit achteraf.
       buttonText: Aanmelden
       buttonLink: https://dwhdelft.nl/eatingout
@@ -61,13 +57,13 @@ nl:
       time: '----'
       description: |-
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
-        aan de beurt.
+        aan de beurt. <em>Tijdelijk gesloten vanwege COVID-19.</em>
       buttonText: Programma <small>(voor leden)</small>
       buttonLink: http://homodelft.nl/films/
     - name: Outsite
       note: Max. 28 jaar
       day: Donderdag
-      time: '----'
+      time: '19:00'
       description: |-
         Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
         Outsite website voor aankomende events!
@@ -75,7 +71,7 @@ nl:
       buttonLink: https://outsite.nl/
     - name: Open Bar
       day: Zaterdag
-      time: '----'
+      time: '19:00'
       description: |-
         Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
         feesten en doe mee met een van onze vele events!
@@ -101,9 +97,7 @@ nl:
               </div>
               <div class="border-l border-purple-200 pl-3 py-2" v-text="event.time" />
             </div>
-            <p>
-              {{ event.description }}
-            </p>
+            <p v-html="event.description" />
           </div>
           <a
             v-if="event.buttonText"
@@ -115,9 +109,22 @@ nl:
       </div>
     </div>
     <div class="mt-16 flex justify-center">
-      <div class="shadow bg-purple-500 p-4 rounded inline-flex items-center relative focus:outline-none">
-        <div class="text-left flex-1 text-xl font-semibold text-white" v-html="$t('closed_notice.title')" />
-      </div>
+      <a :href="localePath('book')">
+        <button
+          class="
+            shadow bg-purple-500 p-4 rounded inline-flex items-center relative hover:bg-purple-400 focus:outline-none
+            "
+        >
+          <div v-html="$t('button.title')" class="text-left flex-1 text-xl font-semibold text-white" />
+          <div class="rounded-full w-12 h-12 bg-white ml-4 flex items-center justify-center">
+            <Zondicon icon="cheveron-outline-right" class="w-8 text-purple-500 fill-current" />
+          </div>
+          <div
+            v-text="$t('button.note')"
+            class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider absolute left-0 -top-3 shadow ml-4"
+          />
+        </button>
+      </a>
     </div>
   </div>
 </template>

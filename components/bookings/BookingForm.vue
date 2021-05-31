@@ -178,7 +178,9 @@ nl:
               v-for="restriction in restrictions"
               :key="restriction"
               :class="[
-                dinnerForm.diet.includes(restriction) ? 'bg-purple-400 text-white' : 'bg-purple-100 hover:bg-purple-200',
+                dinnerForm.diet.includes(restriction)
+                  ? 'bg-purple-400 text-white'
+                  : 'bg-purple-100 hover:bg-purple-200',
                 'rounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow',
               ]"
               @click="toggleRestriction(restriction)"

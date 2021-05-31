@@ -158,8 +158,8 @@ nl:
           <div v-for="team in teams" :key="team.name" class="md:w-1/2 p-1">
             <div
               :class="[
-                team === dinnerForm.team ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
-                'bg-purple-100 rounded px-3 py-2 tracking-wider flex items-center cursor-pointer shadow',
+                team === dinnerForm.team ? 'bg-purple-400 text-white' : 'bg-purple-100 hover:bg-purple-200',
+                'rounded px-3 py-2 tracking-wider flex items-center cursor-pointer shadow',
               ]"
               @click="dinnerForm.team = team"
             >
@@ -178,8 +178,8 @@ nl:
               v-for="restriction in restrictions"
               :key="restriction"
               :class="[
-                dinnerForm.diet.includes(restriction) ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
-                'bg-purple-100 rounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow',
+                dinnerForm.diet.includes(restriction) ? 'bg-purple-400 text-white' : 'bg-purple-100 hover:bg-purple-200',
+                'rounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow',
               ]"
               @click="toggleRestriction(restriction)"
               v-text="restriction"

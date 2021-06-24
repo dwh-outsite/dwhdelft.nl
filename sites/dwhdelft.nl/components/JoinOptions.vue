@@ -8,7 +8,7 @@ en:
     Are you 28 years or younger? Take a look at
     <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.
   bar_buddy:
-    title: Bar Buddies
+    heading: Bar Buddies
     description: |-
       If you are looking to come by on a Saturday night but you are not yet familiar with the society you
       can make use of the bar buddy system! A bar buddy is someone who can not only tell you all there is to know
@@ -23,7 +23,7 @@ nl:
     Ben je 28 jaar of jonger? Kijk dan ook eens bij
     <a href="https://outsite.nl/" class="font-bold">Outsite</a>, het jongerendeel van de vereniging.
   bar_buddy:
-    title: Barbuddies
+    heading: Barbuddies
     description: |-
       Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
       voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de
@@ -46,7 +46,7 @@ nl:
           <div class="rounded-full w-16 h-16 p-5 bg-brand-500 mb-8 text-white">
             <Zondicon icon="beverage" class="fill-current" />
           </div>
-          <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('bar_buddy.title')" />
+          <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('bar_buddy.heading')" />
           <p class="mb-8 text-lg" v-text="$t('bar_buddy.description')" />
         </div>
         <div>

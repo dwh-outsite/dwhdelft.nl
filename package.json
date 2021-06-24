@@ -22,7 +22,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "core-js": "^3.10.1",
     "dayjs": "^1.9.8",
-    "nuxt": "^2.15.4",
+    "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.24.0",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss-aspect-ratio": "^3.0.0",

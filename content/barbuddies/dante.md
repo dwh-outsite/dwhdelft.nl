@@ -1,5 +1,8 @@
 ---
 name: Dante
+sites:
+  - dwh
+  - outsite
 nl:
   Heeyhey, ik ben Dante. Ik ben 21 jaar oud en studeer Industrieel Ontwerp. Naast mijn studie vind ik het erg leuk om
   saxofoon te spelen en loop ik vaak rond op DWH. Ik heb hier zelf helemaal mijn plek gevonden en wil ook graag

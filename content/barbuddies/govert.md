@@ -1,5 +1,7 @@
 ---
 name: Govert
+sites:
+  - dwh
 nl:
   Hoi ik ben Govert, begin dertig. Momenteel student bouwkunde en ik geef les op een middelbare school. Zeer actief
   binnen DWH. DWH is voor mij een leuke groep mensen, heel divers. En ook een plek om allerlei dingen te organiseren en

@@ -29,14 +29,14 @@ nl:
       </div>
     </section>
 
-    <section class="information bg-pink-200 -mb-10 md:-mb-40 md:pb-8 bg-hero-wiggle">
+    <section class="information bg-brand-200 -mb-10 md:-mb-40 md:pb-8 bg-hero-wiggle">
       <div class="information-content pt-12 md:pt-40 pb-20 md:pb-64 container mx-auto px-4 md:flex">
         <div class="flex space-x-2 md:space-x-0 md:block md:w-1/4 md:-mb-4 overflow-auto whitespace-no-wrap">
           <div
             v-for="committee in committees"
             :key="committee.name"
             :class="
-              committee.active ? 'bg-white' : 'bg-pink-900 bg-opacity-25 text-white cursor-pointer hover:bg-opacity-50'
+              committee.active ? 'bg-white' : 'bg-brand-900 bg-opacity-25 text-white cursor-pointer hover:bg-opacity-50'
             "
             class="rounded-t-lg md:rounded-t-none md:rounded-l-lg py-6 md:py-3 px-6 md:px-4 md:mb-4 font-semibold tracking-wide z-20 relative"
             @click="setActive(committee)"
@@ -48,7 +48,7 @@ nl:
           class="flex-1 bg-white rounded-b-lg md:rounded-b-none md:rounded-r-lg shadow-lg p-10 z-10 relative md:flex"
         >
           <div class="flex-1 md:pr-10 mb-8 md:mb-0">
-            <h2 class="text-2xl font-bold text-pink-400 uppercase tracking-wider mb-4">
+            <h2 class="text-2xl font-bold text-brand-400 uppercase tracking-wider mb-4">
               {{ activeCommittee.name }}
             </h2>
             <p class="text-lg md:text-xl" v-html="activeCommittee[`description_${$i18n.locale}`]" />

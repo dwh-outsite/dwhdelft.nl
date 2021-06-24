@@ -48,14 +48,14 @@ nl:
 
 <template>
   <div class="bg-white p-8 rounded-lg shadow-xl">
-    <div class="rounded-full w-16 h-16 p-5 bg-purple-500 mb-8 text-white">
+    <div class="rounded-full w-16 h-16 p-5 bg-brand-500 mb-8 text-white">
       <Zondicon icon="time" class="fill-current" />
     </div>
 
-    <h2 class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider" v-text="$t('title')" />
+    <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('title')" />
 
     <div v-show="state === 'finished'">
-      <FormCompleted class="bg-purple-100" :title="$t('forms.success.heading')" :subtitle="$t('thank_you')" />
+      <FormCompleted class="bg-brand-100" :title="$t('forms.success.heading')" :subtitle="$t('thank_you')" />
     </div>
 
     <form v-show="state == 'start' || state == 'loading'" @submit="submit">
@@ -84,14 +84,14 @@ nl:
           <div v-for="event in events" :key="event.id" class="w-full md:w-1/3">
             <div
               :class="[
-                form.event_id == event.id ? 'border-2 border-purple-500' : '',
+                form.event_id == event.id ? 'border-2 border-brand-500' : '',
                 event.available_seats == 0 ? 'text-gray-400' : 'cursor-pointer',
               ]"
-              class="bg-purple-100 rounded-md mt-2 mr-2 shadow overflow-hidden"
+              class="bg-brand-100 rounded-md mt-2 mr-2 shadow overflow-hidden"
               @click="selectEvent(event)"
             >
               <div
-                :class="event.available_seats <= 0 ? 'bg-purple-200 text-purple-300' : 'text-white bg-purple-500'"
+                :class="event.available_seats <= 0 ? 'bg-brand-200 text-brand-300' : 'text-white bg-brand-500'"
                 class="px-3 py-1 font-bold"
                 v-text="event.name"
               />
@@ -108,13 +108,13 @@ nl:
         <label class="required" v-text="$t('seat_type')" />
         <div class="md:flex text-center">
           <div
-            :class="form.twoseat ? '' : 'border-2 border-purple-500'"
-            class="flex-1 md:mr-1 mb-2 md:mb-0 h-16 shadow bg-purple-100 rounded overflow-hidden cursor-pointer"
+            :class="form.twoseat ? '' : 'border-2 border-brand-500'"
+            class="flex-1 md:mr-1 mb-2 md:mb-0 h-16 shadow bg-brand-100 rounded overflow-hidden cursor-pointer"
             @click="selectTwoseat(false)"
           >
             <div class="flex h-full">
-              <div class="px-4 bg-purple-500 flex flex-col justify-center">
-                <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
+              <div class="px-4 bg-brand-500 flex flex-col justify-center">
+                <div class="rounded-full w-6 h-6 bg-white text-brand-500 p-1">
                   <Zondicon v-show="!form.twoseat" icon="checkmark" class="fill-current" />
                 </div>
               </div>
@@ -123,18 +123,18 @@ nl:
           </div>
           <div
             :class="[
-              form.twoseat ? 'border-2 border-purple-500' : '',
+              form.twoseat ? 'border-2 border-brand-500' : '',
               selectedEvent.available_twoseats > 0 ? 'cursor-pointer' : '',
             ]"
-            class="flex-1 md:ml-1 h-16 shadow bg-purple-100 rounded overflow-hidden"
+            class="flex-1 md:ml-1 h-16 shadow bg-brand-100 rounded overflow-hidden"
             @click="selectTwoseat(true)"
           >
             <div class="flex h-full">
               <div
-                :class="selectedEvent.available_twoseats > 0 ? 'bg-purple-500' : 'bg-purple-200'"
+                :class="selectedEvent.available_twoseats > 0 ? 'bg-brand-500' : 'bg-brand-200'"
                 class="px-4 flex flex-col justify-center"
               >
-                <div class="rounded-full w-6 h-6 bg-white text-purple-500 p-1">
+                <div class="rounded-full w-6 h-6 bg-white text-brand-500 p-1">
                   <Zondicon v-show="form.twoseat" icon="checkmark" class="fill-current" />
                 </div>
               </div>
@@ -158,7 +158,7 @@ nl:
           <div v-for="team in teams" :key="team.name" class="md:w-1/2 p-1">
             <div
               :class="[
-                team === dinnerForm.team ? 'bg-purple-400 text-white' : 'bg-purple-100 hover:bg-purple-200',
+                team === dinnerForm.team ? 'bg-brand-400 text-white' : 'bg-brand-100 hover:bg-brand-200',
                 'rounded px-3 py-2 tracking-wider flex items-center cursor-pointer shadow',
               ]"
               @click="dinnerForm.team = team"
@@ -178,10 +178,8 @@ nl:
               v-for="restriction in restrictions"
               :key="restriction"
               :class="[
-                dinnerForm.diet.includes(restriction)
-                  ? 'bg-purple-400 text-white'
-                  : 'bg-purple-100 hover:bg-purple-200',
-                'rounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow',
+                dinnerForm.diet.includes(restriction) ? 'bg-brand-400 text-white' : 'bg-brand-100 hover:bg-brand-200',
+                'ounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow',
               ]"
               @click="toggleRestriction(restriction)"
               v-text="restriction"
@@ -190,8 +188,8 @@ nl:
           <div class="flex-1 md:w-1/2 mt-2 md:mt-0 md:ml-2">
             <div
               :class="[
-                dinnerForm.otherDiet.length > 0 ? 'bg-purple-400 text-white' : 'hover:bg-purple-200',
-                'bg-purple-100 rounded px-1 py-2 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow',
+                dinnerForm.otherDiet.length > 0 ? 'bg-brand-400 text-white' : 'hover:bg-brand-200',
+                'bg-brand-100 rounded px-1 py-2 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow',
               ]"
             >
               <span class="px-2">Other:</span>

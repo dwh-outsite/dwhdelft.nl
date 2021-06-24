@@ -18,8 +18,8 @@ nl:
 
     <section class="container mx-auto relative pt-12 md:pt-6 px-4">
       <div class="pb-16 m-auto">
-        <div v-show="$route.query.canceled" class="bg-purple-100 rounded p-4 text-lg flex items-center mb-12">
-          <div class="rounded-full w-16 h-16 p-3 bg-purple-500 text-white">
+        <div v-show="$route.query.canceled" class="bg-brand-100 rounded p-4 text-lg flex items-center mb-12">
+          <div class="rounded-full w-16 h-16 p-3 bg-brand-500 text-white">
             <Zondicon icon="information-outline" class="fill-current w-10" />
           </div>
           <div class="ml-4">
@@ -67,7 +67,7 @@ export default {
 
 <style>
 .booking-form-section::before {
-  @apply bg-purple-500 absolute w-full;
+  @apply bg-brand-500 absolute w-full;
   height: 100%;
   transform: skewY(-7deg);
   content: '';
@@ -76,7 +76,7 @@ export default {
 }
 
 .intro-content h1 {
-  @apply text-purple-400 leading-none text-5xl mb-6 md:mb-12 md:text-6xl font-normal;
+  @apply text-brand-400 leading-none text-5xl mb-6 md:mb-12 md:text-6xl font-normal;
 }
 
 .booking-rules-content h1 {
@@ -88,7 +88,7 @@ export default {
 }
 
 .booking-rules-content ul li {
-  @apply bg-purple-400 text-white rounded p-4 mb-2;
+  @apply bg-brand-400 text-white rounded p-4 mb-2;
 }
 
 .booking-rules-content blockquote {

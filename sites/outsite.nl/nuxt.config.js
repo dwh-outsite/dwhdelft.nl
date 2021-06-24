@@ -79,7 +79,7 @@ export default {
   // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)
   tailwindcss: {
     jit: true,
-    configPath: '../../tailwind.config.js',
+    configPath: './tailwind.config.js',
     config: {
       purge: {
         content: ['../../components/**/**.vue'],

@@ -1,5 +1,8 @@
 ---
 name: Stefan
+sites:
+  - dwh
+  - outsite
 nl:
   Hoi! Ik ben Stefan, 23 jaar en masterstudent in de richting van transport, infrastructuur en logistiek. Ik ben voor
   mijn master verhuisd naar Delft en daarom relatief nieuw hier. Ongeveer een jaar geleden kwam ik voor het eerst bij

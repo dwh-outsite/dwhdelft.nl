@@ -52,6 +52,7 @@ export default {
     path.resolve(__dirname, '../../components/Form'),
     path.resolve(__dirname, '../../components/global'),
     path.resolve(__dirname, '../../components/Home'),
+    path.resolve(__dirname, '../../components/SharedPages'),
   ],
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)

@@ -2,19 +2,19 @@
 en:
   title: Membership Signup
   main_text:
-    - By becoming a member you support us in the things that we find important, like the introduction groups, education
-      at secondary schools, the movie night, the bar nights and all other activities at DWH.
+    - Outsite is part of the LGBT+ association DWH. By becoming a member you support us in our actions, such as the
+      “kennigsmakingsgroep”, sex education in secondary schools, film nights, bar evenings and other activities at
+      DWH.
     - 'As a member you receive the magazine from DWH: the Andersblad, and you can join the EatingOUT where you can enjoy
       a cheap and delicious meal.'
-  form_success: We will send you an e-mail soon to confirm your membership.
 nl:
   title: Inschrijven als DWH lid
   main_text:
-    - Door lid te worden steun je ons in díe dingen die we zo belangrijk vinden, zoals de kennismakingsgroep,
-      voorlichting op middelbare scholen, filmavond, baravonden en alle andere activiteiten bij DWH.
+    - Outsite is onderdeel van de LHBT+ vereniging DWH. Door lid te worden steun je ons in dingen die we belangrijk
+      vinden, zoals de kennismakingsgroep, voorlichting op middelbare scholen, filmavonden, baravonden en alle
+      andere activiteiten bij de vereniging.
     - 'Als lid ontvang je het blad van DWH: het Andersblad en mag je bij de EatingOUT aanschuiven waar je lekker,
       gezellig en goedkoop kunt eten.'
-  form_success: We sturen je binnenkort een bevestiging van je lidmaatschap.
 </i18n>
 
 <template>

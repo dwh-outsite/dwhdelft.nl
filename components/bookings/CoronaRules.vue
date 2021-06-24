@@ -20,22 +20,22 @@ nl:
 <template>
   <div>
     <CoronaRule :text="$t('rules[0]')">
-      <WashHandsIcon class="h-20 w-20 mr-4 text-brand-600 fill-current" />
+      <WashHandsIcon class="h-20 w-20 mr-4 text-brand-450 fill-current" />
     </CoronaRule>
     <CoronaRule :text="$t('rules[1]')">
-      <CoughIcon class="h-20 w-20 mr-4 text-brand-600 fill-current" />
+      <CoughIcon class="h-20 w-20 mr-4 text-brand-450 fill-current" />
     </CoronaRule>
     <CoronaRule :text="$t('rules[2]')">
-      <ContactLessIcon class="h-20 w-20 mr-4 text-brand-600 fill-current" />
+      <ContactLessIcon class="h-20 w-20 mr-4 text-brand-450 fill-current" />
     </CoronaRule>
     <CoronaRule :text="$t('rules[3]')">
-      <HandshakeIcon class="h-20 w-20 mr-4 text-brand-600 fill-current" />
+      <HandshakeIcon class="h-20 w-20 mr-4 text-brand-450 fill-current" />
     </CoronaRule>
     <CoronaRule :text="$t('rules[4]')">
-      <DistanceIcon class="h-20 w-20 mr-4 text-brand-600 fill-current" />
+      <DistanceIcon class="h-20 w-20 mr-4 text-brand-450 fill-current" />
     </CoronaRule>
     <CoronaRule :text="$t('rules[5]')">
-      <HomeIcon class="h-20 w-20 mr-4 text-brand-600 fill-current" />
+      <HomeIcon class="h-20 w-20 mr-4 text-brand-450 fill-current" />
     </CoronaRule>
   </div>
 </template>

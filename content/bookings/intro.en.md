@@ -1,4 +1,4 @@
-# **Welcome back** at DWH
+# **Welcome** back
 
 We are happy to welcome you again in these times of corona! Although it will be different than usual,
 you can enjoy a fun bar evening, a cool movie or a nice meal with your friends at our building.

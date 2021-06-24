@@ -9,18 +9,16 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'DWH - LHBT+ vereniging Delft',
+    title: 'Outsite - LHBT+ vereniging Delft',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content:
-          'DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek ' +
-          'voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie.',
+        content: 'Outsite is er voor jongeren en studenten tot en met 28 jaar die zich identificeren als LHBT+.'
       },
-      { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'DWH Delft' },
+      { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'Outsite' },
     ],
     link: [
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
@@ -52,6 +50,7 @@ export default {
     path.resolve(__dirname, '../../components/Form'),
     path.resolve(__dirname, '../../components/global'),
     path.resolve(__dirname, '../../components/Home'),
+    path.resolve(__dirname, '../../components/SharedPages'),
   ],
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)

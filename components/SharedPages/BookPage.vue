@@ -36,7 +36,7 @@ nl:
 
     <section class="booking-form-section relative pb-16 lg:pb-24">
       <div class="mx-auto container px-4 lg:flex flex-row-reverse">
-        <div class="flex-1 pt-16 lg:pl-16">
+        <div class="flex-1 pt-16 lg:pl-16 z-10">
           <nuxt-content class="booking-rules-content text-white text-xl" :document="bookingRules" />
         </div>
         <div class="lg:w-1/2 pt-8 lg:pt-40">

@@ -1,5 +1,5 @@
 <template>
-  <BookPage :intro="intro" :bookingRules="bookingRules" />
+  <BookPage :intro="intro" :booking-rules="bookingRules" />
 </template>
 
 <script>

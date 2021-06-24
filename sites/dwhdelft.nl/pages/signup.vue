@@ -31,7 +31,7 @@ nl:
           {{ $t('title') }}
         </h2>
 
-        <SignupForm :feesInformation="feesInformation" />
+        <SignupForm :fees-information="feesInformation" />
       </div>
     </section>
   </div>

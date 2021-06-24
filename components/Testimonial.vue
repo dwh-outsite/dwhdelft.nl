@@ -7,13 +7,7 @@ nl:
 
 <template>
   <div class="mx-auto container">
-    <div
-      class="
-        md:hidden
-        mx-auto bg-white relative
-        bg-hero-falling-triangles pb-6
-      "
-    >
+    <div class="md:hidden mx-auto bg-white relative bg-hero-falling-triangles pb-6">
       <div v-for="(testimonial, index) in testimonials" :key="index">
         <transition name="slide-right">
           <div v-show="index === active" class="absolute w-full text-center">
@@ -22,12 +16,12 @@ nl:
             </div>
             <div class="bg-white-gradient-vertical">
               <div>
-                <div v-text="testimonial.name" class="uppercase tracking-wide font-bold text-brand-400 mr-1" />
-                <div v-text="testimonial[`author_description_${$i18n.locale}`]" class="text-gray-500 italic" />
+                <div class="uppercase tracking-wide font-bold text-brand-400 mr-1" v-text="testimonial.name" />
+                <div class="text-gray-500 italic" v-text="testimonial[`author_description_${$i18n.locale}`]" />
               </div>
               <div class="flex px-6 pb-6 leading-snug">
                 <div class="absolute text-mega text-brand-100 -ml-6 -mt-20 pt-2 z-0">“</div>
-                <div v-text="testimonial[`quote_${$i18n.locale}`]" class="text-xl z-20 pt-2" />
+                <div class="text-xl z-20 pt-2" v-text="testimonial[`quote_${$i18n.locale}`]" />
               </div>
             </div>
           </div>
@@ -38,20 +32,16 @@ nl:
           <div
             v-for="(testimonial, index) in testimonials"
             :key="index"
-            @click="setActive(index)"
             :class="index === active ? 'bg-gray-400' : 'bg-gray-300'"
             class="rounded-full w-2 h-2 mr-1 cursor-pointer"
+            @click="setActive(index)"
           />
         </div>
       </div>
     </div>
 
     <div
-      class="
-        hidden md:block
-        mx-auto rounded-full bg-white shadow-lg relative overflow-hidden w-2/3
-        bg-hero-falling-triangles
-      "
+      class="hidden md:block mx-auto rounded-full bg-white shadow-lg relative overflow-hidden w-2/3 bg-hero-falling-triangles"
     >
       <div v-for="(testimonial, index) in testimonials" :key="index">
         <transition name="slide-right">
@@ -64,13 +54,11 @@ nl:
                 <div class="absolute text-mega text-brand-100 -ml-6 -mt-20 pt-2 z-0">“</div>
                 <div class="text-xl z-10 pt-2">
                   {{ testimonial[`quote_${$i18n.locale}`] }}
-                  <a :href="localePath('testimonials')" class="text-brand-500">
-                    {{ $t('read_more') }} &raquo;
-                  </a>
+                  <a :href="localePath('testimonials')" class="text-brand-500"> {{ $t('read_more') }} &raquo; </a>
                 </div>
                 <div>
-                  <span v-text="testimonial.name" class="uppercase tracking-wide font-bold text-brand-400 mr-1" />
-                  <span v-text="testimonial[`author_description_${$i18n.locale}`]" class="text-gray-500 italic" />
+                  <span class="uppercase tracking-wide font-bold text-brand-400 mr-1" v-text="testimonial.name" />
+                  <span class="text-gray-500 italic" v-text="testimonial[`author_description_${$i18n.locale}`]" />
                 </div>
               </div>
             </div>
@@ -83,9 +71,9 @@ nl:
           <div
             v-for="(testimonial, index) in testimonials"
             :key="index"
-            @click="setActive(index)"
             :class="index === active ? 'bg-gray-400' : 'bg-gray-300'"
             class="rounded-full w-2 h-2 mr-1 cursor-pointer"
+            @click="setActive(index)"
           />
         </div>
       </div>

@@ -1,5 +1,8 @@
 ---
 name: Hidde
+sites:
+  - dwh
+  - outsite
 nl:
   Hey, ik ben Hidde. Ik ben 24 jaar oud en bezig met de master Technische Wiskunde, de kansrekening track. Ik loop nu
   al ongeveer 3 jaar rond op DWH, maar ben het laatste jaar een stuk actiever geworden; ik ben vaak vrijwilliger

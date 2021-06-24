@@ -27,7 +27,7 @@ nl:
       <p v-for="text in $t('main_text')" :key="text" class="content mb-4" v-html="text" />
     </PageIntroText>
 
-    <section class="bg-purple-400 pb-4 md:py-12">
+    <section class="bg-brand-400 pb-4 md:py-12">
       <div
         v-for="(categoryName, category) in $t('categories')"
         :key="category"

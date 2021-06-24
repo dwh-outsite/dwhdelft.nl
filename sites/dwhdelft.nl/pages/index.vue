@@ -73,7 +73,7 @@ nl:
       </div>
     </section>
 
-    <section id="join-dwh" class="bg-purple-400 relative z-10">
+    <section id="join-dwh" class="bg-brand-400 relative z-10">
       <JoinOptions />
     </section>
 
@@ -87,7 +87,7 @@ nl:
   </div>
 </template>
 
-<style>
+<style scoped>
 .information::before {
   @apply bg-gray-200 absolute w-full;
   height: 250%;

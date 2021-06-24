@@ -12,7 +12,7 @@ nl:
 <template>
   <ActionCard :title="buddy.name">
     <template #icon>
-      <div class="rounded-full w-12 h-12 p-3 bg-purple-500 text-white mr-3">
+      <div class="rounded-full w-12 h-12 p-3 bg-brand-450 text-white mr-3">
         <Zondicon icon="user" class="fill-current" />
       </div>
     </template>
@@ -27,7 +27,7 @@ nl:
     <div :class="['text-lg relative', expanded ? 'pb-8' : 'clamp-lines']">
       <span class="absolute z-10 bottom-0 right-0 flex">
         <span class="w-32 block white-gradient" />
-        <a class="text-purple-500 bg-white cursor-pointer" @click="readMore()">
+        <a class="text-brand-450 bg-white cursor-pointer" @click="readMore()">
           {{ $t('' + (expanded ? 'read_less' : 'read_more')) }}
         </a>
       </span>

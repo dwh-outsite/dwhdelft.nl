@@ -1,5 +1,7 @@
 ---
 name: Jeff
+sites:
+  - dwh
 en:
   Hi, my name is Jeff. I'm in my late twenties, and I study Computer Science at TU Delft. I've been a member of DWH
   for a few years now. I'm a regular at the EatingOUT on Tuesdays, but I'm happy to be your barbuddy on a Thursday. I

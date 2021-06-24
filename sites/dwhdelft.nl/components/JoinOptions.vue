@@ -43,10 +43,10 @@ nl:
       </div>
       <div class="bg-white rounded-lg md:rounded-t-none p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0">
         <div class="flex-1">
-          <div class="rounded-full w-16 h-16 p-5 bg-purple-500 mb-8 text-white">
+          <div class="rounded-full w-16 h-16 p-5 bg-brand-500 mb-8 text-white">
             <Zondicon icon="beverage" class="fill-current" />
           </div>
-          <h2 class="text-xl font-bold mb-4 text-purple-500 uppercase tracking-wider" v-text="$t('bar_buddy.title')" />
+          <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('bar_buddy.title')" />
           <p class="mb-8 text-lg" v-text="$t('bar_buddy.description')" />
         </div>
         <div>

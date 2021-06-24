@@ -8,11 +8,11 @@ html {
 }
 
 .button-pink {
-  @apply bg-purple-500 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
+  @apply bg-brand-450 px-4 py-2 rounded text-white uppercase font-semibold tracking-wider shadow;
 }
 
 .button-pink:hover {
-  @apply bg-purple-300;
+  @apply bg-brand-300;
 }
 
 .button-white {
@@ -87,11 +87,11 @@ html {
 }
 
 .content a {
-  @apply text-purple-600;
+  @apply text-brand-600;
 }
 
 .content a:hover {
-  @apply text-purple-800 underline;
+  @apply text-brand-800 underline;
 }
 
 .content ul {

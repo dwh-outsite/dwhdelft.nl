@@ -1,6 +1,6 @@
 <template>
   <section class="flex justify-center">
-    <div v-if="$i18n.locale == 'en'" class="shadow bg-purple-500 p-4 rounded inline-flex items-center">
+    <div v-if="$i18n.locale == 'en'" class="shadow bg-brand-500 p-4 rounded inline-flex items-center">
       <div
         class="rounded-full w-7 h-7 bg-white mr-2 border-2 border-white flex items-center justify-center overflow-hidden relative"
       >

@@ -4,7 +4,7 @@ const { spawn } = require('child_process')
 const { program } = require('commander')
 const inquirer = require('inquirer')
 
-const sites = fs.readdirSync(path.join(__dirname, 'sites'))
+const sites = fs.readdirSync(path.join(__dirname, 'sites')).filter(f => f.isDirectory())
 
 // eslint-disable-next-line prettier/prettier
 program

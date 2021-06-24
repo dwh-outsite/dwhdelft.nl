@@ -1,5 +1,8 @@
 ---
 name: Niv
+sites:
+  - dwh
+  - outsite
 en:
   Hey! I’m Niv, 22 yo and studying Applied Physics. In the meantime, I found my place in this cool association (I’m a
   KMG parent and I organise the OWee this year). When I first stepped foot into the building, I was so nervous! I soon

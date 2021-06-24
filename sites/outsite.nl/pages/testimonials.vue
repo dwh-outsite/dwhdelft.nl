@@ -8,14 +8,14 @@ nl:
 <template>
   <div>
     <header>
-      <Header small="true" bg="bg-pink-100">
+      <Header small="true" bg="bg-brand-100">
         <h1 class="text-4xl text-white font-normal">
           {{ $t('title') }}
         </h1>
       </Header>
     </header>
 
-    <section class="bg-pink-100 pt-8">
+    <section class="bg-brand-100 pt-8">
       <div class="container mx-auto px-4 pb-10 flex flex-wrap justify-center">
         <div v-for="(testimonial, index) in testimonials" :key="index" class="md:w-1/2 mb-8">
           <div class="md:mx-4 h-full bg-white relative rounded-lg bg-hero-falling-triangles py-6 shadow-xl">
@@ -24,12 +24,12 @@ nl:
             </div>
             <div class="bg-white-gradient-vertical">
               <div class="text-center py-6 text-xl">
-                <div v-text="testimonial.name" class="uppercase tracking-wide font-bold text-pink-400 mr-1" />
-                <div v-text="testimonial[`author_description_${$i18n.locale}`]" class="text-gray-500 italic" />
+                <div class="uppercase tracking-wide font-bold text-brand-400 mr-1" v-text="testimonial.name" />
+                <div class="text-gray-500 italic" v-text="testimonial[`author_description_${$i18n.locale}`]" />
               </div>
               <div class="flex px-8 md:px-12 pb-6 leading-snug">
-                <div class="absolute text-mega text-pink-100 -ml-8 -mt-20 pt-2 z-0">“</div>
-                <div v-text="testimonial[`text_${$i18n.locale}`]" class="text-xl z-20 pt-2" />
+                <div class="absolute text-mega text-brand-100 -ml-8 -mt-20 pt-2 z-0">“</div>
+                <div class="text-xl z-20 pt-2" v-text="testimonial[`text_${$i18n.locale}`]" />
               </div>
             </div>
           </div>

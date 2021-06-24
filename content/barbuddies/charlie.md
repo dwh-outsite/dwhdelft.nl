@@ -1,5 +1,8 @@
 ---
 name: Charlie
+sites:
+  - dwh
+  - outsite
 nl:
   Hi, ik ben Charlie. Ik ben 18 jaar en studeer Toegepaste Wiskunde aan de Haagse Hogeschool. Ik ben pas ongeveer een 
   jaar lid, maar ik weet nu al zeker dat ik hier nog lang zal blijven! Ik ben ondertussen een actief lid; ik werk 

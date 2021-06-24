@@ -28,7 +28,7 @@ nl:
 </i18n>
 
 <template>
-  <BaseFooter contact-email="bestuur@outsite.nl" :socials="socials" :links="links">
+  <BaseFooter contact-email="bestuur@outsite.nl" :socials="socials" :links="links" class="md:pt-8">
     <template #board-members>
       <div class="flex-1">
         <BoardMember

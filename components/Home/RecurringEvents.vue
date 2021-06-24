@@ -25,7 +25,7 @@ en:
     - name: Outsite
       note: Max. 28 years old
       day: Thursday
-      time: '19:00'
+      time: '21:00'
       description: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
         website for upcoming events and more.
@@ -33,7 +33,7 @@ en:
       buttonLink: https://outsite.nl/en
     - name: Open Bar Night
       day: Saturday
-      time: '19:00'
+      time: '21:00'
       description: |-
         Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
         parties, and join one of our many events!
@@ -63,7 +63,7 @@ nl:
     - name: Outsite
       note: Max. 28 jaar
       day: Donderdag
-      time: '19:00'
+      time: '21:00'
       description: |-
         Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
         Outsite website voor aankomende events!
@@ -71,7 +71,7 @@ nl:
       buttonLink: https://outsite.nl/
     - name: Open Bar
       day: Zaterdag
-      time: '19:00'
+      time: '21:00'
       description: |-
         Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
         feesten en doe mee met een van onze vele events!

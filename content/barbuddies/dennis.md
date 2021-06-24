@@ -1,5 +1,7 @@
 ---
 name: Dennis
+sites:
+  - dwh
 nl:
   Hoi, ik ben Dennis, begin dertig en dagelijks vlieg ik door heel Europa. Daarnaast ben ik al een aantal jaar actief
   binnen deze vereniging. Ik heb onder andere kennismakingsgroepen en activiteiten georganiseerd. Ook geef ik

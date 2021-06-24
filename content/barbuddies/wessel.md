@@ -1,5 +1,8 @@
 ---
-name: Wessel 
+name: Wessel
+sites:
+  - dwh
+  - outsite
 en:
   Heya! I'm Wessel, 24 years old and I study Aerospace engineering. When I joined DWH by joining the KMG, the
   enthusiasm coming from the members and the open and loving atmosphere made me feel at home straight away! I also

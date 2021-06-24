@@ -1,5 +1,8 @@
 ---
 name: Femke
+sites:
+  - dwh
+  - outsite
 nl:
   'Hi! Ik ben Femke, midden twintig en ik ben net afgestudeerd aan de master Jeugdliteratuur in Tilburg. Ik kom sinds
   twee jaar bij DWH en de eerste keer dat ik er binnenstapte (bij de KMG), voelde ik me meteen thuis. Voor mij

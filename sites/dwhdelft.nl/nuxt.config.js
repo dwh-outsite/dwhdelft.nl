@@ -44,6 +44,7 @@ export default {
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: [
+    '~/components',
     path.resolve(__dirname, '../../components/'),
     path.resolve(__dirname, '../../components/bar_buddies'),
     path.resolve(__dirname, '../../components/bookings'),
@@ -51,6 +52,7 @@ export default {
     path.resolve(__dirname, '../../components/Form'),
     path.resolve(__dirname, '../../components/global'),
     path.resolve(__dirname, '../../components/Home'),
+    path.resolve(__dirname, '../../components/SharedPages'),
   ],
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
@@ -78,7 +80,7 @@ export default {
   // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)
   tailwindcss: {
     jit: true,
-    configPath: '../../tailwind.config.js',
+    configPath: './tailwind.config.js',
     config: {
       purge: {
         content: ['../../components/**/**.vue'],

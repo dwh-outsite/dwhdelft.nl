@@ -2,32 +2,12 @@
 en:
   boardTitle: Board
   contactTitle: Contact
-  board:
-    - name: Rory Baart
-      role: President
-      email: voorzitter@dwhdelft.nl
-    - name: Charlie Verboom
-      role: Secretary
-      email: secretaris@dwhdelft.nl
-    - name: Dries Stuij
-      role: Treasurer
-      email: penningmeester@dwhdelft.nl
   links:
     support_us: Support Us
     sign_up: Join DWH as a member
 nl:
   boardTitle: Bestuur
   contactTitle: Contact
-  board:
-    - name: Rory Baart
-      role: Voorzitter
-      email: voorzitter@dwhdelft.nl
-    - name: Charlie Verboom
-      role: Secretaris
-      email: secretaris@dwhdelft.nl
-    - name: Dries Stuij
-      role: Penningmeester
-      email: penningmeester@dwhdelft.nl
   links:
     support_us: Steun Ons
     sign_up: Inschrijven als DWH lid
@@ -41,13 +21,7 @@ nl:
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('boardTitle')" />
 
           <div class="md:flex flex-wrap">
-            <BoardMember
-              v-for="member in $t('board')"
-              :key="member.name"
-              :role="member.role"
-              :name="member.name"
-              :email="member.email"
-            />
+            <slot name="board-members" />
           </div>
         </div>
 
@@ -57,7 +31,7 @@ nl:
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="envelope" class="fill-current w-4" />
             </div>
-            <div class="ml-3">bestuur@dwhdelft.nl</div>
+            <div class="ml-3">{{ contactEmail }}</div>
           </div>
           <div class="flex items-center mb-4">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
@@ -101,19 +75,9 @@ nl:
     <div class="container mx-auto px-4 py-4 lg:flex justify-between items-center">
       <div class="lg:flex">
         <div class="flex justify-center lg:justify-start">
-          <a href="https://instagram.com/dwh_delft" target="_blank">
+          <a v-for="{ url, icon } in socials" :key="url" :href="url" target="_blank">
             <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
-              <InstagramIcon class="fill-current w-6" />
-            </div>
-          </a>
-          <a href="https://facebook.com/DWHDelft" target="_blank">
-            <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
-              <FacebookIcon class="fill-current w-6" />
-            </div>
-          </a>
-          <a href="https://github.com/dwh-outsite/dwhdelft.nl" target="_blank">
-            <div class="rounded-full w-10 h-10 p-2 bg-white text-gray-700 mr-3 hover:bg-gray-300">
-              <GitHubIcon class="fill-current w-6" />
+              <component :is="icon" class="fill-current w-6" />
             </div>
           </a>
           <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
@@ -126,22 +90,12 @@ nl:
         </div>
         <div class="flex justify-center lg:justify-start mt-4 lg:mt-0">
           <nuxt-link
-            :to="localePath('/anbi')"
+            v-for="{ url, name } in links"
+            :key="url"
+            :to="url"
             class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
           >
-            ANBI
-          </nuxt-link>
-          <nuxt-link
-            :to="localePath('/privacy')"
-            class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
-          >
-            Privacy
-          </nuxt-link>
-          <nuxt-link
-            :to="localePath('/support-us')"
-            class="font-bold inline-flex items-center text-gray-400 hover:text-white"
-          >
-            {{ $t('links.support_us') }}
+            {{ name }}
           </nuxt-link>
         </div>
       </div>
@@ -149,7 +103,7 @@ nl:
         :href="localePath('index')"
         class="text-gray-400 hover:text-white text-xs lg:text-base flex items-center justify-center lg:justify-end pt-4 lg:pt-0"
       >
-        &copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}
+        <slot name="copyright" />
         <DWHLogo class="h-8 ml-2 fill-current" />
       </a>
     </div>
@@ -157,25 +111,14 @@ nl:
 </template>
 
 <script>
-import dayjs from 'dayjs'
 import Zondicon from 'vue-zondicons'
 import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
-import InstagramIcon from '#/assets/images/social/instagram.svg?inline'
-import FacebookIcon from '#/assets/images/social/facebook.svg?inline'
-import GitHubIcon from '#/assets/images/social/github.svg?inline'
 
 export default {
   components: {
     Zondicon,
     DWHLogo,
-    InstagramIcon,
-    FacebookIcon,
-    GitHubIcon,
   },
-  data() {
-    return {
-      year: dayjs().format('YYYY'),
-    }
-  },
+  props: ['contactEmail', 'socials', 'links'],
 }
 </script>

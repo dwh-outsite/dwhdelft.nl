@@ -1,4 +1,4 @@
-# **Welkom terug** bij DWH
+# **Welkom** terug
 
 We zijn blij je weer te kunnen verwelkomen in deze tijden van Corona! Hoewel op een andere manier dan normaal,
 kun je de komende tijd weer bij ons terecht voor een gezellige baravond, een leuke film of een lekkere maaltijd.

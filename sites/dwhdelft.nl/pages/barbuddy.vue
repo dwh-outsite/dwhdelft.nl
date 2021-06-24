@@ -27,7 +27,7 @@ nl:
       <p v-html="$t('description')" />
     </PageIntroText>
 
-    <section class="bg-purple-300">
+    <section class="bg-brand-300">
       <div class="container px-4 mx-auto pt-8 pb-12">
         <h1 class="text-white text-center font-medium text-5xl mb-8" v-html="$t('bar_buddies_title')" />
         <div class="lg:flex flex-wrap -mx-2 mt-2">

@@ -7,7 +7,7 @@ en:
       whole lot of chat groups. Because they're not obvious to find otherwise we've created this absolutely fabulous
       overview!
     - Want to join a group but don't see a link? Send a message to the
-      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-purple-500">
+      <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-brand-500">
       association phone (+31 6 3756 0270)</a> with the chats you'd like to join.
   categories:
     general: <strong>General</strong> groups
@@ -21,7 +21,7 @@ nl:
       daarom chatgroepen ontstaan. Omdat je maar net moet weten dat die er zijn hebben we hieronder een fabulous
       overzichtje voor je gemaakt!
     - Wil je in een van deze chats maar is er geen join link? Stuur een berichtje naar de
-      <a href="https://dwhdelft.nl/whatsapp" target="_blank" class="text-purple-500">
+      <a href="https://dwhdelft.nl/whatsapp" target="_blank" class="text-brand-500">
       verenigingstelefoon (+31 6 3756 0270)</a> met de chat waar je aan toegevoegd zou willen worden.
   categories:
     general: <strong>Algemene</strong> Groepen
@@ -37,7 +37,7 @@ nl:
       <p v-for="text in $t('main_text')" :key="text" class="mb-4" v-html="text" />
     </PageIntroText>
 
-    <section class="bg-purple-400 pb-4 md:py-12">
+    <section class="bg-brand-400 pb-4 md:py-12">
       <div
         v-for="(categoryName, category) in $t('categories')"
         :key="category"

@@ -1,5 +1,7 @@
 ---
 name: Mariana
+sites:
+  - dwh
 en:
   Hello! I’m Mariana, I’m in my early thirties, from Portugal and I have been living in the Netherlands for 6 years. I
   studied here at TU Delft and then I stayed for work. I joined DWH early on and was on the board of Outsite for a year

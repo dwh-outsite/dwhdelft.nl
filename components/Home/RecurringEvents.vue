@@ -102,7 +102,17 @@ nl:
           <a
             v-if="event.buttonText"
             :href="event.buttonLink"
-            class="bg-brand-500 hover:bg-brand-300 py-3 rounded-b text-white uppercase font-semibold tracking-wider text-center"
+            class="
+              bg-brand-500
+              hover:bg-brand-300
+              py-3
+              rounded-b
+              text-white
+              uppercase
+              font-semibold
+              tracking-wider
+              text-center
+            "
             v-html="event.buttonText"
           />
         </div>
@@ -111,7 +121,17 @@ nl:
     <div class="mt-16 flex justify-center">
       <a :href="localePath('book')">
         <button
-          class="shadow bg-brand-500 p-4 rounded inline-flex items-center relative hover:bg-brand-400 focus:outline-none"
+          class="
+            shadow
+            bg-brand-500
+            p-4
+            rounded
+            inline-flex
+            items-center
+            relative
+            hover:bg-brand-400
+            focus:outline-none
+          "
         >
           <div class="text-left flex-1 text-xl font-semibold text-white" v-html="$t('button.title')" />
           <div class="rounded-full w-12 h-12 bg-white ml-4 flex items-center justify-center">

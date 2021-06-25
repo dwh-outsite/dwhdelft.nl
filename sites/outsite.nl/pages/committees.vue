@@ -38,7 +38,18 @@ nl:
             :class="
               committee.active ? 'bg-white' : 'bg-brand-900 bg-opacity-25 text-white cursor-pointer hover:bg-opacity-50'
             "
-            class="rounded-t-lg md:rounded-t-none md:rounded-l-lg py-6 md:py-3 px-6 md:px-4 md:mb-4 font-semibold tracking-wide z-20 relative"
+            class="
+              rounded-t-lg
+              md:rounded-t-none md:rounded-l-lg
+              py-6
+              md:py-3
+              px-6
+              md:px-4 md:mb-4
+              font-semibold
+              tracking-wide
+              z-20
+              relative
+            "
             @click="setActive(committee)"
           >
             {{ committee.name }}

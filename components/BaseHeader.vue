@@ -28,7 +28,20 @@
         </div>
         <div class="flex">
           <div
-            class="rounded-full w-7 h-7 bg-white mr-3 md:mr-4 border-2 border-white flex items-center justify-center overflow-hidden relative"
+            class="
+              rounded-full
+              w-7
+              h-7
+              bg-white
+              mr-3
+              md:mr-4
+              border-2 border-white
+              flex
+              items-center
+              justify-center
+              overflow-hidden
+              relative
+            "
           >
             <nuxt-link v-show="$i18n.locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
               <GBFlag />
@@ -39,7 +52,22 @@
           </div>
           <slot name="menu-extension"></slot>
           <div
-            class="rounded-full w-7 h-7 p-1 bg-white mr-1 md:mr-4 border-2 border-white flex items-center justify-center md:hidden overflow-hidden relative"
+            class="
+              rounded-full
+              w-7
+              h-7
+              p-1
+              bg-white
+              mr-1
+              md:mr-4
+              border-2 border-white
+              flex
+              items-center
+              justify-center
+              md:hidden
+              overflow-hidden
+              relative
+            "
             @click="showMenu = !showMenu"
           >
             <Zondicon v-show="!showMenu" icon="menu" class="fill-current w-full" />

@@ -47,7 +47,7 @@ nl:
       <h1 class="text-4xl text-white font-normal" v-text="$t('hero.title')" />
       <h2 class="text-2xl text-white mt-2 font-light" v-text="$t('hero.subtitle')" />
       <div class="mt-8 flex">
-        <a href="#join-dwh">
+        <a href="#join-outsite">
           <button class="block button-pink" v-text="$t('hero.leftButton')" />
         </a>
         <a href="#recurring_events">

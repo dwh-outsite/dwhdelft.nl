@@ -27,5 +27,5 @@ We bedanken u bij voorbaat hartelijk voor uw inzet voor LHBTI+ personen in uw ge
 
 Met vriendelijke groet,
 
-Werkgroep Politiek<br/>
+Werkgroep Politiek\
 COC Haaglanden en DWH

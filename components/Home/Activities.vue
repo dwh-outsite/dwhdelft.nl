@@ -19,7 +19,7 @@ nl:
       banner_title: Wekelijkse baravond
       banner_subtitle: Open voor iedereen
       title: Baravond
-      date: Elke zaterdag vanaf 19.00 uur
+      date: Elke week te bezoeken, zie de openingstijden
     eating_out:
       banner_title: Wekelijkse eettafel
       banner_subtitle: Alleen voor leden, aanmelden verplicht

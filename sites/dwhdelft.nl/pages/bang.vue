@@ -166,10 +166,19 @@ export default {
 </script>
 
 <style>
-@import url(//db.onlinewebfonts.com/c/48a08739676e1af25c6b594ee50c9459?family=AkagiProW00-Fat);
+@font-face {
+  font-family: 'Akagi Pro W00 Fat';
+  src: url('../../../assets/fonts/akagi/48a08739676e1af25c6b594ee50c9459.eot'); /* IE9*/
+  src: url('../../../assets/fonts/akagi/48a08739676e1af25c6b594ee50c9459.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../../assets/fonts/akagi/48a08739676e1af25c6b594ee50c9459.woff2') format('woff2'),
+    /* chrome、firefox */ url('../../../assets/fonts/akagi/48a08739676e1af25c6b594ee50c9459.woff') format('woff'),
+    /* chrome、firefox */ url('../../../assets/fonts/akagi/48a08739676e1af25c6b594ee50c9459.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('../../../assets/fonts/akagi/48a08739676e1af25c6b594ee50c9459.svg#Akagi Pro W00 Fat') format('svg'); /* iOS 4.1- */
+}
 
 .font-akagi {
-  font-family: 'AkagiProW00-Fat';
+  font-family: 'Akagi Pro W00 Fat';
 }
 
 .bg-bang {

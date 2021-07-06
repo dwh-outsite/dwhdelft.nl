@@ -34,7 +34,7 @@ nl:
 </i18n>
 
 <template>
-  <BaseHeader :menu="$t('menu')" :small="small">
+  <BaseHeader :menu="$t('menu')" :small="small" :bg="bg">
     <template #logo>
       <DWHLogo class="h-16 fill-current text-white" />
     </template>
@@ -52,6 +52,6 @@ import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
 
 export default {
   components: { DWHLogo },
-  props: { small: { default: false } },
+  props: { small: { default: false }, bg: {} },
 }
 </script>

@@ -46,40 +46,40 @@ nl:
       <h1 class="text-4xl text-white font-normal mt-2" v-text="$t('title')" />
     </Header>
     <div class="bg-bang-gray w-full pb-9">
-      <div class="container mx-auto px-6">
+      <div class="container mx-auto px-6 pt-6 md:pt-0">
         <Presents class="w-full max-w-2xl mx-auto" />
       </div>
     </div>
-    <section class="bg-bang-gray bg-bang p-12">
-      <div class="container mx-auto bg-bang-gray p-6">
-        <div class="bg-white bg-dots flex">
-          <div class="flex-1 p-12 pr-0 -mr-6">
+    <section class="bg-bang-gray bg-bang p-4 md:p-12">
+      <div class="container mx-auto bg-bang-gray p-2 md:p-6">
+        <div class="bg-white bg-dots md:flex">
+          <div class="flex-1 p-6 md:p-12 md:pr-0 md:-mr-6">
             <img :src="require(`#/assets/images/events/bang/logo@4x.png`)" />
           </div>
-          <div class="flex-1 bg-castle-horizontal pl-40 py-12 pr-12 font-akagi text-center">
-            <div class="h-full flex flex-col justify-between">
-              <div class="text-bang-gray text-3xl uppercase flex items-center justify-between">
-                <Divider class="h-3" />
+          <div class="flex-1 bg-castle-horizontal px-4 md:pl-40 py-6 md:py-12 md:pr-12 font-akagi text-center">
+            <div class="h-full flex flex-col justify-between space-y-3 md:space-y-0">
+              <div class="text-bang-gray md:text-3xl uppercase flex items-center justify-between">
+                <Divider class="h-1 md:h-3" />
                 Friday 23 July - 10 PM
-                <Divider class="h-3" />
+                <Divider class="h-1 md:h-3" />
               </div>
-              <div class="text-white text-[2.4rem]">LGBT+ | PARTY | MUSIC | DRINKS</div>
-              <div class="text-bang-gray text-3xl">
+              <div class="text-white text-lg md:text-[2.4rem]">LGBT+ | PARTY | MUSIC | DRINKS</div>
+              <div class="text-bang-gray md:text-3xl">
                 EARLY BIRD € 3.75 / REGULAR € 4.75<br />
                 TICKETS ONLY SOLD ONLINE<br />
               </div>
               <a :href="`https://www.ticketkantoor.nl/shop/outwithabang/${$i18n.locale}`" target="_blank" class="block">
-                <button class="bg-white px-6 pt-4 pb-3 text-bang-gray text-4xl uppercase hover:bg-opacity-75">
+                <button class="bg-white px-6 pt-4 pb-3 text-bang-gray md:text-4xl uppercase hover:bg-opacity-75">
                   Buy your tickets now &raquo;
                 </button>
               </a>
-              <div class="text-bang-gray text-3xl">
+              <div class="text-bang-gray md:text-3xl">
                 CORONA ADMISSION TICKET REQUIRED
-                <div class="leading-none text-xl">(SEE BELOW)</div>
+                <div class="leading-none text-sm md:text-xl">(SEE BELOW)</div>
               </div>
               <div class="text-bang-gray text-3xl uppercase flex items-center justify-between">
-                <Divider class="h-3" />
-                <Divider class="h-3" />
+                <Divider class="h-1 md:h-3" />
+                <Divider class="h-1 md:h-3" />
               </div>
             </div>
           </div>
@@ -88,13 +88,13 @@ nl:
     </section>
     <div class="bg-bang-gray h-6" />
     <div class="bg-gold h-6" />
-    <section class="bg-bang-gray py-16">
-      <div class="container mx-auto flex space-x-24">
-        <div class="w-2/5 text-white text-2xl space-y-4">
+    <section class="bg-bang-gray py-4 md:py-16">
+      <div class="container px-4 mx-auto md:flex md:space-x-24 space-y-6 md:space-y-0">
+        <div class="md:w-2/5 text-white text-lg md:text-2xl space-y-4">
           <p v-for="paragraph in $t('description')" :key="paragraph" v-html="paragraph" />
           <a :href="`https://www.ticketkantoor.nl/shop/outwithabang/${$i18n.locale}`" target="_blank" class="block">
-            <button class="font-akagi bg-white px-6 pt-4 pb-3 text-bang-gray text-2xl uppercase hover:bg-opacity-75">
-              Buy your tickets now &raquo;
+            <button class="bg-white px-6 pt-4 pb-3 hover:bg-opacity-75">
+              <span class="font-akagi text-bang-gray uppercase text-lg md:text-2xl">Buy your tickets now &raquo;</span>
             </button>
           </a>
           <p class="text-lg">
@@ -189,9 +189,17 @@ export default {
   background-image: url(../../../assets/images/events/bang/dots.svg);
 }
 
-.bg-castle-horizontal {
-  @apply bg-cover;
-  background-image: url(../../../assets/images/events/bang/castle_bg_horizontal.png);
+@media (max-width: 767px) {
+  .bg-castle-horizontal {
+    background-color: #cba74b;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-castle-horizontal {
+    @apply bg-cover;
+    background-image: url(../../../assets/images/events/bang/castle_bg_horizontal.png);
+  }
 }
 
 .bg-gold {

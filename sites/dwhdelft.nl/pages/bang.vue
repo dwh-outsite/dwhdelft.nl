@@ -105,6 +105,7 @@ nl:
         </div>
         <div class="flex-1">
           <div class="ml-auto bg-white rounded-xl p-3 space-y-3">
+            <LanguageWarning v-if="$i18n.locale == 'en'" />
             <div v-for="(faqEntries, category) in faq" :key="category">
               <span class="font-akagi uppercase text-bang-gray text-lg mb-1">{{ $t('faq_categories')[category] }}</span>
               <div class="space-y-2">
@@ -146,7 +147,7 @@ export default {
   },
   async asyncData({ $content, app }) {
     const faq = (await $content(`events/bang/faq`, { deep: true }).fetch()).filter(
-      (file) => file.slug.substr(-2) === app.i18n.locale
+      (file) => file.slug.substr(-2) === app.i18n.locale || true // temporarily allow all languages
     )
 
     const faqByCategory = groupBy(

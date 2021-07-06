@@ -51,6 +51,12 @@ module.exports = {
       fontSize: {
         mega: '10rem',
       },
+      aspectRatio: {
+        9: '9',
+        16: '16',
+        100: '100',
+        191: '191',
+      }
     },
   },
   plugins: [

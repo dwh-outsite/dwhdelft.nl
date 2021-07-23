@@ -4,9 +4,6 @@ On the left you can make a reservation for a seat during one of our events. To k
 fair as possible for everybody, we apply the following measures.
 
 * The reservation expires 1 hour after the start of the timeslot
-* There is a limit of one open booking for the Thursday and Saturday nights. Once the evening has
-  finished, you can * immediately make a new booking. This way we give everyone the opportunity to
-  visit us
 * Moving a reservation is possible by cancelling via the confirmation mail and making a new
   reservation
 * Two-seaters are meant for people from the same household

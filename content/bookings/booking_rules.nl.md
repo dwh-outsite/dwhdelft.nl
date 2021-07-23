@@ -4,9 +4,6 @@ Je kunt links een reservering maken voor een event en/of tijdslot naar keuze. Om
 zo veilig en eerlijk mogelijk te houden, hanteren wij daarbij de volgende regels.
 
 * De reservering vervalt 1 uur na aanvang van het tijdslot
-* Je kunt maximaal één openstaande reservering hebben voor de donderdag- en zaterdagavond, na afloop
-  kun je direct weer een nieuwe reservering maken. Zo zorgen we ervoor dat iedereen af en toe langs
-  kan komen
 * Een reservering verplaatsen kan door te annuleren via de bevestigingsmail en een nieuwe
   reservering te maken
 * Tweepersoonsplekken zijn bedoeld voor mensen uit hetzelfde huishouden

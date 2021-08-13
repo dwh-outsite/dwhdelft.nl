@@ -59,7 +59,7 @@ nl:
           </div>
           <div class="mb-2">
             <a
-              :href="localePath('signup')"
+              href="/signup"
               class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
             >
               {{ $t('links.sign_up') }}

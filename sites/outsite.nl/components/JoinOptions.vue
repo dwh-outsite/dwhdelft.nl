@@ -134,7 +134,7 @@ nl:
             {{ $t('membership.description') }}
           </p>
 
-          <a :href="localePath('signup')">
+          <a href="/signup">
             <button
               class="
                 bg-white

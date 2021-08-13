@@ -58,10 +58,7 @@ nl:
             </div>
           </div>
           <div class="mb-2">
-            <a
-              :href="localePath('signup')"
-              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-            >
+            <a href="/signup" class="text-white font-bold inline-flex items-center border-b border-white border-dashed">
               {{ $t('links.sign_up') }}
               <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
             </a>

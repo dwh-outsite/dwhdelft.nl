@@ -134,7 +134,7 @@ nl:
             {{ $t('membership.description') }}
           </p>
 
-          <a href="/signup">
+          <a href="https://my.dwhdelft.nl/signup">
             <button
               class="
                 bg-white

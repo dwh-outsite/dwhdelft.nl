@@ -18,7 +18,7 @@ bar nights and all other activities at DWH.
 As a member you receive the magazine from DWH: the Andersblad, and you can join
 the EatingOUT where you can enjoy a cheap and delicious meal.
 
-More information and signup form can be found by following this [link](/en/signup),
+More information and signup form can be found by following this [link](https://my.dwhdelft.nl/signup),
 
 ### Donating
 By donating you can support DWH financially. Extra funds could always be put to

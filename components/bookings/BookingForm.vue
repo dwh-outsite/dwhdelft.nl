@@ -97,8 +97,8 @@ nl:
               />
               <div class="px-3 py-2">
                 <div class="capitalize mb-1 font-sembold" v-text="formatDate(event.start)" />
-                <div class="bg-white px-2 py-1 rounded inline-flex">
-                  <Zondicon icon="time" class="fill-current w-4 mr-2" />
+                <div class="bg-white px-2 py-1 rounded inline-flex items-center">
+                  <Zondicon icon="time" class="fill-current w-4 h-4 mr-2" />
                   {{ formatTime(event.start) }} - {{ formatTime(event.end) }}
                 </div>
               </div>

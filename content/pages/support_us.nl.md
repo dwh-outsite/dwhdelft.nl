@@ -18,7 +18,7 @@ en alle andere activiteiten bij DWH.
 Als lid ontvang je het blad van DWH: het Andersblad en mag je bij de EatingOUT
 aanschuiven waar je lekker, gezellig en goedkoop kunt eten.
 
-Meer informatie en inschrijven kan via deze [link](/signup).
+Meer informatie en inschrijven kan via deze [link](https://my.dwhdelft.nl/signup).
 
 ### Doneren
 Door te doneren aan DWH kunt u ons extra financieel ondersteunen. Extra geld

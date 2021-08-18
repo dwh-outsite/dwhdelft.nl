@@ -50,7 +50,7 @@ nl:
         <a href="#join-outsite">
           <button class="block button-pink" v-text="$t('hero.leftButton')" />
         </a>
-        <a href="#recurring_events">
+        <a href="#video">
           <button class="block ml-4 button-white" v-text="$t('hero.rightButton')" />
         </a>
       </div>

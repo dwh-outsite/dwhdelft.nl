@@ -4,7 +4,7 @@ sites:
   - dwh
   - outsite
 nl:
-  Hey, ik ben Hidde. Ik ben 24 jaar oud en bezig met de master Technische Wiskunde, de kansrekening track. Ik loop nu
+  Hey, ik ben Hidde. Ik ben 25 jaar oud en bezig met de master Technische Wiskunde, de kansrekening track. Ik loop nu
   al ongeveer 3 jaar rond op DWH, maar ben het laatste jaar een stuk actiever geworden; ik ben vaak vrijwilliger
   bij events, zit in verschillende commissies en ben sinds kort nu ook barbuddy. Dit is een enorm verschil met de
   eerste jaren dat ik bij DWH kwam. Ik zat toch vaak in mijn eentje en praatte weinig met mensen, omdat ik
@@ -13,7 +13,7 @@ nl:
   kennen en zij jou ook. Dan voelt het bij de volgende keer dat je langskomt niet meer alsof je tussen een groep
   vreemden staat, maar zie je hopelijk wat bekende, gezellige gezichten.
 en:
-  Hey, I am Hidde. I am 24 years old and studying for a master’s degree in Applied Mathematics, the probability track.
+  Hey, I am Hidde. I am 25 years old and studying for a master’s degree in Applied Mathematics, the probability track.
   I first came to DWH around 3 years ago, but it wasn’t until last year that I became a lot more active; I am 
   often a volunteer during events, joined various committees and am now also a barbuddy. This is a huge difference with 
   the first few years that I visited DWH. I often sat alone and didn’t talk much with other people, since I

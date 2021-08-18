@@ -1,7 +1,7 @@
 ---
 name: Sander
-author_description_en: Outsite member for 1 year
-author_description_nl: Outsite lid voor 1 jaar
+author_description_en: Outsite member for 2 year
+author_description_nl: Outsite lid voor 2 jaar
 text_en: |2-
 
       Heyhey! When I lived in Groningen and went to Ganymedes (The Groninger version of Outsite so to say) I liked it

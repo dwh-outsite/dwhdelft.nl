@@ -1,7 +1,7 @@
 ---
 name: Dante
-author_description_en: Outsite member for 2 year
-author_description_nl: Outsite lid voor 2 jaar
+author_description_en: Outsite member for 3 year
+author_description_nl: Outsite lid voor 3 jaar
 text_en: |2-
 
       Heeyhey, my name is Dante. I came to Outsite during the OWee. I then did the introductory group and immediately

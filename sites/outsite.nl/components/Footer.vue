@@ -1,28 +1,34 @@
 <i18n lang="yaml">
 en:
   board:
-    - name: Rick Donkers
+    - name: Charlie Verboom
       role: President
       email: voorzitter@outsite.nl
-    - name: Charlie Verboom
+    - name: Owen de Waal
       role: Secretary
       email: secretaris@outsite.nl
-    - name: Felipe Moraes
+    - name: Outsite Treasurer
       role: Treasurer
+      email: penningmeester@outsite.nl
+    - name: Ward Peeters
+      role: Commissioner of External Affairs
       email: penningmeester@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
 nl:
   board:
-    - name: Rick Donkers
+    - name: Charlie Verboom
       role: Voorzitter
       email: voorzitter@outsite.nl
-    - name: Charlie Verboom
+    - name: Owen de Waal
       role: Secretaris
       email: secretaris@outsite.nl
-    - name: Felipe Moraes
+    - name: Outsite Penningmeester
       role: Penningmeester
       email: penningmeester@outsite.nl
+    - name: Ward Peeters
+      role: Commissaris Extern
+      email: extern@outsite.nl
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
 </i18n>

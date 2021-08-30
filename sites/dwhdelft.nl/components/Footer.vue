@@ -34,13 +34,9 @@ nl:
 <template>
   <BaseFooter contact-email="bestuur@dwhdelft.nl" :socials="socials" :links="links">
     <template #board-members>
-      <BoardMember
-        v-for="member in $t('board')"
-        :key="member.name"
-        :role="member.role"
-        :name="member.name"
-        :email="member.email"
-      />
+      <div v-for="member in $t('board')" :key="member.name" class="md:w-1/2">
+        <BoardMember :role="member.role" :name="member.name" :email="member.email" />
+      </div>
     </template>
     <template #copyright>&copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}</template>
   </BaseFooter>

@@ -11,8 +11,8 @@ en:
       role: Treasurer
       email: penningmeester@outsite.nl
     - name: Ward Peeters
-      role: Commissioner of External Affairs
-      email: penningmeester@outsite.nl
+      role: External Affairs
+      email: extern@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
 nl:
@@ -54,7 +54,7 @@ nl:
       </div>
       <div>
         <img
-          src="../../../assets/images/boards/outsite_board19.jpg"
+          src="../../../assets/images/boards/outsite_board20.jpg"
           class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl my-8 md:mx-8 md:-mt-8"
         />
       </div>

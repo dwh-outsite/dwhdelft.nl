@@ -70,14 +70,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://i18n.nuxtjs.org/
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
     // https://content.nuxtjs.org/
     '@nuxt/content',
   ],
 
   // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)
   tailwindcss: {
-    jit: true,
     configPath: './tailwind.config.js',
     config: {
       purge: {

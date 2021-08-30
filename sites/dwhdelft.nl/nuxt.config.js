@@ -76,14 +76,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://i18n.nuxtjs.org/
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
     // https://content.nuxtjs.org/
     '@nuxt/content',
   ],
 
   // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)
   tailwindcss: {
-    jit: true,
     configPath: './tailwind.config.js',
     config: {
       purge: {
@@ -98,7 +97,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
-  // i18n Configuration (https://i18n.nuxtjs.org/options-reference)
+  // // i18n Configuration (https://i18n.nuxtjs.org/options-reference)
   i18n: {
     locales: [
       { code: 'nl', iso: 'nl-NL', file: 'nl.js' },

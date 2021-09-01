@@ -27,10 +27,7 @@ nl:
               <h4 class="text-xl leading-tight" v-text="$t('canceled')" />
             </div>
           </div>
-          <nuxt-content
-            class="text-lg leading-normal text-white content intro-content"
-            :document="intro"
-          />
+          <nuxt-content class="text-lg leading-normal text-white content intro-content" :document="intro" />
           <nuxt-content class="booking-rules-content text-white text-xl" :document="bookingRules" />
         </div>
         <div class="lg:w-1/2">

@@ -11,41 +11,35 @@ nl:
 
 <template>
   <div>
-    <Header small="true">
+    <Header small="true" bg="bg-brand-450">
       <div class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider inline" v-text="$t('title_label')" />
       <h1 class="text-4xl text-white font-normal mt-2" v-text="$t('title')" />
     </Header>
 
-    <section class="container mx-auto relative pt-12 md:pt-6 px-4">
-      <div class="pb-16 m-auto">
-        <div v-show="$route.query.canceled" class="bg-brand-100 rounded p-4 text-lg flex items-center mb-12">
-          <div class="rounded-full w-16 h-16 p-3 bg-brand-450 text-white">
-            <Zondicon icon="information-outline" class="fill-current w-10" />
+    <section class="bg-brand-450 relative pb-16">
+      <div class="mx-auto container px-4 lg:flex">
+        <div class="flex-1 pt-6 lg:pt-0 lg:pr-16">
+          <div v-show="$route.query.canceled" class="bg-brand-100 rounded p-4 text-lg flex items-center mb-12">
+            <div class="rounded-full w-16 h-16 p-3 bg-brand-450 text-white">
+              <Zondicon icon="information-outline" class="fill-current w-10" />
+            </div>
+            <div class="ml-4">
+              <h4 class="text-xl leading-tight" v-text="$t('canceled')" />
+            </div>
           </div>
-          <div class="ml-4">
-            <h4 class="text-xl leading-tight" v-text="$t('canceled')" />
-          </div>
-        </div>
-
-        <nuxt-content
-          class="text-xl md:text-2xl leading-normal text-gray-800 md:mb-12 content intro-content"
-          :document="intro"
-        />
-      </div>
-    </section>
-
-    <section class="booking-form-section relative pb-16 lg:pb-24">
-      <div class="mx-auto container px-4 lg:flex flex-row-reverse">
-        <div class="flex-1 pt-16 lg:pl-16 z-10 relative">
+          <nuxt-content
+            class="text-lg leading-normal text-white content intro-content"
+            :document="intro"
+          />
           <nuxt-content class="booking-rules-content text-white text-xl" :document="bookingRules" />
         </div>
-        <div class="lg:w-1/2 pt-8 lg:pt-40">
-          <BookingForm class="relative z-10" />
+        <div class="lg:w-1/2">
+          <BookingForm class="lg:-mt-72" />
         </div>
       </div>
     </section>
 
-    <section class="container mx-auto relative px-4 mt-12 mb-2 md:mt-32 md:pb-12">
+    <section class="container mx-auto relative px-4 py-12">
       <CoronaRules class="flex flex-wrap -mx-2" />
     </section>
   </div>
@@ -61,29 +55,20 @@ export default {
 </script>
 
 <style>
-.booking-form-section::before {
-  @apply bg-brand-450 absolute w-full;
-  height: 100%;
-  transform: skewY(-7deg);
-  content: '';
-  z-index: 0;
-  top: 0px;
-}
-
 .intro-content h1 {
-  @apply text-brand-400 leading-none text-5xl mb-6 md:mb-12 md:text-6xl font-normal;
+  @apply leading-none text-5xl mb-6 md:text-6xl font-normal;
 }
 
 .booking-rules-content h1 {
-  @apply leading-none text-5xl mb-6 md:text-6xl;
+  @apply leading-none text-xl mb-6;
 }
 
 .booking-rules-content ul {
-  @apply my-4 text-xl;
+  @apply my-4 text-lg;
 }
 
 .booking-rules-content ul li {
-  @apply bg-white bg-opacity-20 text-white rounded p-4 mb-2;
+  @apply bg-white bg-opacity-20 text-white rounded px-4 py-2 mb-1;
 }
 
 .booking-rules-content blockquote {

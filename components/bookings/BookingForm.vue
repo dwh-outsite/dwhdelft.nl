@@ -13,6 +13,7 @@ en:
   thank_you:
     Thank you for making a reservation! You will receive an e-mail with your proof of reservation. If you need to
     cancel, you can do so via the e-mail you will receive.
+  another_booking: Make another booking
   disclaimer:
     By submitting this form you allow DWH to save your information and to process it. Your information will only be
     used to check reservations and for the possibility to get in touch with you. If you have more questions, please
@@ -36,6 +37,7 @@ nl:
   thank_you:
     Bedankt voor het reserveren! Je ontvangt een e-mail met je reserveringsbewijs. Lukt het je uiteindelijk toch
     niet om aanwezig te zijn? Via de mail die je ontvangt kun je je reservering annuleren.
+  another_booking: Maak nog een reservering
   disclaimer: Bij het verzenden van dit formulier geef je DWH toestemming om je gegevens op te slaan en te verwerken. Je
     gegevens worden alleen gebruikt voor het controleren van reserveringen en voor de mogelijkheid om contact
     met je op te nemen. Neem voor vragen contact op via onderstaande contactgegevens.
@@ -55,7 +57,24 @@ nl:
     <h2 class="text-xl font-bold mb-4 text-brand-450 uppercase tracking-wider" v-text="$t('title')" />
 
     <div v-show="state === 'finished'">
-      <FormCompleted class="bg-brand-100" :title="$t('forms.success.heading')" :subtitle="$t('thank_you')" />
+      <FormCompleted class="bg-brand-100 mb-6" :title="$t('forms.success.heading')" :subtitle="$t('thank_you')" />
+      <button
+        class="
+          border border-brand-500
+          hover:bg-brand-500
+          text-brand-500
+          hover:text-white
+          rounded
+          uppercase
+          text-sm
+          tracking-wide
+          py-2
+          px-3
+          shadow
+        "
+        @click="reset"
+        v-text="$t('another_booking')"
+      />
     </div>
 
     <form v-show="state == 'start' || state == 'loading'" @submit="submit">
@@ -222,7 +241,7 @@ import axios from 'axios'
 import dayjs from 'dayjs'
 import 'dayjs/locale/nl'
 
-const apiUrl = 'https://reserveer.dwhdelft.nl'
+const apiUrl = 'http://bar-bookings.test'
 
 const DINNER_TEAMS = [
   { emoji: '🍝', name: 'Kitchen Helpers' },
@@ -260,16 +279,21 @@ export default {
     }
   },
   mounted() {
-    axios
-      .get(apiUrl + '/api/events')
-      .then((response) => {
-        this.events = response.data.data
-      })
-      .catch(() => {
-        alert('An error occurred. If this keeps happening, please send us an email.')
-      })
+    this.initialize()
   },
   methods: {
+    initialize() {
+      this.restorePersonalDetails()
+
+      axios
+        .get(apiUrl + '/api/events')
+        .then((response) => {
+          this.events = response.data.data
+        })
+        .catch(() => {
+          alert('An error occurred. If this keeps happening, please send us an email.')
+        })
+    },
     selectEvent(event) {
       if (event.available_seats > 0) {
         this.form.event_id = event.id
@@ -305,6 +329,7 @@ export default {
         .then(() => {
           this.state = 'finished'
           this.$el.scrollIntoView({ behavior: 'smooth' })
+          this.cachePersonalDetails()
         })
         .catch((error) => {
           this.state = 'start'
@@ -346,6 +371,30 @@ export default {
       } else {
         this.dinnerForm.diet.push(restriction)
       }
+    },
+    cachePersonalDetails() {
+      window.localStorage.setItem(
+        'booking_details',
+        JSON.stringify({
+          name: this.form.name,
+          email: this.form.email,
+          ggd_consent: this.form.ggd_consent,
+          phone_number: this.form.phone_number,
+        })
+      )
+    },
+    restorePersonalDetails() {
+      const cachedDetails = JSON.parse(window.localStorage.getItem('booking_details'))
+      if (cachedDetails) {
+        this.form.name = cachedDetails.name
+        this.form.email = cachedDetails.email
+        this.form.ggd_consent = cachedDetails.ggd_consent
+        this.form.phone_number = cachedDetails.phone_number
+      }
+    },
+    reset() {
+      Object.assign(this.$data, this.$options.data.apply(this))
+      this.initialize()
     },
   },
 }

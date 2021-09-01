@@ -1,5 +1,3 @@
-# **Book a table** in times of COVID-19
-
 * Moving a reservation is possible by cancelling via the confirmation mail and making a new
   reservation
 * Two-seaters are meant for people from the same household

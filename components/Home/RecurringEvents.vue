@@ -16,7 +16,7 @@ en:
       buttonLink: https://dwhdelft.nl/eatingout
     - name: Fillum
       day: Wednesday
-      time: '----'
+      time: '20:45'
       description: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
         old classics.
@@ -54,10 +54,10 @@ nl:
       buttonLink: https://dwhdelft.nl/eatingout
     - name: Fillum
       day: Woensdag
-      time: '----'
+      time: '20:45'
       description: |-
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
-        aan de beurt. <em>Tijdelijk gesloten vanwege COVID-19.</em>
+        aan de beurt.
       buttonText: Programma <small>(voor leden)</small>
       buttonLink: http://homodelft.nl/films/
     - name: Outsite

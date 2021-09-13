@@ -15,6 +15,8 @@ en:
       email: extern@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
+  links:
+    my_dwh: 'My DWH: Log in as a member'
 nl:
   board:
     - name: Charlie Verboom
@@ -31,6 +33,8 @@ nl:
       email: extern@outsite.nl
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
+  links:
+    my_dwh: 'My DWH: Inloggen als lid'
 </i18n>
 
 <template>
@@ -82,7 +86,10 @@ export default {
         { url: 'https://youtube.com/channel/UCtsabdS5sH7EA-DjLkBPLfQ', icon: YouTubeIcon },
         { url: 'https://github.com/dwh-outsite/outsite.nl', icon: GitHubIcon },
       ],
-      links: [{ name: 'Privacy', url: this.localePath('/privacy') }],
+      links: [
+        { name: 'Privacy', url: this.localePath('/privacy') },
+        { name: this.$t('links.my_dwh'), url: 'https:////my.dwhdelft.nl' },
+      ],
     }
   },
 }

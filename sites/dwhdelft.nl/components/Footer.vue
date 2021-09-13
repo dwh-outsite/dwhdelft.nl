@@ -14,6 +14,7 @@ en:
       email: penningmeester@dwhdelft.nl
   links:
     support_us: Support Us
+    my_dwh: 'My DWH: Log in as a member'
 nl:
   boardTitle: Bestuur
   contactTitle: Contact
@@ -29,6 +30,7 @@ nl:
       email: penningmeester@dwhdelft.nl
   links:
     support_us: Steun Ons
+    my_dwh: 'My DWH: Inloggen als lid'
 </i18n>
 
 <template>
@@ -60,6 +62,7 @@ export default {
         { name: 'ANBI', url: this.localePath('/anbi') },
         { name: 'Privacy', url: this.localePath('/privacy') },
         { name: this.$t('links.support_us'), url: this.localePath('/support-us') },
+        { name: this.$t('links.my_dwh'), url: 'https:////my.dwhdelft.nl' },
       ],
       year: dayjs().format('YYYY'),
     }

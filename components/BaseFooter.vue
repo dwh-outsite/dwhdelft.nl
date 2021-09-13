@@ -104,14 +104,14 @@ nl:
           </a>
         </div>
         <div class="flex justify-center lg:justify-start mt-4 lg:mt-0">
-          <nuxt-link
+          <a
             v-for="{ url, name } in links"
             :key="url"
-            :to="url"
+            :href="url"
             class="font-bold inline-flex items-center text-gray-400 hover:text-white mr-3"
           >
             {{ name }}
-          </nuxt-link>
+          </a>
         </div>
       </div>
       <a

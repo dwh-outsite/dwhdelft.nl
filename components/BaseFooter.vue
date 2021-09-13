@@ -103,7 +103,7 @@ nl:
             </div>
           </a>
         </div>
-        <div class="flex justify-center lg:justify-start mt-4 lg:mt-0">
+        <div class="sm:flex justify-center text-center lg:justify-start mt-4 lg:mt-0">
           <a
             v-for="{ url, name } in links"
             :key="url"

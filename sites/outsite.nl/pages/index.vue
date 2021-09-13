@@ -56,8 +56,8 @@ nl:
       </div>
     </Header>
 
-    <section class="introduction">
-      <div class="container mx-auto pt-12 pb-24 md:flex md:justify-between">
+    <section class="introduction overflow-x-hidden overflow-y-visible">
+      <div class="container mx-auto pt-12 sm:pt-16 pb-24 md:flex md:justify-between">
         <div class="md:w-1/2 px-4">
           <p
             v-for="paragraph in $t('description.text')"

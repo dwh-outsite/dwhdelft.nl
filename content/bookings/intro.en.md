@@ -1,9 +1,8 @@
-# **Welcome** back
+# **Welcome!**
 
-We are happy to welcome you again in these times of corona! Although it will be different than usual,
-you can enjoy a fun bar evening, a cool movie or a nice meal with your friends at our building.
+For some of our activities, we kindly ask you to make a reservation.
+On this page, you can book a spot at one of our events.
+We will confirm your reservation by email.
+In case you're not able to join the event, please cancel the reservation through the cancelation link in the confirmation email.
 
-We appreciate it if you make a **table booking**, you can do so below. Bookings are individual and upon
-entrance you can choose your seat at one of our tables (everybody will sit 1.5 metres apart). You are also
-welcome without a booking, in that case we will make a booking for you **on the spot** as long
-as we have space left.
+## Starting September 25th you are welcome at our bar nights _without_ a booking!

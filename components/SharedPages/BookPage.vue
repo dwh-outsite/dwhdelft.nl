@@ -35,10 +35,6 @@ nl:
         </div>
       </div>
     </section>
-
-    <section class="container mx-auto relative px-4 py-12">
-      <CoronaRules class="flex flex-wrap -mx-2" />
-    </section>
   </div>
 </template>
 

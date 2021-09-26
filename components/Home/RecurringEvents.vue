@@ -1,9 +1,6 @@
 <i18n lang="yaml">
 en:
   announcement: <strong>DWH</strong> is open 4 nights a week
-  button:
-    title: <strong>Book a table</strong> for one of our activities
-    note: Bookings are mandatory due to COVID-19
   events:
     - name: EatingOUT
       note: Members only
@@ -39,9 +36,6 @@ en:
         parties, and join one of our many events!
 nl:
   announcement: <strong>DWH</strong> is elke week op 4 avonden open
-  button:
-    title: <strong>Reserveer</strong> nu voor één van onze activiteiten
-    note: Reserveren verplicht i.v.m. COVID-19
   events:
     - name: EatingOUT
       note: Alleen leden
@@ -117,32 +111,6 @@ nl:
           />
         </div>
       </div>
-    </div>
-    <div class="mt-16 flex justify-center">
-      <a :href="localePath('book')">
-        <button
-          class="
-            shadow
-            bg-brand-500
-            p-4
-            rounded
-            inline-flex
-            items-center
-            relative
-            hover:bg-brand-400
-            focus:outline-none
-          "
-        >
-          <div class="text-left flex-1 text-xl font-semibold text-white" v-html="$t('button.title')" />
-          <div class="rounded-full w-12 h-12 bg-white ml-4 flex items-center justify-center">
-            <Zondicon icon="cheveron-outline-right" class="w-8 text-brand-500 fill-current" />
-          </div>
-          <div
-            class="bg-white rounded-lg px-2 py-1 text-xs uppercase tracking-wider absolute left-0 -top-3 shadow ml-4"
-            v-text="$t('button.note')"
-          />
-        </button>
-      </a>
     </div>
   </div>
 </template>

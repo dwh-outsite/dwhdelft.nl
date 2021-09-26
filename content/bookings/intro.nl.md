@@ -1,9 +1,8 @@
-# **Welkom** terug
+# **Welkom!**
 
-We zijn blij je weer te kunnen verwelkomen in deze tijden van Corona! Hoewel op een andere manier dan normaal,
-kun je de komende tijd weer bij ons terecht voor een gezellige baravond, een leuke film of een lekkere maaltijd.
+Voor sommige van onze activiteiten vragen we je vooraf te reserveren.
+Op deze pagina kun je je reservering maken.
+Je krijgt per e-mail een bevestiging van je reservering.
+Mocht je uiteindelijk toch niet kunnen komen, dan vragen we je je vriendelijk je reservering weer te annuleren via de link in de bevestigingsmail.
 
-We stellen het op prijs als je vooraf een **reservering** maakt, dat kan hieronder. Reserveringen zijn individueel
-en bij binnenkomst kun je een plekje uitzoeken aan een van onze tafels (waaraan iedereen op 1,5 meter afstand zit).
-Je kunt ook langskomen zonder vooraf te reserveren, we maken dan **on the spot** een reservering voor je zolang er
-plek is.
+## Vanaf 25 september ben je op onze baravonden weer welkom zonder reservering!

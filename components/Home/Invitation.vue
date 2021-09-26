@@ -18,7 +18,7 @@
       items-center
     "
   >
-    <div class="rounded-full w-16 h-16 p-4 bg-white text-brand-500 shadow md:shadow-none absolute -top-8 md:static">
+    <div class="rounded-full w-16 h-16 p-4 bg-white text-brand-450 shadow md:shadow-none absolute -top-8 md:static">
       <Zondicon icon="explore" class="fill-current" />
     </div>
     <div class="pt-6 md:pt-0 md:pl-4" v-html="content" />

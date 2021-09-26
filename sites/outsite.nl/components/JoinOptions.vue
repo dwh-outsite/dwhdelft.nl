@@ -9,9 +9,6 @@ en:
       together and much more!
     action: Join the introduction group
     sign_up: Sign up for the introduction group
-    next:
-      <strong>The next Introduction Group will start in September</strong>, with a bonus pre-Introduction activity in July, so sign up now! The KMG is open
-      for young adults between 17 and 28 years.
   bar_buddy:
     title: Bar Buddies
     description: If you are looking to come by on a bar night but you are not yet familiar with the association
@@ -65,9 +62,6 @@ nl:
       met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!
     action: Doe mee aan de KMG
     sign_up: Aanmelden voor de KMG
-    next:
-      <strong>De volgende KennisMakingsGroep start in september</strong>, begin juli is er ook een leuke pre-KMG activiteit dus meld je nu aan!
-      De KMG is bedoeld voor jongeren van 17 tot 28 jaar.
   bar_buddy:
     title: Barbuddy's
     description: Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld

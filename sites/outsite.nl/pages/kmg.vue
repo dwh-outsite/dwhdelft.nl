@@ -6,8 +6,7 @@ en:
     members. During nine Thursday evenings, you will share coming out stories (if you want to), visit queer parties
     together and much more!
   sign_up: Sign up for the introduction group
-  next: <strong>The next Introduction Group will start in September</strong>, with a bonus pre-Introduction activity in
-    July, so sign up now! The KMG is open for young adults between 17 and 28 years.
+  next: <strong>The next Introduction Group will start in February</strong>.
   form:
     availability: I'm available on
     availability_options:
@@ -21,8 +20,7 @@ nl:
     van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden deel je
     met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!
   sign_up: Aanmelden voor de KMG
-  next: <strong>De volgende KennisMakingsGroep start in september</strong>, begin juli is er ook een leuke pre-KMG
-    activiteit dus meld je nu aan! De KMG is bedoeld voor jongeren van 17 tot 28 jaar.
+  next: <strong>De volgende KennisMakingsGroep start in februari</strong>.
   form:
     availability: Ik ben beschikbaar op
     availability_options:

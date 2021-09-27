@@ -21,7 +21,7 @@
     "@nuxtjs/i18n": "^7.0.2",
     "@nuxtjs/svg": "^0.1.12",
     "@tailwindcss/aspect-ratio": "^0.2.1",
-    "core-js": "^3.10.1",
+    "core-js": "^3.18.1",
     "dayjs": "^1.9.8",
     "nuxt": "^2.15.4",
     "tailwind-heropatterns": "^0.0.8",

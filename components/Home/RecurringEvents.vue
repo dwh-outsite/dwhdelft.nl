@@ -5,7 +5,7 @@ en:
     - name: EatingOUT
       note: Members only
       day: Monday
-      time: '18:30'
+      time: '18:00'
       description: |-
         On Mondays we gather around the dinner table to enjoy a delicious meal cooked by one of our
         members, sometimes with an activity afterwards.
@@ -22,7 +22,7 @@ en:
     - name: Outsite
       note: Max. 28 years old
       day: Thursday
-      time: '21:00'
+      time: '17:00'
       description: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
         website for upcoming events and more.
@@ -30,7 +30,7 @@ en:
       buttonLink: https://outsite.nl/en
     - name: Open Bar Night
       day: Saturday
-      time: '21:00'
+      time: '17:00'
       description: |-
         Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
         parties, and join one of our many events!
@@ -40,7 +40,7 @@ nl:
     - name: EatingOUT
       note: Alleen leden
       day: Maandag
-      time: '18:30'
+      time: '18:00'
       description: |-
         Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
         één van onze leden, met soms een activiteit achteraf.
@@ -57,7 +57,7 @@ nl:
     - name: Outsite
       note: Max. 28 jaar
       day: Donderdag
-      time: '21:00'
+      time: '17:00'
       description: |-
         Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
         Outsite website voor aankomende events!
@@ -65,7 +65,7 @@ nl:
       buttonLink: https://outsite.nl/
     - name: Open Bar
       day: Zaterdag
-      time: '21:00'
+      time: '17:00'
       description: |-
         Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
         feesten en doe mee met een van onze vele events!

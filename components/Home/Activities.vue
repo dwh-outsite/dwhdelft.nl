@@ -6,12 +6,12 @@ en:
       banner_title: Weekly bar night
       banner_subtitle: Open for everyone
       title: Bar Night
-      date: Every Saturday from 7pm
+      date: Every week, see opening hours
     eating_out:
       banner_title: Weekly dinner
       banner_subtitle: Members only, registration required
       title: EatingOUT
-      date: Every Monday at 6.30pm
+      date: Every Monday evening, see opening hours
 nl:
   title: Aankomende activiteiten
   defaults:
@@ -24,7 +24,7 @@ nl:
       banner_title: Wekelijkse eettafel
       banner_subtitle: Alleen voor leden, aanmelden verplicht
       title: EatingOUT
-      date: Elke maandag om 18.30 uur
+      date: Elke maandagavond, zie de openingstijden
 </i18n>
 
 <template>

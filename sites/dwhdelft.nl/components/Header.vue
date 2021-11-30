@@ -3,8 +3,8 @@ en:
   menu:
     - title: Home
       url: index
-    - title: Join DWH
-      url: index#join-dwh
+    - title: Bar Buddy
+      url: barbuddy
     - title: Reservations
       url: book
     - title: EatingOUT
@@ -19,8 +19,8 @@ nl:
   menu:
     - title: Home
       url: index
-    - title: Kom naar DWH
-      url: index#join-dwh
+    - title: Barbuddy
+      url: barbuddy
     - title: Reserveren
       url: book
     - title: EatingOUT

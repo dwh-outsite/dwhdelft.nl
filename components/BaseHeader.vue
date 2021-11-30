@@ -1,77 +1,126 @@
 <template>
   <header id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
-      <div class="container px-4 mx-auto flex justify-between items-center">
+      <div class="container px-4 mx-auto flex justify-between items-center relative">
         <nuxt-link :to="localePath('index')">
           <slot name="logo" />
         </nuxt-link>
-        <div v-show="showMenu" class="md:hidden absolute top-16 bg-white w-full -ml-4 p-4 text-xl font-semibold">
+        <div
+          v-show="showMenu"
+          class="
+            md:hidden
+            absolute
+            z-60
+            top-16
+            text-white
+            backdrop-blur-xl
+            bg-white bg-opacity-10
+            w-full
+            -ml-4
+            px-1
+            py-2
+            space-y-1
+            text-lg
+            font-semibold
+            transition-all
+          "
+        >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="block md:inline no-underline mr-4 my-2"
+            class="
+              nav-item
+              block
+              py-1
+              px-3
+              no-underline
+              hover:bg-white hover:bg-opacity-90 hover:text-gray-800
+              transition-all
+              rounded-full
+              border border-opacity-25
+            "
           >
             {{ item.title }}
           </nuxt-link>
           <slot name="mobile-menu-extension"></slot>
         </div>
-        <div class="hidden md:block px-4 text-xl font-semibold text-white">
+        <div
+          class="
+            hidden
+            md:flex
+            p-1
+            rounded-full
+            text-lg
+            font-semibold
+            text-white
+            backdrop-blur-lg
+            bg-white bg-opacity-10
+            shadow
+          "
+        >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="block md:inline no-underline mr-4 my-2"
+            class="
+              nav-item
+              block
+              py-1
+              px-3
+              no-underline
+              hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800
+              transition-all
+            "
           >
             {{ item.title }}
           </nuxt-link>
         </div>
-        <div class="flex">
-          <div
-            class="
-              rounded-full
-              w-7
-              h-7
-              bg-white
-              mr-3
-              md:mr-4
-              border-2 border-white
-              flex
-              items-center
-              justify-center
-              overflow-hidden
-              relative
-            "
-          >
-            <nuxt-link v-show="$i18n.locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
-              <GBFlag />
-            </nuxt-link>
-            <nuxt-link v-show="$i18n.locale == 'en'" :to="switchLocalePath('nl')" class="block h-6 w-8 absolute">
-              <NLFlag />
-            </nuxt-link>
+        <div class="flex items-center space-x-4">
+          <div class="p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
+            <div
+              class="
+                rounded-full
+                w-7
+                h-7
+                bg-white
+                border-2 border-white
+                flex
+                items-center
+                justify-center
+                overflow-hidden
+                relative
+              "
+            >
+              <nuxt-link v-show="$i18n.locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
+                <GBFlag />
+              </nuxt-link>
+              <nuxt-link v-show="$i18n.locale == 'en'" :to="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+                <NLFlag />
+              </nuxt-link>
+            </div>
           </div>
           <slot name="menu-extension"></slot>
-          <div
-            class="
-              rounded-full
-              w-7
-              h-7
-              p-1
-              bg-white
-              mr-1
-              md:mr-4
-              border-2 border-white
-              flex
-              items-center
-              justify-center
-              md:hidden
-              overflow-hidden
-              relative
-            "
-            @click="showMenu = !showMenu"
-          >
-            <Zondicon v-show="!showMenu" icon="menu" class="fill-current w-full" />
-            <Zondicon v-show="showMenu" icon="close" class="fill-current w-full" />
+          <div class="md:hidden p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
+            <div
+              class="
+                rounded-full
+                w-7
+                h-7
+                p-1
+                bg-white
+                border-2 border-white
+                flex
+                items-center
+                justify-center
+                overflow-hidden
+                relative
+              "
+              @click="showMenu = !showMenu"
+            >
+              <Zondicon v-show="!showMenu" icon="menu" class="fill-current w-full" />
+              <Zondicon v-show="showMenu" icon="close" class="fill-current w-full" />
+            </div>
           </div>
         </div>
       </div>
@@ -123,6 +172,10 @@ export default {
 </script>
 
 <style>
+a.nav-item.nuxt-link-exact-active {
+  @apply bg-white bg-opacity-10 rounded-full;
+}
+
 @screen md {
   #header {
     height: calc(190px * 4);

@@ -39,14 +39,13 @@ nl:
       <OutsiteLogo class="h-16 fill-current text-white" />
     </template>
     <template #mobile-menu-extension>
-      <a href="https://dwhdelft.nl" class="no-underline mr-4 my-2 flex items-center">
-        <Zondicon icon="link" class="h-5 inline mr-2" />
-        <DWHLogo class="inline h-8 fill-current" />
+      <a href="https://dwhdelft.nl" class="block py-2 px-1">
+        <DWHLogo class="h-8 fill-current" />
       </a>
     </template>
     <template #menu-extension>
-      <a href="https://dwhdelft.nl" class="hidden md:block text-white text-xl font-semibold no-underline mr-4">
-        <DWHLogo class="h-8 ml-2 fill-current" />
+      <a href="https://dwhdelft.nl" class="hidden md:block text-white">
+        <DWHLogo class="h-8 fill-current" />
       </a>
     </template>
     <template #background>

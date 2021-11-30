@@ -36,7 +36,7 @@ nl:
 <template>
   <BaseHeader :menu="$t('menu')" :small="small" :bg="bg">
     <template #logo>
-      <DWHLogo class="h-16 fill-current text-white" />
+      <DWHLogo class="h-14 fill-current text-white" />
     </template>
     <template #background>
       <div class="image-container">

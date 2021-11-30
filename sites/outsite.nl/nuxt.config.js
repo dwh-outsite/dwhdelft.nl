@@ -7,7 +7,11 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+  generate: {
+    fallback: true,
+  },
+
+  // Globalg page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Outsite - LHBT+ vereniging Delft',
     meta: [

@@ -8,7 +8,8 @@ en:
     two_person_seat: Two-person seat
     within_distance: (within 1.5 metre)
     unavailable: No longer available
-  time_slot: Timeslot
+  event: Event
+  no_events: There are no events scheduled at the moment. Please come back later.
   seat_type: Type of Seat
   thank_you:
     Thank you for making a reservation! You will receive an e-mail with your proof of reservation. If you need to
@@ -32,7 +33,8 @@ nl:
     two_person_seat: Tweepersoonszitplaats
     within_distance: (binnen 1,5 meter)
     unavailable: Niet meer beschikbaar
-  time_slot: Tijdslot
+  event: Evenement
+  no_events: Er zijn op dit moment geen evenementen gepland. Kom later terug.
   seat_type: Type Zitplek
   thank_you:
     Bedankt voor het reserveren! Je ontvangt een e-mail met je reserveringsbewijs. Lukt het je uiteindelijk toch
@@ -98,8 +100,11 @@ nl:
       </FormElement>
 
       <div class="form-element-gray">
-        <label class="required" v-text="$t('time_slot')" />
+        <label class="required" v-text="$t('event')" />
         <div class="flex flex-wrap">
+          <div v-if="events.length === 0" class="bg-brand-100 rounded-lg w-full p-4">
+            {{ $t('no_events') }}
+          </div>
           <div v-for="event in events" :key="event.id" class="w-full md:w-1/3">
             <div
               :class="[

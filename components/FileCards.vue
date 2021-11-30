@@ -1,15 +1,14 @@
 <template>
   <div class="flex flex-wrap justify-center">
-    <div v-for="file in files" :key="file.id" class="md:w-1/2 xl:w-1/3 p-4">
+    <div v-for="file in files" :key="file.id" class="w-1/2 md:w-1/2 xl:w-1/5 p-2 md:p-3">
       <a :href="file.webViewLink" target="_blank">
-        <div class="shadow-xl p-6 rounded-lg bg-white hover:bg-brand-100 hover:text-brand-500 flex">
+        <div class="group shadow-lg rounded-lg overflow-hidden bg-white hover:bg-brand-100 hover:text-brand-500">
           <div>
-            <img :src="file.thumbnailLink" class="h-48" />
+            <img :src="file.thumbnailLink" class="w-full group-hover:opacity-75" />
           </div>
-          <div class="flex-1 ml-4 flex flex-col justify-center">
-            <h3 class="text-2xl font-semibold">{{ file.name }}</h3>
-            <h4 class="text-xl">{{ file.title }}</h4>
-            <p class="text-lg text-gray-600">{{ file.publishDate }}</p>
+          <div class="flex flex-col justify-center px-4 py-3">
+            <h3 class="text-xl font-semibold">{{ file.name }}</h3>
+            <p class="text-gray-600">{{ file.publishDate }}</p>
           </div>
         </div>
       </a>

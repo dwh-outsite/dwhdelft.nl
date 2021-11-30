@@ -1,7 +1,9 @@
 ---
 title: Voorlichting
-layout: column
+layout: article
 ---
+
+**De informatie op deze pagina is verouderd en wordt binnenkort bijgewerkt. Neem tot die tijd gerust contact op met [voorlichting@dwhdelft.nl](mailto:voorlichting@dwhdelft.nl) voor meer informatie.**
 
 Wie kan het zich niet herinneren, de puberteit? Een periode waar veel in verandert… Zo begint de groei van
 beharing, maak je je los van je ouders en word je voor het eerst verliefd! Maar wat nou als je op iemand verliefd

@@ -1,7 +1,9 @@
 ---
 title: Education
-layout: column
+layout: article
 ---
+
+**The information on this page is outdated and will be updated soon. Feel free to contact [voorlichting@dwhdelft.nl](mailto:voorlichting@dwhdelft.nl) in the meantime.**
 
 Who doesn’t remember puberty? A period with many changes… Hair begins to grow in places, you start being
 independent from your parents and you fall in love for the first time! But what if you fall in love with someone

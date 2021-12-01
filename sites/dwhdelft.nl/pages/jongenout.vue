@@ -39,12 +39,12 @@ nl:
     <div class="bg-jongenout w-full py-6">
       <section class="container px-4 mx-auto space-y-6">
         <LanguageWarning v-if="$i18n.locale == 'en'" class="mb-12" />
-        <div class="flex space-x-12">
-          <div class="w-1/3 text-2xl text-white">
+        <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
+          <div class="md:w-1/3 text-2xl text-white">
             <p v-for="paragraph in $t('content.intro')" :key="paragraph" v-html="paragraph" />
           </div>
           <div class="flex-1">
-            <div class="w-5/6 md:-mt-12 z-50 relative">
+            <div class="md:w-5/6 md:-mt-12 z-50 relative">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.about')" />
               <div class="bg-white rounded-3xl p-6 w-full text-lg">
                 <p v-for="paragraph in $t('content.about')" :key="paragraph" v-html="paragraph" />
@@ -52,9 +52,9 @@ nl:
             </div>
           </div>
         </div>
-        <div class="flex space-x-12">
+        <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
           <div class="flex-1">
-            <div class="w-5/6 float-right">
+            <div class="md:w-5/6 ml-auto">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.meetings')" />
               <div class="bg-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <p v-for="paragraph in $t('content.meetings')" :key="paragraph" v-html="paragraph" />
@@ -62,7 +62,7 @@ nl:
             </div>
           </div>
           <div class="flex-1">
-            <div class="w-5/6 float-right">
+            <div class="md:w-5/6 ml-auto">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.join')" />
               <div class="bg-[#3e0a93] text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <div v-if="!showForm">
@@ -105,20 +105,29 @@ nl:
     <section class="bg-[#3e0a93] py-12">
       <div class="container mx-auto px-4">
         <h2 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.team')" />
-        <div class="text-center text-white text-2xl w-2/3 mx-auto mb-12">
+        <div class="text-center text-white text-2xl md:w-2/3 mx-auto mb-12">
           <p v-for="paragraph in $t('content.team')" :key="paragraph" v-html="paragraph" />
         </div>
         <div class="space-y-6">
           <div
             v-for="({ name, pronouns, description }, index) in $t('team')"
             :key="name"
-            class="rounded-full bg-[#752CEF] p-4 flex items-center space-x-4 w-2/3"
+            class="
+              rounded-2xl
+              md:rounded-full
+              bg-[#752CEF]
+              p-4
+              md:flex
+              items-center
+              space-y-2
+              md:space-y-0 md:space-x-4 md:w-2/3
+            "
             :class="index % 2 !== 0 ? 'ml-auto' : ''"
           >
             <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
               <img :src="requireImage(name)" class="object-cover h-full" />
             </div>
-            <div class="text-white flex-1 pr-8">
+            <div class="text-white flex-1 md:pr-8">
               <div class="flex space-x-2 items-baseline">
                 <h3 class="text-xl font-semibold" v-text="name" />
                 <span class="opacity-75" v-text="pronouns" />
@@ -127,7 +136,10 @@ nl:
             </div>
           </div>
         </div>
-        <img :src="requireImage('team')" class="rounded-full w-2/3 mx-auto mt-12 border-8 border-[#752CEF]" />
+        <img
+          :src="requireImage('team')"
+          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#752CEF]"
+        />
       </div>
     </section>
   </div>

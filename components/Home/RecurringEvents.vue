@@ -5,24 +5,24 @@ en:
     - name: EatingOUT
       note: Members only
       day: Monday
-      time: '18:00'
+      time: '--:--'
       description: |-
         On Mondays we gather around the dinner table to enjoy a delicious meal cooked by one of our
-        members, sometimes with an activity afterwards.
+        members, sometimes with an activity afterwards. <em>Temporarily closed due to COVID-19.</em>
       buttonText: Sign Up
       buttonLink: https://dwhdelft.nl/eatingout
     - name: Fillum
       day: Wednesday
-      time: '20:45'
+      time: '--:--'
       description: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
-        old classics.
+        old classics. <em>Temporarily closed due to COVID-19.</em>
       buttonText: Programme <small>(For Members)</small>
       buttonLink: http://homodelft.nl/films/
     - name: Outsite
       note: Max. 28 years old
       day: Thursday
-      time: '17:00'
+      time: '10:00'
       description: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
         website for upcoming events and more.
@@ -30,7 +30,7 @@ en:
       buttonLink: https://outsite.nl/en
     - name: Open Bar Night
       day: Saturday
-      time: '17:00'
+      time: '13:00'
       description: |-
         Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
         parties, and join one of our many events!
@@ -40,24 +40,24 @@ nl:
     - name: EatingOUT
       note: Alleen leden
       day: Maandag
-      time: '18:00'
+      time: '--:--'
       description: |-
         Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
-        één van onze leden, met soms een activiteit achteraf.
+        één van onze leden, met soms een activiteit achteraf. <em>Tijdelijk gesloten vanwege COVID-19.</em>
       buttonText: Aanmelden
       buttonLink: https://dwhdelft.nl/eatingout
     - name: Fillum
       day: Woensdag
-      time: '20:45'
+      time: '--:--'
       description: |-
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
-        aan de beurt.
+        aan de beurt. <em>Tijdelijk gesloten vanwege COVID-19.</em>
       buttonText: Programma <small>(voor leden)</small>
       buttonLink: http://homodelft.nl/films/
     - name: Outsite
       note: Max. 28 jaar
       day: Donderdag
-      time: '17:00'
+      time: '10:00'
       description: |-
         Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
         Outsite website voor aankomende events!
@@ -65,7 +65,7 @@ nl:
       buttonLink: https://outsite.nl/
     - name: Open Bar
       day: Zaterdag
-      time: '17:00'
+      time: '13:00'
       description: |-
         Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
         feesten en doe mee met een van onze vele events!

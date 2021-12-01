@@ -12,6 +12,9 @@ en:
     - name: Dries Stuij
       role: Treasurer
       email: penningmeester@dwhdelft.nl
+    - name: Aydin Karadag
+      role: Board Member
+      email: aydin.karadag@dwhdelft.nl
   links:
     support_us: Support Us
     my_dwh: 'My DWH: Log in as a member'
@@ -28,6 +31,9 @@ nl:
     - name: Dries Stuij
       role: Penningmeester
       email: penningmeester@dwhdelft.nl
+    - name: Aydin Karadag
+      role: Algemeen Bestuurslid
+      email: aydin.karadag@dwhdelft.nl
   links:
     support_us: Steun Ons
     my_dwh: 'My DWH: Inloggen als lid'

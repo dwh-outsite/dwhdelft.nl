@@ -4,7 +4,7 @@
       <Zondicon icon="checkmark-outline" class="fill-current w-10" />
     </div>
     <div class="ml-4">
-      <h4 class="font-semibold text-xl" v-text="title" />
+      <h4 class="font-semibold text-xl text-gray-900" v-text="title" />
       <span class="text-gray-700" v-text="subtitle" />
     </div>
   </div>

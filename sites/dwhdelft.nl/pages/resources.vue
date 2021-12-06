@@ -127,7 +127,7 @@ nl:
     <div class="w-full py-6">
       <section class="container px-4 mx-auto space-y-6">
         <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
-          <div class="md:w-1/2 text-2xl">
+          <div class="text-2xl">
             <p v-for="paragraph in $t('content.intro')" :key="paragraph" v-html="paragraph" />
             <h2 class="font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.local')" />
 
@@ -139,7 +139,7 @@ nl:
             />
           </div>
           <div class="flex-1">
-            <div class="md:w-5/6 md:-mt-12 z-50 relative">
+            <div class="md:w-[32.8rem] md:-mt-12 z-50 relative">
               <div class="bg-paarse-vrijdag-2021 text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <h2 class="font-semibold text-4xl mb-2" v-html="$t('titles.purple')" />
                 <p v-for="paragraph in $t('content.purple')" :key="paragraph" v-html="paragraph" />
@@ -150,36 +150,24 @@ nl:
       </section>
     </div>
 
-    <div class="bg-purple-400 w-full py-6">
+    <div class="bg-purple-400 w-full py-6 md:py-12">
       <section class="container px-4 mx-auto space-y-6">
-        <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
-          <div class="flex-1">
-            <div class="md:w-5/6 ml-auto">
-              <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.trans')" />
-              <div class="bg-white rounded-3xl p-6 w-full text-lg space-y-4">
-                <p v-for="paragraph in $t('content.trans')" :key="paragraph" v-html="paragraph" />
-              </div>
-            </div>
-            <div class="md:w-5/6 ml-auto mt-8">
-              <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.sex')" />
-              <div class="bg-white rounded-3xl p-6 w-full text-lg space-y-4">
-                <p v-for="paragraph in $t('content.sex')" :key="paragraph" v-html="paragraph" />
-              </div>
-            </div>
+        <div class="md:flex md:space-x-6 space-y-6 md:space-y-0">
+          <div class="flex-1 space-y-6">
+            <ActionCard :title="$t('titles.trans')">
+              <p v-for="paragraph in $t('content.trans')" :key="paragraph" v-html="paragraph" />
+            </ActionCard>
+            <ActionCard :title="$t('titles.sex')">
+              <p v-for="paragraph in $t('content.sex')" :key="paragraph" v-html="paragraph" />
+            </ActionCard>
           </div>
-          <div class="flex-1">
-            <div class="md:w-5/6 ml-auto">
-              <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.ace')" />
-              <div class="bg-white rounded-3xl p-6 w-full text-lg space-y-4">
-                <p v-for="paragraph in $t('content.ace')" :key="paragraph" v-html="paragraph" />
-              </div>
-            </div>
-            <div class="md:w-5/6 ml-auto mt-8">
-              <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.lastig')" />
-              <div class="bg-white rounded-3xl p-6 w-full text-lg space-y-4">
-                <p v-for="paragraph in $t('content.lastig')" :key="paragraph" v-html="paragraph" />
-              </div>
-            </div>
+          <div class="flex-1 space-y-6">
+            <ActionCard :title="$t('titles.ace')">
+              <p v-for="paragraph in $t('content.ace')" :key="paragraph" v-html="paragraph" />
+            </ActionCard>
+            <ActionCard :title="$t('titles.lastig')">
+              <p v-for="paragraph in $t('content.lastig')" :key="paragraph" v-html="paragraph" />
+            </ActionCard>
           </div>
         </div>
       </section>

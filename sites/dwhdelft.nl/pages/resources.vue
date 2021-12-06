@@ -175,17 +175,6 @@ nl:
   </div>
 </template>
 
-<script>
-export default {
-  components: {},
-  data() {
-    return {
-      showForm: false,
-    }
-  },
-}
-</script>
-
 <style scoped>
 .bg-paarse-vrijdag-2021 {
   @apply bg-cover;

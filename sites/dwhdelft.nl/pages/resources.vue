@@ -147,7 +147,7 @@ nl:
             />
           </div>
           <div class="flex-1">
-            <div class="md:w-[32.8rem] md:-mt-12 z-50 relative">
+            <div class="md:w-[30.5rem] md:-mt-12 z-50 relative">
               <div class="bg-paarse-vrijdag-2021 text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <h2 class="font-semibold text-4xl mb-2" v-html="$t('titles.purple')" />
                 <p v-for="paragraph in $t('content.purple')" :key="paragraph" v-html="paragraph" />

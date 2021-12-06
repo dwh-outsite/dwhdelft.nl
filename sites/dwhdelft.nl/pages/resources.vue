@@ -18,6 +18,10 @@ en:
       href="https://dwhdelft.nl/outsite">Outsite</a>, our youth group with a weekly barnight on Thursday, filled with activities and parties. We host a <a class="font-bold text-purple-600" href="https://outsite.nl/kmg">kennismakingsgroep</a> twice a year, where you spend 9 weeks getting to know a group of queer people your age and the queer community.'
       - 'There is also an active queer nightlife scene. DWH has its own weekly open bar in Delft and there are regular parties. There are lots of trips, organised by and for our members, to Pann in Utrecht, Popcake 
       festival or Pride in different cities.'
+      - 'Are you an employee of TU Delft? Check the page of  
+      <a class="font-bold text-purple-600" href="https://www.tudelft.nl/over-tu-delft/strategie/strategiedocumenten-tu-delft/diversiteitsbeleid/true-u/">
+      TrueU</a>; this is the queer network of TU employees, who works on improving acceptance and inclusion 
+      at the university.'
     purple:
       - 'Hi! Nice that you have found our website. The second Friday of December, the 10th to be precise, is Purple Friday. This is a day where we try to convince as many non-queer identifying people as possible to show their support by wearing something purple.'
       - 'That support is very necessary; we need support so we are not fighting alone. But support does not always have to come in the form of purple clothing. Do you already know how to support queer people around you?'
@@ -76,6 +80,10 @@ nl:
       - 'Er valt hier ook genoeg queer uit te gaan. In Delft zelf is de bar bij DWH elke week open en zijn
       er regelmatig feesten. Er worden door en voor onze leden vaak ook uitjes naar Pann, in Utrecht, Popcake 
       festival of Pride in diverse steden georganiseerd.'
+      - 'Ben je een medewerker bij de TU Delft? Kijk dan eens op de pagina van 
+      <a class="font-bold text-purple-600" href="https://www.tudelft.nl/over-tu-delft/strategie/strategiedocumenten-tu-delft/diversiteitsbeleid/true-u/">
+      TrueU</a>; dit is het roze netwerk van TU medewerkers, dat zich inzet om acceptatie binnen de universiteit 
+      te vergroten.'
     purple:
       - 'De tweede vrijdag van december, de 10e om precies te zijn, 
       is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet 
@@ -139,7 +147,7 @@ nl:
             />
           </div>
           <div class="flex-1">
-            <div class="md:w-[32.8rem] md:-mt-12 z-50 relative">
+            <div class="md:w-[30.5rem] md:-mt-12 z-50 relative">
               <div class="bg-paarse-vrijdag-2021 text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <h2 class="font-semibold text-4xl mb-2" v-html="$t('titles.purple')" />
                 <p v-for="paragraph in $t('content.purple')" :key="paragraph" v-html="paragraph" />

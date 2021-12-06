@@ -189,6 +189,6 @@ export default {
 <style scoped>
 .bg-paarse-vrijdag-2021 {
   @apply bg-cover;
-  background-image: url(../../../assets/images/purple-friday-2021-bg.svg);
+  background-image: url(../../../assets/images/events/purplefriday/purple_friday_2021_bg.svg);
 }
 </style>

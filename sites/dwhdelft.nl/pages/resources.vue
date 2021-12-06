@@ -14,17 +14,16 @@ en:
     local:
       - 'Are you a LGBT+ youth under 19 or are you still unsure but want to come into contact with other LGBT+ youth with fun activities? Check out 
       <a class="font-bold text-purple-600" href="https://instagram.com/jongenoutdelft/">Jong&Out Delft</a>.'
-      - 'Van 16 t/m 28 jaar ben je welkom bij <a class="font-bold text-purple-600" 
-      href="https://dwhdelft.nl/outsite">Outsite</a>, our youth department with a weekly barnight on Thursday, filled with activities and parties. We host a <a class="font-bold text-purple-600" href="https://outsite.nl/kmg">kennismakingsgroep</a> twice a year, where you spend 9 weeks getting to know a group of queer people your age and the queer community.'
-      - 'There is also an active queer nightlife scene. DWH has its own weekly open bar in Delft and there are regular parties. There are lots of trips, organised by and for our members, to Pann, in Utrecht, Popcake 
+      - 'From 16 to 28 years old you are welcome at <a class="font-bold text-purple-600" 
+      href="https://dwhdelft.nl/outsite">Outsite</a>, our youth group with a weekly barnight on Thursday, filled with activities and parties. We host a <a class="font-bold text-purple-600" href="https://outsite.nl/kmg">kennismakingsgroep</a> twice a year, where you spend 9 weeks getting to know a group of queer people your age and the queer community.'
+      - 'There is also an active queer nightlife scene. DWH has its own weekly open bar in Delft and there are regular parties. There are lots of trips, organised by and for our members, to Pann in Utrecht, Popcake 
       festival or Pride in different cities.'
     purple:
       - 'Hi! Nice that you have found our website. The second Friday of December, the 10th to be precise, is Purple Friday. This is a day where we try to convince as many non-queer identifying people as possible to show their support by wearing something purple.'
       - 'That support is very necessary; we need support so we are not fighting alone. But support does not always have to come in the form of purple clothing. Do you already know how to support queer people around you?'
       - 'Listen to people from the LGBTQ+ community, and make an effort to understand the problems they face. Speak up when you hear other not-queer people making inappropriate jokes or remarks. Also avoid the use of obscene swear words. Using something like “gay” can already fall in this category.'
-      - 'Respect and practice the pronouns of people around you. Oefen dus met het 
-      gebruik van deze pronouns (zoals die/diens of hen/hun) voor jezelf, zodat als je hen moet aanspreken, 
-      je het automatisch goed doet. Bovenal, verdiep je in het onderwerp! Niets zegt zoveel dat je je best doet als weten waar je het over hebt.'
+      - 'Try incorporating neutral pronouns more often in your day-to-day use. Replace "he or she" by "they", 
+      and "him or her" by "them". This includes everyone, and is a great way to practice speaking about nonbinary people.'
     trans:
       - 'Finding information about being trans can be difficult. Luckily there are a few great information points such as <a class="font-bold text-purple-600" href="https://transvisie.nl">transvisie</a> 
       and <a class="font-bold text-purple-600" href="https://www.transgenderinfo.nl">transgenderinfo</a>!'
@@ -87,10 +86,9 @@ nl:
       - 'Luister naar mensen uit de LHBT+ gemeenschap, en probeer de problemen die ze meemaken te begrijpen.
       Spreek je uit als je andere niet-queer mensen ongepaste grappen of opmerkingen hoort maken. Vermijd ook het 
       gebruik van aanstootgevende scheldwoorden. Hier kan iets als “gay” ook al onder vallen.'
-      - 'Respecteer en oefen de voornaamwoorden van de mensen om je heen. In het Nederlands werken de 
-      persoonlijke voornaamwoorden niet altijd voor iedereen even voor de hand liggend. Oefen dus met het 
-      gebruik van deze pronouns (zoals die/diens of hen/hun) voor jezelf, zodat als je hen moet aanspreken, 
-      je het automatisch goed doet. Bovenal, verdiep je in het onderwerp! Niets zegt zoveel dat je je best doet als weten waar je het over hebt.'
+      - 'Maak vaker gebruik van neutrale pronouns in je dagelijks taalgebruik. Vervang "hij of zij" eens door "die",
+      en "zijn of haar" door "hun". Dit is inclusiever voor iedereen, en tegelijkertijd een goeie oefening voor
+      wanneer je over nonbinaire personen praat.'
     trans:
       - 'Het vinden van informatie over trans zijn is soms nog eens best lastig. Gelukkig bestaan er een 
       aantal handige informatiepunten zoals <a class="font-bold text-purple-600" href="https://transvisie.nl">transvisie</a> 

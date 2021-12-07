@@ -11,6 +11,8 @@ en:
       url: index#eatingout
     - title: Education
       url: /education
+    - title: Jong&Out
+      url: /jongenout
     - title: Andersblad
       url: andersblad
     - title: Contact
@@ -27,6 +29,8 @@ nl:
       url: index#eatingout
     - title: Voorlichting
       url: /education
+    - title: Jong&Out
+      url: /jongenout
     - title: Andersblad
       url: andersblad
     - title: Contact

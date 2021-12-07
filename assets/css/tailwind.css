@@ -41,7 +41,7 @@ html {
 
 .form-element input:not([type='radio']),
 .form-element textarea {
-  @apply bg-white rounded-lg block px-4 py-3 w-full;
+  @apply bg-white text-gray-800 rounded-lg block px-4 py-3 w-full;
 }
 
 .form-element-gray {

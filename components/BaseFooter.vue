@@ -82,22 +82,7 @@ nl:
           </a>
           <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
             <div
-              class="
-                rounded-full
-                h-10
-                px-3
-                py-2
-                lg:mr-6
-                bg-white
-                hover:bg-gray-300
-                text-gray-700
-                uppercase
-                tracking-wide
-                text-sm
-                font-semibold
-                flex
-                items-center
-              "
+              class="rounded-full h-10 px-3 py-2 lg:mr-6 bg-white hover:bg-gray-300 text-gray-700 uppercase tracking-wide text-sm font-semibold flex items-center"
             >
               Sponsor<span class="text-green-600">kliks</span>
             </div>
@@ -116,18 +101,7 @@ nl:
       </div>
       <a
         :href="localePath('index')"
-        class="
-          text-gray-400
-          hover:text-white
-          text-xs
-          lg:text-base
-          flex
-          items-center
-          justify-center
-          lg:justify-end
-          pt-4
-          lg:pt-0
-        "
+        class="text-gray-400 hover:text-white text-xs lg:text-base flex items-center justify-center lg:justify-end pt-4 lg:pt-0"
       >
         <slot name="copyright" />
         <DWHLogo class="h-8 ml-2 fill-current" />

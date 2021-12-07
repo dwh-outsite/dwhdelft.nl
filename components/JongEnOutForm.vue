@@ -26,7 +26,7 @@ nl:
         <FormValidation name="pronouns" :errors="validationErrors" />
       </FormElement>
       <div class="flex justify-between items-center mt-8">
-        <a @click="$emit('cancel')" class="underline cursor-pointer">&laquo; Go back</a>
+        <a class="underline cursor-pointer" @click="$emit('cancel')">&laquo; Go back</a>
         <PrimaryButton :disabled="formStatus === 'loading'" type="submit">
           {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
         </PrimaryButton>

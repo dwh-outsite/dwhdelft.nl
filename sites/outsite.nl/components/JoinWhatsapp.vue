@@ -71,23 +71,7 @@ nl:
         <button
           v-if="state == 'cta'"
           type="button"
-          class="
-            bg-green-400
-            h-full
-            px-8
-            text-white text-xl
-            font-bold
-            tracking-wider
-            uppercase
-            flex
-            items-center
-            justify-center
-            py-2
-            rounded-b
-            xl:rounded-b-none xl:rounded-r
-            w-full
-            xl:w-auto
-          "
+          class="bg-green-400 h-full px-8 text-white text-xl font-bold tracking-wider uppercase flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r w-full xl:w-auto"
           @click="state = 'form'"
         >
           <div>{{ $t('button') }}</div>
@@ -96,24 +80,7 @@ nl:
           v-if="state == 'form'"
           :disabled="formStatus === 'loading'"
           type="submit"
-          class="
-            bg-green-400
-            h-full
-            px-8
-            text-white text-xl
-            font-bold
-            tracking-wider
-            uppercase
-            flex
-            items-center
-            justify-center
-            py-2
-            rounded-b
-            xl:rounded-b-none xl:rounded-r
-            w-full
-            xl:w-auto
-            disabled:bg-green-300
-          "
+          class="bg-green-400 h-full px-8 text-white text-xl font-bold tracking-wider uppercase flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r w-full xl:w-auto disabled:bg-green-300"
         >
           {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
           <Zondicon icon="arrow-thin-right" class="w-4 ml-2 fill-current" />

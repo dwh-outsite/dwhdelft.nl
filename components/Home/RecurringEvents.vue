@@ -96,17 +96,7 @@ nl:
           <a
             v-if="event.buttonText"
             :href="event.buttonLink"
-            class="
-              bg-brand-500
-              hover:bg-brand-300
-              py-3
-              rounded-b
-              text-white
-              uppercase
-              font-semibold
-              tracking-wider
-              text-center
-            "
+            class="bg-brand-500 hover:bg-brand-300 py-3 rounded-b text-white uppercase font-semibold tracking-wider text-center"
             v-html="event.buttonText"
           />
         </div>

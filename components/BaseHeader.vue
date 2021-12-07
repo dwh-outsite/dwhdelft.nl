@@ -7,71 +7,26 @@
         </nuxt-link>
         <div
           v-show="showMenu"
-          class="
-            md:hidden
-            absolute
-            z-60
-            top-16
-            text-white
-            backdrop-blur-xl
-            bg-white bg-opacity-10
-            w-full
-            -ml-4
-            px-1
-            py-2
-            space-y-1
-            text-lg
-            font-semibold
-            transition-all
-          "
+          class="md:hidden absolute z-60 top-16 text-white backdrop-blur-xl bg-white bg-opacity-10 w-full -ml-4 px-1 py-2 space-y-1 text-lg font-semibold transition-all"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="
-              nav-item
-              block
-              py-1
-              px-3
-              no-underline
-              hover:bg-white hover:bg-opacity-90 hover:text-gray-800
-              transition-all
-              rounded-full
-              border border-opacity-25
-            "
+            class="nav-item block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:text-gray-800 transition-all rounded-full border border-opacity-25"
           >
             {{ item.title }}
           </nuxt-link>
           <slot name="mobile-menu-extension"></slot>
         </div>
         <div
-          class="
-            hidden
-            md:flex
-            p-1
-            rounded-full
-            text-lg
-            font-semibold
-            text-white
-            backdrop-blur-lg
-            bg-white bg-opacity-10
-            shadow
-          "
+          class="hidden md:flex p-1 rounded-full text-lg font-semibold text-white backdrop-blur-lg bg-white bg-opacity-10 shadow"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="
-              nav-item
-              block
-              py-1
-              px-3
-              no-underline
-              hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800
-              transition-all
-            "
+            class="nav-item block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800 transition-all"
           >
             {{ item.title }}
           </nuxt-link>
@@ -79,18 +34,7 @@
         <div class="flex items-center space-x-4">
           <div class="p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
             <div
-              class="
-                rounded-full
-                w-7
-                h-7
-                bg-white
-                border-2 border-white
-                flex
-                items-center
-                justify-center
-                overflow-hidden
-                relative
-              "
+              class="rounded-full w-7 h-7 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
             >
               <nuxt-link v-show="$i18n.locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
                 <GBFlag />
@@ -103,19 +47,7 @@
           <slot name="menu-extension"></slot>
           <div class="md:hidden p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
             <div
-              class="
-                rounded-full
-                w-7
-                h-7
-                p-1
-                bg-white
-                border-2 border-white
-                flex
-                items-center
-                justify-center
-                overflow-hidden
-                relative
-              "
+              class="rounded-full w-7 h-7 p-1 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
               @click="showMenu = !showMenu"
             >
               <Zondicon v-show="!showMenu" icon="menu" class="fill-current w-full" />

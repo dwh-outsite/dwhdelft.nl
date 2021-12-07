@@ -61,19 +61,7 @@ nl:
     <div v-show="state === 'finished'">
       <FormCompleted class="bg-brand-100 mb-6" :title="$t('forms.success.heading')" :subtitle="$t('thank_you')" />
       <button
-        class="
-          border border-brand-500
-          hover:bg-brand-500
-          text-brand-500
-          hover:text-white
-          rounded
-          uppercase
-          text-sm
-          tracking-wide
-          py-2
-          px-3
-          shadow
-        "
+        class="border border-brand-500 hover:bg-brand-500 text-brand-500 hover:text-white rounded uppercase text-sm tracking-wide py-2 px-3 shadow"
         @click="reset"
         v-text="$t('another_booking')"
       />

@@ -130,18 +130,7 @@ nl:
 
           <a href="https://my.dwhdelft.nl/signup">
             <button
-              class="
-                bg-white
-                rounded-full
-                px-6
-                py-3
-                text-brand-400
-                shadow-lg
-                font-semibold
-                flex
-                items-center
-                hover:bg-brand-100
-              "
+              class="bg-white rounded-full px-6 py-3 text-brand-400 shadow-lg font-semibold flex items-center hover:bg-brand-100"
             >
               {{ $t('membership.button') }}
               <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />

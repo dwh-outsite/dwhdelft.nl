@@ -112,17 +112,7 @@ nl:
           <div
             v-for="({ name, pronouns, description }, index) in $t('team')"
             :key="name"
-            class="
-              rounded-2xl
-              md:rounded-full
-              bg-[#752CEF]
-              p-4
-              md:flex
-              items-center
-              space-y-2
-              md:space-y-0 md:space-x-4 md:w-2/3
-              shadow-xl
-            "
+            class="rounded-2xl md:rounded-full bg-[#752CEF] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-2/3 shadow-xl"
             :class="index % 2 !== 0 ? 'ml-auto' : ''"
           >
             <div class="rounded-full h-32 w-32 bg-white overflow-hidden">

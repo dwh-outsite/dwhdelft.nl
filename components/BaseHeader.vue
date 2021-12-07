@@ -151,27 +151,4 @@ a.nav-item.nuxt-link-exact-active {
   height: 100%;
   object-fit: cover;
 }
-
-.video-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.video-container video {
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none;
-
-  width: auto;
-  height: auto;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 </style>

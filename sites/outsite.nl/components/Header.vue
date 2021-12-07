@@ -50,7 +50,7 @@ nl:
     </template>
     <template #background>
       <div class="video-container">
-        <video id="headervid" preload="metadata" muted loop class="opacity-50">
+        <video id="headervid" preload="metadata" autoplay muted loop class="opacity-50">
           <source src="/outsite_web_bg.mp4" type="video/mp4" />
         </video>
       </div>
@@ -66,10 +66,30 @@ import DWHLogo from '#/assets/images/dwh_logo.svg?inline'
 export default {
   components: { OutsiteLogo, DWHLogo },
   props: { small: { default: false }, bg: {} },
-  mounted() {
-    window.addEventListener('load', () => {
-      document.getElementById('headervid').play()
-    })
-  },
 }
 </script>
+
+<style>
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>

@@ -94,7 +94,7 @@ nl:
                     </div>
                   </button>
                 </div>
-                <JongEnOutForm v-if="showForm" />
+                <JongEnOutForm v-if="showForm" @cancel="showForm = false" />
               </div>
             </div>
           </div>

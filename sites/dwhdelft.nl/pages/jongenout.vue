@@ -46,7 +46,7 @@ nl:
           <div class="flex-1">
             <div class="md:w-5/6 md:-mt-12 z-50 relative">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.about')" />
-              <div class="bg-white rounded-3xl p-6 w-full text-lg">
+              <div class="bg-white shadow-xl rounded-3xl p-6 w-full text-lg">
                 <p v-for="paragraph in $t('content.about')" :key="paragraph" v-html="paragraph" />
               </div>
             </div>
@@ -56,7 +56,7 @@ nl:
           <div class="flex-1">
             <div class="md:w-5/6 ml-auto">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.meetings')" />
-              <div class="bg-white rounded-3xl p-6 w-full text-lg space-y-4">
+              <div class="bg-white shadow-xl rounded-3xl p-6 w-full text-lg space-y-4">
                 <p v-for="paragraph in $t('content.meetings')" :key="paragraph" v-html="paragraph" />
               </div>
             </div>
@@ -64,7 +64,7 @@ nl:
           <div class="flex-1">
             <div class="md:w-5/6 ml-auto">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.join')" />
-              <div class="bg-[#3e0a93] text-white rounded-3xl p-6 w-full text-lg space-y-4">
+              <div class="bg-[#3e0a93] shadow-xl text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <div v-if="!showForm">
                   <div class="flex items-center mb-4">
                     <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
@@ -121,6 +121,7 @@ nl:
               items-center
               space-y-2
               md:space-y-0 md:space-x-4 md:w-2/3
+              shadow-xl
             "
             :class="index % 2 !== 0 ? 'ml-auto' : ''"
           >
@@ -138,7 +139,7 @@ nl:
         </div>
         <img
           :src="requireImage('team')"
-          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#752CEF]"
+          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#752CEF] shadow-xl"
         />
       </div>
     </section>

@@ -70,7 +70,7 @@ nl:
       </div>
     </div>
 
-    <hr class="border-b border-gray-600 m-0" />
+    <hr class="border-gray-600 m-0" />
 
     <div class="container mx-auto px-4 py-4 lg:flex justify-between items-center">
       <div class="lg:flex">

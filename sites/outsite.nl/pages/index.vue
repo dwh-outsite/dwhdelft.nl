@@ -14,7 +14,7 @@ en:
       - 'These activities are all organized by our fantastic committees and members! The best way to become acquainted with
         Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
         system: Where we will make sure there is someone ready to show you around and who could introduce you to others.'
-    invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 10:00</strong>'
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at {0}</strong>'
   video:
     title: <strong>Outsite</strong> in 120 seconds
   activities:
@@ -34,7 +34,7 @@ nl:
       - 'Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
         kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
         van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.'
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 10:00</strong>'
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf {0}</strong>'
   video:
     title: <strong>Outsite</strong> in 120 seconden
   activities:
@@ -65,7 +65,7 @@ nl:
             class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
             v-html="paragraph"
           />
-          <Invitation :content="$t('description.invitation')" />
+          <Invitation :content="$t('description.invitation', [barOpeningHours.start_time])" />
         </div>
         <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">
           <Panda class="panda relative md:absolute" />
@@ -120,6 +120,9 @@ export default {
     return {
       highlights: await $content(`highlights`).fetch(),
       testimonials: await $content('testimonials').fetch(),
+      barOpeningHours: (await $content(`opening_hours`).fetch()).events.filter(
+        (event) => event.day.en === 'Thursday'
+      )[0],
     }
   },
 }

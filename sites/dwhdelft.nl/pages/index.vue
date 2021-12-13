@@ -14,7 +14,7 @@ en:
       - 'As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
         nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
         beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!'
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf 13:00</strong>'
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Saturday starting at {0}</strong>'
 nl:
   hero:
     title: LHBT+ vereniging sinds 1968
@@ -30,7 +30,7 @@ nl:
       - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
         baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
         bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!'
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf 13:00</strong>'
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke zaterdag vanaf {0}</strong>'
 </i18n>
 
 <template>
@@ -57,7 +57,7 @@ nl:
             class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
             v-html="paragraph"
           />
-          <Invitation :content="$t('description.invitation')" />
+          <Invitation :content="$t('description.invitation', [barOpeningHours.start_time])" />
         </div>
         <div class="hidden lg:block">
           <div class="bg-white p-4 border rotate shadow-lg relative z-50 mr-8 -mt-7">
@@ -86,6 +86,18 @@ nl:
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content, params, app }) {
+    return {
+      barOpeningHours: (await $content(`opening_hours`).fetch()).events.filter(
+        (event) => event.day.en === 'Saturday'
+      )[0],
+    }
+  },
+}
+</script>
 
 <style scoped>
 .information::before {

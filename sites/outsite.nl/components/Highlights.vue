@@ -71,7 +71,16 @@ export default {
   components: { Zondicon },
   props: ['excerpts', 'rawHighlights'],
   data() {
-    return { highlights: this.rawHighlights.slice(0, this.excerpts ? 3 : this.rawHighlights.length) }
+    return {
+      highlights: [],
+    }
+  },
+  async fetch() {
+    this.highlights = await this.$content(`highlights`).fetch()
+
+    if (this.excerpts) {
+      this.highlights = this.highlights.slice(0, 3)
+    }
   },
 }
 </script>

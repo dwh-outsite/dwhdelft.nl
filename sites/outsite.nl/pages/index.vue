@@ -91,7 +91,7 @@ nl:
     </section>
 
     <section class="relative t2">
-      <Highlights class="relative z-10" :excerpts="true" :raw-highlights="highlights" />
+      <Highlights class="relative z-10" :excerpts="true" />
     </section>
 
     <section id="video" class="mb-24">
@@ -99,7 +99,7 @@ nl:
     </section>
 
     <section id="activities" class="relative page-ender pt-48 md:pt-20">
-      <Testimonial :testimonials="testimonials" class="absolute left-0 right-0 -mt-64 md:-mt-40" />
+      <Testimonial class="absolute left-0 right-0 -mt-64 md:-mt-40" />
       <Activities :title="$t('activities.title')" class="relative z-10" />
     </section>
 
@@ -118,8 +118,6 @@ export default {
   },
   async asyncData({ $content, app }) {
     return {
-      highlights: await $content(`highlights`).fetch(),
-      testimonials: await $content('testimonials').fetch(),
       barOpeningHours: (await $content(`opening_hours`).fetch()).events.filter(
         (event) => event.day.en === 'Thursday'
       )[0],

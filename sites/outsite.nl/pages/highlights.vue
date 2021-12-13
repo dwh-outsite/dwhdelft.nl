@@ -16,16 +16,7 @@ nl:
     </header>
 
     <section class="bg-gray-200 pb-12">
-      <Highlights :excerpts="false" :raw-highlights="highlights" />
+      <Highlights :excerpts="false" />
     </section>
   </div>
 </template>
-
-<script>
-export default {
-  async asyncData({ $content, app }) {
-    const highlights = await $content(`highlights`).fetch()
-    return { highlights }
-  },
-}
-</script>

@@ -85,12 +85,15 @@ nl:
 const INTERVAL_TIME = 5000
 
 export default {
-  props: ['testimonials'],
   data() {
     return {
+      testimonials: [],
       active: 0,
       interval: undefined,
     }
+  },
+  async fetch() {
+    this.testimonials = await this.$content('testimonials').fetch()
   },
   mounted() {
     this.startSliding()

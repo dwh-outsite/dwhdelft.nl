@@ -43,7 +43,16 @@ import Zondicon from 'vue-zondicons'
 
 export default {
   components: { Zondicon },
-  props: ['intro', 'bookingRules'],
+  data() {
+    return {
+      intro: undefined,
+      bookingRules: '',
+    }
+  },
+  async fetch() {
+    this.intro = await this.$content(`bookings/intro.${this.$i18n.locale}`).fetch()
+    this.bookingRules = await this.$content(`bookings/booking_rules.${this.$i18n.locale}`).fetch()
+  },
 }
 </script>
 

@@ -67,7 +67,7 @@ events:
     day:
       en: Saturday
       nl: Zaterdag
-    start_time: '13:00'
+    start_time: '14:00'
     end_time: '17:00'
     description:
       en: |-

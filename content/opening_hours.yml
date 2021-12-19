@@ -45,15 +45,15 @@ events:
     day:
       en: Thursday
       nl: Donderdag
-    start_time: '10:00'
-    end_time: '17:00'
+    start_time: '--:--'
+    end_time: '--:--'
     description:
       en: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
-        website for upcoming events and more.
+        website for upcoming events and more. <em>Temporarily closed due to COVID-19.</em>
       nl: |-
         Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
-        Outsite website voor aankomende events!
+        Outsite website voor aankomende events! <em>Tijdelijk gesloten vanwege COVID-19.</em>
     restrictions:
       - en: Max. 28 years old
         nl: Max. 28 jaar
@@ -67,12 +67,12 @@ events:
     day:
       en: Saturday
       nl: Zaterdag
-    start_time: '14:00'
-    end_time: '17:00'
+    start_time: '--:--'
+    end_time: '--:--'
     description:
       en: |-
         Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
-        parties, and join one of our many events!
+        parties, and join one of our many events! <em>Temporarily closed due to COVID-19.</em>
       nl: |-
         Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
-        feesten en doe mee met een van onze vele events!
+        feesten en doe mee met een van onze vele events! <em>Tijdelijk gesloten vanwege COVID-19.</em>

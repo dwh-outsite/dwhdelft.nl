@@ -86,9 +86,6 @@ export default {
     }))
   },
   methods: {
-    $tt(languageOptions) {
-      return languageOptions[this.$i18n.locale]
-    },
     socials: () => [
       { url: 'https://instagram.com/dwh_delft', icon: InstagramIcon },
       { url: 'https://facebook.com/DWHDelft', icon: FacebookIcon },

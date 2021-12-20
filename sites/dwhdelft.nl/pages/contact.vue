@@ -110,11 +110,6 @@ export default {
       boardMembers: (await $content('board_members_dwh').fetch()).board,
     }
   },
-  methods: {
-    $tt(languageOptions) {
-      return languageOptions[this.$i18n.locale]
-    },
-  },
 }
 </script>
 

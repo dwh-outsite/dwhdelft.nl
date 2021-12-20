@@ -17,8 +17,8 @@ nl:
 
     <form v-if="formStatus !== 'finished'" @submit="submit">
       <FormValidationMessage :errors="validationErrors" />
-      <div class="flex space-x-4">
-        <FormElement :label="$t('forms.label.name')" class="form-element-gray w-2/3" required="true">
+      <div class="md:flex md:space-x-4">
+        <FormElement :label="$t('forms.label.name')" class="form-element-gray md:w-2/3" required="true">
           <FormInput v-model="form.name" :placeholder="$t('forms.placeholder.name')" />
           <FormValidation name="name" :errors="validationErrors" />
         </FormElement>

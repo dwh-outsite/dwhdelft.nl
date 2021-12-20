@@ -22,6 +22,7 @@ export default {
       barbuddy: 'Met wie wil je afspreken?',
       membership_fee: 'Tariefgroep Contributie (zie onderaan deze pagina)',
       iban: 'IBAN nummer voor betaling via automatisch incasso (geen spaties)',
+      message: 'Bericht',
     },
     placeholder: {
       name: 'Naam',
@@ -37,6 +38,7 @@ export default {
       postal_code: 'Postcode (bijvoorbeeld 2611PV)',
       pronouns: 'bv. zij/haar, hij/hem, hen/hun',
       iban: 'IBAN nummer',
+      message: 'Uw bericht',
     },
     buttons: {
       sign_up: 'Aanmelden',

@@ -22,6 +22,7 @@ export default {
       barbuddy: 'Who would you like to meet?',
       membership_fee: 'Membership Fee (see below)',
       iban: 'IBAN number for payment by direct debit (no spaces)',
+      message: 'Message',
     },
     placeholder: {
       name: 'Name',
@@ -37,6 +38,7 @@ export default {
       postal_code: 'Postal code (for example 2611PV)',
       pronouns: 'e.g. she/her, he/him, they/them',
       iban: 'IBAN number',
+      message: 'Your message',
     },
     buttons: {
       sign_up: 'Sign up',

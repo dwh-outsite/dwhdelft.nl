@@ -15,9 +15,6 @@ en:
     - name: Aydin Karadag
       role: Board Member
       email: aydin.karadag@dwhdelft.nl
-  links:
-    support_us: Support Us
-    my_dwh: 'My DWH: Log in as a member'
 nl:
   boardTitle: Bestuur
   contactTitle: Contact
@@ -34,44 +31,69 @@ nl:
     - name: Aydin Karadag
       role: Algemeen Bestuurslid
       email: aydin.karadag@dwhdelft.nl
-  links:
-    support_us: Steun Ons
-    my_dwh: 'My DWH: Inloggen als lid'
 </i18n>
 
 <template>
-  <BaseFooter contact-email="bestuur@dwhdelft.nl" :socials="socials" :links="links">
-    <template #board-members>
-      <div v-for="member in $t('board')" :key="member.name" class="md:w-1/2">
-        <BoardMember :role="member.role" :name="member.name" :email="member.email" />
+  <div>
+    <div
+      class="container px-4 mx-auto text-white py-8 md:flex space-y-8 md:space-y-0 md:space-x-8 xl:space-x-16 justify-center"
+    >
+      <div v-for="category in links" :key="category.name">
+        <h3 class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-wider" v-text="$tt(category.name)" />
+        <div class="space-y-2">
+          <a
+            v-for="{ url, name, external } in category.items"
+            :key="url"
+            :href="url"
+            class="font-semibold block items-center text-gray-400 hover:text-white"
+            :target="external ? '_blank' : '_self'"
+          >
+            {{ $tt(name) }}
+            <Zondicon v-if="external" icon="link" class="inline w-4 fill-current ml-1" />
+          </a>
+        </div>
       </div>
-    </template>
-    <template #copyright>&copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}</template>
-  </BaseFooter>
+    </div>
+    <BaseFooter :socials="socials()" :links="[]">
+      <template #copyright>&copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}</template>
+    </BaseFooter>
+  </div>
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
 import dayjs from 'dayjs'
 import InstagramIcon from '#/assets/images/social/instagram.svg?inline'
 import FacebookIcon from '#/assets/images/social/facebook.svg?inline'
 import GitHubIcon from '#/assets/images/social/github.svg?inline'
 
 export default {
+  components: { Zondicon },
   data() {
     return {
-      socials: [
-        { url: 'https://instagram.com/dwh_delft', icon: InstagramIcon },
-        { url: 'https://facebook.com/DWHDelft', icon: FacebookIcon },
-        { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
-      ],
-      links: [
-        { name: 'ANBI', url: this.localePath('/anbi') },
-        { name: 'Privacy', url: this.localePath('/privacy') },
-        { name: this.$t('links.support_us'), url: this.localePath('/support-us') },
-        { name: this.$t('links.my_dwh'), url: 'https:////my.dwhdelft.nl' },
-      ],
       year: dayjs().format('YYYY'),
+      links: [],
     }
+  },
+  async fetch() {
+    this.links = (await this.$content(`footer_links_dwh`).fetch()).categories.map((category) => ({
+      ...category,
+      items: category.items.map((item) => ({
+        ...item,
+        url: item.url.startsWith('http') ? item.url : this.localePath(item.url),
+        external: item.url.startsWith('http'),
+      })),
+    }))
+  },
+  methods: {
+    $tt(languageOptions) {
+      return languageOptions[this.$i18n.locale]
+    },
+    socials: () => [
+      { url: 'https://instagram.com/dwh_delft', icon: InstagramIcon },
+      { url: 'https://facebook.com/DWHDelft', icon: FacebookIcon },
+      { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
+    ],
   },
 }
 </script>

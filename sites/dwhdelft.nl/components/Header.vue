@@ -16,7 +16,7 @@ en:
     - title: Andersblad
       url: andersblad
     - title: Contact
-      url: '#contact'
+      url: '/contact'
 nl:
   menu:
     - title: Home
@@ -34,7 +34,7 @@ nl:
     - title: Andersblad
       url: andersblad
     - title: Contact
-      url: '#contact'
+      url: '/contact'
 </i18n>
 
 <template>

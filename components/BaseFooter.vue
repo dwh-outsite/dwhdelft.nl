@@ -15,61 +15,6 @@ nl:
 
 <template>
   <div>
-    <div class="container px-4 mx-auto text-white">
-      <div class="md:flex">
-        <div class="md:w-2/3 md:border-r border-gray-600 pt-8">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('boardTitle')" />
-
-          <div class="md:flex flex-wrap">
-            <slot name="board-members" />
-          </div>
-        </div>
-
-        <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('contactTitle')" />
-          <div class="flex items-center mb-4">
-            <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
-              <Zondicon icon="envelope" class="fill-current w-4" />
-            </div>
-            <div class="ml-3">{{ contactEmail }}</div>
-          </div>
-          <div class="flex items-center mb-4">
-            <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
-              <Zondicon icon="phone" class="fill-current w-4" />
-            </div>
-            <div class="ml-3">06-37560270</div>
-          </div>
-          <div class="flex items-center mb-4">
-            <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
-              <Zondicon icon="map" class="fill-current w-4" />
-            </div>
-            <div class="ml-3 leading-tight">
-              Lange Geer 22<br />
-              2611PV Delft
-            </div>
-          </div>
-          <div class="flex items-center mb-4">
-            <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
-              <Zondicon icon="box" class="fill-current w-4" />
-            </div>
-            <div class="ml-3 leading-tight">
-              KvK: 40398035<br />
-              RSIN: 807864250
-            </div>
-          </div>
-          <div class="mb-2">
-            <a
-              href="https://my.dwhdelft.nl/signup"
-              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-            >
-              {{ $t('links.sign_up') }}
-              <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <hr class="border-gray-600 m-0" />
 
     <div class="container mx-auto px-4 py-4 lg:flex justify-between items-center">

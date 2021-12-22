@@ -61,10 +61,5 @@ export default {
   async fetch() {
     this.openingHours = (await this.$content('opening_hours').fetch()).events
   },
-  methods: {
-    $tt(languageOptions) {
-      return languageOptions[this.$i18n.locale]
-    },
-  },
 }
 </script>

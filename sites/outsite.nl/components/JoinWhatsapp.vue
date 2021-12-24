@@ -13,7 +13,7 @@ nl:
   <div class="mx-auto container relative">
     <div class="xl:h-28 xl:absolute z-50 -top-14 p-4 w-full text-center">
       <form
-        class="bg-white rounded-full shadow-xl overflow-hidden h-full xl:inline-flex justify-between items-center xl:w-5/6"
+        class="bg-white rounded-lg xl:rounded-full shadow-xl overflow-hidden h-full xl:inline-flex justify-between items-center xl:w-5/6"
         @submit="submitForm"
       >
         <div class="text-2xl py-4 px-8 flex-1 flex items-center">

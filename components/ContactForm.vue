@@ -32,7 +32,7 @@ nl:
         <FormValidation name="email" :errors="validationErrors" />
       </FormElement>
       <FormElement :label="$t('forms.label.message')" class="form-element-gray" required="true">
-        <FormInput v-model="form.message" :placeholder="$t('forms.placeholder.message')" type="textarea" rows="4" />
+        <FormInput v-model="form.message" :placeholder="$t('forms.placeholder.message')" type="textarea" :rows="4" />
         <FormValidation name="message" :errors="validationErrors" />
       </FormElement>
       <PrimaryButton :disabled="formStatus === 'loading'" type="submit">

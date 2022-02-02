@@ -8,11 +8,6 @@ en:
   sign_up: Sign up for the introduction group
   next: <strong>The next Introduction Group will start in March</strong>.
   form:
-    availability: I'm available on
-    availability_options:
-      thursdays: Thursdays
-      saturdays: Saturdays
-      both: Both Thursdays and Saturdays
     success: We will contact you as soon as possible.
 nl:
   title: Kennismakingsgroepen (KMG)
@@ -22,11 +17,6 @@ nl:
   sign_up: Aanmelden voor de KMG
   next: <strong>De volgende KennisMakingsGroep start in maart</strong>.
   form:
-    availability: Ik ben beschikbaar op
-    availability_options:
-      thursdays: Donderdagen
-      saturdays: Zaterdagen
-      both: Zowel donderdagen en zaterdagen
     success: We nemen zo snel mogelijk contact met je op!
 </i18n>
 
@@ -117,22 +107,6 @@ nl:
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
             <FormValidation :errors="validationErrors" name="pronouns" />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('form.availability') }}</label>
-            <label class="radio">
-              <input v-model="form.availability" type="radio" value="thursdays" />
-              {{ $t('form.availability_options.thursdays') }}
-            </label>
-            <label class="radio">
-              <input v-model="form.availability" type="radio" value="saturdays" />
-              {{ $t('form.availability_options.saturdays') }}
-            </label>
-            <label class="radio">
-              <input v-model="form.availability" type="radio" value="both" />
-              {{ $t('form.availability_options.both') }}
-            </label>
-            <FormValidation :errors="validationErrors" name="availability" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>

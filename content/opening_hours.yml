@@ -67,8 +67,8 @@ events:
     day:
       en: Saturday
       nl: Zaterdag
-    start_time: '19:00'
-    end_time: '22:00'
+    start_time: '21:00'
+    end_time: '01:00'
     description:
       en: |-
         Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular

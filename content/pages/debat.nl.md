@@ -3,7 +3,7 @@ title: Regenboog Debatten 2022
 layout: article
 ---
 
-![image alt text](~/assets/images/events/regenboogdebatten2022/regenboog_debatten.png)
+<markdown-image src="events/regenboogdebatten2022/regenboog_debatten.png" alt="Regenboog Debatten" class="w-96 mx-auto mb-16"></markdown-image>
 
 Op 26 en 27 februari organiseert DWH de **Regenboog Debatten** in aanloop naar de gemeenteraadsverkiezingen. In zes livestreams zullen kandidaten uit een gemeente in Delfland met elkaar in debat gaan over LHBTQIA+ onderwerpen zoals queer voorlichting op scholen, inclusiviteit in de sport en ondersteuning van ontmoetingsplaatsen. 
 

@@ -102,6 +102,10 @@ html {
   @apply list-disc mb-1 ml-6;
 }
 
+.content table th, td{
+  @apply pr-4
+}
+
 @tailwind utilities;
 
 @layer utilities {

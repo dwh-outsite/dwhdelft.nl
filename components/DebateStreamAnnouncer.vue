@@ -1,15 +1,17 @@
 <template>
   <div v-if="currentDebate">
-    <button
-      class="bg-brand-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center hover:bg-brand-400 text-lg my-8 mx-auto"
-    >
-      <span>
-        Kijk het Regenboogdebat van
-        <strong>{{ currentDebate.municipality }}</strong>
-        nu live via YouTube
-      </span>
-      <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
-    </button>
+    <a :href="currentDebate.url">
+      <button
+        class="bg-brand-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center hover:bg-brand-400 text-lg my-8 mx-auto"
+      >
+        <span>
+          Kijk het Regenboogdebat van
+          <strong>{{ currentDebate.municipality }}</strong>
+          nu live via YouTube
+        </span>
+        <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+      </button>
+    </a>
   </div>
   <p v-else class="font-bold">Op 26 en 27 februari komt hier een link te staan naar de livestream.</p>
 </template>

@@ -19,13 +19,17 @@ nl:
   <div class="overflow-y-hidden md:overflow-x-hidden">
     <div class="mx-auto">
       <div class="md:flex">
-        <div class="flex-1 pt-12 pb-20 px-4 md:pr-40 background text-white text-shadow flex flex-col items-end">
+        <div class="flex-1 h-80 py-8 px-4 md:pr-40 background text-white text-shadow flex flex-col justify-center items-end">
           <div>
-            <div class="rounded-full w-20 h-20 p-6 bg-brand-400 mt-2 mb-8 text-white mx-auto">
-              <Zondicon icon="location-food" class="fill-current" />
+            <div class="backdrop-blur-lg bg-white bg-opacity-25 shadow rounded-full flex space-x-6 items-center">
+              <div class="rounded-full w-20 h-20 p-6 bg-brand-450 text-white mx-auto">
+                <Zondicon icon="location-food" class="fill-current" />
+              </div>
+              <div class="pr-6">
+                <h3 class="text-3xl font-semibold text-center" v-text="$t('title')" />
+                <h4 class="text-xl tracking-wide text-center" v-text="$t('subtitle')" />
+              </div>
             </div>
-            <h3 class="text-3xl font-semibold text-center" v-text="$t('title')" />
-            <h4 class="text-xl tracking-wide text-center" v-text="$t('subtitle')" />
           </div>
         </div>
         <div class="relative">
@@ -73,7 +77,7 @@ export default {
 }
 
 .triangle {
-  @apply bg-brand-400 w-full absolute;
+  @apply bg-brand-450 w-full absolute;
   transform: skewY(-7deg);
   transform-origin: 0;
   height: 10rem;
@@ -81,12 +85,12 @@ export default {
 }
 
 .divider {
-  @apply bg-brand-400 h-full py-8;
+  @apply bg-brand-450 h-full py-8;
 }
 
 @screen md {
   .divider {
-    @apply bg-brand-400 h-full absolute -ml-8;
+    @apply bg-brand-450 h-full absolute -ml-8;
     transform: skewX(-7deg);
     transform-origin: 0;
     width: 100rem;

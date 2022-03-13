@@ -73,7 +73,7 @@ nl:
       </div>
     </section>
 
-    <section id="join-dwh" class="bg-brand-400 relative z-10">
+    <section id="join-dwh" class="bg-brand-500 relative z-10">
       <JoinOptions />
     </section>
 
@@ -101,7 +101,7 @@ export default {
 
 <style scoped>
 .information::before {
-  @apply bg-gray-200 absolute w-full;
+  @apply bg-brand-100 absolute w-full;
   height: 250%;
   transform: skewY(-7deg);
   content: '';

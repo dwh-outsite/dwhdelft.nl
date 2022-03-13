@@ -57,7 +57,7 @@ nl:
       </div>
       <div v-if="activities.length < 3" class="bg-white rounded shadow flex-1 mx-2 mt-4">
         <div class="flex flex-col h-full">
-          <div class="flex-1 bg-brand-300 py-4">
+          <div class="flex-1 bg-brand-350 py-4">
             <div class="rounded-full w-20 h-20 p-6 bg-white mt-2 mb-6 text-brand-450 mx-auto">
               <Zondicon icon="beverage" class="fill-current" />
             </div>
@@ -77,7 +77,7 @@ nl:
       <div v-if="activities.length < 2" class="bg-white rounded shadow flex-1 mx-2 mt-4">
         <a href="https://dwhdelft.nl/eatingout">
           <div class="flex flex-col h-full">
-            <div class="flex-1 bg-brand-300 py-4">
+            <div class="flex-1 bg-brand-350 py-4">
               <div class="rounded-full w-20 h-20 p-6 bg-white mt-2 mb-6 text-brand-450 mx-auto">
                 <Zondicon icon="location-food" class="fill-current" />
               </div>

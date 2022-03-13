@@ -63,7 +63,7 @@ events:
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
 
-  - name: Open Bar
+  - name: MIXUP
     day:
       en: Saturday
       nl: Zaterdag
@@ -71,8 +71,13 @@ events:
     end_time: '01:00'
     description:
       en: |-
-        Saturday night is thé queer bar night of Delft. Meet new people, come dance at our regular
+        MIXUP is thé queer bar night of Delft. Meet new people, come dance at our regular
         parties, and join one of our many events!
       nl: |-
-        Zaterdagavond is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
+        MIXUP is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
         feesten en doe mee met een van onze vele events!
+    link:
+      name:
+        en: MIXUP on Instagram
+        nl: MIXUP op Instagram
+      url: https://www.instagram.com/mixupdelft/

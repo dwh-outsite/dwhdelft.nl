@@ -17,11 +17,9 @@ nl:
         <FormInput v-model="form.name" :placeholder="$t('forms.placeholder.name')" />
         <FormValidation name="name" :errors="validationErrors" />
       </FormElement>
-      <FormElement :label="$t('forms.label.language')" required="true">
-        <FormRadio v-model="form.language" :label="$t('forms.label.languages.dutch')" option="dutch" />
-        <FormRadio v-model="form.language" :label="$t('forms.label.languages.english')" option="english" />
-        <FormRadio v-model="form.language" :label="$t('forms.label.languages.no_preference')" option="no_preference" />
-        <FormValidation name="language" :errors="validationErrors" />
+      <FormElement :label="$t('forms.label.age')" required="true">
+        <FormInput v-model="form.age" :placeholder="$t('forms.placeholder.age')" />
+        <FormValidation name="age" :errors="validationErrors" />
       </FormElement>
       <FormElement :label="$t('forms.label.email')" required="true">
         <FormInput v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" />
@@ -30,6 +28,12 @@ nl:
       <FormElement :label="$t('forms.label.phone_number')">
         <FormInput v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" />
         <FormValidation name="phone_number" :errors="validationErrors" />
+      </FormElement>
+      <FormElement :label="$t('forms.label.language')" required="true">
+        <FormRadio v-model="form.language" :label="$t('forms.label.languages.dutch')" option="dutch" />
+        <FormRadio v-model="form.language" :label="$t('forms.label.languages.english')" option="english" />
+        <FormRadio v-model="form.language" :label="$t('forms.label.languages.no_preference')" option="no_preference" />
+        <FormValidation name="language" :errors="validationErrors" />
       </FormElement>
       <FormElement :label="$t('forms.label.pronouns')">
         <FormInput v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
@@ -68,6 +72,7 @@ export default {
     return {
       form: {
         name: '',
+        age: '',
         language: this.$i18n.locale === 'nl' ? 'dutch' : 'english',
         email: '',
         phone_number: '',

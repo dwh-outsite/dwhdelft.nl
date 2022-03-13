@@ -81,8 +81,10 @@ nl:
             :key="member.name"
             class="md:flex rounded-lg shadow bg-white overflow-hidden p-6 md:p-0 md:h-40"
           >
-            <div class="bg-purple-450 w-32 md:w-36 h-32 md:h-full rounded-full md:rounded-none mb-4 md:mb-0">
-              <img :src="requireImage(member.name)" class="object-cover h-full" />
+            <div
+              class="bg-purple-450 w-32 md:w-36 h-32 md:h-full rounded-full md:rounded-none mb-4 md:mb-0 overflow-hidden"
+            >
+              <img :src="requireImage(member.name)" class="object-cover h-full w-full" />
             </div>
             <div class="md:p-6">
               <div class="mb-4 md:mb-8">

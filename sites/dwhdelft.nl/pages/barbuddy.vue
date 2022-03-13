@@ -27,12 +27,16 @@ nl:
       <p v-html="$t('description')" />
     </PageIntroText>
 
-    <section class="bg-brand-300">
-      <div class="container px-4 mx-auto pt-8 pb-12">
-        <h1 class="text-white text-center font-medium text-5xl mb-8" v-html="$t('bar_buddies_title')" />
-        <div class="lg:flex flex-wrap -mx-2 mt-2">
-          <div v-for="buddy in barBuddies" :key="buddy.name" class="lg:w-1/2 p-2">
-            <BarBuddyCard :buddy="buddy" @meet="meetWith(buddy)" />
+    <section>
+      <div class="container px-4 mx-auto mb-6">
+        <h1 class="text-brand-400 font-medium text-5xl" v-html="$t('bar_buddies_title')" />
+      </div>
+      <div class="bg-brand-400">
+        <div class="container px-1 py-3 mx-auto">
+          <div class="lg:flex flex-wrap -mx-2 mt-2">
+            <div v-for="buddy in barBuddies" :key="buddy.name" class="lg:w-1/2 p-2">
+              <BarBuddyCard :buddy="buddy" @meet="meetWith(buddy)" />
+            </div>
           </div>
         </div>
       </div>

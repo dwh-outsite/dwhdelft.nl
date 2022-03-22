@@ -16,32 +16,32 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.11.1",
-    "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/i18n": "^7.0.2",
-    "@nuxtjs/svg": "^0.3.0",
+    "@nuxt/content": "^1.15.1",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.2.0",
+    "@nuxtjs/svg": "^0.4.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "core-js": "^3.20.1",
-    "dayjs": "^1.9.8",
-    "nuxt": "^2.15.4",
+    "core-js": "^3.21.1",
+    "dayjs": "^1.11.0",
+    "nuxt": "^2.15.8",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss-aspect-ratio": "^3.0.0",
     "vue-zondicons": "^0.1.10"
   },
   "devDependencies": {
     "@aceforth/nuxt-netlify": "^1.1.0",
-    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-config": "^9.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/tailwindcss": "^4.0.3",
+    "@nuxtjs/tailwindcss": "^5.0.2",
     "autoprefixer": "^10",
     "babel-eslint": "^10.1.0",
-    "commander": "^8.0.0",
-    "eslint": "^7.10.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-nuxt": "^2.0.0",
+    "commander": "^9.1.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "inquirer": "^8.0.0",
-    "postcss": "^8.2.8",
-    "prettier": "^2.1.2"
+    "inquirer": "^8.2.1",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.0"
   }
 }

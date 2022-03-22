@@ -86,9 +86,7 @@ export default {
   tailwindcss: {
     configPath: './tailwind.config.js',
     config: {
-      purge: {
-        content: ['../../components/**/**.vue', '../../content/**/**.md'],
-      },
+      content: ['../../components/**/**.vue', '../../content/**/**.md'],
     },
   },
 

@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/267389a7-6a04-4d23-85c1-0956dfd672a1/deploy-status)](https://app.netlify.com/sites/dwh/deploys)
 
 DWH is the independent LGBT+ association of Delft and surroundings. 
-We're two things, a meeting place for LGBT+ people and their friends and a group that actively
+We're two things: a meeting place for LGBT+ people and their friends and a group that actively
 pushes for greater LGBT+ rights and acceptance.
 
 The website is a (statically generated) [Nuxt.js](https://nuxtjs.org) app hosted on [Netlify](https://netlify.com).

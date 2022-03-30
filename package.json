@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "@aceforth/nuxt-netlify": "^1.1.0",
+    "@babel/eslint-parser": "^7.17.0",
     "@nuxtjs/eslint-config": "^9.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^5.0.2",
     "autoprefixer": "^10",
-    "babel-eslint": "^10.1.0",
     "commander": "^9.1.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",

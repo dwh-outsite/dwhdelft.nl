@@ -1,8 +1,8 @@
 export default {
   meta: {
     home: {
-      title: "DWH - LHBT+ vereniging Delft",
-      description: "DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie.",
+      title: 'DWH - LHBT+ vereniging Delft',
+      description: 'DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie.',
     },
   },
   forms: {

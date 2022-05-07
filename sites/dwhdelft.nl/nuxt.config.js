@@ -33,7 +33,7 @@ export default {
         { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#e31c79' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       ],
-    };
+    }
   },
 
   // Aliases (https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-alias)

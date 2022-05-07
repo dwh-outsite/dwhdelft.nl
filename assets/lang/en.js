@@ -1,4 +1,10 @@
 export default {
+  meta: {
+    home: {
+      title: "DWH - LGBT+ association Delft",
+      description: "DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance.",
+    },
+  },
   forms: {
     label: {
       name: 'How should we call you?',

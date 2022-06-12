@@ -23,16 +23,16 @@ nl:
         Rijswijk en incidenteel daarbuiten. Sinds kort geven we ook voorlichting op basisscholen, bij
         sportverenigingen, en op MBO’s.
     jongenout: |-
-      Voor jonge LHBT+’ers van 12 en 18 jaar oud organiseert DWH ook maandelijkse 
-      <a class="font-bold" href="/jongenout/">Jong&Out</a> bijeenkomsten op elke derde zondag van de 
-      maand. Elke keer is er een andere activiteit, van levend stratego in de Delftse Hout tot spelletjesmiddagen, 
-      drag karaoke of waterfietsen.
+      Voor jonge LHBT+’ers van 12 en 18 jaar oud organiseert DWH ook maandelijkse Jong&Out bijeenkomsten op elke derde
+      zondag van de maand. Elke keer is er een andere activiteit, van levend stratego in de Delftse Hout tot
+      spelletjesmiddagen, drag karaoke of waterfietsen.
     voorlichting:
-      - Een voorlichting (op het voortgezet onderwijs) wordt gegeven door twee voorlichters, gedurende een of twee lesuren. Met een associatiespel
-        worden leerlingen gevraagd alle termen te roepen die ze met LHBT+ associëren, zonder dat antwoorden als goed of
-        fout worden aangemerkt – zo blijft het gesprek open. Daarna gaan de voorlichters in op de verschillende termen
-        binnen LHBT+ en op de genoemde vooroordelen. Door hun persoonlijke verhalen te koppelen aan soortgelijke
-        ervaringen van leerlingen bouwen we aan wederzijds begrip en het wegnemen van vooroordelen.
+      - Een voorlichting (op het voortgezet onderwijs) wordt gegeven door twee voorlichters, gedurende een of twee
+        lesuren. Met een associatiespel worden leerlingen gevraagd alle termen te roepen die ze met LHBT+ associëren,
+        zonder dat antwoorden als goed of fout worden aangemerkt – zo blijft het gesprek open. Daarna gaan de
+        voorlichters in op de verschillende termen binnen LHBT+ en op de genoemde vooroordelen. Door hun persoonlijke
+        verhalen te koppelen aan soortgelijke ervaringen van leerlingen bouwen we aan wederzijds begrip en het wegnemen
+        van vooroordelen.
     contact:
       - Interesse in een voorlichting of op zoek naar meer informatie? Laat hieronder je contactgegevens achter, dan
         nemen onze voorlichting coördinatoren contact op.
@@ -56,11 +56,13 @@ nl:
           />
         </div>
         <div class="md:w-1/4">
-          <Announcement class="space-y-2">
-            <h2 class="font-semibold text-2xl" v-html="$t('titles.jongenout')" />
-            <p class="text-base" v-html="$t('content.jongenout')" />
-            <button class="button-white text-base block">Lees meer &raquo;</button>
-          </Announcement>
+          <nuxt-link :to="localePath('jongenout')">
+            <Announcement class="space-y-2">
+              <h2 class="font-semibold text-2xl" v-html="$t('titles.jongenout')" />
+              <p class="text-base" v-html="$t('content.jongenout')" />
+              <button class="button-white text-base block">Lees meer &raquo;</button>
+            </Announcement>
+          </nuxt-link>
         </div>
       </div>
     </PageIntroText>

@@ -8,11 +8,7 @@ nl:
 <template>
   <div>
     <div v-if="formStatus === 'finished'" class="my-8 flex justify-center">
-      <FormCompleted
-        class="md:pr-48 bg-brand-100"
-        :title="$t('forms.success.heading')"
-        :subtitle="$t('form_success')"
-      />
+      <FormCompleted class="bg-brand-100" :title="$t('forms.success.heading')" :subtitle="$t('form_success')" />
     </div>
 
     <form v-if="formStatus !== 'finished'" @submit="submit">

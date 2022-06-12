@@ -1,9 +1,9 @@
 <template>
-  <div class="mt-[-6vw]">
+  <div :class="connect ? 'mt-[-10.55vw]' : 'mt-[-6vw]'">
     <div v-if="top" class="triangle-top" :class="triangleClass"></div>
-    <div :class="contentClass">
+    <section :class="contentClass">
       <slot></slot>
-    </div>
+    </section>
     <div v-if="bottom" class="triangle-bottom" :class="triangleClass"></div>
   </div>
 </template>
@@ -13,6 +13,7 @@ export default {
   props: {
     contentClass: { type: String, default: '' },
     triangleClass: { type: String, default: '' },
+    connect: { type: Boolean, default: false },
     top: { type: Boolean, default: true },
     bottom: { type: Boolean, default: true },
   },

@@ -32,7 +32,7 @@ nl:
       </div>
     </section>
 
-    <section class="relative info pt-24 md:pt-48 md:py-32 text-gray-800">
+    <SkewedSection content-class="bg-purple-100 py-12" triangle-class="border-purple-100">
       <div class="container px-4 mx-auto md:flex md:space-x-16 relative z-10">
         <div class="md:pt-16 mb-12 md:mb-0">
           <h2 class="font-semibold text-4xl mb-6" v-text="$t('titles.opening_hours')" />
@@ -69,10 +69,10 @@ nl:
           <Map class="rounded shadow-xl" />
         </div>
       </div>
-    </section>
+    </SkewedSection>
 
-    <div class="bg-purple-800 -mt-96 pt-96">
-      <section class="container mx-auto px-4 mt-20 py-4 md:py-12">
+    <SkewedSection content-class="bg-purple-800" triangle-class="border-purple-800" :connect="true" :bottom="false">
+      <div class="container mx-auto px-4 pt-12 pb-4 md:pb-12">
         <h1 class="text-white font-medium text-5xl mb-12" v-html="$t('titles.board')" />
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <div
@@ -97,8 +97,8 @@ nl:
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </SkewedSection>
   </div>
 </template>
 
@@ -124,13 +124,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.info::before {
-  @apply bg-purple-100 absolute w-full;
-  height: 100%;
-  transform: skewY(-7deg);
-  content: '';
-  top: 0px;
-}
-</style>

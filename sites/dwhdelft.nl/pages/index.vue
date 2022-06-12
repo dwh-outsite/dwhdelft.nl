@@ -60,24 +60,24 @@ nl:
           <Invitation :content="$t('description.invitation', [barOpeningHours.start_time])" />
         </div>
         <div class="hidden lg:block">
-          <div class="bg-white p-4 border rotate shadow-lg relative z-50 mr-8 -mt-7">
+          <div class="bg-white p-4 border rotate-[5deg] shadow-lg relative z-50 mr-8 -mt-7">
             <img src="../../../assets/images/photos/building.jpg" class="w-96" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="information relative pt-12">
-      <div class="z-10 relative">
+    <div class="-mt-64">
+      <SkewedSection content-class="bg-brand-100" triangle-class="border-brand-100" :bottom="false">
         <Activities />
-      </div>
-    </section>
+      </SkewedSection>
+    </div>
 
-    <section id="join-dwh" class="bg-brand-500 relative z-10">
+    <section id="join-dwh" class="bg-brand-500">
       <JoinOptions />
     </section>
 
-    <section id="recurring_events" class="bg-white relative z-10">
+    <section id="recurring_events" class="bg-white">
       <RecurringEvents />
     </section>
 
@@ -98,32 +98,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.information::before {
-  @apply bg-brand-100 absolute w-full;
-  height: 250%;
-  transform: skewY(-7deg);
-  content: '';
-  z-index: 0;
-  top: 0px;
-}
-
-.panda {
-  z-index: -2;
-
-  width: 100%;
-  height: inherit;
-
-  bottom: 0rem;
-  left: 5rem;
-}
-
-.introduction {
-  margin-bottom: -10rem;
-}
-
-.rotate {
-  transform: rotate(5deg);
-}
-</style>

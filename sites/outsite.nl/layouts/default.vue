@@ -3,7 +3,7 @@
     <main class="bg-white relative">
       <nuxt />
     </main>
-    <footer id="contact" class="bg-gray-700 relative">
+    <footer id="contact" class="bg-gray-700 relative z-10">
       <JoinWhatsapp />
       <Footer class="md:pt-8" />
     </footer>

@@ -3,7 +3,7 @@
     <main class="bg-white relative z-10">
       <nuxt />
     </main>
-    <footer id="contact" class="bg-gray-700">
+    <footer id="contact" class="bg-gray-700 relative z-10">
       <Footer />
     </footer>
   </div>

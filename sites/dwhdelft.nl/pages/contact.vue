@@ -23,12 +23,11 @@ nl:
       </div>
       <div class="md:w-1/3 md:border-l md:pl-6 md:ml-6">
         <ContactOptions email="bestuur@dwhdelft.nl" :dark="true" />
-        <a
-          href="https://my.dwhdelft.nl"
-          class="block bg-purple-800 hover:bg-purple-700 rounded-xl text-white p-4 md:w-2/3 shadow"
-        >
-          {{ $t('my') }}
-          <span class="text-xl font-bold block">my.dwhdelft.nl</span>
+        <a href="https://my.dwhdelft.nl">
+          <Announcement class="md:w-2/3">
+            {{ $t('my') }}
+            <span class="text-xl font-bold block">my.dwhdelft.nl</span>
+          </Announcement>
         </a>
       </div>
     </section>

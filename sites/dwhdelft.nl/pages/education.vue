@@ -65,29 +65,21 @@ nl:
       </div>
     </PageIntroText>
 
-    <section class="relative info mt-24 pb-60 -mb-60 md:pb-40 md:-mb-40">
-      <div class="container px-4 mx-auto py-12 relative z-10 md:flex justify-center md:space-x-8">
-        <div class="bg-brand-100 bg-opacity-80 backdrop-blur p-4 md:p-8 rounded-lg shadow-xl flex-1 -mt-48">
+    <SkewedSection triangle-class="border-brand-500" content-class="bg-brand-500" :bottom="false">
+      <div
+        class="container px-4 mx-auto relative z-10 md:flex justify-center space-y-12 md:space-y-0 md:space-x-8 pt-4 pb-12"
+      >
+        <div class="bg-brand-100 bg-opacity-80 backdrop-blur p-4 md:p-8 rounded-lg shadow-xl flex-1 mt-[-8.555vw]">
           <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('titles.contact')" />
           <p v-for="paragraph in $t('content.contact')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
           <EducationForm />
         </div>
 
-        <div class="flex-1 text-white pt-8">
+        <div class="flex-1 text-white">
           <h1 class="font-medium leading-none text-5xl mb-4" v-html="$t('titles.voorlichting')"></h1>
           <p v-for="paragraph in $t('content.voorlichting')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
         </div>
       </div>
-    </section>
+    </SkewedSection>
   </div>
 </template>
-
-<style scoped>
-.info::before {
-  @apply bg-brand-800 absolute w-full;
-  height: 100%;
-  transform: skewY(-7deg);
-  content: '';
-  top: 0px;
-}
-</style>

@@ -1,0 +1,32 @@
+<template>
+  <div class="mt-[-6vw]">
+    <div v-if="top" class="triangle-top" :class="triangleClass"></div>
+    <div :class="contentClass">
+      <slot></slot>
+    </div>
+    <div v-if="bottom" class="triangle-bottom" :class="triangleClass"></div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    contentClass: { type: String, default: '' },
+    triangleClass: { type: String, default: '' },
+    top: { type: Boolean, default: true },
+    bottom: { type: Boolean, default: true },
+  },
+}
+</script>
+
+<style scoped>
+.triangle-top {
+  border-bottom-width: 10.555vw; /* 38deg / 360deg * 100vw = 10.555 */
+  border-left: 100vw solid transparent;
+}
+
+.triangle-bottom {
+  border-top-width: 10.555vw;
+  border-right: 100vw solid transparent;
+}
+</style>

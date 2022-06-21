@@ -21,6 +21,10 @@ nl:
         <FormInput v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" />
         <FormValidation name="email" :errors="validationErrors" />
       </FormElement>
+      <FormElement :label="$t('forms.label.phone_number')" required="true">
+        <FormInput v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" type="text" />
+        <FormValidation name="phone_number" :errors="validationErrors" />
+      </FormElement>
       <FormElement :label="$t('forms.label.pronouns')">
         <FormInput v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
         <FormValidation name="pronouns" :errors="validationErrors" />
@@ -44,6 +48,7 @@ export default {
       form: {
         name: '',
         email: '',
+        phone_number: '',
         pronouns: '',
       },
       validationErrors: {},

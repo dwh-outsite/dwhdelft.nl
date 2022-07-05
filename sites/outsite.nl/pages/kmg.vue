@@ -6,7 +6,7 @@ en:
     members. During nine Thursday evenings, you will share coming out stories (if you want to), visit queer parties
     together and much more!
   sign_up: Sign up for the introduction group
-  next: <strong>The next Introduction Group will start in March</strong>.
+  next: <strong>The next Introduction Group will start in on September 15</strong>.
   form:
     success: We will contact you as soon as possible.
 nl:
@@ -15,7 +15,7 @@ nl:
     van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden deel je
     met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!
   sign_up: Aanmelden voor de KMG
-  next: <strong>De volgende KennisMakingsGroep start in maart</strong>.
+  next: <strong>De volgende KennisMakingsGroep start op 15 september</strong>.
   form:
     success: We nemen zo snel mogelijk contact met je op!
 </i18n>

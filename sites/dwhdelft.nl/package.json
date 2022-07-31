@@ -8,6 +8,6 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "production": "node retrieve_events.js && nuxt generate"
+    "production": "nuxt generate"
   }
 }

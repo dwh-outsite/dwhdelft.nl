@@ -67,7 +67,6 @@ export default {
     return {
       counsellors: [
         { name: 'Andreas Zafiropoulos', email: 'vertrouwenspersoon-andreas@outsite.nl' },
-        { name: 'Charissa', email: 'vertrouwenspersoon-charrisa@outsite.nl' },
       ],
     }
   },

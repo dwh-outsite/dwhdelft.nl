@@ -1,19 +1,22 @@
 <i18n lang="yaml">
 en:
   form_success: The GGD will call you as soon as possible.
-  consent: |
-    I agree that my personal details will be processed according to the privacy statement of DWH.
-    I understand my personal details will be forwarded to the GGD.
-  phone_description: After your application, the Centre for Sexual Health will contact you by phone. Please fill in your phone number
-  indications: indications
+  phone_description: |
+    After your application, the Centre for Sexual Health will contact you by phone. 
+    Please fill in your phone number:
+  heard_about: How did you hear about this vaccination campaign?
+  indications: Indications
   indications_description: |
     There is a limited amount of monkeypox vaccines available. For now, vaccines are only given to people 
     with increased risk of infection. Please select all statements that apply to you
-  indications_options:
+  indication_options:
     - I have had an STD in the past six months
     - I have been warned about an STD by a partner in the last six months
     - I have had at least three different sexual partners in the last six months
     - I am a man who has sex with men, bisexual, or active in those circles
+  consent: |
+    I agree that my personal data will be processed according to the privacy statement of DWH.
+    I understand my personal data will be sent to the GGD.
 nl:
   form_success: De GGD neemt zo snel mogelijk contact met je op.
   phone_description: |
@@ -86,14 +89,16 @@ nl:
             </div>
           </div>
         </div>
+        <FormValidation name="indications" :errors="validationErrors" />
       </div>
 
-      <FormElement :label="$t('heard_about')" required="true">
+      <FormElement :label="$t('heard_about')">
         <FormInput v-model="form.heard_about" :placeholder="$t('heard_about')" type="textarea" :rows="2" />
         <FormValidation name="heard_about" :errors="validationErrors" />
       </FormElement>
 
       <FormCheckbox v-model="form.consent" :label="$t('consent')" class="text-sm" />
+      <FormValidation name="consent" :errors="validationErrors" />
 
       <PrimaryButton :disabled="formStatus === 'loading'" type="submit">
         {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.submit') }}

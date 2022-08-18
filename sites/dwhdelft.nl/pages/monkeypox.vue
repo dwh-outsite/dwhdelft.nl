@@ -1,8 +1,36 @@
 <i18n lang="yaml">
+en:
+  title: Monkeypox Vaccination
+  titles:
+    dwh: About DWH
+    form: Vaccination Signup
+  content:
+    intro:
+      - |
+        DWH is working together with the Centre for Sexual Health of GGD Haaglanden to give out preventive
+        vaccines against monkeypox. To be eligible for a vaccination, you have to meet at least one of the
+        following requirements:
+      - |
+        <ul class="list-disc space-y-2">
+          <li>You have had an STD in the past six months</li>
+          <li>You have been warned about an STD by a partner in the last six months</li>
+          <li>You have had at least three different sexual partners in the last six months</li>
+          <li>You are a man who has sex with men, bisexual, or active in these circles</li>
+        </ul>
+      - After your application, the Centre for Sexual Health will contact you by phone to discuss your risk
+        of infection and schedule an appointment if necessary.
+    dwh:
+      - This campagin is organised by DWH, the LGBT+ association of Delft.
+      - DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for
+        LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance. As the
+        latter, we give lectures at schools, have introduction groups for newly out people and organise public events
+        arounds dates like coming out day.
+      - 'As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
+        nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
+        beer tastings, workshops, pub crawls and even vacations.'
 nl:
   title: Monkeypox (apenpokken) Vaccinatie
   titles:
-    jongenout: 'Zie ook: <strong>Jong&Out Delft</strong>'
     dwh: Wat is DWH?
     form: Aanmelden Vaccinatie
   content:
@@ -29,9 +57,6 @@ nl:
       - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
         baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
         bierproeverijen, workshops, pub crawls en zelfs vakanties.'
-    contact:
-      - Interesse in een voorlichting of op zoek naar meer informatie? Laat hieronder je contactgegevens achter, dan
-        nemen onze voorlichting coördinatoren contact op.
 </i18n>
 
 <template>

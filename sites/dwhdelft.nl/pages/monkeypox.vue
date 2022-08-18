@@ -11,7 +11,7 @@ en:
         vaccines against monkeypox. To be eligible for a vaccination, you have to meet at least one of the
         following requirements:
       - |
-        <ul class="list-disc space-y-2">
+        <ul class="list-disc space-y-2 pl-6">
           <li>You have had an STD in the past six months</li>
           <li>You have been warned about an STD by a partner in the last six months</li>
           <li>You have had at least three different sexual partners in the last six months</li>
@@ -42,7 +42,7 @@ nl:
         voor het apenpokkenvirus uit te delen. Om in aanmerking te komen voor een vaccin, moet je voldoen
         aan minstens één van de volgende voorwaarden:
       - |
-        <ul class="list-disc space-y-2">
+        <ul class="list-disc space-y-2 pl-6">
           <li>Je hebt in het afgelopen halfjaar een SOA gehad</li>
           <li>Je bent in het afgelopen halfjaar gewaarschuwd voor een SOA door een partner</li>
           <li>Je hebt in het afgelopen halfjaar minstens 3 verschillende sekspartners gehad</li>

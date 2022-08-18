@@ -80,7 +80,7 @@ nl:
           <div v-for="indication in $t('indication_options')" :key="indication">
             <div
               :class="[
-                form.indications.includes(indication) ? 'bg-brand-400 text-white' : 'bg-white hover:bg-brand-200',
+                indications.includes(indication) ? 'bg-brand-400 text-white' : 'bg-white hover:bg-brand-200',
                 'rounded px-3 py-2 flex items-center cursor-pointer shadow',
               ]"
               @click="toggleIndication(indication)"
@@ -121,18 +121,18 @@ export default {
         date_of_birth: '',
         heard_about: '',
         consent: false,
-        indications: [],
       },
+      indications: [],
       validationErrors: {},
       formStatus: 'start',
     }
   },
   methods: {
     toggleIndication(indication) {
-      if (this.form.indications.includes(indication)) {
-        this.form.indications.splice(this.form.indications.indexOf(indication), 1)
+      if (this.indications.includes(indication)) {
+        this.indications.splice(this.indications.indexOf(indication), 1)
       } else {
-        this.form.indications.push(indication)
+        this.indications.push(indication)
       }
     },
     submit(event) {

@@ -17,8 +17,8 @@ en:
           <li>You have had at least three different sexual partners in the last six months</li>
           <li>You are a man who has sex with men, bisexual, or sexually active in these circles</li>
         </ul>
-      - After your application, the Centre for Sexual Health will contact you by phone to discuss your risk
-        of infection and schedule an appointment if necessary.
+      - Also, you must live in the Haaglanden area. After your application, the Centre for Sexual Health will
+        contact you by phone to discuss your risk of infection and schedule an appointment if necessary.
     dwh:
       - This campagin is organised by DWH, the LGBT+ association of Delft.
         Would you like to support us to organize more campaigns like this one?
@@ -48,8 +48,9 @@ nl:
           <li>Je hebt in het afgelopen halfjaar minstens 3 verschillende sekspartners gehad</li>
           <li>Je bent een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen</li>
         </ul>
-      - Na je aanmelding zal het Centrum Seksuele Gezondheid telefonisch contact opnemen om jouw risico op
-        besmetting te bespreken en indien nodig een afspraak te maken.
+      - Daarnaast moet je woonachtig zijn in de regio Haaglanden. Na je aanmelding zal het Centrum Seksuele
+        Gezondheid telefonisch contact opnemen om jouw risico op besmetting te bespreken en indien nodig een
+        afspraak te maken.
     dwh:
       - Deze actie is opgezet door DWH, de LHBT+ vereniging van Delft.
         Wil je ons helpen meer acties zoals deze te organiseren?

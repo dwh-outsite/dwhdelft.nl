@@ -1,6 +1,6 @@
 <i18n lang="yaml">
 en:
-  form_success: The GGD will call you as soon as possible.
+  form_success: GGD Haaglanden will call you as soon as possible.
   phone_description: |
     After your application, the Centre for Sexual Health will contact you by phone. 
     Please fill in your phone number:
@@ -13,12 +13,12 @@ en:
     - I have had an STD in the past six months
     - I have been warned about an STD by a partner in the last six months
     - I have had at least three different sexual partners in the last six months
-    - I am a man who has sex with men, bisexual, or active in those circles
+    - I am a man who has sex with men, bisexual, or sexually active in those circles
   consent: |
     I agree that my personal data will be processed according to the privacy statement of DWH.
-    I understand my personal data will be sent to the GGD.
+    I understand my personal data will be sent to GGD Haaglanden.
 nl:
-  form_success: De GGD neemt zo snel mogelijk contact met je op.
+  form_success: GGD Haaglanden neemt zo snel mogelijk contact met je op.
   phone_description: |
     Na je aanmelding zal het Centrum Seksuele Gezondheid telefonisch contact opnemen. Geef hiervoor je 
     telefoonnummer op:
@@ -31,10 +31,10 @@ nl:
     - Ik heb in het afgelopen halfjaar een SOA gehad
     - Ik ben in het afgelopen halfjaar gewaarschuwd voor een SOA door een partner
     - Ik heb in het afgelopen halfjaar minstens 3 verschillende sekspartners gehad
-    - Ik ben een man die seks heeft met mannen, biseksueel, of actief in die kringen
+    - Ik ben een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen
   consent: |
     Ik ga akkoord met het verwerken van mijn gegevens volgens de privacyvoorwaarden van DWH.
-    Ik begrijp dat mijn gegevens worden doorgestuurd naar de GGD.
+    Ik begrijp dat mijn gegevens worden doorgestuurd naar GGD Haaglanden.
 </i18n>
 
 <template>

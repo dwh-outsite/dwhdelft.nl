@@ -15,12 +15,14 @@ en:
           <li>You have had an STD in the past six months</li>
           <li>You have been warned about an STD by a partner in the last six months</li>
           <li>You have had at least three different sexual partners in the last six months</li>
-          <li>You are a man who has sex with men, bisexual, or active in these circles</li>
+          <li>You are a man who has sex with men, bisexual, or sexually active in these circles</li>
         </ul>
       - After your application, the Centre for Sexual Health will contact you by phone to discuss your risk
         of infection and schedule an appointment if necessary.
     dwh:
       - This campagin is organised by DWH, the LGBT+ association of Delft.
+        Would you like to support us to organize more campaigns like this one?
+        <a href="/signup" class="font-bold">Become a member</a> or take a look at the <a href="/support-us" class="font-bold">support us page</a>.
       - DWH is the independent LGBT+ association of Delft and surroundings. We're two things, a meeting place for
         LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance. As the
         latter, we give lectures at schools, have introduction groups for newly out people and organise public events
@@ -44,12 +46,15 @@ nl:
           <li>Je hebt in het afgelopen halfjaar een SOA gehad</li>
           <li>Je bent in het afgelopen halfjaar gewaarschuwd voor een SOA door een partner</li>
           <li>Je hebt in het afgelopen halfjaar minstens 3 verschillende sekspartners gehad</li>
-          <li>Je bent een man die seks heeft met mannen, biseksueel, of actief in die kringen</li>
+          <li>Je bent een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen</li>
         </ul>
       - Na je aanmelding zal het Centrum Seksuele Gezondheid telefonisch contact opnemen om jouw risico op
         besmetting te bespreken en indien nodig een afspraak te maken.
     dwh:
       - Deze actie is opgezet door DWH, de LHBT+ vereniging van Delft.
+        Wil je ons helpen meer acties zoals deze te organiseren?
+        <a href="/signup" class="font-bold">Word lid</a> of kijk op de <a href="/support-us" class="font-bold">steun ons pagina</a>
+        hoe je ons nog meer kunt helpen.
       - DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek
         voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
         tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en

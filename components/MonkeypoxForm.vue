@@ -5,8 +5,6 @@ en:
     After your application, the Centre for Sexual Health will contact you by phone. 
     Please fill in your phone number:
   heard_about: How did you hear about this vaccination campaign?
-  man_requirement: I am a man who has sex with men, bisexual, or sexually active in those circles
-  location_requirement: I live in the Haaglanden area
   indications: Indications
   indications_description: |
     There is a limited amount of monkeypox vaccines available. For now, vaccines are only given to people 
@@ -15,6 +13,7 @@ en:
     - I have had an STD in the past six months
     - I have been warned about an STD by a partner in the last six months
     - I have had at least three different sexual partners in the last six months
+    - I am a man who has sex with men, bisexual, or sexually active in those circles
   consent: |
     I agree that my personal data will be processed according to the privacy statement of DWH.
     I understand my personal data will be sent to GGD Haaglanden.
@@ -24,8 +23,6 @@ nl:
     Na je aanmelding zal het Centrum Seksuele Gezondheid telefonisch contact opnemen. Geef hiervoor je 
     telefoonnummer op:
   heard_about: Hoe heb je over deze vaccinatie actie gehoord?
-  man_requirement: Ik ben een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen
-  location_requirement: Ik ben woonachtig in de regio Haaglanden
   indications: Indicaties
   indications_description: |
     Er is een beperkt aantal apenpokken vaccins beschikbaar, daarom worden voor nu enkel groepen met verhoogd
@@ -34,6 +31,7 @@ nl:
     - Ik heb in het afgelopen halfjaar een SOA gehad
     - Ik ben in het afgelopen halfjaar gewaarschuwd voor een SOA door een partner
     - Ik heb in het afgelopen halfjaar minstens 3 verschillende sekspartners gehad
+    - Ik ben een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen
   consent: |
     Ik ga akkoord met het verwerken van mijn gegevens volgens de privacyvoorwaarden van DWH.
     Ik begrijp dat mijn gegevens worden doorgestuurd naar GGD Haaglanden.
@@ -74,12 +72,6 @@ nl:
         <FormInput v-model="form.date_of_birth" :placeholder="$t('forms.placeholder.date_of_birth')" type="text" />
         <FormValidation name="date_of_birth" :errors="validationErrors" />
       </FormElement>
-
-      <FormCheckbox v-model="form.man_requirement" :label="$t('man_requirement')" class="text-sm" />
-      <FormValidation name="man_requirement" :errors="validationErrors" />
-
-      <FormCheckbox v-model="form.location_requirement" :label="$t('location_requirement')" class="text-sm" />
-      <FormValidation name="location_requirement" :errors="validationErrors" />
 
       <div class="form-element-gray">
         <label class="required">{{ $t('indications') }}</label>
@@ -129,8 +121,6 @@ export default {
         date_of_birth: '',
         heard_about: '',
         consent: false,
-        man_requirement: false,
-        location_requirement: false,
       },
       indications: [],
       validationErrors: {},

@@ -14,10 +14,16 @@ en:
         <ul class="list-disc space-y-2 pl-6">
           <li>You have had an STD in the past six months</li>
           <li>You have been warned about an STD by a partner in the last six months</li>
-          <li>You have had at least three different sexual partners in the last six months</li>
-          <li>You are a man who has sex with men, bisexual, or sexually active in these circles</li>
+          <li>You have had at least three sexual partners in the last six months, and this wasn't just a recurring, safe group of known contacts</li>
         </ul>
-      - Also, you must live in the Haaglanden area. After your application, the Centre for Sexual Health will
+      - |
+        Also, you must meet both of the following requirements:
+      - |
+        <ul class="list-disc space-y-2 pl-6">
+          <li>You are a man who has sex with men, bisexual, or sexually active in these circles</li>
+          <li>You must live in the Haaglanden area</li>
+        </ul>
+      - After your application, the Centre for Sexual Health will
         contact you by phone to discuss your risk of infection and schedule an appointment if necessary.
     dwh:
       - This campagin is organised by DWH, the LGBT+ association of Delft.
@@ -45,12 +51,17 @@ nl:
         <ul class="list-disc space-y-2 pl-6">
           <li>Je hebt in het afgelopen halfjaar een SOA gehad</li>
           <li>Je bent in het afgelopen halfjaar gewaarschuwd voor een SOA door een partner</li>
-          <li>Je hebt in het afgelopen halfjaar minstens 3 verschillende sekspartners gehad</li>
-          <li>Je bent een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen</li>
+          <li>Je hebt in het afgelopen halfjaar minstens 3 sekspartners gehad, én dit betrof niet alleen een vaste, veilige groep bekenden</li>
         </ul>
-      - Daarnaast moet je woonachtig zijn in de regio Haaglanden. Na je aanmelding zal het Centrum Seksuele
-        Gezondheid telefonisch contact opnemen om jouw risico op besmetting te bespreken en indien nodig een
-        afspraak te maken.
+      - |
+        Daarnaast moet je voldoen aan allebei de volgende voorwaarden:
+      - |
+        <ul class="list-disc space-y-2 pl-6">
+          <li>Je bent een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen</li>
+          <li>Je bent woonachtig in de regio Haaglanden</li>
+        </ul>
+      - Na je aanmelding zal het Centrum Seksuele Gezondheid telefonisch contact opnemen om jouw risico op
+        besmetting te bespreken en indien nodig een afspraak te maken.
     dwh:
       - Deze actie is opgezet door DWH, de LHBT+ vereniging van Delft.
         Wil je ons helpen meer acties zoals deze te organiseren?

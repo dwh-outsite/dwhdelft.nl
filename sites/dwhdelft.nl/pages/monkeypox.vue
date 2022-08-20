@@ -11,15 +11,13 @@ en:
         vaccines against monkeypox. To be eligible for a vaccination, you have to meet at least one of the
         following requirements:
       - |
-        <ul class="list-disc space-y-2 pl-6">
+        <ul class="list-disc space-y-2 pl-6 mb-4">
           <li>You have had an STD in the past six months</li>
           <li>You have been warned about an STD by a partner in the last six months</li>
           <li>You have had at least three sexual partners in the last six months, and this wasn't just a recurring, safe group of known contacts</li>
         </ul>
-      - |
         Also, you must meet both of the following requirements:
-      - |
-        <ul class="list-disc space-y-2 pl-6">
+        <ul class="list-disc space-y-2 pl-6 mt-4">
           <li>You are a man who has sex with men, bisexual, or sexually active in these circles</li>
           <li>You must live in the Haaglanden area</li>
         </ul>
@@ -48,15 +46,13 @@ nl:
         voor het apenpokkenvirus uit te delen. Om in aanmerking te komen voor een vaccin, moet je voldoen
         aan minstens één van de volgende voorwaarden:
       - |
-        <ul class="list-disc space-y-2 pl-6">
+        <ul class="list-disc space-y-2 pl-6 mb-4">
           <li>Je hebt in het afgelopen halfjaar een SOA gehad</li>
           <li>Je bent in het afgelopen halfjaar gewaarschuwd voor een SOA door een partner</li>
           <li>Je hebt in het afgelopen halfjaar minstens 3 sekspartners gehad, én dit betrof niet alleen een vaste, veilige groep bekenden</li>
         </ul>
-      - |
         Daarnaast moet je voldoen aan allebei de volgende voorwaarden:
-      - |
-        <ul class="list-disc space-y-2 pl-6">
+        <ul class="list-disc space-y-2 pl-6 mt-4">
           <li>Je bent een man die seks heeft met mannen, biseksueel, of seksueel actief in die kringen</li>
           <li>Je bent woonachtig in de regio Haaglanden</li>
         </ul>

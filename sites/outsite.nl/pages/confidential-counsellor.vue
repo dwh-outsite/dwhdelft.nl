@@ -65,9 +65,7 @@ export default {
   components: { Zondicon },
   data() {
     return {
-      counsellors: [
-        { name: 'Andreas Zafiropoulos', email: 'vertrouwenspersoon-andreas@outsite.nl' },
-      ],
+      counsellors: [{ name: 'Andreas Zafiropoulos', email: 'vertrouwenspersoon-andreas@outsite.nl' }],
     }
   },
 }

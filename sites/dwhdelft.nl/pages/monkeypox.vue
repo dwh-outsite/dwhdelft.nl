@@ -34,6 +34,8 @@ en:
       - 'As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
         nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
         beer tastings, workshops, pub crawls and even vacations.'
+  closed: |
+    This form is temporarily closed while we wait for new requirements from the GGD/ RIVM. Come back in a few days!
 nl:
   title: Monkeypox (apenpokken) Vaccinatie
   titles:
@@ -70,6 +72,9 @@ nl:
       - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
         baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
         bierproeverijen, workshops, pub crawls en zelfs vakanties.'
+  closed: |
+    Dit formulier is tijdelijk gesloten terwijl we op nieuwe voorwaarden van de GGD/ RIVM wachten.
+    Kijk over een paar dagen nog eens!
 </i18n>
 
 <template>
@@ -88,7 +93,8 @@ nl:
       >
         <div class="bg-brand-100 bg-opacity-95 backdrop-blur p-4 md:p-8 rounded-lg shadow-xl flex-1 mt-[-8.555vw]">
           <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('titles.form')" />
-          <MonkeypoxForm />
+          <!-- <MonkeypoxForm /> -->
+          {{ $t('closed') }}
         </div>
 
         <div class="flex-1 text-white">

@@ -3,18 +3,18 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Charlie Verboom
+    - name: Laurens Weijs
       role: President
       email: voorzitter@outsite.nl
-    - name: Owen de Waal
+    - name: Enri Mammana
       role: Secretary
       email: secretaris@outsite.nl
-    - name: Outsite Treasurer
-      role: Treasurer
-      email: penningmeester@outsite.nl
-    - name: Ward Peeters
+    - name: Mo Azuguag
       role: External Affairs
       email: extern@outsite.nl
+    - name: Norah Oldenziel
+      role: Internal Affairs
+      email: intern@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -24,18 +24,18 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Charlie Verboom
+    - name: Laurens Weijs
       role: Voorzitter
       email: voorzitter@outsite.nl
-    - name: Owen de Waal
+    - name: Enri Mammana
       role: Secretaris
       email: secretaris@outsite.nl
-    - name: Outsite Penningmeester
-      role: Penningmeester
-      email: penningmeester@outsite.nl
-    - name: Ward Peeters
+    - name: Mo Azuguag
       role: Commissaris Extern
       email: extern@outsite.nl
+    - name: Norah Oldenziel
+      role: Commissaris Intern
+      email: intern@outsite.nl
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:
@@ -69,7 +69,7 @@ nl:
             </div>
             <div>
               <img
-                src="../../../assets/images/photos/outsite_board/board20.jpg"
+                src="../../../assets/images/photos/outsite_board/board22.png"
                 class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl my-8 md:mx-8 md:-mt-8"
               />
             </div>

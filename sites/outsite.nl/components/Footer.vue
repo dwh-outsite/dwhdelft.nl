@@ -69,7 +69,7 @@ nl:
             </div>
             <div>
               <img
-                src="../../../assets/images/photos/outsite_board/board22.png"
+                src="../../../assets/images/photos/outsite_board/board21.jpg"
                 class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl my-8 md:mx-8 md:-mt-8"
               />
             </div>

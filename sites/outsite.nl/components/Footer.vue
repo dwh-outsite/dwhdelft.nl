@@ -6,7 +6,7 @@ en:
     - name: Laurens Weijs
       role: President
       email: voorzitter@outsite.nl
-    - name: Enri Mammana
+    - name: Enri
       role: Secretary
       email: secretaris@outsite.nl
     - name: Norah Oldenziel
@@ -27,7 +27,7 @@ nl:
     - name: Laurens Weijs
       role: Voorzitter
       email: voorzitter@outsite.nl
-    - name: Enri Mammana
+    - name: Enri
       role: Secretaris
       email: secretaris@outsite.nl
     - name: Norah Oldenziel

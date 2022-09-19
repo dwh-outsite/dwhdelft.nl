@@ -26,7 +26,7 @@ events:
     day:
       en: Wednesday
       nl: Woensdag
-    start_time: '21:15'
+    start_time: '20:45'
     end_time: '00:00'
     description: 
       en: |-

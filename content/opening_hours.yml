@@ -31,15 +31,15 @@ events:
     description: 
       en: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
-        old classics.
+        old classics. Subscribe to our mailing list to receive the latest info on which movies will be played when.
       nl: |-
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
-        aan de beurt.
+        aan de beurt. Abboneer op onze maillijst voor om te weten wanneer welke films gespeeld worden.
     link:
       name: 
-        en: Programme <small>(for members)</small>
-        nl: Programma <small>(voor leden)</small>
-      url: http://homodelft.nl/films/
+        en: Subscribe to our mailing list
+        nl: Abboneer op onze maillijst
+      url: https://dwhdelft.us8.list-manage.com/subscribe/post?u=cba091ecb7170ec277c50337d&amp;id=d34d3f22a2&amp;f_id=00a75de0f0
 
   - name: Outsite
     day:

@@ -6,15 +6,15 @@ en:
     - name: Laurens Weijs
       role: President
       email: voorzitter@outsite.nl
-    - name: Enri Mammana
+    - name: Enri
       role: Secretary
       email: secretaris@outsite.nl
-    - name: Mo Azuguag
-      role: External Affairs
-      email: extern@outsite.nl
     - name: Norah Oldenziel
       role: Internal Affairs
       email: intern@outsite.nl
+    - name: Mo
+      role: External Affairs
+      email: extern@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -27,15 +27,15 @@ nl:
     - name: Laurens Weijs
       role: Voorzitter
       email: voorzitter@outsite.nl
-    - name: Enri Mammana
+    - name: Enri
       role: Secretaris
       email: secretaris@outsite.nl
-    - name: Mo Azuguag
-      role: Commissaris Extern
-      email: extern@outsite.nl
     - name: Norah Oldenziel
       role: Commissaris Intern
       email: intern@outsite.nl
+    - name: Mo
+      role: Commissaris Extern
+      email: extern@outsite.nl
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:

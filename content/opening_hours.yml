@@ -26,20 +26,20 @@ events:
     day:
       en: Wednesday
       nl: Woensdag
-    start_time: '21:15'
+    start_time: '20:45'
     end_time: '00:00'
     description: 
       en: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
-        old classics.
+        old classics. Subscribe to our mailing list to receive the latest info on which movies will be played when.
       nl: |-
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
-        aan de beurt.
+        aan de beurt. Abonneer op onze maillijst om te weten wanneer welke films gespeeld worden.
     link:
       name: 
-        en: Programme <small>(for members)</small>
-        nl: Programma <small>(voor leden)</small>
-      url: http://homodelft.nl/films/
+        en: Subscribe to our mailing list
+        nl: Abonneer op onze maillijst
+      url: http://eepurl.com/SCYin
 
   - name: Outsite
     day:

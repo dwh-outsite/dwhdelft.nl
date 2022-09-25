@@ -28,7 +28,7 @@ nl:
 </i18n>
 
 <template>
-  <div class="container px-4 mx-auto py-12">
+  <div class="container px-4 mx-auto pt-24 md:pt-0 pb-12">
     <div class="text-center">
       <h1 class="tracking-wide font-semibold uppercase text-2xl mb-6 mx-2">
         {{ $t('title') }}

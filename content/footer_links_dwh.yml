@@ -83,3 +83,7 @@ categories:
           nl: Privacy
           en: Privacy
         url: /privacy
+      - name:
+          nl: Huisregels
+          en: House Rules
+        url: /house-rules

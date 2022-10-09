@@ -5,6 +5,12 @@ board:
       nl: Voorzitter
       en: President
     email: voorzitter@dwhdelft.nl
+    
+  - name: Charlie Verboom
+    description:
+      nl: Secretaris
+      en: Secretary
+    email: secretaris@dwhdelft.nl
 
   - name: Dries Stuij
     description:

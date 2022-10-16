@@ -56,14 +56,14 @@ en:
 nl:
   title: Kennismaken met <strong>Outsite</strong>?
   kmg:
-    title: Kennismakingsgroepen (KMG)
+    title: "Kennismakingsgroepen (KMG)"
     description: Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
       van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden deel je
       met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!
     action: Doe mee aan de KMG
     sign_up: Aanmelden voor de KMG
   bar_buddy:
-    title: Barbuddy's
+    title: "Barbuddy's"
     description: Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld
       je dan aan voor een barbuddy! Een barbuddy is iemand die van tevoren met je afspreekt zodat je samen naar de
       baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten
@@ -110,7 +110,7 @@ nl:
 <template>
   <div class="container px-4 mx-auto pt-8 pb-12">
     <div class="text-center">
-      <h1 class="text-white font-medium text-5xl" v-html="title"></h1>
+      <h1 class="text-white font-medium text-5xl" v-html="$t('title')"></h1>
     </div>
     <div class="md:flex justify-center mt-4">
       <div class="flex-1 mb-8 md:mb-0 md:mr-2 fade-corners rounded-lg text-white">

@@ -28,7 +28,7 @@ events:
       nl: Woensdag
     start_time: '20:45'
     end_time: '00:00'
-    description: 
+    description:
       en: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
         old classics. Subscribe to our mailing list to receive the latest info on which movies will be played when.
@@ -36,7 +36,7 @@ events:
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
         aan de beurt. Abonneer op onze maillijst om te weten wanneer welke films gespeeld worden.
     link:
-      name: 
+      name:
         en: Subscribe to our mailing list
         nl: Abonneer op onze maillijst
       url: http://eepurl.com/SCYin
@@ -81,3 +81,20 @@ events:
         en: MIXUP on Instagram
         nl: MIXUP op Instagram
       url: https://www.instagram.com/mixupdelft/
+
+  - name: QT
+    day:
+      en: Sunday
+      nl: Zondag
+    start_time: '17:00'
+    end_time: '22:00'
+    description:
+      en: |-
+        Do you like going out but not being loud? Do you want to go out but prefer staying in?
+        Then come visit our QT evening where you can have a nice chat, read books or
+        play some board games with other in the community.
+      nl: |-
+        Ga je graag uit, maar niet luid? Wil je er op uit maar blijf je toch liever binnen?
+        Kom dan een keer langs bij de QT-avond waar je rustig kunt praten, boeken kunt lezen
+        of wat bordspellen kunt spelen met andere mensen in de gemeenschap.
+

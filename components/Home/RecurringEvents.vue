@@ -1,8 +1,8 @@
 <i18n lang="yaml">
 en:
-  announcement: <strong>DWH</strong> is open 4 nights a week
+  announcement: <strong>DWH</strong> is open 5 nights a week
 nl:
-  announcement: <strong>DWH</strong> is elke week op 4 avonden open
+  announcement: <strong>DWH</strong> is elke week op 5 avonden open
 </i18n>
 
 <template>

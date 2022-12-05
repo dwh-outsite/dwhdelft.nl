@@ -103,7 +103,7 @@ nl:
           <p>on behalf of the board of Outsite</p>
           <div class="flex justify-end mt-8">
             <PrimaryButton :disabled="formStatus === 'loading'" type="submit">
-              {{ formStatus === 'loading' ? 'Loading' : 'Submit' }}
+              {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.submit') }}
             </PrimaryButton>
           </div>
         </form>

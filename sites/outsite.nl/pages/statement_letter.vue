@@ -1,8 +1,10 @@
 <i18n lang="yaml">
 en:
   title: Letter from the board
+  form_success: We're going to work on your remarks.
 nl:
   title: Brief van het bestuur
+  form_success: We gaan aan de slag met je opmerkingen.
 </i18n>
 
 <template>
@@ -16,8 +18,14 @@ nl:
     </header>
 
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
-      <div class="md:w-2/3 mx-4 md:mx-auto">
-        <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
+      <div id="form" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
+        <FormCompleted
+          v-if="formStatus === 'finished'"
+          :title="$t('forms.success.heading')"
+          :subtitle="$t('form_success')"
+          class="mb-12"
+        />
+        <form @submit="submit">
           <p>Dear Outsite members,</p>
           <br />
           <p>Here is an announcement about safe and responsible alcohol consumption, please read it carefully.</p>
@@ -28,15 +36,20 @@ nl:
           </p>
           <p>
             We as board take these matters very seriously. We care about our members and their safety, especially for
-            activities where mostly Outsite folks are participating, may this be officially organised by Outiste or not.
+            activities where mostly Outsite folks are participating, may this be officially organised by Outsite or not.
             For this reason, we want to open a conversation on what we can improve as an association, as well as
             individual members, to create a safer space and avoid accidents as much as possible. Do you have any ideas,
             is there something you would like to talk about?
           </p>
           <br />
-          <FormElement :label="'Do you have any questions or remarks?'">
-            <FormInput v-model="form.remarks_question_1" :placeholder="form.placeholder" type="textarea" />
+          <FormElement :label="'Do you have any questions or remarks?'" class="form-element-gray text-base">
+            <FormInput
+              v-model="form.remarks_question_1"
+              :placeholder="$t('forms.placeholder.remarks')"
+              type="textarea"
+            />
             <FormValidation name="remarks" :errors="validationErrors" />
+            <span class="text-sm text-gray-500">Don't forget to submit the form at the bottom of this page.</span>
           </FormElement>
           <br />
           <p>
@@ -47,9 +60,14 @@ nl:
             pressured to drink to be able to socialise?
           </p>
           <br />
-          <FormElement :label="'Do you have any questions or remarks?'">
-            <FormInput v-model="form.remarks_question_2" :placeholder="form.placeholder" type="textarea" />
+          <FormElement :label="'Do you have any questions or remarks?'" class="form-element-gray text-base">
+            <FormInput
+              v-model="form.remarks_question_2"
+              :placeholder="$t('forms.placeholder.remarks')"
+              type="textarea"
+            />
             <FormValidation name="remarks" :errors="validationErrors" />
+            <span class="text-sm text-gray-500">Don't forget to submit the form at the bottom of this page.</span>
           </FormElement>
           <br />
           <p>
@@ -67,9 +85,14 @@ nl:
             safe to leave someone alone?
           </p>
           <br />
-          <FormElement :label="'Do you have any questions or remarks?'">
-            <FormInput v-model="form.remarks_question_3" :placeholder="form.placeholder" type="textarea" />
+          <FormElement :label="'Do you have any questions or remarks?'" class="form-element-gray text-base">
+            <FormInput
+              v-model="form.remarks_question_3"
+              :placeholder="$t('forms.placeholder.remarks')"
+              type="textarea"
+            />
             <FormValidation name="remarks" :errors="validationErrors" />
+            <span class="text-sm text-gray-500">Don't forget to submit the form at the bottom of this page.</span>
           </FormElement>
           <br />
           <p>I invite you to think along with us and see if we can find an answer to all of these.</p>
@@ -101,7 +124,6 @@ export default {
         remarks_question_1: '',
         remarks_question_2: '',
         remarks_question_3: '',
-        placeholder: 'Questions or remarks',
       },
       validationErrors: {},
       formStatus: 'start',
@@ -118,7 +140,7 @@ export default {
 
       this.formStatus = 'loading'
 
-      new ReMemberForm('statementLetter')
+      new ReMemberForm('statement-letter')
         .submit(this.form)
         .then(() => {
           this.formStatus = 'finished'

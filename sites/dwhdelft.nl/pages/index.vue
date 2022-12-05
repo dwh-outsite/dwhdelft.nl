@@ -23,10 +23,10 @@ nl:
     rightButton: Openingstijden
   description:
     text:
-      - "DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen: een ontmoetingsplek
+      - 'DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen: een ontmoetingsplek
         voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
         tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en
-        allerlei openbare events rond dagen als coming out dag."
+        allerlei openbare events rond dagen als coming out dag.'
       - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee
         baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
         bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!'

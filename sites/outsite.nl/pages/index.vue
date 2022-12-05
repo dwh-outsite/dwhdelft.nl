@@ -21,7 +21,7 @@ en:
     title: Upcoming activities
 nl:
   hero:
-    title: "Delftse LHBT+ jongerenvereniging"
+    title: 'Delftse LHBT+ jongerenvereniging'
     subtitle: voor iedereen t/m 28 jaar
     leftButton: Kom naar Outsite
     rightButton: Bekijk Video

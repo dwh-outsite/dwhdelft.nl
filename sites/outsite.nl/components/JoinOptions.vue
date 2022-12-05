@@ -56,7 +56,7 @@ en:
 nl:
   title: Kennismaken met <strong>Outsite</strong>?
   kmg:
-    title: "Kennismakingsgroepen (KMG)"
+    title: 'Kennismakingsgroepen (KMG)'
     description: Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
       van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden deel je
       met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!

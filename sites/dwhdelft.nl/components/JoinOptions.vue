@@ -2,11 +2,14 @@
 en:
   title: Ready to check out <strong>DWH</strong>?
   description: |-
-    You're always welcome on a Saturday night during a bar night. Do you think this is too exciting or
-    frightening? Then you can make use of our bar buddy system!
-  outsite_hint: |-
-    Are you 28 years or younger? Take a look at
-    <a href="https://outsite.nl/" class="font-bold">Outsite</a>, the youth division of our association.
+    The best way to get to know DWH is at one of our activities. Join us at one, or sign up for a
+    barbuddy so there'll be someone you know. Are you 28 or younger? Do take a look at  
+    <a href="https://outsite.nl/" class="font-bold">Outsite (28-)</a> or 
+    <a href="https://jongenoutdelft.nl/" class="font-bold">Jong&Out Delft (12-18)</a>.
+  join: |-
+    Enthusiastic and ready to join our community and support our activities? Sign up through the 
+    button below!
+  membership_button: Sign up now
   bar_buddy:
     heading: Bar Buddies
     description: |-
@@ -17,11 +20,14 @@ en:
 nl:
   title: Kennismaken met <strong>DWH</strong>?
   description: |-
-    Je bent altijd welkom op een zaterdagavond tijdens een baravond. Vind je dit spannend? Dan kun je
-    gebruik maken van ons barbuddysysteem!
-  outsite_hint: |-
-    Ben je 28 jaar of jonger? Kijk dan ook eens bij
-    <a href="https://outsite.nl/" class="font-bold">Outsite</a>, het jongerendeel van de vereniging.
+    De beste manier om DWH te leren kennen is bij één van onze activiteiten. Kom langs, of meld je 
+    aan voor een barbuddy zodat je gelijk al iemand kent. Ben je 28 of jonger? Kijk dan ook eens bij 
+    <a href="https://outsite.nl/" class="font-bold">Outsite (28-)</a> of 
+    <a href="https://jongenoutdelft.nl/" class="font-bold">Jong&Out Delft (12-18)</a>.
+  join: |-
+    Enthousiast om onze community te joinen en onze activiteiten te steunen? Meld je aan via de 
+    knop hieronder!
+  membership_button: Schrijf je nu in
   bar_buddy:
     heading: Barbuddies
     description: |-
@@ -37,8 +43,16 @@ nl:
       <div class="flex-1 mx-2 flex items-end mt-4">
         <div class="text-white">
           <h1 class="font-medium leading-none text-5xl mb-4" v-html="$t('title')"></h1>
-          <p class="text-lg lg:pr-40 mb-4" v-html="$t('description')" />
-          <p class="text-lg lg:pr-40" v-html="$t('outsite_hint')" />
+          <p class="text-lg lg:pr-20 mb-4" v-html="$t('description')" />
+          <p class="text-lg lg:pr-20 mb-6" v-html="$t('join')" />
+          <a href="https://my.dwhdelft.nl/signup">
+            <button
+              class="bg-white rounded-full px-6 py-3 text-brand-400 shadow-lg font-semibold flex items-center hover:bg-brand-100"
+            >
+              {{ $t('membership_button') }}
+              <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+            </button>
+          </a>
         </div>
       </div>
       <div class="bg-white rounded-lg md:rounded-t-none p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0">

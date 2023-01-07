@@ -33,7 +33,7 @@ nl:
         <a href="https://www.dwhdelft.nl" class="text-brand-400">DWH</a>, de LHBT+ vereniging van Delft.'
       - 'Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
         kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
-        van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.'
+        van de barbuddies: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.'
     invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf {0}</strong>'
   video:
     title: <strong>Outsite</strong> in 120 seconden

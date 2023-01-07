@@ -30,7 +30,11 @@ export default {
         return $content(`pages/${slug}.${app.i18n.defaultLocale}`)
           .fetch()
           .catch(() => {
-            error({ statusCode: 404, message: 'Page not found' })
+            return $content(`pages/${slug}.en`)
+              .fetch()
+              .catch(() => {
+                error({ statusCode: 404, message: 'Page not found' })
+              })
           })
       })
 

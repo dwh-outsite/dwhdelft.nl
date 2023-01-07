@@ -9,7 +9,6 @@ export default {
 
   generate: {
     fallback: true,
-    routes: ['/iva'],
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)

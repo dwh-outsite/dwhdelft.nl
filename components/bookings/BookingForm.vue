@@ -195,7 +195,7 @@ export default {
         custom_fields: {},
       },
       events: [],
-      selectedEvent: { },
+      selectedEvent: {},
       state: 'start',
       teams: DINNER_TEAMS,
       restrictions: DINNER_RESTRICTIONS,

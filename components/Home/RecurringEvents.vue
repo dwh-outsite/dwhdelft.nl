@@ -8,39 +8,56 @@ nl:
 <template>
   <div class="container px-4 mx-auto py-16 md:pb-24">
     <h2 class="text-center text-brand-500 font-medium text-5xl mb-12 leading-tight" v-html="$t('announcement')" />
-    <div class="md:flex flex-wrap justify-center -mx-2">
-      <div v-for="event in openingHours" :key="event.name" class="p-2 mb-4 xl:mb-0 md:w-1/2 xl:flex-1 xl:w-auto">
-        <div class="rounded shadow bg-brand-100 flex flex-col justify-between h-full">
-          <div class="p-6">
-            <div class="flex items-center mb-2">
-              <h4 class="flex-1 text-brand-500 font-semibold text-2xl" v-text="event.name" />
-              <div v-if="event.restrictions">
-                <div
-                  v-for="restriction in event.restrictions"
-                  :key="restriction"
-                  class="ml-4 text-center flex items-center"
-                >
-                  <div
-                    class="bg-brand-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider"
-                    v-text="$tt(restriction)"
-                  />
-                </div>
-              </div>
+    <div class="flex">
+      <div class="w-1/3 xl:w-1/4">
+        <div
+          v-for="(event, index) in openingHours"
+          :key="event.name"
+          class="p-3 pl-12 rounded-l-full cursor-pointer"
+          :class="{
+            'shadow-lg bg-brand-500 text-white': event === active,
+            'hover:bg-brand-100 text-brand-500': event !== active,
+          }"
+          @click="activeIndex = index"
+        >
+          <div class="flex items-center mb-2 space-x-2">
+            <h4 class="font-semibold text-2xl" v-text="event.name" />
+            <RecurringEventRestrictions class="text-gray-900" :restrictions="event.restrictions" />
+          </div>
+          <div
+            class="text-gray-900 bg-white rounded px-2 tracking-wider text-sm inline-flex items-center border border-brand-200"
+          >
+            <Zondicon icon="calendar" class="fill-current h-4 inline mr-2 text-brand-500" />
+            <div class="flex-1 py-1 pr-2">
+              {{ $tt(event.day) }}
             </div>
-            <div class="bg-white rounded px-3 mb-4 tracking-wider flex items-center border border-brand-200">
-              <Zondicon icon="calendar" class="fill-current h-4 inline mr-2 text-brand-500" />
-              <div class="flex-1 py-2">
-                {{ $tt(event.day) }}
-              </div>
-              <div class="border-l border-brand-200 pl-3 py-2" v-text="event.start_time" />
-            </div>
-            <p v-html="$tt(event.description)" />
+            <div class="border-l border-brand-200 pl-2 py-1" v-text="event.start_time" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-cover bg-brand-100 shadow-lg rounded-r-[3.5rem] overflow-hidden px-12 flex items-center"
+        :class="{ 'rounded-tl-none': isFirstActive, 'rounded-bl-none': isLastActive }"
+        :style="backgroundImage"
+      >
+        <div
+          v-if="active"
+          class="backdrop-blur bg-brand-100 bg-opacity-20 w-2/3 xl:w-1/2 p-6 space-y-6 rounded-3xl shadow-lg transition-all duration-500"
+          :style="active.offset"
+        >
+          <h4 class="font-semibold text-white text-4xl" v-text="active.name" />
+          <div class="bg-brand-100 bg-opacity-80 backdrop-blur-xl shadow-lg text-xl rounded-2xl p-6 relative">
+            <RecurringEventRestrictions
+              class="absolute top-0 right-0 mr-6 -mt-2.5"
+              :restrictions="active.restrictions"
+            />
+            <span v-html="$tt(active.description)" />
           </div>
           <a
-            v-if="event.link"
-            :href="event.link.url"
-            class="bg-brand-500 hover:bg-brand-300 py-3 rounded-b text-white uppercase font-semibold tracking-wider text-center"
-            v-html="$tt(event.link.name)"
+            v-if="active.link"
+            :href="active.link.url"
+            class="inline-block button-pink"
+            v-html="$tt(active.link.name)"
           />
         </div>
       </div>
@@ -49,17 +66,48 @@ nl:
 </template>
 
 <script>
+import dayjs from 'dayjs'
 import Zondicon from 'vue-zondicons'
+import RecurringEventRestrictions from './RecurringEventRestrictions.vue'
 
 export default {
-  components: { Zondicon },
+  components: { Zondicon, RecurringEventRestrictions },
   data() {
     return {
       openingHours: [],
+      activeIndex: 0,
     }
   },
   async fetch() {
     this.openingHours = (await this.$content('opening_hours').fetch()).events
+
+    // Set active index to current day
+    this.activeIndex = this.openingHours.findIndex((event) => event.day.en === dayjs().format('dddd'))
   },
+  computed: {
+    active() {
+      return this.openingHours[this.activeIndex]
+    },
+    isFirstActive() {
+      return this.activeIndex === 0
+    },
+    isLastActive() {
+      return this.activeIndex === this.openingHours.length - 1
+    },
+    backgroundImage() {
+      return {
+        backgroundImage: `url(${this.requireImage(this.active.photo)})`,
+      }
+    },
+  },
+  methods: {
+    requireImage(photo) {
+      try {
+        return require(`#/assets/images/photos/${photo}`)
+      } catch (e) {
+        return require(`#/assets/images/photos/testimonials/default.png`)
+      }
+    },
+  }
 }
 </script>

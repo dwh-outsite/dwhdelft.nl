@@ -21,6 +21,9 @@ events:
         en: Sign Up
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
+    photo: eatingout/eatingout.jpg
+    offset:
+      marginLeft: 0px
 
   - name: Fillum
     day:
@@ -40,6 +43,8 @@ events:
         en: Subscribe to our mailing list
         nl: Abonneer op onze maillijst
       url: http://eepurl.com/SCYin
+    offset:
+      marginLeft: 50px
 
   - name: Outsite
     day:
@@ -62,6 +67,9 @@ events:
         en: Head to Outsite.nl
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
+    offset:
+      marginLeft: 100px
+    photo: cover.jpg
 
   - name: MIXUP
     day:
@@ -81,3 +89,27 @@ events:
         en: MIXUP on Instagram
         nl: MIXUP op Instagram
       url: https://www.instagram.com/mixupdelft/
+    offset:
+      marginLeft: auto
+    photo: bullets/bullet_drinks.png
+
+  - name: QT
+    day:
+      en: Sunday
+      nl: Zondag
+    start_time: '21:00'
+    end_time: '01:00'
+    description:
+      en: |-
+        MIXUP is thé queer bar night of Delft. Meet new people, come dance at our regular
+        parties, and join one of our many events!
+      nl: |-
+        MIXUP is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
+        feesten en doe mee met een van onze vele events!
+    link:
+      name:
+        en: MIXUP on Instagram
+        nl: MIXUP op Instagram
+      url: https://www.instagram.com/mixupdelft/
+    offset:
+      marginLeft: 50px

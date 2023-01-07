@@ -29,7 +29,7 @@ nl:
       </div>
     </div>
     <BaseFooter :socials="socials()" :links="[]">
-      <template #copyright>&copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}</template>
+      <template #copyright>&copy; DWH {{ year }}</template>
     </BaseFooter>
   </div>
 </template>

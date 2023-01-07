@@ -5,10 +5,6 @@ en:
       url: index
     - title: Bar Buddy
       url: barbuddy
-    - title: Reservations
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
     - title: Education
       url: /education
     - title: Jong&Out
@@ -23,10 +19,6 @@ nl:
       url: index
     - title: Barbuddy
       url: barbuddy
-    - title: Reserveren
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
     - title: Voorlichting
       url: /education
     - title: Jong&Out

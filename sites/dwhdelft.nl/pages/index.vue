@@ -80,10 +80,6 @@ nl:
     <section id="recurring_events" class="bg-white">
       <RecurringEvents />
     </section>
-
-    <section id="eatingout" class="bg-gray-200">
-      <EatingOut />
-    </section>
   </div>
 </template>
 

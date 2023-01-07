@@ -5,10 +5,6 @@ en:
       url: index
     - title: Join Outsite
       url: index#join-outsite
-    - title: Reservations
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
     - title: Committees
       url: /committees
     - title: Testimonials
@@ -21,10 +17,6 @@ nl:
       url: index
     - title: Join Outsite
       url: index#join-outsite
-    - title: Reserveren
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
     - title: Commissies
       url: committees
     - title: Ervaringen

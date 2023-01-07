@@ -20,7 +20,7 @@ events:
       name:
         en: Sign Up
         nl: Aanmelden
-      url: https://dwhdelft.nl/eatingout
+      url: /eatingout
 
   - name: Fillum
     day:

@@ -102,10 +102,6 @@ nl:
       <Testimonial class="absolute left-0 right-0 -mt-64 md:-mt-40" />
       <Activities :title="$t('activities.title')" class="relative z-10 mt-12" />
     </section>
-
-    <section id="eatingout" class="bg-gray-200">
-      <EatingOut class="relative z-10" />
-    </section>
   </div>
 </template>
 

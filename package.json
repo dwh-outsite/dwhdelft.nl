@@ -19,11 +19,11 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/i18n": "^7.0.2",
-    "@nuxtjs/svg": "^0.3.0",
+    "@nuxtjs/svg": "^0.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "core-js": "^3.20.1",
     "dayjs": "^1.9.8",
-    "nuxt": "^2.15.4",
+    "nuxt": "^2.15.8",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss-aspect-ratio": "^3.0.0",
     "vue-zondicons": "^0.1.10"

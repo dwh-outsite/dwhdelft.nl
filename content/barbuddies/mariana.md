@@ -1,5 +1,8 @@
 ---
 name: Mariana
+pronouns: 
+  nl: zij/haar
+  en: she/her
 sites:
   - dwh
 en:

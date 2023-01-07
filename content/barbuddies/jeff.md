@@ -1,5 +1,8 @@
 ---
 name: Jeff
+pronouns: 
+  nl: hij/hem
+  en: he/him
 sites:
   - dwh
 en:

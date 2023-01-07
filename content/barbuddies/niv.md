@@ -1,5 +1,8 @@
 ---
 name: Niv
+pronouns: 
+  nl: zij/haar
+  en: she/her
 sites:
   - dwh
   - outsite

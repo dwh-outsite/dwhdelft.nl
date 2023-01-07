@@ -15,6 +15,10 @@ nl:
       </div>
     </template>
 
+    <template #button>
+      <span class="text-gray-500">{{ buddy.pronouns[$i18n.locale] }}</span>
+    </template>
+
     <div :class="['text-lg relative', expanded ? 'pb-8' : 'clamp-lines']">
       <span class="absolute z-10 bottom-0 right-0 flex">
         <span class="w-32 block white-gradient" />

@@ -1,5 +1,8 @@
 ---
 name: Andreas
+pronouns: 
+  nl: hij/hem
+  en: he/him
 sites:
   - dwh
   - outsite

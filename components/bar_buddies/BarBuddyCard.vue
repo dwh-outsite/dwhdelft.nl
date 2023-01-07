@@ -1,10 +1,8 @@
 <i18n lang="yaml">
 en:
-  meet_up_with: Meet up with
   read_more: Read more
   read_less: Collapse
 nl:
-  meet_up_with: Afspreken met
   read_more: Lees meer
   read_less: Inklappen
 </i18n>
@@ -15,13 +13,6 @@ nl:
       <div class="rounded-full w-12 h-12 p-3 bg-brand-450 text-white mr-3">
         <Zondicon icon="user" class="fill-current" />
       </div>
-    </template>
-
-    <template #button>
-      <PrimaryButton class="flex items-center" @click="$emit('meet', buddy)">
-        {{ $t('meet_up_with') }} {{ buddy.name }}
-        <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
-      </PrimaryButton>
     </template>
 
     <div :class="['text-lg relative', expanded ? 'pb-8' : 'clamp-lines']">

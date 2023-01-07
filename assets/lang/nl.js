@@ -20,7 +20,7 @@ export default {
       address: 'Straat en Huisnummer',
       postal_code: 'Postcode',
       pronouns: 'Pronouns',
-      barbuddy: 'Met wie wil je afspreken?',
+      barbuddy: 'Met wie zou je graag willen afspreken? (afhankelijk van beschikbaarheid)',
       membership_fee: 'Tariefgroep Contributie (zie onderaan deze pagina)',
       iban: 'IBAN nummer voor betaling via automatisch incasso (geen spaties)',
       message: 'Bericht',

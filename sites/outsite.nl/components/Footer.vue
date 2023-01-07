@@ -3,13 +3,13 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Laurens Weijs
+    - name: Laurens
       role: President
       email: voorzitter@outsite.nl
     - name: Enri
       role: Secretary
       email: secretaris@outsite.nl
-    - name: Norah Oldenziel
+    - name: Norah
       role: Internal Affairs
       email: intern@outsite.nl
     - name: Mo
@@ -24,13 +24,13 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Laurens Weijs
+    - name: Laurens
       role: Voorzitter
       email: voorzitter@outsite.nl
     - name: Enri
       role: Secretaris
       email: secretaris@outsite.nl
-    - name: Norah Oldenziel
+    - name: Norah
       role: Commissaris Intern
       email: intern@outsite.nl
     - name: Mo

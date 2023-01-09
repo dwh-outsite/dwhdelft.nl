@@ -20,14 +20,26 @@ nl:
   join:
     button: Meld je nu aan
   team:
-    - name: Hidde
-      pronouns: hij/hem
-      description:
-        - 'Hoi, ik ben Hidde, 24 jaar en ik loop al een tijdje rond bij DWH/Outsite. Met mijn ervaring als middelbare school docent hoop ik ook een bijdrage te kunnen leveren bij J&O Delft.'
     - name: Dante
-      pronouns: die/diens
+      pronouns: die/hun
       description:
         - 'Heeyhey, dit is Dante. Ik ben Jong&Out gaan doen omdat een soort gelijke groep mij op de middelbare heel veel plezier gebracht heeft. Deze ervaring wil ik graag doorgeven en er iets gaafs van maken.'
+    - name: Dim
+      pronouns: hij/hem
+      description:
+        - 'Hiii! Ik ben Dim! Ik kwam zelf vroeger bij Jong & Out en heb hier vrienden voor het leven gemaakt! Zulke vrienden gun ik iedereen en daarom ben ik zelf begeleider bij Jong & Out geworden!'
+    - name: Meander
+      pronouns: die/hun
+      description:
+        - 'Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad, het was zo’n fijne en vertrouwde omgeving, dat wil ik daarom ook creëren voor de volgende generatie aan J&O’ers 😝!!'
+    - name: Didi
+      pronouns: zij/haar
+      description:
+        - 'Hey, ik ben Didi! Ik vind het leuk om voor queer jongeren een plek te creëren waar ze open kunnen zijn, zich vertrouwd kunnen voelen en waar ze natuurlijk veel leuke dingen kunnen beleven.'
+    - name: Laurens
+      pronouns: hij/hem
+      description:
+        - 'Hey hey, mijn naam is Laurens ik vind het super fijn een plekje voor jonge lhbti personen, zoals ik dat ook had in mijn jeugd!'
 </i18n>
 
 <template>

@@ -24,6 +24,10 @@ nl:
       pronouns: die/hun
       description:
         - 'Heeyhey, dit is Dante. Ik ben Jong&Out gaan doen omdat een soort gelijke groep mij op de middelbare heel veel plezier gebracht heeft. Deze ervaring wil ik graag doorgeven en er iets gaafs van maken.'
+    - name: Thomas
+      pronouns: hij/hem
+      description:
+        - 'Hoi, ik ben Thomas! Als begeleider bij Jong & Out Delft vind ik het geweldig om bij te dragen aan een veilige ruimte waar queer jongeren zichzelf kunnen zijn, zeker omdat ik dat niet op mijn middelbare school had!'
     - name: Dim
       pronouns: hij/hem
       description:

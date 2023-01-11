@@ -35,7 +35,7 @@ nl:
     - name: Meander
       pronouns: die/hun
       description:
-        - 'Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad, het was zo’n fijne en vertrouwde omgeving, dat wil ik daarom ook creëren voor de volgende generatie aan J&O’ers 😝!!'
+        - 'Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad, het was zo’n fijne en vertrouwde omgeving, dat wil ik daarom ook creëren voor de volgende generatie J&O’ers 😝!!'
     - name: Didi
       pronouns: zij/haar
       description:

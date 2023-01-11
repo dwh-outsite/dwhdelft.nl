@@ -43,7 +43,7 @@ nl:
     - name: Laurens
       pronouns: hij/hem
       description:
-        - 'Hey hey, mijn naam is Laurens ik vind het super fijn een plekje voor jonge lhbti personen, zoals ik dat ook had in mijn jeugd!'
+        - 'Hey hey, mijn naam is Laurens en ik vind het super fijn een plekje voor jonge lhbti+ personen te kunnen faciliteren, in mijn jeugd heb ik er ontzettend veel aan gehad en op deze manier geef ik het stokje door.'
 </i18n>
 
 <template>

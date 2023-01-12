@@ -5,10 +5,10 @@ en:
     The best way to get to know DWH is at one of our activities. Join us at one, or sign up for a
     barbuddy so there'll be someone you know. Are you 28 or younger? Do take a look at  
     <a href="https://outsite.nl/" class="font-bold">Outsite (28-)</a> or 
-    <a href="https://jongenoutdelft.nl/" class="font-bold">Jong&Out Delft (12-18)</a>.
+    <a href="/jongenout" class="font-bold">Jong&Out Delft (12-18)</a>.
   join: |-
-    Enthusiastic and ready to join our community and support our activities? Sign up through the 
-    button below!
+    Enthusiastic and ready to join our community and support our activities? Become a member and
+    help us to keep organising them!
   membership_button: Sign up now
   bar_buddy:
     heading: Bar Buddies
@@ -23,10 +23,10 @@ nl:
     De beste manier om DWH te leren kennen is bij één van onze activiteiten. Kom langs, of meld je 
     aan voor een barbuddy zodat je gelijk al iemand kent. Ben je 28 of jonger? Kijk dan ook eens bij 
     <a href="https://outsite.nl/" class="font-bold">Outsite (28-)</a> of 
-    <a href="https://jongenoutdelft.nl/" class="font-bold">Jong&Out Delft (12-18)</a>.
+    <a href="/jongenout" class="font-bold">Jong&Out Delft (12-18)</a>.
   join: |-
-    Enthousiast om onze community te joinen en onze activiteiten te steunen? Meld je aan via de 
-    knop hieronder!
+    Enthousiast om onze community te joinen en onze activiteiten te steunen? Word lid en help ons 
+    ze te blijven organiseren!
   membership_button: Schrijf je nu in
   bar_buddy:
     heading: Barbuddies
@@ -47,7 +47,7 @@ nl:
           <p class="text-lg lg:pr-20 mb-6" v-html="$t('join')" />
           <a href="https://my.dwhdelft.nl/signup">
             <button
-              class="bg-white rounded-full px-6 py-3 text-brand-400 shadow-lg font-semibold flex items-center hover:bg-brand-100"
+              class="bg-white rounded-full px-6 py-3 text-brand-600 shadow-lg font-semibold flex items-center hover:bg-brand-100"
             >
               {{ $t('membership_button') }}
               <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
@@ -61,9 +61,7 @@ nl:
             <Zondicon icon="beverage" class="fill-current" />
           </div>
           <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('bar_buddy.heading')" />
-          <p class="mb-8 text-lg" v-text="$t('bar_buddy.description')" />
-        </div>
-        <div>
+          <p class="mb-6 text-lg" v-text="$t('bar_buddy.description')" />
           <nuxt-link :to="localePath('barbuddy')">
             <button class="block button-pink" v-text="$t('bar_buddy.action')" />
           </nuxt-link>

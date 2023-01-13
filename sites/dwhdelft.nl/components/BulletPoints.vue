@@ -2,33 +2,31 @@
 en:
   bulletPoints:
     - title: Activism
-      description: 'We are fighting for LGBT+ acceptance in the region of Delft, we do this by giving education at school and being in talks with the local and national government.'
+      description: 'We are fighting for LGBT+ acceptance in the region of Delft, we do this by speaking to local governments and organisations about their policy, and we participate with national actions for better trans care for LGBT+ refugees.'
       image: activism
-    - title: Activities
-      description: 'From eating with other members every monday to barnights on Saturday, DWH is a social gathering place for LGBT+ people.'
-      image: activities
+    - title: Community
+      description: 'From eating with other members to barnights and parties, DWH is the place to be for the queer community to meet each other. Come visit a few times and quickly you know some people.'
+      image: community
     - title: Events
-      description: 'Throughout the year we organise a lot a big events, like purple friday, coming out day and since recently Delft Pride. These big events promote LHBT+ for greater audiences then ourselves.'
-      image: bigevents
-    - title: Social Contacts
-      description: 'We’re one big family, you get to meet a lot of new people with diverse interests.
-        So lots of people to talk to!'
-      image: socialcontacts
+      description: 'Throughout the year we organise a lot a big events. Karoake's, drag shows and LAN parties for ourselves, but also Purple Friday and since recently Delft Pride, to promote the LGBT+ acceptance under the greater public.'
+        image: events
+    - title: Support
+      description: 'NExt to all the fun activities, we are here to support each other. In our KMG, young people can safely talk about their coming out stories, in the chats people can exchange advice about dating or their transition.'
+      image: support
 nl:
   bulletPoints:
     - title: Activisme
-      description: 'Wij zijn voorverchters voor LHBT+ rechten in Delft en omgeving, we doen dit door voorlichting te geven op scholen en in gesprek te zijn met de lokale en landelijke overheid.'
+      description: 'Wij zijn voorvechters van LHBT+ rechten in onze regio. We spreken de lokale overheden en organisaties over hun beleid, en doen mee met landelijke acties voor betere trans zorg of opvang van LHBT+ vluchtelingen.'
       image: activism
-    - title: Activiteiten
-      description: 'Van het samen eten met andere leden elke maandag tot de standaard barnachten op zaterdag, DWH is een sociale ontmoetingsplaats voor LHBT+ mensen.'
-      image: activities
+    - title: Community
+      description: 'Van samen eten en board games tot baravonden en feesten, DWH is de place to be om als queer community elkaar te ontmoeten. Kom een paar keer langs en al snel is er altijd wel iemand die je kent.'
+      image: community
     - title: Evenementen
-      description: 'Door het jaar heen organizeren we ook een tal grote activiteiten zoals paarse vrijdag, coming out day en sinds kort Delft Pride. Deze grote events promoten LHBT+ onder het grotere publiek dan alleen onszelf.'
-      image: bigevents
-    - title: Sociale Contacten
-      description: 'Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen, altijd wel
-        iemand om mee te praten dus!'
-      image: socialcontacts
+      description: 'Door het jaar heen organiseren we tal van activiteiten. Karaoke's, drag shows en LAN parties voor onszelf, maar ook Paarse Vrijdag en sinds kort Delft Pride, zo promoten we LHBT+ acceptatie onder het grotere publiek.'
+      image: events
+    - title: Support
+      description: 'Naast alle leuke activiteiten zijn we er ook om elkaar te steunen. In onze KMG kunnen jongeren veilig hun coming out bespreken, en in de chats wisselen mensen advies uit over daten of hun transitie.'
+      image: support
 </i18n>
 
 <template>

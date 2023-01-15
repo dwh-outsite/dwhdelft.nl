@@ -27,15 +27,15 @@ nl:
     - name: Thomas
       pronouns: hij/hem
       description:
-        - 'Hoi, ik ben Thomas! Als begeleider bij Jong & Out Delft vind ik het geweldig om bij te dragen aan een veilige ruimte waar queer jongeren zichzelf kunnen zijn, zeker omdat ik dat niet op mijn middelbare school had!'
+        - 'Hoi, ik ben Thomas! Als begeleider bij Jong&Out Delft vind ik het geweldig om bij te dragen aan een veilige ruimte waar queer jongeren zichzelf kunnen zijn, zeker omdat ik dat op mijn middelbare school niet had!'
     - name: Dim
       pronouns: hij/hem
       description:
-        - 'Hiii! Ik ben Dim! Ik kwam zelf vroeger bij Jong & Out en heb hier vrienden voor het leven gemaakt! Zulke vrienden gun ik iedereen en daarom ben ik zelf begeleider bij Jong & Out geworden!'
+        - 'Hiii! Ik ben Dim! Ik kwam zelf vroeger bij Jong&Out en heb hier vrienden voor het leven gemaakt! Zulke vrienden gun ik iedereen en daarom ben ik zelf begeleider bij Jong&Out geworden!'
     - name: Meander
       pronouns: die/hun
       description:
-        - 'Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad, het was zo’n fijne en vertrouwde omgeving, dat wil ik daarom ook creëren voor de volgende generatie J&O’ers 😝!!'
+        - "Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad. Het was zo’n fijne en vertrouwde omgeving, dat wil ik ook creëren voor de volgende generatie J&O’ers!!"
     - name: Didi
       pronouns: zij/haar
       description:
@@ -43,7 +43,7 @@ nl:
     - name: Laurens
       pronouns: hij/hem
       description:
-        - 'Hey hey, mijn naam is Laurens en ik vind het super fijn een plekje voor jonge lhbti+ personen te kunnen faciliteren, in mijn jeugd heb ik er ontzettend veel aan gehad en op deze manier geef ik het stokje door.'
+        - 'Hey hey, mijn naam is Laurens en ik vind het super fijn een plekje voor jonge lhbti+ personen te kunnen faciliteren. In mijn jeugd heb ik er ontzettend veel aan gehad en op deze manier geef ik het stokje door.'
 </i18n>
 
 <template>

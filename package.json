@@ -29,17 +29,17 @@
   },
   "devDependencies": {
     "@aceforth/nuxt-netlify": "^1.1.0",
-    "@babel/eslint-parser": "^7.17.0",
-    "@nuxtjs/eslint-config": "^9.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
+    "@babel/eslint-parser": "^7.19.1",
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/tailwindcss": "^6.1.3",
     "commander": "^9.1.0",
-    "eslint": "^8.11.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-nuxt": "^3.2.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "inquirer": "^8.2.1",
-    "prettier": "^2.6.0"
+    "prettier": "^2.8.3"
   },
   "resolutions": {
     "@nuxt/kit": "3.0.0-rc.13"

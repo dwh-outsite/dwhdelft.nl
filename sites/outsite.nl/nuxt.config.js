@@ -61,8 +61,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
     // https://marquez.co/docs/nuxt-netlify/
     '@aceforth/nuxt-netlify',
     // https://github.com/nuxt-community/svg-module
@@ -77,6 +75,8 @@ export default {
     '@nuxtjs/i18n',
     // https://content.nuxtjs.org/
     '@nuxt/content',
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss',
   ],
 
   // Tailwind configuration (https://tailwindcss.nuxtjs.org/options)

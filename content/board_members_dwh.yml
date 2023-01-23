@@ -5,15 +5,15 @@ board:
       nl: Voorzitter
       en: President
     email: voorzitter@dwhdelft.nl
+    
+  - name: Casper Boone
+    description:
+      nl: Interim Secretaris
+      en: Interim Secretary
+    email: secretaris@dwhdelft.nl
 
   - name: Dries Stuij
     description:
       nl: Penningmeester
       en: Treasurer
     email: penningmeester@dwhdelft.nl
-
-  - name: Aydin Karadag
-    description:
-      nl: Algemeen Bestuurslid
-      en: Board Member
-    email: aydin.karadag@dwhdelft.nl

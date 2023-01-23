@@ -45,7 +45,7 @@ nl:
         </div>
       </div>
       <a
-        :href="localePath('index')"
+        href="https://dwhdelft.nl"
         class="text-gray-400 hover:text-white text-xs lg:text-base flex items-center justify-center lg:justify-end pt-4 lg:pt-0"
       >
         <slot name="copyright" />

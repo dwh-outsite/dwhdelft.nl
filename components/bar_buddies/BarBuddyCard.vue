@@ -1,10 +1,8 @@
 <i18n lang="yaml">
 en:
-  meet_up_with: Meet up with
   read_more: Read more
   read_less: Collapse
 nl:
-  meet_up_with: Afspreken met
   read_more: Lees meer
   read_less: Inklappen
 </i18n>
@@ -18,10 +16,7 @@ nl:
     </template>
 
     <template #button>
-      <PrimaryButton class="flex items-center" @click="$emit('meet', buddy)">
-        {{ $t('meet_up_with') }} {{ buddy.name }}
-        <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
-      </PrimaryButton>
+      <span class="text-gray-500">{{ buddy.pronouns[$i18n.locale] }}</span>
     </template>
 
     <div :class="['text-lg relative', expanded ? 'pb-8' : 'clamp-lines']">

@@ -1,13 +1,4 @@
 export default {
-  meta: {
-    home: {
-      title: 'DWH - LHBT+ vereniging Delft',
-      description: `
-        DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek 
-        voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie.
-      `,
-    },
-  },
   forms: {
     label: {
       name: 'Hoe mogen we je noemen?',
@@ -29,7 +20,7 @@ export default {
       address: 'Straat en Huisnummer',
       postal_code: 'Postcode',
       pronouns: 'Pronouns',
-      barbuddy: 'Met wie wil je afspreken?',
+      barbuddy: 'Met wie zou je graag willen afspreken? (afhankelijk van beschikbaarheid)',
       membership_fee: 'Tariefgroep Contributie (zie onderaan deze pagina)',
       iban: 'IBAN nummer voor betaling via automatisch incasso (geen spaties)',
       message: 'Bericht',

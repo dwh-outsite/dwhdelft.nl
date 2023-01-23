@@ -2,35 +2,9 @@
 en:
   boardTitle: Board
   contactTitle: Contact
-  board:
-    - name: Rory Baart
-      role: President
-      email: voorzitter@dwhdelft.nl
-    - name: Charlie Verboom
-      role: Secretary
-      email: secretaris@dwhdelft.nl
-    - name: Dries Stuij
-      role: Treasurer
-      email: penningmeester@dwhdelft.nl
-    - name: Aydin Karadag
-      role: Board Member
-      email: aydin.karadag@dwhdelft.nl
 nl:
   boardTitle: Bestuur
   contactTitle: Contact
-  board:
-    - name: Rory Baart
-      role: Voorzitter
-      email: voorzitter@dwhdelft.nl
-    - name: Charlie Verboom
-      role: Secretaris
-      email: secretaris@dwhdelft.nl
-    - name: Dries Stuij
-      role: Penningmeester
-      email: penningmeester@dwhdelft.nl
-    - name: Aydin Karadag
-      role: Algemeen Bestuurslid
-      email: aydin.karadag@dwhdelft.nl
 </i18n>
 
 <template>
@@ -55,7 +29,7 @@ nl:
       </div>
     </div>
     <BaseFooter :socials="socials()" :links="[]">
-      <template #copyright>&copy; Delftse Werkgroep Homoseksualiteit (D.W.H.) {{ year }}</template>
+      <template #copyright>&copy; DWH {{ year }}</template>
     </BaseFooter>
   </div>
 </template>

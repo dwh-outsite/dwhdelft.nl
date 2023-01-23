@@ -1,5 +1,8 @@
 ---
 name: Wessel
+pronouns: 
+  nl: hij/hem
+  en: he/him
 sites:
   - dwh
   - outsite

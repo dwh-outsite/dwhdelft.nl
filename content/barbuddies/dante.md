@@ -1,5 +1,8 @@
 ---
 name: Dante
+pronouns: 
+  nl: die/diens
+  en: they/them
 sites:
   - dwh
   - outsite

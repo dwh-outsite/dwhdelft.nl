@@ -8,12 +8,6 @@
     </div>
     <div class="flex items-center mb-4">
       <div :class="`rounded-full w-8 h-8 p-2 ${iconClasses}`">
-        <Zondicon icon="phone" class="fill-current w-4" />
-      </div>
-      <div class="ml-3">06-37560270</div>
-    </div>
-    <div class="flex items-center mb-4">
-      <div :class="`rounded-full w-8 h-8 p-2 ${iconClasses}`">
         <Zondicon icon="map" class="fill-current w-4" />
       </div>
       <div class="ml-3 leading-tight">

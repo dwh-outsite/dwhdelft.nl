@@ -1,5 +1,8 @@
 ---
 name: Dennis
+pronouns: 
+  nl: hij/hem
+  en: he/him
 sites:
   - dwh
 nl:

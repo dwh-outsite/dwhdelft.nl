@@ -1,7 +1,7 @@
 <i18n lang="yaml">
 en:
   hero:
-    title: Delft's LGBT+ Youth Association
+    title: "Delft's LGBT+ Youth Association"
     subtitle: for everyone up to 28 years
     leftButton: Join Outsite
     rightButton: Watch Video
@@ -21,7 +21,7 @@ en:
     title: Upcoming activities
 nl:
   hero:
-    title: Delftse LHBT+ jongerenvereniging
+    title: 'Delftse LHBT+ jongerenvereniging'
     subtitle: voor iedereen t/m 28 jaar
     leftButton: Kom naar Outsite
     rightButton: Bekijk Video
@@ -94,8 +94,14 @@ nl:
       <Highlights class="relative z-10" :excerpts="true" />
     </section>
 
-    <section id="video" class="mb-24">
+    <section id="video" class="pb-16 mb-24">
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
+      <a href="https://www.youtube.com/watch?v=zMjnI6Ql3js" target="_blank">
+        <button class="button-pink tracking-normal text-lg normal-case font-semibold flex items-center mx-auto mt-8">
+          Check ook de Outsite documentaire
+          <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+        </button>
+      </a>
     </section>
 
     <section id="activities" class="relative page-ender pt-48 md:pt-20">
@@ -110,10 +116,12 @@ nl:
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
 import Panda from '#/assets/images/outsite_panda_cropped.svg?inline'
 
 export default {
   components: {
+    Zondicon,
     Panda,
   },
   async asyncData({ $content, app }) {

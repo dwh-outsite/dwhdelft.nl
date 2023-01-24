@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "inquirer": "^8.2.1",
+    "inquirer": "^9.1.4",
     "prettier": "^2.8.3"
   },
   "resolutions": {

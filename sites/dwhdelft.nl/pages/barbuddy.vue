@@ -57,7 +57,7 @@ nl:
 export default {
   async asyncData({ $content, app }) {
     const barBuddies = await $content('barbuddies')
-      .where({ [app.i18n.locale]: { $type: 'string' } })
+      .where({ [app.i18n.locale]: { $type: 'string' }, sites: { $contains: 'dwh' } })
       .fetch()
 
     return { barBuddies }

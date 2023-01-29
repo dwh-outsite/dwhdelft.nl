@@ -6,7 +6,7 @@ en:
     about DWH but they can also introduce you to new people.
   sign_up: Sign up for a bar buddy
   action: Find a bar buddy
-  barbuddies_title: Our <strong>Bar Buddies</strong>
+  bar_buddies_title: Our <strong>Bar Buddies</strong>
 nl:
   title: Barbuddies
   description: Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak

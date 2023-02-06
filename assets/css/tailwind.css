@@ -109,15 +109,13 @@ html {
 @tailwind utilities;
 
 @layer utilities {
-  @variants responsive {
-    .text-columns-1 {
-      columns: 1;
-    }
-    .text-columns-2 {
-      columns: 2;
-    }
-    .text-columns-3 {
-      columns: 3;
-    }
+  .text-columns-1 {
+    columns: 1;
+  }
+  .text-columns-2 {
+    columns: 2;
+  }
+  .text-columns-3 {
+    columns: 3;
   }
 }

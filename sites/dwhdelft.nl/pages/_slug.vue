@@ -21,7 +21,7 @@ export default {
   async asyncData({ $content, params, app, error }) {
     let showLanguageWarning = false
 
-    const slug = params.slug.replace('-', '_')
+    const slug = params.slug.replace(/-/g, '_')
     const content = await $content(`pages/${slug}.${app.i18n.locale}`)
       .fetch()
       .catch(() => {

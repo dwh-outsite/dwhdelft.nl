@@ -24,7 +24,7 @@ en:
         coming out stories, in the chats people can exchange advice about dating
         or their transition.
       image: support
-      nl:
+nl:
   bulletPoints:
     - title: Activisme
       description: Wij zijn voorvechters van LHBT+ rechten in onze regio. We spreken

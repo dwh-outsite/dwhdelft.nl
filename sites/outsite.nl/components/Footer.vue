@@ -60,12 +60,12 @@ nl:
                 :email="member.email"
               />
               <a
-              href="https://dwhdelft.nl/lets-talk"
+                href="https://dwhdelft.nl/lets-talk"
                 class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
               >
                 {{ $t('confidential_counsellors') }}
                 <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-            </a>
+              </a>
             </div>
             <div>
               <img

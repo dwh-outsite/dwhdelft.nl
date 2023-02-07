@@ -11,7 +11,7 @@ en:
       description: 'Throughout the year we organise a lot a big events. Karoake's, drag shows and LAN parties for ourselves, but also Purple Friday and since recently Delft Pride, to promote the LGBT+ acceptance under the greater public.'
         image: events
     - title: Support
-      description: 'NExt to all the fun activities, we are here to support each other. In our KMG, young people can safely talk about their coming out stories, in the chats people can exchange advice about dating or their transition.'
+      description: 'Next to all the fun activities, we are here to support each other. In our introductory group, young people can safely talk about their coming out stories, in the chats people can exchange advice about dating or their transition.'
       image: support
 nl:
   bulletPoints:
@@ -25,7 +25,7 @@ nl:
       description: 'Door het jaar heen organiseren we tal van activiteiten. Karaoke's, drag shows en LAN parties voor onszelf, maar ook Paarse Vrijdag en sinds kort Delft Pride, zo promoten we LHBT+ acceptatie onder het grotere publiek.'
       image: events
     - title: Support
-      description: 'Naast alle leuke activiteiten zijn we er ook om elkaar te steunen. In onze KMG kunnen jongeren veilig hun coming out bespreken, en in de chats wisselen mensen advies uit over daten of hun transitie.'
+      description: 'Naast alle leuke activiteiten zijn we er ook om elkaar te steunen. In onze kennismakingsgroep kunnen jongeren veilig hun coming out bespreken, en in de chats wisselen mensen advies uit over daten of hun transitie.'
       image: support
 </i18n>
 

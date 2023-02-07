@@ -7,7 +7,7 @@ en:
     to know about Outsite.
   sign_up: Sign up for a bar buddy
   action: Find a bar buddy
-  barbuddies_title: Our <strong>Bar Buddies</strong>
+  bar_buddies_title: Our <strong>Bar Buddies</strong>
 nl:
   title: Barbuddies
   description: Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld

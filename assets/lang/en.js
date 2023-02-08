@@ -20,7 +20,7 @@ export default {
       address: 'Address',
       postal_code: 'Postal Code',
       pronouns: 'Pronouns',
-      barbuddy: 'Who would you like to meet?',
+      barbuddy: 'Who would you prefer to meet? (depending on availability)',
       membership_fee: 'Membership Fee (see below)',
       iban: 'IBAN number for payment by direct debit (no spaces)',
       message: 'Message',

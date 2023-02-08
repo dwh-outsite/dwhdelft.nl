@@ -1,7 +1,9 @@
 ---
 name: Stefan
+pronouns: 
+  nl: hij/hem
+  en: he/him
 sites:
-  - dwh
   - outsite
 nl:
   Hoi! Ik ben Stefan, 25 jaar en masterstudent in de richting van transport, infrastructuur en logistiek. Ik ben voor

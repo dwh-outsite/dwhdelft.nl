@@ -102,7 +102,6 @@ nl:
 <script>
 import Zondicon from 'vue-zondicons'
 import InstagramIcon from '#/assets/images/social/instagram.svg?inline'
-import FacebookIcon from '#/assets/images/social/facebook.svg?inline'
 import YouTubeIcon from '#/assets/images/social/youtube.svg?inline'
 import GitHubIcon from '#/assets/images/social/github.svg?inline'
 
@@ -112,9 +111,8 @@ export default {
     return {
       socials: [
         { url: 'https://instagram.com/outsite_delft', icon: InstagramIcon },
-        { url: 'https://facebook.com/outsite', icon: FacebookIcon },
-        { url: 'https://youtube.com/channel/UCtsabdS5sH7EA-DjLkBPLfQ', icon: YouTubeIcon },
-        { url: 'https://github.com/dwh-outsite/outsite.nl', icon: GitHubIcon },
+        { url: 'https://www.youtube.com/@dwhdelft', icon: YouTubeIcon },
+        { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
       ],
       links: [
         { name: 'Privacy', url: this.localePath('/privacy') },

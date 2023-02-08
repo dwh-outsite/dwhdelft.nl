@@ -6,7 +6,7 @@ en:
     about DWH but they can also introduce you to new people.
   sign_up: Sign up for a bar buddy
   action: Find a bar buddy
-  barbuddies_title: Our <strong>Bar Buddies</strong>
+  bar_buddies_title: Our <strong>Bar Buddies</strong>
 nl:
   title: Barbuddies
   description: Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
@@ -35,7 +35,7 @@ nl:
         <div class="container px-1 py-3 mx-auto">
           <div class="lg:flex flex-wrap -mx-2 mt-2">
             <div v-for="buddy in barBuddies" :key="buddy.name" class="lg:w-1/2 p-2">
-              <BarBuddyCard :buddy="buddy" @meet="meetWith(buddy)" />
+              <BarBuddyCard :buddy="buddy" />
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ nl:
         <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
           {{ $t('sign_up') }}
         </h2>
-        <BarBuddyForm :bar-buddies="barBuddies" :selected="selectedBarBuddy" />
+        <BarBuddyForm :bar-buddies="barBuddies" />
       </div>
     </section>
   </div>
@@ -57,21 +57,10 @@ nl:
 export default {
   async asyncData({ $content, app }) {
     const barBuddies = await $content('barbuddies')
-      .where({ [app.i18n.locale]: { $type: 'string' } })
+      .where({ [app.i18n.locale]: { $type: 'string' }, sites: { $contains: 'dwh' } })
       .fetch()
 
     return { barBuddies }
-  },
-  data() {
-    return {
-      selectedBarBuddy: undefined,
-    }
-  },
-  methods: {
-    meetWith(buddy) {
-      this.selectedBarBuddy = buddy
-      window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
-    },
   },
 }
 </script>

@@ -47,6 +47,10 @@ categories:
           nl: Inschrijven als lid
           en: Join as a member
         url: "https://my.dwhdelft.nl/signup"
+      - name:
+          nl: "My DWH: Inloggen als lid"
+          en: "My DWH: Log in as a member"
+        url: "https://my.dwhdelft.nl/"
   - name:
       nl: Vereniging
       en: Association
@@ -76,10 +80,6 @@ categories:
           en: Contact
         url: /contact
       - name:
-          nl: "My DWH: Inloggen als lid"
-          en: "My DWH: Log in as a member"
-        url: "https://my.dwhdelft.nl/"
-      - name:
           nl: Privacy
           en: Privacy
         url: /privacy
@@ -87,3 +87,7 @@ categories:
           nl: Huisregels
           en: House Rules
         url: /house-rules
+      - name:
+          nl: Gedragsregels
+          en: Code of Conduct
+        url: /code-of-conduct

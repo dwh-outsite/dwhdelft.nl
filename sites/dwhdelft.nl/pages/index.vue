@@ -1,8 +1,8 @@
 <i18n lang="yaml">
 en:
   hero:
-    title: LGBT+ association since 1968
-    subtitle: For everyone in the Delft area!
+    title: LGBT+ in Delft and surroundings
+    subtitle: DWH is the community for everyone, to meet up with each other, support each other, and to fight for our rights together.
     leftButton: Check out DWH
     rightButton: Opening Hours
   description:
@@ -17,8 +17,8 @@ en:
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Saturday starting at {0}</strong>'
 nl:
   hero:
-    title: LHBT+ vereniging sinds 1968
-    subtitle: Voor iedereen in Delft en omgeving!
+    title: LHBT+ in Delft en omgeving
+    subtitle: DWH is de community voor iedereen, om elkaar te ontmoeten, elkaar te supporten, en samen voor onze rechten op te komen.
     leftButton: Kom naar DWH
     rightButton: Openingstijden
   description:
@@ -37,7 +37,10 @@ nl:
   <div>
     <Header>
       <h1 class="text-4xl text-white font-normal" v-text="$t('hero.title')" />
-      <h2 class="text-2xl text-white mt-2 font-light" v-text="$t('hero.subtitle')" />
+      <h2
+        class="text-2xl text-white mt-2 font-light md:w-2/3 lg:w-1/2 [text-shadow:0_2px_4px_rgba(0,0,0,0.35)]"
+        v-text="$t('hero.subtitle')"
+      />
       <div class="mt-8 flex">
         <a href="#join-dwh">
           <button class="block button-pink" v-text="$t('hero.leftButton')" />

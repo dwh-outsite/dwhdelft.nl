@@ -37,7 +37,10 @@ nl:
   <div>
     <Header>
       <h1 class="text-4xl text-white font-normal" v-text="$t('hero.title')" />
-      <h2 class="text-2xl text-white mt-2 font-light md:w-2/3 lg:w-1/2" v-text="$t('hero.subtitle')" />
+      <h2
+        class="text-2xl text-white mt-2 font-light md:w-2/3 lg:w-1/2 [text-shadow:0_2px_4px_rgba(0,0,0,0.35)]"
+        v-text="$t('hero.subtitle')"
+      />
       <div class="mt-8 flex">
         <a href="#join-dwh">
           <button class="block button-pink" v-text="$t('hero.leftButton')" />

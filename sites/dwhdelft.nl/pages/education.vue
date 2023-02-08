@@ -82,6 +82,7 @@ nl:
           <p v-for="paragraph in $t('content.voorlichting')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
         </div>
       </div>
+      <Educators class="pb-12" />
     </SkewedSection>
   </div>
 </template>

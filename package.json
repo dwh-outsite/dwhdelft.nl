@@ -39,7 +39,7 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "inquirer": "^8.2.1",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.4"
   },
   "resolutions": {
     "@nuxt/kit": "3.0.0-rc.13"

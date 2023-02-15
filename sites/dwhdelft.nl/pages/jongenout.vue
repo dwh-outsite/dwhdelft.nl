@@ -92,7 +92,7 @@ nl:
                     <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
                       <Zondicon icon="time" class="fill-current w-4" />
                     </div>
-                    <div class="ml-3 leading-tight">13.00 - 16.00</div>
+                    <div class="ml-3 leading-tight">14.00 - 17.00</div>
                   </div>
                   <div class="flex items-center mb-4">
                     <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">

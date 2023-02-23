@@ -61,21 +61,19 @@ nl:
       <p class="mt-4">{{ $t('outro_text') }}</p>
     </PageIntroText>
 
-    <section class="bg-gray-200 py-4 md:pt-12 md:pb-24">
-      <div class="mx-auto container px-4 flex justify-center flex-wrap">
-        <div
-          v-for="counsellor in counsellors"
-          :key="counsellor.name"
-          class="w-4/5 md:w-3/4 xl:w-2/5 bg-white rounded shadow-lg p-8 m-4 text-lg"
-        >
-          <h4 class="font-semibold text-xl" v-text="counsellor.name" />
-          <span class="text-gray-700">{{ $t('role_title') }}</span>
-          <span class="mt-8 flex">
-            <div class="rounded-full w-8 h-8 p-2 bg-gray-700 text-white">
-              <Zondicon icon="envelope" class="fill-current w-4" />
-            </div>
-            <div class="ml-3" v-text="counsellor.email" />
-          </span>
+    <section class="bg-gray-200 bg- py-4 md:pt-12 md:pb-24">
+      <div class="container mx-auto flex justify-center flex-wrap">
+        <div v-for="counsellor in counsellors" :key="counsellor.name" class="w-full lg:w-1/2 p-4">
+          <div class="bg-white rounded shadow-lg p-8 text-lg">
+            <h4 class="font-semibold text-xl" v-text="counsellor.name" />
+            <span class="text-gray-700">{{ $t('role_title') }}</span>
+            <span class="mt-8 flex">
+              <div class="rounded-full w-8 h-8 p-2 bg-gray-700 text-white">
+                <Zondicon icon="envelope" class="fill-current w-4" />
+              </div>
+              <div class="ml-3" v-text="counsellor.email" />
+            </span>
+          </div>
         </div>
       </div>
     </section>

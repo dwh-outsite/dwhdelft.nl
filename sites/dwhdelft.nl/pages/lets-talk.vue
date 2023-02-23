@@ -66,7 +66,7 @@ nl:
         <div
           v-for="counsellor in counsellors"
           :key="counsellor.name"
-          class="bg-white rounded shadow-lg p-8 md:pr-36 m-4 text-lg"
+          class="w-4/5 md:w-3/4 xl:w-2/5 bg-white rounded shadow-lg p-8 m-4 text-lg"
         >
           <h4 class="font-semibold text-xl" v-text="counsellor.name" />
           <span class="text-gray-700">{{ $t('role_title') }}</span>
@@ -74,7 +74,7 @@ nl:
             <div class="rounded-full w-8 h-8 p-2 bg-gray-700 text-white">
               <Zondicon icon="envelope" class="fill-current w-4" />
             </div>
-            <div class="ml-3 min-w-[325px]" v-text="counsellor.email" />
+            <div class="ml-3" v-text="counsellor.email" />
           </span>
         </div>
       </div>
@@ -93,7 +93,6 @@ export default {
         { name: 'Andreas Zafiropoulos', email: 'vertrouwenspersoon-andreas@dwhdelft.nl' },
         { name: 'Bernard Schendstok', email: 'vertrouwenspersoon-bernard@dwhdelft.nl' },
         { name: 'Dries Stuij', email: 'vertrouwenspersoon-dries@dwhdelft.nl' },
-        // { name: 'Niamh Henssen', email: 'vertrouwenspersoon-niamh@dwhdelft.nl' },
       ],
     }
   },

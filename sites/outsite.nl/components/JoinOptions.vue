@@ -63,7 +63,7 @@ nl:
     action: Doe mee aan de KMG
     sign_up: Aanmelden voor de KMG
   bar_buddy:
-    title: "Barbuddy's"
+    title: Barbuddies
     description: Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld
       je dan aan voor een barbuddy! Een barbuddy is iemand die van tevoren met je afspreekt zodat je samen naar de
       baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten

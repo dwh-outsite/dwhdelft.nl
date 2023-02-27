@@ -25,7 +25,7 @@ nl:
       description: "Door het jaar heen organiseren we tal van activiteiten. Karaoke's, drag shows en LAN parties voor onszelf, maar ook Paarse Vrijdag en sinds kort Delft Pride, zo promoten we LHBT+ acceptatie onder het grotere publiek."
       image: events
     - title: Support
-      description: "Naast alle leuke activiteiten, zijn we er voor elkaar. In onze kennismakingsgroep, praten jongeren veilig over hun coming out, en daarnaast in de chatgroepen kan men advies uitwisselen over daten of hun transitie."
+      description: "Naast alle leuke activiteiten, zijn we er voor elkaar. In onze kennismakingsgroep praten jongeren veilig over hun coming out, en daarnaast in de chatgroepen kan men advies uitwisselen over daten of hun transitie."
       image: support
 </i18n>
 

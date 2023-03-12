@@ -34,7 +34,7 @@ nl:
 
     <div class="container mx-auto px-4 mb-12">
       <h2 class="text-brand-400 font-medium text-5xl text-center mb-8">Verplichte <strong>Functies</strong></h2>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div v-for="profile in mainProfiles" :key="profile.slug" class="rounded-lg shadow-xl overflow-hidden">
           <div class="bg-brand-500 text-white px-4 py-2">
             <h3 class="font-bold text-xl">{{ profile.title }}</h3>
@@ -51,7 +51,7 @@ nl:
       <p class="mb-4 text-center">
         Naast de kerntaken zijn er ook andere rollen die iemand in het bestuur zou kunnen vervullen. Zo zijn daar:
       </p>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div v-for="profile in otherProfiles" :key="profile.slug" class="rounded-lg shadow-xl overflow-hidden">
           <div class="bg-brand-500 text-white px-4 py-2">
             <h3 class="font-bold text-xl">{{ profile.title }}</h3>

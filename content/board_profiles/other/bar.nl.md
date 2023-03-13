@@ -2,4 +2,5 @@
 title: Pand/bar
 ---
 
-MIXUP en feesten.
+Zaken rondom de bar, MIXUP en feesten.
+Daarnaast coördinatie van facilitaire taken en onderhoud in het pand.

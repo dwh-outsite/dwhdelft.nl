@@ -8,7 +8,7 @@ Je kan secuur werken aan financiën of verslagen, of je maakt makkelijk een praa
 
 **Algemene eisen**
 
-1. X uur per week, kan verspreid of in spurts;
+1. 6-12 uur per week, kan verspreid of in spurts, afhankelijk van functie en invulling;
 2. Gevoel voor hoe het met de vereniging gaat en wat er kan verbeteren;
 3. Je pakt makkelijk iets nieuws op en leert hoe het werkt;
 4. En je laat het ook makkelijk weer los wanneer het over te dragen is aan een ander.

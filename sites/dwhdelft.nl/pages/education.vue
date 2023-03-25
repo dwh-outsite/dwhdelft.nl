@@ -3,8 +3,9 @@ nl:
   title: Voorlichting
   titles:
     jongenout: 'Zie ook: <strong>Jong&Out Delft</strong>'
-    voorlichting: Hoe ziet een voorlichting eruit?
+    voorlichting: Hoe ziet een gastles eruit?
     contact: Interesse in een voorlichting?
+    educators: Onze <strong>Voorlichters</strong>
   content:
     intro:
       - DWH geeft gastlessen over LHBT+ onderwerpen zoals gender en seksualiteit, met als doel vooroordelen en
@@ -28,7 +29,8 @@ nl:
       spelletjesmiddagen, drag karaoke of waterfietsen.
     voorlichting:
       - Een voorlichting (op het voortgezet onderwijs) wordt gegeven door twee voorlichters, gedurende een of twee
-        lesuren. Met een associatiespel worden leerlingen gevraagd alle termen te roepen die ze met LHBT+ associëren,
+        lesuren.
+      - Met een associatiespel worden leerlingen gevraagd alle termen te roepen die ze met LHBT+ associëren,
         zonder dat antwoorden als goed of fout worden aangemerkt – zo blijft het gesprek open. Daarna gaan de
         voorlichters in op de verschillende termen binnen LHBT+ en op de genoemde vooroordelen. Door hun persoonlijke
         verhalen te koppelen aan soortgelijke ervaringen van leerlingen bouwen we aan wederzijds begrip en het wegnemen
@@ -44,8 +46,8 @@ nl:
       {{ $t('title') }}
     </SmallHeader>
 
-    <PageIntroText :center="false">
-      <div class="md:flex md:space-x-12">
+    <PageIntroText class="pb-2" :center="false">
+      <div class="lg:flex lg:space-x-12">
         <div class="flex-1">
           <LanguageWarning v-if="$i18n.locale == 'en'" class="mb-12" />
           <p
@@ -55,7 +57,7 @@ nl:
             v-html="paragraph"
           />
         </div>
-        <div class="md:w-1/4">
+        <div class="lg:w-1/3 xl:w-1/4">
           <nuxt-link :to="localePath('jongenout')">
             <Announcement class="space-y-2">
               <h2 class="font-semibold text-2xl" v-html="$t('titles.jongenout')" />
@@ -67,22 +69,30 @@ nl:
       </div>
     </PageIntroText>
 
-    <SkewedSection triangle-class="border-brand-500" content-class="bg-brand-500" :bottom="false">
-      <div
-        class="container px-4 mx-auto relative z-10 md:flex justify-center space-y-12 md:space-y-0 md:space-x-8 pt-4 pb-12"
-      >
-        <div class="bg-brand-100 bg-opacity-80 backdrop-blur p-4 md:p-8 rounded-lg shadow-xl flex-1 mt-[-8.555vw]">
+    <section>
+      <div class="container px-4 mx-auto mb-6">
+        <h1 class="text-brand-400 font-medium text-5xl" v-html="$t('titles.educators')" />
+      </div>
+      <div class="bg-brand-500">
+        <Educators class="container mx-auto px-4 py-12 text-base" />
+      </div>
+    </section>
+
+    <SkewedSection triangle-class="border-brand-800" content-class="bg-brand-800" class="bg-brand-500" :bottom="false">
+      <div class="container px-4 mx-auto relative z-10 xl:flex justify-center py-12">
+        <div class="xl:w-1/2 text-white mb-12 xl:mb-0 xl:pr-6">
+          <h1 class="font-medium leading-none text-5xl mb-4" v-html="$t('titles.voorlichting')"></h1>
+          <p v-for="paragraph in $t('content.voorlichting')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
+        </div>
+
+        <div
+          class="flex-1 bg-brand-100 bg-opacity-80 backdrop-blur p-4 xl:p-8 rounded-lg shadow-xl xl:mt-[-14.555vw] xl:ml-6"
+        >
           <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="$t('titles.contact')" />
           <p v-for="paragraph in $t('content.contact')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
           <EducationForm />
         </div>
-
-        <div class="flex-1 text-white">
-          <h1 class="font-medium leading-none text-5xl mb-4" v-html="$t('titles.voorlichting')"></h1>
-          <p v-for="paragraph in $t('content.voorlichting')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
-        </div>
       </div>
-      <Educators class="pb-12" />
     </SkewedSection>
   </div>
 </template>

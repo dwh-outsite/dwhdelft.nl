@@ -71,10 +71,12 @@ nl:
     </section>
 
     <div class="-mt-64">
-      <SkewedSection content-class="bg-brand-100" triangle-class="border-brand-100" :bottom="false">
-        <div class="pb-25 pt-25">
-          <BulletPoints class="relative x-50 z-20 pt-40 md:pt-60 pb-12 md:pb-16" />
-        </div>
+      <SkewedSection
+        content-class="bg-brand-100 pt-24 md:pt-12 pb-12"
+        triangle-class="border-brand-100"
+        :bottom="false"
+      >
+        <BulletPoints />
       </SkewedSection>
     </div>
 

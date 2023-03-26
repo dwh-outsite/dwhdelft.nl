@@ -68,7 +68,7 @@ events:
       en: Saturday
       nl: Zaterdag
     start_time: '21:00'
-    end_time: '01:00'
+    end_time: '02:00'
     description:
       en: |-
         MIXUP is thé queer bar night of Delft. Meet new people, come dance at our regular
@@ -81,3 +81,19 @@ events:
         en: MIXUP on Instagram
         nl: MIXUP op Instagram
       url: https://www.instagram.com/mixupdelft/
+
+  - name: QT
+    day:
+      en: Sunday
+      nl: Zondag
+    start_time: '17:00'
+    end_time: '21:00'
+    description:
+      en: |-
+        Do you like going out but not being loud? Do you want to go out but prefer staying in?
+        Then come visit our QT evening where you can have a nice chat, read books or
+        play some board games with other in the community.
+      nl: |-
+        Ga je graag uit, maar niet luid? Wil je er op uit maar blijf je toch liever binnen?
+        Kom dan een keer langs bij de QT-avond waar je rustig kunt praten, boeken kunt lezen
+        of wat bordspellen kunt spelen met andere mensen in de gemeenschap.

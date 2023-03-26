@@ -1,58 +1,48 @@
 <i18n lang="yaml">
 en:
-  announcement: <strong>DWH</strong> is open 4 nights a week
+  announcement: <strong>DWH</strong> is open {count} nights a week
 nl:
-  announcement: <strong>DWH</strong> is elke week op 4 avonden open
+  announcement: <strong>DWH</strong> is elke week op {count} avonden open
 </i18n>
 
 <template>
-  <div class="container px-4 mx-auto py-16 md:pb-24">
-    <h2 class="text-center text-brand-500 font-medium text-5xl mb-12 leading-tight" v-html="$t('announcement')" />
-    <div class="md:flex flex-wrap justify-center -mx-2">
-      <div v-for="event in openingHours" :key="event.name" class="p-2 mb-4 xl:mb-0 md:w-1/2 xl:flex-1 xl:w-auto">
-        <div class="rounded shadow bg-brand-100 flex flex-col justify-between h-full">
-          <div class="p-6">
-            <div class="flex items-center mb-2">
-              <h4 class="flex-1 text-brand-500 font-semibold text-2xl" v-text="event.name" />
-              <div v-if="event.restrictions">
-                <div
-                  v-for="restriction in event.restrictions"
-                  :key="restriction"
-                  class="ml-4 text-center flex items-center"
-                >
-                  <div
-                    class="bg-brand-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider"
-                    v-text="$tt(restriction)"
-                  />
-                </div>
-              </div>
+  <div class="container px-4 mx-auto py-16">
+    <h2
+      class="text-center text-brand-500 font-medium text-5xl mb-6 leading-tight"
+      v-html="$t('announcement', { count: openingHours.length })"
+    />
+
+    <table class="w-2/3 mx-auto border-separate border-spacing-y-16">
+      <tr v-for="event in openingHours" :key="event.name" class="border-b">
+        <td class="align-top pt-1">
+          <div class="text-gray-500 text-2xl uppercase font-semibold" v-text="$tt(event.day)" />
+          <div class="text-gray-400 text-xl mb-2" v-text="event.start_time" />
+          <div v-if="event.restrictions" class="space-x-2">
+            <div v-for="restriction in event.restrictions" :key="restriction" class="text-center flex items-center">
+              <div
+                class="bg-brand-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider"
+                v-text="$tt(restriction)"
+              />
             </div>
-            <div class="bg-white rounded px-3 mb-4 tracking-wider flex items-center border border-brand-200">
-              <Zondicon icon="calendar" class="fill-current h-4 inline mr-2 text-brand-500" />
-              <div class="flex-1 py-2">
-                {{ $tt(event.day) }}
-              </div>
-              <div class="border-l border-brand-200 pl-3 py-2" v-text="event.start_time" />
-            </div>
-            <p v-html="$tt(event.description)" />
           </div>
+        </td>
+        <td class="align-top">
+          <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />
+          <p class="text-gray-500" v-html="$tt(event.description)" />
           <a
             v-if="event.link"
             :href="event.link.url"
-            class="bg-brand-500 hover:bg-brand-300 py-3 rounded-b text-white uppercase font-semibold tracking-wider text-center"
+            class="mt-6 inline-block button-pink px-5 py-2 text-sm font-semibold"
             v-html="$tt(event.link.name)"
           />
-        </div>
-      </div>
-    </div>
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
-import Zondicon from 'vue-zondicons'
-
 export default {
-  components: { Zondicon },
   data() {
     return {
       openingHours: [],

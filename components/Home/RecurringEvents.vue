@@ -12,12 +12,12 @@ nl:
       v-html="$t('announcement', { count: openingHours.length })"
     />
 
-    <table class="w-2/3 mx-auto border-separate border-spacing-y-16">
-      <tr v-for="event in openingHours" :key="event.name" class="border-b">
-        <td class="align-top pt-1">
+    <table class="lg:w-2/3 mx-auto border-separate border-spacing-y-16">
+      <tr v-for="event in openingHours" :key="event.name">
+        <td class="align-top pt-1 block md:table-cell mb-4 md:mb-0">
           <div class="text-gray-500 text-2xl uppercase font-semibold" v-text="$tt(event.day)" />
-          <div class="text-gray-400 text-xl mb-2" v-text="event.start_time" />
-          <div v-if="event.restrictions" class="space-x-2">
+          <div class="text-gray-400 text-xl" v-text="event.start_time" />
+          <div v-if="event.restrictions" class="space-x-2 pt-2">
             <div v-for="restriction in event.restrictions" :key="restriction" class="text-center flex items-center">
               <div
                 class="bg-brand-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider"
@@ -26,7 +26,7 @@ nl:
             </div>
           </div>
         </td>
-        <td class="align-top">
+        <td class="align-top block md:table-cell">
           <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />
           <p class="text-gray-500" v-html="$tt(event.description)" />
           <a

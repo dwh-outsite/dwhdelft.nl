@@ -84,6 +84,14 @@ nl:
       <RecurringEvents />
     </section>
 
+    <section class="-mt-24">
+      <SkewedSection content-class="bg-brand-800" triangle-class="border-brand-800" :bottom="false">
+        <div class="container mx-auto px-4 pt-12 pb-16">
+          <InstagramChannels />
+        </div>
+      </SkewedSection>
+    </section>
+
     <section id="eatingout" class="bg-gray-200">
       <EatingOut />
     </section>

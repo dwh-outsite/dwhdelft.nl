@@ -23,8 +23,10 @@ nl:
           class="flex-1 h-80 py-8 px-4 md:pr-40 background text-white text-shadow flex flex-col justify-center items-end"
         >
           <div>
-            <div class="backdrop-blur-lg bg-white bg-opacity-25 shadow rounded-full flex space-x-6 items-center">
-              <div class="rounded-full w-20 h-20 p-6 bg-brand-450 text-white mx-auto">
+            <div
+              class="backdrop-blur-md bg-white bg-opacity-25 shadow rounded-xl md:rounded-full flex space-x-6 items-center"
+            >
+              <div class="hidden md:block rounded-full w-20 md:h-20 p-6 bg-brand-450 text-white mx-auto">
                 <Zondicon icon="location-food" class="fill-current" />
               </div>
               <div class="pr-6">

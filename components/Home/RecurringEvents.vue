@@ -6,9 +6,9 @@ nl:
 </i18n>
 
 <template>
-  <div class="container px-4 mx-auto py-16">
+  <div class="container px-4 mx-auto py-8 md:py-16">
     <h2
-      class="text-center text-brand-500 font-medium text-5xl mb-6 leading-tight"
+      class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight"
       v-html="$t('announcement', { count: openingHours.length })"
     />
 

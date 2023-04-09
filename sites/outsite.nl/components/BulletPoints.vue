@@ -38,17 +38,13 @@ nl:
 
 <template>
   <div class="container mx-auto px-4">
-    <div class="md:flex -mx-3">
-      <div
-        v-for="point in $t('bulletPoints')"
-        :key="point.title"
-        class="flex-1 rounded-md bg-white mx-3 mb-4 shadow-lg"
-      >
-        <div class="">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div v-for="point in $t('bulletPoints')" :key="point.title" class="rounded-md bg-white shadow-lg">
+        <div>
           <div class="w-full h-40 rounded-t overflow-hidden mx-auto">
             <img
               :src="require(`#/assets/images/photos/bullets/bullet_${point.image}.png`)"
-              class="object-cover w-full"
+              class="object-cover w-full h-full"
             />
           </div>
         </div>

@@ -24,7 +24,7 @@ nl:
       <div class="md:w-1/3 md:border-l md:pl-6 md:ml-6">
         <ContactOptions email="bestuur@dwhdelft.nl" :dark="true" />
         <a href="https://my.dwhdelft.nl">
-          <Announcement class="md:w-2/3">
+          <Announcement class="xl:w-2/3">
             {{ $t('my') }}
             <span class="text-xl font-bold block">my.dwhdelft.nl</span>
           </Announcement>
@@ -74,7 +74,7 @@ nl:
     <SkewedSection content-class="bg-purple-800" triangle-class="border-purple-800" :connect="true" :bottom="false">
       <div class="container mx-auto px-4 pt-12 pb-4 md:pb-12">
         <h1 class="text-white font-medium text-5xl mb-12" v-html="$t('titles.board')" />
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
           <div
             v-for="member in boardMembers"
             :key="member.name"

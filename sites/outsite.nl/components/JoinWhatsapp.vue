@@ -11,13 +11,13 @@ nl:
 
 <template>
   <div class="mx-auto container relative">
-    <div class="xl:h-28 xl:absolute z-50 -top-14 p-4 w-full text-center">
+    <div class="lg:h-28 lg:absolute z-50 -top-14 p-4 w-full text-center">
       <form
-        class="bg-white rounded-lg xl:rounded-full shadow-xl overflow-hidden h-full xl:inline-flex justify-between items-center xl:w-5/6"
+        class="bg-white rounded-lg lg:rounded-full shadow-xl overflow-hidden h-full lg:inline-flex justify-between items-center w-full xl:w-5/6"
         @submit="submitForm"
       >
         <div class="text-2xl py-4 px-8 flex-1 flex items-center">
-          <WhatsAppLogo class="fill-current text-green-400 h-32 md:h-20 xl:h-12 mr-4" />
+          <WhatsAppLogo class="fill-current text-green-400 h-32 md:h-20 lg:h-12 mr-4" />
 
           <div v-if="state == 'cta'" v-html="$t('description')" />
 
@@ -71,7 +71,7 @@ nl:
         <button
           v-if="state == 'cta'"
           type="button"
-          class="bg-green-400 h-full px-8 text-white text-xl font-bold tracking-wider uppercase flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r w-full xl:w-auto"
+          class="bg-green-400 h-full px-8 text-white text-xl font-bold tracking-wider uppercase flex items-center justify-center py-2 rounded-b lg:rounded-b-none lg:rounded-r w-full lg:w-auto"
           @click="state = 'form'"
         >
           <div>{{ $t('button') }}</div>
@@ -80,7 +80,7 @@ nl:
           v-if="state == 'form'"
           :disabled="formStatus === 'loading'"
           type="submit"
-          class="bg-green-400 h-full px-8 text-white text-xl font-bold tracking-wider uppercase flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r w-full xl:w-auto disabled:bg-green-300"
+          class="bg-green-400 h-full px-8 text-white text-xl font-bold tracking-wider uppercase flex items-center justify-center py-2 rounded-b lg:rounded-b-none lg:rounded-r w-full lg:w-auto disabled:bg-green-300"
         >
           {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
           <Zondicon icon="arrow-thin-right" class="w-4 ml-2 fill-current" />

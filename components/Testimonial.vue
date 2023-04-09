@@ -41,7 +41,7 @@ nl:
     </div>
 
     <div
-      class="hidden md:block mx-auto rounded-full bg-white shadow-lg relative overflow-hidden w-2/3 bg-hero-falling-triangles"
+      class="hidden md:block mx-auto rounded-full bg-white shadow-lg relative overflow-hidden w-5/6 xl:w-2/3 bg-hero-falling-triangles"
     >
       <div v-for="(testimonial, index) in testimonials" :key="index">
         <transition name="slide-right">

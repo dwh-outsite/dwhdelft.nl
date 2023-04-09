@@ -7,7 +7,7 @@
         </nuxt-link>
         <div
           v-show="showMenu"
-          class="md:hidden absolute z-60 top-16 text-white backdrop-blur-xl bg-white bg-opacity-10 w-full -ml-4 px-1 py-2 space-y-1 text-lg font-semibold transition-all"
+          class="lg:hidden absolute z-60 top-16 text-white backdrop-blur-xl bg-white bg-opacity-10 w-full -ml-4 p-2 space-y-1 text-lg font-semibold rounded-md transition-all"
         >
           <nuxt-link
             v-for="item in menuItems"
@@ -20,7 +20,7 @@
           <slot name="mobile-menu-extension"></slot>
         </div>
         <div
-          class="hidden md:flex p-1 rounded-full text-lg font-semibold text-white backdrop-blur-lg bg-white bg-opacity-10 shadow"
+          class="hidden lg:flex p-1 rounded-full text-lg font-semibold text-white backdrop-blur-lg bg-white bg-opacity-10 shadow"
         >
           <nuxt-link
             v-for="item in menuItems"
@@ -45,7 +45,7 @@
             </div>
           </div>
           <slot name="menu-extension"></slot>
-          <div class="md:hidden p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
+          <div class="lg:hidden p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
             <div
               class="rounded-full w-7 h-7 p-1 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
               @click="showMenu = !showMenu"

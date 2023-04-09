@@ -87,7 +87,7 @@ nl:
     <section class="-mt-24">
       <SkewedSection content-class="bg-brand-800" triangle-class="border-brand-800" :bottom="false">
         <div class="container mx-auto px-4 pt-12 pb-16">
-          <InstagramChannels />
+          <InstagramChannels class="text-white" :brands="instagramChannels" />
         </div>
       </SkewedSection>
     </section>
@@ -105,6 +105,30 @@ export default {
       barOpeningHours: (await $content(`opening_hours`).fetch()).events.filter(
         (event) => event.day.en === 'Saturday'
       )[0],
+    }
+  },
+  data() {
+    return {
+      instagramChannels: [
+        {
+          name: 'DWH',
+          subtitle: { nl: 'Organisatie', en: 'Organisation' },
+          widgetId: '9555f325abc15974a4a4e4ef0eadfa0a',
+          instagram: 'dwh_delft',
+        },
+        {
+          name: 'Outsite',
+          subtitle: { nl: 'Donderdagen', en: 'Thursdays' },
+          widgetId: '624d8645cce75e45bae0a87c9c761cd6',
+          instagram: 'outsite_delft',
+        },
+        {
+          name: 'MIXUP',
+          subtitle: { nl: 'Zaterdagen', en: 'Saturdays' },
+          widgetId: '219aedf13a4355fe95c6e27ed1f7386c',
+          instagram: 'mixupdelft',
+        },
+      ],
     }
   },
 }

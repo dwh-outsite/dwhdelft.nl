@@ -47,7 +47,7 @@ nl:
   <div>
     <div class="container px-4 mx-auto text-white">
       <div class="md:flex">
-        <div class="md:w-2/3 md:border-r border-gray-600 pt-8">
+        <div class="md:w-2/3 md:border-r border-gray-600 py-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('boardTitle')" />
 
           <div class="md:flex flex-wrap">

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-wrap justify-center">
-    <div v-for="file in files" :key="file.id" class="w-1/2 md:w-1/2 xl:w-1/5 p-2 md:p-3">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-3">
+    <div v-for="file in files" :key="file.id">
       <a :href="file.webViewLink" target="_blank">
         <div class="group shadow-lg rounded-lg overflow-hidden bg-white hover:bg-brand-100 hover:text-brand-500">
           <div>

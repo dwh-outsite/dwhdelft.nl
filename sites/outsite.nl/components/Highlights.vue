@@ -30,8 +30,11 @@ nl:
         :class="[index % 2 == 0 ? '' : 'flex-row-reverse', excerpts ? 'mb-10' : 'mb-16']"
         class="bg-white md:flex rounded-lg overflow-hidden shadow-xl"
       >
-        <div class="h-64 md:w-1/3 overflow-hidden">
-          <img :src="require(`#/assets/images/photos/highlights/${highlight.image}.jpg`)" class="object-cover w-full" />
+        <div class="xl:h-64 md:w-1/3 overflow-hidden">
+          <img
+            :src="require(`#/assets/images/photos/highlights/${highlight.image}.jpg`)"
+            class="object-cover w-full h-full"
+          />
         </div>
         <div class="flex-1 p-8 flex flex-col justify-between">
           <div>

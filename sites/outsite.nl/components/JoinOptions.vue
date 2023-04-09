@@ -86,7 +86,7 @@ nl:
         description: Iedere donderdag komen we samen voor een gezellige
           borrel of leuke activiteit.
       - icon: tablet
-        title: Gezellige WhatsAppgroepen
+        title: Gezellige Appgroepen
         description: We hebben leuke WhatsAppgroepen waar je gezellig kan
           chatten.
       - icon: travel-walk
@@ -112,11 +112,11 @@ nl:
     <div class="text-center">
       <h1 class="text-white font-medium text-5xl" v-html="$t('title')"></h1>
     </div>
-    <div class="md:flex justify-center mt-4">
-      <div class="flex-1 mb-8 md:mb-0 md:mr-2 fade-corners rounded-lg text-white">
+    <div class="lg:flex justify-center mt-4">
+      <div class="flex-1 mb-8 lg:mb-0 lg:mr-2 fade-corners rounded-lg text-white">
         <div class="bg-brand-400 rounded-t-lg pb-6 pt-8 px-8">
-          <div class="md:flex items-center mb-6">
-            <div class="rounded-full w-16 h-16 p-5 bg-white mr-4 text-brand-400 mb-6 md:mb-0">
+          <div class="lg:flex items-center mb-6">
+            <div class="rounded-full w-16 h-16 p-5 bg-white mr-4 text-brand-400 mb-6 lg:mb-0">
               <Zondicon icon="compose" class="fill-current" />
             </div>
             <h2 class="text-xl font-bold uppercase tracking-wider">
@@ -124,7 +124,7 @@ nl:
             </h2>
           </div>
 
-          <p class="text-lg md:text-xl text-white font-semibold mb-6">
+          <p class="text-lg lg:text-xl text-white font-semibold mb-6">
             {{ $t('membership.description') }}
           </p>
 
@@ -138,7 +138,7 @@ nl:
           </a>
         </div>
         <div class="flex flex-wrap -mx-2 pt-6 px-8">
-          <div v-for="advantage in $t('membership.advantages')" :key="advantage.title" class="mb-4 md:w-1/2">
+          <div v-for="advantage in $t('membership.advantages')" :key="advantage.title" class="mb-4 w-full lg:w-1/2">
             <div class="h-full bg-white rounded-lg p-3 pr-4 items-center text-gray-900 mx-2 leading-snug shadow-md">
               <div class="flex items-center mb-1">
                 <div class="rounded-full w-8 h-8 p-2 bg-brand-400 mr-3 text-white">
@@ -150,24 +150,24 @@ nl:
               </div>
               <div class="flex">
                 <div class="pl-8 mr-3" />
-                <p class="text-sm md:text-base leading-tight" v-text="advantage.description" />
+                <p class="text-sm lg:text-base leading-tight" v-text="advantage.description" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex-1 md:ml-2">
+      <div class="flex-1 lg:ml-2">
         <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between">
           <div class="flex-1">
-            <div class="md:flex items-center mb-6">
-              <div class="rounded-full w-16 h-16 p-4 bg-brand-400 mr-4 text-white mb-6 md:mb-0">
+            <div class="lg:flex items-center mb-6">
+              <div class="rounded-full w-16 h-16 p-4 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
                 <Zondicon icon="user-group" class="fill-current" />
               </div>
               <h2 class="text-xl font-bold text-brand-400 uppercase tracking-wider">
                 {{ $t('kmg.title') }}
               </h2>
             </div>
-            <p class="mb-6 text-lg md:text-xl">
+            <p class="mb-6 text-lg lg:text-xl">
               {{ $t('kmg.description') }}
             </p>
           </div>
@@ -179,17 +179,17 @@ nl:
             </a>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between mt-6 md:mt-4">
+        <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between mt-6 lg:mt-4">
           <div class="flex-1">
-            <div class="md:flex items-center mb-6">
-              <div class="rounded-full w-16 h-16 p-5 bg-brand-400 mr-4 text-white mb-6 md:mb-0">
+            <div class="lg:flex items-center mb-6">
+              <div class="rounded-full w-16 h-16 p-5 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
                 <Zondicon icon="beverage" class="fill-current" />
               </div>
               <h2 class="text-xl font-bold text-brand-400 uppercase tracking-wider">
                 {{ $t('bar_buddy.title') }}
               </h2>
             </div>
-            <p class="mb-6 text-lg md:text-xl">
+            <p class="mb-6 text-lg lg:text-xl">
               {{ $t('bar_buddy.description') }}
             </p>
           </div>

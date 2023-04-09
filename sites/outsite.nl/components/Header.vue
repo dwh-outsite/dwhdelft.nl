@@ -3,32 +3,28 @@ en:
   menu:
     - title: Home
       url: index
-    - title: Join Outsite
+    - title: Join
       url: index#join-outsite
-    - title: Reservations
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
     - title: Committees
       url: /committees
     - title: Testimonials
       url: testimonials
+    - title: EatingOUT
+      url: index#eatingout
     - title: Contact
       url: '#contact'
 nl:
   menu:
     - title: Home
       url: index
-    - title: Join Outsite
+    - title: Join
       url: index#join-outsite
-    - title: Reserveren
-      url: book
-    - title: EatingOUT
-      url: index#eatingout
     - title: Commissies
       url: committees
     - title: Ervaringen
       url: testimonials
+    - title: EatingOUT
+      url: index#eatingout
     - title: Contact
       url: '#contact'
 </i18n>

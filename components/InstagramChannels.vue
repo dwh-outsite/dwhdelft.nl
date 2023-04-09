@@ -17,7 +17,7 @@ nl:
             v-for="brand in brands"
             :key="brand.name"
             class="rounded-full px-4 py-2 leading-none text-lg"
-            :class="active === brand ? 'bg-white' : 'text-white'"
+            :class="active === brand ? 'bg-white text-gray-800' : 'text-white'"
             @click="active = brand"
           >
             <div class="font-semibold">{{ brand.name }}</div>

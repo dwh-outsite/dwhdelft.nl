@@ -17,8 +17,8 @@ en:
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at {0}</strong>'
   video:
     title: <strong>Outsite</strong> in 120 seconds
-  activities:
-    title: Upcoming activities
+  instagram:
+    title: Updates and upcoming activities
 nl:
   hero:
     title: 'Delftse LHBT+ jongerenvereniging'
@@ -37,8 +37,8 @@ nl:
     invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf {0}</strong>'
   video:
     title: <strong>Outsite</strong> in 120 seconden
-  activities:
-    title: Aankomende activiteiten
+  instagram:
+    title: Updates en aankomende activiteiten
 </i18n>
 
 <template>
@@ -104,9 +104,17 @@ nl:
       </a>
     </section>
 
-    <section id="activities" class="relative page-ender pt-48 md:pt-20">
+    <section id="activities" class="relative page-ender pt-48 md:pt-20 pb-16">
       <Testimonial class="absolute left-0 right-0 -mt-64 md:-mt-40" />
-      <Activities :title="$t('activities.title')" class="relative z-10 mt-12" />
+      <div class="container mx-auto px-4 relative z-10 mt-12">
+        <InstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
+          <template #title>
+            <h1 class="tracking-wide font-semibold uppercase text-2xl mt-6 mb-10 text-center">
+              {{ $t('instagram.title') }}
+            </h1>
+          </template>
+        </InstagramChannels>
+      </div>
     </section>
 
     <section id="eatingout" class="bg-gray-200">
@@ -129,6 +137,18 @@ export default {
       barOpeningHours: (await $content(`opening_hours`).fetch()).events.filter(
         (event) => event.day.en === 'Thursday'
       )[0],
+    }
+  },
+  data() {
+    return {
+      instagramChannels: [
+        {
+          name: 'Outsite',
+          subtitle: { nl: 'Donderdagen', en: 'Thursdays' },
+          widgetId: '624d8645cce75e45bae0a87c9c761cd6',
+          instagram: 'outsite_delft',
+        },
+      ],
     }
   },
 }

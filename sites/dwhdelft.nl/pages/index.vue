@@ -71,8 +71,12 @@ nl:
     </section>
 
     <div class="-mt-64">
-      <SkewedSection content-class="bg-brand-100" triangle-class="border-brand-100" :bottom="false">
-        <Activities />
+      <SkewedSection
+        content-class="bg-brand-100 pt-24 md:pt-12 pb-12"
+        triangle-class="border-brand-100"
+        :bottom="false"
+      >
+        <BulletPoints />
       </SkewedSection>
     </div>
 

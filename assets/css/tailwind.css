@@ -86,6 +86,10 @@ html {
   @apply mb-4;
 }
 
+.content img {
+  @apply mb-4;
+}
+
 .content a {
   @apply text-brand-600;
 }

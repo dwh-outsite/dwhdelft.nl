@@ -60,7 +60,13 @@ nl:
             class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
             v-html="paragraph"
           />
-          <Invitation :content="$t('description.invitation', [barOpeningHours.start_time])" />
+          <Invitation
+            :content="$t('description.invitation', [barOpeningHours.start_time])"
+            class="my-12 md:mt-10 md:mb-24"
+          />
+          <div class="block md:-mt-4 mb-12 md:mb-0">
+            <HomeAnnouncement />
+          </div>
         </div>
         <div class="hidden lg:block">
           <div class="bg-white p-4 border rotate-[5deg] shadow-lg relative z-50 mr-8 -mt-7">

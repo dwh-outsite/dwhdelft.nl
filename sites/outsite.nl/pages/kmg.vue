@@ -2,10 +2,10 @@
 en:
   title: Introduction Group
   description: Twice a year Outsite organises introduction groups (the so-called KMG). These groups are a chance to
-  not only get to know the association but also to become close to other LGBT+ youth, all under 
-  supervision of two experienced Outsite members. During nine Thursday evenings, you will share
-  coming out stories (if you want to) and are able to learn from each other about being LGBT+. 
-  Furthermore, you may eat together, visit queer parties together and much more!
+    not only get to know the association but also to become close to other LGBT+ youth, all under 
+    supervision of two experienced Outsite members. During nine Thursday evenings, you will share
+    coming out stories (if you want to) and are able to learn from each other about being LGBT+. 
+    Furthermore, you may eat together, visit queer parties together and much more!
   sign_up: Sign up for the introduction group
   next: <strong>The next Introduction Group will start on Thursday February 16th 2023</strong>.
   form:
@@ -13,9 +13,9 @@ en:
 nl:
   title: Kennismakingsgroepen (KMG)
   description: Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
-  van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden
-  deel je met elkaar je coming-out verhaal (als je dat wil) en kun je veel van elkaar leren over het LHBT+ zijn.
-  Bovendien is er gelegenheid om samen te eten, ga je langs een gay feest en nog veel meer!
+    van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden
+    deel je met elkaar je coming-out verhaal (als je dat wil) en kun je veel van elkaar leren over het LHBT+ zijn.
+    Bovendien is er gelegenheid om samen te eten, ga je langs een gay feest en nog veel meer!
   sign_up: Aanmelden voor de KMG
   next: <strong>De volgende KennisMakingsGroep start op donderdag 16 februari 2023</strong>.
   form:

@@ -7,11 +7,10 @@ en:
     together and much more!
   sign_up: Sign up for the introduction group
   next: Just like Outsite, the introduction group (KMG) is aimed at youth and young adults with an age of 28 years and under.
-  The introduction group takes place on Thursday evenings between 19:00 and 21:00. Because we aim to create a sense of team spirit,
-  it is important that all participants can be there all evenings. Therefore, we kindly ask you to block the KMG evenings in your agenda.
-  More information about the exact dates will be communicated via e-mail. We are really looking forward to the next KMG and hope to
-  see you there
-  !<strong>The next Introduction Group will start in September/October 2023</strong>.
+    The introduction group takes place on Thursday evenings between 19:00 and 21:00. Because we aim to create a sense of team spirit,
+    it is important that all participants can be there all evenings. Therefore, we kindly ask you to block the KMG evenings in your agenda.
+    More information about the exact dates will be communicated via e-mail. We are really looking forward to the next KMG and hope to
+    see you there! <strong>The next Introduction Group will start in September/October 2023</strong>.
   form:
     success: We will contact you as soon as possible.
 nl:
@@ -21,10 +20,10 @@ nl:
     met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!
   sign_up: Aanmelden voor de KMG
   next: Net als Outsite is de KMG gericht op jongeren en jongvolwassenen tot en met 28 jaar. De KMG vindt plaats
-  op negen donderdagavonden tussen 19:00 en 21:00. Omdat het voor het groepsgevoel belangrijk is dat iedereen
-  er alle avonden bij kan zijn vragen we je om de KMG avonden vrij te houden in je agenda. 
-  Meer informatie over de exacte data wordt gecommuniceerd via de mail. Wij hebben er alvast heel veel zin in!
-  <strong>De volgende KennisMakingsGroep start in september/oktober 2023</strong>.
+    op negen donderdagavonden tussen 19:00 en 21:00. Omdat het voor het groepsgevoel belangrijk is dat iedereen
+    er alle avonden bij kan zijn vragen we je om de KMG avonden vrij te houden in je agenda. 
+    Meer informatie over de exacte data wordt gecommuniceerd via de mail. Wij hebben er alvast heel veel zin in!
+    <strong>De volgende KennisMakingsGroep start in september/oktober 2023</strong>.
   form:
     success: We nemen zo snel mogelijk contact met je op!
 </i18n>

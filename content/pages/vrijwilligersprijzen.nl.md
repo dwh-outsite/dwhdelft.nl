@@ -23,6 +23,10 @@ De hoofdprijs van 15.000 euro zal door DWH ingezet worden om hun vrijwilligers e
 
 Naast DWH zijn nog vijf andere vrijwilligersorganisaties uit het hele land erkend voor hun aangrijpende verhaal. Zij ontvangen voor hun verhaal elk de tweede prijs van 2.000 euro. Hun verhalen vertellen waarom het werk van vrijwilligers onmisbaar is op vele maatschappelijke thema's. Naast deze hoofdprijswinnaars waren er nog 80 winnaars van de derde prijs van 750 euro.
 
-Tijdens de uitreiking, gepresenteerd door Sinan Can, is het werk van de zes genomineerden in het licht gezet met een indrukwekkende documentaire, ‘Thuis’, over hoe vrijwilligers een thuis creëren voor de ander en zichzelf. DWH toonde in deze documentaire wat de vereniging betekent voor de LHBT+ community in de regio. De documentaire zal binnenkort publiek worden vertoond.
-
 <article-image src="photos/vrijwilligersprijs/dwh_uitreiking_1.jpg"></article-image>
+
+## Documentaire: thuis
+
+Tijdens de uitreiking, gepresenteerd door Sinan Can, is het werk van de zes genomineerden in het licht gezet met een indrukwekkende documentaire, ‘Thuis’, over hoe vrijwilligers een thuis creëren voor de ander en zichzelf. DWH toonde in deze documentaire wat de vereniging betekent voor de LHBT+ community in de regio. 
+
+<iframe class="aspect-[800/341] w-full" src="https://www.youtube.com/embed/UrXo1mOr0sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

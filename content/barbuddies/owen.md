@@ -4,7 +4,6 @@ pronouns:
   nl: hij/hem
   en: he/him
 sites:
-  - dwh
   - outsite
 nl:
   Hoi, mijn naam is Owen, ik ben begin twintig en sinds 2020 actief bij Outsite/DWH. In die tijd heb ik veel 

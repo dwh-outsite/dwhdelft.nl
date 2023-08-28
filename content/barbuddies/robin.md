@@ -4,7 +4,6 @@ pronouns:
   nl: hij/hem
   en: he/him
 sites:
-  - dwh
   - outsite
 nl:
   Hey! Ik ben Robin en ik ben 22 jaar. Sinds 2022 ben ik lid van DWH en heb het hier heel erg goed naar mijn zin! Zo ga 

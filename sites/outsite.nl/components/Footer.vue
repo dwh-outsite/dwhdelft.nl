@@ -3,18 +3,24 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Laurens
+    - name: Alexandru
       role: President
       email: voorzitter@outsite.nl
-    - name: Enri
+    - name: Robin
       role: Secretary
       email: secretaris@outsite.nl
-    - name: Norah
+    - name: Rob
+      role: Treasurer
+      email: penningmeester@outsite.nl
+    - name: Cas
       role: Internal Affairs
       email: intern@outsite.nl
-    - name: Mo
+    - name: Wieke
       role: External Affairs
       email: extern@outsite.nl
+    - name: Anna
+      role: Public Relations
+      email: pr@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -24,18 +30,24 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Laurens
+    - name: Alexandru
       role: Voorzitter
       email: voorzitter@outsite.nl
-    - name: Enri
+    - name: Robin
       role: Secretaris
       email: secretaris@outsite.nl
-    - name: Norah
+    - name: Rob
+      role: Penningmeester
+      email: penningmeester@outsite.nl
+    - name: Cas
       role: Commissaris Intern
       email: intern@outsite.nl
-    - name: Mo
+    - name: Wieke
       role: Commissaris Extern
       email: extern@outsite.nl
+    - name: Anna
+      role: Commisaris Public Relations
+      email: pr@outsite.nl
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:
@@ -69,7 +81,7 @@ nl:
             </div>
             <div>
               <img
-                src="../../../assets/images/photos/outsite_board/board21.jpg"
+                src="../../../assets/images/photos/outsite_board/board22.jpg"
                 class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl my-8 md:mx-8 md:-mt-8"
               />
             </div>

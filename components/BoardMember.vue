@@ -1,5 +1,5 @@
 <template>
-  <div class="leading-tight mb-6">
+  <div class="leading-tight">
     <img class="w-full" :src="nameAsImage(name, role)" />
     <span class="text-gray-400">{{ email }}</span>
   </div>

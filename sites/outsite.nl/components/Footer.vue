@@ -3,18 +3,24 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Laurens
+    - name: Alexandru
       role: President
       email: voorzitter@outsite.nl
-    - name: Enri
+    - name: Robin
       role: Secretary
       email: secretaris@outsite.nl
-    - name: Norah
+    - name: Rob
+      role: Treasurer
+      email: penningmeester@outsite.nl
+    - name: Cas
       role: Internal Affairs
       email: intern@outsite.nl
-    - name: Mo
+    - name: Wieke
       role: External Affairs
       email: extern@outsite.nl
+    - name: Anna
+      role: Public Relations
+      email: pr@outsite.nl
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -24,18 +30,24 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Laurens
+    - name: Alexandru
       role: Voorzitter
       email: voorzitter@outsite.nl
-    - name: Enri
+    - name: Robin
       role: Secretaris
       email: secretaris@outsite.nl
-    - name: Norah
+    - name: Rob
+      role: Penningmeester
+      email: penningmeester@outsite.nl
+    - name: Cas
       role: Commissaris Intern
       email: intern@outsite.nl
-    - name: Mo
+    - name: Wieke
       role: Commissaris Extern
       email: extern@outsite.nl
+    - name: Anna
+      role: Commisaris Public Relations
+      email: pr@outsite.nl
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:
@@ -50,8 +62,8 @@ nl:
         <div class="md:w-2/3 md:border-r border-gray-600 py-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('boardTitle')" />
 
-          <div class="md:flex flex-wrap">
-            <div class="flex-1">
+          <div class="md:flex">
+            <div class="flex-1 grid xl:grid-cols-2 auto-rows-min gap-6">
               <BoardMember
                 v-for="member in $t('board')"
                 :key="member.name"
@@ -59,18 +71,11 @@ nl:
                 :name="member.name"
                 :email="member.email"
               />
-              <a
-                href="https://dwhdelft.nl/lets-talk"
-                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-              >
-                {{ $t('confidential_counsellors') }}
-                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-              </a>
             </div>
             <div>
               <img
-                src="../../../assets/images/photos/outsite_board/board21.jpg"
-                class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl my-8 md:mx-8 md:-mt-8"
+                src="../../../assets/images/photos/outsite_board/board22.jpg"
+                class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl mt-8 md:mx-8 md:-mt-8"
               />
             </div>
           </div>
@@ -79,14 +84,25 @@ nl:
         <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('contactTitle')" />
           <ContactOptions email="bestuur@outsite.nl" />
-          <div class="mb-2">
-            <a
-              href="https://my.dwhdelft.nl/signup"
-              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-            >
-              {{ $t('links.sign_up') }}
-              <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-            </a>
+          <div class="mb-2 space-y-4">
+            <div>
+              <a
+                href="https://my.dwhdelft.nl/signup"
+                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+              >
+                {{ $t('links.sign_up') }}
+                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://dwhdelft.nl/lets-talk"
+                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+              >
+                {{ $t('confidential_counsellors') }}
+                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -29,6 +29,7 @@ nl:
         <td class="align-top block md:table-cell">
           <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />
           <p class="text-gray-500" v-html="$tt(event.description)" />
+          <p v-if="event.announcement" class="text-brand-500 font-semibold" v-html="$tt(event.announcement)" />
           <a
             v-if="event.link"
             :href="event.link.url"

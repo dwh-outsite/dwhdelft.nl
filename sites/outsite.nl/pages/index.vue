@@ -65,6 +65,11 @@ nl:
             class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
             v-html="paragraph"
           />
+          <p
+            v-if="barOpeningHours.announcement"
+            class="mb-4 text-brand-500"
+            v-text="$tt(barOpeningHours.announcement)"
+          />
           <Invitation :content="$t('description.invitation', [barOpeningHours.start_time])" />
         </div>
         <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">

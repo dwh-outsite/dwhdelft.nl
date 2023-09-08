@@ -62,8 +62,8 @@ nl:
         <div class="md:w-2/3 md:border-r border-gray-600 py-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('boardTitle')" />
 
-          <div class="md:flex flex-wrap">
-            <div class="flex-1">
+          <div class="md:flex">
+            <div class="flex-1 grid xl:grid-cols-2 auto-rows-min gap-6">
               <BoardMember
                 v-for="member in $t('board')"
                 :key="member.name"
@@ -71,18 +71,11 @@ nl:
                 :name="member.name"
                 :email="member.email"
               />
-              <a
-                href="https://dwhdelft.nl/lets-talk"
-                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-              >
-                {{ $t('confidential_counsellors') }}
-                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-              </a>
             </div>
             <div>
               <img
                 src="../../../assets/images/photos/outsite_board/board22.jpg"
-                class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl my-8 md:mx-8 md:-mt-8"
+                class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl mt-8 md:mx-8 md:-mt-8"
               />
             </div>
           </div>
@@ -91,14 +84,25 @@ nl:
         <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="$t('contactTitle')" />
           <ContactOptions email="bestuur@outsite.nl" />
-          <div class="mb-2">
-            <a
-              href="https://my.dwhdelft.nl/signup"
-              class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
-            >
-              {{ $t('links.sign_up') }}
-              <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
-            </a>
+          <div class="mb-2 space-y-4">
+            <div>
+              <a
+                href="https://my.dwhdelft.nl/signup"
+                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+              >
+                {{ $t('links.sign_up') }}
+                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://dwhdelft.nl/lets-talk"
+                class="text-white font-bold inline-flex items-center border-b border-white border-dashed"
+              >
+                {{ $t('confidential_counsellors') }}
+                <Zondicon icon="arrow-thin-right" class="fill-current w-4 ml-1" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

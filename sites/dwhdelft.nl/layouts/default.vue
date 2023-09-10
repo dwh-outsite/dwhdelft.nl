@@ -25,13 +25,21 @@ export default {
       },
     ],
   },
-  mounted() {
+  beforeMount() {
     if (window.netlifyIdentity) {
+      const redirectToAdmin = () => {
+        setTimeout(() => {
+          document.location.href = '/admin/'
+        }, 5000)
+      }
+
+      if (window.netlifyIdentity.currentUser()) {
+        redirectToAdmin()
+      }
+
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/'
-          })
+          window.netlifyIdentity.on('login', () => redirectToAdmin())
         }
       })
     }

@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
 
+media_folder: "sites/dwhdelft.nl/static/images"
+public_folder: "/images"
+
 collections:
   - name: redirects
     label: Redirects

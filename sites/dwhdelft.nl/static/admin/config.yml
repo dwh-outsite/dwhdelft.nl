@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+
+media_folder: "sites/dwhdelft.nl/static/images"
+public_folder: "/images"
+
+collections:
+  - name: redirects
+    label: Redirects
+    folder: "content/redirects"
+    create: true
+    format: json
+    slug: "{{slug}}"
+    identifier_field: from
+    fields:
+      - {label: "From", name: "from", widget: "string"}
+      - {label: "To", name: "to", widget: "string"}

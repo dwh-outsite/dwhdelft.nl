@@ -1,19 +1,31 @@
 board:
 
-  - name: Rory Baart
+  - name: Dries Stuij
     description:
       nl: Voorzitter
       en: President
     email: voorzitter@dwhdelft.nl
     
-  - name: Casper Boone
+  - name: Vanadie
     description:
-      nl: Interim Secretaris
-      en: Interim Secretary
+      nl: Secretaris
+      en: Secretary
     email: secretaris@dwhdelft.nl
 
-  - name: Dries Stuij
+  - name: Suzanne Kleijweg
     description:
       nl: Penningmeester
       en: Treasurer
     email: penningmeester@dwhdelft.nl
+    
+  - name: Casper Boone
+    description:
+      nl: Algemeen Bestuurslid
+      en: Board Member
+    email: casper.boone@dwhdelft.nl
+
+  - name: Rory Baart
+    description:
+      nl: Algemeen Bestuurslid
+      en: Board Member
+    email: rory.baart@dwhdelft.nl

@@ -45,8 +45,8 @@ events:
     day:
       en: Thursday
       nl: Donderdag
-    start_time: '21:00'
-    end_time: '01:00'
+    start_time: '21:30'
+    end_time: '01:30'
     description:
       en: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite

@@ -12,7 +12,7 @@ en:
     The introduction group takes place on Thursday evenings between 19:00 and 21:00. Because we aim to create a sense of team spirit,
     it is important that all participants can be there all evenings. Therefore, we kindly ask you to block the KMG evenings in your agenda.
     More information about the exact dates will be communicated via e-mail. We are really looking forward to the next KMG and hope to
-    see you there! <strong>The next Introduction Group will start in September/October 2023</strong>.
+    see you there! <strong>The next Introduction Group will start in February 2024</strong>.
   form:
     success: We will contact you as soon as possible.
 nl:
@@ -26,7 +26,7 @@ nl:
     op negen donderdagavonden tussen 19:00 en 21:00. Omdat het voor het groepsgevoel belangrijk is dat iedereen
     er alle avonden bij kan zijn vragen we je om de KMG avonden vrij te houden in je agenda.
     Meer informatie over de exacte data wordt gecommuniceerd via de mail. Wij hebben er alvast heel veel zin in!
-    <strong>De volgende KennisMakingsGroep start in september/oktober 2023</strong>.
+    <strong>De volgende KennisMakingsGroep start in februari 2024</strong>.
   form:
     success: We nemen zo snel mogelijk contact met je op!
 </i18n>

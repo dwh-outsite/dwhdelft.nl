@@ -70,7 +70,7 @@ events:
     day:
       en: Saturday
       nl: Zaterdag
-    start_time: '21:00'
+    start_time: '22:00'
     end_time: '02:00'
     description:
       en: |-
@@ -85,8 +85,8 @@ events:
         nl: MIXUP op Instagram
       url: https://www.instagram.com/mixupdelft/
     announcement:
-      en: Closed on 23 September.
-      nl: Gesloten op 23 september.
+      en: "Starting November 4th, MIXUP opens at 22:00."
+      nl: "Vanaf 4 november geopend vanaf 22:00 uur."
 
   - name: QT
     day:

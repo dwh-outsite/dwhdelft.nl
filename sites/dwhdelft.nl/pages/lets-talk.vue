@@ -90,7 +90,7 @@ export default {
       counsellors: [
         { name: 'Andreas Zafiropoulos', email: 'vertrouwenspersoon-andreas@dwhdelft.nl' },
         { name: 'Bernard Schendstok', email: 'vertrouwenspersoon-bernard@dwhdelft.nl' },
-        { name: 'Dries Stuij', email: 'vertrouwenspersoon-dries@dwhdelft.nl' },
+        { name: 'Enri Mammana', email: 'vertrouwenspersoon-enri@dwhdelft.nl' },
         { name: 'Niamh Henssen', email: 'vertrouwenspersoon-niamh@dwhdelft.nl' },
       ],
     }

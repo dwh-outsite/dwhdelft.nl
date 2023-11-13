@@ -23,7 +23,7 @@ en:
       TrueU</a>; this is the queer network of TU employees, who works on improving acceptance and inclusion 
       at the university.'
     purple:
-      - 'Hi! Nice that you have found our website. The second Friday of December, the 10th to be precise, is Purple Friday. This is a day where we try to convince as many non-queer identifying people as possible to show their support by wearing something purple.'
+      - 'Hi! Nice that you have found our website. The second Friday of December, the 8th to be precise, is Purple Friday. This is a day where we try to convince as many non-queer identifying people as possible to show their support by wearing something purple.'
       - 'That support is very necessary; we need support so we are not fighting alone. But support does not always have to come in the form of purple clothing. Do you already know how to support queer people around you?'
       - 'Listen to people from the LGBTQ+ community, and make an effort to understand the problems they face. Speak up when you hear other not-queer people making inappropriate jokes or remarks. Also avoid the use of obscene swear words. Using something like “gay” can already fall in this category.'
       - 'Try incorporating neutral pronouns more often in your day-to-day use. Replace "he or she" by "they", 

@@ -85,7 +85,7 @@ nl:
       TrueU</a>; dit is het roze netwerk van TU medewerkers, dat zich inzet om acceptatie binnen de universiteit 
       te vergroten.'
     purple:
-      - 'De tweede vrijdag van december, de 10e om precies te zijn, 
+      - 'De tweede vrijdag van december, de 8e om precies te zijn, 
       is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet 
       identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen.'
       - 'Die support is iets dat hard nodig is; we hebben ondersteuning nodig, zodat wij niet alleen in de 

@@ -29,10 +29,10 @@ Naast DWH zijn nog vijf andere vrijwilligersorganisaties uit het hele land erken
 
 Tijdens de uitreiking, gepresenteerd door Sinan Can, is het werk van de zes genomineerden in het licht gezet met een indrukwekkende documentaire, ‘Thuis’, over hoe vrijwilligers een thuis creëren voor de ander en zichzelf. DWH toonde in deze documentaire wat de vereniging betekent voor de LHBT+ community in de regio. 
 
-### Over DWH
+De volgende documentaire werd gemaakt over DWH:
 
 <iframe class="aspect-[800/341] w-full" src="https://www.youtube.com/embed/wBuPw23uapI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Volledige Documentaire
+En dit is de volledige documentaire waarin ook de andere deelnemers te zien zijn:
 
 <iframe class="aspect-[800/341] w-full" src="https://www.youtube.com/embed/UrXo1mOr0sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

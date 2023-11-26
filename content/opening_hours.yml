@@ -45,8 +45,8 @@ events:
     day:
       en: Thursday
       nl: Donderdag
-    start_time: '21:30'
-    end_time: '01:30'
+    start_time: '21:00'
+    end_time: '01:00'
     description:
       en: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
@@ -62,9 +62,6 @@ events:
         en: Head to Outsite.nl
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
-    announcement:
-      en: "From 21 September - 23 November the opening hours are 21:30 - 01:30."
-      nl: "Tussen 21 september en 23 november zijn de openingstijden 21:30 - 01:30 uur."
 
   - name: MIXUP
     day:

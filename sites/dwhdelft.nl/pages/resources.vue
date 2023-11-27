@@ -1,16 +1,20 @@
 <i18n lang="yaml">
 en:
-  title: LGBT+ in Delft
+  title: Purple Friday
   titles:
     local: At home in Delft
-    purple: <strong>PURPLE FRIDAY</strong>
+    purple: Tips for allies
     sex: Sex-ed 101
     trans: Being transgender
     ace: A(ce)-Okay
     lastig: Dealing with Discrimination?
   content:
     intro:
-      - 'It can be hard to find information about queer topics, especially about what is locally available. That’s why we made this page with an overview of both.<br/><br/>'
+      - 'The second Friday of December, the 8th to be precise, is Purple Friday. A day where we try to convince 
+      as many non-queer identifying people as possible to show support by wearing something purple. Will you?<br/><br/>'
+    secondintro:
+      - 'Want to know what’s happening in your faculty? Come back soon and see the schedule here. <br/>
+      Meanwhile, here are some tips for how you can help make the TU a place where everyone can feel welcome.<br/><br/>'
     local:
       - 'Are you a LGBT+ youth under 19 or are you still unsure but want to come into contact with other LGBT+ youth with fun activities? Check out 
       <a class="font-bold text-purple-600" href="https://instagram.com/jongenoutdelft/">Jong&Out Delft</a>.'
@@ -23,11 +27,24 @@ en:
       TrueU</a>; this is the queer network of TU employees, who works on improving acceptance and inclusion 
       at the university.'
     purple:
-      - 'Hi! Nice that you have found our website. The second Friday of December, the 8th to be precise, is Purple Friday. This is a day where we try to convince as many non-queer identifying people as possible to show their support by wearing something purple.'
-      - 'That support is very necessary; we need support so we are not fighting alone. But support does not always have to come in the form of purple clothing. Do you already know how to support queer people around you?'
-      - 'Listen to people from the LGBTQ+ community, and make an effort to understand the problems they face. Speak up when you hear other not-queer people making inappropriate jokes or remarks. Also avoid the use of obscene swear words. Using something like “gay” can already fall in this category.'
-      - 'Try incorporating neutral pronouns more often in your day-to-day use. Replace "he or she" by "they", 
-      and "him or her" by "them". This includes everyone, and is a great way to practice speaking about nonbinary people.'
+      - '<strong>Language</strong> <br/>
+      1. Avoid gendered phrases such as "Hey boys and girls" or "Good morning boys." Try using "Hey all" and "Good 
+      morning class" instead.<br/>
+      2. Practice someone’s pronouns in your head if they don’t feel natural yet. When talking about a non-binary 
+      person, use phrases like, "Do you know where Ravi is?"
+      "I saw them this morning. I think they work in the lab" <br/>
+      3. Don’t be afraid to make mistakes. As long as you correct yourself and are working on doing better, most trans 
+      people won’t mind.'
+      - '<strong>Sense of inclusion</strong> <br/>
+      1. Talk to people with different perspectives or experiences, and consciously set aside any assumptions about 
+      what they’ll be like.<br/>
+      2. Mention your pronouns with your name, in your email signature and when introducing yourself. For example, 
+      she/her, he/him or he/they. That way you’ll give someone with less obvious pronouns the chance to do so too, and 
+      the feeling of being welcome.<br/>
+      3. Showing interest in people is a good thing, but check that you’re not the tenth person that day, and limit any 
+      questions about medical treatments and genitals the same you usually would.<br/>
+      4. Point out to people when they make hurtful comments. It is easier for you as an outsider to stand up for a 
+      minority than for them to stand up for themselves'
     trans:
       - 'Finding information about being trans can be difficult. Luckily there are a few great information points such as <a class="font-bold text-purple-600" href="https://transvisie.nl">transvisie</a> 
       and <a class="font-bold text-purple-600" href="https://www.transgenderinfo.nl">transgenderinfo</a>!'
@@ -55,19 +72,24 @@ en:
       municipalities. Even when something is not big enough to go to the police for, it helps to report it to them 
       anyway so they know where there are issues remaining.'
 nl:
-  title: LHBT+ in Delft
+  title: Paarse Vrijdag
   titles:
     local: Thuis in Delft
-    purple: <strong>PAARSE VRIJDAG</strong>
+    purple: Tips voor allies
     sex: Sex-ed 101
     trans: Transgender zijn
     ace: A(ce)-Okay
     lastig: Word je lastig gevallen? 
   content:
     intro:
-      - 'Het is soms best lastig om informatie te vinden over queer onderwerpen, en al helemaal om te 
-      vinden wat er lokaal voor je beschikbaar is. Daarvoor hebben we deze pagina gemaakt met een 
-      overzichtje van beide.<br/><br/>'
+      - 'De tweede vrijdag van december, de 8e om precies te zijn, 
+      is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet 
+      identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen. Doe jij mee?<br/><br/>'
+    secondintro:
+      - 'Wil je weten wat er op Paarse Vrijdag in jouw faculteit gebeurt? Hou deze site in de gaten voor het overzicht 
+      van activiteiten. <br/>
+      In de tussentijd hienaast/-onder wat tips hoe je kan helpen van de TU een plek te maken waar iedereen zich welkom
+      voelt.<br/><br/>'
     local:
       - 'Ben jij een LHBT+ jongere onder de 19 jaar of weet je het nog niet precies maar wil je wel in 
       contact komen met andere LHBT+ jongeren door middel van laagdrempelige activiteiten? Check dan 
@@ -85,18 +107,24 @@ nl:
       TrueU</a>; dit is het roze netwerk van TU medewerkers, dat zich inzet om acceptatie binnen de universiteit 
       te vergroten.'
     purple:
-      - 'De tweede vrijdag van december, de 8e om precies te zijn, 
-      is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet 
-      identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen.'
-      - 'Die support is iets dat hard nodig is; we hebben ondersteuning nodig, zodat wij niet alleen in de 
-      strijd staan. Maar ondersteuning hoeft niet alleen te komen in de vorm van paarse kleding. Weet jij al hoe 
-      je het beste de queer mensen om je heen kan supporten?'
-      - 'Luister naar mensen uit de LHBT+ gemeenschap, en probeer de problemen die ze meemaken te begrijpen.
-      Spreek je uit als je andere niet-queer mensen ongepaste grappen of opmerkingen hoort maken. Vermijd ook het 
-      gebruik van aanstootgevende scheldwoorden. Hier kan iets als “gay” ook al onder vallen.'
-      - 'Maak vaker gebruik van neutrale pronouns in je dagelijks taalgebruik. Vervang "hij of zij" eens door "die",
-      en "zijn of haar" door "hun". Dit is inclusiever voor iedereen, en tegelijkertijd een goeie oefening voor
-      wanneer je over nonbinaire personen praat.'
+      - '<strong>Taalgebruik</strong> <br/>
+      1. Vermijd onnodig genderonderscheid zoals "Hé jongens en meisjes" of "Goedemorgen jongens". Probeer eens "Hé 
+      allemaal" of "Goedemorgen klas".<br/>
+      2. Oefen iemands voornaamwoorden in je hoofd als die nog niet vanzelf gaan. Bijvoorbeeld voor een non-binair 
+      persoon: "Weet jij waar Ravi is?"
+      "Ik zag hen vanmorgen, ik denk dat die vandaag in het lab werkt."<br/>
+      3. Wees niet bang een foutje te maken. Zolang je jezelf verbetert en je best doet er beter in te worden, zullen
+       de meeste trans personen het niet zo erg vinden.'
+      - '<strong>Gevoel van inclusie</strong><br/>
+      1. Praat met mensen met verschillende perspectieven en ervaringen, en zet bewust je aannames opzij over hoe ze 
+      wel zullen zijn.<br/>
+      2. Noem je voornaamwoorden na je naam, in je email signature of wanneer je je voorstelt. Bijv. zij/haar, hij/hem 
+      of hij/die. Zo geef je iemand met niet-vanzelfsprekende voornaamwoorden de ruimte dit ook te doen, en het gevoel 
+      welkom te zijn.<br/>
+      3. Interesse tonen is goed, maar check of je niet toevallig de tiende persoon die dag bent, en wees even 
+      terughoudend met vragen over medische ingrepen of genitaliën als je bij iedereen zou zijn.<br/>
+      4. Wijs mensen erop als ze kwetsende opmerkingen maken. Het is makkelijker voor jou als buitenstaander om op te 
+      komen voor een minderheid dan voor hen om voor zichzelf op te komen.'
     trans:
       - 'Het vinden van informatie over trans zijn is soms nog eens best lastig. Gelukkig bestaan er een 
       aantal handige informatiepunten zoals <a class="font-bold text-purple-600" href="https://transvisie.nl">transvisie</a> 
@@ -137,10 +165,9 @@ nl:
         <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
           <div class="text-2xl">
             <p v-for="paragraph in $t('content.intro')" :key="paragraph" v-html="paragraph" />
-            <h2 class="font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.local')" />
 
             <p
-              v-for="paragraph in $t('content.local')"
+              v-for="paragraph in $t('content.secondintro')"
               :key="paragraph"
               class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
               v-html="paragraph"
@@ -153,6 +180,23 @@ nl:
                 <p v-for="paragraph in $t('content.purple')" :key="paragraph" v-html="paragraph" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="w-full py-6">
+      <section class="container px-4 mx-auto space-y-6">
+        <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
+          <div class="text-2xl">
+            <h2 class="font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.local')" />
+
+            <p
+              v-for="paragraph in $t('content.local')"
+              :key="paragraph"
+              class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
+              v-html="paragraph"
+            />
           </div>
         </div>
       </section>

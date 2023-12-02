@@ -13,8 +13,12 @@ en:
       - 'The second Friday of December, the 8th to be precise, is Purple Friday. A day where we try to convince 
       as many non-queer identifying people as possible to show support by wearing something purple. Will you?<br/><br/>'
     secondintro:
-      - 'Want to know what’s happening in your faculty? Come back soon and see the schedule here. <br/>
-      Meanwhile, here are some tips for how you can help make the TU a place where everyone can feel welcome.<br/><br/>'
+      - 'Campuswide there will be a StudentHub picture contest! Get the biggest group of people wearing purple together, 
+      or aim for the individual prize for the best purple outfit. You can win a purple trophy and a pride flag, together 
+      with some rainbow stickers and candy.'
+      - 'Will you win the Purple Prize of 2023? Tag @tudelft and @outsite_delft in 
+      your picture on instagram (story or post) and win!'
+      - 'There are also activities at all of the faculties, check the overview below.'
     local:
       - 'Are you a LGBT+ youth under 19 or are you still unsure but want to come into contact with other LGBT+ youth with fun activities? Check out 
       <a class="font-bold text-purple-600" href="https://instagram.com/jongenoutdelft/">Jong&Out Delft</a>.'
@@ -86,10 +90,12 @@ nl:
       is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet 
       identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen. Doe jij mee?<br/><br/>'
     secondintro:
-      - 'Wil je weten wat er op Paarse Vrijdag in jouw faculteit gebeurt? Hou deze site in de gaten voor het overzicht 
-      van activiteiten. <br/>
-      In de tussentijd hienaast/-onder wat tips hoe je kan helpen van de TU een plek te maken waar iedereen zich welkom
-      voelt.<br/><br/>'
+      - 'Campuswide there will be a StudentHub picture contest! Get the biggest group of people wearing purple together, 
+      or aim for the individual prize for the best purple outfit. You can win a purple trophy and a pride flag, together 
+      with some rainbow stickers and candy.'
+      - 'Will you win the Purple Prize of 2023? Tag @tudelft and @outsite_delft in 
+      your picture on instagram (story or post) and win!'
+      - 'There are also activities at all of the faculties, check the overview below.'
     local:
       - 'Ben jij een LHBT+ jongere onder de 19 jaar of weet je het nog niet precies maar wil je wel in 
       contact komen met andere LHBT+ jongeren door middel van laagdrempelige activiteiten? Check dan 
@@ -162,19 +168,40 @@ nl:
 
     <div class="w-full py-6">
       <section class="container px-4 mx-auto space-y-6">
-        <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
+        <div class="lg:flex lg:space-x-12 space-y-6 lg:space-y-0">
           <div class="text-2xl">
             <p v-for="paragraph in $t('content.intro')" :key="paragraph" v-html="paragraph" />
 
             <p
               v-for="paragraph in $t('content.secondintro')"
               :key="paragraph"
-              class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
+              class="text-lg lg:text-xl lg:leading-relaxed text-gray-800 mb-4"
               v-html="paragraph"
             />
+            <div class="information-content lg:w-[36rem] xl:w-[44rem] pt-12 pb-20 container mx-auto px-4">
+              <div class="flex space-x-2 overflow-auto whitespace-no-wrap">
+                <div
+                  v-for="committee in committees"
+                  :key="committee.name"
+                  :class="committee.active ? 'bg-brand-500' : 'bg-brand-300 cursor-pointer hover:bg-brand-400'"
+                  class="text-white rounded-t-lg py-6 px-6 font-semibold tracking-wide z-20 relative"
+                  @click="setActive(committee)"
+                >
+                  {{ committee.name }}
+                </div>
+              </div>
+              <div class="flex-1 bg-brand-500 text-white rounded-b-lg shadow-lg p-10 z-10 relative">
+                <div class="flex-1 mb-8">
+                  <h2 class="text-2xl font-bold uppercase tracking-wider mb-4">
+                    {{ activeCommittee.full_name }}
+                  </h2>
+                  <p class="text-lg" v-html="activeCommittee[`description`]" />
+                </div>
+              </div>
+            </div>
           </div>
           <div class="flex-1">
-            <div class="md:w-[30.5rem] md:-mt-12 z-50 relative">
+            <div class="lg:w-[30.5rem] lg:-mt-12 z-50 relative">
               <div class="bg-paarse-vrijdag-2021 text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <h2 class="font-semibold text-4xl mb-2" v-html="$t('titles.purple')" />
                 <p v-for="paragraph in $t('content.purple')" :key="paragraph" v-html="paragraph" />
@@ -187,14 +214,14 @@ nl:
 
     <div class="w-full py-6">
       <section class="container px-4 mx-auto space-y-6">
-        <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
+        <div class="lg:flex lg:space-x-12 space-y-6 lg:space-y-0">
           <div class="text-2xl">
             <h2 class="font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.local')" />
 
             <p
               v-for="paragraph in $t('content.local')"
               :key="paragraph"
-              class="text-lg md:text-xl md:leading-relaxed text-gray-800 mb-4"
+              class="text-lg lg:text-xl lg:leading-relaxed text-gray-800 mb-4"
               v-html="paragraph"
             />
           </div>
@@ -202,9 +229,9 @@ nl:
       </section>
     </div>
 
-    <div class="bg-purple-400 w-full py-6 md:py-12">
+    <div class="bg-purple-400 w-full py-6 lg:py-12">
       <section class="container px-4 mx-auto space-y-6">
-        <div class="md:flex md:space-x-6 space-y-6 md:space-y-0">
+        <div class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
           <div class="flex-1 space-y-6">
             <ActionCard :title="$t('titles.trans')">
               <p v-for="paragraph in $t('content.trans')" :key="paragraph" v-html="paragraph" />
@@ -226,6 +253,32 @@ nl:
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content, app }) {
+    return {
+      committees: (await $content('purple_faculties').fetch()).map((committee, index) => ({
+        ...committee,
+        active: index === 0,
+      })),
+    }
+  },
+  computed: {
+    activeCommittee() {
+      return this.committees.find((committee) => committee.active)
+    },
+  },
+  methods: {
+    setActive(committee) {
+      this.committees.forEach((committee) => {
+        committee.active = false
+      })
+      committee.active = true
+    },
+  },
+}
+</script>
 
 <style scoped>
 .bg-paarse-vrijdag-2021 {

@@ -178,8 +178,8 @@ nl:
               class="text-lg lg:text-xl lg:leading-relaxed text-gray-800 mb-4"
               v-html="paragraph"
             />
-            <div class="information-content lg:w-[36rem] xl:w-[44rem] pt-12 pb-20 container mx-auto px-4">
-              <div class="flex space-x-2 overflow-auto whitespace-no-wrap">
+            <div class="lg:w-[36rem] xl:w-[44rem] py-12">
+              <div class="flex space-x-2 overflow-auto whitespace-nowrap">
                 <div
                   v-for="faculty in faculties"
                   :key="faculty.name"

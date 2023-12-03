@@ -1,16 +1,9 @@
 <i18n lang="yaml">
 en:
   title: Reservation
-  ggd_consent: I consent to share my information with the municipal health service (GGD) to support contact tracing if
-    requested.
-  seats:
-    one_person_seat: Individual seat
-    two_person_seat: Two-person seat
-    within_distance: (within 1.5 metre)
-    unavailable: No longer available
   event: Event
+  fully_booked: Fully booked
   no_events: There are no events scheduled at the moment. Please come back later.
-  seat_type: Type of Seat
   thank_you:
     Thank you for making a reservation! You will receive an e-mail with your proof of reservation. If you need to
     cancel, you can do so via the e-mail you will receive.
@@ -25,17 +18,9 @@ en:
       You can only have one open booking at a time.
 nl:
   title: Reserveren
-  ggd_consent:
-    Ik geef toestemming om mijn gegevens te delen met de GGD wanneer deze worden opgevraagd ten behoeve van een
-    bron- en contactonderzoek.
-  seats:
-    one_person_seat: Eenpersoonszitplaats
-    two_person_seat: Tweepersoonszitplaats
-    within_distance: (binnen 1,5 meter)
-    unavailable: Niet meer beschikbaar
   event: Evenement
+  fully_booked: Niet meer beschikbaar
   no_events: Er zijn op dit moment geen evenementen gepland. Kom later terug.
-  seat_type: Type Zitplek
   thank_you:
     Bedankt voor het reserveren! Je ontvangt een e-mail met je reserveringsbewijs. Lukt het je uiteindelijk toch
     niet om aanwezig te zijn? Via de mail die je ontvangt kun je je reservering annuleren.
@@ -81,19 +66,13 @@ nl:
         <FormInput v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" />
       </FormElement>
 
-      <FormCheckbox v-model="form.ggd_consent" :label="$t('ggd_consent')" />
-
-      <FormElement v-show="form.ggd_consent" :label="$t('forms.label.phone_number')" class="form-element-gray">
-        <FormInput v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" />
-      </FormElement>
-
       <div class="form-element-gray">
         <label class="required" v-text="$t('event')" />
         <div class="flex flex-wrap">
           <div v-if="events.length === 0" class="bg-brand-100 rounded-lg w-full p-4">
             {{ $t('no_events') }}
           </div>
-          <div v-for="event in events" :key="event.id" class="w-full md:w-1/3">
+          <div v-for="event in events" :key="event.id" class="w-full">
             <div
               :class="[
                 form.event_id == event.id ? 'border-2 border-brand-450' : '',
@@ -109,58 +88,15 @@ nl:
               />
               <div class="px-3 py-2">
                 <div class="capitalize mb-1 font-sembold" v-text="formatDate(event.start)" />
-                <div class="bg-white px-2 py-1 rounded inline-flex items-center">
-                  <Zondicon icon="time" class="fill-current w-4 h-4 mr-2" />
-                  {{ formatTime(event.start) }} - {{ formatTime(event.end) }}
+                <div class="md:flex space-y-2 md:space-y-0 md:space-x-2">
+                  <div class="bg-white px-2 py-1 rounded inline-flex items-center">
+                    <Zondicon icon="time" class="fill-current w-4 h-4 mr-2" />
+                    {{ formatTime(event.start) }} - {{ formatTime(event.end) }}
+                  </div>
+                  <div v-if="event.available_seats <= 0" class="bg-purple-450 text-white px-2 py-1 rounded">
+                    {{ $t('fully_booked') }}
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div v-show="selectedEvent.id" class="form-element-gray">
-        <label class="required" v-text="$t('seat_type')" />
-        <div class="md:flex text-center">
-          <div
-            :class="form.twoseat ? '' : 'border-2 border-brand-450'"
-            class="flex-1 md:mr-1 mb-2 md:mb-0 h-16 shadow bg-brand-100 rounded overflow-hidden cursor-pointer"
-            @click="selectTwoseat(false)"
-          >
-            <div class="flex h-full">
-              <div class="px-4 bg-brand-450 flex flex-col justify-center">
-                <div class="rounded-full w-6 h-6 bg-white text-brand-450 p-1">
-                  <Zondicon v-show="!form.twoseat" icon="checkmark" class="fill-current" />
-                </div>
-              </div>
-              <div class="py-2 flex-1 flex flex-col justify-center" v-text="$t('seats.one_person_seat')" />
-            </div>
-          </div>
-          <div
-            :class="[
-              form.twoseat ? 'border-2 border-brand-450' : '',
-              selectedEvent.available_twoseats > 0 ? 'cursor-pointer' : '',
-            ]"
-            class="flex-1 md:ml-1 h-16 shadow bg-brand-100 rounded overflow-hidden"
-            @click="selectTwoseat(true)"
-          >
-            <div class="flex h-full">
-              <div
-                :class="selectedEvent.available_twoseats > 0 ? 'bg-brand-450' : 'bg-brand-200'"
-                class="px-4 flex flex-col justify-center"
-              >
-                <div class="rounded-full w-6 h-6 bg-white text-brand-450 p-1">
-                  <Zondicon v-show="form.twoseat" icon="checkmark" class="fill-current" />
-                </div>
-              </div>
-              <div class="py-2 flex-1 flex flex-col justify-center">
-                {{ $t('seats.two_person_seat') }}
-                <div
-                  v-show="selectedEvent.available_twoseats > 0"
-                  class="text-sm"
-                  v-text="$t('seats.within_distance')"
-                />
-                <div v-show="selectedEvent.available_twoseats <= 0" class="text-sm" v-text="$t('seats.unavailable')" />
               </div>
             </div>
           </div>
@@ -183,38 +119,40 @@ nl:
             </div>
           </div>
         </div>
+        <p class="mt-4 px-3 py-3 rounded shadow text-gray-500">
+          <span class="mr-3">{{ dinnerForm.team.emoji }}</span>
+          {{ dinnerForm.team.description }}
+        </p>
       </div>
 
       <div v-show="selectedEvent.event_type_id === 'dinner'" class="form-element">
         <label class="form-element-label">I don't eat...</label>
-        <div class="md:flex">
-          <div class="md:w-1/2 flex flex-wrap -m-1">
+        <div class="space-y-2">
+          <div class="grid grid-cols-3 gap-2">
             <div
               v-for="restriction in restrictions"
               :key="restriction"
               :class="[
                 dinnerForm.diet.includes(restriction) ? 'bg-brand-400 text-white' : 'bg-brand-100 hover:bg-brand-200',
-                'rounded px-3 py-1 tracking-wider flex-1 text-center m-1 cursor-pointer shadow',
+                'rounded px-3 py-1 tracking-wider text-center cursor-pointer shadow',
               ]"
               @click="toggleRestriction(restriction)"
               v-text="restriction"
             />
           </div>
-          <div class="flex-1 md:w-1/2 mt-2 md:mt-0 md:ml-2">
-            <div
-              :class="[
-                dinnerForm.otherDiet.length > 0 ? 'bg-brand-400 text-white' : 'bg-brand-100 hover:bg-brand-200',
-                'rounded px-1 py-2 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow',
-              ]"
-            >
-              <span class="px-2">Other:</span>
-              <input
-                v-model="dinnerForm.otherDiet"
-                type="text"
-                class="mr-2 inline text-black"
-                placeholder="Other Restrictions"
-              />
-            </div>
+          <div
+            :class="[
+              dinnerForm.otherDiet.length > 0 ? 'bg-brand-400 text-white' : 'bg-brand-100 hover:bg-brand-200',
+              'rounded px-1 py-2 tracking-wider flex-1 flex items-center cursor-pointer h-full shadow',
+            ]"
+          >
+            <div class="px-2">Other:</div>
+            <input
+              v-model="dinnerForm.otherDiet"
+              type="text"
+              class="mr-2 inline text-black"
+              placeholder="Other Restrictions"
+            />
           </div>
         </div>
       </div>
@@ -237,11 +175,11 @@ import 'dayjs/locale/nl'
 const apiUrl = 'https://reserveer.dwhdelft.nl'
 
 const DINNER_TEAMS = [
-  { emoji: '🍝', name: 'Kitchen Helpers' },
-  { emoji: '⏰', name: 'In a hurry' },
-  { emoji: '🧽 ', name: 'Washing up' },
-  { emoji: '👩‍🍳', name: 'Cookies' },
-  { emoji: '🍻', name: 'Bartender' },
+  { emoji: '🍝', name: 'Kitchen Helpers', description: 'You help the chef prepare the food' },
+  { emoji: '⏰', name: 'In a hurry', description: 'You will help out another time' },
+  { emoji: '🧽 ', name: 'Washing up', description: 'You clean the dishes afterwards' },
+  { emoji: '👩‍🍳', name: 'Cookies', description: 'You are the main chef' },
+  { emoji: '🍻', name: 'Bartender', description: 'You serve the drinks' },
 ]
 const DINNER_RESTRICTIONS = ['Meat', 'Fish', 'Seafood', 'Cheese', 'Nuts', 'Dairy']
 
@@ -260,7 +198,7 @@ export default {
         custom_fields: {},
       },
       events: [],
-      selectedEvent: { available_twoseats: -1 },
+      selectedEvent: {},
       state: 'start',
       teams: DINNER_TEAMS,
       restrictions: DINNER_RESTRICTIONS,
@@ -291,13 +229,6 @@ export default {
       if (event.available_seats > 0) {
         this.form.event_id = event.id
         this.selectedEvent = event
-      }
-    },
-    selectTwoseat(twoseat) {
-      if (twoseat && this.selectedEvent.available_twoseats > 0) {
-        this.form.twoseat = true
-      } else {
-        this.form.twoseat = false
       }
     },
     submit(event) {
@@ -371,8 +302,6 @@ export default {
         JSON.stringify({
           name: this.form.name,
           email: this.form.email,
-          ggd_consent: this.form.ggd_consent,
-          phone_number: this.form.phone_number,
         })
       )
     },
@@ -381,8 +310,6 @@ export default {
       if (cachedDetails) {
         this.form.name = cachedDetails.name
         this.form.email = cachedDetails.email
-        this.form.ggd_consent = cachedDetails.ggd_consent
-        this.form.phone_number = cachedDetails.phone_number
       }
     },
     reset() {

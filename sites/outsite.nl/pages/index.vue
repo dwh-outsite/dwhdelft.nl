@@ -121,10 +121,6 @@ nl:
         </InstagramChannels>
       </div>
     </section>
-
-    <section id="eatingout" class="bg-gray-200">
-      <EatingOut class="relative z-10" />
-    </section>
   </div>
 </template>
 

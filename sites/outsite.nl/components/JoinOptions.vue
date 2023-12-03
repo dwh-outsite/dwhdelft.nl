@@ -43,7 +43,7 @@ en:
           year.
       - icon: location-food
         title: Weekly Dinner
-        description: Every Tuesday we enjoy a meal prepared by one of our
+        description: Every Monday we enjoy a meal prepared by one of our
           members.
       - icon: layers
         title: No Obligations
@@ -95,7 +95,7 @@ nl:
           het jaar heen.
       - icon: location-food
         title: Wekelijkse Eettafel
-        description: Iedere dinsdag eten wij gezamenlijk een maaltijd bereid
+        description: Iedere maandag eten wij gezamenlijk een maaltijd bereid
           door een lid.
       - icon: layers
         title: Geen verplichtingen

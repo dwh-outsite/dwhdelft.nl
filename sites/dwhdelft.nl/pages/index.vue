@@ -101,10 +101,6 @@ nl:
         </div>
       </SkewedSection>
     </section>
-
-    <section id="eatingout" class="bg-gray-200">
-      <EatingOut />
-    </section>
   </div>
 </template>
 

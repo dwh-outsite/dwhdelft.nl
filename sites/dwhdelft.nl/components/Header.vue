@@ -10,7 +10,7 @@ en:
     - title: Jong&Out
       url: /jongenout
     - title: EatingOUT
-      url: index#eatingout
+      url: book
     - title: Andersblad
       url: andersblad
     - title: Contact
@@ -26,7 +26,7 @@ nl:
     - title: Jong&Out
       url: /jongenout
     - title: EatingOUT
-      url: index#eatingout
+      url: book
     - title: Andersblad
       url: andersblad
     - title: Contact

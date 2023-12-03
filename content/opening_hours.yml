@@ -26,8 +26,8 @@ events:
     day:
       en: Wednesday
       nl: Woensdag
-    start_time: '20:45'
-    end_time: '00:00'
+    start_time: '20:30'
+    end_time: '23:00'
     description: 
       en: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as

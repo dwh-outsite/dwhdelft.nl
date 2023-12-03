@@ -45,7 +45,7 @@ nl:
       </a>
     </template>
     <template #background>
-      <div class="video-container blur-sm">
+      <div class="video-container">
         <video id="headervid" preload="metadata" autoplay muted loop class="opacity-50">
           <source src="/outsite_web_bg.mp4" type="video/mp4" />
         </video>
@@ -73,6 +73,7 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  filter: blur(4px);
 }
 
 .video-container video {

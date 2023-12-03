@@ -144,6 +144,7 @@ a.nav-item.nuxt-link-exact-active {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  filter: blur(4px);
 }
 
 .image-container img {

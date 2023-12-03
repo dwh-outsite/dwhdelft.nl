@@ -39,7 +39,7 @@ nl:
       <DWHLogo class="h-14 fill-current text-white" />
     </template>
     <template #background>
-      <div class="image-container">
+      <div class="image-container blur-sm">
         <img src="../../../assets/images/photos/cover.jpg" class="opacity-50" />
       </div>
     </template>

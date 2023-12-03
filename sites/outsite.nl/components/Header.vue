@@ -45,7 +45,7 @@ nl:
       </a>
     </template>
     <template #background>
-      <div class="video-container">
+      <div class="video-container blur-sm">
         <video id="headervid" preload="metadata" autoplay muted loop class="opacity-50">
           <source src="/outsite_web_bg.mp4" type="video/mp4" />
         </video>

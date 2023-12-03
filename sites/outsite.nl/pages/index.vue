@@ -84,8 +84,8 @@ nl:
           <div class="pb-48 pt-48">
             <BulletPoints class="relative x-50 z-20 pt-20 md:pt-40 pb-12 md:pb-16" />
           </div>
-          <div class="image-container">
-            <img :src="require(`#/assets/images/photos/cover.jpg`)" class="opacity-25" />
+          <div class="image-container blur-sm">
+            <img :src="require(`#/assets/images/photos/cover.jpg`)" class="opacity-50" />
           </div>
         </div>
       </div>

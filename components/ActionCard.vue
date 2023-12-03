@@ -1,6 +1,7 @@
 <template>
-  <div class="bg-white rounded-lg shadow p-6 md:p-8">
-    <div class="flex justify-between items-center h-12 mb-4">
+  <div class="bg-white rounded-xl shadow p-6">
+    <div class="flex justify-between items-center mb-4">
+      <!-- removed h-12 -->
       <div class="flex items-center">
         <slot name="icon"></slot>
         <h2 class="text-2xl font-bold text-brand-450 uppercase tracking-wider" v-text="title" />
@@ -9,7 +10,9 @@
         <slot name="button"></slot>
       </div>
     </div>
-    <slot></slot>
+    <div class="text-lg">
+      <slot></slot>
+    </div>
     <div class="mt-4 md:hidden">
       <slot name="button"></slot>
     </div>

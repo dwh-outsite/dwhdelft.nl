@@ -227,7 +227,7 @@ nl:
       </section>
     </div>
 
-    <div class="bg-purple-400 w-full py-6 lg:py-12">
+    <div class="bg-purple-800 w-full py-6 lg:py-12">
       <section class="container px-4 mx-auto space-y-6">
         <div class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
           <div class="flex-1 space-y-6">

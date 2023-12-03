@@ -31,9 +31,9 @@ nl:
 
     <section>
       <div class="container px-4 mx-auto mb-6">
-        <h1 class="text-brand-400 font-medium text-5xl" v-html="$t('bar_buddies_title')" />
+        <h1 class="text-brand-500 font-medium text-5xl" v-html="$t('bar_buddies_title')" />
       </div>
-      <div class="bg-brand-400">
+      <div class="bg-brand-500">
         <div class="container px-1 py-3 mx-auto">
           <div class="lg:flex flex-wrap -mx-2 mt-2">
             <div v-for="buddy in barBuddies" :key="buddy.name" class="lg:w-1/2 p-2">

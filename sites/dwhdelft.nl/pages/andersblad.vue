@@ -32,10 +32,10 @@ nl:
 
     <section>
       <div class="container px-4 mx-auto mb-6">
-        <h1 class="text-brand-400 font-medium text-5xl" v-html="$t('list_title')" />
+        <h1 class="text-brand-500 font-medium text-5xl" v-html="$t('list_title')" />
       </div>
-      <div class="bg-brand-400">
-        <div class="container px-1 py-3 mx-auto">
+      <div class="bg-brand-500">
+        <div class="container px-1 py-6 mx-auto">
           <FileCards google-drive-id="1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM" />
         </div>
       </div>

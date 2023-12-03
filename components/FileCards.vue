@@ -1,8 +1,8 @@
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-3">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4">
     <div v-for="file in files" :key="file.id">
       <a :href="file.webViewLink" target="_blank">
-        <div class="group shadow-lg rounded-lg overflow-hidden bg-white hover:bg-brand-100 hover:text-brand-500">
+        <div class="group shadow-lg rounded-xl overflow-hidden bg-white hover:bg-brand-100 hover:text-brand-500">
           <div>
             <img :src="file.thumbnailLink" class="w-full group-hover:opacity-75" />
           </div>

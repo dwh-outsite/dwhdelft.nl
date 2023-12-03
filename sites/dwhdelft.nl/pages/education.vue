@@ -71,7 +71,7 @@ nl:
 
     <section>
       <div class="container px-4 mx-auto mb-6">
-        <h1 class="text-brand-400 font-medium text-5xl" v-html="$t('titles.educators')" />
+        <h1 class="text-brand-500 font-medium text-5xl" v-html="$t('titles.educators')" />
       </div>
       <div class="bg-brand-500">
         <Educators class="container mx-auto px-4 py-12 text-base" />

@@ -113,13 +113,13 @@ nl:
       <h1 class="text-white font-medium text-5xl" v-html="$t('title')"></h1>
     </div>
     <div class="lg:flex justify-center mt-4">
-      <div class="flex-1 mb-8 lg:mb-0 lg:mr-2 fade-corners rounded-lg text-white">
-        <div class="bg-brand-400 rounded-t-lg pb-6 pt-8 px-8">
+      <div class="flex-1 mb-8 lg:mb-0 lg:mr-2 fade-corners rounded-xl overflow-hidden text-white">
+        <div class="bg-brand-400 pb-6 pt-8 px-8">
           <div class="lg:flex items-center mb-6">
             <div class="rounded-full w-16 h-16 p-5 bg-white mr-4 text-brand-400 mb-6 lg:mb-0">
               <Zondicon icon="compose" class="fill-current" />
             </div>
-            <h2 class="text-xl font-bold uppercase tracking-wider">
+            <h2 class="text-2xl font-bold uppercase tracking-wider">
               {{ $t('membership.title') }}
             </h2>
           </div>
@@ -156,51 +156,31 @@ nl:
           </div>
         </div>
       </div>
-      <div class="flex-1 lg:ml-2">
-        <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between">
-          <div class="flex-1">
-            <div class="lg:flex items-center mb-6">
-              <div class="rounded-full w-16 h-16 p-4 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
-                <Zondicon icon="user-group" class="fill-current" />
-              </div>
-              <h2 class="text-xl font-bold text-brand-400 uppercase tracking-wider">
-                {{ $t('kmg.title') }}
-              </h2>
+      <div class="flex-1 lg:ml-2 space-y-6 lg:space-y-4">
+        <ActionCard :title="$t('kmg.title')" class="p-8">
+          <template #icon>
+            <div class="rounded-full w-16 h-16 p-4 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
+              <Zondicon icon="user-group" class="fill-current" />
             </div>
-            <p class="mb-6 text-lg lg:text-xl">
-              {{ $t('kmg.description') }}
-            </p>
-          </div>
-          <div>
-            <a :href="localePath('kmg')">
-              <button class="block button-pink">
-                {{ $t('kmg.action') }}
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between mt-6 lg:mt-4">
-          <div class="flex-1">
-            <div class="lg:flex items-center mb-6">
-              <div class="rounded-full w-16 h-16 p-5 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
-                <Zondicon icon="beverage" class="fill-current" />
-              </div>
-              <h2 class="text-xl font-bold text-brand-400 uppercase tracking-wider">
-                {{ $t('bar_buddy.title') }}
-              </h2>
+          </template>
+
+          <p class="mb-6 text-lg lg:text-xl" v-text="$t('kmg.description')" />
+          <a :href="localePath('kmg')" class="text-base">
+            <PrimaryButton>{{ $t('kmg.action') }}</PrimaryButton>
+          </a>
+        </ActionCard>
+        <ActionCard :title="$t('bar_buddy.title')" class="p-8">
+          <template #icon>
+            <div class="rounded-full w-16 h-16 p-4 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
+              <Zondicon icon="beverage" class="fill-current" />
             </div>
-            <p class="mb-6 text-lg lg:text-xl">
-              {{ $t('bar_buddy.description') }}
-            </p>
-          </div>
-          <div>
-            <a :href="localePath('barbuddy')">
-              <button class="block button-pink">
-                {{ $t('bar_buddy.action') }}
-              </button>
-            </a>
-          </div>
-        </div>
+          </template>
+
+          <p class="mb-6 text-lg lg:text-xl" v-text="$t('bar_buddy.description')" />
+          <a :href="localePath('barbuddy')" class="text-base">
+            <PrimaryButton>{{ $t('bar_buddy.action') }}</PrimaryButton>
+          </a>
+        </ActionCard>
       </div>
     </div>
   </div>

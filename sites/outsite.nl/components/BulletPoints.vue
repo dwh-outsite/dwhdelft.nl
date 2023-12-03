@@ -39,9 +39,9 @@ nl:
 <template>
   <div class="container mx-auto px-4">
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-      <div v-for="point in $t('bulletPoints')" :key="point.title" class="rounded-md bg-white shadow-lg">
+      <div v-for="point in $t('bulletPoints')" :key="point.title" class="rounded-xl bg-white shadow-lg overflow-hidden">
         <div>
-          <div class="w-full h-40 rounded-t overflow-hidden mx-auto">
+          <div class="w-full h-40 overflow-hidden mx-auto">
             <img
               :src="require(`#/assets/images/photos/bullets/bullet_${point.image}.png`)"
               class="object-cover w-full h-full"

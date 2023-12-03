@@ -12,10 +12,10 @@ nl:
 <template>
   <div class="pt-16 mx-auto pb-0">
     <div v-show="excerpts" class="container mx-auto px-4 flex mb-8 items-center">
-      <h1 class="text-brand-500 font-medium text-5xl leading-none flex-1" v-html="$t('title_homepage')" />
+      <h1 class="text-brand-450 font-medium text-5xl leading-none flex-1" v-html="$t('title_homepage')" />
       <a :href="localePath('highlights')" class="hidden md:block">
         <button
-          class="bg-brand-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center hover:bg-brand-400 text-lg mt-2 your-style"
+          class="bg-brand-450 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center hover:bg-brand-400 text-lg mt-2 your-style"
         >
           {{ $t('more') }}
           <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />

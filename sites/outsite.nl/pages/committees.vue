@@ -31,7 +31,7 @@ nl:
 
     <section class="information bg-brand-200 -mb-10 md:-mb-40 md:pb-8 bg-hero-wiggle">
       <div class="information-content pt-12 md:pt-40 pb-20 md:pb-64 container mx-auto px-4 md:flex">
-        <div class="flex space-x-2 md:space-x-0 md:block md:w-1/4 md:-mb-4 overflow-auto whitespace-no-wrap">
+        <div class="flex space-x-2 md:space-x-0 md:block md:w-1/4 md:-mb-4 overflow-auto whitespace-nowrap">
           <div
             v-for="committee in committees"
             :key="committee.name"
@@ -55,7 +55,11 @@ nl:
           </div>
           <div class="md:w-2/5 flex flex-col justify-between space-y-4">
             <div class="flex-1 rounded-lg shadow overflow-hidden">
-              <img :src="requireImage(activeCommittee.name)" class="object-cover h-full w-full" />
+              <img
+                :key="activeCommittee.name"
+                :src="requireImage(activeCommittee.name)"
+                class="object-cover h-full w-full"
+              />
             </div>
           </div>
         </div>

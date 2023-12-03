@@ -5,7 +5,7 @@ board:
       nl: Voorzitter
       en: President
     email: voorzitter@dwhdelft.nl
-    
+
   - name: Vanadie
     description:
       nl: Secretaris
@@ -17,15 +17,15 @@ board:
       nl: Penningmeester
       en: Treasurer
     email: penningmeester@dwhdelft.nl
-    
-  - name: Casper Boone
-    description:
-      nl: Algemeen Bestuurslid
-      en: Board Member
-    email: casper.boone@dwhdelft.nl
 
-  - name: Rory Baart
+  - name: Thomas Smits
     description:
       nl: Algemeen Bestuurslid
       en: Board Member
-    email: rory.baart@dwhdelft.nl
+    email: thomas.smits@dwhdelft.nl
+
+  - name: Laurens Weijs
+    description:
+      nl: Algemeen Bestuurslid
+      en: Board Member
+    email: laurens.weijs@dwhdelft.nl

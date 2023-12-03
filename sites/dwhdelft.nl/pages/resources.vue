@@ -181,21 +181,21 @@ nl:
             <div class="information-content lg:w-[36rem] xl:w-[44rem] pt-12 pb-20 container mx-auto px-4">
               <div class="flex space-x-2 overflow-auto whitespace-no-wrap">
                 <div
-                  v-for="committee in committees"
-                  :key="committee.name"
-                  :class="committee.active ? 'bg-brand-500' : 'bg-brand-300 cursor-pointer hover:bg-brand-400'"
+                  v-for="faculty in faculties"
+                  :key="faculty.name"
+                  :class="faculty.active ? 'bg-brand-500' : 'bg-brand-300 cursor-pointer hover:bg-brand-400'"
                   class="text-white rounded-t-lg py-6 px-6 font-semibold tracking-wide z-20 relative"
-                  @click="setActive(committee)"
+                  @click="setActive(faculty)"
                 >
-                  {{ committee.name }}
+                  {{ faculty.name }}
                 </div>
               </div>
               <div class="flex-1 bg-brand-500 text-white rounded-b-lg shadow-lg p-10 z-10 relative">
                 <div class="flex-1 mb-8">
                   <h2 class="text-2xl font-bold uppercase tracking-wider mb-4">
-                    {{ activeCommittee.full_name }}
+                    {{ activeFaculty.full_name }}
                   </h2>
-                  <p class="text-lg" v-html="activeCommittee[`description`]" />
+                  <p class="text-lg" v-html="activeFaculty[`description`]" />
                 </div>
               </div>
             </div>
@@ -258,23 +258,23 @@ nl:
 export default {
   async asyncData({ $content, app }) {
     return {
-      committees: (await $content('purple_faculties').fetch()).map((committee, index) => ({
-        ...committee,
+      faculties: (await $content('purple_faculties').fetch()).map((faculty, index) => ({
+        ...faculty,
         active: index === 0,
       })),
     }
   },
   computed: {
-    activeCommittee() {
-      return this.committees.find((committee) => committee.active)
+    activeFaculty() {
+      return this.faculties.find((faculty) => faculty.active)
     },
   },
   methods: {
-    setActive(committee) {
-      this.committees.forEach((committee) => {
-        committee.active = false
+    setActive(faculty) {
+      this.faculties.forEach((faculty) => {
+        faculty.active = false
       })
-      committee.active = true
+      faculty.active = true
     },
   },
 }

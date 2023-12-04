@@ -283,4 +283,12 @@ export default {
   @apply bg-cover;
   background-image: url(../../../assets/images/events/purplefriday/purple_friday_2021_bg.svg);
 }
+
+.content >>> p a {
+  @apply text-white font-bold;
+}
+
+.content >>> p a:hover {
+  @apply text-brand-300;
+}
 </style>

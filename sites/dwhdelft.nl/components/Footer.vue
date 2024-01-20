@@ -40,7 +40,7 @@ import dayjs from 'dayjs'
 import InstagramIcon from '#/assets/images/social/instagram.svg?inline'
 import FacebookIcon from '#/assets/images/social/facebook.svg?inline'
 import GitHubIcon from '#/assets/images/social/github.svg?inline'
-import YoutubeIcon from '#/assets/images/social/youtube.svg?inline'
+import YouTubeIcon from '#/assets/images/social/youtube.svg?inline'
 
 export default {
   components: { Zondicon },
@@ -64,7 +64,7 @@ export default {
     socials: () => [
       { url: 'https://instagram.com/dwh_delft', icon: InstagramIcon },
       { url: 'https://facebook.com/DWHDelft', icon: FacebookIcon },
-      { url: 'https://www.youtube.com/@dwhdelft', icon: YoutubeIcon },
+      { url: 'https://www.youtube.com/@dwhdelft', icon: YouTubeIcon },
       { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
     ],
   },

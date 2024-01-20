@@ -21,6 +21,21 @@ events:
         en: Sign Up
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
+    
+  - name: Creative Spaces
+    day:
+      en: Tuesday
+      nl: Dinsdag
+    start_time: '19:30'
+    end_time: '21:30'
+    description:
+      en: |-
+        On all Tuesdays except the first of the month, we have creative spaces! The pand is open to paint, knit, 
+        create bracelets, and anything creative! (Creative spaces starts later on the first Tuesday of each month.)
+      nl: |-
+        Elke dinsdag behalve de eerste van de maand is het tijd voor creative spaces! Het pand is open om te 
+        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative spaces start later op de 
+        eerste dinsdag van de maand.)
 
   - name: Fillum
     day:
@@ -63,6 +78,20 @@ events:
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
 
+  - name: Roze Kroeg
+    day:
+      en: First Friday
+      nl: Eerste vrijdag
+    monthly: 'Yes'
+    start_time: '19:30'
+    end_time: '21:30'
+    description:
+      en: |-
+        On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style 
+        bar experience.
+      nl: |-
+        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom voor een drankje in bruine-kroeg stijl.
+
   - name: MIXUP
     day:
       en: Saturday
@@ -81,10 +110,30 @@ events:
         en: MIXUP on Instagram
         nl: MIXUP op Instagram
       url: https://www.instagram.com/mixupdelft/
-    announcement:
-      en: "Starting November 4th, MIXUP opens at 22:00."
-      nl: "Vanaf 4 november geopend vanaf 22:00 uur."
 
+  - name: Jong&Out
+    day:
+      en: Third Sunday
+      nl: Derde zondag
+    monthly: 'Yes'
+    start_time: '14:00'
+    end_time: '17:00'
+    description:
+      en: |-
+        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTQ+ youth
+        members, sometimes with an activity afterwards.
+      nl: |-
+        Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
+        één van onze leden, met soms een activiteit achteraf.
+    restrictions:
+      - en: Between 13 and 18 years old
+        nl: Tussen de 13 en 18 jaar oud
+    link:
+      name:
+        en: Find out more
+        nl: Lees meer
+      url: https://jongenoutdelft.nl/
+    
   - name: QT
     day:
       en: Sunday

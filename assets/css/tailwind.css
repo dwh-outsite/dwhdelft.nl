@@ -39,7 +39,7 @@ html {
   @apply mr-1;
 }
 
-.form-element input:not([type='radio']),
+.form-element input:not([type='radio']):not([type='checkbox']),
 .form-element textarea {
   @apply bg-white text-gray-800 rounded-lg block px-4 py-3 w-full;
 }

@@ -39,16 +39,15 @@ nl:
         <FormInput v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
         <FormValidation name="pronouns" :errors="validationErrors" />
       </FormElement>
-      <FormElement :label="$t('forms.label.barbuddy')" required="true">
-        <FormRadio v-model="form.barbuddy" :label="$t('forms.label.languages.no_preference')" option="no_preference" />
-        <FormRadio
+      <FormElement :label="$t('forms.label.barbuddy')" required="false">
+        <FormMultiCheckbox
           v-for="buddy in barBuddies"
           :key="buddy.name"
-          v-model="form.barbuddy"
+          v-model="form.barbuddies"
           :label="buddy.name"
           :option="buddy.name"
         />
-        <FormValidation name="barbuddy" :errors="validationErrors" />
+        <FormValidation name="barbuddies" :errors="validationErrors" />
       </FormElement>
       <FormElement :label="$t('forms.label.remarks')">
         <FormInput v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')" type="textarea" />
@@ -77,7 +76,8 @@ export default {
         email: '',
         phone_number: '',
         pronouns: '',
-        barbuddy: 'no_preference',
+        barbuddies: [],
+        buddy_preferences: '',
         remarks: '',
       },
       validationErrors: {},
@@ -86,7 +86,7 @@ export default {
   },
   watch: {
     selected() {
-      this.form.barbuddy = this.selected.name
+      this.form.barbuddy = [this.selected.name]
     },
   },
   methods: {
@@ -95,7 +95,9 @@ export default {
 
       this.formStatus = 'loading'
 
-      new ReMemberForm('barbuddy')
+      this.form.buddy_preferences = this.form.barbuddies.join(', ')
+
+      new ReMemberForm('barbuddy2')
         .submit(this.form)
         .then(() => {
           this.formStatus = 'finished'

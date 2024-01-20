@@ -64,8 +64,8 @@ export default {
     socials: () => [
       { url: 'https://instagram.com/dwh_delft', icon: InstagramIcon },
       { url: 'https://facebook.com/DWHDelft', icon: FacebookIcon },
-      { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
       { url: 'https://www.youtube.com/@dwhdelft', icon: YoutubeIcon },
+      { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
     ],
   },
 }

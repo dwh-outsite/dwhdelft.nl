@@ -27,7 +27,7 @@ nl:
     - name: Thomas
       pronouns: hij/hem
       description:
-        - 'Hoi, ik ben Thomas! Als begeleider bij Jong&Out Delft vind ik het geweldig om bij te dragen aan een veilige ruimte waar queer jongeren zichzelf kunnen zijn, zeker omdat ik dat op mijn middelbare school niet had!'
+        - 'Hey daar! Ik ben Thomas. Ik vind het heel tof op bij Jong&Out te zitten en een fijne plek te creëren voor de jongeren!'
     - name: Dim
       pronouns: hij/hem
       description:

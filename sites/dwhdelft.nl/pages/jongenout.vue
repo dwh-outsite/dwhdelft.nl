@@ -48,11 +48,11 @@ nl:
 
 <template>
   <div>
-    <SmallHeader bg="bg-[#752CEF]">
+    <SmallHeader bg="bg-[#5e4fff]">
       {{ $t('title') }}
     </SmallHeader>
 
-    <div class="bg-jongenout w-full py-6">
+    <div class="bg-jongenout w-full py-6 bg-[#5e4fff]">
       <section class="container px-4 mx-auto space-y-6">
         <LanguageWarning v-if="$i18n.locale == 'en'" class="mb-12" />
         <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
@@ -80,7 +80,7 @@ nl:
           <div class="flex-1">
             <div class="md:w-5/6 ml-auto">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.join')" />
-              <div class="bg-[#3e0a93] shadow-xl text-white rounded-3xl p-6 w-full text-lg space-y-4">
+              <div class="bg-[#120f82] shadow-xl text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <div v-if="!showForm">
                   <div class="flex items-center mb-4">
                     <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
@@ -118,7 +118,7 @@ nl:
       </section>
     </div>
 
-    <section class="bg-[#3e0a93] py-12">
+    <section class="bg-[#120f82] py-12">
       <div class="container mx-auto px-4">
         <h2 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.team')" />
         <div class="text-center text-white text-2xl md:w-2/3 mx-auto mb-12">
@@ -128,7 +128,7 @@ nl:
           <div
             v-for="({ name, pronouns, description }, index) in $t('team')"
             :key="name"
-            class="rounded-2xl md:rounded-full bg-[#752CEF] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-2/3 shadow-xl"
+            class="rounded-2xl md:rounded-full bg-[#5e4fff] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-2/3 shadow-xl"
             :class="index % 2 !== 0 ? 'ml-auto' : ''"
           >
             <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
@@ -145,7 +145,7 @@ nl:
         </div>
         <img
           :src="requireImage('team')"
-          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#752CEF] shadow-xl"
+          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#5e4fff] shadow-xl"
         />
       </div>
     </section>
@@ -175,10 +175,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.bg-jongenout {
-  @apply bg-cover;
-  background-image: url(../../../assets/images/jongenout/background.svg);
-}
-</style>

@@ -25,6 +25,8 @@
     "nuxt": "^2.16.1",
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss-aspect-ratio": "^3.0.0",
+    "vue": "2.7.16",
+    "vue-server-renderer": "2.7.16",
     "vue-zondicons": "^0.1.10"
   },
   "devDependencies": {

@@ -55,11 +55,3 @@ verspreid onder al onze leden en vele externe partners. De oplage is meer dan
 Er is de mogelijkheid om een advertentie in ons blad te plaatsen. Stuur een mail
 naar [penningmeester@dwhdelft.nl](mailto:penningmeester@dwhdelft.nl) voor de actuele
 prijzen en (verdere) mogelijkheden.
-
-### Sponsorkliks
-Door uw aankopen bij verschillende aangesloten webwinkels bij Sponsorkliks via onze
-link [dwhdelft.nl/sponsorkliks](https://dwhdelft.nl/sponsorkliks) te doen kunt u DWH
-gratis sponsoren. Voor iedere aankoop krijgen wij een kleine commissie. Geld dat
-binnenkomt via Sponsorkliks komt direct als extra budget bij een van onze (roterende)
-commissies terecht. Zo draagt u op een makkelijke manier bij aan het mogelijk maken
-van meer leuke activiteiten en het realiseren van onze doelen.

@@ -25,13 +25,6 @@ nl:
               <component :is="icon" class="fill-current w-6" />
             </div>
           </a>
-          <a href="https://dwhdelft.nl/sponsorkliks" target="_blank">
-            <div
-              class="rounded-full h-10 px-3 py-2 lg:mr-6 bg-white hover:bg-gray-300 text-gray-700 uppercase tracking-wide text-sm font-semibold flex items-center"
-            >
-              Sponsor<span class="text-green-600">kliks</span>
-            </div>
-          </a>
         </div>
         <div class="sm:flex justify-center text-center lg:justify-start mt-4 lg:mt-0">
           <a

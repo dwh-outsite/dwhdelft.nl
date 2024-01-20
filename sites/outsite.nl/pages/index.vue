@@ -109,7 +109,7 @@ nl:
       </a>
     </section>
 
-    <section id="activities" class="relative page-ender pt-48 md:pt-20 pb-16">
+    <section id="activities" class="page-ender bg-gray-200 w-full relative pt-48 md:pt-20 pb-16">
       <Testimonial class="absolute left-0 right-0 -mt-64 md:-mt-40" />
       <div class="container mx-auto px-4 relative z-10 mt-12">
         <InstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
@@ -181,12 +181,14 @@ export default {
 }
 
 .page-ender::before {
-  @apply bg-gray-200 absolute w-full;
-  height: 150%;
+  @apply absolute w-full h-full;
+  background: inherit;
   transform: skewY(-7deg);
   content: '';
   z-index: 0;
   top: 0px;
+  left: 0px;
+  transform-origin: top left;
 }
 
 .panda {

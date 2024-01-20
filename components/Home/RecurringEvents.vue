@@ -9,7 +9,6 @@ nl:
 
 <template>
   <div class="container px-4 mx-auto py-8 md:py-16">
-
     <!-- Weekly events -->
     <h2
       class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight"
@@ -70,7 +69,7 @@ nl:
               </div>
             </div>
             <div class="text-gray-500 text-2xl font-semibold" v-text="$tt(event.day)" />
-          <div class="text-gray-400 text-xl" v-text="event.start_time" />
+            <div class="text-gray-400 text-xl" v-text="event.start_time" />
             <p v-html="$tt(event.description)" />
           </div>
           <a
@@ -82,7 +81,6 @@ nl:
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -93,17 +91,17 @@ export default {
       openingHours: [],
     }
   },
+  async fetch() {
+    this.openingHours = (await this.$content('opening_hours').fetch()).events
+  },
   computed: {
     openingHoursWeekly() {
-      return this.openingHours.filter(o => !o.hasOwnProperty('monthly'));
+      return this.openingHours.filter((o) => !Object.prototype.hasOwnProperty.call(o, 'monthly'))
     },
 
     openingHoursMonthly() {
-      return this.openingHours.filter(o => o.hasOwnProperty('monthly'));
+      return this.openingHours.filter((o) => Object.prototype.hasOwnProperty.call(o, 'monthly'))
     },
-  },
-  async fetch() {
-    this.openingHours = (await this.$content('opening_hours').fetch()).events
   },
 }
 </script>

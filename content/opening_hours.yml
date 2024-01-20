@@ -126,8 +126,8 @@ events:
         Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
         één van onze leden, met soms een activiteit achteraf.
     restrictions:
-      - en: Between 13 and 18 years old
-        nl: Tussen de 13 en 18 jaar oud
+      - en: Between 12 and 18 years old
+        nl: Tussen de 12 en 18 jaar oud
     link:
       name:
         en: Find out more

@@ -27,10 +27,6 @@ categories:
           nl: Fillum Programma
           en: Fillum Programme
         url: "http://homodelft.nl/films/"
-      - name:
-          nl: Reserveren
-          en: Reservations
-        url: /book
   - name:
       nl: Kennismaken
       en: Join DWH

@@ -1,10 +1,10 @@
 <i18n lang="yaml">
 en:
   announcement: <strong>DWH</strong> is open {count} nights a week
-  announcement-month: Other monthly events at <strong>DWH</strong>
+  announcement_month: Monthly events at <strong>DWH</strong>
 nl:
   announcement: <strong>DWH</strong> is elke week op {count} avonden open
-  announcement-month: Andere maandelijkse evenement bij <strong>DWH</strong>
+  announcement_month: Maandelijkse evenementen bij <strong>DWH</strong>
 </i18n>
 
 <template>
@@ -46,7 +46,7 @@ nl:
     <!-- Monthly events -->
     <h2
       class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight"
-      v-html="$t('announcement-month')"
+      v-html="$t('announcement_month')"
     />
 
     <div class="md:flex flex-wrap justify-center -mx-2">
@@ -96,11 +96,11 @@ export default {
   },
   computed: {
     openingHoursWeekly() {
-      return this.openingHours.filter((o) => !Object.prototype.hasOwnProperty.call(o, 'monthly'))
+      return this.openingHours.filter((o) => !('monthly' in o))
     },
 
     openingHoursMonthly() {
-      return this.openingHours.filter((o) => Object.prototype.hasOwnProperty.call(o, 'monthly'))
+      return this.openingHours.filter((o) => ('monthly' in o))
     },
   },
 }

@@ -22,7 +22,7 @@ events:
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
     
-  - name: Creative Spaces
+  - name: Creative Space
     day:
       en: Tuesday
       nl: Dinsdag
@@ -30,11 +30,11 @@ events:
     end_time: '21:30'
     description:
       en: |-
-        On all Tuesdays except the first of the month, we have creative spaces! The pand is open to paint, knit, 
-        create bracelets, and anything creative! (Creative spaces starts later on the first Tuesday of each month.)
+        On all Tuesdays, we have creative space! The pand is open to paint, knit, 
+        create bracelets, and anything creative! (Creative space starts later on the first Tuesday of each month.)
       nl: |-
-        Elke dinsdag behalve de eerste van de maand is het tijd voor creative spaces! Het pand is open om te 
-        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative spaces start later op de 
+        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te 
+        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de 
         eerste dinsdag van de maand.)
 
   - name: Fillum
@@ -82,7 +82,7 @@ events:
     day:
       en: First Friday
       nl: Eerste vrijdag
-    monthly: 'Yes'
+    monthly: true
     start_time: '19:30'
     end_time: '21:30'
     description:
@@ -115,16 +115,18 @@ events:
     day:
       en: Third Sunday
       nl: Derde zondag
-    monthly: 'Yes'
+    monthly: true
     start_time: '14:00'
     end_time: '17:00'
     description:
       en: |-
         Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTQ+ youth
-        members, sometimes with an activity afterwards.
+        members. Come around to bake, play games, do a graffity workshop, go to Jumpsquare, and more!
+        We also have a camp each year!
       nl: |-
-        Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
-        één van onze leden, met soms een activiteit achteraf.
+        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren. 
+        Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen, 
+        naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
     restrictions:
       - en: Between 12 and 18 years old
         nl: Tussen de 12 en 18 jaar oud

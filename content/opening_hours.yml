@@ -83,8 +83,8 @@ events:
       en: First Friday
       nl: Eerste vrijdag
     monthly: true
-    start_time: '19:30'
-    end_time: '21:30'
+    start_time: '21:00'
+    end_time: '02:00'
     description:
       en: |-
         On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style 

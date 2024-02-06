@@ -100,7 +100,7 @@ export default {
     },
 
     openingHoursMonthly() {
-      return this.openingHours.filter((o) => ('monthly' in o))
+      return this.openingHours.filter((o) => 'monthly' in o)
     },
   },
 }

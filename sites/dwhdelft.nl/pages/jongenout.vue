@@ -40,10 +40,6 @@ nl:
       pronouns: zij/haar
       description:
         - 'Hey, ik ben Didi! Ik vind het leuk om voor queer jongeren een plek te creëren waar ze open kunnen zijn, zich vertrouwd kunnen voelen en waar ze natuurlijk veel leuke dingen kunnen beleven.'
-    - name: Laurens
-      pronouns: hij/hem
-      description:
-        - 'Hey hey, mijn naam is Laurens en ik vind het super fijn een plekje voor jonge lhbti+ personen te kunnen faciliteren. In mijn jeugd heb ik er ontzettend veel aan gehad en op deze manier geef ik het stokje door.'
 </i18n>
 
 <template>

@@ -88,9 +88,12 @@ events:
     description:
       en: |-
         On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style 
-        bar experience.
+        bar experience. The dance floor isn't open and there is calm music, so it's ideal for talking to one another. 
+        Of course there will be (deep-fried) snacks.
       nl: |-
-        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom voor een drankje in bruine-kroeg stijl.
+        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom langs voor een drankje in bruine-kroeg stijl. 
+        De dansvloer is niet geopend en er is rustige muziek, dus ideaal om lekker met anderen te komen babbelen. 
+        Natuurlijk zijn er borrelnootjes en bitterballen.
 
   - name: MIXUP
     day:

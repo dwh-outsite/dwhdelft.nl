@@ -38,7 +38,8 @@ nl:
 import Zondicon from 'vue-zondicons'
 import dayjs from 'dayjs'
 import InstagramIcon from '#/assets/images/social/instagram.svg?inline'
-import FacebookIcon from '#/assets/images/social/facebook.svg?inline'
+
+import YouTubeIcon from '#/assets/images/social/youtube.svg?inline'
 import GitHubIcon from '#/assets/images/social/github.svg?inline'
 
 export default {
@@ -62,7 +63,7 @@ export default {
   methods: {
     socials: () => [
       { url: 'https://instagram.com/dwh_delft', icon: InstagramIcon },
-      { url: 'https://facebook.com/DWHDelft', icon: FacebookIcon },
+      { url: 'https://www.youtube.com/@dwhdelft', icon: YouTubeIcon },
       { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
     ],
   },

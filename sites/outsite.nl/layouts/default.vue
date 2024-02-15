@@ -5,7 +5,7 @@
     </main>
     <footer id="contact" class="bg-gray-700 relative z-10">
       <JoinWhatsapp />
-      <Footer class="md:pt-8" />
+      <Footer class="md:pt-36" />
     </footer>
   </div>
 </template>

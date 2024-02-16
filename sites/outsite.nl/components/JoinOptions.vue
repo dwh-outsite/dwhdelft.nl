@@ -21,6 +21,12 @@ en:
     barbuddies_title: Our <strong>Bar Buddies</strong>
     read_more: Read more
     read_less: Collapse
+  jongenout:
+    title: Jong&Out Delft
+    description: Not yet 18? Outsite's parent organisation, DWH, also hosts a Jong&Out group for people between
+      12 and 18 who are LGBTQ+, questioning, or generally interested! There is an activity every third Sunday of the month,
+      ranging from baking and playing games to going to Jumpsquare and the Efteling.
+    action: Read more about Jong&Out Delft
   membership:
     title: Become an Outsite member
     description:
@@ -74,6 +80,12 @@ nl:
     barbuddies_title: Onze <strong>Barbuddies</strong>
     read_more: Lees meer
     read_less: Inklappen
+  jongenout:
+    title: Jong&Out Delft
+    description: Nog geen 18? Outsite's moedervereniging, DWH, heeft ook een Jong&Out groep voor jongeren tussen
+      de 12 en 18 die LHBTQ+ zijn, dat nog niet weten, of gewoon geïnteresseerd zijn! Elke derde zondag van de maand
+      is er een activiteit, zoals bakken en spelletjes spelen, of uitjes naar bijvoorbeeld Jumpsquare of de Efteling.
+    action: Lees meer over Jong&Out Delft
   membership:
     title: Lid worden bij Outsite
     description: Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
@@ -139,7 +151,7 @@ nl:
         </div>
         <div class="flex flex-wrap -mx-2 pt-6 px-8">
           <div v-for="advantage in $t('membership.advantages')" :key="advantage.title" class="mb-4 w-full lg:w-1/2">
-            <div class="h-full bg-white rounded-lg p-3 pr-4 items-center text-gray-900 mx-2 leading-snug shadow-md">
+            <div class="h-full bg-white rounded-lg p-6 py-8 items-center text-gray-900 mx-2 leading-snug shadow-md">
               <div class="flex items-center mb-1">
                 <div class="rounded-full w-8 h-8 p-2 bg-brand-400 mr-3 text-white">
                   <Zondicon :icon="advantage.icon" class="fill-current" />
@@ -150,7 +162,7 @@ nl:
               </div>
               <div class="flex">
                 <div class="pl-8 mr-3" />
-                <p class="text-sm lg:text-base leading-tight" v-text="advantage.description" />
+                <p class="text-base lg:text-xl leading-tight" v-text="advantage.description" />
               </div>
             </div>
           </div>
@@ -179,6 +191,18 @@ nl:
           <p class="mb-6 text-lg lg:text-xl" v-text="$t('bar_buddy.description')" />
           <a :href="localePath('barbuddy')" class="text-base">
             <PrimaryButton>{{ $t('bar_buddy.action') }}</PrimaryButton>
+          </a>
+        </ActionCard>
+        <ActionCard :title="$t('jongenout.title')" class="p-8">
+          <template #icon>
+            <div class="rounded-full w-16 h-16 p-4 bg-brand-400 mr-4 text-white mb-6 lg:mb-0">
+              <Zondicon icon="user-group" class="fill-current" />
+            </div>
+          </template>
+
+          <p class="mb-6 text-lg lg:text-xl" v-text="$t('jongenout.description')" />
+          <a href="https://dwhdelft.nl/jongenout" class="text-base">
+            <PrimaryButton>{{ $t('jongenout.action') }}</PrimaryButton>
           </a>
         </ActionCard>
       </div>

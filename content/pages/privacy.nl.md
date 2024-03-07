@@ -3,12 +3,12 @@ title: Privacy
 layout: article
 ---
 
-Delftse Werkgroep Homoseksualiteit<br>
+DWH<br>
 Lange Geer 22<br>
 2611 PV Delft<br>
 [secretaris@dwhdelft.nl](mailto:secretaris@dwhdelft.nl)
 
-De Delftse Werkgroep Homoseksualiteit (DWH) vindt het belangrijk dat de privacy van haar bezoekers, leden en vrijwilligers is gewaarborgd. DWH houdt zich daarvoor aan dit privacybeleid.
+DWH vindt het belangrijk dat de privacy van haar bezoekers, leden en vrijwilligers is gewaarborgd. DWH houdt zich daarvoor aan dit privacybeleid.
 
 # Persoonsgegevens die wij verwerken
 

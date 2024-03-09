@@ -28,6 +28,10 @@ nl:
       pronouns: hij/hem
       description:
         - 'Hey daar! Ik ben Thomas. Ik vind het heel tof op bij Jong&Out te zitten en een fijne plek te creëren voor de jongeren!'
+    - name: Jaye
+      pronouns: alle voornaamwoorden
+      description:
+        - 'Hoi !! Ik ben Jaye !! Ik vind het erg leuk om een plek te creëren waar jongeren hunzelf kunnen zijn en hunzelf en andere beter kunnen leren kennen :)'
     - name: Meander
       pronouns: die/hun
       description:

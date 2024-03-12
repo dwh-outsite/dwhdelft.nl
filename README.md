@@ -1,41 +1,75 @@
-# 🌈 Website of DWH
+# Nuxt 3 Minimal Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/267389a7-6a04-4d23-85c1-0956dfd672a1/deploy-status)](https://app.netlify.com/sites/dwh/deploys)
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-DWH is the independent LGBT+ association of Delft and surroundings. 
-We're two things: a meeting place for LGBT+ people and their friends and a group that actively
-pushes for greater LGBT+ rights and acceptance.
+## Setup
 
-The website is a (statically generated) [Nuxt.js](https://nuxtjs.org) app hosted on [Netlify](https://netlify.com).
-The app makes heavy use of [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/).
-
-## Build Setup
+Make sure to install the dependencies:
 
 ```bash
-# install dependencies
-$ yarn install
+# npm
+npm install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# pnpm
+pnpm install
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# yarn
+yarn install
 
-# generate static project
-$ yarn generate
+# bun
+bun install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
 
-## Page Types
+Start the development server on `http://localhost:3000`:
 
-The "easier" pages are Markdown based and can be found in `content/pages`.
-There are multiple layouts available for these pages.
-The markdown pages can make use of components from `components/globals`.
-See [the documentation of Nuxt Content](https://content.nuxtjs.org/writing) for further details.
+```bash
+# npm
+npm run dev
 
-The more complex pages of the website live in the `pages/` directory and are Vue components,
-supported by the components in `components/`.
-When these pages have content-heavy elements, their content usually comes from markdown files in the
-`content/` directory.
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

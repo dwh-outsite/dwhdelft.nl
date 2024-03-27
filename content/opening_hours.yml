@@ -144,8 +144,9 @@ events:
     
   - name: QT
     day:
-      en: Sunday
-      nl: Zondag
+      en: Second and fourth Sunday
+      nl: Tweede en vierde zondag
+    monthly: true
     start_time: '17:00'
     end_time: '21:00'
     description:

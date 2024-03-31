@@ -35,7 +35,7 @@ const showMenu = ref(false)
 <template>
   <header id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
-      <div class="container px-4 mx-auto flex justify-between items-center relative">
+      <ElementsContainer class="flex justify-between items-center relative">
         <nuxt-link :to="localePath('index')">
           <slot name="logo" />
         </nuxt-link>
@@ -89,14 +89,14 @@ const showMenu = ref(false)
             </div>
           </div>
         </div>
-      </div>
+      </ElementsContainer>
     </nav>
     <slot name="background"></slot>
     <div :class="bg ? bg : 'bg-white'" class="hero"></div>
     <div class="relative flex items-center h-full">
-      <div class="container px-4 mx-auto mt-40 mb-48">
+      <ElementsContainer class="mt-40 mb-48">
         <slot></slot>
-      </div>
+      </ElementsContainer>
     </div>
   </header>
 </template>

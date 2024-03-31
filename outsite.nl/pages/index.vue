@@ -52,7 +52,7 @@ const { t, tt } = useT()
     </div>
   </section>
 
-  <LayoutSkewedSectionWithImageBackground>
+  <LayoutSkewedSectionWithImageBackground class="-mb-52 md:-mb-72">
     <PagesHomeBulletPoints />
 
     <template #background>
@@ -61,4 +61,8 @@ const { t, tt } = useT()
       </div>
     </template>
   </LayoutSkewedSectionWithImageBackground>
+
+  <section id="join-outsite" class="bg-brand-200 relative z-20 bg-hero-falling-triangles">
+    <PagesHomeJoinOptions />
+  </section>
 </template>

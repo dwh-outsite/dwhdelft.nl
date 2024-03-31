@@ -43,26 +43,20 @@ const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/bull
 </script>
 
 <template>
-  <div class="container mx-auto px-4">
+  <ElementsContainer>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-      <div v-for="point in t('bulletPoints')" :key="point.title" class="rounded-xl bg-white shadow-lg overflow-hidden">
-        <div>
+      <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
+        <template #header>
           <div class="w-full h-40 overflow-hidden mx-auto">
             <img
               :src="image(`bullet_${point.image}`)"
               class="object-cover w-full h-full"
             />
           </div>
-        </div>
-        <div class="w-full p-6 pt-3">
-          <div class="uppercase mx-auto font-bold tracking-wider text-2xl text-brand-400 mb-1">
-            {{ point.title }}
-          </div>
-          <div class="text-gray-600 text-lg leading-snug">
-            {{ point.description }}
-          </div>
-        </div>
-      </div>
+        </template>
+
+        <p class="-mt-3 text-gray-600 text-lg leading-snug" v-text="point.description" />
+      </ElementsActionCard>
     </div>
-  </div>
+  </ElementsContainer>
 </template>

@@ -38,9 +38,8 @@ defineProps({
   bg: { type: String },
 })
 
-const { tm, rt } = useI18n({ useScope: 'local' })
-
-const menu = tm('menu').map((item) => ({ title: rt(item.title), url: rt(item.url) }))
+const { t } = useT()
+const menu = t('menu')
 </script>
 
 <template>

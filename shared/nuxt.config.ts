@@ -8,7 +8,7 @@ const relativePath = (path) => join(dirname(fileURLToPath(import.meta.url)), pat
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', 'nuxt-svgo'],
+  modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content'],
   i18n: {
     locales: ['en', 'nl'],
     legacy: true,

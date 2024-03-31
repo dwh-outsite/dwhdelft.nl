@@ -5,11 +5,6 @@ en:
     subtitle: for everyone up to 28 years
     primaryButton: Join Outsite
     secondaryButton: Watch Video
-  description:
-    text:
-      - "These activities are all organized by our fantastic committees and members! The best way to become acquainted with
-        Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
-        system: Where we will make sure there is someone ready to show you around and who could introduce you to others."
   video:
     title: " in 120 seconds"
   instagram:
@@ -20,11 +15,6 @@ nl:
     subtitle: voor iedereen t/m 28 jaar
     primaryButton: Kom naar Outsite
     secondaryButton: Bekijk Video
-  description:
-    text:
-      - "Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
-        activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
-        kwartaal tot gezamenlijk uitgaan in andere steden. Outsite is onderdeel van DWH, de LHBT+ vereniging van Delft."
   video:
     title: " in 120 seconden"
   instagram:
@@ -32,7 +22,9 @@ nl:
 </i18n>
 
 <script setup>
-const { t } = useI18n({ useScope: 'local' })
+import Panda from '../assets/images/panda_cropped.svg'
+
+const { t, tt } = useT()
 </script>
 
 <template>
@@ -48,4 +40,15 @@ const { t } = useI18n({ useScope: 'local' })
       </a>
     </div>
   </LayoutHeader>
+
+  <section class="overflow-x-hidden overflow-y-visible pt-48 -mt-48 -mb-40">
+    <div class="container mx-auto pt-12 sm:pt-16 pb-24 md:flex md:justify-between">
+      <div class="md:w-1/2 px-4">
+        <PagesHomeIntro />
+      </div>
+      <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">
+        <Panda class="panda relative md:absolute" />
+      </div>
+    </div>
+  </section>
 </template>

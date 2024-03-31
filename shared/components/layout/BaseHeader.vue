@@ -9,7 +9,7 @@ const props = defineProps({
   bg: { type: String },
 })
 
-const { locale } = useI18n()
+const { locale } = useT()
 const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
 

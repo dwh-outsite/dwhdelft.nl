@@ -39,6 +39,10 @@ export default {
           900: '#111827',
         }
       },
+      skew: {
+        '-7': '-7deg',
+        7: '7deg',
+      },
     },
   },
   plugins: [],

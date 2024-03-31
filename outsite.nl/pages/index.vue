@@ -47,8 +47,18 @@ const { t, tt } = useT()
         <PagesHomeIntro />
       </div>
       <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">
-        <Panda class="panda relative md:absolute" />
+        <Panda class="relative md:absolute bottom-0 left-5 w-full" />
       </div>
     </div>
   </section>
+
+  <LayoutSkewedSectionWithImageBackground>
+    <PagesHomeBulletPoints />
+
+    <template #background>
+      <div class="bg-gray-400 h-full w-full">
+        <img src="~/assets/images/photos/cover.jpg" class="opacity-50 blur-sm w-full h-full object-cover" />
+      </div>
+    </template>
+  </LayoutSkewedSectionWithImageBackground>
 </template>

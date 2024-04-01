@@ -10,11 +10,21 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content'],
   i18n: {
-    locales: ['en', 'nl'],
-    legacy: true,
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        files: ['en.js'],
+      },
+      {
+        code: 'nl',
+        name: 'Nederlands',
+        files: ['nl.js'],
+      },
+    ],
+    langDir: 'lang/',
     compilation: {
       strictMessage: false,
-      legacy: true,
     },
   },
   svgo: {

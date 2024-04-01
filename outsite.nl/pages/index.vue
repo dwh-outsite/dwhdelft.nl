@@ -35,6 +35,15 @@ nl:
 import Panda from '../assets/images/panda_cropped.svg'
 
 const { t, tt } = useT()
+
+const instagramChannels = [
+  {
+    name: 'Outsite',
+    subtitle: { nl: 'Donderdagen', en: 'Thursdays' },
+    widgetId: '624d8645cce75e45bae0a87c9c761cd6',
+    instagram: 'outsite_delft',
+  },
+]
 </script>
 
 <template>
@@ -107,4 +116,15 @@ const { t, tt } = useT()
     </ElementsContainer>
   </section>
 
+  <LayoutEmulatedSkewedSection :bottom="false" contentClass="bg-gray-200" triangleClass="border-gray-200">
+    <ElementsContainer class="pb-16">
+      <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
+        <template #title>
+          <h1 class="tracking-wide font-semibold uppercase text-2xl pt-6 mb-10 text-center">
+            {{ t('instagram.title') }}
+          </h1>
+        </template>
+      </PagesHomeInstagramChannels>
+    </ElementsContainer>
+  </LayoutEmulatedSkewedSection>
 </template>

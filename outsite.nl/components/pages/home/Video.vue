@@ -11,7 +11,7 @@
     </div>
   </div>
   <a href="https://www.youtube.com/watch?v=zMjnI6Ql3js" target="_blank">
-    <ElementsPrimaryButton class="mt-8 block mx-auto" arrow>
+    <ElementsPrimaryButton class="mt-8 mx-auto" arrow>
       Check ook de Outsite documentaire
     </ElementsPrimaryButton>
   </a>

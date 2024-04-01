@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <h2 class="text-brand-450 font-medium text-5xl mb-8">
+  <h1 class="text-brand-450 font-medium text-5xl mb-8">
     <Markdown :content="title" />
-  </h2>
+  </h1>
 </template>

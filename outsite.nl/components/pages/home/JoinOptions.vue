@@ -75,7 +75,7 @@ nl:
     advantages:
       - icon: IconFactory
         title: Wekelijkse Borrel
-        description: Iedere donderdag komen we samen voor een gezellige
+        description: Elke donderdag komen we samen voor een gezellige
           borrel of leuke activiteit.
       - icon: IconTablet
         title: Gezellige Appgroepen
@@ -94,7 +94,7 @@ nl:
         description: Geen verplichtingen, geen ontgroening, en te combineren
           met studie.
       - icon: IconTarget
-        title: Persoonlijke ontwikkeling
+        title: Ontwikkeling
         description: Werk aan jezelf door een commissie te joinen of misschien
           wel het bestuur?
 </i18n>

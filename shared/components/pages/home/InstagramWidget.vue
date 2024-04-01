@@ -9,12 +9,10 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <iframe
-      :src="`//lightwidget.com/widgets/${widgetId}.html`"
-      scrolling="no"
-      allowtransparency="true"
-      class="lightwidget-widget w-full border-none overflow-hidden"
-    />
-  </div>
+  <iframe
+    :src="`//lightwidget.com/widgets/${widgetId}.html`"
+    scrolling="no"
+    allowtransparency="true"
+    class="lightwidget-widget w-full border-none overflow-hidden"
+  />
 </template>

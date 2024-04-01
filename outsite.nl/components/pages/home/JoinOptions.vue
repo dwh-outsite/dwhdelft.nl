@@ -120,7 +120,7 @@ const membershipIcons = {
     <h1 class="text-center text-white font-medium text-5xl mb-8"><Markdown :content="t('title')" /></h1>
 
     <div class="lg:flex justify-center space-y-6 lg:space-y-0 lg:space-x-4">
-      <ElementsActionCard :title="t('membership.title')" class="flex-1 fade-corners !bg-brand-400 p-8" titleClass="text-white">
+      <ElementsActionCard :title="t('membership.title')" class="flex-1 fade-corners !bg-brand-400" contentClass="p-8" titleClass="text-white">
         <template #icon>
           <ElementsIconCircle class="mb-6 lg:mb-0" inverted>
             <IconCompose class="w-6 h-6 m-5" />
@@ -138,7 +138,7 @@ const membershipIcons = {
 
         <div class="-mx-8 -mb-8 mt-6 p-8 bg-[#ffaadf]">
           <div class="grid md:grid-cols-2 gap-4">
-            <ElementsActionCard v-for="advantage in t('membership.advantages')" :key="advantage.title" :title="advantage.title" class="!p-3 !pr-4 !rounded-lg" titleClass="text-lg">
+            <ElementsActionCard v-for="advantage in t('membership.advantages')" :key="advantage.title" :title="advantage.title" class="!rounded-lg" contentClass="!p-3 !pr-4" titleClass="text-lg">
               <template #icon>
                 <ElementsIconCircle>
                   <Component :is="membershipIcons[advantage.icon]" class="w-4 h-4 m-2" />
@@ -152,7 +152,7 @@ const membershipIcons = {
       </ElementsActionCard>
 
       <div class="flex-1 space-y-6 lg:space-y-4">
-        <ElementsActionCard :title="t('kmg.title')" class="p-8">
+        <ElementsActionCard :title="t('kmg.title')" contentClass="p-8">
           <template #icon>
             <ElementsIconCircle class="mb-6 lg:mb-0">
               <IconUserGroup class="w-8 h-8 m-4" />
@@ -166,7 +166,7 @@ const membershipIcons = {
           </nuxt-link>
         </ElementsActionCard>
 
-        <ElementsActionCard :title="t('bar_buddy.title')" class="p-8">
+        <ElementsActionCard :title="t('bar_buddy.title')" contentClass="p-8">
           <template #icon>
             <ElementsIconCircle class="mb-6 lg:mb-0">
               <IconBeverage class="w-8 h-8 m-4" />

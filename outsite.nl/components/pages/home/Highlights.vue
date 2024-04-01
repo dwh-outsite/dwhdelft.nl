@@ -1,0 +1,48 @@
+<i18n lang="yaml">
+en:
+  read_more: Read more about this activity
+nl:
+  read_more: Lees meer over deze activiteit
+</i18n>
+
+<script setup>
+defineProps({
+  excerpts: { type: Boolean, default: false },
+})
+
+const { t, locale } = useT()
+
+const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/highlights/*', { eager: true }))
+
+const { data: highlights } = await useAsyncData(() => queryContent('highlights').find())
+</script>
+
+<template>
+  <div :class="[excerpts ? 'space-y-10' : 'space-y-16']">
+    <ElementsActionCard
+      v-for="(highlight, index) in highlights"
+      :key="highlight.title_en"
+      :title="highlight[`title_${locale}`]"
+      class="shadow-xl"
+      headerClass="xl:h-64 md:w-1/3 overflow-hidden"
+      :headerPosition="index % 2 == 0 ? 'left' : 'right'"
+      contentClass="p-8"
+    >
+      <template #header>
+        <img
+          :src="image(highlight.image)"
+          class="object-cover w-full h-full"
+        />
+      </template>
+
+      <p
+        class="text-xl"
+        v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]"
+      />
+
+      <a v-if="excerpts" :href="localePath('highlights')" class="text-brand-400 text-lg hover:text-brand-500">
+        {{ t('read_more') }} &raquo;
+      </a>
+    </ElementsActionCard>
+  </div>
+</template>

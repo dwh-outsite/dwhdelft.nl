@@ -5,6 +5,9 @@ en:
     subtitle: for everyone up to 28 years
     primaryButton: Join Outsite
     secondaryButton: Watch Video
+  highlights:
+    title: Our **Highlights**
+    more: More highlights
   video:
     title: " in 120 seconds"
   instagram:
@@ -15,6 +18,9 @@ nl:
     subtitle: voor iedereen t/m 28 jaar
     primaryButton: Kom naar Outsite
     secondaryButton: Bekijk Video
+  highlights:
+    title: Onze **Hoogtepunten**
+    more: Meer hoogtepunten
   video:
     title: " in 120 seconden"
   instagram:
@@ -22,6 +28,7 @@ nl:
 </i18n>
 
 <script setup>
+import { IconArrowRight } from '@iconify-prerendered/vue-zondicons'
 import Panda from '../assets/images/panda_cropped.svg'
 
 const { t, tt } = useT()
@@ -62,7 +69,40 @@ const { t, tt } = useT()
     </template>
   </LayoutSkewedSectionWithImageBackground>
 
-  <section id="join-outsite" class="bg-brand-200 relative z-20 bg-hero-falling-triangles">
+  <section id="join-outsite" class="bg-brand-200 relative z-10 bg-hero-falling-triangles">
     <PagesHomeJoinOptions />
   </section>
+
+  <LayoutSkewedSection class="-mt-48">
+    <ElementsContainer class="pt-48">
+      <div class="flex items-center mt-12 mb-8">
+        <h1 class="text-brand-450 font-medium text-5xl leading-none flex-1">
+          <Markdown :content="t('highlights.title')" />
+        </h1>
+        <nuxt-link :to="localePath('highlights')" class="hidden md:block">
+          <ElementsPrimaryButton class="flex items-center">
+            {{ t('highlights.more') }}
+            <IconArrowRight class="w-3 h-3 ml-2" />
+          </ElementsPrimaryButton>
+        </nuxt-link>
+      </div>
+
+      <PagesHomeHighlights :excerpts="true" />
+    </ElementsContainer>
+
+<!--
+    <a v-show="excerpts" :href="localePath('highlights')" class="md:hidden">
+      <button
+        class="bg-brand-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center hover:bg-brand-400 text-lg mt-2 mx-auto"
+      >
+        {{ $t('more') }}
+        <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+      </button>
+    </a> -->
+
+    <template #background>
+      <div class="bg-gray-200 h-full w-full" />
+    </template>
+  </LayoutSkewedSection>
+
 </template>

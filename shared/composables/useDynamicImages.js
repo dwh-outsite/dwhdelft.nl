@@ -7,8 +7,6 @@ export const useDynamicImages = (importedImageFiles) => {
     }
   })
 
-  console.log(images)
-
   return {
     image: (name) => images.find((image) => image.name === name)?.image,
   }

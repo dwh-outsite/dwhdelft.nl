@@ -90,16 +90,6 @@ const { t, tt } = useT()
       <PagesHomeHighlights :excerpts="true" />
     </ElementsContainer>
 
-<!--
-    <a v-show="excerpts" :href="localePath('highlights')" class="md:hidden">
-      <button
-        class="bg-brand-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center hover:bg-brand-400 text-lg mt-2 mx-auto"
-      >
-        {{ $t('more') }}
-        <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
-      </button>
-    </a> -->
-
     <template #background>
       <div class="bg-gray-200 h-full w-full" />
     </template>

@@ -38,6 +38,6 @@ const barOpeningHours = openingHours.value.events.find((event) => event.day.en =
       class="mt-3 mb-4 text-brand-500"
       v-text="tt(barOpeningHours.announcement)"
     />
-    <Invite :announcement="t('invite.announcement')" :time="t('invite.time', [barOpeningHours.start_time])" />
+    <PagesHomeInvite :announcement="t('invite.announcement')" :time="t('invite.time', [barOpeningHours.start_time])" />
   </div>
 </template>

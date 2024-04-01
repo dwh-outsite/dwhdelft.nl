@@ -35,14 +35,16 @@ const { data: highlights } = await useAsyncData(() => queryContent('highlights')
         />
       </template>
 
-      <p
-        class="text-xl"
-        v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]"
-      />
+      <div class="flex-1 flex flex-col justify-between">
+        <p
+          class="text-xl"
+          v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]"
+        />
 
-      <a v-if="excerpts" :href="localePath('highlights')" class="text-brand-400 text-lg hover:text-brand-500">
-        {{ t('read_more') }} &raquo;
-      </a>
+        <a v-if="excerpts" :href="localePath('highlights')" class="text-brand-400 text-lg hover:text-brand-500">
+          {{ t('read_more') }} &raquo;
+        </a>
+      </div>
     </ElementsActionCard>
   </div>
 </template>

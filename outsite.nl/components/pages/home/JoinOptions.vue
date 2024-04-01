@@ -1,6 +1,5 @@
 <i18n lang="yaml">
 en:
-  title: Ready to check out **Outsite**?
   kmg:
     title: Introduction Group
     description: Twice a year we organise our introduction groups. These groups are a chance to not only get to know
@@ -50,7 +49,6 @@ en:
         description: Improve you own skills by joining a committee or maybe
           even the board?
 nl:
-  title: Kennismaken met **Outsite**?
   kmg:
     title: 'Kennismakingsgroepen (KMG)'
     description: Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
@@ -100,7 +98,7 @@ nl:
 </i18n>
 
 <script setup>
-import { IconCompose, IconArrowRight, IconFactory, IconTablet, IconTravelWalk, IconLocationFood, IconLayers, IconTarget, IconUserGroup, IconBeverage } from '@iconify-prerendered/vue-zondicons'
+import { IconCompose, IconFactory, IconTablet, IconTravelWalk, IconLocationFood, IconLayers, IconTarget, IconUserGroup, IconBeverage } from '@iconify-prerendered/vue-zondicons'
 
 const { t } = useT()
 
@@ -115,73 +113,67 @@ const membershipIcons = {
 </script>
 
 <template>
-  <ElementsContainer class="py-12">
+  <div class="lg:flex justify-center space-y-6 lg:space-y-0 lg:space-x-4">
+    <ElementsActionCard :title="t('membership.title')" class="flex-1 fade-corners !bg-brand-400" contentClass="p-8" titleClass="text-white">
+      <template #icon>
+        <ElementsIconCircle class="mb-6 lg:mb-0" inverted>
+          <IconCompose class="w-6 h-6 m-5" />
+        </ElementsIconCircle>
+      </template>
 
-    <h1 class="text-center text-white font-medium text-5xl mb-8"><Markdown :content="t('title')" /></h1>
+      <p class="text-white text-lg lg:text-xl font-semibold mb-6" v-text="t('membership.description')" />
 
-    <div class="lg:flex justify-center space-y-6 lg:space-y-0 lg:space-x-4">
-      <ElementsActionCard :title="t('membership.title')" class="flex-1 fade-corners !bg-brand-400" contentClass="p-8" titleClass="text-white">
+      <a href="https://my.dwhdelft.nl/signup">
+        <ElementsSecondaryButton class="!text-brand-400 hover:!bg-brand-100" arrow>
+          {{ t('membership.button') }}
+        </ElementsSecondaryButton>
+      </a>
+
+      <div class="-mx-8 -mb-8 mt-6 p-8 bg-[#ffaadf]">
+        <div class="grid md:grid-cols-2 gap-4">
+          <ElementsActionCard v-for="advantage in t('membership.advantages')" :key="advantage.title" :title="advantage.title" class="!rounded-lg" contentClass="!p-3 !pr-4" titleClass="text-lg">
+            <template #icon>
+              <ElementsIconCircle>
+                <Component :is="membershipIcons[advantage.icon]" class="w-4 h-4 m-2" />
+              </ElementsIconCircle>
+            </template>
+
+            <p class="-mt-4 pl-12 text-sm lg:text-base leading-tight" v-text="advantage.description" />
+          </ElementsActionCard>
+        </div>
+      </div>
+    </ElementsActionCard>
+
+    <div class="flex-1 space-y-6 lg:space-y-4">
+      <ElementsActionCard :title="t('kmg.title')" contentClass="p-8">
         <template #icon>
-          <ElementsIconCircle class="mb-6 lg:mb-0" inverted>
-            <IconCompose class="w-6 h-6 m-5" />
+          <ElementsIconCircle class="mb-6 lg:mb-0">
+            <IconUserGroup class="w-8 h-8 m-4" />
           </ElementsIconCircle>
         </template>
 
-        <p class="text-white text-lg lg:text-xl font-semibold mb-6" v-text="t('membership.description')" />
+        <p class="mb-6 text-lg lg:text-xl" v-text="t('kmg.description')" />
 
-        <a href="https://my.dwhdelft.nl/signup">
-          <ElementsSecondaryButton class="flex items-center !text-brand-400 hover:!bg-brand-100">
-            {{ t('membership.button') }}
-            <IconArrowRight class="w-3 h-3 ml-2" />
-          </ElementsSecondaryButton>
-        </a>
-
-        <div class="-mx-8 -mb-8 mt-6 p-8 bg-[#ffaadf]">
-          <div class="grid md:grid-cols-2 gap-4">
-            <ElementsActionCard v-for="advantage in t('membership.advantages')" :key="advantage.title" :title="advantage.title" class="!rounded-lg" contentClass="!p-3 !pr-4" titleClass="text-lg">
-              <template #icon>
-                <ElementsIconCircle>
-                  <Component :is="membershipIcons[advantage.icon]" class="w-4 h-4 m-2" />
-                </ElementsIconCircle>
-              </template>
-
-              <p class="-mt-4 pl-12 text-sm lg:text-base leading-tight" v-text="advantage.description" />
-            </ElementsActionCard>
-          </div>
-        </div>
+        <nuxt-link :to="localePath('kmg')" class="text-base">
+          <ElementsPrimaryButton>{{ t('kmg.action') }}</ElementsPrimaryButton>
+        </nuxt-link>
       </ElementsActionCard>
 
-      <div class="flex-1 space-y-6 lg:space-y-4">
-        <ElementsActionCard :title="t('kmg.title')" contentClass="p-8">
-          <template #icon>
-            <ElementsIconCircle class="mb-6 lg:mb-0">
-              <IconUserGroup class="w-8 h-8 m-4" />
-            </ElementsIconCircle>
-          </template>
+      <ElementsActionCard :title="t('bar_buddy.title')" contentClass="p-8">
+        <template #icon>
+          <ElementsIconCircle class="mb-6 lg:mb-0">
+            <IconBeverage class="w-8 h-8 m-4" />
+          </ElementsIconCircle>
+        </template>
 
-          <p class="mb-6 text-lg lg:text-xl" v-text="t('kmg.description')" />
+        <p class="mb-6 text-lg lg:text-xl" v-text="t('bar_buddy.description')" />
 
-          <nuxt-link :to="localePath('kmg')" class="text-base">
-            <ElementsPrimaryButton>{{ t('kmg.action') }}</ElementsPrimaryButton>
-          </nuxt-link>
-        </ElementsActionCard>
-
-        <ElementsActionCard :title="t('bar_buddy.title')" contentClass="p-8">
-          <template #icon>
-            <ElementsIconCircle class="mb-6 lg:mb-0">
-              <IconBeverage class="w-8 h-8 m-4" />
-            </ElementsIconCircle>
-          </template>
-
-          <p class="mb-6 text-lg lg:text-xl" v-text="t('bar_buddy.description')" />
-
-          <nuxt-link :to="localePath('barbuddy')" class="text-base">
-            <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>
-          </nuxt-link>
-        </ElementsActionCard>
-      </div>
+        <nuxt-link :to="localePath('barbuddy')" class="text-base">
+          <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>
+        </nuxt-link>
+      </ElementsActionCard>
     </div>
-  </ElementsContainer>
+  </div>
 </template>
 
 <style scoped>

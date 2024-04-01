@@ -8,8 +8,10 @@ en:
   highlights:
     title: Our **Highlights**
     more: More highlights
+  join:
+    title: Ready to check out **Outsite**?
   video:
-    title: " in 120 seconds"
+    title: "**Outsite** in 120 seconds"
   instagram:
     title: Updates and upcoming activities
 nl:
@@ -18,17 +20,18 @@ nl:
     subtitle: voor iedereen t/m 28 jaar
     primaryButton: Kom naar Outsite
     secondaryButton: Bekijk Video
+  join:
+    title: Kennismaken met **Outsite**?
   highlights:
     title: Onze **Hoogtepunten**
     more: Meer hoogtepunten
   video:
-    title: " in 120 seconden"
+    title: "**Outsite** in 120 seconden"
   instagram:
     title: Updates en aankomende activiteiten
 </i18n>
 
 <script setup>
-import { IconArrowRight } from '@iconify-prerendered/vue-zondicons'
 import Panda from '../assets/images/panda_cropped.svg'
 
 const { t, tt } = useT()
@@ -70,7 +73,10 @@ const { t, tt } = useT()
   </LayoutSkewedSectionWithImageBackground>
 
   <section id="join-outsite" class="bg-brand-200 relative z-10 bg-hero-falling-triangles">
-    <PagesHomeJoinOptions />
+    <ElementsContainer class="py-12">
+      <PagesHomeTitle :title="t('join.title')" class="text-center text-white" />
+      <PagesHomeJoinOptions />
+    </ElementsContainer>
   </section>
 
   <LayoutSkewedSection class="-mt-48">
@@ -80,9 +86,8 @@ const { t, tt } = useT()
           <Markdown :content="t('highlights.title')" />
         </h1>
         <nuxt-link :to="localePath('highlights')" class="hidden md:block">
-          <ElementsPrimaryButton class="flex items-center">
+          <ElementsPrimaryButton arrow>
             {{ t('highlights.more') }}
-            <IconArrowRight class="w-3 h-3 ml-2" />
           </ElementsPrimaryButton>
         </nuxt-link>
       </div>
@@ -94,5 +99,12 @@ const { t, tt } = useT()
       <div class="bg-gray-200 h-full w-full" />
     </template>
   </LayoutSkewedSection>
+
+  <section id="video" class="py-16 mb-24">
+    <ElementsContainer>
+      <PagesHomeTitle :title="t('video.title')" class="text-center" />
+      <PagesHomeVideo />
+    </ElementsContainer>
+  </section>
 
 </template>

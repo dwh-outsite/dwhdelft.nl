@@ -4,9 +4,8 @@ defineProps({
 })
 
 useHead({
-  script: [{ src: 'https://cdn.lightwidget.com/widgets/lightwidget.js' }]
-}
-)
+  script: [{ src: 'https://cdn.lightwidget.com/widgets/lightwidget.js' }],
+})
 </script>
 
 <template>

@@ -6,7 +6,7 @@ nl:
 </i18n>
 
 <script setup>
-const { t } = useT()
+const { t, locale } = useT()
 
 const { data: testimonials } = await useAsyncData(() => queryContent('testimonials').find())
 
@@ -25,9 +25,9 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
         :key="testimonial.name"
         :image="imageOrDefault(testimonial.name)"
         :name="testimonial.name"
-        :authorDescription="testimonial[`author_description_${$i18n.locale}`]"
+        :authorDescription="testimonial[`author_description_${locale}`]"
       >
-        {{ testimonial[`text_${$i18n.locale}`] }}
+        {{ testimonial[`text_${locale}`] }}
       </PagesTestimonialsTestimonialCard>
     </ElementsContainer>
   </section>

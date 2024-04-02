@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.19",
     "@iconify-prerendered/vue-zondicons": "^0.23.1702314275",
     "@nuxt/content": "^2.12.1",
     "nuxt": "^3.10.3",

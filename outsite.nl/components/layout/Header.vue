@@ -13,6 +13,10 @@ en:
       url: /book
     - title: Contact
       url: '#contact'
+    - title: KMG
+      url: /kmg
+    - title: Barbuddies
+      url: /barbuddies
 nl:
   menu:
     - title: Home
@@ -27,6 +31,10 @@ nl:
       url: /book
     - title: Contact
       url: '#contact'
+    - title: KMG
+      url: /kmg
+    - title: Barbuddies
+      url: /barbuddies
 </i18n>
 
 <script setup>

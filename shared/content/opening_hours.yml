@@ -21,7 +21,7 @@ events:
         en: Sign Up
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
-    
+
   - name: Creative Space
     day:
       en: Tuesday
@@ -30,11 +30,11 @@ events:
     end_time: '21:30'
     description:
       en: |-
-        On all Tuesdays, we have creative space! The pand is open to paint, knit, 
+        On all Tuesdays, we have creative space! The pand is open to paint, knit,
         create bracelets, and anything creative! (Creative space starts later on the first Tuesday of each month.)
       nl: |-
-        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te 
-        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de 
+        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te
+        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de
         eerste dinsdag van de maand.)
 
   - name: Fillum
@@ -43,7 +43,7 @@ events:
       nl: Woensdag
     start_time: '20:30'
     end_time: '23:00'
-    description: 
+    description:
       en: |-
         The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
         old classics. Subscribe to our mailing list to receive the latest info on which movies will be played when.
@@ -51,7 +51,7 @@ events:
         Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
         aan de beurt. Abonneer op onze maillijst om te weten wanneer welke films gespeeld worden.
     link:
-      name: 
+      name:
         en: Subscribe to our mailing list
         nl: Abonneer op onze maillijst
       url: http://eepurl.com/SCYin
@@ -90,12 +90,12 @@ events:
     end_time: '02:00'
     description:
       en: |-
-        On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style 
-        bar experience. The dance floor isn't open and there is calm music, so it's ideal for talking to one another. 
+        On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style
+        bar experience. The dance floor isn't open and there is calm music, so it's ideal for talking to one another.
         Of course there will be (deep-fried) snacks.
       nl: |-
-        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom langs voor een drankje in bruine-kroeg stijl. 
-        De dansvloer is niet geopend en er is rustige muziek, dus ideaal om lekker met anderen te komen babbelen. 
+        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom langs voor een drankje in bruine-kroeg stijl.
+        De dansvloer is niet geopend en er is rustige muziek, dus ideaal om lekker met anderen te komen babbelen.
         Natuurlijk zijn er borrelnootjes en bitterballen.
 
   - name: MIXUP
@@ -130,8 +130,8 @@ events:
         members. Come around to bake, play games, do a graffity workshop, go to Jumpsquare, and more!
         We also have a camp each year!
       nl: |-
-        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren. 
-        Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen, 
+        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren.
+        Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen,
         naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
     restrictions:
       - en: Between 12 and 18 years old
@@ -141,7 +141,7 @@ events:
         en: Find out more
         nl: Lees meer
       url: https://jongenoutdelft.nl/
-    
+
   - name: QT
     day:
       en: Sunday

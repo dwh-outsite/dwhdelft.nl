@@ -27,7 +27,6 @@ nl:
     **De volgende KennisMakingsGroep start in september 2024**.
 </i18n>
 
-
 <script setup>
 const { t } = useT()
 </script>

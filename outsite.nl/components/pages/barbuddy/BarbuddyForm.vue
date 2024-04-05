@@ -1,22 +1,25 @@
 <i18n lang="yaml">
 en:
-  success: We will contact you as soon as possible.
+  success: The bar buddy you selected will contact you as soon as possible.
 nl:
-  success: We nemen zo snel mogelijk contact met je op!
+  success: Je barbuddy neemt zo snel mogelijk contact met je op.
 </i18n>
 
 <script setup>
 const { t, locale } = useT()
 
-const form = useReMemberForm('kmg', {
+const props = defineProps({
+  barBuddies: { type: Array, required: true },
+})
+
+const form = useReMemberForm('barbuddy', {
   name: '',
-  email: '',
-  date_of_birth: '',
-  phone_number: '',
-  city: '',
+  age: '',
   language: locale.value === 'nl' ? 'dutch' : 'english',
+  email: '',
+  phone_number: '',
   pronouns: '',
-  availability: 'both',
+  barbuddy: 'no_preference',
   remarks: '',
 })
 
@@ -25,6 +28,8 @@ const submit = async () => {
   await form.submit()
   window.scrollTo({ top: formElement.value.offsetTop, behavior: 'smooth' })
 }
+
+const barBuddyOptions = Object.fromEntries(props.barBuddies.map((buddy) => [buddy.name, buddy.name]))
 </script>
 
 <template>
@@ -37,20 +42,16 @@ const submit = async () => {
       <ElementsFormTextInput v-model="form.fields.name" />
     </ElementsFormElement>
 
+    <ElementsFormElement name="age" :errors="form.validationErrors" required>
+      <ElementsFormTextInput v-model="form.fields.age" />
+    </ElementsFormElement>
+
     <ElementsFormElement name="email" :errors="form.validationErrors" required>
       <ElementsFormTextInput v-model="form.fields.email" type="email" />
     </ElementsFormElement>
 
-    <ElementsFormElement name="date_of_birth" :errors="form.validationErrors" required>
-      <ElementsFormTextInput v-model="form.fields.date_of_birth" />
-    </ElementsFormElement>
-
     <ElementsFormElement name="phone_number" :errors="form.validationErrors">
       <ElementsFormTextInput v-model="form.fields.phone_number" />
-    </ElementsFormElement>
-
-    <ElementsFormElement name="residence" :errors="form.validationErrors">
-      <ElementsFormTextInput v-model="form.fields.residence" />
     </ElementsFormElement>
 
     <ElementsFormElement name="language" :errors="form.validationErrors">
@@ -66,6 +67,16 @@ const submit = async () => {
 
     <ElementsFormElement name="pronouns" :errors="form.validationErrors">
       <ElementsFormTextInput v-model="form.fields.pronouns" />
+    </ElementsFormElement>
+
+    <ElementsFormElement name="barbuddy" :errors="form.validationErrors">
+      <ElementsFormRadioInput
+        v-model="form.fields.barbuddy"
+        :options="{
+          no_preference: $t('forms.label.languages.no_preference'),
+          ...barBuddyOptions,
+        }"
+      />
     </ElementsFormElement>
 
     <ElementsFormElement name="remarks" :errors="form.validationErrors">

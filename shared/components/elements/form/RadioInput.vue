@@ -15,7 +15,7 @@ const model = defineModel()
 
 <template>
   <RadioGroup v-model="model">
-    <div class="flex space-x-2">
+    <div class="flex flex-wrap space-x-2">
       <RadioGroupOption
         v-for="[value, description] in Object.entries(options)"
         :key="value"
@@ -24,7 +24,7 @@ const model = defineModel()
       >
         <button
           type="button"
-          class="rounded-lg px-4 py-3 flex items-center transition-colors"
+          class="rounded-lg px-4 py-3 flex items-center transition-colors my-1"
           :class="checked ? 'bg-gray-800 text-white' : 'bg-white text-gray-800 hover:bg-gray-300'"
         >
           {{ description }}

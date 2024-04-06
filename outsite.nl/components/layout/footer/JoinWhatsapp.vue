@@ -13,11 +13,6 @@ nl:
 import { IconArrowThinRight } from '@iconify-prerendered/vue-zondicons'
 import WhatsAppLogo from '#shared/assets/images/social/whatsapp_logo.svg'
 
-defineProps({
-  buttonText: { type: String, required: true },
-  buttonTarget: { type: String, required: true },
-})
-
 const { t } = useT()
 
 const showForm = ref(false)

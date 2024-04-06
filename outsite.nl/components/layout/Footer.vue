@@ -68,10 +68,9 @@ const socials = [
   { url: 'https://github.com/dwh-outsite/dwhdelft.nl', icon: GitHubIcon },
 ]
 
-const localePath = useLocalePath()
 const links = [
-  { name: 'Privacy', url: localePath('/privacy') },
-  { name: t('links.my_dwh'), url: 'https:////my.dwhdelft.nl' },
+  { name: 'Privacy', url: 'https://dwhdelft.nl/privacy' },
+  { name: t('links.my_dwh'), url: 'https://my.dwhdelft.nl' },
 ]
 </script>
 

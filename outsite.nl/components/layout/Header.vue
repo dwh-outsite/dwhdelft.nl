@@ -6,17 +6,13 @@ en:
     - title: Join
       url: index#join-outsite
     - title: Committees
-      url: /committees
+      url: committees
     - title: Testimonials
       url: testimonials
     - title: EatingOUT
-      url: /book
+      url: "https://dwhdelft.nl/book"
     - title: Contact
       url: '#contact'
-    - title: KMG
-      url: /kmg
-    - title: Barbuddies
-      url: /barbuddies
 nl:
   menu:
     - title: Home
@@ -28,13 +24,9 @@ nl:
     - title: Ervaringen
       url: testimonials
     - title: EatingOUT
-      url: /book
+      url: "https://dwhdelft.nl/book"
     - title: Contact
       url: '#contact'
-    - title: KMG
-      url: /kmg
-    - title: Barbuddies
-      url: /barbuddies
 </i18n>
 
 <script setup>

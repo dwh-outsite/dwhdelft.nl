@@ -24,6 +24,7 @@ export default defineNuxtConfig({
       },
     ],
     langDir: 'lang/',
+    detectBrowserLanguage: false,
     compilation: {
       strictMessage: false,
     },

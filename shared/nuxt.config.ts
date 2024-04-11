@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content'],
   i18n: {
+    defaultLocale: 'nl',
     locales: [
       {
         code: 'en',
@@ -35,6 +36,11 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
     },
   },
   app: {

@@ -22,7 +22,15 @@ export const useT = (options = {}) => {
   }
 
   function isRtableObject(data) {
-    return ['type', 'start', 'end', 'loc', 'body'].every((key) => key in data)
+    if (typeof data !== 'object') {
+      return false
+    }
+
+    const rtableInProduction = ['t', 'b'].every((key) => key in data)
+
+    const rtableInDevelopment = ['type', 'start', 'end', 'loc', 'body'].every((key) => key in data)
+
+    return rtableInProduction || rtableInDevelopment
   }
 
 

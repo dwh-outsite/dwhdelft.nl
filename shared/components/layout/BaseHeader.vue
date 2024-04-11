@@ -13,6 +13,9 @@ const { locale } = useT()
 const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
 
+const route = useRoute()
+const isActive = (url) => route.path === url
+
 const menuItems = Object.values(props.menu).map((item) => {
   return { title: item.title, url: constructLocaleUrl(item.url) }
 })
@@ -37,7 +40,7 @@ const showMenu = ref(false)
     <nav class="absolute z-50 w-full mt-8">
       <ElementsContainer class="flex justify-between items-center relative">
         <nuxt-link :to="localePath('index')">
-          <slot name="logo" />
+          <slot name="logo" /> {{ route.path }}
         </nuxt-link>
         <div
           v-show="showMenu"
@@ -47,7 +50,8 @@ const showMenu = ref(false)
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="nav-item block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:text-gray-800 transition-all rounded-full border border-opacity-25"
+            class="block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:text-gray-800 transition-all rounded-full border border-opacity-25"
+            :class="isActive(item.url) && 'bg-white/10 rounded-full'"
           >
             {{ item.title }}
           </nuxt-link>
@@ -60,7 +64,8 @@ const showMenu = ref(false)
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="nav-item block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800 transition-all"
+            class="block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800 transition-all"
+            :class="isActive(item.url) && 'bg-white/10 rounded-full'"
           >
             {{ item.title }}
           </nuxt-link>
@@ -102,10 +107,6 @@ const showMenu = ref(false)
 </template>
 
 <style scoped>
-a.nav-item.nuxt-link-exact-active {
-  @apply bg-white bg-opacity-10 rounded-full;
-}
-
 @screen md {
   #header {
     height: calc(190px * 4);

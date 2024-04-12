@@ -40,7 +40,7 @@ const showMenu = ref(false)
     <nav class="absolute z-50 w-full mt-8">
       <ElementsContainer class="flex justify-between items-center relative">
         <nuxt-link :to="localePath('index')">
-          <slot name="logo" /> {{ route.path }}
+          <slot name="logo" />
         </nuxt-link>
         <div
           v-show="showMenu"

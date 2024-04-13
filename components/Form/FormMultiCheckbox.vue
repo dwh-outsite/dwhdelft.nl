@@ -1,6 +1,6 @@
 <template>
   <label class="radio">
-    <input type="checkbox" :value="option" v-model="model" >
+    <input v-model="model" type="checkbox" :value="option" />
     {{ label }}
   </label>
 </template>
@@ -15,10 +15,10 @@ export default {
   computed: {
     model: {
       get() {
-        return this.value;
+        return this.value
       },
       set(value) {
-        this.$emit("input", value);
+        this.$emit('input', value)
       },
     },
   },

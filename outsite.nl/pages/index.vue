@@ -109,15 +109,25 @@ const instagramChannels = [
     </template>
   </LayoutSkewedSection>
 
-  <section id="video" class="py-16 mb-24">
+  <section id="video" class="py-16 mb-20">
     <ElementsContainer>
       <PagesHomeTitle :title="t('video.title')" class="text-center" />
       <PagesHomeVideo />
     </ElementsContainer>
   </section>
 
+  <section>
+    <ElementsContainer>
+      <div class="relative -mb-56 md:mb-0">
+        <div class="md:absolute w-full -mt-24">
+          <PagesHomeTestimonials class="mx-auto" />
+        </div>
+      </div>
+    </ElementsContainer>
+  </section>
+
   <LayoutEmulatedSkewedSection :bottom="false" contentClass="bg-gray-200" triangleClass="border-gray-200">
-    <ElementsContainer class="pb-16">
+    <ElementsContainer class="pt-48 md:pt-8 pb-16">
       <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
         <template #title>
           <h1 class="tracking-wide font-semibold uppercase text-2xl pt-6 mb-10 text-center">

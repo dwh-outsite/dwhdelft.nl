@@ -23,11 +23,10 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
       <ElementsActionCard
         v-for="(testimonial, index) in testimonials"
         :key="testimonial.name"
-        headerClass="overflow-hidden"
-        :headerPosition="index % 2 == 0 ? 'left' : 'right'"
-        :title="testimonial.name" 
+        :title="testimonial.name"
         class="bg-white bg-hero-falling-triangles"
-        contentClass="px-16"
+        :headerPosition="index % 2 == 0 ? 'left' : 'right'"
+        contentClass="px-16 testimonial-bg-white-gradient-vertical"
       >
         <template #header>
           <img
@@ -36,21 +35,19 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
           />
         </template>
 
-        <div class="bg-white-gradient-vertical">
-          {{testimonial[`text_${locale}`]}}
-        </div>
+        {{ testimonial[`text_${locale}`] }}
       </ElementsActionCard>
     </ElementsContainer>
   </section>
 </template>
 
-<style scoped>
-.bg-white-gradient-vertical {
+<style>
+.testimonial-bg-white-gradient-vertical {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(255, 255, 255, 1) 75%,
     rgba(255, 255, 255, 0) 100%
   );
 }

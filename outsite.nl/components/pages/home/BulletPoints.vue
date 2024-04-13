@@ -28,7 +28,7 @@ nl:
       image: parties
     - title: Activiteiten
       description: Door het jaar heen organiseren we allerlei activiteiten, zoals een karaoke,
-        spelletjesavond, of cocktailworkshop
+        spelletjesavond, of cocktailworkshop.
       image: activities
     - title: Sociale Contacten
       description: Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen, altijd wel

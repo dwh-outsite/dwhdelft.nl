@@ -27,7 +27,7 @@ const slots = useSlots()
       <slot name="header"></slot>
     </div>
     <div class="flex-1 flex flex-col p-6 text-lg text-gray-700" :class="contentClass">
-      <div class="flex justify-between items-center mb-4">
+      <div v-if="title || slots.button" class="flex justify-between items-center mb-4">
         <div class="flex items-center space-x-4">
           <slot name="icon"></slot>
           <h2 class="text-2xl font-bold text-brand-450 uppercase tracking-wider" :class="titleClass" v-text="title" />

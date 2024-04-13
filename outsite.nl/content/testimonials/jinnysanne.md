@@ -1,9 +1,19 @@
 ---
 name: Jinny & Sanne
+pronouns_nl: hij/hem & zij/haar
+pronouns_en: he/him & she/her
+
+quote_en:
+    We enjoy the activities so much that we both joined various committees!
+    Our favorites are (even though it is a difficult choice) OUTcamp and the OWee committee.
+
+quote_nl:
+    Wij vinden de activiteiten zó leuk dat wij beiden deelnemen aan verschillende commissies!
+    Onze favorieten zijn (ook al is dat moeilijk te kiezen) OUTcamp en de OWee commissie.
 
 text_en: |2-
 
-    Hai, we are Jinny (he/him) and Sanne (she/her)! We met during our KMG (introductory group) in 2022. We were both new members at the time, and over the following months we got to know each other better. Then we eventually went to Outsite parties and activities, for example the barevening on Thursday! Before the barevening, the two of us also like to ‘dine’ together. During our dinner we will go through all the Hugo flavors to find the most tasty one (so far 'green' is first place). We enjoy these activities so much that we both joined various committees! Our favorites are (even though it is a difficult choice) OUTcamp (Sanne) and the Owee committee (Jinny). We also became close over our mutual crush on handsome squidward, and really enjoy matching our outfits! That’s all about us, Hakuna Matata!
+    Hai, we are Jinny (he/him) and Sanne (she/her)! We met during our KMG (introductory group) in 2022. We were both new members at the time, and over the following months we got to know each other better. Then we eventually went to Outsite parties and activities, for example the barevening on Thursday! Before the barevening, the two of us also like to ‘dine’ together. During our dinner we will go through all the Hugo flavors to find the most tasty one (so far 'green' is first place). We enjoy these activities so much that we both joined various committees! Our favorites are (even though it is a difficult choice) OUTcamp (Sanne) and the OWee committee (Jinny). We also became close over our mutual crush on handsome squidward, and really enjoy matching our outfits! That’s all about us, Hakuna Matata!
 
 text_nl: |2-
 

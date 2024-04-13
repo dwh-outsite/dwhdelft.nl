@@ -27,11 +27,11 @@ nl:
     - name: Thomas
       pronouns: hij/hem
       description:
-        - 'Hoi, ik ben Thomas! Als begeleider bij Jong&Out Delft vind ik het geweldig om bij te dragen aan een veilige ruimte waar queer jongeren zichzelf kunnen zijn, zeker omdat ik dat op mijn middelbare school niet had!'
-    - name: Dim
-      pronouns: hij/hem
+        - 'Hey daar! Ik ben Thomas. Ik vind het heel tof op bij Jong&Out te zitten en een fijne plek te creëren voor de jongeren!'
+    - name: Jaye
+      pronouns: alle voornaamwoorden
       description:
-        - 'Hiii! Ik ben Dim! Ik kwam zelf vroeger bij Jong&Out en heb hier vrienden voor het leven gemaakt! Zulke vrienden gun ik iedereen en daarom ben ik zelf begeleider bij Jong&Out geworden!'
+        - 'Hoi !! Ik ben Jaye !! Ik vind het erg leuk om een plek te creëren waar jongeren hunzelf kunnen zijn en hunzelf en andere beter kunnen leren kennen :)'
     - name: Meander
       pronouns: die/hun
       description:
@@ -40,19 +40,15 @@ nl:
       pronouns: zij/haar
       description:
         - 'Hey, ik ben Didi! Ik vind het leuk om voor queer jongeren een plek te creëren waar ze open kunnen zijn, zich vertrouwd kunnen voelen en waar ze natuurlijk veel leuke dingen kunnen beleven.'
-    - name: Laurens
-      pronouns: hij/hem
-      description:
-        - 'Hey hey, mijn naam is Laurens en ik vind het super fijn een plekje voor jonge lhbti+ personen te kunnen faciliteren. In mijn jeugd heb ik er ontzettend veel aan gehad en op deze manier geef ik het stokje door.'
 </i18n>
 
 <template>
   <div>
-    <SmallHeader bg="bg-[#752CEF]">
+    <SmallHeader bg="bg-[#5e4fff]">
       {{ $t('title') }}
     </SmallHeader>
 
-    <div class="bg-jongenout w-full py-6">
+    <div class="bg-jongenout w-full py-6 bg-[#5e4fff]">
       <section class="container px-4 mx-auto space-y-6">
         <LanguageWarning v-if="$i18n.locale == 'en'" class="mb-12" />
         <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
@@ -80,7 +76,7 @@ nl:
           <div class="flex-1">
             <div class="md:w-5/6 ml-auto">
               <h2 class="text-white font-semibold text-4xl mb-2 pl-6" v-html="$t('titles.join')" />
-              <div class="bg-[#3e0a93] shadow-xl text-white rounded-3xl p-6 w-full text-lg space-y-4">
+              <div class="bg-[#120f82] shadow-xl text-white rounded-3xl p-6 w-full text-lg space-y-4">
                 <div v-if="!showForm">
                   <div class="flex items-center mb-4">
                     <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
@@ -118,7 +114,7 @@ nl:
       </section>
     </div>
 
-    <section class="bg-[#3e0a93] py-12">
+    <section class="bg-[#120f82] py-12">
       <div class="container mx-auto px-4">
         <h2 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="$t('titles.team')" />
         <div class="text-center text-white text-2xl md:w-2/3 mx-auto mb-12">
@@ -128,7 +124,7 @@ nl:
           <div
             v-for="({ name, pronouns, description }, index) in $t('team')"
             :key="name"
-            class="rounded-2xl md:rounded-full bg-[#752CEF] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-2/3 shadow-xl"
+            class="rounded-2xl md:rounded-full bg-[#5e4fff] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-2/3 shadow-xl"
             :class="index % 2 !== 0 ? 'ml-auto' : ''"
           >
             <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
@@ -145,7 +141,7 @@ nl:
         </div>
         <img
           :src="requireImage('team')"
-          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#752CEF] shadow-xl"
+          class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#5e4fff] shadow-xl"
         />
       </div>
     </section>
@@ -175,10 +171,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.bg-jongenout {
-  @apply bg-cover;
-  background-image: url(../../../assets/images/jongenout/background.svg);
-}
-</style>

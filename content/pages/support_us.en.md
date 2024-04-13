@@ -54,11 +54,3 @@ than 300 copies produced for every issue.
 There are opportunities for you to advertise in our magazine. Send an email to
 [penningmeester@dwhdelft.nl](mailto:penningmeester@dwhdelft.nl) for the current
 rates and options.
-
-### Sponsorkliks
-By ordering goods online through our Sponsorkliks link
-[dwhdelft.nl/sponsorkliks](https://dwhdelft.nl/sponsorkliks) you can sponsor DWH
-for free! For every purchase through our link we will get a small commission fee.
-Money that we get through Sponsorkliks is directly added to one of our (rotating)
-committees. This way you can help us in an easy way to realize our goals and
-organize more activities.

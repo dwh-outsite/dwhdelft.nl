@@ -21,6 +21,21 @@ events:
         en: Sign Up
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
+    
+  - name: Creative Space
+    day:
+      en: Tuesday
+      nl: Dinsdag
+    start_time: '19:30'
+    end_time: '21:30'
+    description:
+      en: |-
+        On all Tuesdays, we have creative space! The pand is open to paint, knit, 
+        create bracelets, and anything creative! (Creative space starts later on the first Tuesday of each month.)
+      nl: |-
+        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te 
+        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de 
+        eerste dinsdag van de maand.)
 
   - name: Fillum
     day:
@@ -45,8 +60,8 @@ events:
     day:
       en: Thursday
       nl: Donderdag
-    start_time: '21:00'
-    end_time: '01:00'
+    start_time: '21:30'
+    end_time: '01:30'
     description:
       en: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
@@ -62,6 +77,26 @@ events:
         en: Head to Outsite.nl
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
+    announcement:
+      en: "From 22 February till 25 April the opening hours are 21:30 - 01:30."
+      nl: "Tussen 22 februari en 25 april zijn de openingstijden 21:30 - 01:30 uur."
+
+  - name: Roze Kroeg
+    day:
+      en: First Friday
+      nl: Eerste vrijdag
+    monthly: true
+    start_time: '21:00'
+    end_time: '02:00'
+    description:
+      en: |-
+        On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style 
+        bar experience. The dance floor isn't open and there is calm music, so it's ideal for talking to one another. 
+        Of course there will be (deep-fried) snacks.
+      nl: |-
+        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom langs voor een drankje in bruine-kroeg stijl. 
+        De dansvloer is niet geopend en er is rustige muziek, dus ideaal om lekker met anderen te komen babbelen. 
+        Natuurlijk zijn er borrelnootjes en bitterballen.
 
   - name: MIXUP
     day:
@@ -81,14 +116,37 @@ events:
         en: MIXUP on Instagram
         nl: MIXUP op Instagram
       url: https://www.instagram.com/mixupdelft/
-    announcement:
-      en: "Starting November 4th, MIXUP opens at 22:00."
-      nl: "Vanaf 4 november geopend vanaf 22:00 uur."
 
+  - name: Jong&Out
+    day:
+      en: Third Sunday
+      nl: Derde zondag
+    monthly: true
+    start_time: '14:00'
+    end_time: '17:00'
+    description:
+      en: |-
+        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTQ+ youth
+        members. Come around to bake, play games, do a graffity workshop, go to Jumpsquare, and more!
+        We also have a camp each year!
+      nl: |-
+        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren. 
+        Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen, 
+        naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
+    restrictions:
+      - en: Between 12 and 18 years old
+        nl: Tussen de 12 en 18 jaar oud
+    link:
+      name:
+        en: Find out more
+        nl: Lees meer
+      url: https://jongenoutdelft.nl/
+    
   - name: QT
     day:
-      en: Sunday
-      nl: Zondag
+      en: Second and fourth Sunday
+      nl: Tweede en vierde zondag
+    monthly: true
     start_time: '17:00'
     end_time: '21:00'
     description:

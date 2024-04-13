@@ -101,7 +101,7 @@ const instagramChannels = [
         </nuxt-link>
       </div>
 
-      <PagesHomeHighlights :excerpts="true" />
+      <PagesHighlights :excerpts="true" />
     </ElementsContainer>
 
     <template #background>

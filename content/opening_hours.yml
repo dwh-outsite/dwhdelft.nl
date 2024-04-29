@@ -21,21 +21,6 @@ events:
         en: Sign Up
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
-    
-  - name: Creative Space
-    day:
-      en: Tuesday
-      nl: Dinsdag
-    start_time: '19:30'
-    end_time: '21:30'
-    description:
-      en: |-
-        On all Tuesdays, we have creative space! The pand is open to paint, knit, 
-        create bracelets, and anything creative! (Creative space starts later on the first Tuesday of each month.)
-      nl: |-
-        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te 
-        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de 
-        eerste dinsdag van de maand.)
 
   - name: Fillum
     day:

@@ -62,9 +62,6 @@ events:
         en: Head to Outsite.nl
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
-    announcement:
-      en: "From 22 February till 25 April the opening hours are 21:30 - 01:30."
-      nl: "Tussen 22 februari en 25 april zijn de openingstijden 21:30 - 01:30 uur."
 
   - name: Roze Kroeg
     day:

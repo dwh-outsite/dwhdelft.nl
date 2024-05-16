@@ -45,7 +45,7 @@ events:
     day:
       en: Thursday
       nl: Donderdag
-    start_time: '21:30'
+    start_time: '21:00'
     end_time: '01:30'
     description:
       en: |-

@@ -22,21 +22,6 @@ events:
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
 
-  - name: Creative Space
-    day:
-      en: Tuesday
-      nl: Dinsdag
-    start_time: '19:30'
-    end_time: '21:30'
-    description:
-      en: |-
-        On all Tuesdays, we have creative space! The pand is open to paint, knit,
-        create bracelets, and anything creative! (Creative space starts later on the first Tuesday of each month.)
-      nl: |-
-        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te
-        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de
-        eerste dinsdag van de maand.)
-
   - name: Fillum
     day:
       en: Wednesday
@@ -60,8 +45,8 @@ events:
     day:
       en: Thursday
       nl: Donderdag
-    start_time: '21:30'
-    end_time: '01:30'
+    start_time: '21:00'
+    end_time: '01:00'
     description:
       en: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
@@ -77,9 +62,6 @@ events:
         en: Head to Outsite.nl
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
-    announcement:
-      en: "From 22 February till 25 April the opening hours are 21:30 - 01:30."
-      nl: "Tussen 22 februari en 25 april zijn de openingstijden 21:30 - 01:30 uur."
 
   - name: Roze Kroeg
     day:
@@ -144,8 +126,9 @@ events:
 
   - name: QT
     day:
-      en: Sunday
-      nl: Zondag
+      en: Second and fourth Sunday
+      nl: Tweede en vierde zondag
+    monthly: true
     start_time: '17:00'
     end_time: '21:00'
     description:

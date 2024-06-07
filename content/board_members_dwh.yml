@@ -1,6 +1,6 @@
 board:
 
-  - name: Dries Stuij
+  - name: Laurens Weijs
     description:
       nl: Voorzitter
       en: President
@@ -12,7 +12,7 @@ board:
       en: Secretary
     email: secretaris@dwhdelft.nl
 
-  - name: Suzanne Kleijweg
+  - name: Dries Stuij
     description:
       nl: Penningmeester
       en: Treasurer
@@ -24,8 +24,3 @@ board:
       en: Board Member
     email: thomas.smits@dwhdelft.nl
 
-  - name: Laurens Weijs
-    description:
-      nl: Algemeen Bestuurslid
-      en: Board Member
-    email: laurens.weijs@dwhdelft.nl

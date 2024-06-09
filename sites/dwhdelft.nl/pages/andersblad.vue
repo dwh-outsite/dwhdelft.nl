@@ -9,7 +9,7 @@ en:
     - The first edition of the Andersblad came out in 1989, as the successor of the DWH maandbrief (a monthly newsletter).
       Below, we list the editions of the last ten years.
       Older editions are available upon request (please send an email to
-      <a href="mailto:andersblad@dwhdelft.nl" target="_blank" class="text-brand-500"> andersblad@dwhdelft.nl</a>).
+      <a href="mailto:andersblad@dwhdelft.nl" target="_blank" class="text-brand-500">andersblad@dwhdelft.nl</a>).
   list_title: <strong>Andersblad</strong> Editions
 nl:
   title: Andersblad
@@ -19,8 +19,8 @@ nl:
       In het Andersblad worden verslagen van activiteiten en events gedeeld, maar ook opiniestukken over maatschappelijke thema's.
     - Het Andersblad wordt uitgegeven sinds 1989 als opvolger van de DWH maandbrieven.
       Hieronder zijn de edities van de laatste tien jaar in te zien.
-      Oudere edities zijn op aanvraag ter inzage beschikbaar, (stuur hiervoor een email naar
-      <a href="mailto:andersblad@dwhdelft.nl" target="_blank" class="text-brand-500"> andersblad@dwhdelft.nl</a>).
+      Oudere edities zijn op aanvraag ter inzage beschikbaar (via
+      <a href="mailto:andersblad@dwhdelft.nl" target="_blank" class="text-brand-500">andersblad@dwhdelft.nl</a>).
   list_title: <strong>Andersblad</strong> Edities
 </i18n>
 

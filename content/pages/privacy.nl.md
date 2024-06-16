@@ -16,6 +16,7 @@ DWH verwerkt je persoonsgegevens doordat je gebruik maakt van onze diensten en/o
 
 Hieronder vind je een overzicht van de persoonsgegevens die wij verwerken:
 - Voor- en achternaam
+- Voornaamwoorden
 - Geboortedatum
 - Adresgegevens
 - Telefoonnummer
@@ -24,7 +25,7 @@ Hieronder vind je een overzicht van de persoonsgegevens die wij verwerken:
 
 ## Bijzondere en/of gevoelige persoonsgegevens die wij verwerken
 
-Seksuele gerichtheid is ook een bijzonder persoonsgegeven. Hoewel DWH de seksuele gerichtheid van haar leden en bezoekers niet expliciet registreert impliceert lidmaatschap mogelijk een bepaalde seksuele gerichtheid. DWH gaat daarom extra zorgvuldig met alle persoonsgegevens om.
+Seksuele gerichtheid is ook een bijzonder persoonsgegeven. Hoewel DWH de seksuele gerichtheid van haar leden en bezoekers niet expliciet registreert, impliceert lidmaatschap mogelijk een bepaalde seksuele gerichtheid. DWH gaat daarom extra zorgvuldig met alle persoonsgegevens om.
 
 DWH heeft niet de intentie om gegevens te verzamelen over personen onder de 16 jaar tenzij er toestemming is van de wettelijk verzorger.
 
@@ -32,7 +33,7 @@ DWH heeft niet de intentie om gegevens te verzamelen over personen onder de 16 j
 
 DWH verwerkt jouw persoonsgegevens voor de volgende doelen:
 - Het afhandelen van jouw betaling 
-- Verzenden van onze nieuwsbrief en/of reclamefolder
+- Verzenden van onze nieuwsbrief
 - Je te kunnen bellen of e-mailen indien dit nodig is om onze dienstverlening uit te kunnen voeren
 - Om je toegang te geven tot events en activiteiten van de vereniging
 - Om je het verenigingsblad toe te kunnen sturen
@@ -59,10 +60,12 @@ Vrijwilligers die informatie verwerken namens DWH tekenen een geheimhoudersverkl
 
 **Extern** worden gegevens aan de volgende partijen versterkt:
 * _Mailchimp_ (naam en e-mail adres) DWH maakt voor haar nieuwsbrieven gebruik van MailChimp. Zie de [website van MailChimp](https://mailchimp.com/legal/privacy/) voor meer informatie.
-* _Google_ Voor enquêtes en formulieren voor evenementen of inschrijvingen maakt DWH vaak gebruik van Google diensten. Zie de [website van Google]() voor meer informatie.
-* _SEPAtool.nl_ (financiële informatie) Voor het verwerken van machtigingen maakt DWH gebruik van SEPAtool. Zie de [website van SepaTool](https://www.sepatool.nl/voorwaarden.php) voor meer informatie.
+* _Google_ Voor enquêtes en formulieren voor evenementen of inschrijvingen maakt DWH vaak gebruik van Google diensten. Zie de [website van Google](https://policies.google.com/privacy) voor meer informatie.
 * _BladNL_ (adresgegevens) Het versturen en adresseren van het verenigingsblad wordt uitgevoerd door BladNL. Zie de [website van BladNL](https://www.mijnblad.nl/voorwaarden) voor meer informatie. 
-* _Silvasoft_ (financiële informatie) Voor de financiele administratie maakt DWH gebruik van Silvasoft. Zie de [website van Silvasoft](https://www.silvasoft.nl/verwerkersovereenkomst-avg/) voor meer informatie.
+* _Silvasoft_ (financiële informatie) Voor de financiële administratie maakt DWH gebruik van Silvasoft. Zie de [website van Silvasoft](https://www.silvasoft.nl/verwerkersovereenkomst-avg/) voor meer informatie.
+* _ING_ (financiële informatie) Voor de financiële administratie maakt DWH gebruik van ING. Zie de [website van ING](https://www.ing.nl/de-ing/privacy-statement/over-dit-privacy-statement) voor meer informatie.
+* _Mollie_ (financiële informatie) Voor het verwerken van machtigingen maakt DWH gebruik van Mollie. Zie de [website van Mollie](https://www.mollie.com/nl/privacy) voor meer informatie.
+* _Ticketkantoor_ (financiële informatie) Voor het verkopen van tickets voor feesten en dergelijke maakt DWH soms gebruik van Ticketkantoor. Zie de [website van Ticketkantoor](https://www.ticketkantoor.nl/privacy) voor meer informatie.
 
 Met externe partijen is een verwerkersovereenkomst afgesloten ter bescherming van de gegevens.
 
@@ -86,7 +89,9 @@ DWH wil je er tevens op wijzen dat je de mogelijkheid hebt om een klacht in te d
 
 DWH neemt de bescherming van jouw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op via [secretaris@dwhdelft.nl](mailto:secretaris@dwhdelft.nl).
 
-De ledenadministratie wordt offline bijgehouden en is alleen toegankelijk voor de ledenadministrateur die onder verantwoordelijkheid van de secretaris handelt. De ledenadministrateur verstrekt op verzoek delen van de administratie aan bestuurs- en commissieleden indien noodzakelijk voor het functioneren van de vereniging. Hierbij kan gedacht worden aan het nalopen van de ledenlijst bij aanvang van de algemene ledenvergadering, of het versturen van e-mails aan leden. De ledenadministratie verstrekt enkel die informatie die nodig is voor het opgegeven doel; in bijna alle gevallen slechts een deel van de administratie. Leden waaraan gegevens verstrekt worden dienen een geheimhoudingsverklaring te hebben ondertekend.
+De ledenadministratie wordt online bijgehouden in een zelfgemaakt systeem ("ReMember") en is alleen toegankelijk voor het minimaal nodige aantal bestuurs- en commissieleden. Allen hebben hiervoor een geheimhoudingsverklaring getekend. De ledenadministrateur verstrekt op verzoek delen van de administratie aan bestuurs- en commissieleden indien noodzakelijk voor het functioneren van de vereniging. Hierbij kan gedacht worden aan het nalopen van de ledenlijst bij aanvang van de algemene ledenvergadering, of het versturen van e-mails aan leden. De ledenadministratie verstrekt enkel die informatie die nodig is voor het opgegeven doel; in bijna alle gevallen slechts een deel van de administratie. Leden waaraan gegevens verstrekt worden dienen een geheimhoudingsverklaring te hebben ondertekend.
+
+Deze administratie wordt enkel versleuteld overgedragen naar en opgeslagen op Europese servers van DigitalOcean. Zie [de website van DigitalOcean](https://www.digitalocean.com/legal/privacy-policy) voor meer informatie. Updates ten behoeve van de databeveiliging worden tijdig uitgevoerd.
 
 # Foto’s en video’s
 Tijdens activiteiten van DWH worden regelmatig beeldopnamen gemaakt voor promotiedoeleinden. Mocht je hier geen prijs op stellen dan kun je dat ter plekke aan de fotograaf/filmer kenbaar maken. In alle gevallen gaat DWH terughoudend om met het publiceren van beelden.

@@ -1,5 +1,6 @@
 ---
 name: Outsite Chat
+show_first: true
 description_nl:
   Oorspronkelijk de party squad chat maar nu ook een algemene chat. Een levendige chat waar veel in gepraat wordt,
   en waar vooral de wat jongere leden uithangen.

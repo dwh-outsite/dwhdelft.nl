@@ -1,6 +1,5 @@
 ---
 name: EatingOUT
-url: https://chat.whatsapp.com/FlIbRLHUlzv1dvdv0WOisV
 description_nl:
   De chat voor iedereen geïnteresseerd op maandag te koken. Ben jij een keukenpro of wil je dat zijn? Kom de chat
   in en kook voor een grote groep, in je eentje of eerst met iemand met ervaring.

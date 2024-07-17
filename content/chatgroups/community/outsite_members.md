@@ -1,5 +1,5 @@
 ---
-name: Outsite Chat
+name: Outsite Members
 show_first: true
 description_nl:
   Oorspronkelijk de party squad chat maar nu ook een algemene chat. Een levendige chat waar veel in gepraat wordt,

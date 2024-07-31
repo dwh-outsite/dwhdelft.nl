@@ -11,9 +11,9 @@ en:
       <a href="https://api.whatsapp.com/send?phone=+31637560270" target="_blank" class="text-brand-500">
       association phone (+31 6 3756 0270)</a>.
   categories:
-    general: <strong>Announcement</strong> groups
+    general: Groups for <strong>announcements</strong>
     community: Groups in our <strong>WhatsApp</strong> communnity
-    discord: Our <strong>Discord</strong> server
+    other: Our <strong>Other</strong> platforms
 nl:
   title: Chatgroepen
   join: Deelnemen
@@ -26,9 +26,9 @@ nl:
       <a href="https://dwhdelft.nl/whatsapp" target="_blank" class="text-brand-500">
       verenigingstelefoon (+31 6 3756 0270)</a>.
   categories:
-    general: <strong>Aankondigings</strong> groepen
+    general: Groepen voor <strong>aankondigingen</strong>
     community: Groepen in onze <strong>WhatsApp</strong> community
-    discord: Onze <strong>Discord</strong> server
+    other: Onze <strong>Overige</strong> platforms
 </i18n>
 
 <template>

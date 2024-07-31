@@ -1,6 +1,6 @@
 ---
 name: Many More Chats
-show_last: true
+order: -1
 description_nl:
   We hebben nog veel meer chats! Wordt lid van de community en ontdek ze allemaal.
 description_en:

@@ -1,6 +1,6 @@
 ---
 name: DWH Members
-show_first: true
+order: 1
 description_nl:
   De algemene chat van de vereniging. Kom erbij voor aankondigingen en leuke gesprekken. Deze chat is ietsje minder druk en meer gericht op alle leeftijden dan de Outsite chat.
 description_en:

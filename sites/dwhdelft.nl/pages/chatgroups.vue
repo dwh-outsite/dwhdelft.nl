@@ -84,11 +84,11 @@ export default {
           return { ...group, category: group.dir.substring(group.dir.lastIndexOf('/') + 1) }
         })
         .sort(function (a, b) {
-          if (a.show_first ^ b.show_first) {
-            return a.show_first ? -1 : b.show_first ? 1 : 0
+          if ((a.order === 1) ^ (b.order === 1)) {
+            return a.order === 1 ? -1 : b.order === 1 ? 1 : 0
           }
-          if (a.show_last ^ b.show_last) {
-            return a.show_last ? 1 : b.show_last ? -1 : 0
+          if ((a.order === -1) ^ (b.order === -1)) {
+            return a.order === -1 ? 1 : b.order === -1 ? -1 : 0
           }
           return a.name > b.name ? 1 : -1
         }),

@@ -36,6 +36,10 @@ $ yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
+## Preview
+When opening a PR, netlilfy automatically generates a preview. This preview is only generated for either Outsite or DWH.
+You can swap out _outsite_ for _dwh_ in the URL to see the DWH website (and reverse).
+
 ## Page Types
 
 The "easier" pages are Markdown based and can be found in `content/pages`.

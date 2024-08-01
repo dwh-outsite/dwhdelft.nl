@@ -1,6 +1,5 @@
 ---
 name: Bartenders
-url: https://chat.whatsapp.com/ESKloORRKlD5J6mNMw4OV0
 description_nl:
   Bartenden is een van de leukste dingen om te doen; je maakt met iedereen een praatje en iedereen houdt van je
   want je bezorgd nieuwe drankjes! Join deze chat als je een keertje wilt bartenden!

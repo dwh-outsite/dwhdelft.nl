@@ -13,7 +13,7 @@ en:
   categories:
     general: Groups for <strong>announcements</strong>
     community: Groups in our <strong>WhatsApp</strong> communnity
-    other: Our <strong>Other</strong> platforms
+    other: Our <strong>other</strong> platforms
 nl:
   title: Chatgroepen
   join: Deelnemen
@@ -28,7 +28,7 @@ nl:
   categories:
     general: Groepen voor <strong>aankondigingen</strong>
     community: Groepen in onze <strong>WhatsApp</strong> community
-    other: Onze <strong>Overige</strong> platforms
+    other: Onze <strong>overige</strong> platformen
 </i18n>
 
 <template>

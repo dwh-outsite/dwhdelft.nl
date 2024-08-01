@@ -83,15 +83,7 @@ export default {
         .map((group) => {
           return { ...group, category: group.dir.substring(group.dir.lastIndexOf('/') + 1) }
         })
-        .sort(function (a, b) {
-          if ((a.order === 1) ^ (b.order === 1)) {
-            return a.order === 1 ? -1 : b.order === 1 ? 1 : 0
-          }
-          if ((a.order === -1) ^ (b.order === -1)) {
-            return a.order === -1 ? 1 : b.order === -1 ? -1 : 0
-          }
-          return a.name > b.name ? 1 : -1
-        }),
+        .sort((a, b) => (a.order || 0) - (b.order || 0)),
       'category'
     )
 

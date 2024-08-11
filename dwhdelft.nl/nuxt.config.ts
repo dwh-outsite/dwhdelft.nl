@@ -2,7 +2,10 @@ import { resolve, join } from 'path'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2024-08-11',
+
   extends: '../shared/nuxt.config.ts',
+
   content: {
     sources: {
       shared: {
@@ -11,6 +14,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   app: {
     head: {
       title: 'DWH - LHBT+ vereniging Delft',
@@ -34,5 +38,5 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       ],
     }
-  }
+  },
 })

@@ -1,6 +1,9 @@
 <script setup>
 defineProps({
   title: { type: String, default: null },
+  titleClass: { type: String, default: '' },
+  contentClass: { type: String, default: '' },
+  contentBackgroundClass: { type: String, default: '' },
 })
 
 const slots = useSlots()
@@ -9,14 +12,14 @@ const slots = useSlots()
 <template>
   <section>
     <ElementsContainer v-if="title || slots.title" class="mb-6">
-      <h1 class="text-brand-500 font-medium text-5xl">
+      <h1 class="text-brand-500 font-medium text-5xl" :class="titleClass">
         <slot name="title">
           {{ title }}
         </slot>
       </h1>
     </ElementsContainer>
-    <div class="bg-brand-500">
-      <ElementsContainer class="py-8">
+    <div class="bg-brand-500" :class="contentBackgroundClass">
+      <ElementsContainer class="py-8" :class="contentClass">
         <slot />
       </ElementsContainer>
     </div>

@@ -34,17 +34,12 @@ const { t } = useT()
       <Markdown v-for="text in t('main_text')" :key="text" :content="text" />
     </LayoutPageIntroText>
 
-    <section>
-      <ElementsContainer class="mb-6">
-        <h1 class="text-brand-500 font-medium text-5xl">
-          <Markdown :content="t('list_title')" />
-        </h1>
-      </ElementsContainer>
-      <div class="bg-brand-500">
-        <ElementsContainer class="px-1 py-6">
-          <PagesAndersbladFileCards google-drive-id="1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM" />
-        </ElementsContainer>
-      </div>
-    </section>
+    <LayoutStraightSection contentClass="px-1 py-6">
+      <template #title>
+        <Markdown :content="t('list_title')" />
+      </template>
+
+      <PagesAndersbladFileCards google-drive-id="1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM" />
+    </LayoutStraightSection>
   </div>
 </template>

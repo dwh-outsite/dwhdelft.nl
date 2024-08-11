@@ -37,27 +37,24 @@ const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies')
     <p v-text="t('description')" />
   </LayoutPageIntroText>
 
-  <section class="bg-brand-300 pt-8 pb-12">
-    <ElementsContainer>
-      <h1 class="text-white text-center font-medium text-5xl mb-8">
-        <Markdown :content="t('bar_buddies_title')" />
-      </h1>
-      <div class="grid md:grid-cols-2 gap-4">
-        <div v-for="buddy in barBuddies" :key="buddy.name" >
-          <PagesBarbuddyCard :buddy="buddy" />
-        </div>
-      </div>
-    </ElementsContainer>
-  </section>
+  <LayoutStraightSection titleClass="!text-brand-450" contentBackgroundClass="!bg-brand-300">
+    <template #title>
+      <Markdown :content="t('bar_buddies_title')" />
+    </template>
 
-  <section class="bg-gray-200 pt-12 pb-20">
-    <ElementsContainer>
-      <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
-        {{ t('sign_up') }}
-      </h2>
-      <div class="md:w-2/3 mt-8 mx-auto">
-        <PagesBarbuddyForm :barBuddies="barBuddies" />
+    <div class="grid md:grid-cols-2 gap-4">
+      <div v-for="buddy in barBuddies" :key="buddy.name" >
+        <PagesBarbuddyCard :buddy="buddy" />
       </div>
-    </ElementsContainer>
-  </section>
+    </div>
+  </LayoutStraightSection>
+
+  <LayoutStraightSection contentBackgroundClass="bg-gray-200" contentClass="pt-12 pb-20">
+    <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
+      {{ t('sign_up') }}
+    </h2>
+    <div class="md:w-2/3 mt-8 mx-auto">
+      <PagesBarbuddyForm :barBuddies="barBuddies" />
+    </div>
+  </LayoutStraightSection>
 </template>

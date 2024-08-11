@@ -69,11 +69,7 @@ const counsellors = [
     <p>{{ t('outro_text') }}</p>
   </LayoutPageIntroText>
 
-  <section class="bg-gray-200 py-4 md:py-12">
-    <ElementsContainer class="grid grid-cols-2 gap-8">
-
-      <BusinessCard v-for="counsellor in counsellors" :key="counsellor.name" :name="counsellor.name" :email="counsellor.email" :role="t('role_title')" />
-
-    </ElementsContainer>
-  </section>
+  <LayoutStraightSection contentBackgroundClass="!bg-gray-200" contentClass="grid grid-cols-2 gap-8">
+    <BusinessCard v-for="counsellor in counsellors" :key="counsellor.name" :name="counsellor.name" :email="counsellor.email" :role="t('role_title')" />
+  </LayoutStraightSection>
 </template>

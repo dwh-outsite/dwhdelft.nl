@@ -15,6 +15,12 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {
+      domain: 'dwhdelft.nl',
+    }
+  },
+
   app: {
     head: {
       title: 'DWH - LHBT+ vereniging Delft',

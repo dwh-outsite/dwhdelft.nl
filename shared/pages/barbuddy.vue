@@ -22,8 +22,10 @@ nl:
 <script setup>
 const { t, locale } = useT()
 
+const runtimeConfig = useRuntimeConfig()
+
 const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies').where({
-  sites: { $contains: 'outsite' },
+  sites: { $contains: runtimeConfig.public.domain },
   [locale.value]: { $type: 'string' },
 }).find())
 </script>

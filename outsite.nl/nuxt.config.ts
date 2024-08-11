@@ -15,6 +15,12 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {
+      domain: 'outsite.nl',
+    }
+  },
+
   app: {
     head: {
       title: 'Outsite - LHBT+ vereniging Delft',

@@ -29,11 +29,15 @@ html {
   @apply mb-4;
 }
 
-.content a {
+.content h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
+  @apply underline
+}
+
+.content p a {
   @apply text-brand-600;
 }
 
-.content a:hover {
+.content p a:hover {
   @apply text-brand-800 underline;
 }
 

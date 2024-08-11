@@ -104,7 +104,7 @@ const links = [
         <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="t('contactTitle')" />
 
-          <LayoutFooterContactOptions email="bestuur@outsite.nl" />
+          <ContactOptions email="bestuur@outsite.nl" />
 
           <div class="mb-2 space-y-4">
             <LayoutFooterExternalLink href="https://my.dwhdelft.nl/signup">

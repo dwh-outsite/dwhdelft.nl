@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <ElementsActionCard :title="name" headerPosition="left" headerClass="bg-purple-450 w-32 md:w-36 overflow-hidden" contentClass="!text-base">
+  <ElementsActionCard :title="name" headerPosition="left" :headerClass="photo && 'bg-purple-450 w-32 md:w-36 overflow-hidden'" contentClass="!text-base">
     <template #header>
       <img
         v-if="photo"

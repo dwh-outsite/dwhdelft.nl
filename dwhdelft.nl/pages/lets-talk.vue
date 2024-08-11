@@ -46,7 +46,7 @@ nl:
 </i18n>
 
 <script setup>
-import { IconEnvelope } from '@iconify-prerendered/vue-zondicons'
+import BusinessCard from '#shared/components/BusinessCard.vue'
 
 const { t } = useT()
 
@@ -72,16 +72,7 @@ const counsellors = [
   <section class="bg-gray-200 py-4 md:py-12">
     <ElementsContainer class="grid grid-cols-2 gap-8">
 
-      <ElementsActionCard v-for="counsellor in counsellors" :key="counsellor.name" :title="counsellor.name" contentClass="p-8">
-        <div class="text-gray-600 -mt-4 mb-8">{{ t('role_title') }}</div>
-
-        <div class="flex space-x-3">
-          <ElementsIconCircle class="p-2">
-            <IconEnvelope class="w-4" />
-          </ElementsIconCircle>
-          <div v-text="counsellor.email" />
-        </div>
-      </ElementsActionCard>
+      <BusinessCard v-for="counsellor in counsellors" :key="counsellor.name" :name="counsellor.name" :email="counsellor.email" :role="t('role_title')" />
 
     </ElementsContainer>
   </section>

@@ -1,5 +1,5 @@
 <template>
-  <div class="block bg-purple-800 hover:bg-purple-700 rounded-xl text-white p-4 shadow">
+  <div class="block bg-brand-800 hover:bg-brand-700 rounded-xl text-white p-4 shadow">
     <slot></slot>
   </div>
 </template>

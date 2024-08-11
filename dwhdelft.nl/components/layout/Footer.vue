@@ -32,16 +32,16 @@ const links = linkCategories.map((category) => ({
       <div v-for="category in links" :key="category.name">
         <h3 class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-wider" v-text="tt(category.name)" />
         <div class="space-y-2">
-          <a
+          <nuxt-link
             v-for="{ url, name, external } in category.items"
             :key="url"
-            :href="url"
+            :to="url"
             class="font-semibold block items-center text-gray-400 hover:text-white"
             :target="external ? '_blank' : '_self'"
           >
             {{ tt(name) }}
             <IconLink v-if="external" class="inline w-4 ml-1" />
-          </a>
+        </nuxt-link>
         </div>
       </div>
     </ElementsContainer>

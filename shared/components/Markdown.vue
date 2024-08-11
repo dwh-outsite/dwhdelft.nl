@@ -13,5 +13,15 @@ const parsedMarkdown = await markdownParser.parse('custom.md', props.content)
 </script>
 
 <template>
-  <ContentRendererMarkdown :value="parsedMarkdown" />
+  <ContentRendererMarkdown :value="parsedMarkdown" class="markdown-content" />
 </template>
+
+<style>
+.markdown-content a {
+  @apply text-brand-500;
+}
+
+.markdown-content a:hover {
+  @apply underline;
+}
+</style>

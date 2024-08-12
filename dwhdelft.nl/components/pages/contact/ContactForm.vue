@@ -7,7 +7,7 @@ nl:
 
 
 <script setup>
-const { t, locale } = useT()
+const { t } = useT()
 
 const props = defineProps({
   barBuddies: { type: Array, required: true },

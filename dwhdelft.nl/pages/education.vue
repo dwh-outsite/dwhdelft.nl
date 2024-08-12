@@ -51,7 +51,7 @@ const { t } = useT()
 
   <section>
     <ElementsContainer>
-      <div class="my-4 py-8 lg:flex lg:space-x-12">
+      <div class="py-8 lg:flex lg:space-x-12">
         <div class="flex-1">
           <LanguageWarning v-if="$i18n.locale == 'en'" class="mb-12" />
           <p

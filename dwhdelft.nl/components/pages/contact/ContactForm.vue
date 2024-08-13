@@ -5,13 +5,8 @@ nl:
   success: We nemen zo snel mogelijk contact met je op.
 </i18n>
 
-
 <script setup>
 const { t } = useT()
-
-const props = defineProps({
-  barBuddies: { type: Array, required: true },
-})
 
 const form = useReMemberForm('contact-dwh', {
   name: '',

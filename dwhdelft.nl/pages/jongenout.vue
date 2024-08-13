@@ -43,7 +43,7 @@ nl:
 </i18n>
 
 <script setup>
-import { IconCalendar, IconTime, IconMap, IconCheveronOutlineRight } from '@iconify-prerendered/vue-zondicons'
+import { IconCalendar, IconTime, IconMap } from '@iconify-prerendered/vue-zondicons'
 
 const { t } = useT()
 

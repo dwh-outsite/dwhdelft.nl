@@ -65,8 +65,8 @@ const { t } = useT()
           <nuxt-link :to="localePath('jongenout')">
             <Announcement class="space-y-2">
               <h2 class="font-semibold text-2xl"><Markdown :content="t('titles.jongenout')" /></h2>
-              <p class="text-base" v-html="t('content.jongenout')" />
-              <button class="button-white text-base block">Lees meer &raquo;</button>
+              <p class="text-base !mb-4" v-html="t('content.jongenout')" />
+              <ElementsSecondaryButton arrow>Lees meer</ElementsSecondaryButton>
             </Announcement>
           </nuxt-link>
         </div>

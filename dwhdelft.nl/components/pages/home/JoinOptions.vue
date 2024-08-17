@@ -46,11 +46,13 @@ const { t } = useT()
     <div class="md:flex justify-center items-start">
       <div class="flex-1 mx-2 flex items-end pt-4 md:pt-12">
         <div class="text-white">
-          <h1 class="font-medium leading-none text-5xl mb-4" v-html="t('title')"></h1>
-          <p class="text-lg lg:pr-20 mb-4" v-html="t('description')" />
-          <p class="text-lg lg:pr-20 mb-6" v-html="t('join')" />
+          <h1 class="font-medium leading-none text-5xl mb-4">
+            <Markdown :content="t('title')" />
+          </h1>
+          <Markdown class="text-lg lg:pr-20 mb-4" :content="t('description')" darkBackground />
+          <Markdown class="text-lg lg:pr-20 mb-6" :content="t('join')" />
           <a href="https://my.dwhdelft.nl/signup">
-            <ElementsSecondaryButton class="text-brand-600" arrow>{{ t('membership_button') }}</ElementsSecondaryButton>
+            <ElementsSecondaryButton class="!text-brand-600" arrow>{{ t('membership_button') }}</ElementsSecondaryButton>
           </a>
         </div>
       </div>

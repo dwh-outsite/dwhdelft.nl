@@ -83,7 +83,6 @@ const instagramChannels = [
 
   <section id="join-dwh" class="bg-brand-500">
     <PagesHomeJoinOptions />
-    hallo
   </section>
 
   <section id="recurring_events" class="bg-white">

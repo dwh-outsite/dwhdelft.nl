@@ -28,6 +28,8 @@ const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies')
   sites: { $contains: runtimeConfig.public.domain },
   [locale.value]: { $type: 'string' },
 }).find())
+
+const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-brand-300' : '!bg-brand-500'
 </script>
 
 <template>
@@ -37,7 +39,7 @@ const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies')
     <p v-text="t('description')" />
   </LayoutPageIntroText>
 
-  <LayoutStraightSection titleClass="!text-brand-450" contentBackgroundClass="!bg-brand-300">
+  <LayoutStraightSection titleClass="!text-brand-450" :contentBackgroundClass="listBackgroundClass">
     <template #title>
       <Markdown :content="t('bar_buddies_title')" />
     </template>

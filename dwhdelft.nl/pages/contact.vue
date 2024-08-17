@@ -27,7 +27,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
   <LayoutSmallHeader>{{ t('title') }}</LayoutSmallHeader>
 
   <section>
-    <ElementsContainer class="py-12 md:flex items-start mb-6">
+    <ElementsContainer class="py-12 md:flex items-start mb-6 space-y-6 md:space-y-0">
       <div class="flex-1 md:mb-0"><PagesContactForm /></div>
       <div class="md:w-1/3 md:border-l md:pl-6 md:ml-6">
         <ContactOptions email="bestuur@dwhdelft.nl" :dark="true" />

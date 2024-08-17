@@ -12,17 +12,17 @@
 
 <style>
 :root {
-  --color-brand-50: #fdf2f8;
-  --color-brand-100: #ffe4f4;
-  --color-brand-200: #ff9ad8;
-  --color-brand-300: #f9a8d4;
-  --color-brand-350: #f9a8d4;
-  --color-brand-400: #FC66C2;
-  --color-brand-450: #FC66C2;
-  --color-brand-500: #ec4899;
-  --color-brand-600: #db2777;
-  --color-brand-700: #be185d;
-  --color-brand-800: #9d174d;
-  --color-brand-900: #831843;
+  --color-brand-50: 252 242 248;
+  --color-brand-100: 255 228 244;
+  --color-brand-200: 255 154 216;
+  --color-brand-300: 249 168 212;
+  --color-brand-350: 249 168 212;
+  --color-brand-400: 252 102 194;
+  --color-brand-450: 252 102 194;
+  --color-brand-500: 236 72 153;
+  --color-brand-600: 219 39 119;
+  --color-brand-700: 190 24 93;
+  --color-brand-800: 157 23 77;
+  --color-brand-900: 131 24 67;
 }
 </style>

@@ -12,17 +12,17 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: 'var(--color-brand-50)',
-          100: 'var(--color-brand-100)',
-          200: 'var(--color-brand-200)',
-          300: 'var(--color-brand-300)',
-          400: 'var(--color-brand-400)',
-          450: 'var(--color-brand-450)',
-          500: 'var(--color-brand-500)',
-          600: 'var(--color-brand-600)',
-          700: 'var(--color-brand-700)',
-          800: 'var(--color-brand-800)',
-          900: 'var(--color-brand-900)',
+          50: 'rgb(var(--color-brand-50) / <alpha-value>)',
+          100: 'rgb(var(--color-brand-100) / <alpha-value>)',
+          200: 'rgb(var(--color-brand-200) / <alpha-value>)',
+          300: 'rgb(var(--color-brand-300) / <alpha-value>)',
+          400: 'rgb(var(--color-brand-400) / <alpha-value>)',
+          450: 'rgb(var(--color-brand-450) / <alpha-value>)',
+          500: 'rgb(var(--color-brand-500) / <alpha-value>)',
+          600: 'rgb(var(--color-brand-600) / <alpha-value>)',
+          700: 'rgb(var(--color-brand-700) / <alpha-value>)',
+          800: 'rgb(var(--color-brand-800) / <alpha-value>)',
+          900: 'rgb(var(--color-brand-900) / <alpha-value>)',
         },
         gray: {
           50: '#f9fafb',

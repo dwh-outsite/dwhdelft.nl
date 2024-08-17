@@ -18,7 +18,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
 
 
 <template>
-  <ElementsContainer class="spy-8 md:py-16">
+  <ElementsContainer class="py-8 md:py-16">
     <!-- Weekly events -->
     <h2
       class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight"
@@ -63,7 +63,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
 
     <div class="md:flex flex-wrap justify-center -mx-2">
       <div v-for="event in openingHoursMonthly" :key="event.name" class="p-2 mb-4 xl:mb-0 md:w-1/2 xl:flex-1 xl:w-auto">
-        <div class="rounded shadow bg-brand-100 flex flex-col justify-between h-full">
+        <div class="rounded shadow bg-brand-100 flex flex-col justify-between h-full relative z-10">
           <div class="p-6">
             <div class="flex items-center mb-2">
               <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />

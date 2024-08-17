@@ -11,16 +11,16 @@
 
 <style>
 :root {
-  --color-brand-50: #fdf2f8;
-  --color-brand-100: #faf5ff;
-  --color-brand-200: #e9d8fd;
-  --color-brand-300: #d6bcfa;
-  --color-brand-400: #b794f4;
-  --color-brand-450: #9f7aea;
-  --color-brand-500: #9f7aea;
-  --color-brand-600: #805ad5;
-  --color-brand-700: #6b46c1;
-  --color-brand-800: #553c9a;
-  --color-brand-900: #44337a;
+  --color-brand-50: 253 242 248;
+  --color-brand-100: 250 245 255;
+  --color-brand-200: 233 216 253;
+  --color-brand-300: 214 188 250;
+  --color-brand-400: 183 148 244;
+  --color-brand-450: 159 122 234;
+  --color-brand-500: 159 122 234;
+  --color-brand-600: 128 90 213;
+  --color-brand-700: 107 70 193;
+  --color-brand-800: 85 60 154;
+  --color-brand-900: 68 51 122;
 }
 </style>

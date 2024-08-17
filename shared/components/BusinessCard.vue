@@ -10,12 +10,12 @@ defineProps({
 </script>
 
 <template>
-  <ElementsActionCard :title="name" headerPosition="left" :headerClass="photo && 'bg-brand-450 w-32 md:w-36 overflow-hidden'" contentClass="!text-base">
+  <ElementsActionCard :title="name" headerPosition="left" :headerClass="photo && 'bg-brand-450 w-36 overflow-hidden'" contentClass="!text-base">
     <template #header>
       <img
         v-if="photo"
         :src="photo"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover hidden md:block"
       />
     </template>
 

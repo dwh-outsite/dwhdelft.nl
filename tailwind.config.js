@@ -12,19 +12,17 @@ export default {
     extend: {
       colors: {
         brand: {
-          // For now, everything is pink. Should be made dynamic later.
-          50: '#fdf2f8',
-          100: '#ffe4f4',
-          200: '#ff9ad8',
-          300: '#f9a8d4',
-          350: '#f9a8d4',
-          400: '#FC66C2',
-          450: '#FC66C2',
-          500: '#ec4899',
-          600: '#db2777',
-          700: '#be185d',
-          800: '#9d174d',
-          900: '#831843',
+          50: 'var(--color-brand-50)',
+          100: 'var(--color-brand-100)',
+          200: 'var(--color-brand-200)',
+          300: 'var(--color-brand-300)',
+          400: 'var(--color-brand-400)',
+          450: 'var(--color-brand-450)',
+          500: 'var(--color-brand-500)',
+          600: 'var(--color-brand-600)',
+          700: 'var(--color-brand-700)',
+          800: 'var(--color-brand-800)',
+          900: 'var(--color-brand-900)',
         },
         gray: {
           50: '#f9fafb',

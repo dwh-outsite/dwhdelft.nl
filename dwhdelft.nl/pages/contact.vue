@@ -41,7 +41,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
     </ElementsContainer>
   </section>
 
-  <LayoutEmulatedSkewedSection content-class="bg-purple-100 py-12" triangle-class="border-purple-100">
+  <LayoutEmulatedSkewedSection content-class="bg-brand-100 py-12" triangle-class="border-brand-100">
     <ElementsContainer class="md:flex md:space-x-16">
       <div class="md:pt-16 mb-12 md:mb-0">
         <h2 class="font-semibold text-4xl mb-6" v-text="t('titles.opening_hours')" />
@@ -53,7 +53,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
     </ElementsContainer>
   </LayoutEmulatedSkewedSection>
 
-  <LayoutEmulatedSkewedSection content-class="bg-purple-800" triangle-class="border-purple-800" :connect="true" :bottom="false">
+  <LayoutEmulatedSkewedSection content-class="bg-brand-800" triangle-class="border-brand-800" :connect="true" :bottom="false">
     <ElementsContainer class="pt-12 pb-4 md:pb-12">
       <h1 class="text-white font-medium text-5xl mb-12" v-html="t('titles.board')" />
 

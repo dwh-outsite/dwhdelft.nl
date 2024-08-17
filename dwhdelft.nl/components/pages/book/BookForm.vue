@@ -192,7 +192,7 @@ const rootElement = ref(null)
                     <IconTime class="w-4 h-4 mr-2" />
                     {{ formatTime(event.start) }} - {{ formatTime(event.end) }}
                   </div>
-                  <div v-if="event.available_seats <= 0" class="bg-purple-450 text-white px-2 py-1 rounded">
+                  <div v-if="event.available_seats <= 0" class="bg-brand-450 text-white px-2 py-1 rounded">
                     {{ t('fully_booked') }}
                   </div>
                 </div>

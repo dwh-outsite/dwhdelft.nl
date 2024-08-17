@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <ElementsActionCard :title="name" headerPosition="left" :headerClass="photo && 'bg-purple-450 w-32 md:w-36 overflow-hidden'" contentClass="!text-base">
+  <ElementsActionCard :title="name" headerPosition="left" :headerClass="photo && 'bg-brand-450 w-32 md:w-36 overflow-hidden'" contentClass="!text-base">
     <template #header>
       <img
         v-if="photo"
@@ -25,7 +25,7 @@ defineProps({
       <ElementsIconCircle class="p-2">
         <IconEnvelope class="w-4" />
       </ElementsIconCircle>
-      <a :href="`mailto:${email}`" class="text-purple-450 hover:underline" v-text="email" />
+      <a :href="`mailto:${email}`" class="text-brand-450 hover:underline" v-text="email" />
     </div>
   </ElementsActionCard>
 </template>

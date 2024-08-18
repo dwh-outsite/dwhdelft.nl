@@ -36,9 +36,7 @@ const route = useRoute()
 
   <section class="bg-brand-450 relative">
     <ElementsContainer class="lg:flex py-8">
-
       <div class="flex-1 lg:pr-16">
-
         <div v-if="route.query.canceled" class="bg-brand-100 rounded p-4 text-lg flex items-center mb-6 space-x-4">
           <ElementsIconCircle class="p-5">
             <IconInformationOutline class="w-6 h-6" />
@@ -53,7 +51,6 @@ const route = useRoute()
       <div class="lg:w-1/2">
         <PagesBookForm class="lg:-mt-72" />
       </div>
-
     </ElementsContainer>
   </section>
 </template>

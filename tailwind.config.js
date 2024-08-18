@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./**/components/**/*.{js,vue,ts}",
-    "./**/layouts/**/*.vue",
-    "./**/pages/**/*.vue",
-    "./**/plugins/**/*.{js,ts}",
-    "./**/app.vue",
-    "./**/error.vue",
+    './**/components/**/*.{js,vue,ts}',
+    './**/layouts/**/*.vue',
+    './**/pages/**/*.vue',
+    './**/plugins/**/*.{js,ts}',
+    './**/app.vue',
+    './**/error.vue',
   ],
   theme: {
     extend: {
@@ -35,7 +35,7 @@ export default {
           700: '#48454b',
           800: '#1f2937',
           900: '#111827',
-        }
+        },
       },
       skew: {
         '-7': '-7deg',

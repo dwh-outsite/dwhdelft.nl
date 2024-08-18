@@ -28,7 +28,12 @@ const submit = async () => {
 </script>
 
 <template>
-  <ElementsFormSuccessMessage v-if="form.state.value === 'success'" class="md:pr-48" :title="$t('forms.success.heading')" :subtitle="t('success')" />
+  <ElementsFormSuccessMessage
+    v-if="form.state.value === 'success'"
+    class="md:pr-48"
+    :title="$t('forms.success.heading')"
+    :subtitle="t('success')"
+  />
 
   <form v-else ref="formElement" @submit.prevent="submit">
     <ElementsFormValidationErrorMessage :errors="form.validationErrors" />

@@ -37,7 +37,7 @@ const active = ref(props.brands[0])
       </div>
     </slot>
 
-    <PagesHomeInstagramWidget :widget-id="active.widgetId" />
+    <PagesHomeInstagramWidget :widgetId="active.widgetId" />
 
     <a :href="`https://www.instagram.com/${active.instagram}`" target="_blank" class="block text-center">
       <ElementsSecondaryButton class="mx-auto" arrow>

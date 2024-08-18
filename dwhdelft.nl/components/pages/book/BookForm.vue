@@ -33,7 +33,6 @@ import { IconTime } from '@iconify-prerendered/vue-zondicons'
 
 const { t } = useT()
 
-
 const apiUrl = 'https://reserveer.dwhdelft.nl/api'
 
 const DINNER_TEAMS = [
@@ -44,7 +43,6 @@ const DINNER_TEAMS = [
   { emoji: '🍻', name: 'Bartender', description: 'You serve the drinks' },
 ]
 const DINNER_RESTRICTIONS = ['Meat', 'Fish', 'Seafood', 'Cheese', 'Nuts', 'Dairy']
-
 
 const state = ref('start')
 const form = ref({
@@ -108,7 +106,7 @@ const submit = async () => {
 
   const response = await fetch(`${apiUrl}/bookings`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify(form.value),
   })
 
@@ -149,8 +147,12 @@ const rootElement = ref(null)
 
     <h2 class="text-xl font-bold mb-4 text-brand-450 uppercase tracking-wider" v-text="t('title')" />
 
-    <ElementsFormSuccessMessage v-if="state === 'finished'" class="!bg-brand-100 mb-6" :title="$t('forms.success.heading')" :subtitle="t('thank_you')" />
-
+    <ElementsFormSuccessMessage
+      v-if="state === 'finished'"
+      class="!bg-brand-100 mb-6"
+      :title="$t('forms.success.heading')"
+      :subtitle="t('thank_you')"
+    />
 
     <form v-show="state == 'start' || state == 'loading'" @submit.prevent="submit">
       <div v-for="error in errors" :key="error" class="bg-red-200 border-1 border-red-400 rounded p-2 mb-4">

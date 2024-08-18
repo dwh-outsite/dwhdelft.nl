@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  widgetId: { type: String, required: true }
+  widgetId: { type: String, required: true },
 })
 
 useHead({

@@ -10,7 +10,7 @@ en:
     - title: Testimonials
       url: testimonials
     - title: EatingOUT
-      url: "https://dwhdelft.nl/book"
+      url: 'https://dwhdelft.nl/book'
     - title: Contact
       url: '#contact'
 nl:
@@ -24,7 +24,7 @@ nl:
     - title: Ervaringen
       url: testimonials
     - title: EatingOUT
-      url: "https://dwhdelft.nl/book"
+      url: 'https://dwhdelft.nl/book'
     - title: Contact
       url: '#contact'
 </i18n>

@@ -48,10 +48,7 @@ const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/bull
       <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
         <template #header>
           <div class="w-full h-40 overflow-hidden mx-auto">
-            <img
-              :src="image(`bullet_${point.image}`)"
-              class="object-cover w-full h-full"
-            />
+            <img :src="image(`bullet_${point.image}`)" class="object-cover w-full h-full" />
           </div>
         </template>
 

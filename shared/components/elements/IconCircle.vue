@@ -10,7 +10,7 @@ const classes = computed(() => ({
 </script>
 
 <template>
-    <div class="rounded-full" :class="classes">
-      <slot />
-    </div>
+  <div class="rounded-full" :class="classes">
+    <slot />
+  </div>
 </template>

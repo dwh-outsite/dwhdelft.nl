@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint-check": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint-check -- --fix"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.22",
@@ -19,8 +21,10 @@
     "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
+    "@dpgradio/eslint-config-vue3": "^0.0.4",
     "@nuxtjs/i18n": "^8.4.0",
     "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
     "nuxt-svgo": "^4.0.3",
     "postcss": "^8.4.41",
     "tailwind-heropatterns": "^0.0.8",

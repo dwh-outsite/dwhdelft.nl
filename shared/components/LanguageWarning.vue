@@ -1,4 +1,3 @@
-
 <script setup>
 import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
 

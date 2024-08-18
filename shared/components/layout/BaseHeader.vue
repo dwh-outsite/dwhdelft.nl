@@ -55,7 +55,7 @@ const showMenu = ref(false)
           >
             {{ item.title }}
           </nuxt-link>
-          <slot name="mobile-menu-extension"></slot>
+          <slot name="mobile-menu-extension" />
         </div>
         <div
           class="hidden lg:flex p-1 rounded-full text-lg font-semibold text-white backdrop-blur-lg bg-white bg-opacity-10 shadow"
@@ -83,7 +83,7 @@ const showMenu = ref(false)
               </nuxt-link>
             </div>
           </div>
-          <slot name="menu-extension"></slot>
+          <slot name="menu-extension" />
           <div class="lg:hidden p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
             <div
               class="rounded-full w-7 h-7 p-1 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
@@ -96,11 +96,11 @@ const showMenu = ref(false)
         </div>
       </ElementsContainer>
     </nav>
-    <slot name="background"></slot>
-    <div :class="bg ? bg : 'bg-white'" class="hero"></div>
+    <slot name="background" />
+    <div :class="bg ? bg : 'bg-white'" class="hero" />
     <div class="relative flex items-center h-full">
       <ElementsContainer class="mt-40 mb-48">
-        <slot></slot>
+        <slot />
       </ElementsContainer>
     </div>
   </header>

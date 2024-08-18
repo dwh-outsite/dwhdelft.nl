@@ -17,7 +17,12 @@ const form = useReMemberForm('contact-dwh', {
 </script>
 
 <template>
-  <ElementsFormSuccessMessage v-if="form.state.value === 'success'" class="md:pr-48 !bg-brand-100" :title="$t('forms.success.heading')" :subtitle="t('success')" />
+  <ElementsFormSuccessMessage
+    v-if="form.state.value === 'success'"
+    class="md:pr-48 !bg-brand-100"
+    :title="$t('forms.success.heading')"
+    :subtitle="t('success')"
+  />
 
   <form v-else ref="formElement" @submit.prevent="form.submit">
     <ElementsFormValidationErrorMessage :errors="form.validationErrors" />

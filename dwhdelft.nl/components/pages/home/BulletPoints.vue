@@ -34,7 +34,6 @@ const { t } = useT()
 
 const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/bullets/*', { eager: true }))
 const requireImage = (name) => image(`bullet_${name}`)
-
 </script>
 
 <template>
@@ -47,10 +46,7 @@ const requireImage = (name) => image(`bullet_${name}`)
           >
             {{ point.title }}
           </div>
-          <img
-            :src="requireImage(point.image)"
-            class="object-cover h-full w-full"
-          />
+          <img :src="requireImage(point.image)" class="object-cover h-full w-full" />
           <div
             class="absolute bottom-0 left-0 flex flex-col justify-end w-full h-full md:h-2/3 bg-gradient-to-t from-gray-900 p-6"
           >

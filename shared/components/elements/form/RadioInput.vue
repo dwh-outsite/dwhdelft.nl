@@ -1,9 +1,5 @@
 <script setup>
-import {
-  RadioGroup,
-  RadioGroupLabel,
-  RadioGroupOption,
-} from '@headlessui/vue'
+import { RadioGroup, RadioGroupOption } from '@headlessui/vue'
 
 import { IconCheckmark } from '@iconify-prerendered/vue-zondicons'
 
@@ -19,8 +15,8 @@ const model = defineModel()
       <RadioGroupOption
         v-for="[value, description] in Object.entries(options)"
         :key="value"
-        :value="value"
         v-slot="{ checked }"
+        :value="value"
       >
         <button
           type="button"

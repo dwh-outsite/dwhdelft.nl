@@ -52,7 +52,9 @@ const { t } = useT()
           <Markdown class="text-lg lg:pr-20 mb-4" :content="t('description')" darkBackground />
           <Markdown class="text-lg lg:pr-20 mb-6" :content="t('join')" />
           <a href="https://my.dwhdelft.nl/signup">
-            <ElementsSecondaryButton class="!text-brand-600" arrow>{{ t('membership_button') }}</ElementsSecondaryButton>
+            <ElementsSecondaryButton class="!text-brand-600" arrow>{{
+              t('membership_button')
+            }}</ElementsSecondaryButton>
           </a>
         </div>
       </div>

@@ -74,7 +74,6 @@ const links = [
 ]
 </script>
 
-
 <template>
   <div>
     <ElementsContainer class="text-white">

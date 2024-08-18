@@ -11,7 +11,7 @@ en:
   join:
     title: Ready to check out **Outsite**?
   video:
-    title: "**Outsite** in 120 seconds"
+    title: '**Outsite** in 120 seconds'
   instagram:
     title: Updates and upcoming activities
 nl:
@@ -26,7 +26,7 @@ nl:
     title: Onze **Hoogtepunten**
     more: Meer hoogtepunten
   video:
-    title: "**Outsite** in 120 seconden"
+    title: '**Outsite** in 120 seconden'
   instagram:
     title: Updates en aankomende activiteiten
 </i18n>
@@ -34,7 +34,7 @@ nl:
 <script setup>
 import Panda from '../assets/images/panda_cropped.svg'
 
-const { t, tt } = useT()
+const { t } = useT()
 
 const instagramChannels = [
   {

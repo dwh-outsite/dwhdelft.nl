@@ -33,7 +33,6 @@ export const useT = (options = {}) => {
     return rtableInProduction || rtableInDevelopment
   }
 
-
   const forgivingT = (key, ...args) => {
     const value = t(key, ...args)
 

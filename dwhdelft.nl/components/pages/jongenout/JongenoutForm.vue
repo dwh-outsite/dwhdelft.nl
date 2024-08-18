@@ -39,9 +39,8 @@ const form = useReMemberForm('jongenout', {
     </div>
 
     <ElementsFormElement name="email" :errors="form.validationErrors" required>
-      <ElementsFormTextInput v-model="form.fields.email"  />
+      <ElementsFormTextInput v-model="form.fields.email" />
     </ElementsFormElement>
-
 
     <ElementsFormElement name="phone_number" :errors="form.validationErrors" required>
       <ElementsFormTextInput v-model="form.fields.phone_number" />

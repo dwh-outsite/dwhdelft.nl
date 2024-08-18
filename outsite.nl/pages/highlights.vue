@@ -13,6 +13,6 @@ const { t } = useT()
   <LayoutSmallHeader bg="bg-gray-200">{{ t('title') }}</LayoutSmallHeader>
 
   <LayoutStraightSection contentBackgroundClass="bg-gray-200" contentClass="pt-8 pb-16">
-      <PagesHighlights :excerpts="false" />
+    <PagesHighlights :excerpts="false" />
   </LayoutStraightSection>
 </template>

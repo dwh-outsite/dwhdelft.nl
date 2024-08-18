@@ -19,7 +19,12 @@ const form = useReMemberForm('education', {
 
 <template>
   <div>
-    <ElementsFormSuccessMessage v-if="form.state.value === 'success'" class="!bg-brand-100" :title="$t('forms.success.heading')" :subtitle="t('form_success')" />
+    <ElementsFormSuccessMessage
+      v-if="form.state.value === 'success'"
+      class="!bg-brand-100"
+      :title="$t('forms.success.heading')"
+      :subtitle="t('form_success')"
+    />
 
     <form v-else ref="formElement" @submit.prevent="form.submit">
       <ElementsFormValidationErrorMessage :errors="form.validationErrors" />

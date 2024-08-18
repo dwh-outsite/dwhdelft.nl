@@ -17,7 +17,7 @@ defineProps({
 const { t } = useT()
 
 const expanded = ref(false)
-const readMore = () => expanded.value = !expanded.value
+const readMore = () => (expanded.value = !expanded.value)
 </script>
 
 <template>

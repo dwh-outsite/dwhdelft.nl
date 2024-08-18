@@ -2,7 +2,7 @@
 nl:
   title: Voorlichting
   titles:
-    jongenout: "Zie ook: **Jong&Out Delft**"
+    jongenout: 'Zie ook: **Jong&Out Delft**'
     voorlichting: Hoe ziet een gastles eruit?
     contact: Interesse in een voorlichting?
     educators: Onze **Voorlichters**
@@ -82,10 +82,15 @@ const { t } = useT()
     <PagesEducationEducators />
   </LayoutStraightSection>
 
-  <LayoutEmulatedSkewedSection triangle-class="border-brand-800" content-class="bg-brand-800" class="bg-brand-500" :bottom="false">
+  <LayoutEmulatedSkewedSection
+    triangleClass="border-brand-800"
+    contentClass="bg-brand-800"
+    class="bg-brand-500"
+    :bottom="false"
+  >
     <ElementsContainer class="xl:flex justify-center py-12">
       <div class="xl:w-1/2 text-white mb-12 xl:mb-0 xl:pr-6">
-        <h1 class="font-medium leading-none text-5xl mb-4" v-html="t('titles.voorlichting')"></h1>
+        <h1 class="font-medium leading-none text-5xl mb-4" v-html="t('titles.voorlichting')" />
         <p v-for="paragraph in t('content.voorlichting')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
       </div>
 

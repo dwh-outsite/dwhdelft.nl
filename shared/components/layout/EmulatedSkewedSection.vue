@@ -10,11 +10,11 @@ defineProps({
 
 <template>
   <div :class="top && (connect ? 'mt-[-10.55vw]' : 'mt-[-6vw]')">
-    <div v-if="top" class="triangle-top" :class="triangleClass"></div>
+    <div v-if="top" class="triangle-top" :class="triangleClass" />
     <section :class="contentClass">
-      <slot></slot>
+      <slot />
     </section>
-    <div v-if="bottom" class="triangle-bottom" :class="triangleClass"></div>
+    <div v-if="bottom" class="triangle-bottom" :class="triangleClass" />
   </div>
 </template>
 

@@ -98,7 +98,17 @@ nl:
 </i18n>
 
 <script setup>
-import { IconCompose, IconFactory, IconTablet, IconTravelWalk, IconLocationFood, IconLayers, IconTarget, IconUserGroup, IconBeverage } from '@iconify-prerendered/vue-zondicons'
+import {
+  IconCompose,
+  IconFactory,
+  IconTablet,
+  IconTravelWalk,
+  IconLocationFood,
+  IconLayers,
+  IconTarget,
+  IconUserGroup,
+  IconBeverage,
+} from '@iconify-prerendered/vue-zondicons'
 
 const { t } = useT()
 
@@ -114,7 +124,12 @@ const membershipIcons = {
 
 <template>
   <div class="lg:flex justify-center space-y-6 lg:space-y-0 lg:space-x-4">
-    <ElementsActionCard :title="t('membership.title')" class="flex-1 fade-corners !bg-brand-400" contentClass="p-8" titleClass="text-white">
+    <ElementsActionCard
+      :title="t('membership.title')"
+      class="flex-1 fade-corners !bg-brand-400"
+      contentClass="p-8"
+      titleClass="text-white"
+    >
       <template #icon>
         <ElementsIconCircle class="mb-6 lg:mb-0" inverted>
           <IconCompose class="w-6 h-6 m-5" />
@@ -131,7 +146,14 @@ const membershipIcons = {
 
       <div class="-mx-8 -mb-8 mt-6 p-8 bg-[#ffaadf]">
         <div class="grid md:grid-cols-2 gap-4">
-          <ElementsActionCard v-for="advantage in t('membership.advantages')" :key="advantage.title" :title="advantage.title" class="!rounded-lg" contentClass="!p-3 !pr-4" titleClass="text-lg">
+          <ElementsActionCard
+            v-for="advantage in t('membership.advantages')"
+            :key="advantage.title"
+            :title="advantage.title"
+            class="!rounded-lg"
+            contentClass="!p-3 !pr-4"
+            titleClass="text-lg"
+          >
             <template #icon>
               <ElementsIconCircle>
                 <Component :is="membershipIcons[advantage.icon]" class="w-4 h-4 m-2" />

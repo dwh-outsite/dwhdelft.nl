@@ -1,0 +1,142 @@
+events:
+
+  - name: EatingOUT
+    day:
+      en: Monday
+      nl: Maandag
+    start_time: '18:30'
+    end_time: '21:00'
+    description:
+      en: |-
+        On Mondays we gather around the dinner table to enjoy a delicious meal cooked by one of our
+        members, sometimes with an activity afterwards.
+      nl: |-
+        Elke maandagavond zitten we gezellig rond de eettafel om van een maaltijd te genieten, bereid door
+        één van onze leden, met soms een activiteit achteraf.
+    restrictions:
+      - en: Members only
+        nl: Alleen leden
+    link:
+      name:
+        en: Sign Up
+        nl: Aanmelden
+      url: https://dwhdelft.nl/eatingout
+
+  - name: Fillum
+    day:
+      en: Wednesday
+      nl: Woensdag
+    start_time: '20:30'
+    end_time: '23:00'
+    description:
+      en: |-
+        The one and only gay movie night in Delft: Come by and watch both newly released movies as well as
+        old classics. Subscribe to our mailing list to receive the latest info on which movies will be played when.
+      nl: |-
+        Dé gay filmavond van Delft: Elke week is er weer een andere klassieker of juist gloednieuwe film
+        aan de beurt. Abonneer op onze maillijst om te weten wanneer welke films gespeeld worden.
+    link:
+      name:
+        en: Subscribe to our mailing list
+        nl: Abonneer op onze maillijst
+      url: http://eepurl.com/SCYin
+
+  - name: Outsite
+    day:
+      en: Thursday
+      nl: Donderdag
+    start_time: '21:00'
+    end_time: '01:00'
+    description:
+      en: |-
+        Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
+        website for upcoming events and more.
+      nl: |-
+        Onze baravond voor iedereen van 28 of jonger. Kom een drankje doen aan de bar, en check onze
+        Outsite website voor aankomende events!
+    restrictions:
+      - en: Max. 28 years old
+        nl: Max. 28 jaar
+    link:
+      name:
+        en: Head to Outsite.nl
+        nl: Ga naar Outsite.nl
+      url: https://outsite.nl/
+
+  - name: Roze Kroeg
+    day:
+      en: First Friday
+      nl: Eerste vrijdag
+    monthly: true
+    start_time: '21:00'
+    end_time: '02:00'
+    description:
+      en: |-
+        On the first Friday of the month, the Roze Kroeg is open! Come around for a drink for the true old-style
+        bar experience. The dance floor isn't open and there is calm music, so it's ideal for talking to one another.
+        Of course there will be (deep-fried) snacks.
+      nl: |-
+        Elke eerste vrijdag van de maand is onze Roze Kroeg geopend! Kom langs voor een drankje in bruine-kroeg stijl.
+        De dansvloer is niet geopend en er is rustige muziek, dus ideaal om lekker met anderen te komen babbelen.
+        Natuurlijk zijn er borrelnootjes en bitterballen.
+
+  - name: MIXUP
+    day:
+      en: Saturday
+      nl: Zaterdag
+    start_time: '22:00'
+    end_time: '02:00'
+    description:
+      en: |-
+        MIXUP is thé queer bar night of Delft. Meet new people, come dance at our regular
+        parties, and join one of our many events!
+      nl: |-
+        MIXUP is dé queer baravond van Delft. Ontmoet nieuwe mensen, kom dansen bij een van onze
+        feesten en doe mee met een van onze vele events!
+    link:
+      name:
+        en: MIXUP on Instagram
+        nl: MIXUP op Instagram
+      url: https://www.instagram.com/mixupdelft/
+
+  - name: Jong&Out
+    day:
+      en: Third Sunday
+      nl: Derde zondag
+    monthly: true
+    start_time: '14:00'
+    end_time: '17:00'
+    description:
+      en: |-
+        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTQ+ youth
+        members. Come around to bake, play games, do a graffity workshop, go to Jumpsquare, and more!
+        We also have a camp each year!
+      nl: |-
+        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren.
+        Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen,
+        naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
+    restrictions:
+      - en: Between 12 and 18 years old
+        nl: Tussen de 12 en 18 jaar oud
+    link:
+      name:
+        en: Find out more
+        nl: Lees meer
+      url: https://jongenoutdelft.nl/
+
+  - name: QT
+    day:
+      en: Second and fourth Sunday
+      nl: Tweede en vierde zondag
+    monthly: true
+    start_time: '17:00'
+    end_time: '21:00'
+    description:
+      en: |-
+        Do you like going out but not being loud? Do you want to go out but prefer staying in?
+        Then come visit our QT evening where you can have a nice chat, read books or
+        play some board games with other in the community.
+      nl: |-
+        Ga je graag uit, maar niet luid? Wil je er op uit maar blijf je toch liever binnen?
+        Kom dan een keer langs bij de QT-avond waar je rustig kunt praten, boeken kunt lezen
+        of wat bordspellen kunt spelen met andere mensen in de gemeenschap.

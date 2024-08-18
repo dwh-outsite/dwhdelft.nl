@@ -1,65 +1,47 @@
-const colors = require('tailwindcss/colors')
-const plugin = require('tailwindcss/plugin')
-
-module.exports = {
-  mode: 'jit',
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./**/components/**/*.{js,vue,ts}",
+    "./**/layouts/**/*.vue",
+    "./**/pages/**/*.vue",
+    "./**/plugins/**/*.{js,ts}",
+    "./**/app.vue",
+    "./**/error.vue",
+  ],
   theme: {
     extend: {
-      height: {
-        7: '1.75rem',
-        28: '7rem',
-        80: '20rem',
-      },
-      width: {
-        7: '1.75rem',
-        80: '20rem',
-      },
-      maxWidth: {
-        56: '14rem',
-      },
       colors: {
-        gray: {
-          200: '#f4f4f5',
-          400: '#b4abb7',
-          600: '#625c65',
-          700: '#48454b',
-        },
-        pink: {
-          ...colors.pink,
+        brand: {
+          // For now, everything is pink. Should be made dynamic later.
+          50: '#fdf2f8',
           100: '#ffe4f4',
           200: '#ff9ad8',
-          350: colors.pink[300],
+          300: '#f9a8d4',
+          350: '#f9a8d4',
           400: '#FC66C2',
           450: '#FC66C2',
+          500: '#ec4899',
+          600: '#db2777',
+          700: '#be185d',
+          800: '#9d174d',
+          900: '#831843',
         },
-        purple: {
-          100: '#FAF5FF',
-          200: '#E9D8FD',
-          300: '#D6BCFA',
-          350: '#B794F4',
-          400: '#B794F4',
-          450: '#9F7AEA',
-          500: '#9F7AEA',
-          600: '#805AD5',
-          700: '#6B46C1',
-          800: '#553C9A',
-          900: '#44337A',
-        },
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#f4f4f5',
+          300: '#d1d5db',
+          400: '#b4abb7',
+          500: '#6b7280',
+          600: '#625c65',
+          700: '#48454b',
+          800: '#1f2937',
+          900: '#111827',
+        }
       },
-      inset: {
-        '-8': '-2rem',
-        '-16': '-4rem',
-        '-14': '-3.5rem',
-        16: '4rem',
-      },
-      fontSize: {
-        mega: '10rem',
-      },
-      aspectRatio: {
-        9: '9',
-        16: '16',
-        100: '100',
-        191: '191',
+      skew: {
+        '-7': '-7deg',
+        7: '7deg',
       },
     },
   },
@@ -84,34 +66,6 @@ module.exports = {
         default: '0.4',
         100: '1.0',
       },
-    }),
-    require('@tailwindcss/aspect-ratio'),
-    // Temporary fix for Tailwind/Nuxt2 issue from [https://github.com/tailwindlabs/tailwindcss/discussions/7044]
-    plugin(function ({ matchUtilities, theme }) {
-      matchUtilities(
-        {
-          'backdrop-blur': (value) => {
-            const cssBackdropFilterValue = [
-              'var(--tw-backdrop-blur,)',
-              'var(--tw-backdrop-brightness,)',
-              'var(--tw-backdrop-contrast,)',
-              'var(--tw-backdrop-grayscale,)',
-              'var(--tw-backdrop-hue-rotate,)',
-              'var(--tw-backdrop-invert,)',
-              'var(--tw-backdrop-opacity,)',
-              'var(--tw-backdrop-saturate,)',
-              'var(--tw-backdrop-sepia,)',
-            ].join(' ')
-
-            return {
-              '--tw-backdrop-blur': `blur(${value})`,
-              '@defaults backdrop-filter': {},
-              'backdrop-filter': cssBackdropFilterValue,
-            }
-          },
-        },
-        { values: theme('backdropBlur') }
-      )
     }),
   ],
 }

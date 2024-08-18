@@ -1,8 +1,8 @@
-# 🌈 Website of DWH
+# 🌈 Websites of DWH
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/267389a7-6a04-4d23-85c1-0956dfd672a1/deploy-status)](https://app.netlify.com/sites/dwh/deploys)
+## Setup
 
-DWH is the independent LGBT+ association of Delft and surroundings. 
+DWH is the independent LGBT+ association of Delft and surroundings.
 We're two things: a meeting place for LGBT+ people and their friends and a group that actively
 pushes for greater LGBT+ rights and acceptance.
 
@@ -20,21 +20,10 @@ For node v17 and up, a [ERR_OSSL_EVP_UNSUPPORTED error](https://stackoverflow.co
 ## Build Setup
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+npm install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
 
 ## Preview
 When opening a PR, Netlify automatically generates a preview. This preview is only generated for either Outsite or DWH.
@@ -42,12 +31,28 @@ You can swap out `outsite` for `dwh` in the URL to see the DWH website (and reve
 
 ## Page Types
 
-The "easier" pages are Markdown based and can be found in `content/pages`.
-There are multiple layouts available for these pages.
-The markdown pages can make use of components from `components/globals`.
-See [the documentation of Nuxt Content](https://content.nuxtjs.org/writing) for further details.
+```bash
+npm run dev <domain>
 
-The more complex pages of the website live in the `pages/` directory and are Vue components,
-supported by the components in `components/`.
-When these pages have content-heavy elements, their content usually comes from markdown files in the
-`content/` directory.
+# For example:
+npm run dev dwhdelft.nl
+npm run dev outsite.nl
+```
+
+_The domain argument is actually the subdirectory. We use [Nuxt layers](https://nuxt.com/docs/getting-started/layers) to generate multiple websites from the same codebase._
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build <domain>
+```
+
+Locally preview production build:
+
+```bash
+npm run preview <domain>
+```
+
+Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

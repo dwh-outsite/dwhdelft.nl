@@ -8,32 +8,38 @@ const slug = params.slug.join('/').replace(/-/g, '_')
 
 const showLanguageWarning = ref(false)
 
-const content = await useAsyncData(() => queryContent(`pages/${slug}.${locale.value}`).findOne())
-  .then(async (result) => {
-    if (!result.data.value) {
-      showLanguageWarning.value = true
+const pages = await useAsyncData(() => queryContent('pages').find())
+const findPage = (stem) => pages.data.value.find((page) => page._stem === stem)
 
-      const fallbackResult = await useAsyncData(() => queryContent(`pages/${slug}.nl`).findOne())
-      if (!fallbackResult.data.value) {
-        throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
-      }
+const findContent = () => {
+  const localePage = findPage(`pages/${slug}.${locale.value}`)
 
-      return fallbackResult
+  if (!localePage) {
+    showLanguageWarning.value = true
+
+    const nlPage = findPage(`pages/${slug}.nl`)
+
+    if (!nlPage) {
+      throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
     }
-    return result
-  })
-  .then((result) => result.data.value)
 
+    return nlPage
+  }
+
+  return localePage
+}
+
+const content = findContent()
 </script>
 
 <template>
   <div v-if="content">
-  <LayoutSmallHeader>{{ content.title }}</LayoutSmallHeader>
+    <LayoutSmallHeader>{{ content.title }}</LayoutSmallHeader>
 
-  <LanguageWarning v-if="showLanguageWarning" />
+    <LanguageWarning v-if="showLanguageWarning" />
 
-  <LayoutPageIntroText>
-    <Markdown :content="content" />
-  </LayoutPageIntroText>
+    <LayoutPageIntroText>
+      <Markdown :content="content" />
+    </LayoutPageIntroText>
   </div>
 </template>

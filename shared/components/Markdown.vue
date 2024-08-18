@@ -11,11 +11,20 @@ const props = defineProps({
   darkBackground: { type: Boolean, default: false }
 })
 
-const parsedMarkdown = props.content._type === 'markdown' ? props.content : await markdownParser.parse('custom.md', props.content)
+let renderableContent = ''
+if (props.content?._type === 'markdown') {
+  renderableContent = props.content
+} else {
+  try {
+    renderableContent = await markdownParser.parse('custom.md', props.content)
+  } catch (error) {
+    console.error(`Error parsing markdown content: ${error}`)
+  }
+}
 </script>
 
 <template>
-  <ContentRendererMarkdown :value="parsedMarkdown" class="content" :class="{ 'dark-background': darkBackground }" />
+  <ContentRendererMarkdown :value="renderableContent" class="content" :class="{ 'dark-background': darkBackground }" />
 </template>
 
 <style>

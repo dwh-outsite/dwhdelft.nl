@@ -8,15 +8,15 @@ const slug = params.slug.join('/').replace(/-/g, '_')
 const showLanguageWarning = ref(false)
 
 const pages = await useAsyncData(() => queryContent('pages').find())
-const findPage = (stem) => pages.data.value.find((page) => page._stem === stem)
+const findPage = (slug, locale) => pages.data.value.find((page) => page._stem === `pages/${slug}.${locale}` || page._stem === `pages/${slug}/index.${locale}`)
 
 const findContent = () => {
-  const localePage = findPage(`pages/${slug}.${locale.value}`)
+  const localePage = findPage(slug, locale.value)
 
   if (!localePage) {
     showLanguageWarning.value = true
 
-    const nlPage = findPage(`pages/${slug}.nl`)
+    const nlPage = findPage(slug, 'nl')
 
     if (!nlPage) {
       throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })

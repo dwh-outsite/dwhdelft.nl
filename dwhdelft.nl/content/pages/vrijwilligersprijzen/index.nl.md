@@ -5,11 +5,11 @@ layout: article
 
 **DWH, de organisatie die veel betekent voor de LHBT+ gemeenschap in Delft, heeft uit handen van staatssecretaris Van Ooijen (VWS) de eerste prijs van de Nationale Vrijwilligersprijzen 2023 ontvangen.**
 
-<article-image src="photos/vrijwilligersprijs/dwh_uitreiking_2.jpg"></article-image>
+![Uitreiking](dwh_uitreiking_2.jpg)
 
 Met deze erkenning beloont de jury hun voortdurende inzet, toewijding en positieve impact op de samenleving. Deze overwinning is een belangrijke mijlpaal voor DWH, dat eerder dit jaar nog te maken had met verbranding van hun regenboogvlag.
 
-Het incident met de verbrande vlag onderstreept waarom DWH en soortgelijke vrijwilligersorganisaties een belangrijk rol hebben te vervullen in onze maatschappij. Net als in ook andere delen van Europa en de wereld, is de vrijheid om jezelf te kunnen zijn niet vanzelfsprekend. Het je publiekelijk inzetten als vrijwilliger kan zelfs gevaarlijk zijn. DWH heeft aangrijpende verhalen te vertellen. Verhalen over iedereen die zich bij hen thuis kan voelen als lid van de LHBT+-gemeenschap, maar ook over hoe ze de hele samenleving hierin proberen te betrekken door bijvoorbeeld voorlichting, bewustwordingscampagnes en sociale evenementen.
+Het incident met de verbrande valag onderstreept waarom DWH en soortgelijke vrijwilligersorganisaties een belangrijk rol hebben te vervullen in onze maatschappij. Net als in ook andere delen van Europa en de wereld, is de vrijheid om jezelf te kunnen zijn niet vanzelfsprekend. Het je publiekelijk inzetten als vrijwilliger kan zelfs gevaarlijk zijn. DWH heeft aangrijpende verhalen te vertellen. Verhalen over iedereen die zich bij hen thuis kan voelen als lid van de LHBT+-gemeenschap, maar ook over hoe ze de hele samenleving hierin proberen te betrekken door bijvoorbeeld voorlichting, bewustwordingscampagnes en sociale evenementen.
 
 ## Jury onder de indruk van 'tweede thuis
 
@@ -23,11 +23,11 @@ De hoofdprijs van 15.000 euro zal door DWH ingezet worden om hun vrijwilligers e
 
 Naast DWH zijn nog vijf andere vrijwilligersorganisaties uit het hele land erkend voor hun aangrijpende verhaal. Zij ontvangen voor hun verhaal elk de tweede prijs van 2.000 euro. Hun verhalen vertellen waarom het werk van vrijwilligers onmisbaar is op vele maatschappelijke thema's. Naast deze hoofdprijswinnaars waren er nog 80 winnaars van de derde prijs van 750 euro.
 
-<article-image src="photos/vrijwilligersprijs/dwh_uitreiking_1.jpg"></article-image>
+![Uitreiking](dwh_uitreiking_1.jpg)
 
 ## Documentaire: thuis
 
-Tijdens de uitreiking, gepresenteerd door Sinan Can, is het werk van de zes genomineerden in het licht gezet met een indrukwekkende documentaire, ‘Thuis’, over hoe vrijwilligers een thuis creëren voor de ander en zichzelf. DWH toonde in deze documentaire wat de vereniging betekent voor de LHBT+ community in de regio. 
+Tijdens de uitreiking, gepresenteerd door Sinan Can, is het werk van de zes genomineerden in het licht gezet met een indrukwekkende documentaire, ‘Thuis’, over hoe vrijwilligers een thuis creëren voor de ander en zichzelf. DWH toonde in deze documentaire wat de vereniging betekent voor de LHBT+ community in de regio.
 
 De volgende documentaire werd gemaakt over DWH:
 

@@ -48,20 +48,30 @@ if (props.content?._type === 'markdown') {
   @apply mb-4;
 }
 
+.content h1 > a,
+.content h2 > a,
+.content h3 > a,
+.content h4 > a,
+.content h5 > a,
+.content h6 > a {
+  @apply text-inherit;
+}
+
+
 .content h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover {
+.content h2 > a:hover,
+.content h3 > a:hover,
+.content h4 > a:hover,
+.content h5 > a:hover,
+.content h6 > a:hover {
   @apply underline;
 }
 
-.content p a {
+.content a {
   @apply text-brand-600;
 }
 
-.content p a:hover {
+.content a:hover {
   @apply text-brand-800 underline;
 }
 

@@ -15,7 +15,7 @@ const socials = [
 
 const year = new Date().getFullYear()
 
-const linkCategories = (await useAsyncData(() => queryContent('footer_links_dwh').findOne())).data.value.categories
+const linkCategories = (await useAsyncData(() => queryContent('footer_links').findOne())).data.value.categories
 
 const links = linkCategories.map((category) => ({
   ...category,

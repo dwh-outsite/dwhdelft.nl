@@ -17,7 +17,7 @@ nl:
 <script setup>
 const { t, tt } = useT()
 
-const boardMembers = (await useAsyncData(() => queryContent('board_members_dwh').findOne())).data.value.board
+const boardMembers = (await useAsyncData(() => queryContent('board_members').findOne())).data.value.board
 
 const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/board/*', { eager: true }))
 const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))

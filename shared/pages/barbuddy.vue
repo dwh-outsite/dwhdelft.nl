@@ -24,10 +24,14 @@ const { t, locale } = useT()
 
 const runtimeConfig = useRuntimeConfig()
 
-const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies').where({
-  sites: { $contains: runtimeConfig.public.domain },
-  [locale.value]: { $type: 'string' },
-}).find())
+const { data: barBuddies } = await useAsyncData(() =>
+  queryContent('barbuddies')
+    .where({
+      sites: { $contains: runtimeConfig.public.domain },
+      [locale.value]: { $type: 'string' },
+    })
+    .find()
+)
 
 const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-brand-300' : '!bg-brand-500'
 </script>
@@ -45,7 +49,7 @@ const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-b
     </template>
 
     <div class="grid md:grid-cols-2 gap-4">
-      <div v-for="buddy in barBuddies" :key="buddy.name" >
+      <div v-for="buddy in barBuddies" :key="buddy.name">
         <PagesBarbuddyCard :buddy="buddy" />
       </div>
     </div>

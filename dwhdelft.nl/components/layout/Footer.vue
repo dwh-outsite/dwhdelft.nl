@@ -28,27 +28,25 @@ const links = linkCategories.map((category) => ({
 </script>
 
 <template>
-    <ElementsContainer class="text-white py-8 md:flex space-y-8 md:space-y-0 md:space-x-8 xl:space-x-16 justify-center">
-      <div v-for="category in links" :key="category.name">
-        <h3 class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-wider" v-text="tt(category.name)" />
-        <div class="space-y-2">
-          <nuxt-link
-            v-for="{ url, name, external } in category.items"
-            :key="url"
-            :to="url"
-            class="font-semibold block items-center text-gray-400 hover:text-white"
-            :target="external ? '_blank' : '_self'"
-          >
-            {{ tt(name) }}
-            <IconLink v-if="external" class="inline w-4 ml-1" />
+  <ElementsContainer class="text-white py-8 md:flex space-y-8 md:space-y-0 md:space-x-8 xl:space-x-16 justify-center">
+    <div v-for="category in links" :key="category.name">
+      <h3 class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-wider" v-text="tt(category.name)" />
+      <div class="space-y-2">
+        <nuxt-link
+          v-for="{ url, name, external } in category.items"
+          :key="url"
+          :to="url"
+          class="font-semibold block items-center text-gray-400 hover:text-white"
+          :target="external ? '_blank' : '_self'"
+        >
+          {{ tt(name) }}
+          <IconLink v-if="external" class="inline w-4 ml-1" />
         </nuxt-link>
-        </div>
       </div>
-    </ElementsContainer>
+    </div>
+  </ElementsContainer>
 
-    <LayoutFooterCopyright :socials="socials" :links="[]">
-      <template #copyright>
-        &copy; DWH {{ year }}
-      </template>
-    </LayoutFooterCopyright>
+  <LayoutFooterCopyright :socials="socials" :links="[]">
+    <template #copyright> &copy; DWH {{ year }} </template>
+  </LayoutFooterCopyright>
 </template>

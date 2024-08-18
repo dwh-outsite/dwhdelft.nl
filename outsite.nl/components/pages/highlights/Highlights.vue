@@ -16,7 +16,9 @@ const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/high
 
 const { data: highlights } = await useAsyncData(() => queryContent('highlights').find())
 
-const visibleHighlights = props.excerpts ? highlights.value.sort(() => 0.5 - Math.random()).slice(0, 3) : highlights.value
+const visibleHighlights = props.excerpts
+  ? highlights.value.sort(() => 0.5 - Math.random()).slice(0, 3)
+  : highlights.value
 </script>
 
 <template>
@@ -31,17 +33,11 @@ const visibleHighlights = props.excerpts ? highlights.value.sort(() => 0.5 - Mat
       contentClass="p-8"
     >
       <template #header>
-        <img
-          :src="image(highlight.image)"
-          class="object-cover w-full h-full"
-        />
+        <img :src="image(highlight.image)" class="object-cover w-full h-full" />
       </template>
 
       <div class="flex-1 flex flex-col justify-between">
-        <p
-          class="text-xl"
-          v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]"
-        />
+        <p class="text-xl" v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]" />
 
         <a v-if="excerpts" :href="localePath('highlights')" class="text-brand-400 text-lg hover:text-brand-500">
           {{ t('read_more') }} &raquo;

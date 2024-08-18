@@ -1,5 +1,5 @@
 <script setup>
-const { t, tt } = useT()
+const { tt } = useT()
 
 const openingHours = (await useAsyncData(() => queryContent('opening_hours').findOne())).data.value.events
 </script>

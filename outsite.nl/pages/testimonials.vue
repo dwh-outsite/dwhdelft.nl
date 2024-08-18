@@ -19,7 +19,6 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
   <LayoutSmallHeader bg="bg-brand-100">{{ t('title') }}</LayoutSmallHeader>
 
   <LayoutStraightSection contentBackgroundClass="!bg-brand-100" contentClass="pt-8 pb-16 space-y-8">
-
     <ElementsActionCard
       v-for="(testimonial, index) in testimonials"
       :key="testimonial.name"
@@ -29,15 +28,11 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
       contentClass="px-16 testimonial-bg-white-gradient-vertical"
     >
       <template #header>
-        <img
-          :src="imageOrDefault(testimonial.title)"
-          class="object-cover w-full h-80 md:h-full md:w-60 object-top"
-        />
+        <img :src="imageOrDefault(testimonial.title)" class="object-cover w-full h-80 md:h-full md:w-60 object-top" />
       </template>
 
       {{ testimonial[`text_${locale}`] }}
     </ElementsActionCard>
-
   </LayoutStraightSection>
 </template>
 

@@ -1,4 +1,3 @@
-
 <script setup>
 const { params } = useRoute()
 

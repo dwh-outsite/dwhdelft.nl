@@ -60,11 +60,7 @@ const chatGroupsByCategory = groupBy(
     <Markdown v-for="text in t('main_text')" :key="text" :content="text" />
   </LayoutPageIntroText>
 
-  <LayoutStraightSection
-    v-for="(categoryName, category) in t('categories')"
-    :key="category"
-    class="mb-12"
-  >
+  <LayoutStraightSection v-for="(categoryName, category) in t('categories')" :key="category" class="mb-12">
     <template #title>
       <Markdown :content="categoryName" />
     </template>

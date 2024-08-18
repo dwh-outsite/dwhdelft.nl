@@ -16,9 +16,6 @@ nl:
 <script setup>
 const { t } = useT()
 
-const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
-const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
-
 const instagramChannels = [
   {
     name: 'DWH',
@@ -73,8 +70,8 @@ const instagramChannels = [
 
   <div class="-mt-64">
     <LayoutEmulatedSkewedSection
-      content-class="bg-brand-100 pt-24 md:pt-12 pb-12"
-      triangle-class="border-brand-100"
+      contentClass="bg-brand-100 pt-24 md:pt-12 pb-12"
+      triangleClass="border-brand-100"
       :bottom="false"
     >
       <PagesHomeBulletPoints />
@@ -89,10 +86,10 @@ const instagramChannels = [
     <PagesHomeRecurringEvents />
   </section>
 
-   <section class="-mt-24">
-    <LayoutEmulatedSkewedSection content-class="bg-brand-800" triangle-class="border-brand-800" :bottom="false">
+  <section class="-mt-24">
+    <LayoutEmulatedSkewedSection contentClass="bg-brand-800" triangleClass="border-brand-800" :bottom="false">
       <ElementsContainer class="pt-12 pb-16">
-      <PagesHomeInstagramChannels class="text-white" :brands="instagramChannels" />
+        <PagesHomeInstagramChannels class="text-white" :brands="instagramChannels" />
       </ElementsContainer>
     </LayoutEmulatedSkewedSection>
   </section>

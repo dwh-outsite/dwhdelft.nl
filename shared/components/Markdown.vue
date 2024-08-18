@@ -8,7 +8,7 @@ import markdownParser from '@nuxt/content/transformers/markdown'
 
 const props = defineProps({
   content: { type: String, required: true },
-  darkBackground: { type: Boolean, default: false }
+  darkBackground: { type: Boolean, default: false },
 })
 
 let renderableContent = ''
@@ -48,8 +48,13 @@ if (props.content?._type === 'markdown') {
   @apply mb-4;
 }
 
-.content h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
-  @apply underline
+.content h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover {
+  @apply underline;
 }
 
 .content p a {
@@ -72,7 +77,8 @@ if (props.content?._type === 'markdown') {
   @apply list-disc mb-1 ml-6;
 }
 
-.content table th, td {
-  @apply pr-4
+.content table th,
+td {
+  @apply pr-4;
 }
 </style>

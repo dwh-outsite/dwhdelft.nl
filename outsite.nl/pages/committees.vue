@@ -22,8 +22,6 @@ const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/comm
 
 const { data: committees } = await useAsyncData(() => queryContent('committees').find())
 
-const active = ref(committees.value[0])
-
 const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
 </script>
 
@@ -38,15 +36,12 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
     <ElementsContainer class="md:flex space-y-4 md:space-y-0 md:space-x-6">
       <TabGroup>
         <TabList class="md:w-1/4 flex md:flex-col space-x-2 md:space-x-0 md:space-y-2 whitespace-nowrap overflow-auto">
-          <Tab
-            v-for="committee in committees"
-            :key="committee.name + 'tab'"
-            as="template"
-            v-slot="{ selected }"
-          >
+          <Tab v-for="committee in committees" :key="committee.name + 'tab'" v-slot="{ selected }" as="template">
             <button
               class="block w-full rounded-lg text-left px-4 py-3 font-semibold shadow text-lg"
-              :class="selected ? 'bg-white text-gray-800' : 'bg-brand-900/25 text-white hover:bg-white/50 hover:text-gray-800'"
+              :class="
+                selected ? 'bg-white text-gray-800' : 'bg-brand-900/25 text-white hover:bg-white/50 hover:text-gray-800'
+              "
             >
               {{ committee.name }}
             </button>
@@ -55,12 +50,14 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
 
         <TabPanels class="flex-1">
           <TabPanel v-for="committee in committees" :key="committee.name">
-            <ElementsActionCard :title="committee.name" class="shadow-xl" headerPosition="right" headerClass="h-64 md:h-auto md:w-2/5">
+            <ElementsActionCard
+              :title="committee.name"
+              class="shadow-xl"
+              headerPosition="right"
+              headerClass="h-64 md:h-auto md:w-2/5"
+            >
               <template #header>
-                <img
-                  :src="requireImage(committee.name)"
-                  class="object-cover w-full h-full"
-                />
+                <img :src="requireImage(committee.name)" class="object-cover w-full h-full" />
               </template>
 
               <p v-text="committee[`description_${$i18n.locale}`]" />

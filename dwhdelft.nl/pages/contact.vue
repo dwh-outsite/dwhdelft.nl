@@ -13,7 +13,6 @@ nl:
   my: Lid van DWH? Pas je gegevens aan en check je betalingen op
 </i18n>
 
-
 <script setup>
 const { t, tt } = useT()
 
@@ -41,7 +40,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
     </ElementsContainer>
   </section>
 
-  <LayoutEmulatedSkewedSection content-class="bg-brand-100 py-12" triangle-class="border-brand-100">
+  <LayoutEmulatedSkewedSection contentClass="bg-brand-100 py-12" triangleClass="border-brand-100">
     <ElementsContainer class="md:flex md:space-x-16">
       <div class="md:pt-16 mb-12 md:mb-0">
         <h2 class="font-semibold text-4xl mb-6" v-text="t('titles.opening_hours')" />
@@ -53,12 +52,24 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
     </ElementsContainer>
   </LayoutEmulatedSkewedSection>
 
-  <LayoutEmulatedSkewedSection content-class="bg-brand-800" triangle-class="border-brand-800" :connect="true" :bottom="false">
+  <LayoutEmulatedSkewedSection
+    contentClass="bg-brand-800"
+    triangleClass="border-brand-800"
+    :connect="true"
+    :bottom="false"
+  >
     <ElementsContainer class="pt-12 pb-4 md:pb-12">
       <h1 class="text-white font-medium text-5xl mb-12" v-html="t('titles.board')" />
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
-        <BusinessCard v-for="member in boardMembers" :key="member.name" :name="member.name" :role="tt(member.description)" :email="member.email" :photo="requireImage(member.name)" />
+        <BusinessCard
+          v-for="member in boardMembers"
+          :key="member.name"
+          :name="member.name"
+          :role="tt(member.description)"
+          :email="member.email"
+          :photo="requireImage(member.name)"
+        />
       </div>
     </ElementsContainer>
   </LayoutEmulatedSkewedSection>

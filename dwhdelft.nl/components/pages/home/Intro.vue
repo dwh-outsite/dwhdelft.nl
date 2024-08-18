@@ -9,7 +9,7 @@ en:
       nights. We also organise all sorts of activities throughout the year: queer dance parties every other month,
       beer tastings, workshops, pub crawls and even vacations. See our upcoming events below!'
   invite:
-    announcement: "Come by during one of our bar nights:"
+    announcement: 'Come by during one of our bar nights:'
     time: Every Saturday starting at {0}
 nl:
   intro:
@@ -21,7 +21,7 @@ nl:
       baravonden. Daarnaast hebben we allerlei activiteiten door het jaar heen: queer dansfeesten om de maand,
       bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!'
   invite:
-    announcement: "Kom gerust langs op onze baravond:"
+    announcement: 'Kom gerust langs op onze baravond:'
     time: Elke Zaterdag vanaf {0}
 </i18n>
 
@@ -34,12 +34,15 @@ const barOpeningHours = openingHours.value.events.find((event) => event.day.en =
 
 <template>
   <div>
-    <ElementsParagraphedText :paragraphs="t('intro')" class="text-lg md:text-xl md:leading-relaxed text-gray-800 space-y-4" />
-    <p
-      v-if="barOpeningHours.announcement"
-      class="mt-3 mb-4 text-brand-500"
-      v-text="tt(barOpeningHours.announcement)"
+    <ElementsParagraphedText
+      :paragraphs="t('intro')"
+      class="text-lg md:text-xl md:leading-relaxed text-gray-800 space-y-4"
     />
-    <PagesHomeInvite class="my-8 md:my-4" :announcement="t('invite.announcement')" :time="t('invite.time', [barOpeningHours.start_time])" />
+    <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-brand-500" v-text="tt(barOpeningHours.announcement)" />
+    <PagesHomeInvite
+      class="my-8 md:my-4"
+      :announcement="t('invite.announcement')"
+      :time="t('invite.time', [barOpeningHours.start_time])"
+    />
   </div>
 </template>

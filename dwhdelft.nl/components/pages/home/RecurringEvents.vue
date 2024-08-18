@@ -1,10 +1,10 @@
 <i18n lang="yaml">
 en:
-  announcement: "**DWH** is open {count} nights a week"
-  announcement_month: "Monthly events at **DWH**"
+  announcement: '**DWH** is open {count} nights a week'
+  announcement_month: 'Monthly events at **DWH**'
 nl:
-  announcement: "**DWH** is elke week op {count} avonden open"
-  announcement_month: "Maandelijkse evenementen bij **DWH**"
+  announcement: '**DWH** is elke week op {count} avonden open'
+  announcement_month: 'Maandelijkse evenementen bij **DWH**'
 </i18n>
 
 <script setup>
@@ -16,13 +16,10 @@ const openingHoursWeekly = openingHours.value.events.filter((o) => !('monthly' i
 const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in o)
 </script>
 
-
 <template>
   <ElementsContainer class="py-8 md:py-16">
     <!-- Weekly events -->
-    <h2
-      class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight"
-    >
+    <h2 class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight">
       <Markdown :content="t('announcement', { count: openingHoursWeekly.length })" />
     </h2>
 
@@ -42,22 +39,19 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
         </td>
         <td class="align-top block md:table-cell">
           <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />
-          <p class="text-gray-500" v-html="tt(event.description)" />
-          <p v-if="event.announcement" class="text-brand-500 font-semibold" v-html="tt(event.announcement)" />
-          <a
-            v-if="event.link"
-            :href="event.link.url"
-          >
-            <ElementsPrimaryButton class="mt-6 !px-5 !py-2 text-sm font-semibold" v-html="tt(event.link.name)" />
+          <p class="text-gray-500" v-text="tt(event.description)" />
+          <p v-if="event.announcement" class="text-brand-500 font-semibold" v-text="tt(event.announcement)" />
+          <a v-if="event.link" :href="event.link.url">
+            <ElementsPrimaryButton class="mt-6 !px-5 !py-2 text-sm font-semibold">
+              {{ tt(event.link.name) }}
+            </ElementsPrimaryButton>
           </a>
         </td>
       </tr>
     </table>
 
     <!-- Monthly events -->
-    <h2
-      class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight"
-    >
+    <h2 class="md:text-center text-brand-500 font-medium text-5xl md:mb-6 leading-tight">
       <Markdown :content="t('announcement_month')" />
     </h2>
 
@@ -82,13 +76,13 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
             </div>
             <div class="text-gray-500 text-2xl font-semibold" v-text="tt(event.day)" />
             <div class="text-gray-400 text-xl" v-text="event.start_time" />
-            <p v-html="tt(event.description)" />
+            <p v-text="tt(event.description)" />
           </div>
           <a
             v-if="event.link"
             :href="event.link.url"
             class="bg-brand-500 hover:bg-brand-300 py-3 rounded-b text-white uppercase font-semibold tracking-wider text-center"
-            v-html="tt(event.link.name)"
+            v-text="tt(event.link.name)"
           />
         </div>
       </div>

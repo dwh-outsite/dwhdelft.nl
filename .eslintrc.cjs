@@ -3,4 +3,7 @@ module.exports = {
   rules: {
     'no-undef': 'off',
   },
+  parserOptions: {
+    ecmaVersion: 2024,
+  },
 }

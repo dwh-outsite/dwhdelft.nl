@@ -39,14 +39,12 @@ const { t } = useT()
     <Markdown :content="t('next')" />
   </LayoutPageIntroText>
 
-  <section class="bg-gray-200 pt-12 pb-20">
-    <ElementsContainer>
-      <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
-        {{ t('sign_up') }}
-      </h2>
-      <div class="md:w-2/3 mt-8 mx-auto">
-        <PagesKmgForm />
-      </div>
-    </ElementsContainer>
-  </section>
+  <LayoutStraightSection contentBackgroundClass="bg-gray-200" contentClass="pt-12 pb-20">
+    <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
+      {{ t('sign_up') }}
+    </h2>
+    <div class="md:w-2/3 mt-8 mx-auto">
+      <PagesKmgForm />
+    </div>
+  </LayoutStraightSection>
 </template>

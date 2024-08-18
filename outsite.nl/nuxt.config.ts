@@ -2,7 +2,10 @@ import { resolve, join } from 'path'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2024-08-11',
+
   extends: '../shared/nuxt.config.ts',
+
   content: {
     sources: {
       shared: {
@@ -11,6 +14,13 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  runtimeConfig: {
+    public: {
+      domain: 'outsite.nl',
+    }
+  },
+
   app: {
     head: {
       title: 'Outsite - LHBT+ vereniging Delft',

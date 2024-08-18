@@ -4,8 +4,8 @@ const props = defineProps({
 })
 
 const classes = computed(() => ({
-  'bg-white text-brand-400': props.inverted,
-  'bg-brand-400 text-white': !props.inverted,
+  'bg-white text-brand-450': props.inverted,
+  'bg-brand-450 text-white': !props.inverted,
 }))
 </script>
 

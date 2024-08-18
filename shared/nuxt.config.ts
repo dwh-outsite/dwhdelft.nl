@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content'],
   i18n: {
     defaultLocale: 'nl',
+    vueI18n: './i18n.config.ts',
     locales: [
       {
         code: 'en',
@@ -54,5 +55,5 @@ export default defineNuxtConfig({
         },
       ],
     },
-  }
+  },
 })

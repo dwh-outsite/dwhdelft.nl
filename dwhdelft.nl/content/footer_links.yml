@@ -1,0 +1,93 @@
+categories:
+  - name:
+      nl: Jeugd
+      en: Youth
+    items:
+      - name:
+          nl: Outsite (17-28)
+          en: Outsite (17-28)
+        url: "https://outsite.nl"
+      - name:
+          nl: Jong&Out (12-18)
+          en: Jong&Out (12-18)
+        url: /jongenout
+      - name:
+          nl: Voorlichting
+          en: Education
+        url: /education
+  - name:
+      nl: Activiteiten
+      en: Activities
+    items:
+      - name:
+          nl: EatingOUT
+          en: EatingOUT
+        url: "https://dwhdelft.nl/eatingout"
+      - name:
+          nl: Fillum Programma
+          en: Fillum Programme
+        url: "http://homodelft.nl/films/"
+  - name:
+      nl: Kennismaken
+      en: Join DWH
+    items:
+      - name:
+          nl: Barbuddy
+          en: Bar Buddy
+        url: /barbuddy
+      - name:
+          nl: Kennismakingsgroep (28-)
+          en: Introduction Groups (28-)
+        url: "https://outsite.nl/kmg"
+      - name:
+          nl: Inschrijven als lid
+          en: Join as a member
+        url: "https://my.dwhdelft.nl/signup"
+      - name:
+          nl: "My DWH: Inloggen als lid"
+          en: "My DWH: Log in as a member"
+        url: "https://my.dwhdelft.nl/"
+  - name:
+      nl: Vereniging
+      en: Association
+    items:
+      - name:
+          nl: Andersblad
+          en: Andersblad
+        url: /andersblad
+      - name:
+          nl: Resources
+          en: Resources
+        url: /resources
+      - name:
+          nl: Steun Ons
+          en: Support Us
+        url: /support-us
+      - name:
+          nl: ANBI
+          en: ANBI
+        url: /anbi
+  - name:
+      nl: Contact
+      en: Contact
+    items:
+      - name:
+          nl: Contact
+          en: Contact
+        url: /contact
+      - name:
+          nl: Privacy
+          en: Privacy
+        url: /privacy
+      - name:
+          nl: Huisregels
+          en: House Rules
+        url: /house-rules
+      - name:
+          nl: Gedragsregels
+          en: Code of Conduct
+        url: /code-of-conduct
+      - name:
+          nl: Vertrouwenspersonen
+          en: Confidential Counsellors
+        url: /lets-talk

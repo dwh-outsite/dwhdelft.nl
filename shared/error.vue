@@ -7,7 +7,7 @@ const props = defineProps({
 
 const handleError = () => clearError({ redirect: '/' })
 
-const errorMessage = props.error.statusCode === 404 ? 'Oops, there\'s nothing here!' : 'Oops, something went wrong!'
+const errorMessage = props.error.statusCode === 404 ? "Oops, there's nothing here!" : 'Oops, something went wrong!'
 </script>
 
 <template>

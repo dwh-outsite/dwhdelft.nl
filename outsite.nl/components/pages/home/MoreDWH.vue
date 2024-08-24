@@ -1,20 +1,36 @@
 <i18n lang="yaml">
 en:
-  menu:
-    - title: Home
-      url: index
-    - title: Bar Buddy
-      url: barbuddy
-    - title: Education
-      url: /education
+  description: |
+    Outsite is the youth department of DWH, the LGBT+ association of Delft and surroundings.
+    Besides Outsite, DWH also organizes activities for all ages.
+    Think of bar nights, education, parties, eating groups and much more.
+    For youth under 18, DWH organizes Jong&Out meetings.
+  more: Check the DWH website
+  activities:
     - title: Jong&Out
-      url: /jongenout
+      description: |
+        Jong&Out is the LGBT+ youth organization for youth up to 18 years old. Every month
+        we organize a meeting in Delft.
+      link: https://jongenoutdelft.nl
+      image: jongenout
+    - title: MIXUP
+      description: |
+        MIXUP is the queer bar night of Delft. Meet new people, come dance at one of our
+        parties and join one of our many events!
+      link: https://mixupdelft.nl
+      image: mixup
+    - title: Education
+      description: |
+        DWH gives education about sexual diversity and gender identity at schools and
+        other organizations.
+      link: https://dwhdelft.nl/education
+      image: education
     - title: EatingOUT
-      url: book
-    - title: Andersblad
-      url: andersblad
-    - title: Contact
-      url: '/contact'
+      description: |
+        On Mondays we gather around the dinner table to enjoy a delicious meal cooked by one of our
+        members, sometimes with an activity afterwards.
+      link: https://dwhdelft.nl/book
+      image: eatingout
 nl:
   description: |
     Outsite is het jongerenonderdeel van DWH, de LHBT+ vereniging van Delft en omstreken.

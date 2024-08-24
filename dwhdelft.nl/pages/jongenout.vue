@@ -5,6 +5,7 @@ nl:
     about: Wat is **Jong&Out**
     meetings: Bijeenkomsten
     join: Kom langs!
+    instagram: Updates en aankomende activiteiten
     team: Onze Begeleiders
   content:
     intro:
@@ -51,6 +52,14 @@ const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/jong
 const requireImage = (name) => image(name.toLowerCase())
 
 const showForm = ref(false)
+
+const instagramChannels = [
+  {
+    name: 'Jong&Out Delft',
+    widgetId: '624d8645cce75e45bae0a87c9c761cd6', // TODO: Replace with actual widget ID
+    instagram: 'jongenoutdelft',
+  },
+]
 </script>
 
 <template>
@@ -58,7 +67,7 @@ const showForm = ref(false)
     {{ t('title') }}
   </LayoutSmallHeader>
 
-  <section class="w-full py-6 bg-[#5e4fff] space-y-6">
+  <section class="w-full py-6 md:py-8 bg-[#5e4fff] space-y-6">
     <ElementsContainer class="space-y-6">
       <LanguageWarning v-if="$i18n.locale == 'en'" class="mb-12" />
       <div class="md:flex md:space-x-12 space-y-6 md:space-y-0">
@@ -123,35 +132,41 @@ const showForm = ref(false)
     </ElementsContainer>
   </section>
 
-  <section class="bg-[#120f82] py-12">
-    <ElementsContainer>
-      <h2 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('titles.team')" />
-      <div class="text-center text-white text-2xl md:w-2/3 mx-auto mb-12">
-        <p v-for="paragraph in t('content.team')" :key="paragraph" v-html="paragraph" />
-      </div>
-      <div class="space-y-6">
-        <div
-          v-for="({ name, pronouns, description }, index) in t('team')"
-          :key="name"
-          class="rounded-2xl md:rounded-full bg-[#5e4fff] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-2/3 shadow-xl"
-          :class="index % 2 !== 0 ? 'ml-auto' : ''"
-        >
-          <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
-            <img :src="requireImage(name)" class="object-cover h-full" />
+  <LayoutStraightSection contentBackgroundClass="!bg-[#120f82]" contentClass="md:py-12">
+    <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
+      <template #title>
+        <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('titles.instagram')" />
+      </template>
+    </PagesHomeInstagramChannels>
+  </LayoutStraightSection>
+
+  <LayoutStraightSection contentBackgroundClass="!bg-[#5e4fff]">
+    <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('titles.team')" />
+    <div class="text-center text-white text-2xl md:w-2/3 mx-auto mb-12">
+      <p v-for="paragraph in t('content.team')" :key="paragraph" v-html="paragraph" />
+    </div>
+    <div class="space-y-6 max-w-6xl mx-auto">
+      <div
+        v-for="({ name, pronouns, description }, index) in t('team')"
+        :key="name"
+        class="rounded-2xl md:rounded-full bg-[#120f82] p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 md:w-4/5 shadow-xl"
+        :class="index % 2 !== 0 ? 'ml-auto' : ''"
+      >
+        <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
+          <img :src="requireImage(name)" class="object-cover h-full" />
+        </div>
+        <div class="text-white flex-1 md:pr-8">
+          <div class="flex space-x-2 items-baseline">
+            <h3 class="text-xl font-semibold" v-text="name" />
+            <span class="opacity-75" v-text="pronouns" />
           </div>
-          <div class="text-white flex-1 md:pr-8">
-            <div class="flex space-x-2 items-baseline">
-              <h3 class="text-xl font-semibold" v-text="name" />
-              <span class="opacity-75" v-text="pronouns" />
-            </div>
-            <p v-for="paragraph in description" :key="paragraph" class="text-lg" v-html="paragraph" />
-          </div>
+          <p v-for="paragraph in description" :key="paragraph" class="text-lg" v-html="paragraph" />
         </div>
       </div>
-      <img
-        :src="requireImage('team')"
-        class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#5e4fff] shadow-xl"
-      />
-    </ElementsContainer>
-  </section>
+    </div>
+    <img
+      :src="requireImage('team')"
+      class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-white shadow-xl"
+    />
+  </LayoutStraightSection>
 </template>

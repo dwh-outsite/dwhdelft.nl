@@ -13,6 +13,10 @@ const filesForDisplay = computed(() =>
     publishDate: file.name.slice(file.name.lastIndexOf(', ') + 2),
   }))
 )
+
+const goToFile = (file) => {
+  window.open(file.webViewLink, '_blank')
+}
 </script>
 
 <template>
@@ -22,11 +26,13 @@ const filesForDisplay = computed(() =>
       :key="file.id"
       :title="file.name"
       :content="file.publishDate"
+      class="cursor-pointer group hover:bg-brand-100 transition-colors"
       titleClass="text-xl"
       contentClass="px-4 pt-6 pb-3"
+      @click="goToFile(file)"
     >
       <template #header>
-        <img :src="file.thumbnailLink" class="w-full h-full object-cover" />
+        <img :src="file.thumbnailLink" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" />
       </template>
       <p class="text-gray-600 text-base -mt-4">{{ file.publishDate }}</p>
     </ElementsActionCard>

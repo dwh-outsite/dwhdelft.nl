@@ -35,7 +35,7 @@ const form = useReMemberForm('whatsapp', {
           <WhatsAppLogo class="fill-current text-green-400 h-32 md:h-20 lg:h-12 mr-4" />
 
           <div v-if="!showForm">
-            <Markdown :content="t('description')" />
+            <Markdown :content="t('description')" class="-mb-4" />
           </div>
 
           <template v-if="showForm">

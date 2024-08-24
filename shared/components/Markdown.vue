@@ -57,7 +57,6 @@ if (props.content?._type === 'markdown') {
   @apply text-inherit;
 }
 
-
 .content h1 > a:hover,
 .content h2 > a:hover,
 .content h3 > a:hover,

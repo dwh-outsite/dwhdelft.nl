@@ -8,7 +8,10 @@ const slug = params.slug.join('/').replace(/-/g, '_')
 const showLanguageWarning = ref(false)
 
 const pages = await useAsyncData(() => queryContent('pages').find())
-const findPage = (slug, locale) => pages.data.value.find((page) => page._stem === `pages/${slug}.${locale}` || page._stem === `pages/${slug}/index.${locale}`)
+const findPage = (slug, locale) =>
+  pages.data.value.find(
+    (page) => page._stem === `pages/${slug}.${locale}` || page._stem === `pages/${slug}/index.${locale}`
+  )
 
 const findContent = () => {
   const localePage = findPage(slug, locale.value)

@@ -26,13 +26,13 @@ const goToFile = (file) => {
       :key="file.id"
       :title="file.name"
       :content="file.publishDate"
-      class="cursor-pointer group hover:bg-brand-100 transition-colors"
       titleClass="text-xl"
       contentClass="px-4 pt-6 pb-3"
+      clickable
       @click="goToFile(file)"
     >
       <template #header>
-        <img :src="file.thumbnailLink" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" />
+        <img :src="file.thumbnailLink" class="w-full h-full object-cover" />
       </template>
       <p class="text-gray-600 text-base -mt-4">{{ file.publishDate }}</p>
     </ElementsActionCard>

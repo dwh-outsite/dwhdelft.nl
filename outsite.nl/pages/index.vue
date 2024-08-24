@@ -127,7 +127,7 @@ const instagramChannels = [
   </section>
 
   <LayoutEmulatedSkewedSection :bottom="false" contentClass="bg-gray-200" triangleClass="border-gray-200">
-    <ElementsContainer class="pt-48 md:pt-8 pb-16">
+    <ElementsContainer class="pt-48 md:pt-8 pb-8">
       <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
         <template #title>
           <h1 class="tracking-wide font-semibold uppercase text-2xl pt-6 mb-10 text-center">
@@ -137,4 +137,10 @@ const instagramChannels = [
       </PagesHomeInstagramChannels>
     </ElementsContainer>
   </LayoutEmulatedSkewedSection>
+
+  <LayoutStraightSection class="dwh-colors">
+    <ElementsContainer class="pb-8">
+      <PagesHomeMoreDWH />
+    </ElementsContainer>
+  </LayoutStraightSection>
 </template>

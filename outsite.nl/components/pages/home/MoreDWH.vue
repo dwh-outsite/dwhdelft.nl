@@ -62,15 +62,15 @@ const { image: requireImage } = useDynamicImages(import.meta.glob('~/assets/imag
 </script>
 
 <template>
-  <div class="flex space-x-16">
-    <div class="w-1/3 py-12">
-      <DWHLogo class="h-24 fill-current text-white mb-10" />
-      <p class="text-white text-xl mb-12">{{ t('description') }}</p>
-      <a href="https://dwhdelft.nl" class="block">
-        <ElementsSecondaryButton arrow>{{ t('more') }}</ElementsSecondaryButton>
+  <div class="md:flex md:space-x-16 space-y-6 md:space-y-0 -mb-8 md:mb-0">
+    <div class="md:w-1/3 md:py-12 text-center md:text-left">
+      <DWHLogo class="h-24 fill-current text-white mb-4 md:mb-10 mx-auto md:mx-0" />
+      <p class="text-white text-xl mb-4 md:mb-12">{{ t('description') }}</p>
+      <a href="https://dwhdelft.nl" class="block mx-auto">
+        <ElementsSecondaryButton class="mx-auto md:mx-0" arrow>{{ t('more') }}</ElementsSecondaryButton>
       </a>
     </div>
-    <div class="flex-1 grid grid-cols-2 gap-6">
+    <div class="flex-1 grid md:grid-cols-2 gap-6">
       <ElementsActionCard
         v-for="activity in t('activities')"
         :key="activity.title"

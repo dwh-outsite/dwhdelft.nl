@@ -30,7 +30,10 @@ const slots = useSlots()
       <div v-if="title || slots.button" class="flex justify-between items-center mb-4">
         <div class="flex items-center space-x-4">
           <slot name="icon" />
-          <h2 class="text-2xl font-bold text-brand-450 uppercase tracking-wider" :class="titleClass" v-text="title" />
+          <div class="flex items-baseline">
+            <h2 class="text-2xl font-bold text-brand-450 uppercase tracking-wider" :class="titleClass" v-text="title" />
+            <slot name="subtitle" />
+          </div>
         </div>
         <div class="hidden md:block">
           <slot name="button" />

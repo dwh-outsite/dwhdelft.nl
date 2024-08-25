@@ -48,14 +48,12 @@ nl:
 <script setup>
 import BusinessCard from '#shared/components/BusinessCard.vue'
 
-const { t } = useT()
+const { t, tt } = useT()
 
-const counsellors = [
-  { name: 'Andreas Zafiropoulos', email: 'vertrouwenspersoon-andreas@dwhdelft.nl' },
-  { name: 'Bernard Schendstok', email: 'vertrouwenspersoon-bernard@dwhdelft.nl' },
-  { name: 'Enri Mammana', email: 'vertrouwenspersoon-enri@dwhdelft.nl' },
-  { name: 'Niamh Henssen', email: 'vertrouwenspersoon-niamh@dwhdelft.nl' },
-]
+const counsellors = (await useAsyncData(() => queryContent('counsellors').find())).data
+
+const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/counsellors/*', { eager: true }))
+const requireImage = (name) => image(name.toLowerCase().split(' ')[0])
 </script>
 
 <template>
@@ -69,13 +67,19 @@ const counsellors = [
     <p>{{ t('outro_text') }}</p>
   </LayoutPageIntroText>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-gray-200" contentClass="grid grid-cols-2 gap-8">
+  <LayoutStraightSection contentBackgroundClass="!bg-gray-200" contentClass="grid md:grid-cols-2 gap-8">
     <BusinessCard
       v-for="counsellor in counsellors"
       :key="counsellor.name"
       :name="counsellor.name"
+      :pronouns="tt(counsellor.pronouns)"
       :email="counsellor.email"
       :role="t('role_title')"
-    />
+      :photo="requireImage(counsellor.name)"
+    >
+      <template #bio>
+        {{ tt(counsellor.bio) }}
+      </template>
+    </BusinessCard>
   </LayoutStraightSection>
 </template>

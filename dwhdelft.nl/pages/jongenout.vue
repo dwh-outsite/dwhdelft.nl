@@ -40,12 +40,23 @@ nl:
       pronouns: zij/haar
       description:
         - 'Hey, ik ben Didi! Ik vind het leuk om voor queer jongeren een plek te creëren waar ze open kunnen zijn, zich vertrouwd kunnen voelen en waar ze natuurlijk veel leuke dingen kunnen beleven.'
+  instagram:
+    title: 'Kijk voor al onze Meetings op onze Instagram!'
 </i18n>
 
 <script setup>
 import { IconCalendar, IconTime, IconMap } from '@iconify-prerendered/vue-zondicons'
 
 const { t } = useT()
+
+const instagramChannels = [
+  {
+    name: 'Jong&Out',
+    subtitle: { nl: 'Jeugd (12-18)', en: 'Youth (12-18)' },
+    widgetId: 'f21c436845265b689aae355c7d7c5d0a',
+    instagram: 'jongenoutdelft',
+  },
+]
 
 const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/jongenout/*', { eager: true }))
 const requireImage = (name) => image(name.toLowerCase())
@@ -152,6 +163,18 @@ const showForm = ref(false)
         :src="requireImage('team')"
         class="rounded-2xl md:rounded-full md:w-2/3 mx-auto mt-12 border-8 border-[#5e4fff] shadow-xl"
       />
+    </ElementsContainer>
+  </section>
+
+  <section class="w-full py-6 bg-[#5e4fff] space-y-6">
+    <ElementsContainer class="pt-48 md:pt-8 pb-16">
+      <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
+        <template #title>
+          <h1 class="tracking-wide font-semibold uppercase text-white text-2xl pt-6 mb-10 text-center">
+            {{ t('instagram.title') }}
+          </h1>
+        </template>
+      </PagesHomeInstagramChannels>
     </ElementsContainer>
   </section>
 </template>

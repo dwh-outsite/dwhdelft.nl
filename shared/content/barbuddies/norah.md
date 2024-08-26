@@ -10,8 +10,8 @@ nl:
   Hallo daar. Mijn naam is Norah en ik ben begin twintig. Ik studeer momenteel Geschiedenis aan de Universiteit van Leiden en 
   woon hier in Delft. Oh, en natuurlijk ben ik al meer dan 2 jaar lid van de fantastische vereniging Outsite/DWH! 
   Naast dat alles heb ik natuurlijk nog een hoop andere dingen in mijn leven. Ik ben bijvoorbeeld een grote fan van lezen, 
-  voornamelijk fantasy, en gamen (vooral Paradox-spellen). Ook zijn kunst en knutselen een beginnende hobby van mij, en ik ben l
-  angzaam bezig om een hele kamer ervoor in te richten. Maar laten we dit niet langer maken dan nodig is, schrijf je gewoon in voor een 
+  voornamelijk fantasy, en gamen (vooral Paradox-spellen). Ook zijn kunst en knutselen een beginnende hobby van mij, en ik ben 
+  langzaam bezig om een hele kamer ervoor in te richten. Maar laten we dit niet langer maken dan nodig is, schrijf je gewoon in voor een 
   barbuddy en kom bij onze geweldige vereniging :D 
   Ik ben er meestal op maandag en donderdag, dus kom gezellig met me eten bij EatingOUT of een drankje drinken tijdens de baravond.
 en:

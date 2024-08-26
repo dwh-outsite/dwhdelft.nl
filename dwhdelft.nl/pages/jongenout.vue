@@ -56,7 +56,7 @@ const showForm = ref(false)
 const instagramChannels = [
   {
     name: 'Jong&Out Delft',
-    widgetId: '624d8645cce75e45bae0a87c9c761cd6', // TODO: Replace with actual widget ID
+    widgetId: 'f21c436845265b689aae355c7d7c5d0a',
     instagram: 'jongenoutdelft',
   },
 ]

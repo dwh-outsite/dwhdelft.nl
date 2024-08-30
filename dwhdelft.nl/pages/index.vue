@@ -38,7 +38,7 @@ const instagramChannels = [
   {
     name: 'Jong&Out',
     subtitle: { nl: 'Jeugd (12-18)', en: 'Youth (12-18)' },
-    widgetId: 'f21c436845265b689aae355c7d7c5d0a',
+    widgetId: '66e86015fb1250b9ae60ce391984d2a8',
     instagram: 'jongenoutdelft',
   },
 ]

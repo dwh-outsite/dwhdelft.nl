@@ -41,6 +41,10 @@ nl:
       pronouns: zij/haar
       description:
         - 'Hey, ik ben Didi! Ik vind het leuk om voor queer jongeren een plek te creëren waar ze open kunnen zijn, zich vertrouwd kunnen voelen en waar ze natuurlijk veel leuke dingen kunnen beleven.'
+    - name: Mo
+      pronouns: zij/haar of hen/hun
+      description:
+        - 'Yoyo, ik ben Mo! Op het moment ben ik een van de J&O begeleiders in Delft! Ik vind het heel leuk om van alles en nog wat te organiseren! Ik kijk dus nu al uit naar de volgende activiteit. Zie ik je dan?'
 </i18n>
 
 <script setup>

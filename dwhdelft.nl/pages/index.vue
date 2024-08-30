@@ -35,6 +35,12 @@ const instagramChannels = [
     widgetId: '219aedf13a4355fe95c6e27ed1f7386c',
     instagram: 'mixupdelft',
   },
+  {
+    name: 'Jong&Out',
+    subtitle: { nl: 'Jeugd (12-18)', en: 'Youth (12-18)' },
+    widgetId: '66e86015fb1250b9ae60ce391984d2a8',
+    instagram: 'jongenoutdelft',
+  },
 ]
 </script>
 

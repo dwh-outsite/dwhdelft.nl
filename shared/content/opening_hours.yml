@@ -116,8 +116,8 @@ events:
         Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen,
         naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
     restrictions:
-      - en: Between 12 and 18 years old
-        nl: Tussen de 12 en 18 jaar oud
+      - en: 12-18 years old
+        nl: 12-18 jaar
     link:
       name:
         en: Find out more

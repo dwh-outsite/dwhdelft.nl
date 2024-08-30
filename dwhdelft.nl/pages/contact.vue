@@ -66,6 +66,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
           v-for="member in boardMembers"
           :key="member.name"
           :name="member.name"
+          :pronouns="tt(member.pronouns)"
           :role="tt(member.description)"
           :email="member.email"
           :photo="requireImage(member.name)"

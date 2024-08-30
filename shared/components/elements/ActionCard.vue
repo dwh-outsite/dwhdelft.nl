@@ -5,12 +5,14 @@ const props = defineProps({
   headerClass: { type: String, default: '' },
   headerPosition: { type: String, default: 'top' },
   contentClass: { type: String, default: '' },
+  clickable: { type: Boolean, default: false },
 })
 
 const containerClass = {
   'flex-col': props.headerPosition === 'top',
   'flex-col md:flex-row': props.headerPosition === 'left',
   'flex-col md:flex-row-reverse': props.headerPosition === 'right',
+  'cursor-pointer group hover:bg-brand-100 transition-colors': props.clickable,
 }
 
 const positionBasedHeaderClass = {
@@ -18,12 +20,16 @@ const positionBasedHeaderClass = {
   '-mb-3 md:mb-0': props.headerPosition === 'left' || props.headerPosition === 'right',
 }
 
+const clickableHeaderClass = {
+  'group-hover:opacity-80 transition-opacity': props.clickable,
+}
+
 const slots = useSlots()
 </script>
 
 <template>
   <div class="bg-white rounded-xl shadow-md overflow-hidden flex" :class="containerClass">
-    <div v-if="slots.header" :class="[positionBasedHeaderClass, headerClass]">
+    <div v-if="slots.header" :class="[positionBasedHeaderClass, headerClass, clickableHeaderClass]">
       <slot name="header" />
     </div>
     <div class="flex-1 flex flex-col p-6 text-lg text-gray-700" :class="contentClass">

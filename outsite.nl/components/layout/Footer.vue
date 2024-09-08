@@ -3,24 +3,24 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Alexandru
+    - name: Feline
       role: President
       email: voorzitter
-    - name: Robin
+    - name: Alin
       role: Secretary
       email: secretaris
-    - name: Rob
+    - name: Nick
       role: Treasurer
       email: penningmeester
-    - name: Cas
+    - name: Lucia
       role: Internal Affairs
       email: intern
-    - name: Wieke
+    - name: Jaye
       role: External Affairs
       email: extern
-    - name: Anna
-      role: Public Relations
-      email: pr
+    - name: Chai
+      role: Vice President
+      email: vicevoorzitter
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -30,24 +30,24 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Alexandru
+    - name: Feline
       role: Voorzitter
       email: voorzitter
-    - name: Robin
+    - name: Alin
       role: Secretaris
       email: secretaris
-    - name: Rob
+    - name: Nick
       role: Penningmeester
       email: penningmeester
-    - name: Cas
+    - name: Lucia
       role: Commissaris Intern
       email: intern
-    - name: Wieke
+    - name: Jaye
       role: Commissaris Extern
       email: extern
-    - name: Anna
-      role: Commisaris Public Relations
-      email: pr
+    - name: Chai
+      role: Vice Voorzitter
+      email: vicevoorzitter
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:
@@ -93,7 +93,7 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/board22.jpg"
+                src="~/assets/images/photos/boards/board23.jpg"
                 class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl mt-8 md:mx-8 md:-mt-8"
               />
             </div>

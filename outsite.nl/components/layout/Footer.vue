@@ -6,21 +6,21 @@ en:
     - name: Feline
       role: President
       email: voorzitter
+    - name: Chai
+      role: Vice President
+      email: vicevoorzitter
     - name: Alin
       role: Secretary
       email: secretaris
     - name: Nick
       role: Treasurer
       email: penningmeester
-    - name: Lucia
-      role: Internal Affairs
-      email: intern
     - name: Jaye
       role: External Affairs
       email: extern
-    - name: Chai
-      role: Vice President
-      email: vicevoorzitter
+    - name: Lucia
+      role: Internal Affairs
+      email: intern
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -33,21 +33,21 @@ nl:
     - name: Feline
       role: Voorzitter
       email: voorzitter
+    - name: Chai
+      role: Vicevoorzitter
+      email: vicevoorzitter
     - name: Alin
       role: Secretaris
       email: secretaris
     - name: Nick
       role: Penningmeester
       email: penningmeester
-    - name: Lucia
-      role: Commissaris Intern
-      email: intern
     - name: Jaye
       role: Commissaris Extern
       email: extern
-    - name: Chai
-      role: Vice Voorzitter
-      email: vicevoorzitter
+    - name: Lucia
+      role: Commissaris Intern
+      email: intern
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:

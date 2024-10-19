@@ -16,7 +16,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
 </script>
 
 <template>
-  <LayoutSmallHeader bg="bg-brand-100">{{ t('title') }}</LayoutSmallHeader>
+  <LayoutSmallHeader triangleClass="border-brand-100">{{ t('title') }}</LayoutSmallHeader>
 
   <LayoutStraightSection contentBackgroundClass="!bg-brand-100" contentClass="pt-8 pb-16 space-y-8">
     <ElementsActionCard

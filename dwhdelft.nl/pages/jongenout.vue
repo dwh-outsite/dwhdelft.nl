@@ -67,7 +67,7 @@ const instagramChannels = [
 </script>
 
 <template>
-  <LayoutSmallHeader bg="bg-[#5e4fff]">
+  <LayoutSmallHeader triangleClass="border-[#5e4fff]">
     {{ t('title') }}
   </LayoutSmallHeader>
 

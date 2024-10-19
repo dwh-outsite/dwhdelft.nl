@@ -32,7 +32,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <LayoutSmallHeader bg="bg-brand-450">{{ t('title') }}</LayoutSmallHeader>
+  <LayoutSmallHeader triangleClass="border-brand-450">{{ t('title') }}</LayoutSmallHeader>
 
   <section class="bg-brand-450 relative">
     <ElementsContainer class="lg:flex py-8">

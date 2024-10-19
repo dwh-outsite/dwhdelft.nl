@@ -6,7 +6,7 @@ import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
 const props = defineProps({
   menu: { type: Object, required: true },
   small: { type: Boolean, default: false },
-  bg: { type: String },
+  triangleClass: { type: String },
 })
 
 const { locale } = useT()
@@ -36,7 +36,7 @@ const showMenu = ref(false)
 </script>
 
 <template>
-  <header id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
+  <header id="header" :class="[small ? 'header-small' : '', 'relative bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
       <ElementsContainer class="flex justify-between items-center relative">
         <nuxt-link :to="localePath('index')">
@@ -97,7 +97,7 @@ const showMenu = ref(false)
       </ElementsContainer>
     </nav>
     <slot name="background" />
-    <div :class="bg ? bg : 'bg-white'" class="hero" />
+    <div class="triangle-top absolute bottom-0" :class="triangleClass ? triangleClass : 'border-white'" />
     <div class="relative flex items-center h-full">
       <ElementsContainer class="mt-40 mb-48">
         <slot />
@@ -127,12 +127,8 @@ const showMenu = ref(false)
   }
 }
 
-.hero {
-  @apply absolute w-full;
-  transform: skewY(-7deg);
-  transform-origin: 0;
-  height: 100rem;
-  bottom: -100rem;
-  z-index: 0;
+.triangle-top {
+  border-bottom-width: 10.555vw; /* 38deg / 360deg * 100vw = 10.555 */
+  border-left: 100vw solid transparent;
 }
 </style>

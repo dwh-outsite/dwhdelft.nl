@@ -29,8 +29,6 @@ nl:
       url: book
     - title: Andersblad
       url: andersblad
-    - title: Contact again
-      url: '/contact'
     - title: Contact
       url: '/contact'
 </i18n>

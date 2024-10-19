@@ -43,15 +43,15 @@ const showMenu = ref(false)
           <slot name="logo" />
         </nuxt-link>
         <div
-          v-show="showMenu"
-          class="lg:hidden absolute z-60 top-16 text-white backdrop-blur-xl bg-white bg-opacity-10 w-full -ml-4 p-2 space-y-1 text-lg font-semibold rounded-md transition-all"
+          v-if="showMenu"
+          class="lg:hidden absolute z-50 top-16 text-gray-800 backdrop-blur-xl bg-white bg-opacity-95 shadow-xl w-[calc(100vw-2rem)] px-4 py-1 text-xl rounded-md"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:text-gray-800 transition-all rounded-full border border-opacity-25"
-            :class="isActive(item.url) && 'bg-white/10 rounded-full'"
+            class="block no-underline transition-all [&:not(:last-child)]:border-b border-[#e8e8e8] py-3"
+            :class="isActive(item.url) ? 'text-brand-800 font-bold' : 'hover:text-gray-500'"
           >
             {{ item.title }}
           </nuxt-link>

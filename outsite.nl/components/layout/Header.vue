@@ -13,6 +13,7 @@ en:
       url: 'https://dwhdelft.nl/book'
     - title: Contact
       url: '#contact'
+  goto: Go to
 nl:
   menu:
     - title: Home
@@ -27,9 +28,11 @@ nl:
       url: 'https://dwhdelft.nl/book'
     - title: Contact
       url: '#contact'
+  goto: Ga naar
 </i18n>
 
 <script setup>
+import { IconArrowRight } from '@iconify-prerendered/vue-zondicons'
 import OutsiteLogo from '#shared/assets/images/outsite_logo.svg'
 import DWHLogo from '#shared/assets/images/dwh_logo.svg'
 
@@ -43,8 +46,12 @@ const menu = t('menu')
       <OutsiteLogo class="h-16 fill-current text-white" />
     </template>
     <template #mobile-menu-extension>
-      <a href="https://dwhdelft.nl" class="block py-2 px-1">
-        <DWHLogo class="h-8 fill-current" />
+      <a href="https://dwhdelft.nl" class="flex justify-between items-center space-x-2 py-3 hover:text-gray-500">
+        <div class="flex items-center space-x-2">
+          <span>{{ t('goto') }}</span>
+          <DWHLogo class="h-8 fill-current" />
+        </div>
+        <IconArrowRight class="w-4 h-4" />
       </a>
     </template>
     <template #menu-extension>

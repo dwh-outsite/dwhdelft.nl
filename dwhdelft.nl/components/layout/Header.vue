@@ -9,8 +9,6 @@ en:
       url: /education
     - title: Jong&Out
       url: /jongenout
-    - title: EatingOUT
-      url: book
     - title: Andersblad
       url: andersblad
     - title: Contact
@@ -25,8 +23,6 @@ nl:
       url: /education
     - title: Jong&Out
       url: /jongenout
-    - title: EatingOUT
-      url: book
     - title: Andersblad
       url: andersblad
     - title: Contact

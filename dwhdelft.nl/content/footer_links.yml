@@ -20,6 +20,10 @@ categories:
       en: Activities
     items:
       - name:
+          nl: Nieuwsbrief
+          en: Newsletter
+        url: /nieuwsbrief
+      - name:
           nl: EatingOUT
           en: EatingOUT
         url: "https://dwhdelft.nl/eatingout"

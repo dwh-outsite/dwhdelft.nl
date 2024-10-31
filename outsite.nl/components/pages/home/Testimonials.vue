@@ -6,7 +6,7 @@ nl:
 </i18n>
 
 <script setup>
-import { Carousel, Pagination, Slide } from 'vue3-carousel/dist/carousel.es.js'
+import { Carousel, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 const { t, locale } = useT()

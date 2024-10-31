@@ -22,7 +22,7 @@ categories:
       - name:
           nl: Nieuwsbrief
           en: Newsletter
-        url: /nieuwsbrief
+        url: "https://dwhdelft.nl/nieuwsbrief"
       - name:
           nl: EatingOUT
           en: EatingOUT

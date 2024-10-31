@@ -1,4 +1,3 @@
-
 import { fileURLToPath } from 'url'
 import { dirname, join } from 'path'
 
@@ -31,7 +30,7 @@ export default defineNuxtConfig({
     },
   },
   svgo: {
-    defaultImport: 'component'
+    defaultImport: 'component',
   },
   css: [relativePath('assets/css/main.css')],
   postcss: {
@@ -55,6 +54,11 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap',
         },
       ],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      googleKey: process.env.GOOGLE_KEY || 'AIzaSyDwi_l2R3qDWkh2HN8_AmIpy7mk8Ij7nk8',
     },
   },
 })

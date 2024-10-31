@@ -6,7 +6,7 @@ import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
 const props = defineProps({
   menu: { type: Object, required: true },
   small: { type: Boolean, default: false },
-  bg: { type: String },
+  triangleClass: { type: String },
 })
 
 const { locale } = useT()
@@ -36,22 +36,22 @@ const showMenu = ref(false)
 </script>
 
 <template>
-  <header id="header" :class="[small ? 'header-small' : '', 'relative overflow-hidden bg-gray-700']">
+  <header id="header" :class="[small ? 'header-small' : '', 'relative bg-gray-700']">
     <nav class="absolute z-50 w-full mt-8">
       <ElementsContainer class="flex justify-between items-center relative">
         <nuxt-link :to="localePath('index')">
           <slot name="logo" />
         </nuxt-link>
         <div
-          v-show="showMenu"
-          class="lg:hidden absolute z-60 top-16 text-white backdrop-blur-xl bg-white bg-opacity-10 w-full -ml-4 p-2 space-y-1 text-lg font-semibold rounded-md transition-all"
+          v-if="showMenu"
+          class="lg:hidden absolute z-50 top-16 text-gray-800 backdrop-blur-xl bg-white bg-opacity-95 shadow-xl w-[calc(100vw-2rem)] px-4 py-1 text-xl rounded-md"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:text-gray-800 transition-all rounded-full border border-opacity-25"
-            :class="isActive(item.url) && 'bg-white/10 rounded-full'"
+            class="block no-underline transition-all [&:not(:last-child)]:border-b border-[#e8e8e8] py-3"
+            :class="isActive(item.url) ? 'text-brand-800 font-bold' : 'hover:text-gray-500'"
           >
             {{ item.title }}
           </nuxt-link>
@@ -97,7 +97,7 @@ const showMenu = ref(false)
       </ElementsContainer>
     </nav>
     <slot name="background" />
-    <div :class="bg ? bg : 'bg-white'" class="hero" />
+    <div class="triangle-top absolute bottom-0" :class="triangleClass ? triangleClass : 'border-white'" />
     <div class="relative flex items-center h-full">
       <ElementsContainer class="mt-40 mb-48">
         <slot />
@@ -127,12 +127,8 @@ const showMenu = ref(false)
   }
 }
 
-.hero {
-  @apply absolute w-full;
-  transform: skewY(-7deg);
-  transform-origin: 0;
-  height: 100rem;
-  bottom: -100rem;
-  z-index: 0;
+.triangle-top {
+  border-bottom-width: 10.555vw; /* 38deg / 360deg * 100vw = 10.555 */
+  border-left: 100vw solid transparent;
 }
 </style>

@@ -93,7 +93,7 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/board23.jpg"
+                src="~/assets/images/photos/boards/board23.png"
                 class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl mt-8 md:mx-8 md:-mt-8"
               />
             </div>

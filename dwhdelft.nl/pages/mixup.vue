@@ -14,6 +14,19 @@ en:
     time: Every Saturday starting at {0}
   membership_button: Sign up now
   instagram: Our Events and UPdates
+  months:
+    0: January
+    1: February
+    2: March
+    3: April
+    4: May
+    5: June
+    6: July
+    7: August
+    8: September
+    9: October
+    10: November
+    11: December
 
 nl:
   title: MIXUP
@@ -30,6 +43,19 @@ nl:
     time: Elke Zaterdag vanaf {0}
   membership_button: Schrijf je nu in
   instagram: Onze evenementen en UPdates
+  months:
+    0: januari
+    1: februari
+    2: maart
+    3: april
+    4: mei
+    5: juni
+    6: juli
+    7: augustus
+    8: september
+    9: oktober
+    10: november
+    11: december
 </i18n>
 
 <script setup>
@@ -40,6 +66,9 @@ import { warn } from 'vue';
   const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
   const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
 
+  const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true }))
+  const requireImage = (icon) => image(icon);
+  
   const instagramChannelsMixup = [
     {
       name: 'MIXUP',
@@ -47,10 +76,75 @@ import { warn } from 'vue';
       instagram: 'mixupdelft',
     },
   ]
+
+  const { data: events } = await useAsyncData('events', async() => {
+    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvhyi-w-PveKJjx2Mwq1busShI5LKEXqAUOKufoK-vswFNO4W_6tesXb67RO1-biPOmQ0mQJzUy_gY/pub?gid=0&single=true&output=csv';
+
+    
+    const response = await fetch(url);
+    const text = await response.text();
+
+    const parsedData = text.replace(/\r/g, '').split('\n');
+    const firstRowData = parsedData[0].split(',');
+
+    // check if structure is not changed
+    const firstRowCheck = ['Date', 'Event name', 'Icon']
+    if (firstRowData.length !== firstRowCheck.length) {
+      warn('Structure of MIXUP Events Sheet has been altered!')
+      // return;
+    }
+    for (let i = 0; i < firstRowData.length; i++) {
+      if (firstRowData[i] !== firstRowCheck[i])
+      warn('Structure of MIXUP Events Sheet has been altered!')
+      // return;
+    }
+
+    // check if event has name and date is still in future
+    let mappedData = parsedData.slice(1).map(row => {
+      let [dateString, eventName, icon] = row.split(',')
+
+      if (!["bar", "disco", "drag", "karaoke", "music", "tasting"].includes(icon)) {
+        icon = "bar";
+      }
+
+      return {
+        date: new Date(dateString.split('-').reverse().join('/')),
+        eventName: eventName,
+        icon: icon
+      }
+    }).filter(event => event.eventName !== '' && event.date instanceof Date && !isNaN(event.date) && event.date > new Date());
+
+    // show maximum of 5 icons
+    if (mappedData.length > 5) {
+      mappedData = mappedData.slice(5);
+    }
+
+    console.log('show', mappedData)
+
+    return mappedData;
+  })
 </script>
   
   
 <template>
+  <section>
+    <div v-if="events && events.length > 0" class="bg-[#E71D73] flex flex-wrap justify-center">
+      <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-black text-white rounded-lg shadow-lg space-y-2">
+        <div class="flex justify-center">
+          {{ ''.concat(event.date.getDate(), ' ', t(`months.${(event.date.getMonth())}`)) }}
+        </div>
+        <div class="flex justify-center">
+          {{ event.eventName }}
+        </div>
+        <div class="flex justify-center">
+          <img :src="requireImage(event.icon)" alt="Event Icon">
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+
   <section>
     <div class="bg-[#0A0910]  mx-auto pt-12 pb-24 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
@@ -81,11 +175,11 @@ import { warn } from 'vue';
     </div>
   </section>
 
-  <!-- <section>
+  <section>
     <div class="bg-[#E71D73]">
 
     </div>
-  </section> -->
+  </section>
 
   <LayoutStraightSection contentBackgroundClass="!bg-[#E71D73]" contentClass="md:py-12">
     <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">

@@ -27,6 +27,19 @@ en:
     9: October
     10: November
     11: December
+  bulletPoints:
+    - title: Dance Nights
+      description: We have drinks together each week and will often have a DJ to get the dance floor moving!
+      image: barnight
+    - title: Parties
+      description: Disco, hard rock, Oktoberfest, Halloween and more... There’s always time for a party.
+      image: events-parties
+    - title: Drag Shows
+      description: Our own drag house HAUS of 4D performs every two months with amazing shows.
+      image: events-dragshow
+    - title: Events
+      description: Karaoke, tastings, vinyl night or a talent show, there is a lot to do on a night at MIXUP.
+      image: barvisual
 
 nl:
   title: MIXUP
@@ -56,6 +69,20 @@ nl:
     9: oktober
     10: november
     11: december
+  bulletPoints:
+    - title: Dansavonden Nights
+      description: aanvullen
+      image: dancenights
+    - title: Feesten
+      description: aanvullen
+      image: parties
+    - title: Drag optredens
+      description: aanvullen
+      image: hausof4d
+    - title: Evenementen
+      description: aanvullen
+      image: events
+  
 </i18n>
 
 <script setup>
@@ -66,8 +93,8 @@ import { warn } from 'vue';
   const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
   const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
 
-  const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true }))
-  const requireImage = (icon) => image(icon);
+  const { image: imageIcons } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true }))
+  const { image: imageOverviews } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/*', { eager: true }))
   
   const instagramChannelsMixup = [
     {
@@ -119,15 +146,13 @@ import { warn } from 'vue';
       mappedData = mappedData.slice(5);
     }
 
-    console.log('show', mappedData)
-
     return mappedData;
   })
 </script>
   
   
 <template>
-
+  
   <!-- <LayoutBaseHeader :menu="menu">
     <template #logo>
       <DWHLogo class="h-14 fill-current text-white" />
@@ -160,9 +185,8 @@ import { warn } from 'vue';
             {{ event.eventName }}
           </div>
           <div class="flex justify-center">
-            <img :src="requireImage(event.icon)" alt="Event Icon">
+            <img :src="imageIcons(event.icon)" alt="Event Icon">
           </div>
-          
         </div>
       </div>
     </div>
@@ -200,6 +224,22 @@ import { warn } from 'vue';
     </div>
   </section>
 
+  <div class="bg-[url('~/assets/images/photos/mixup/barvisual.jpg')] bg-cover bg-center">
+    <ElementsContainer>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
+          <template #header>
+            <div class="w-full h-40 overflow-hidden mx-auto">
+              <!-- <img :src="imageOverviews(`point.image`)" class="object-cover w-full h-full" /> -->
+              <img src="~assets/images/photos/mixup/barvisual.jpg" class="object-cover w-full h-full" />
+            </div>
+          </template>
+          <p class="-mt-3 text-gray-600 text-lg leading-snug" v-text="point.description" />
+        </ElementsActionCard>
+      </div>
+    </ElementsContainer>
+  </div>
+  
   <section>
     <div class="bg-[#E71D73]">
 

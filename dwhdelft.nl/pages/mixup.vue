@@ -127,44 +127,69 @@ import { warn } from 'vue';
   
   
 <template>
+
+  <!-- <LayoutBaseHeader :menu="menu">
+    <template #logo>
+      <DWHLogo class="h-14 fill-current text-white" />
+    </template>
+    <template #background>
+      <div class="absolute top-0 bottom-0 w-full h-full overflow-hidden">
+        <img src="../../assets/images/photos/cover.jpg" class="w-full h-full object-cover opacity-50 blur-sm" />
+      </div>
+    </template>
+    <h1 class="text-4xl text-white font-normal" triangleClass="border-[#0A0910]">
+      {{ t('title') }}
+    </h1>
+  </LayoutBaseHeader> -->
+
+  <LayoutSmallHeader triangleClass="border-[#E71D73]">
+    {{ t('title') }}
+  </LayoutSmallHeader>
+
   <section>
-    <div v-if="events && events.length > 0" class="bg-[#E71D73] flex flex-wrap justify-center">
-      <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-black text-white rounded-lg shadow-lg space-y-2">
-        <div class="flex justify-center">
-          {{ ''.concat(event.date.getDate(), ' ', t(`months.${(event.date.getMonth())}`)) }}
+    <div v-if="events && events.length > 0" class="bg-[#E71D73]">
+      <div class="text-white flex justify-center text-xl">
+        <h2>Our UPcoming events</h2>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-black text-white rounded-lg shadow-lg space-y-2">
+          <div class="flex justify-center">
+            {{ ''.concat(event.date.getDate(), ' ', t(`months.${(event.date.getMonth())}`)) }}
+          </div>
+          <div class="flex justify-center">
+            {{ event.eventName }}
+          </div>
+          <div class="flex justify-center">
+            <img :src="requireImage(event.icon)" alt="Event Icon">
+          </div>
+          
         </div>
-        <div class="flex justify-center">
-          {{ event.eventName }}
-        </div>
-        <div class="flex justify-center">
-          <img :src="requireImage(event.icon)" alt="Event Icon">
-        </div>
-        
       </div>
     </div>
-
   </section>
 
   <section>
     <div class="bg-[#0A0910]  mx-auto pt-12 pb-24 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
-        <div>
+        <div class="space-y-4">
           <ElementsParagraphedText
             :paragraphs="t('intro')"
             class="text-lg md:text-xl md:leading-relaxed text-white space-y-4"
           />
-          <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-brand-500" v-text="tt(barOpeningHours.announcement)" />
-          <PagesHomeInvite
-            class="my-8 md:my-4"
-            :announcement="t('invite.announcement')"
-            :time="t('invite.time', [barOpeningHours.start_time])"
-          />
-
-          <a href="https://my.dwhdelft.nl/signup">
-            <ElementsSecondaryButton class="!text-brand-600" arrow>
-              {{ t('membership_button') }}
-            </ElementsSecondaryButton>
-          </a>
+          <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-[#0A0910] bg-[#E71D73]" v-text="tt(barOpeningHours.announcement)" />
+          <div class="flex-1 rounded-lg shadow-xl bg-[#E71D73] text-lg md:text-xl text-white p-4 relative w-full z-20 md:w-auto md:inline-flex items-center">
+            <div class="pt-6 md:pt-0 md:pl-4 space-y-2">
+              <p>{{ t('invite.announcement') }}</p>
+              <p class="font-bold">{{ t('invite.time', [barOpeningHours.start_time]) }}</p>
+            </div>
+          </div>
+          <div>
+            <a href="https://my.dwhdelft.nl/signup">
+              <ElementsSecondaryButton class="!text-brand-600" arrow>
+                {{ t('membership_button') }}
+              </ElementsSecondaryButton>
+            </a>
+          </div>
         </div>
       </div>
       <div class="hidden lg:block">

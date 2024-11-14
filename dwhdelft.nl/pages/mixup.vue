@@ -40,6 +40,15 @@ en:
     - title: Events
       description: Karaoke, tastings, vinyl night or a talent show, there is a lot to do on a night at MIXUP.
       image: barvisual
+  highlights: 
+    title: Our Highlights
+    events:
+    - title: MIXUP Origin
+      description: The first ever party under the MIXUP branding was MIXUP Origin, the opening party! Miss Abby OMG gave a wonderful performance and people were living!
+      image: highlight-abbyomg
+    - title: Summer Party
+      description: The weather was hot and the people even hotter! DJ Maarten brought us tropical tunes whilst we could sip summer cocktails and cool off in an actual swimming pool!
+      image: highlight-summer-party
 
 nl:
   title: MIXUP
@@ -82,6 +91,15 @@ nl:
     - title: Evenementen
       description: aanvullen
       image: events
+  highlights: 
+    title: Onze Hoogtepunten
+    events:
+    - title: MIXUP Oorsprong
+      description: aanvullen
+      image: highlight-abbyomg
+    - title: Zomerfeest
+      description: aanvullen
+      image: highlight-summer-party
   
 </i18n>
 
@@ -89,6 +107,8 @@ nl:
 import { warn } from 'vue';
 
   const { t, tt } = useT()
+  console.log("test")
+  console.log(t('highlights.title')); 
 
   const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
   const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
@@ -152,7 +172,22 @@ import { warn } from 'vue';
   
   
 <template>
-  
+<!-- 
+  <LayoutBaseHeader>
+    <template #background>
+      <div class="bg-gray-400 h-full w-full">
+        <img src="~/assets/images/photos/mixup/barvisual.jpg" class="opacity-50 blur-sm w-full h-full object-cover" />
+      </div>
+    </template>
+  </LayoutBaseHeader> -->
+
+  <!-- <LayoutSkewedSectionWithImageBackground>
+    <template #background>
+      <div class="bg-gray-400 h-full w-full">
+        <img src="~/assets/images/photos/mixup/barvisual.jpg" class="opacity-50 blur-sm w-full h-full object-cover" />
+      </div>
+    </template>
+  </LayoutSkewedSectionWithImageBackground> -->
   <!-- <LayoutBaseHeader :menu="menu">
     <template #logo>
       <DWHLogo class="h-14 fill-current text-white" />
@@ -173,11 +208,11 @@ import { warn } from 'vue';
 
   <section>
     <div v-if="events && events.length > 0" class="bg-[#E71D73]">
-      <div class="text-white flex justify-center text-xl">
-        <h2>Our UPcoming events</h2>
+      <div class="text-white flex justify-center font-medium text-5xl">
+        <h1>Our UPcoming events</h1>
       </div>
       <div class="flex flex-wrap justify-center">
-        <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-black text-white rounded-lg shadow-lg space-y-2">
+        <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-[#0A0910] text-white rounded-lg shadow-lg space-y-2">
           <div class="flex justify-center">
             {{ ''.concat(event.date.getDate(), ' ', t(`months.${(event.date.getMonth())}`)) }}
           </div>
@@ -218,28 +253,89 @@ import { warn } from 'vue';
       </div>
       <div class="hidden lg:block">
         <div>
-          <img src="~/assets/images/photos/mixup/barvisual.jpg" class="w-96" />
+          <img src="~/assets/images/photos/mixup/barnight.png" class="w-96" />
         </div>
       </div>
     </div>
   </section>
 
-  <div class="bg-[url('~/assets/images/photos/mixup/barvisual.jpg')] bg-cover bg-center">
-    <ElementsContainer>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-        <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
-          <template #header>
-            <div class="w-full h-40 overflow-hidden mx-auto">
-              <!-- <img :src="imageOverviews(`point.image`)" class="object-cover w-full h-full" /> -->
-              <img src="~assets/images/photos/mixup/barvisual.jpg" class="object-cover w-full h-full" />
-            </div>
-          </template>
-          <p class="-mt-3 text-gray-600 text-lg leading-snug" v-text="point.description" />
-        </ElementsActionCard>
-      </div>
-    </ElementsContainer>
-  </div>
+  <section>
+    <div class="bg-[url('~/assets/images/photos/mixup/barvisual.jpg')] bg-cover bg-center">
+      <ElementsContainer>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+          <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
+            <template #header>
+              <div class="w-full h-40 overflow-hidden mx-auto">
+                <img :src="imageOverviews(point.image)" class="object-cover w-full h-full" />
+                <img src="~assets/images/photos/mixup/barvisual.jpg" class="object-cover w-full h-full" />
+              </div>
+            </template>
+            <p class="-mt-3 text-gray-600 text-lg leading-snug" v-text="point.description" />
+          </ElementsActionCard>
+        </div>
+      </ElementsContainer>
+    </div>
+  </section>
   
+  <!-- <section>
+    <div class="bg-[#0A0910]">
+        <ElementsContainer class="pt-48">
+          <h1 class="flex justify-center text-white font-medium text-5xl mb-8">
+            <p>{{ t('highlights.title') }}</p>
+          </h1>
+
+          <div class="space-y-16">
+            <ElementsActionCard
+              v-for="(highlight, index) in t('highlights.events')"
+              :key="highlight.title"
+              :title="highlight.title"
+              class="shadow-xl"
+              headerClass="xl:h-64 md:w-1/3 overflow-hidden"
+              :headerPosition="index % 2 == 0 ? 'left' : 'right'"
+              contentClass="p-8"
+            >
+              <template #header>
+                <img :src="imageOverviews(highlight.image)" class="object-cover w-full h-full" />
+              </template>
+
+              <div class="flex-1 flex flex-col justify-between">
+                <p class="text-xl" v-text="highlight.description" />
+              </div>
+            </ElementsActionCard>
+          </div>
+        </ElementsContainer>
+    </div>
+  </section> -->
+
+
+  <section>
+    <div class="bg-[#0A0910] pb-12">
+      <div class="mx-auto pt-12 pb-8">
+        <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
+      </div>
+      <div 
+        v-for="(event, index) in t('highlights.events')" 
+        :key="event.name"
+        class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl"
+        :class="index % 2 !== 0 ? 'ml-auto' : ''"
+      >
+      <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
+          <img :src="imageOverviews(event.image)" class="object-cover h-full" />
+        </div>
+        <div class="text-[#0A0910] flex-1 md:pr-8">
+          <div class="flex space-x-2 items-baseline">
+            <h3 class="text-xl text-[#E71D73] font-semibold" v-text="event.title" />
+          </div>
+          <p class="text-lg" v-html="event.description" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
   <section>
     <div class="bg-[#E71D73]">
 

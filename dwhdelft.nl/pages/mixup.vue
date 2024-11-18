@@ -1,6 +1,7 @@
 <i18n lang="yaml">
 en:
   title: MIXUP
+  events: Our UPcoming events
   intro: 
     - MIXUP is thé queer nightlife experience of Delft. We open our doors every Saturday at 22:00 and almost
       every week we are more than just a bar. Drag performances of the HAUS of 4D, the city’s best karaoke,
@@ -52,8 +53,9 @@ en:
 
 nl:
   title: MIXUP
+  events: Onze UPkomende evenementen
   intro: 
-    - MIXUP is dè queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna 
+    - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna 
       elke week zijn we meer dan alleen een bar. Drag performances van HAUS of 4D, de beste karaoke van de stad, 
       heerlijke proeverijen, MIXUP Alternative met bands, dansavonden met hitjes van nu of juist je favoriete 
       klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch 
@@ -81,16 +83,16 @@ nl:
   bulletPoints:
     - title: Dansavonden Nights
       description: aanvullen
-      image: dancenights
+      image: barnight
     - title: Feesten
       description: aanvullen
-      image: parties
+      image: events-parties
     - title: Drag optredens
-      description: aanvullen
+      description: events-dragshow
       image: hausof4d
     - title: Evenementen
       description: aanvullen
-      image: events
+      image: barvisual
   highlights: 
     title: Onze Hoogtepunten
     events:
@@ -209,7 +211,7 @@ import { warn } from 'vue';
   <section>
     <div v-if="events && events.length > 0" class="bg-[#E71D73]">
       <div class="text-white flex justify-center font-medium text-5xl">
-        <h1>Our UPcoming events</h1>
+        <h1> {{ t('events') }}</h1>
       </div>
       <div class="flex flex-wrap justify-center">
         <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-[#0A0910] text-white rounded-lg shadow-lg space-y-2">

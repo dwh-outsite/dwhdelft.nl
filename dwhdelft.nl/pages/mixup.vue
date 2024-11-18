@@ -156,16 +156,18 @@ import { warn } from 'vue';
         icon = "bar";
       }
 
+      dateString = ''.concat(dateString.split('-').reverse().join('/'), ' 23:59');
+
       return {
-        date: new Date(dateString.split('-').reverse().join('/')),
+        date: new Date(dateString),
         eventName: eventName,
         icon: icon
       }
-    }).filter(event => event.eventName !== '' && event.date instanceof Date && !isNaN(event.date) && event.date > new Date());
+    }).filter(event => event.eventName !== '' && event.date instanceof Date && !isNaN(event.date) && event.date.getTime() > new Date().getTime());
 
     // show maximum of 5 icons
     if (mappedData.length > 5) {
-      mappedData = mappedData.slice(5);
+      mappedData = mappedData.slice(0,5);
     }
 
     return mappedData;

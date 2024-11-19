@@ -13,7 +13,7 @@ en:
   invite:
     announcement: 'Come by during one of our bar nights:'
     time: Every Saturday starting at {0}
-  membership_button: Sign up now
+  membership_button: Sign up now for DWH
   instagram: Our Events and UPdates
   months:
     0: January
@@ -65,7 +65,7 @@ nl:
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
     time: Elke Zaterdag vanaf {0}
-  membership_button: Schrijf je nu in
+  membership_button: Schrijf je nu in bij DWH
   instagram: Onze evenementen en UPdates
   months:
     0: januari
@@ -317,23 +317,24 @@ import { warn } from 'vue';
       <div class="mx-auto pt-12 pb-8">
         <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
       </div>
-      <div 
-        v-for="(event, index) in t('highlights.events')" 
-        :key="event.name"
-        class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl"
-        :class="index % 2 !== 0 ? 'ml-auto' : ''"
-      >
-      <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
-          <img :src="imageOverviews(event.image)" class="object-cover h-full" />
-        </div>
-        <div class="text-[#0A0910] flex-1 md:pr-8">
-          <div class="flex space-x-2 items-baseline">
-            <h3 class="text-xl text-[#E71D73] font-semibold" v-text="event.title" />
+      <div class="grid grid-cols-[1fr_minmax(0,1280px)_1fr]">
+        <div 
+          v-for="(event, index) in t('highlights.events')" 
+          :key="event.name"
+          class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl col-start-2"
+          :class="index % 2 !== 0 ? 'ml-auto' : ''"
+        >
+          <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
+            <img :src="imageOverviews(event.image)" class="object-cover h-full" />
           </div>
-          <p class="text-lg" v-html="event.description" />
+          <div class="text-[#0A0910] flex-1 md:pr-8">
+            <div class="flex space-x-2 items-baseline">
+              <h3 class="text-xl text-[#E71D73] font-semibold" v-text="event.title" />
+            </div>
+            <p class="text-lg" v-html="event.description" />
+          </div>
         </div>
       </div>
-
     </div>
   </section>
 

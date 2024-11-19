@@ -176,36 +176,6 @@ import { warn } from 'vue';
   
   
 <template>
-<!-- 
-  <LayoutBaseHeader>
-    <template #background>
-      <div class="bg-gray-400 h-full w-full">
-        <img src="~/assets/images/photos/mixup/barvisual.jpg" class="opacity-50 blur-sm w-full h-full object-cover" />
-      </div>
-    </template>
-  </LayoutBaseHeader> -->
-
-  <!-- <LayoutSkewedSectionWithImageBackground>
-    <template #background>
-      <div class="bg-gray-400 h-full w-full">
-        <img src="~/assets/images/photos/mixup/barvisual.jpg" class="opacity-50 blur-sm w-full h-full object-cover" />
-      </div>
-    </template>
-  </LayoutSkewedSectionWithImageBackground> -->
-  <!-- <LayoutBaseHeader :menu="menu">
-    <template #logo>
-      <DWHLogo class="h-14 fill-current text-white" />
-    </template>
-    <template #background>
-      <div class="absolute top-0 bottom-0 w-full h-full overflow-hidden">
-        <img src="../../assets/images/photos/cover.jpg" class="w-full h-full object-cover opacity-50 blur-sm" />
-      </div>
-    </template>
-    <h1 class="text-4xl text-white font-normal" triangleClass="border-[#0A0910]">
-      {{ t('title') }}
-    </h1>
-  </LayoutBaseHeader> -->
-
   <LayoutSmallHeader triangleClass="border-[#E71D73]">
     {{ t('title') }}
   </LayoutSmallHeader>
@@ -281,37 +251,6 @@ import { warn } from 'vue';
     </div>
   </section>
   
-  <!-- <section>
-    <div class="bg-[#0A0910]">
-        <ElementsContainer class="pt-48">
-          <h1 class="flex justify-center text-white font-medium text-5xl mb-8">
-            <p>{{ t('highlights.title') }}</p>
-          </h1>
-
-          <div class="space-y-16">
-            <ElementsActionCard
-              v-for="(highlight, index) in t('highlights.events')"
-              :key="highlight.title"
-              :title="highlight.title"
-              class="shadow-xl"
-              headerClass="xl:h-64 md:w-1/3 overflow-hidden"
-              :headerPosition="index % 2 == 0 ? 'left' : 'right'"
-              contentClass="p-8"
-            >
-              <template #header>
-                <img :src="imageOverviews(highlight.image)" class="object-cover w-full h-full" />
-              </template>
-
-              <div class="flex-1 flex flex-col justify-between">
-                <p class="text-xl" v-text="highlight.description" />
-              </div>
-            </ElementsActionCard>
-          </div>
-        </ElementsContainer>
-    </div>
-  </section> -->
-
-
   <section>
     <div class="bg-[#0A0910] pb-12">
       <div class="mx-auto pt-12 pb-8">
@@ -338,15 +277,6 @@ import { warn } from 'vue';
     </div>
   </section>
 
-
-
-
-  <section>
-    <div class="bg-[#E71D73]">
-
-    </div>
-  </section>
-
   <LayoutStraightSection contentBackgroundClass="!bg-[#E71D73]" contentClass="md:py-12">
     <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">
       <template #title>
@@ -355,4 +285,3 @@ import { warn } from 'vue';
     </PagesHomeInstagramChannels>
   </LayoutStraightSection>
 </template>
-

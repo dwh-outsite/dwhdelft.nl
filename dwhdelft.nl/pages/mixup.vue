@@ -82,25 +82,25 @@ nl:
     11: december
   bulletPoints:
     - title: Dansavonden Nights
-      description: aanvullen
-      image: barnight
+      description: Elke week komen we samen voor drankjes, vaak is er zelfs een DJ om die voetjes op te bewegen!
+      image: events-dancenights
     - title: Feesten
-      description: aanvullen
+      description: Disco, hard rock, Oktoberfest, Halloween en nog veel meer... Er is altijd tijd voor een feestje.
       image: events-parties
     - title: Drag optredens
-      description: events-dragshow
-      image: hausof4d
+      description: Ons eigen drag huis HAUS of 4D geeft elke twee maanden geweldige shows
+      image: events-dragshow
     - title: Evenementen
-      description: aanvullen
-      image: barvisual
+      description: Karaoke, proeverijen, vinyl nachten of een talentenshow, er is veel te beleven op een MIXUP avond.
+      image: events-silentdisco
   highlights: 
     title: Onze Hoogtepunten
     events:
     - title: MIXUP Oorsprong
-      description: aanvullen
+      description: Het allereerste feestje onder de MIXUP banner was MIXUP Origin’s, het openingsfeest! Miss Abby OMG gaf ons een prachtig optreden, het feest was aan!
       image: highlight-abbyomg
     - title: Zomerfeest
-      description: aanvullen
+      description: Heet weer en nog hetere mensen! DJ Maarten verzorgde tropische tunes terwijl we zomercocktails aan het nippen waren en afkoelde in een daadwerkelijk zwembad!
       image: highlight-summer-party
   
 </i18n>

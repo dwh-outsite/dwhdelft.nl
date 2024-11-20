@@ -9,6 +9,8 @@ en:
       url: /education
     - title: Jong&Out
       url: /jongenout
+    - title: MIXUP
+      url: /mixup
     - title: Andersblad
       url: andersblad
     - title: Contact
@@ -23,6 +25,8 @@ nl:
       url: /education
     - title: Jong&Out
       url: /jongenout
+    - title: MIXUP
+      url: /mixup
     - title: Andersblad
       url: andersblad
     - title: Contact

@@ -10,10 +10,12 @@ en:
       upon us when it’s just a barnight, you can have a great chat and perhaps even a dance.
     - MIXUP consists completely of a team of enthusiastic volunteers of DWH. Did we get you excited and do you want 
       to contribute and be part of an amazing community? Become a member.
+    - Scared to come alone? We can match you with a barbuddy to chat with and introduce you to new people!
   invite:
     announcement: 'Come by during one of our bar nights:'
     time: Every Saturday starting at {0}
   membership_button: Sign up now for DWH
+  barbuddy_button: Find a buddy 
   instagram: Our Events and UPdates
   months:
     0: January
@@ -62,10 +64,12 @@ nl:
       eens gewoon een bar zijn, is het heel gezellig bijkletsen en misschien een dansje wagen.
     - MIXUP wordt volledig mogelijk gemaakt door een team enthousiaste vrijwilligers van DWH. Ben je enthousiast geworden en wil je 
       bijdragen aan en onderdeel worden van een fantastische community? Wordt dan lid.
+    - Bang om alleen te komen? We kunnen je aan een barbuddy koppelen om te leren kennen, die je ook aan anderen kan voorstellen!
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
     time: Elke Zaterdag vanaf {0}
   membership_button: Schrijf je nu in bij DWH
+  barbuddy_button: Vind een buddy
   instagram: Onze evenementen en UPdates
   months:
     0: januari
@@ -108,9 +112,13 @@ nl:
 <script setup>
 import { warn } from 'vue';
 
+  useHead({
+    bodyAttrs: {
+      class: 'mixup-colors',
+    },
+  })
+
   const { t, tt } = useT()
-  console.log("test")
-  console.log(t('highlights.title')); 
 
   const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
   const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
@@ -176,17 +184,17 @@ import { warn } from 'vue';
   
   
 <template>
-  <LayoutSmallHeader triangleClass="border-[#E71D73]">
+  <LayoutSmallHeader triangleClass="border-brand-450">
     {{ t('title') }}
   </LayoutSmallHeader>
 
   <section>
-    <div v-if="events && events.length > 0" class="bg-[#E71D73]">
-      <div class="text-white flex justify-center font-medium text-5xl">
+    <div v-if="events && events.length > 0" class="bg-brand-450 text-white">
+      <div class="flex justify-center font-medium text-5xl">
         <h1> {{ t('events') }}</h1>
       </div>
       <div class="flex flex-wrap justify-center">
-        <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-[#0A0910] text-white rounded-lg shadow-lg space-y-2">
+        <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2">
           <div class="flex justify-center">
             {{ ''.concat(event.date.getDate(), ' ', t(`months.${(event.date.getMonth())}`)) }}
           </div>
@@ -201,27 +209,36 @@ import { warn } from 'vue';
     </div>
   </section>
 
-  <section class="mixup-colors">
-    <div class="bg-[#0A0910]  mx-auto pt-12 pb-24 md:flex">
+  <section>
+    <div class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
         <div class="space-y-4">
           <ElementsParagraphedText
             :paragraphs="t('intro')"
-            class="text-lg md:text-xl md:leading-relaxed text-white space-y-4"
+            class="md:text-xl md:leading-relaxed space-y-4"
           />
-          <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-[#0A0910] bg-[#E71D73]" v-text="tt(barOpeningHours.announcement)" />
-          <div class="flex-1 rounded-lg shadow-xl bg-[#E71D73] text-lg md:text-xl text-white p-4 relative w-full z-20 md:w-auto md:inline-flex items-center">
+          <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-brand-900 bg-brand-450" v-text="tt(barOpeningHours.announcement)" />
+          <div class="flex-1 rounded-lg shadow-xl bg-brand-450 md:text-xl p-4 relative w-full z-20 md:w-auto md:inline-flex items-center">
             <div class="pt-6 md:pt-0 md:pl-4 space-y-2">
               <p>{{ t('invite.announcement') }}</p>
               <p class="font-bold">{{ t('invite.time', [barOpeningHours.start_time]) }}</p>
             </div>
           </div>
-          <div>
-            <a href="https://my.dwhdelft.nl/signup">
-              <ElementsSecondaryButton class="!text-brand-450" arrow>
-                {{ t('membership_button') }}
-              </ElementsSecondaryButton>
-            </a>
+          <div class="flex flex-1 space-x-4">
+            <div>
+              <a href="https://my.dwhdelft.nl/signup">
+                <ElementsSecondaryButton class="!text-brand-450" arrow>
+                  {{ t('membership_button') }}
+                </ElementsSecondaryButton>
+              </a>
+            </div>
+            <div>
+              <nuxt-link :to="localePath('barbuddy')">
+                <ElementsSecondaryButton class="!text-brand-450" arrow>
+                  {{ t('barbuddy_button') }}
+                </ElementsSecondaryButton>
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -244,7 +261,7 @@ import { warn } from 'vue';
                 <img src="~assets/images/photos/mixup/barvisual.jpg" class="object-cover w-full h-full" />
               </div>
             </template>
-            <p class="-mt-3 text-gray-600 text-lg leading-snug" v-text="point.description" />
+            <p class="-mt-3 text-brand-900 text-lg leading-snug" v-text="point.description" />
           </ElementsActionCard>
         </div>
       </ElementsContainer>
@@ -252,7 +269,7 @@ import { warn } from 'vue';
   </section>
   
   <section>
-    <div class="bg-[#0A0910] pb-12">
+    <div class="bg-brand-900 pb-12">
       <div class="mx-auto pt-12 pb-8">
         <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
       </div>
@@ -266,18 +283,18 @@ import { warn } from 'vue';
           <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
             <img :src="imageOverviews(event.image)" class="object-cover h-full" />
           </div>
-          <div class="text-[#0A0910] flex-1 md:pr-8">
+          <div class="flex-1 md:pr-8">
             <div class="flex space-x-2 items-baseline">
-              <h3 class="text-xl text-[#E71D73] font-semibold" v-text="event.title" />
+              <h3 class="text-xl text-brand-450 font-semibold" v-text="event.title" />
             </div>
-            <p class="text-lg" v-html="event.description" />
+            <p class="text-brand-900 text-lg" v-html="event.description" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-[#E71D73]" contentClass="md:py-12">
+  <LayoutStraightSection contentBackgroundClass="!bg-brand-450" contentClass="md:py-12">
     <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">
       <template #title>
         <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('instagram')" />

@@ -81,7 +81,7 @@ nl:
     10: november
     11: december
   bulletPoints:
-    - title: Dansavonden Nights
+    - title: Dansavonden
       description: Elke week komen we samen voor drankjes, vaak is er zelfs een DJ om die voetjes op te bewegen!
       image: events-dancenights
     - title: Feesten
@@ -201,7 +201,7 @@ import { warn } from 'vue';
     </div>
   </section>
 
-  <section>
+  <section class="mixup-colors">
     <div class="bg-[#0A0910]  mx-auto pt-12 pb-24 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
         <div class="space-y-4">
@@ -218,7 +218,7 @@ import { warn } from 'vue';
           </div>
           <div>
             <a href="https://my.dwhdelft.nl/signup">
-              <ElementsSecondaryButton class="!text-brand-600" arrow>
+              <ElementsSecondaryButton class="!text-brand-450" arrow>
                 {{ t('membership_button') }}
               </ElementsSecondaryButton>
             </a>
@@ -233,7 +233,7 @@ import { warn } from 'vue';
     </div>
   </section>
 
-  <section>
+  <section class="mixup-colors">
     <div class="bg-[url('~/assets/images/photos/mixup/barvisual.jpg')] bg-cover bg-center">
       <ElementsContainer>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">

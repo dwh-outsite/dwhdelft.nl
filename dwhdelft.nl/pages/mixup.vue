@@ -2,20 +2,20 @@
 en:
   title: MIXUP
   events: Our UPcoming events
-  intro: 
+  intro:
     - MIXUP is thé queer nightlife experience of Delft. We open our doors every Saturday at 22:00 and almost
       every week we are more than just a bar. Drag performances of the HAUS of 4D, the city’s best karaoke,
       delicious tastings, MIXUP Alternative with bands, dance nights with popular songs of now and your favorite
       classics, Eurovision watch parties, a spicy Halloween and lots of other themed parties! If you happen to stumble
       upon us when it’s just a barnight, you can have a great chat and perhaps even a dance.
-    - MIXUP consists completely of a team of enthusiastic volunteers of DWH. Did we get you excited and do you want 
+    - MIXUP consists completely of a team of enthusiastic volunteers of DWH. Did we get you excited and do you want
       to contribute and be part of an amazing community? Become a member.
     - Scared to come alone? We can match you with a barbuddy to chat with and introduce you to new people!
   invite:
     announcement: 'Come by during one of our bar nights:'
     time: Every Saturday starting at {0}
   membership_button: Sign up now for DWH
-  barbuddy_button: Find a buddy 
+  barbuddy_button: Find a buddy
   instagram: Our Events and UPdates
   months:
     0: January
@@ -43,26 +43,26 @@ en:
     - title: Events
       description: Karaoke, tastings, vinyl night or a talent show, there is a lot to do on a night at MIXUP.
       image: barvisual
-  highlights: 
+  highlights:
     title: Our Highlights
     events:
-    - title: MIXUP Origin
-      description: The first ever party under the MIXUP branding was MIXUP Origin, the opening party! Miss Abby OMG gave a wonderful performance and people were living!
-      image: highlight-abbyomg
-    - title: Summer Party
-      description: The weather was hot and the people even hotter! DJ Maarten brought us tropical tunes whilst we could sip summer cocktails and cool off in an actual swimming pool!
-      image: highlight-summer-party
+      - title: MIXUP Origin
+        description: The first ever party under the MIXUP branding was MIXUP Origin, the opening party! Miss Abby OMG gave a wonderful performance and people were living!
+        image: highlight-abbyomg
+      - title: Summer Party
+        description: The weather was hot and the people even hotter! DJ Maarten brought us tropical tunes whilst we could sip summer cocktails and cool off in an actual swimming pool!
+        image: highlight-summer-party
 
 nl:
   title: MIXUP
   events: Onze UPkomende evenementen
-  intro: 
-    - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna 
-      elke week zijn we meer dan alleen een bar. Drag performances van HAUS of 4D, de beste karaoke van de stad, 
-      heerlijke proeverijen, MIXUP Alternative met bands, dansavonden met hitjes van nu of juist je favoriete 
-      klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch 
+  intro:
+    - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna
+      elke week zijn we meer dan alleen een bar. Drag performances van HAUS of 4D, de beste karaoke van de stad,
+      heerlijke proeverijen, MIXUP Alternative met bands, dansavonden met hitjes van nu of juist je favoriete
+      klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch
       eens gewoon een bar zijn, is het heel gezellig bijkletsen en misschien een dansje wagen.
-    - MIXUP wordt volledig mogelijk gemaakt door een team enthousiaste vrijwilligers van DWH. Ben je enthousiast geworden en wil je 
+    - MIXUP wordt volledig mogelijk gemaakt door een team enthousiaste vrijwilligers van DWH. Ben je enthousiast geworden en wil je
       bijdragen aan en onderdeel worden van een fantastische community? Wordt dan lid.
     - Bang om alleen te komen? We kunnen je aan een barbuddy koppelen om te leren kennen, die je ook aan anderen kan voorstellen!
   invite:
@@ -97,92 +97,100 @@ nl:
     - title: Evenementen
       description: Karaoke, proeverijen, vinyl nachten of een talentenshow, er is veel te beleven op een MIXUP avond.
       image: events-silentdisco
-  highlights: 
+  highlights:
     title: Onze Hoogtepunten
     events:
-    - title: MIXUP Oorsprong
-      description: Het allereerste feestje onder de MIXUP banner was MIXUP Origin’s, het openingsfeest! Miss Abby OMG gaf ons een prachtig optreden, het feest was aan!
-      image: highlight-abbyomg
-    - title: Zomerfeest
-      description: Heet weer en nog hetere mensen! DJ Maarten verzorgde tropische tunes terwijl we zomercocktails aan het nippen waren en afkoelde in een daadwerkelijk zwembad!
-      image: highlight-summer-party
-  
+      - title: MIXUP Oorsprong
+        description: Het allereerste feestje onder de MIXUP banner was MIXUP Origin’s, het openingsfeest! Miss Abby OMG gaf ons een prachtig optreden, het feest was aan!
+        image: highlight-abbyomg
+      - title: Zomerfeest
+        description: Heet weer en nog hetere mensen! DJ Maarten verzorgde tropische tunes terwijl we zomercocktails aan het nippen waren en afkoelde in een daadwerkelijk zwembad!
+        image: highlight-summer-party
 </i18n>
 
 <script setup>
-import { warn } from 'vue';
+import { warn } from 'vue'
 
-  useHead({
-    bodyAttrs: {
-      class: 'mixup-colors',
-    },
-  })
+useHead({
+  bodyAttrs: {
+    class: 'mixup-colors',
+  },
+})
 
-  const { t, tt } = useT()
+const { t, tt } = useT()
 
-  const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
-  const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
+const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
+const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
 
-  const { image: imageIcons } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true }))
-  const { image: imageOverviews } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/*', { eager: true }))
-  
-  const instagramChannelsMixup = [
-    {
-      name: 'MIXUP',
-      widgetId: '219aedf13a4355fe95c6e27ed1f7386c',
-      instagram: 'mixupdelft',
-    },
-  ]
+const { image: imageIcons } = useDynamicImages(
+  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true })
+)
+const { image: imageOverviews } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/*', { eager: true }))
 
-  const { data: events } = await useAsyncData('events', async() => {
-    const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvhyi-w-PveKJjx2Mwq1busShI5LKEXqAUOKufoK-vswFNO4W_6tesXb67RO1-biPOmQ0mQJzUy_gY/pub?gid=0&single=true&output=csv';
+const instagramChannelsMixup = [
+  {
+    name: 'MIXUP',
+    widgetId: '219aedf13a4355fe95c6e27ed1f7386c',
+    instagram: 'mixupdelft',
+  },
+]
 
-    
-    const response = await fetch(url);
-    const text = await response.text();
+const { data: events } = await useAsyncData('events', async () => {
+  const url =
+    'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvhyi-w-PveKJjx2Mwq1busShI5LKEXqAUOKufoK-vswFNO4W_6tesXb67RO1-biPOmQ0mQJzUy_gY/pub?gid=0&single=true&output=csv'
 
-    const parsedData = text.replace(/\r/g, '').split('\n');
-    const firstRowData = parsedData[0].split(',');
+  const response = await fetch(url)
+  const text = await response.text()
 
-    // check if structure is not changed
-    const firstRowCheck = ['Date', 'Event name', 'Icon']
-    if (firstRowData.length !== firstRowCheck.length) {
-      warn('Structure of MIXUP Events Sheet has been altered!')
-      // return;
-    }
-    for (let i = 0; i < firstRowData.length; i++) {
-      if (firstRowData[i] !== firstRowCheck[i])
-      warn('Structure of MIXUP Events Sheet has been altered!')
-      // return;
-    }
+  const parsedData = text.replace(/\r/g, '').split('\n')
+  const firstRowData = parsedData[0].split(',')
 
-    // check if event has name and date is still in future
-    let mappedData = parsedData.slice(1).map(row => {
+  // check if structure is not changed
+  const firstRowCheck = ['Date', 'Event name', 'Icon']
+  if (firstRowData.length !== firstRowCheck.length) {
+    warn('Structure of MIXUP Events Sheet has been altered!')
+    // return;
+  }
+  for (let i = 0; i < firstRowData.length; i++) {
+    if (firstRowData[i] !== firstRowCheck[i]) warn('Structure of MIXUP Events Sheet has been altered!')
+    // return;
+  }
+
+  // check if event has name and date is still in future
+  let mappedData = parsedData
+    .slice(1)
+    .map((row) => {
       let [dateString, eventName, icon] = row.split(',')
 
-      if (!["bar", "disco", "drag", "karaoke", "music", "tasting"].includes(icon)) {
-        icon = "bar";
+      if (!['bar', 'disco', 'drag', 'karaoke', 'music', 'tasting'].includes(icon)) {
+        icon = 'bar'
       }
 
-      dateString = ''.concat(dateString.split('-').reverse().join('/'), ' 23:59');
+      dateString = ''.concat(dateString.split('-').reverse().join('/'), ' 23:59')
 
       return {
         date: new Date(dateString),
         eventName: eventName,
-        icon: icon
+        icon: icon,
       }
-    }).filter(event => event.eventName !== '' && event.date instanceof Date && !isNaN(event.date) && event.date.getTime() > new Date().getTime());
+    })
+    .filter(
+      (event) =>
+        event.eventName !== '' &&
+        event.date instanceof Date &&
+        !isNaN(event.date) &&
+        event.date.getTime() > new Date().getTime()
+    )
 
-    // show maximum of 5 icons
-    if (mappedData.length > 5) {
-      mappedData = mappedData.slice(0,5);
-    }
+  // show maximum of 5 icons
+  if (mappedData.length > 5) {
+    mappedData = mappedData.slice(0, 5)
+  }
 
-    return mappedData;
-  })
+  return mappedData
+})
 </script>
-  
-  
+
 <template>
   <LayoutSmallHeader triangleClass="border-brand-450">
     {{ t('title') }}
@@ -191,18 +199,22 @@ import { warn } from 'vue';
   <section>
     <div v-if="events && events.length > 0" class="bg-brand-450 text-white">
       <div class="flex justify-center font-medium text-5xl">
-        <h1> {{ t('events') }}</h1>
+        <h1>{{ t('events') }}</h1>
       </div>
       <div class="flex flex-wrap justify-center">
-        <div v-for="(event, index) in events" :key="index" class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2">
+        <div
+          v-for="(event, index) in events"
+          :key="index"
+          class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
+        >
           <div class="flex justify-center">
-            {{ ''.concat(event.date.getDate(), ' ', t(`months.${(event.date.getMonth())}`)) }}
+            {{ ''.concat(event.date.getDate(), ' ', t(`months.${event.date.getMonth()}`)) }}
           </div>
           <div class="flex justify-center">
             {{ event.eventName }}
           </div>
           <div class="flex justify-center">
-            <img :src="imageIcons(event.icon)" alt="Event Icon">
+            <img :src="imageIcons(event.icon)" alt="Event Icon" />
           </div>
         </div>
       </div>
@@ -213,12 +225,15 @@ import { warn } from 'vue';
     <div class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
         <div class="space-y-4">
-          <ElementsParagraphedText
-            :paragraphs="t('intro')"
-            class="md:text-xl md:leading-relaxed space-y-4"
+          <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
+          <p
+            v-if="barOpeningHours.announcement"
+            class="mt-3 mb-4 text-brand-900 bg-brand-450"
+            v-text="tt(barOpeningHours.announcement)"
           />
-          <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-brand-900 bg-brand-450" v-text="tt(barOpeningHours.announcement)" />
-          <div class="flex-1 rounded-lg shadow-xl bg-brand-450 md:text-xl p-4 relative w-full z-20 md:w-auto md:inline-flex items-center">
+          <div
+            class="flex-1 rounded-lg shadow-xl bg-brand-450 md:text-xl p-4 relative w-full z-20 md:w-auto md:inline-flex items-center"
+          >
             <div class="pt-6 md:pt-0 md:pl-4 space-y-2">
               <p>{{ t('invite.announcement') }}</p>
               <p class="font-bold">{{ t('invite.time', [barOpeningHours.start_time]) }}</p>
@@ -267,15 +282,15 @@ import { warn } from 'vue';
       </ElementsContainer>
     </div>
   </section>
-  
+
   <section>
     <div class="bg-brand-900 pb-12">
       <div class="mx-auto pt-12 pb-8">
         <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
       </div>
       <div class="grid grid-cols-[1fr_minmax(0,1280px)_1fr]">
-        <div 
-          v-for="(event, index) in t('highlights.events')" 
+        <div
+          v-for="(event, index) in t('highlights.events')"
           :key="event.name"
           class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl col-start-2"
           :class="index % 2 !== 0 ? 'ml-auto' : ''"

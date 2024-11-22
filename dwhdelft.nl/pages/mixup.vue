@@ -17,23 +17,10 @@ en:
   membership_button: Sign up now for DWH
   barbuddy_button: Find a buddy
   instagram: Our Events and UPdates
-  months:
-    0: January
-    1: February
-    2: March
-    3: April
-    4: May
-    5: June
-    6: July
-    7: August
-    8: September
-    9: October
-    10: November
-    11: December
   bulletPoints:
     - title: Dance Nights
       description: We have drinks together each week and will often have a DJ to get the dance floor moving!
-      image: barnight
+      image: events-dancenights
     - title: Parties
       description: Disco, hard rock, Oktoberfest, Halloween and more... There’s always time for a party.
       image: events-parties
@@ -42,7 +29,7 @@ en:
       image: events-dragshow
     - title: Events
       description: Karaoke, tastings, vinyl night or a talent show, there is a lot to do on a night at MIXUP.
-      image: barvisual
+      image: events-silentdisco
   highlights:
     title: Our Highlights
     events:
@@ -71,19 +58,6 @@ nl:
   membership_button: Schrijf je nu in bij DWH
   barbuddy_button: Vind een buddy
   instagram: Onze evenementen en UPdates
-  months:
-    0: januari
-    1: februari
-    2: maart
-    3: april
-    4: mei
-    5: juni
-    6: juli
-    7: augustus
-    8: september
-    9: oktober
-    10: november
-    11: december
   bulletPoints:
     - title: Dansavonden
       description: Elke week komen we samen voor drankjes, vaak is er zelfs een DJ om die voetjes op te bewegen!
@@ -208,7 +182,7 @@ const { data: events } = await useAsyncData('events', async () => {
           class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
         >
           <div class="flex justify-center">
-            {{ ''.concat(event.date.getDate(), ' ', t(`months.${event.date.getMonth()}`)) }}
+            {{ ''.concat(event.date.getDate(), ' ', $t(`month.${event.date.getMonth()}`)) }}
           </div>
           <div class="flex justify-center">
             {{ event.eventName }}

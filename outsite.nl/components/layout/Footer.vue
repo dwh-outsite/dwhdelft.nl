@@ -3,22 +3,22 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Feline
+    - name: Feline (zij/haar)
       role: President
       email: voorzitter
-    - name: Chai
+    - name: Chai (die/hun)
       role: Vice President
       email: vicevoorzitter
-    - name: Alin
+    - name: Alin (hij/die)
       role: Secretary
       email: secretaris
-    - name: Nick
+    - name: Nick (hij/hem)
       role: Treasurer
       email: penningmeester
-    - name: Jaye
+    - name: Jaye (die/hij/zij)
       role: External Affairs
       email: extern
-    - name: Lucia
+    - name: Lucia (die/hun)
       role: Internal Affairs
       email: intern
   confidential_counsellors: Confidential Counsellors
@@ -30,22 +30,22 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Feline
+    - name: Feline (she/her)
       role: Voorzitter
       email: voorzitter
-    - name: Chai
+    - name: Chai (they/them)
       role: Vicevoorzitter
       email: vicevoorzitter
-    - name: Alin
+    - name: Alin (he/they)
       role: Secretaris
       email: secretaris
-    - name: Nick
+    - name: Nick (he/him)
       role: Penningmeester
       email: penningmeester
-    - name: Jaye
+    - name: Jaye (they/he/she)
       role: Commissaris Extern
       email: extern
-    - name: Lucia
+    - name: Lucia (they/them)
       role: Commissaris Intern
       email: intern
   confidential_counsellors: Vertrouwenspersonen

@@ -9,7 +9,7 @@ nl:
 const { t } = useT()
 
 const { image: imageIcons } = useDynamicImages(
-  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true })
+  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true, as: 'url_encode' })
 )
 
 const { data: events } = await useAsyncData('events', async () => {

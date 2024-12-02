@@ -42,7 +42,7 @@ nl:
     - name: Nick (hij/hem)
       role: Penningmeester
       email: penningmeester
-    - name: Jaye (die/hun)
+    - name: Jaye (alle pronouns)
       role: Commissaris Extern
       email: extern
     - name: Lucia (die/hun)

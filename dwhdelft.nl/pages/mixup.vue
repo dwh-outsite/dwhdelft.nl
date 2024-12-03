@@ -157,7 +157,6 @@ const instagramChannelsMixup = [
               <template #header>
                 <div class="w-full h-40 overflow-hidden mx-auto">
                   <img :src="imageOverviews(point.image)" class="object-cover w-full h-full" />
-                  <img src="~assets/images/photos/mixup/barvisual.jpg" class="object-cover w-full h-full" />
                 </div>
               </template>
               <p class="-mt-3 text-brand-900 text-lg leading-snug" v-text="point.description" />

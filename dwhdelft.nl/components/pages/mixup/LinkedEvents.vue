@@ -59,9 +59,7 @@ const { data: events } = await useAsyncData('events', async () => {
     )
 
   // show maximum of 5 icons
-  if (mappedData.length > 5) {
-    mappedData = mappedData.slice(0, 5)
-  }
+  mappedData = mappedData.slice(0, 5)
 
   return mappedData
 })

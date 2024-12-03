@@ -37,3 +37,18 @@ html {
   --color-brand-800: 157 23 77;
   --color-brand-900: 131 24 67;
 }
+
+.mixup-colors {
+  --color-brand-50: 253 230 243;
+  --color-brand-100: 254 204 231;
+  --color-brand-200: 254 163 210;
+  --color-brand-300: 253 105 179;
+  --color-brand-350: 247 61 151;
+  --color-brand-400: 231 29 115;
+  --color-brand-450: 231 29 115;
+  --color-brand-500: 201 13 88;
+  --color-brand-600: 166 14 72;
+  --color-brand-700: 138 17 64;
+  --color-brand-800: 138 17 64;
+  --color-brand-900: 10 9 16;
+}

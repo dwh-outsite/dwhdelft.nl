@@ -31,6 +31,10 @@ categories:
           nl: Fillum Programma
           en: Fillum Programme
         url: "http://homodelft.nl/films/"
+      - name: 
+          nl: MIXUP
+          en: MIXUP
+        url: /mixup
   - name:
       nl: Kennismaken
       en: Join DWH

@@ -69,25 +69,27 @@ const { data: events } = await useAsyncData('events', async () => {
 
 <template>
   <div v-if="events && events.length > 0" class="bg-brand-450 text-white">
-    <div class="flex justify-center font-medium text-5xl">
-      <h1>{{ t('events') }}</h1>
-    </div>
-    <div class="flex flex-wrap justify-center text-center">
-      <div
-        v-for="(event, index) in events"
-        :key="index"
-        class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
-      >
-        <div>
-          {{ ''.concat(event.date.getDate(), ' ', $t(`month.${event.date.getMonth()}`)) }}
-        </div>
-        <div class="text-xl">
-          {{ event.eventName }}
-        </div>
-        <div class="flex justify-center">
-          <img :src="imageIcons(event.icon)" alt="Event Icon" />
+    <ElementsContainer>
+      <div class="flex justify-center font-medium text-5xl">
+        <h1>{{ t('events') }}</h1>
+      </div>
+      <div class="flex flex-wrap justify-center text-center">
+        <div
+          v-for="(event, index) in events"
+          :key="index"
+          class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
+        >
+          <div>
+            {{ ''.concat(event.date.getDate(), ' ', $t(`month.${event.date.getMonth()}`)) }}
+          </div>
+          <div class="text-xl">
+            {{ event.eventName }}
+          </div>
+          <div class="flex justify-center">
+            <img :src="imageIcons(event.icon)" alt="Event Icon" />
+          </div>
         </div>
       </div>
-    </div>
+    </ElementsContainer>
   </div>
 </template>

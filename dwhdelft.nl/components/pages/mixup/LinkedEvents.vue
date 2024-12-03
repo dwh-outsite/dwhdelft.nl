@@ -43,7 +43,7 @@ const { data: events } = await useAsyncData('events', async () => {
         icon = 'bar'
       }
 
-      dateString = ''.concat(dateString.split('-').reverse().join('/'), ' 23:59')
+      dateString = `${dateString.split('-').reverse().join('/')}  23:59`
 
       return {
         date: new Date(dateString),
@@ -54,7 +54,6 @@ const { data: events } = await useAsyncData('events', async () => {
     .filter(
       (event) =>
         event.eventName !== '' &&
-        event.date instanceof Date &&
         !isNaN(event.date) &&
         event.date.getTime() > new Date().getTime()
     )
@@ -73,16 +72,16 @@ const { data: events } = await useAsyncData('events', async () => {
     <div class="flex justify-center font-medium text-5xl">
       <h1>{{ t('events') }}</h1>
     </div>
-    <div class="flex flex-wrap justify-center">
+    <div class="flex flex-wrap justify-center text-center">
       <div
         v-for="(event, index) in events"
         :key="index"
         class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
       >
-        <div class="flex justify-center">
+        <div>
           {{ ''.concat(event.date.getDate(), ' ', $t(`month.${event.date.getMonth()}`)) }}
         </div>
-        <div class="flex justify-center">
+        <div class="text-xl">
           {{ event.eventName }}
         </div>
         <div class="flex justify-center">

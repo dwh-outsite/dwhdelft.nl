@@ -115,19 +115,12 @@ const instagramChannelsMixup = [
         <div class="flex-1 px-4 lg:pr-32">
           <div class="space-y-4">
             <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
-            <p
-              v-if="barOpeningHours.announcement"
-              class="mt-3 mb-4 text-brand-900 bg-brand-450"
-              v-text="tt(barOpeningHours.announcement)"
+            <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-brand-500" v-text="tt(barOpeningHours.announcement)" />
+            <PagesHomeInvite
+              class="my-8 md:my-4"
+              :announcement="t('invite.announcement')"
+              :time="t('invite.time', [barOpeningHours.start_time])"
             />
-            <div
-              class="flex-1 rounded-lg shadow-xl bg-brand-450 md:text-xl p-4 relative w-full z-20 md:w-auto md:inline-flex items-center"
-            >
-              <div class="pt-6 md:pt-0 md:pl-4 space-y-2">
-                <p>{{ t('invite.announcement') }}</p>
-                <p class="font-bold">{{ t('invite.time', [barOpeningHours.start_time]) }}</p>
-              </div>
-            </div>
             <div class="flex flex-1 space-x-4">
               <div>
                 <a href="https://my.dwhdelft.nl/signup">

@@ -105,7 +105,7 @@ const { t } = useT()
           class="text-lg lg:text-xl lg:leading-relaxed text-gray-800 mb-4"
           :content="paragraph"
         />
-        <PagesResourcesPurpleFriday/>
+        <PagesResourcesPurpleFriday />
       </div>
       <div class="lg:w-1/4">
         <Announcement>

@@ -7,61 +7,53 @@ nl:
 
 <script setup>
 const { t } = useT()
+import GSheetReader from 'g-sheets-api'
 
 const { image: imageIcons } = useDynamicImages(
-  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true, as: 'url_encode' })
+  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true, query: 'url_encode' })
 )
 
 const { data: events } = await useAsyncData('events', async () => {
-  const url =
-    'https://docs.google.com/spreadsheets/d/e/2PACX-1vRvhyi-w-PveKJjx2Mwq1busShI5LKEXqAUOKufoK-vswFNO4W_6tesXb67RO1-biPOmQ0mQJzUy_gY/pub?gid=0&single=true&output=csv'
-
-  const response = await fetch(url)
-  const text = await response.text()
-
-  const parsedData = text.replace(/\r/g, '').split('\n')
-  const firstRowData = parsedData[0].split(',')
-
-  // check if structure is not changed
-  const firstRowCheck = ['Date', 'Event name', 'Icon']
-  if (firstRowData.length !== firstRowCheck.length) {
-    warn('Structure of MIXUP Events Sheet has been altered!')
+  const options = {
+    apiKey: 'AIzaSyDwi_l2R3qDWkh2HN8_AmIpy7mk8Ij7nk8',
+    sheetId: '1_FqJ8RZHJr7duOvQpWudBiRUVjcE6DFSxjY-qAUypss',
+    sheetName: 'Public',
   }
-  for (let i = 0; i < firstRowData.length; i++) {
-    if (firstRowData[i] !== firstRowCheck[i]) {
-      warn('Structure of MIXUP Events Sheet has been altered!')
-    }
-  }
+  return new Promise((resolve, reject) => {
+    GSheetReader(
+      options,
+      (results) => {
+        results = results.filter((r) => r['Event name'])
+        if (results.length === 0) {
+          console.error('No events')
+        }
 
-  // check if event has name and date is still in future
-  let mappedData = parsedData
-    .slice(1)
-    .map((row) => {
-      let [dateString, eventName, icon] = row.split(',')
+        let mappedData = results
+          .map((row) => {
+            let dateString = `${row[`Date`].split('-').reverse().join('/')}  23:59`
+            let eventName = row[`Event name`]
+            let icon = row[`Icon`]
 
-      if (!['bar', 'disco', 'drag', 'karaoke', 'music', 'tasting'].includes(icon)) {
-        icon = 'bar'
+            if (!imageIcons(icon)) {
+              icon = 'bar'
+            }
+
+            return {
+              date: new Date(dateString),
+              eventName: eventName,
+              icon: icon,
+            }
+          })
+          .filter((event) => !isNaN(event.date) && event.date.getTime() > new Date().getTime())
+        mappedData = mappedData.slice(0, 5)
+        resolve(mappedData)
+      },
+      (error) => {
+        console.warn(error)
+        reject(error)
       }
-
-      dateString = `${dateString.split('-').reverse().join('/')}  23:59`
-
-      return {
-        date: new Date(dateString),
-        eventName: eventName,
-        icon: icon,
-      }
-    })
-    .filter(
-      (event) =>
-        event.eventName !== '' &&
-        !isNaN(event.date) &&
-        event.date.getTime() > new Date().getTime()
     )
-
-  // show maximum of 5 icons
-  mappedData = mappedData.slice(0, 5)
-
-  return mappedData
+  })
 })
 </script>
 

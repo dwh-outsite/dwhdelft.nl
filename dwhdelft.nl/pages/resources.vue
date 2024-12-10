@@ -10,7 +10,7 @@ en:
     lastig: Dealing with Discrimination?
   content:
     intro:
-      - 'The second Friday of December, the 8th to be precise, is Purple Friday. A day where we try to convince as many non-queer identifying people as possible to show support by wearing something purple. Will you?'
+      - 'The second Friday of December is Purple Friday. A day where we try to convince as many non-queer identifying people as possible to show support by wearing something purple. Will you?'
     local:
       - 'Are you a LGBT+ youth under 19 or are you still unsure but want to come into contact with other LGBT+ youth with fun activities? Check out [Jong&Out Delft](https://instagram.com/jongenoutdelft/).'
       - 'From 16 to 28 years old you are welcome at [Outsite](https://dwhdelft.nl/outsite), our youth group with a weekly barnight on Thursday, filled with activities and parties. We host a [kennismakingsgroep](https://outsite.nl/kmg) twice a year, where you spend 9 weeks getting to know a group of queer people your age and the queer community.'
@@ -52,7 +52,7 @@ nl:
     lastig: Word je lastig gevallen?
   content:
     intro:
-      - 'De tweede vrijdag van december, de 8e om precies te zijn, is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen. Doe jij mee?'
+      - 'De tweede vrijdag van december is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen. Doe jij mee?'
     local:
       - 'Ben jij een LHBT+ jongere onder de 19 jaar of weet je het nog niet precies maar wil je wel in contact komen met andere LHBT+ jongeren door middel van laagdrempelige activiteiten? Check dan [Jong&Out Delft](https://instagram.com/jongenoutdelft/).'
       - 'Van 16 t/m 28 jaar ben je welkom bij [Outsite](https://dwhdelft.nl/outsite), onze jongerenvleugel met een wekelijkse baravond op donderdag vol activiteiten en feesten. Elk half jaar hebben we voor deze leeftijd ook een [kennismakingsgroep](https://outsite.nl/kmg), waar je in negen weken een groep leeftijdsgenoten en de queer community goed leert kennen.'
@@ -105,6 +105,7 @@ const { t } = useT()
           class="text-lg lg:text-xl lg:leading-relaxed text-gray-800 mb-4"
           :content="paragraph"
         />
+        <PagesResourcesPurpleFriday />
       </div>
       <div class="lg:w-1/4">
         <Announcement>

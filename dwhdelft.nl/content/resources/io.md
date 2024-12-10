@@ -1,10 +1,10 @@
 ---
-name: IO
+name: TU - IO
 full_name: Industrial Design
 ---
 
-## Drag bingo!
+## Drag bingo
 Come around for some cool bingo with drag queens!
 
-## Purple Pit Stop
-Get yourself some purple accessories like some purple nail polish. The cafe will be decorated!
+## Purple!
+Student association ID is planning to go big by decorating their café and the student association hall completely purple.

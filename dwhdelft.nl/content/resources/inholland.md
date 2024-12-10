@@ -5,4 +5,4 @@ order: -1
 ---
 
 ## Stand with goodies
-Come around the goodies stand!
+At InHolland, various members of Outsite will be present at the goodies stand!

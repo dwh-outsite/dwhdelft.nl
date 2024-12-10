@@ -5,4 +5,4 @@ order: -1
 ---
 
 ## Wear purple
-Wear purple on Friday to show your support!
+The Haagse Hogeschool in Delft is asking all their employees and studies to wear purple to show their support!

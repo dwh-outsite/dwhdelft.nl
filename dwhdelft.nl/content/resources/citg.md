@@ -1,5 +1,5 @@
 ---
-name: CiTG
+name: TU - CiTG
 full_name: Civil Engineering and Geosciences
 ---
 

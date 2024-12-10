@@ -13,46 +13,29 @@ const { image: imageIcons } = useDynamicImages(
   import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true, query: 'url_encode' })
 )
 
-const { data: events } = await useAsyncData('events', async () => {
-  const options = {
-    apiKey: 'AIzaSyDwi_l2R3qDWkh2HN8_AmIpy7mk8Ij7nk8',
-    sheetId: '1_FqJ8RZHJr7duOvQpWudBiRUVjcE6DFSxjY-qAUypss',
-    sheetName: 'Public',
-  }
-  return new Promise((resolve, reject) => {
-    GSheetReader(
-      options,
-      (results) => {
-        results = results.filter((r) => r['Event name'])
-        if (results.length === 0) {
-          console.error('No events')
-        }
+const events = ref(null)
 
-        let mappedData = results
-          .map((row) => {
-            let dateString = `${row[`Date`].split('-').reverse().join('/')}  23:59`
-            let eventName = row[`Event name`]
-            let icon = row[`Icon`]
+const sheetOptions = {
+  apiKey: useRuntimeConfig().public.googleKey,
+  sheetId: '1_FqJ8RZHJr7duOvQpWudBiRUVjcE6DFSxjY-qAUypss',
+  sheetName: 'Public',
+}
 
-            if (!imageIcons(icon)) {
-              icon = 'bar'
-            }
+onMounted(() => {
+  GSheetReader(sheetOptions, (results) => {
+    const filteredResults = results.filter((r) => r['Event name'])
+    if (filteredResults.length === 0) {
+      console.error('No events')
+    }
 
-            return {
-              date: new Date(dateString),
-              eventName: eventName,
-              icon: icon,
-            }
-          })
-          .filter((event) => !isNaN(event.date) && event.date.getTime() > new Date().getTime())
-        mappedData = mappedData.slice(0, 5)
-        resolve(mappedData)
-      },
-      (error) => {
-        console.warn(error)
-        reject(error)
-      }
-    )
+    events.value = filteredResults
+      .map((row) => ({
+        date: new Date(`${row[`Date`].split('-').reverse().join('/')}  23:59`),
+        eventName: row[`Event name`],
+        icon: imageIcons(row[`Icon`]) || imageIcons('bar'),
+      }))
+      .filter((event) => !isNaN(event.date) && event.date.getTime() > new Date().getTime())
+      .slice(0, 5)
   })
 })
 </script>
@@ -60,9 +43,9 @@ const { data: events } = await useAsyncData('events', async () => {
 <template>
   <div v-if="events && events.length > 0" class="bg-brand-450 text-white">
     <ElementsContainer>
-      <div class="flex justify-center font-medium text-5xl">
-        <h1>{{ t('events') }}</h1>
-      </div>
+      <h1 class="text-center font-medium text-5xl">
+        {{ t('events') }}
+      </h1>
       <div class="flex flex-wrap justify-center text-center">
         <div
           v-for="(event, index) in events"
@@ -76,7 +59,7 @@ const { data: events } = await useAsyncData('events', async () => {
             {{ event.eventName }}
           </div>
           <div class="flex justify-center">
-            <img :src="imageIcons(event.icon)" alt="Event Icon" />
+            <img :src="event.icon" alt="Event Icon" />
           </div>
         </div>
       </div>

@@ -83,7 +83,6 @@ nl:
 </i18n>
 
 <script setup>
-
 const { t, tt } = useT()
 
 const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
@@ -112,11 +111,15 @@ const instagramChannelsMixup = [
 
     <section>
       <div class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
-        <ElementsContainer>  
+        <ElementsContainer>
           <div class="flex-1 px-4 lg:pr-32">
-            <div class="space-y-4">
+            <div class="space-y-12">
               <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
-              <p v-if="barOpeningHours.announcement" class="mt-3 mb-4 text-brand-500" v-text="tt(barOpeningHours.announcement)" />
+              <p
+                v-if="barOpeningHours.announcement"
+                class="mt-3 mb-4 text-brand-500"
+                v-text="tt(barOpeningHours.announcement)"
+              />
               <PagesHomeInvite
                 class="my-8 md:my-4"
                 :announcement="t('invite.announcement')"
@@ -132,9 +135,9 @@ const instagramChannelsMixup = [
                 </div>
                 <div>
                   <nuxt-link :to="localePath('barbuddy')">
-                    <ElementsSecondaryButton class="!text-brand-450" arrow>
+                    <ElementsPrimaryButton class="!text-brand-50" arrow>
                       {{ t('barbuddy_button') }}
-                    </ElementsSecondaryButton>
+                    </ElementsPrimaryButton>
                   </nuxt-link>
                 </div>
               </div>

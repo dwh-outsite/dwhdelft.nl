@@ -109,92 +109,86 @@ const instagramChannelsMixup = [
       <PagesMixupLinkedEvents />
     </section>
 
-    <section>
-      <div class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
-        <ElementsContainer>
-          <div class="flex-1 px-4 lg:pr-32">
-            <div class="space-y-12">
-              <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
-              <p
-                v-if="barOpeningHours.announcement"
-                class="mt-3 mb-4 text-brand-500"
-                v-text="tt(barOpeningHours.announcement)"
-              />
-              <PagesHomeInvite
-                class="my-8 md:my-4"
-                :announcement="t('invite.announcement')"
-                :time="t('invite.time', [barOpeningHours.start_time])"
-              />
-              <div class="flex flex-1 space-x-4">
-                <div>
-                  <a href="https://my.dwhdelft.nl/signup">
-                    <ElementsSecondaryButton class="!text-brand-450" arrow>
-                      {{ t('membership_button') }}
-                    </ElementsSecondaryButton>
-                  </a>
-                </div>
-                <div>
-                  <nuxt-link :to="localePath('barbuddy')">
-                    <ElementsPrimaryButton class="!text-brand-50" arrow>
-                      {{ t('barbuddy_button') }}
-                    </ElementsPrimaryButton>
-                  </nuxt-link>
-                </div>
+    <section class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
+      <ElementsContainer>
+        <div class="flex-1 px-4 lg:pr-32">
+          <div class="space-y-12">
+            <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
+            <p
+              v-if="barOpeningHours.announcement"
+              class="mt-3 mb-4 text-brand-500"
+              v-text="tt(barOpeningHours.announcement)"
+            />
+            <PagesHomeInvite
+              class="my-8 md:my-4"
+              :announcement="t('invite.announcement')"
+              :time="t('invite.time', [barOpeningHours.start_time])"
+            />
+            <div class="flex flex-1 space-x-4">
+              <div>
+                <a href="https://my.dwhdelft.nl/signup">
+                  <ElementsSecondaryButton class="!text-brand-450" arrow>
+                    {{ t('membership_button') }}
+                  </ElementsSecondaryButton>
+                </a>
+              </div>
+              <div>
+                <nuxt-link :to="localePath('barbuddy')">
+                  <ElementsPrimaryButton class="!text-brand-50" arrow>
+                    {{ t('barbuddy_button') }}
+                  </ElementsPrimaryButton>
+                </nuxt-link>
               </div>
             </div>
           </div>
-        </ElementsContainer>
-        <div class="hidden lg:block">
-          <div>
-            <img src="~/assets/images/photos/mixup/barnight.png" class="w-96" />
-          </div>
+        </div>
+      </ElementsContainer>
+      <div class="hidden lg:block">
+        <div>
+          <img src="~/assets/images/photos/mixup/barnight.png" class="w-96" />
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="bg-highlights bg-cover bg-center py-10">
-        <ElementsContainer>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-            <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
-              <template #header>
-                <div class="w-full h-40 overflow-hidden mx-auto">
-                  <img :src="imageOverviews(point.image)" class="object-cover w-full h-full" />
-                </div>
-              </template>
-              <p class="-mt-3 text-brand-900 text-lg leading-snug" v-text="point.description" />
-            </ElementsActionCard>
-          </div>
-        </ElementsContainer>
-      </div>
+    <section class="bg-highlights bg-cover bg-center py-10">
+      <ElementsContainer>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+          <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
+            <template #header>
+              <div class="w-full h-40 overflow-hidden mx-auto">
+                <img :src="imageOverviews(point.image)" class="object-cover w-full h-full" />
+              </div>
+            </template>
+            <p class="-mt-3 text-brand-900 text-lg leading-snug" v-text="point.description" />
+          </ElementsActionCard>
+        </div>
+      </ElementsContainer>
     </section>
 
-    <section>
-      <div class="bg-brand-900 pb-12">
-        <ElementsContainer>
-          <div class="mx-auto pt-12 pb-8">
-            <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
-          </div>
-          <div class="grid grid-cols-[1fr_minmax(0,1280px)_1fr]">
-            <div
-              v-for="(event, index) in t('highlights.events')"
-              :key="event.name"
-              class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl col-start-2"
-              :class="index % 2 !== 0 ? 'ml-auto' : ''"
-            >
-              <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
-                <img :src="imageOverviews(event.image)" class="object-cover h-full" />
+    <section class="bg-brand-900 pb-12">
+      <ElementsContainer>
+        <div class="mx-auto pt-12 pb-8">
+          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
+        </div>
+        <div class="grid grid-cols-[1fr_minmax(0,1280px)_1fr]">
+          <div
+            v-for="(event, index) in t('highlights.events')"
+            :key="event.name"
+            class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl col-start-2"
+            :class="index % 2 !== 0 ? 'ml-auto' : ''"
+          >
+            <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
+              <img :src="imageOverviews(event.image)" class="object-cover h-full" />
+            </div>
+            <div class="flex-1 md:pr-8">
+              <div class="flex space-x-2 items-baseline">
+                <h3 class="text-xl text-brand-450 font-semibold" v-text="event.title" />
               </div>
-              <div class="flex-1 md:pr-8">
-                <div class="flex space-x-2 items-baseline">
-                  <h3 class="text-xl text-brand-450 font-semibold" v-text="event.title" />
-                </div>
-                <p class="text-brand-900 text-lg" v-html="event.description" />
-              </div>
+              <p class="text-brand-900 text-lg" v-html="event.description" />
             </div>
           </div>
-        </ElementsContainer>
-      </div>
+        </div>
+      </ElementsContainer>
     </section>
 
     <LayoutStraightSection contentBackgroundClass="!bg-brand-450" contentClass="md:py-12">

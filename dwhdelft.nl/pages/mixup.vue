@@ -153,7 +153,7 @@ const instagramChannelsMixup = [
     </section>
 
     <section>
-      <div class="bg-[url('~/assets/images/photos/mixup/barvisual.jpg')] bg-cover bg-center py-10">
+      <div class="bg-highlights bg-cover bg-center py-10">
         <ElementsContainer>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
             <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
@@ -206,3 +206,10 @@ const instagramChannelsMixup = [
     </LayoutStraightSection>
   </div>
 </template>
+
+
+<style scoped>
+.bg-highlights {
+  background-image: url('~/assets/images/photos/mixup/barvisual.jpg');
+}
+</style>

@@ -1,5 +1,5 @@
 ---
-name: HH
+name: Haagse Hogeschool
 full_name: Haagse Hogeschool
 order: -1
 ---

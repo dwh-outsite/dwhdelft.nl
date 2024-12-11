@@ -14,15 +14,11 @@ const { t } = useT()
 const faculties = (await useAsyncData(() => queryContent('resources').find())).data
 const active = ref(0)
 
-function setActive(index) {
-  active.value = index
-}
-
-watchEffect(() => {
-  faculties.value.sort((a, b) => {
-    return (a.order || 0) - (b.order || 0)
-  })
+faculties.value.sort((a, b) => {
+  return (a.order || 0) - (b.order || 0)
 })
+
+const activeFaculty = computed(() => faculties.value[active.value])
 </script>
 
 <template>
@@ -36,23 +32,23 @@ watchEffect(() => {
           {{ t('subtitle') }}
         </div>
         <div class="text-2xl">
-          <div class="lg:w-[36rem] xl:w-[44rem] pt-12">
+          <div class="lg:w-[36rem] xl:w-[44rem] pt-6">
             <div class="flex space-x-2 overflow-auto whitespace-nowrap">
               <div
                 v-for="(faculty, index) in faculties"
                 :key="faculty.name"
                 :class="index === active ? 'bg-brand-800' : 'bg-brand-500 cursor-pointer hover:bg-brand-400'"
                 class="text-white rounded-t-lg p-4 font-semibold tracking-wide z-20 relative"
-                @click="setActive(index)"
+                @click="active = index"
               >
                 {{ faculty.name }}
               </div>
             </div>
             <div class="flex-1 bg-brand-800 text-white rounded-b-lg shadow-lg p-6 space-y-2 text-lg">
-              <h2 class="text-2xl font-bold uppercase tracking-wider mb-4">
-                {{ faculties[active]?.full_name }}
+              <h2 class="text-2xl font-bold uppercase tracking-wider">
+                {{ activeFaculty.full_name }}
               </h2>
-              ⁠<Markdown :key="faculties[active].name" :content="faculties[active]" />
+              ⁠<Markdown :key="activeFaculty.name" :content="activeFaculty" />
             </div>
           </div>
         </div>

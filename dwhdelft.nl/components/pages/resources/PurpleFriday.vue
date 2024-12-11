@@ -8,7 +8,7 @@ nl:
 </i18n>
 
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref } from 'vue'
 const { t } = useT()
 
 const faculties = (await useAsyncData(() => queryContent('resources').find())).data

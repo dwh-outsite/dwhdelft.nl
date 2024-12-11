@@ -59,7 +59,7 @@ onMounted(() => {
             {{ event.eventName }}
           </div>
           <div class="flex justify-center">
-            <img :src="event.icon" alt="Event Icon" />
+            <img :src="event.icon" alt="Event Icon" class="w-12" />
           </div>
         </div>
       </div>

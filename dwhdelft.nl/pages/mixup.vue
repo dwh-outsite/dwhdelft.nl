@@ -154,7 +154,7 @@ const instagramChannelsMixup = [
               </div>
               <div class="hidden 2xl:block">
                 <div>
-                  <img src="~/assets/images/photos/mixup/barnight.png" class="w-64" />
+                  <img src="~/assets/images/photos/mixup/barnight.jpg" class="w-64" />
                 </div>
               </div>
             </div>
@@ -213,7 +213,6 @@ const instagramChannelsMixup = [
     </LayoutStraightSection>
   </div>
 </template>
-
 
 <style scoped>
 .bg-highlights {

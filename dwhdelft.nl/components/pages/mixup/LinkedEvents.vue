@@ -55,7 +55,7 @@ onMounted(() => {
           <div>
             {{ ''.concat(event.date.getDate(), ' ', $t(`month.${event.date.getMonth()}`)) }}
           </div>
-          <div class="text-xl">
+          <div class="text-xl font-bold">
             {{ event.eventName }}
           </div>
           <div class="flex justify-center">

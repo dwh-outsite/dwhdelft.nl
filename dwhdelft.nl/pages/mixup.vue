@@ -101,7 +101,7 @@ const instagramChannelsMixup = [
 
 <template>
   <div class="mixup-colors">
-    <LayoutSmallHeader triangleClass="border-brand-450">
+    <LayoutSmallHeader triangleClass="border-gray-800">
       {{ t('title') }}
     </LayoutSmallHeader>
 

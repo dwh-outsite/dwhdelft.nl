@@ -41,7 +41,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="events && events.length > 0" class="bg-brand-450 text-white">
+  <div v-if="events && events.length > 0" class="bg-gray-800 text-white">
     <ElementsContainer>
       <h1 class="text-center font-medium text-5xl">
         {{ t('events') }}

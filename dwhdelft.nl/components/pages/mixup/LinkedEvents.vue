@@ -10,7 +10,7 @@ const { t } = useT()
 import GSheetReader from 'g-sheets-api'
 
 const { image: imageIcons } = useDynamicImages(
-  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true, query: 'url_encode' })
+  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true })
 )
 
 const events = ref(null)

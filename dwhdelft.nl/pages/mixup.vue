@@ -164,18 +164,7 @@ const instagramChannelsMixup = [
     </section>
 
     <section class="bg-highlights bg-cover bg-center py-10">
-      <ElementsContainer>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-          <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
-            <template #header>
-              <div class="w-full h-40 overflow-hidden mx-auto">
-                <img :src="imageOverviews(point.image)" class="object-cover w-full h-full" />
-              </div>
-            </template>
-            <p class="-mt-3 text-brand-900 text-lg leading-snug" v-text="point.description" />
-          </ElementsActionCard>
-        </div>
-      </ElementsContainer>
+      <BulletPoints :bulletPoints="t('bulletPoints')" :image="imageOverviews" :descriptionColor="'text-brand-900'" />
     </section>
 
     <section class="bg-brand-900 pb-12">

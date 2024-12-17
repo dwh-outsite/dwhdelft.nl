@@ -40,20 +40,9 @@ nl:
 const { t } = useT()
 
 const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/bullets/*', { eager: true }))
+const bulletImage = (img) => image(`bullet_${img}`)
 </script>
 
 <template>
-  <ElementsContainer>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-      <ElementsActionCard v-for="point in t('bulletPoints')" :key="point.title" :title="point.title">
-        <template #header>
-          <div class="w-full h-40 overflow-hidden mx-auto">
-            <img :src="image(`bullet_${point.image}`)" class="object-cover w-full h-full" />
-          </div>
-        </template>
-
-        <p class="-mt-3 text-gray-600 text-lg leading-snug" v-text="point.description" />
-      </ElementsActionCard>
-    </div>
-  </ElementsContainer>
+  <BulletPoints :bulletPoints="t('bulletPoints')" :image="bulletImage" />
 </template>

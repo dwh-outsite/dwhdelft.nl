@@ -52,9 +52,7 @@ onMounted(() => {
           :key="index"
           class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
         >
-          <div>
-            {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`) }}
-          </div>
+          <div>{{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`) }}</div>
           <div class="text-xl font-bold">
             {{ event.eventName }}
           </div>

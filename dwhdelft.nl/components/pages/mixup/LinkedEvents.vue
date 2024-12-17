@@ -53,7 +53,7 @@ onMounted(() => {
           class="w-48 p-4 m-4 bg-brand-900 rounded-lg shadow-lg space-y-2"
         >
           <div>
-            {{ ''.concat(event.date.getDate(), ' ', $t(`month.${event.date.getMonth()}`)) }}
+            {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`) }}
           </div>
           <div class="text-xl font-bold">
             {{ event.eventName }}

@@ -26,6 +26,7 @@
     "@nuxtjs/i18n": "^8.5.5",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
+    "g-sheets-api": "^2.2.0",
     "nuxt-svgo": "^4.0.6",
     "postcss": "^8.4.47",
     "tailwind-heropatterns": "^0.0.8",

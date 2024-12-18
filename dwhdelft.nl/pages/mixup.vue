@@ -117,7 +117,7 @@ const instagramChannelsMixup = [
           <div class="space-y-4">
             <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
             <div>
-              <div class="flex flex-1 space-x-8 space-y-16 md:space-y-8 lg:space-y-6">
+              <div class="flex flex-1 flex-wrap justify-center items-center gap-4">
                 <div>
                   <p
                     v-if="barOpeningHours.announcement"
@@ -134,15 +134,15 @@ const instagramChannelsMixup = [
                   <MIXUPLogo class="h-20" />
                 </div>
               </div>
-              <div class="flex flex-1 space-x-4">
-                <div>
+              <div class="flex flex-1 flex-wrap justify-center items-center space-x-4 mt-2">
+                <div class="m-2">
                   <a href="https://my.dwhdelft.nl/signup">
                     <ElementsSecondaryButton class="!text-brand-450" arrow>
                       {{ t('membership_button') }}
                     </ElementsSecondaryButton>
                   </a>
                 </div>
-                <div>
+                <div class="m-2">
                   <nuxt-link :to="localePath('barbuddy')">
                     <ElementsPrimaryButton class="!text-brand-50" arrow>
                       {{ t('barbuddy_button') }}

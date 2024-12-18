@@ -62,7 +62,7 @@ const instagramChannels = [
   </LayoutHeader>
 
   <section class="overflow-x-hidden">
-    <div class="container mx-auto pt-12 pb-24 md:flex">
+    <div class="container mx-auto pt-12 pb-28 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
         <PagesHomeIntro />
       </div>

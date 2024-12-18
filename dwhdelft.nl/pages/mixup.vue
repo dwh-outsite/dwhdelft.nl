@@ -113,50 +113,48 @@ const instagramChannelsMixup = [
 
     <section class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
       <ElementsContainer>
-        <div class="flex-1 px-4 lg:pr-32">
-          <div class="space-y-12">
+        <div class="flex flex-1 px-4 lg:pr-32 space-x-16 lg:space-y-24">
+          <div class="space-y-4">
             <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
-            <div class="flex flex-1 space-x-16">
-              <div>
-                <div class="flex flex-1 space-x-8 space-y-16 md:space-y-8 lg:space-y-6">
-                  <div>
-                    <p
-                      v-if="barOpeningHours.announcement"
-                      class="mt-3 mb-4 text-brand-500"
-                      v-text="tt(barOpeningHours.announcement)"
-                    />
-                    <PagesHomeInvite
-                      class="my-8 md:my-4"
-                      :announcement="t('invite.announcement')"
-                      :time="t('invite.time', [barOpeningHours.start_time])"
-                    />
-                  </div>
-                  <div>
-                    <MIXUPLogo class="h-20" />
-                  </div>
-                </div>
-                <div class="flex flex-1 space-x-4">
-                  <div>
-                    <a href="https://my.dwhdelft.nl/signup">
-                      <ElementsSecondaryButton class="!text-brand-450" arrow>
-                        {{ t('membership_button') }}
-                      </ElementsSecondaryButton>
-                    </a>
-                  </div>
-                  <div>
-                    <nuxt-link :to="localePath('barbuddy')">
-                      <ElementsPrimaryButton class="!text-brand-50" arrow>
-                        {{ t('barbuddy_button') }}
-                      </ElementsPrimaryButton>
-                    </nuxt-link>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden 2xl:block">
+            <div>
+              <div class="flex flex-1 space-x-8 space-y-16 md:space-y-8 lg:space-y-6">
                 <div>
-                  <img src="~/assets/images/photos/mixup/barnight.jpg" class="w-64" />
+                  <p
+                    v-if="barOpeningHours.announcement"
+                    class="mt-3 mb-4 text-brand-500"
+                    v-text="tt(barOpeningHours.announcement)"
+                  />
+                  <PagesHomeInvite
+                    class="my-8 md:my-4"
+                    :announcement="t('invite.announcement')"
+                    :time="t('invite.time', [barOpeningHours.start_time])"
+                  />
+                </div>
+                <div>
+                  <MIXUPLogo class="h-20" />
                 </div>
               </div>
+              <div class="flex flex-1 space-x-4">
+                <div>
+                  <a href="https://my.dwhdelft.nl/signup">
+                    <ElementsSecondaryButton class="!text-brand-450" arrow>
+                      {{ t('membership_button') }}
+                    </ElementsSecondaryButton>
+                  </a>
+                </div>
+                <div>
+                  <nuxt-link :to="localePath('barbuddy')">
+                    <ElementsPrimaryButton class="!text-brand-50" arrow>
+                      {{ t('barbuddy_button') }}
+                    </ElementsPrimaryButton>
+                  </nuxt-link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden 2xl:block">
+            <div>
+              <img src="~/assets/images/photos/mixup/barnight.jpg" class="w-256" />
             </div>
           </div>
         </div>

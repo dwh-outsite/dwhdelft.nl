@@ -66,7 +66,7 @@ const instagramChannels = [
         <PagesHomeIntro />
       </div>
       <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">
-        <Panda class="relative md:absolute bottom-0 left-5 w-full" />
+        <Panda class="relative md:absolute bottom-0 left-5 w-full rotate-[12deg]" />
       </div>
     </div>
   </section>

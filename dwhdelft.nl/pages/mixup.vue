@@ -48,7 +48,7 @@ nl:
       klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch
       eens gewoon een bar zijn, is het heel gezellig bijkletsen en misschien een dansje wagen.
     - MIXUP wordt volledig mogelijk gemaakt door een team enthousiaste vrijwilligers van DWH. Ben je enthousiast geworden en wil je
-      bijdragen aan en onderdeel worden van een fantastische community? Wordt dan lid.
+      bijdragen aan en onderdeel worden van een fantastische community? Word dan lid.
     - Bang om alleen te komen? We kunnen je aan een barbuddy koppelen om te leren kennen, die je ook aan anderen kan voorstellen!
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
@@ -111,12 +111,13 @@ const linkedEventsReady = ref(false)
 
     <section class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
       <ElementsContainer>
-        <div class="flex flex-1 px-4 lg:pr-32 space-x-16 lg:space-y-24">
+        <div class="flex px-4 lg:pr-32 space-x-16 lg:space-y-24">
           <div class="space-y-4">
+            <MIXUPLogo class="block md:hidden mx-auto mb-8 h-20" />
             <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
-            <div>
-              <div class="flex flex-1 flex-wrap justify-center items-center gap-4">
-                <div>
+            <div class="space-y-2">
+              <div class="flex flex-wrap justify-center items-center gap-4">
+                <div class="w-full max-w-md md:w-auto">
                   <p
                     v-if="barOpeningHours.announcement"
                     class="mt-3 mb-4 text-brand-500"
@@ -128,25 +129,19 @@ const linkedEventsReady = ref(false)
                     :time="t('invite.time', [barOpeningHours.start_time])"
                   />
                 </div>
-                <div>
-                  <MIXUPLogo class="h-20" />
-                </div>
+                <MIXUPLogo class="hidden md:block h-20" />
               </div>
-              <div class="flex flex-1 flex-wrap justify-center items-center space-x-4 mt-2">
-                <div class="m-2">
-                  <a href="https://my.dwhdelft.nl/signup">
-                    <ElementsSecondaryButton class="!text-brand-450" arrow>
-                      {{ t('membership_button') }}
-                    </ElementsSecondaryButton>
-                  </a>
-                </div>
-                <div class="m-2">
-                  <nuxt-link :to="localePath('barbuddy')">
-                    <ElementsPrimaryButton class="!text-brand-50" arrow>
-                      {{ t('barbuddy_button') }}
-                    </ElementsPrimaryButton>
-                  </nuxt-link>
-                </div>
+              <div class="md:flex flex-wrap justify-center items-center md:space-x-4 space-y-4 md:space-y-0">
+                <a href="https://my.dwhdelft.nl/signup" class="block">
+                  <ElementsSecondaryButton class="!text-brand-450" arrow>
+                    {{ t('membership_button') }}
+                  </ElementsSecondaryButton>
+                </a>
+                <nuxt-link :to="localePath('barbuddy')" class="block">
+                  <ElementsPrimaryButton class="!text-brand-50" arrow>
+                    {{ t('barbuddy_button') }}
+                  </ElementsPrimaryButton>
+                </nuxt-link>
               </div>
             </div>
           </div>

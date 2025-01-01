@@ -1,7 +1,6 @@
 <i18n lang="yaml">
 en:
   title: MIXUP
-  events: Our UPcoming events
   intro:
     - MIXUP is thé queer nightlife experience of Delft. We open our doors every Saturday at 22:00 and almost
       every week we are more than just a bar. Drag performances of the HAUS of 4D, the city’s best karaoke,
@@ -42,7 +41,6 @@ en:
 
 nl:
   title: MIXUP
-  events: Onze UPkomende evenementen
   intro:
     - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna
       elke week zijn we meer dan alleen een bar. Drag performances van HAUS of 4D, de beste karaoke van de stad,
@@ -99,17 +97,17 @@ const instagramChannelsMixup = [
     instagram: 'mixupdelft',
   },
 ]
+
+const linkedEventsReady = ref(false)
 </script>
 
 <template>
   <div class="mixup-colors">
-    <LayoutSmallHeader triangleClass="border-gray-800">
+    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-900' : 'border-black'">
       {{ t('title') }}
     </LayoutSmallHeader>
 
-    <section>
-      <PagesMixupLinkedEvents />
-    </section>
+    <PagesMixupLinkedEvents @ready="linkedEventsReady = true" />
 
     <section class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
       <ElementsContainer>

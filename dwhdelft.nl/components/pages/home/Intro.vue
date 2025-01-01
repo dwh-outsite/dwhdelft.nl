@@ -22,7 +22,7 @@ nl:
       bierproeverijen, workshops, pub crawls en zelfs vakanties. Zie onze aankomende events hieronder!'
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
-    time: Elke Zaterdag vanaf {0}
+    time: Elke zaterdag vanaf {0}
 </i18n>
 
 <script setup>

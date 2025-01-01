@@ -54,7 +54,7 @@ nl:
     - Bang om alleen te komen? We kunnen je aan een barbuddy koppelen om te leren kennen, die je ook aan anderen kan voorstellen!
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
-    time: Elke Zaterdag vanaf {0}
+    time: Elke zaterdag vanaf {0}
   membership_button: Schrijf je nu in bij DWH
   barbuddy_button: Vind een buddy
   instagram: Onze evenementen en UPdates

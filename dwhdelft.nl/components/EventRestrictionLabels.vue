@@ -2,7 +2,7 @@
 defineProps({
   restrictions: {
     type: Array,
-    default: [],
+    default: () => [],
   },
 })
 

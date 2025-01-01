@@ -1,5 +1,6 @@
 <script setup>
 import { IconMenu, IconClose } from '@iconify-prerendered/vue-zondicons'
+import ExternalLinkIcon from '#shared/assets/images/layout/heroicon_external_link.svg'
 import NLFlag from '#shared/assets/images/layout/flags/nl.svg'
 import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
 
@@ -50,10 +51,12 @@ const showMenu = ref(false)
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="block no-underline transition-all [&:not(:last-child)]:border-b border-[#e8e8e8] py-3"
+            class="flex items-center no-underline transition-all [&:not(:last-child)]:border-b border-[#e8e8e8] py-3"
             :class="isActive(item.url) ? 'text-brand-800 font-bold' : 'hover:text-gray-500'"
+            :target="item.url.startsWith('http') ? '_blank' : undefined"
           >
             {{ item.title }}
+            <ExternalLinkIcon v-if="item.url.startsWith('http')" class="inline w-4 h-4 ml-2" />
           </nuxt-link>
           <slot name="mobile-menu-extension" />
         </div>
@@ -64,10 +67,12 @@ const showMenu = ref(false)
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="block py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800 transition-all"
+            class="flex items-center py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800 transition-all"
             :class="isActive(item.url) && 'bg-white/10 rounded-full'"
+            :target="item.url.startsWith('http') ? '_blank' : undefined"
           >
             {{ item.title }}
+            <ExternalLinkIcon v-if="item.url.startsWith('http')" class="inline w-4 h-4 ml-2" />
           </nuxt-link>
         </div>
         <div class="flex items-center space-x-4">

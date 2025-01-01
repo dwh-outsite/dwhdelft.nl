@@ -3,34 +3,34 @@ en:
   menu:
     - title: Home
       url: index
-    - title: Bar Buddy
-      url: barbuddy
-    - title: Education
-      url: /education
-    - title: Jong&Out
-      url: /jongenout
+    - title: Outsite
+      url: https://outsite.nl
     - title: MIXUP
-      url: /mixup
+      url: mixup
+    - title: Jong&Out
+      url: jongenout
+    - title: Education
+      url: education
     - title: Andersblad
       url: andersblad
     - title: Contact
-      url: '/contact'
+      url: contact
 nl:
   menu:
     - title: Home
       url: index
-    - title: Barbuddy
-      url: barbuddy
-    - title: Voorlichting
-      url: /education
-    - title: Jong&Out
-      url: /jongenout
+    - title: Outsite
+      url: https://outsite.nl
     - title: MIXUP
-      url: /mixup
+      url: mixup
+    - title: Jong&Out
+      url: jongenout
+    - title: Voorlichting
+      url: education
     - title: Andersblad
       url: andersblad
     - title: Contact
-      url: '/contact'
+      url: contact
 </i18n>
 
 <script setup>

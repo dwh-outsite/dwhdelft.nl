@@ -15,7 +15,7 @@ en:
     time: Every Saturday starting at {0}
   membership_button: Sign up now for DWH
   barbuddy_button: Find a buddy
-  instagram: Our Events and UPdates
+  instagram: MIXUP **Events** and **UPdates**
   bulletPoints:
     - title: Dance Nights
       description: We have drinks together each week and will often have a DJ to get the dance floor moving!
@@ -30,7 +30,7 @@ en:
       description: Karaoke, tastings, vinyl night or a talent show, there is a lot to do on a night at MIXUP.
       image: events-silentdisco
   highlights:
-    title: Our Highlights
+    title: Our **Highlights**
     events:
       - title: MIXUP Origin
         description: The first ever party under the MIXUP branding was MIXUP Origin, the opening party! Miss Abby OMG gave a wonderful performance and people were living!
@@ -55,7 +55,7 @@ nl:
     time: Elke Zaterdag vanaf {0}
   membership_button: Schrijf je nu in bij DWH
   barbuddy_button: Vind een buddy
-  instagram: Onze evenementen en UPdates
+  instagram: MIXUP **Events** en **UPdates**
   bulletPoints:
     - title: Dansavonden
       description: Elke week komen we samen voor drankjes, vaak is er zelfs een DJ om die voetjes op te bewegen!
@@ -70,7 +70,7 @@ nl:
       description: Karaoke, proeverijen, vinyl nachten of een talentenshow, er is veel te beleven op een MIXUP avond.
       image: events-silentdisco
   highlights:
-    title: Onze Hoogtepunten
+    title: Onze **Hoogtepunten**
     events:
       - title: MIXUP Oorsprong
         description: Het allereerste feestje onder de MIXUP banner was MIXUP Origin’s, het openingsfeest! Miss Abby OMG gaf ons een prachtig optreden, het feest was aan!
@@ -154,32 +154,32 @@ const linkedEventsReady = ref(false)
       </ElementsContainer>
     </section>
 
-    <section class="bg-highlights bg-cover bg-center py-10">
-      <BulletPoints :bulletPoints="t('bulletPoints')" :image="imageOverviews" :descriptionColor="'text-brand-900'" />
+    <section class="relative bg-black">
+      <div class="absolute w-full h-full bg-highlights bg-cover bg-center blur-sm scale-120" />
+      <BulletPoints
+        :bulletPoints="t('bulletPoints')"
+        :image="imageOverviews"
+        cardClass="!bg-gray-800/80 backdrop-blur-xl"
+        descriptionClass="text-gray-200"
+        class="py-12"
+      />
     </section>
 
     <section class="bg-brand-900 pb-12">
       <ElementsContainer>
         <div class="mx-auto pt-12 pb-8">
-          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
+          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">
+            <Markdown :content="t('highlights.title')" />
+          </h1>
         </div>
-        <div class="grid grid-cols-[1fr_minmax(0,1280px)_1fr]">
-          <div
-            v-for="(event, index) in t('highlights.events')"
-            :key="event.name"
-            class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl col-start-2"
-            :class="index % 2 !== 0 ? 'ml-auto' : ''"
-          >
-            <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
-              <img :src="imageOverviews(event.image)" class="object-cover h-full" />
-            </div>
-            <div class="flex-1 md:pr-8">
-              <div class="flex space-x-2 items-baseline">
-                <h3 class="text-xl text-brand-450 font-semibold" v-text="event.title" />
-              </div>
-              <p class="text-brand-900 text-lg" v-html="event.description" />
-            </div>
-          </div>
+        <div class="grid xl:grid-cols-2 gap-6">
+          <PhotoCard
+            v-for="event in t('highlights.events')"
+            :key="event.title"
+            :title="event.title"
+            :description="event.description"
+            :image="imageOverviews(event.image)"
+          />
         </div>
       </ElementsContainer>
     </section>
@@ -187,7 +187,9 @@ const linkedEventsReady = ref(false)
     <LayoutStraightSection contentBackgroundClass="!bg-brand-450" contentClass="md:py-12">
       <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">
         <template #title>
-          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('instagram')" />
+          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">
+            <Markdown :content="t('instagram')" />
+          </h1>
         </template>
       </PagesHomeInstagramChannels>
     </LayoutStraightSection>

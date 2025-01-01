@@ -38,24 +38,14 @@ const requireImage = (name) => image(`bullet_${name}`)
 
 <template>
   <ElementsContainer>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div v-for="point in t('bullet_points')" :key="point.title" class="flex-1 rounded-xl overflow-hidden shadow-lg">
-        <div class="w-full h-80 overflow-hidden mx-auto relative">
-          <div
-            class="absolute z-50 top-0 left-0 p-6 uppercase font-bold tracking-wider text-2xl text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.45)]"
-          >
-            {{ point.title }}
-          </div>
-          <img :src="requireImage(point.image)" class="object-cover h-full w-full" />
-          <div
-            class="absolute bottom-0 left-0 flex flex-col justify-end w-full h-full md:h-2/3 bg-gradient-to-t from-gray-900 p-6"
-          >
-            <p class="text-white text-lg leading-snug">
-              {{ point.description }}
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="grid xl:grid-cols-2 gap-6">
+      <PhotoCard
+        v-for="point in t('bullet_points')"
+        :key="point.title"
+        :title="point.title"
+        :description="point.description"
+        :image="requireImage(point.image)"
+      />
     </div>
   </ElementsContainer>
 </template>

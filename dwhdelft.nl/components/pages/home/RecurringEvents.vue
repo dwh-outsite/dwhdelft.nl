@@ -4,7 +4,7 @@ en:
   announcement_month: 'Monthly events at **DWH**'
 nl:
   announcement: '**DWH** is elke week op {count} avonden open'
-  announcement_month: 'Maandelijkse evenementen bij **DWH**'
+  announcement_month: 'Maandelijkse activiteiten bij **DWH**'
 </i18n>
 
 <script setup>
@@ -23,22 +23,20 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
       <Markdown :content="t('announcement', { count: openingHoursWeekly.length })" />
     </h2>
 
-    <table class="lg:w-2/3 mx-auto border-separate border-spacing-y-16">
+    <table class="lg:w-5/6 xl:w-2/3 mx-auto border-separate border-spacing-y-10 md:border-spacing-y-16">
       <tr v-for="event in openingHoursWeekly" :key="event.name">
-        <td class="align-top pt-1 block md:table-cell mb-4 md:mb-0">
-          <div class="text-gray-500 text-2xl uppercase font-semibold" v-text="tt(event.day)" />
-          <div class="text-gray-400 text-xl" v-text="event.start_time" />
-          <div v-if="event.restrictions" class="space-x-2 pt-2">
-            <div v-for="restriction in event.restrictions" :key="restriction" class="text-center flex items-center">
-              <div
-                class="bg-brand-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider"
-                v-text="tt(restriction)"
-              />
-            </div>
+        <td
+          class="align-top pt-1 flex items-center space-x-4 md:space-x-0 md:table-cell mb-2 md:mb-0 border-b border-gray-300 pb-2 md:pb-0 md:border-0"
+        >
+          <div class="flex-1 flex md:block space-x-2 md:space-x-0 mb-2">
+            <div class="text-gray-500 text-2xl uppercase font-bold md:font-semibold" v-text="tt(event.day)" />
+            <div class="text-gray-400 text-2xl md:text-xl" v-text="event.start_time" />
           </div>
+
+          <EventRestrictionLabels :restrictions="event.restrictions" class="md:flex-col md:space-y-2 md:space-x-0" />
         </td>
         <td class="align-top block md:table-cell">
-          <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />
+          <h2 class="mb-2 text-brand-500 font-semibold text-2xl md:text-3xl" v-text="event.name" />
           <p class="text-gray-500" v-text="tt(event.description)" />
           <p v-if="event.announcement" class="text-brand-500 font-semibold" v-text="tt(event.announcement)" />
           <a v-if="event.link" :href="event.link.url">
@@ -55,37 +53,31 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
       <Markdown :content="t('announcement_month')" />
     </h2>
 
-    <div class="md:flex flex-wrap justify-center -mx-2">
-      <div v-for="event in openingHoursMonthly" :key="event.name" class="p-2 mb-4 xl:mb-0 md:w-1/2 xl:flex-1 xl:w-auto">
-        <div class="rounded shadow bg-brand-100 flex flex-col justify-between h-full relative z-10">
-          <div class="p-6">
-            <div class="flex items-center mb-2">
-              <h2 class="mb-2 text-brand-500 font-semibold text-3xl" v-text="event.name" />
-              <div v-if="event.restrictions">
-                <div
-                  v-for="restriction in event.restrictions"
-                  :key="restriction"
-                  class="ml-4 text-center flex items-center"
-                >
-                  <div
-                    class="bg-brand-200 rounded-lg px-2 py-1 text-xs uppercase tracking-wider"
-                    v-text="tt(restriction)"
-                  />
-                </div>
-              </div>
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <ElementsActionCard
+        v-for="event in openingHoursMonthly"
+        :key="event.name"
+        :title="event.name"
+        class="!bg-brand-100"
+      >
+        <template #header>
+          <div class="pt-6 px-6 flex justify-between items-center">
+            <div class="flex space-x-2">
+              <div class="text-gray-600 text-xl font-bold md:font-semibold uppercase" v-text="tt(event.day)" />
+              <div class="text-gray-500 text-xl md:text-xl" v-text="event.start_time" />
             </div>
-            <div class="text-gray-500 text-2xl font-semibold" v-text="tt(event.day)" />
-            <div class="text-gray-400 text-xl" v-text="event.start_time" />
-            <p v-text="tt(event.description)" />
+            <EventRestrictionLabels :restrictions="event.restrictions" />
           </div>
-          <a
-            v-if="event.link"
-            :href="event.link.url"
-            class="bg-brand-500 hover:bg-brand-300 py-3 rounded-b text-white uppercase font-semibold tracking-wider text-center"
-            v-text="tt(event.link.name)"
-          />
-        </div>
-      </div>
+        </template>
+
+        <template #button>
+          <ElementsPrimaryButton v-if="event.link" :href="event.link.url" class="!px-5 !py-2 text-sm font-semibold">
+            {{ tt(event.link.name) }}
+          </ElementsPrimaryButton>
+        </template>
+
+        <p class="text-gray-500 text-base" v-text="tt(event.description)" />
+      </ElementsActionCard>
     </div>
   </ElementsContainer>
 </template>

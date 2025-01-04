@@ -61,12 +61,12 @@ const instagramChannels = [
   </LayoutHeader>
 
   <section class="overflow-x-hidden overflow-y-visible pt-48 -mt-48 -mb-40">
-    <div class="container mx-auto pt-12 sm:pt-16 pb-24 md:flex md:justify-between">
+    <div class="container mx-auto pt-12 sm:pt-16 pb-28 md:flex md:justify-between">
       <div class="md:w-1/2 px-4">
         <PagesHomeIntro />
       </div>
       <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">
-        <Panda class="relative md:absolute bottom-0 left-5 w-full" />
+        <Panda class="relative md:absolute bottom-0 left-5 w-full rotate-[12deg]" />
       </div>
     </div>
   </section>

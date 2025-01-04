@@ -1,5 +1,5 @@
 <script setup>
-import { IconLink } from '@iconify-prerendered/vue-zondicons'
+import ExternalLinkIcon from '#shared/assets/images/layout/heroicon_external_link.svg'
 import InstagramIcon from '#shared/assets/images/social/instagram.svg'
 import YouTubeIcon from '#shared/assets/images/social/youtube.svg'
 import GitHubIcon from '#shared/assets/images/social/github.svg'
@@ -40,7 +40,7 @@ const links = linkCategories.map((category) => ({
           :target="external ? '_blank' : '_self'"
         >
           {{ tt(name) }}
-          <IconLink v-if="external" class="inline w-4 ml-1" />
+          <ExternalLinkIcon v-if="external" class="inline w-4 ml-1" />
         </nuxt-link>
       </div>
     </div>

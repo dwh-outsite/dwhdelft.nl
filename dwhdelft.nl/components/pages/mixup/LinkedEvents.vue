@@ -46,7 +46,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section v-if="events && events.length > 0" class="bg-gray-900 py-12 md:pt-0 text-gray-200">
+  <section v-if="events && events.length > 0" class="bg-gray-875 py-12 md:pt-0 text-gray-200">
     <ElementsContainer>
       <h1 class="text-center font-medium text-5xl mb-6">
         <Markdown :content="t('events')" />
@@ -58,7 +58,7 @@ onMounted(() => {
           class="w-full md:w-48 p-4 bg-brand-900 rounded-lg shadow-lg flex flex-row-reverse md:flex-col"
         >
           <div class="flex-1">
-            <div class="text-gray-400 uppercase tracking-wide">
+            <div class="text-gray-300 uppercase tracking-wide">
               {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }} - {{ event.startTime }}
             </div>
             <div class="text-xl font-bold md:mb-4">

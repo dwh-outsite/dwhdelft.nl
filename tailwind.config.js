@@ -35,6 +35,7 @@ export default {
           600: '#625c65',
           700: '#48454b',
           800: '#1f2937',
+          875: '#141c2b', // From https://fullwindcss.com/
           900: '#111827',
         },
       },

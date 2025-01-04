@@ -103,7 +103,7 @@ const linkedEventsReady = ref(false)
 
 <template>
   <div class="mixup-colors">
-    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-900' : 'border-black'">
+    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-875' : 'border-black'">
       {{ t('title') }}
     </LayoutSmallHeader>
 

@@ -7,5 +7,16 @@ export default [
   },
   ...dpgRadioVue3,
   ...tailwind.configs['flat/recommended'],
-  { rules: { 'no-undef': 'off' } },
+  {
+    settings: {
+      tailwindcss: {
+        whitelist: ['content', 'c-.+'],
+      },
+    },
+  },
+  {
+    rules: {
+      'no-undef': 'off',
+    },
+  },
 ]

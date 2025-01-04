@@ -37,7 +37,7 @@ const showMenu = ref(false)
 </script>
 
 <template>
-  <header id="header" :class="[small ? 'header-small' : '', 'relative bg-gray-700']">
+  <header id="header" :class="[small ? 'c-header-small' : '', 'relative bg-gray-700']">
     <nav class="absolute z-50 mt-8 w-full">
       <ElementsContainer class="relative flex items-center justify-between">
         <nuxt-link :to="localePath('index')">
@@ -102,7 +102,7 @@ const showMenu = ref(false)
       </ElementsContainer>
     </nav>
     <slot name="background" />
-    <div class="triangle-top absolute bottom-0" :class="triangleClass ? triangleClass : 'border-white'" />
+    <div class="c-triangle-top absolute bottom-0" :class="triangleClass ? triangleClass : 'border-white'" />
     <div class="relative flex h-full items-center">
       <ElementsContainer class="mb-48 mt-40">
         <slot />
@@ -117,7 +117,7 @@ const showMenu = ref(false)
     height: calc(190px * 4);
   }
 
-  #header.header-small {
+  #header.c-header-small {
     height: calc(120px * 4);
   }
 }
@@ -127,12 +127,12 @@ const showMenu = ref(false)
     height: calc(240px * 4);
   }
 
-  #header.header-small {
+  #header.c-header-small {
     height: calc(120px * 4);
   }
 }
 
-.triangle-top {
+.c-triangle-top {
   border-bottom-width: 10.555vw; /* 38deg / 360deg * 100vw = 10.555 */
   border-left: 100vw solid transparent;
 }

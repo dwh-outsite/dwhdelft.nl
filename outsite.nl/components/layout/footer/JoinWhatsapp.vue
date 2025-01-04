@@ -41,7 +41,7 @@ const form = useReMemberForm('whatsapp', {
           <template v-if="showForm">
             <div v-if="form.state.value !== 'success'" class="w-full items-end text-left text-base md:flex">
               <p class="md:mx-2 md:flex-1">
-                <label class="required mb-1 block text-sm font-semibold uppercase tracking-wide">
+                <label class="mb-1 block text-sm font-semibold uppercase tracking-wide">
                   {{ $t('forms.label.name') }}
                 </label>
                 <input
@@ -54,7 +54,7 @@ const form = useReMemberForm('whatsapp', {
                 <ElementsFormValidationError :errors="form.validationErrors" name="name" />
               </p>
               <p class="md:mx-2 md:flex-1">
-                <label class="required mb-1 block text-sm font-semibold uppercase tracking-wide">
+                <label class="mb-1 block text-sm font-semibold uppercase tracking-wide">
                   {{ $t('forms.label.phone_number') }}
                 </label>
                 <input
@@ -67,7 +67,7 @@ const form = useReMemberForm('whatsapp', {
                 <ElementsFormValidationError :errors="form.validationErrors" name="phone_number" />
               </p>
               <p class="md:ml-2 md:flex-1">
-                <label class="required mb-1 block text-sm font-semibold uppercase tracking-wide">
+                <label class="mb-1 block text-sm font-semibold uppercase tracking-wide">
                   {{ $t('forms.label.date_of_birth') }}
                 </label>
                 <input

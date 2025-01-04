@@ -126,7 +126,7 @@ const membershipIcons = {
   <div class="justify-center space-y-6 lg:flex lg:space-x-4 lg:space-y-0">
     <ElementsActionCard
       :title="t('membership.title')"
-      class="fade-corners flex-1 !bg-brand-400"
+      class="c-fade-corners flex-1 !bg-brand-400"
       contentClass="p-8"
       titleClass="text-white"
     >
@@ -199,7 +199,7 @@ const membershipIcons = {
 </template>
 
 <style scoped>
-.fade-corners {
+.c-fade-corners {
   box-shadow: 0 0 20px #ffaadf;
 }
 </style>

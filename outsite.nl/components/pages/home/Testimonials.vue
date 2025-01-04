@@ -26,7 +26,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
           <div class="mx-auto mt-5 size-32 overflow-hidden rounded-full md:m-6 md:mr-5">
             <img :src="imageOrDefault(testimonial.title)" class="size-full object-cover" />
           </div>
-          <div class="bg-white-gradient flex flex-1 items-center md:mr-12">
+          <div class="c-bg-white-gradient flex flex-1 items-center md:mr-12">
             <div class="relative flex flex-col justify-between px-8 pb-12 pt-0 md:p-3">
               <div class="absolute z-0 -ml-6 mt-8 text-[10rem] text-brand-100">“</div>
               <div class="z-10 mb-4 pt-4 text-lg leading-snug md:mb-1">
@@ -62,7 +62,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
 </template>
 
 <style scoped>
-.bg-white-gradient {
+.c-bg-white-gradient {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,

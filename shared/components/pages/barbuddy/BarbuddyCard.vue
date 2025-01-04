@@ -34,7 +34,7 @@ const readMore = () => (expanded.value = !expanded.value)
 
     <div class="relative text-lg" :class="expanded ? 'pb-8' : 'line-clamp-4'">
       <span class="absolute bottom-0 right-0 z-10 flex">
-        <span class="white-gradient block w-32" />
+        <span class="block w-32 bg-gradient-to-r from-white/0 to-white" />
         <a class="cursor-pointer bg-white text-brand-450" @click="readMore()">
           {{ t(expanded ? 'read_less' : 'read_more') }}
         </a>
@@ -43,16 +43,3 @@ const readMore = () => (expanded.value = !expanded.value)
     </div>
   </ElementsActionCard>
 </template>
-
-<style>
-.clamp-lines {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.white-gradient {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-}
-</style>

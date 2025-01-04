@@ -147,7 +147,7 @@ const linkedEventsReady = ref(false)
           </div>
           <div class="hidden 2xl:block">
             <div>
-              <img src="~/assets/images/photos/mixup/barnight.jpg" class="w-256" />
+              <img src="~/assets/images/photos/mixup/barnight.jpg" />
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ const linkedEventsReady = ref(false)
     </section>
 
     <section class="relative bg-black">
-      <div class="bg-highlights scale-120 absolute size-full bg-cover bg-center blur-sm" />
+      <div class="c-bg-highlights absolute size-full bg-cover bg-center blur-sm" />
       <BulletPoints
         :bulletPoints="t('bulletPoints')"
         :image="imageOverviews"
@@ -197,7 +197,7 @@ const linkedEventsReady = ref(false)
 </template>
 
 <style scoped>
-.bg-highlights {
+.c-bg-highlights {
   background-image: url('~/assets/images/photos/mixup/barvisual.jpg');
 }
 </style>

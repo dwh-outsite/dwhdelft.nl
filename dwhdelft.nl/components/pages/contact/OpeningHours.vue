@@ -14,14 +14,7 @@ const openingHours = (await useAsyncData(() => queryContent('opening_hours').fin
       <div>
         <div class="flex space-x-2">
           <div>{{ event.start_time }} - {{ event.end_time }}</div>
-          <div v-if="event.restrictions">
-            <div v-for="restriction in event.restrictions" :key="restriction">
-              <div
-                class="bg-brand-200 px-2 rounded-lg text-xs uppercase tracking-wider inline-flex items-center"
-                v-text="tt(restriction)"
-              />
-            </div>
-          </div>
+          <EventRestrictionLabels :restrictions="event.restrictions" />
         </div>
         <div v-if="event.link">
           <a

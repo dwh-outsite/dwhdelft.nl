@@ -58,7 +58,9 @@ const { t } = useT()
           </a>
         </div>
       </div>
-      <div class="bg-white rounded-lg md:rounded-t-none p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0">
+      <div
+        class="bg-white rounded-lg md:rounded-t-none p-6 md:p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0"
+      >
         <div class="flex-1">
           <div class="rounded-full w-16 h-16 p-5 bg-brand-500 mb-8 text-white">
             <IconBeverage class="w-full h-full" />

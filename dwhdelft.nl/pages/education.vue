@@ -94,9 +94,7 @@ const { t } = useT()
         <p v-for="paragraph in t('content.voorlichting')" :key="paragraph" class="mb-4 text-lg" v-html="paragraph" />
       </div>
 
-      <div
-        class="flex-1 rounded-lg bg-brand-100 bg-opacity-80 p-4 shadow-xl backdrop-blur xl:ml-6 xl:mt-[-14.555vw] xl:p-8"
-      >
+      <div class="flex-1 rounded-lg bg-brand-100/80 p-4 shadow-xl backdrop-blur xl:ml-6 xl:mt-[-14.555vw] xl:p-8">
         <h2 class="mb-4 text-xl font-bold uppercase tracking-wider text-brand-500" v-text="t('titles.contact')" />
 
         <p v-for="paragraph in t('content.contact')" :key="paragraph" class="mb-4 text-lg" v-html="paragraph" />

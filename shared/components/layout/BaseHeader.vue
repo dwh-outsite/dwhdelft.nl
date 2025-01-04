@@ -45,7 +45,7 @@ const showMenu = ref(false)
         </nuxt-link>
         <div
           v-if="showMenu"
-          class="absolute top-16 z-50 w-[calc(100vw-2rem)] rounded-md bg-white bg-opacity-95 px-4 py-1 text-xl text-gray-800 shadow-xl backdrop-blur-xl lg:hidden"
+          class="absolute top-16 z-50 w-[calc(100vw-2rem)] rounded-md bg-white/95 px-4 py-1 text-xl text-gray-800 shadow-xl backdrop-blur-xl lg:hidden"
         >
           <nuxt-link
             v-for="item in menuItems"
@@ -61,13 +61,13 @@ const showMenu = ref(false)
           <slot name="mobile-menu-extension" />
         </div>
         <div
-          class="hidden rounded-full bg-white bg-opacity-10 p-1 text-lg font-semibold text-white shadow backdrop-blur-lg lg:flex"
+          class="hidden rounded-full bg-white/10 p-1 text-lg font-semibold text-white shadow backdrop-blur-lg lg:flex"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="flex items-center px-3 py-1 no-underline transition-all hover:rounded-full hover:bg-white hover:bg-opacity-90 hover:text-gray-800"
+            class="flex items-center px-3 py-1 no-underline transition-all hover:rounded-full hover:bg-white/90 hover:text-gray-800"
             :class="isActive(item.url) && 'bg-white/10 rounded-full'"
             :target="item.url.startsWith('http') ? '_blank' : undefined"
           >
@@ -76,7 +76,7 @@ const showMenu = ref(false)
           </nuxt-link>
         </div>
         <div class="flex items-center space-x-4">
-          <div class="rounded-full bg-white bg-opacity-10 p-2 shadow backdrop-blur-lg hover:bg-opacity-25">
+          <div class="rounded-full bg-white/10 p-2 shadow backdrop-blur-lg hover:bg-white/25">
             <div
               class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white"
             >
@@ -89,7 +89,7 @@ const showMenu = ref(false)
             </div>
           </div>
           <slot name="menu-extension" />
-          <div class="rounded-full bg-white bg-opacity-10 p-2 shadow backdrop-blur-lg hover:bg-opacity-25 lg:hidden">
+          <div class="rounded-full bg-white/10 p-2 shadow backdrop-blur-lg hover:bg-white/25 lg:hidden">
             <div
               class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white p-1"
               @click="showMenu = !showMenu"

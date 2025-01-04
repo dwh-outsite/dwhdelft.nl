@@ -33,6 +33,15 @@ npm run dev outsite.nl
 
 _The domain argument is actually the subdirectory. We use [Nuxt layers](https://nuxt.com/docs/getting-started/layers) to generate multiple websites from the same codebase._
 
+### Recommended development tools
+
+* [Visual Studio Code](https://code.visualstudio.com)
+  * [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+  * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
 ## Production
 
 Build the application for production:

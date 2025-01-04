@@ -33,7 +33,7 @@ const slots = useSlots()
       <slot name="header" />
     </div>
     <div :class="cn(`flex-1 flex flex-col p-6 text-lg text-gray-700`, contentClass)">
-      <div v-if="title || slots.button" class="flex justify-between items-center mb-4">
+      <div v-if="title || slots.button" class="mb-4 flex items-center justify-between">
         <div class="flex items-center space-x-4">
           <slot name="icon" />
           <div class="flex items-baseline">

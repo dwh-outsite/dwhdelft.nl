@@ -14,14 +14,14 @@ const iconClass = {
 
 <template>
   <div>
-    <div class="flex items-center mb-4">
-      <div :class="['rounded-full w-8 h-8 p-2', iconClass]">
+    <div class="mb-4 flex items-center">
+      <div :class="['size-8 rounded-full p-2', iconClass]">
         <IconEnvelope class="w-4" />
       </div>
       <div class="ml-3">{{ email }}</div>
     </div>
-    <div class="flex items-center mb-4">
-      <div :class="['rounded-full w-8 h-8 p-2', iconClass]">
+    <div class="mb-4 flex items-center">
+      <div :class="['size-8 rounded-full p-2', iconClass]">
         <IconMap class="w-4" />
       </div>
       <div class="ml-3 leading-tight">
@@ -29,8 +29,8 @@ const iconClass = {
         2611PV Delft
       </div>
     </div>
-    <div class="flex items-center mb-4">
-      <div :class="['rounded-full w-8 h-8 p-2', iconClass]">
+    <div class="mb-4 flex items-center">
+      <div :class="['size-8 rounded-full p-2', iconClass]">
         <IconBox class="w-4" />
       </div>
       <div class="ml-3 leading-tight">

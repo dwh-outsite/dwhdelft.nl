@@ -46,12 +46,12 @@ const instagramChannels = [
 
 <template>
   <LayoutHeader>
-    <h1 class="text-4xl text-white font-normal" v-text="t('hero.title')" />
+    <h1 class="text-4xl font-normal text-white" v-text="t('hero.title')" />
     <h2
-      class="text-2xl text-white mt-2 font-light md:w-2/3 lg:w-1/2 [text-shadow:0_2px_4px_rgba(0,0,0,0.35)]"
+      class="mt-2 text-2xl font-light text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.35)] md:w-2/3 lg:w-1/2"
       v-text="t('hero.subtitle')"
     />
-    <div class="mt-8 md:flex space-y-4 md:space-y-0 md:space-x-4">
+    <div class="mt-8 space-y-4 md:flex md:space-x-4 md:space-y-0">
       <a href="#join-dwh" class="block">
         <ElementsPrimaryButton>{{ t('hero.leftButton') }}</ElementsPrimaryButton>
       </a>
@@ -62,12 +62,12 @@ const instagramChannels = [
   </LayoutHeader>
 
   <section class="overflow-x-hidden">
-    <div class="container mx-auto pt-12 pb-28 md:flex">
+    <div class="container mx-auto pb-28 pt-12 md:flex">
       <div class="flex-1 px-4 lg:pr-32">
         <PagesHomeIntro />
       </div>
       <div class="hidden lg:block">
-        <div class="bg-white p-4 border rotate-[5deg] shadow-lg relative z-50 mr-8 -mt-7">
+        <div class="relative z-50 -mt-7 mr-8 rotate-[5deg] border bg-white p-4 shadow-lg">
           <img src="~/assets/images/photos/building.jpg" class="w-96" />
         </div>
       </div>
@@ -94,7 +94,7 @@ const instagramChannels = [
 
   <section class="-mt-24">
     <LayoutEmulatedSkewedSection contentClass="bg-brand-800" triangleClass="border-brand-800" :bottom="false">
-      <ElementsContainer class="pt-12 pb-16">
+      <ElementsContainer class="pb-16 pt-12">
         <PagesHomeInstagramChannels class="text-white" :brands="instagramChannels" />
       </ElementsContainer>
     </LayoutEmulatedSkewedSection>

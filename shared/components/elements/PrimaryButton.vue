@@ -17,6 +17,6 @@ defineProps({
     "
   >
     <slot />
-    <IconArrowRight v-if="arrow" class="w-3 h-3 ml-2" />
+    <IconArrowRight v-if="arrow" class="ml-2 size-3" />
   </button>
 </template>

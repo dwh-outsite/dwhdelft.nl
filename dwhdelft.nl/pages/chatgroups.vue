@@ -65,7 +65,7 @@ const chatGroupsByCategory = groupBy(
       <Markdown :content="categoryName" />
     </template>
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid gap-6 md:grid-cols-2">
       <ElementsActionCard v-for="group in chatGroupsByCategory[category]" :key="group.name" :title="group.name">
         <template #button>
           <a v-if="group.url" :href="group.url" target="_blank">

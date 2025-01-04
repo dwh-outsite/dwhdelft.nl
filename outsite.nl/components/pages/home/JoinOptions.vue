@@ -123,20 +123,20 @@ const membershipIcons = {
 </script>
 
 <template>
-  <div class="lg:flex justify-center space-y-6 lg:space-y-0 lg:space-x-4">
+  <div class="justify-center space-y-6 lg:flex lg:space-x-4 lg:space-y-0">
     <ElementsActionCard
       :title="t('membership.title')"
-      class="flex-1 fade-corners bg-brand-400"
+      class="c-fade-corners flex-1 bg-brand-400"
       contentClass="p-8"
       titleClass="text-white"
     >
       <template #icon>
         <ElementsIconCircle class="mb-6 lg:mb-0" inverted>
-          <IconCompose class="w-6 h-6 m-5" />
+          <IconCompose class="m-5 size-6" />
         </ElementsIconCircle>
       </template>
 
-      <p class="text-white text-lg lg:text-xl font-semibold mb-6" v-text="t('membership.description')" />
+      <p class="mb-6 text-lg font-semibold text-white lg:text-xl" v-text="t('membership.description')" />
 
       <a href="https://my.dwhdelft.nl/signup">
         <ElementsSecondaryButton class="text-brand-400 hover:bg-brand-100" arrow>
@@ -144,8 +144,8 @@ const membershipIcons = {
         </ElementsSecondaryButton>
       </a>
 
-      <div class="-mx-8 -mb-8 mt-6 p-8 bg-[#ffaadf]">
-        <div class="grid md:grid-cols-2 gap-4">
+      <div class="-mx-8 -mb-8 mt-6 bg-[#ffaadf] p-8">
+        <div class="grid gap-4 md:grid-cols-2">
           <ElementsActionCard
             v-for="advantage in t('membership.advantages')"
             :key="advantage.title"
@@ -156,11 +156,11 @@ const membershipIcons = {
           >
             <template #icon>
               <ElementsIconCircle>
-                <Component :is="membershipIcons[advantage.icon]" class="w-4 h-4 m-2" />
+                <Component :is="membershipIcons[advantage.icon]" class="m-2 size-4" />
               </ElementsIconCircle>
             </template>
 
-            <p class="-mt-4 pl-12 text-sm lg:text-base leading-tight" v-text="advantage.description" />
+            <p class="-mt-4 pl-12 text-sm leading-tight lg:text-base" v-text="advantage.description" />
           </ElementsActionCard>
         </div>
       </div>
@@ -170,7 +170,7 @@ const membershipIcons = {
       <ElementsActionCard :title="t('kmg.title')" contentClass="p-8">
         <template #icon>
           <ElementsIconCircle class="mb-6 lg:mb-0">
-            <IconUserGroup class="w-8 h-8 m-4" />
+            <IconUserGroup class="m-4 size-8" />
           </ElementsIconCircle>
         </template>
 
@@ -184,7 +184,7 @@ const membershipIcons = {
       <ElementsActionCard :title="t('bar_buddy.title')" contentClass="p-8">
         <template #icon>
           <ElementsIconCircle class="mb-6 lg:mb-0">
-            <IconBeverage class="w-8 h-8 m-4" />
+            <IconBeverage class="m-4 size-8" />
           </ElementsIconCircle>
         </template>
 
@@ -199,7 +199,7 @@ const membershipIcons = {
 </template>
 
 <style scoped>
-.fade-corners {
+.c-fade-corners {
   box-shadow: 0 0 20px #ffaadf;
 }
 </style>

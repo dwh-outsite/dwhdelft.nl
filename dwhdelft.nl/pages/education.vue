@@ -57,15 +57,15 @@ const { t } = useT()
           <p
             v-for="paragraph in t('content.more')"
             :key="paragraph"
-            class="text-lg first:text-2xl md:text-xl mb-4"
+            class="mb-4 text-lg first:text-2xl md:text-xl"
             v-html="paragraph"
           />
         </div>
         <div class="lg:w-1/3 xl:w-1/4">
           <nuxt-link :to="localePath('jongenout')">
             <Announcement>
-              <h2 class="font-semibold text-2xl mb-2"><Markdown :content="t('titles.jongenout')" /></h2>
-              <p class="text-base mb-4" v-html="t('content.jongenout')" />
+              <h2 class="mb-2 text-2xl font-semibold"><Markdown :content="t('titles.jongenout')" /></h2>
+              <p class="mb-4 text-base" v-html="t('content.jongenout')" />
               <ElementsSecondaryButton arrow>Lees meer</ElementsSecondaryButton>
             </Announcement>
           </nuxt-link>
@@ -88,18 +88,16 @@ const { t } = useT()
     class="bg-brand-500"
     :bottom="false"
   >
-    <ElementsContainer class="xl:flex justify-center py-12">
-      <div class="xl:w-1/2 text-white mb-12 xl:mb-0 xl:pr-6">
-        <h1 class="font-medium leading-none text-5xl mb-4" v-html="t('titles.voorlichting')" />
-        <p v-for="paragraph in t('content.voorlichting')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
+    <ElementsContainer class="justify-center py-12 xl:flex">
+      <div class="mb-12 text-white xl:mb-0 xl:w-1/2 xl:pr-6">
+        <h1 class="mb-4 text-5xl font-medium leading-none" v-html="t('titles.voorlichting')" />
+        <p v-for="paragraph in t('content.voorlichting')" :key="paragraph" class="mb-4 text-lg" v-html="paragraph" />
       </div>
 
-      <div
-        class="flex-1 bg-brand-100 bg-opacity-80 backdrop-blur p-4 xl:p-8 rounded-lg shadow-xl xl:mt-[-14.555vw] xl:ml-6"
-      >
-        <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="t('titles.contact')" />
+      <div class="flex-1 rounded-lg bg-brand-100/80 p-4 shadow-xl backdrop-blur xl:ml-6 xl:mt-[-14.555vw] xl:p-8">
+        <h2 class="mb-4 text-xl font-bold uppercase tracking-wider text-brand-500" v-text="t('titles.contact')" />
 
-        <p v-for="paragraph in t('content.contact')" :key="paragraph" class="text-lg mb-4" v-html="paragraph" />
+        <p v-for="paragraph in t('content.contact')" :key="paragraph" class="mb-4 text-lg" v-html="paragraph" />
 
         <PagesEducationForm />
       </div>

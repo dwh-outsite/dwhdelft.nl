@@ -88,7 +88,7 @@ const barBuddyOptions = Object.fromEntries(props.barBuddies.map((buddy) => [budd
       <ElementsFormTextInput v-model="form.fields.remarks" type="textarea" />
     </ElementsFormElement>
 
-    <ElementsPrimaryButton type="submit" class="block ml-auto" :disabled="form.state.value === 'loading'">
+    <ElementsPrimaryButton type="submit" class="ml-auto block" :disabled="form.state.value === 'loading'">
       {{ $t('forms.buttons.sign_up') }}
     </ElementsPrimaryButton>
   </form>

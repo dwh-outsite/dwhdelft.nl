@@ -13,6 +13,6 @@ useHead({
     :src="`//lightwidget.com/widgets/${widgetId}.html`"
     scrolling="no"
     allowtransparency="true"
-    class="lightwidget-widget w-full border-none overflow-hidden"
+    class="lightwidget-widget w-full overflow-hidden border-none"
   />
 </template>

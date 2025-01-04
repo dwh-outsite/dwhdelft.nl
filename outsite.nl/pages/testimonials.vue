@@ -28,7 +28,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
       contentClass="px-16 testimonial-bg-white-gradient-vertical"
     >
       <template #header>
-        <img :src="imageOrDefault(testimonial.title)" class="object-cover w-full h-80 md:h-full md:w-60 object-top" />
+        <img :src="imageOrDefault(testimonial.title)" class="h-80 w-full object-cover object-top md:h-full md:w-60" />
       </template>
 
       {{ testimonial[`text_${locale}`] }}

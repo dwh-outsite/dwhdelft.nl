@@ -6,9 +6,9 @@ const openingHours = (await useAsyncData(() => queryContent('opening_hours').fin
 
 <template>
   <ul class="space-y-4 leading-snug">
-    <li v-for="event in openingHours" :key="event.name" class="flex space-x-2 items-top">
+    <li v-for="event in openingHours" :key="event.name" class="items-top flex space-x-2">
       <div class="w-32">
-        <div class="uppercase font-bold tracking-wide" v-text="tt(event.day)" />
+        <div class="font-bold uppercase tracking-wide" v-text="tt(event.day)" />
         {{ event.name }}
       </div>
       <div>

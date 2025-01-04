@@ -8,10 +8,10 @@ defineProps({
 
 <template>
   <button
-    class="bg-brand-450 hover:bg-brand-300 px-6 py-3 rounded-full text-white uppercase font-semibold tracking-wider shadow-lg transition-colors"
+    class="rounded-full bg-brand-450 px-6 py-3 font-semibold uppercase tracking-wider text-white shadow-lg transition-colors hover:bg-brand-300"
     :class="arrow && 'flex items-center'"
   >
     <slot />
-    <IconArrowRight v-if="arrow" class="w-3 h-3 ml-2" />
+    <IconArrowRight v-if="arrow" class="ml-2 size-3" />
   </button>
 </template>

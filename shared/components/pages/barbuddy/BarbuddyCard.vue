@@ -23,8 +23,8 @@ const readMore = () => (expanded.value = !expanded.value)
 <template>
   <ElementsActionCard :title="buddy.name" @click="readMore()">
     <template #icon>
-      <div class="rounded-full w-12 h-12 p-3 bg-brand-450 text-white">
-        <IconUser class="w-full h-full" />
+      <div class="size-12 rounded-full bg-brand-450 p-3 text-white">
+        <IconUser class="size-full" />
       </div>
     </template>
 
@@ -32,10 +32,10 @@ const readMore = () => (expanded.value = !expanded.value)
       <span class="text-gray-500">{{ buddy.pronouns[$i18n.locale] }}</span>
     </template>
 
-    <div class="text-lg relative" :class="expanded ? 'pb-8' : 'line-clamp-4'">
-      <span class="absolute z-10 bottom-0 right-0 flex">
-        <span class="w-32 block white-gradient" />
-        <a class="text-brand-450 bg-white cursor-pointer" @click="readMore()">
+    <div class="relative text-lg" :class="expanded ? 'pb-8' : 'line-clamp-4'">
+      <span class="absolute bottom-0 right-0 z-10 flex">
+        <span class="white-gradient block w-32" />
+        <a class="cursor-pointer bg-white text-brand-450" @click="readMore()">
           {{ t(expanded ? 'read_less' : 'read_more') }}
         </a>
       </span>

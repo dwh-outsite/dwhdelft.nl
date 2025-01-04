@@ -38,64 +38,64 @@ const showMenu = ref(false)
 
 <template>
   <header id="header" :class="[small ? 'header-small' : '', 'relative bg-gray-700']">
-    <nav class="absolute z-50 w-full mt-8">
-      <ElementsContainer class="flex justify-between items-center relative">
+    <nav class="absolute z-50 mt-8 w-full">
+      <ElementsContainer class="relative flex items-center justify-between">
         <nuxt-link :to="localePath('index')">
           <slot name="logo" />
         </nuxt-link>
         <div
           v-if="showMenu"
-          class="lg:hidden absolute z-50 top-16 text-gray-800 backdrop-blur-xl bg-white bg-opacity-95 shadow-xl w-[calc(100vw-2rem)] px-4 py-1 text-xl rounded-md"
+          class="absolute top-16 z-50 w-[calc(100vw-2rem)] rounded-md bg-white bg-opacity-95 px-4 py-1 text-xl text-gray-800 shadow-xl backdrop-blur-xl lg:hidden"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="flex items-center no-underline transition-all [&:not(:last-child)]:border-b border-[#e8e8e8] py-3"
+            class="flex items-center border-[#e8e8e8] py-3 no-underline transition-all [&:not(:last-child)]:border-b"
             :class="isActive(item.url) ? 'text-brand-800 font-bold' : 'hover:text-gray-500'"
             :target="item.url.startsWith('http') ? '_blank' : undefined"
           >
             {{ item.title }}
-            <ExternalLinkIcon v-if="item.url.startsWith('http')" class="inline w-4 h-4 ml-2" />
+            <ExternalLinkIcon v-if="item.url.startsWith('http')" class="ml-2 inline size-4" />
           </nuxt-link>
           <slot name="mobile-menu-extension" />
         </div>
         <div
-          class="hidden lg:flex p-1 rounded-full text-lg font-semibold text-white backdrop-blur-lg bg-white bg-opacity-10 shadow"
+          class="hidden rounded-full bg-white bg-opacity-10 p-1 text-lg font-semibold text-white shadow backdrop-blur-lg lg:flex"
         >
           <nuxt-link
             v-for="item in menuItems"
             :key="item.url"
             :to="item.url"
-            class="flex items-center py-1 px-3 no-underline hover:bg-white hover:bg-opacity-90 hover:rounded-full hover:text-gray-800 transition-all"
+            class="flex items-center px-3 py-1 no-underline transition-all hover:rounded-full hover:bg-white hover:bg-opacity-90 hover:text-gray-800"
             :class="isActive(item.url) && 'bg-white/10 rounded-full'"
             :target="item.url.startsWith('http') ? '_blank' : undefined"
           >
             {{ item.title }}
-            <ExternalLinkIcon v-if="item.url.startsWith('http')" class="inline w-4 h-4 ml-2" />
+            <ExternalLinkIcon v-if="item.url.startsWith('http')" class="ml-2 inline size-4" />
           </nuxt-link>
         </div>
         <div class="flex items-center space-x-4">
-          <div class="p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
+          <div class="rounded-full bg-white bg-opacity-10 p-2 shadow backdrop-blur-lg hover:bg-opacity-25">
             <div
-              class="rounded-full w-7 h-7 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
+              class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white"
             >
-              <nuxt-link v-show="locale == 'nl'" :to="switchLocalePath('en')" class="block h-6 w-8 absolute">
+              <nuxt-link v-show="locale == 'nl'" :to="switchLocalePath('en')" class="absolute block h-6 w-8">
                 <GBFlag />
               </nuxt-link>
-              <nuxt-link v-show="locale == 'en'" :to="switchLocalePath('nl')" class="block h-6 w-8 absolute">
+              <nuxt-link v-show="locale == 'en'" :to="switchLocalePath('nl')" class="absolute block h-6 w-8">
                 <NLFlag />
               </nuxt-link>
             </div>
           </div>
           <slot name="menu-extension" />
-          <div class="lg:hidden p-2 rounded-full backdrop-blur-lg bg-white bg-opacity-10 hover:bg-opacity-25 shadow">
+          <div class="rounded-full bg-white bg-opacity-10 p-2 shadow backdrop-blur-lg hover:bg-opacity-25 lg:hidden">
             <div
-              class="rounded-full w-7 h-7 p-1 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
+              class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white p-1"
               @click="showMenu = !showMenu"
             >
-              <IconMenu v-show="!showMenu" class="fill-current w-full" />
-              <IconClose v-show="showMenu" class="fill-current w-full" />
+              <IconMenu v-show="!showMenu" class="w-full fill-current" />
+              <IconClose v-show="showMenu" class="w-full fill-current" />
             </div>
           </div>
         </div>
@@ -103,8 +103,8 @@ const showMenu = ref(false)
     </nav>
     <slot name="background" />
     <div class="triangle-top absolute bottom-0" :class="triangleClass ? triangleClass : 'border-white'" />
-    <div class="relative flex items-center h-full">
-      <ElementsContainer class="mt-40 mb-48">
+    <div class="relative flex h-full items-center">
+      <ElementsContainer class="mb-48 mt-40">
         <slot />
       </ElementsContainer>
     </div>

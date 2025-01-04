@@ -12,7 +12,7 @@ const slots = useSlots()
 <template>
   <section>
     <ElementsContainer v-if="title || slots.title" class="mb-6">
-      <h1 class="text-brand-500 font-medium text-5xl" :class="titleClass">
+      <h1 class="text-5xl font-medium text-brand-500" :class="titleClass">
         <slot name="title">
           {{ title }}
         </slot>

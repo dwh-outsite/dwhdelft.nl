@@ -109,18 +109,18 @@ const linkedEventsReady = ref(false)
 
     <PagesMixupLinkedEvents @ready="linkedEventsReady = true" />
 
-    <section class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
+    <section class="mx-auto bg-brand-900 pb-24 pt-12 text-lg text-white md:flex">
       <ElementsContainer>
-        <div class="flex px-4 lg:pr-32 space-x-16 lg:space-y-24">
+        <div class="flex space-x-16 px-4 lg:space-y-24 lg:pr-32">
           <div class="space-y-4">
-            <MIXUPLogo class="block md:hidden mx-auto mb-8 h-20" />
-            <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
+            <MIXUPLogo class="mx-auto mb-8 block h-20 md:hidden" />
+            <ElementsParagraphedText :paragraphs="t('intro')" class="space-y-4 md:text-xl md:leading-relaxed" />
             <div class="space-y-2">
-              <div class="flex flex-wrap justify-center items-center gap-4">
+              <div class="flex flex-wrap items-center justify-center gap-4">
                 <div class="w-full max-w-md md:w-auto">
                   <p
                     v-if="barOpeningHours.announcement"
-                    class="mt-3 mb-4 text-brand-500"
+                    class="mb-4 mt-3 text-brand-500"
                     v-text="tt(barOpeningHours.announcement)"
                   />
                   <PagesHomeInvite
@@ -129,9 +129,9 @@ const linkedEventsReady = ref(false)
                     :time="t('invite.time', [barOpeningHours.start_time])"
                   />
                 </div>
-                <MIXUPLogo class="hidden md:block h-20" />
+                <MIXUPLogo class="hidden h-20 md:block" />
               </div>
-              <div class="md:flex flex-wrap justify-center items-center md:space-x-4 space-y-4 md:space-y-0">
+              <div class="flex-wrap items-center justify-center space-y-4 md:flex md:space-x-4 md:space-y-0">
                 <a href="https://my.dwhdelft.nl/signup" class="block">
                   <ElementsSecondaryButton class="!text-brand-450" arrow>
                     {{ t('membership_button') }}
@@ -155,7 +155,7 @@ const linkedEventsReady = ref(false)
     </section>
 
     <section class="relative bg-black">
-      <div class="absolute w-full h-full bg-highlights bg-cover bg-center blur-sm scale-120" />
+      <div class="bg-highlights scale-120 absolute size-full bg-cover bg-center blur-sm" />
       <BulletPoints
         :bulletPoints="t('bulletPoints')"
         :image="imageOverviews"
@@ -165,14 +165,14 @@ const linkedEventsReady = ref(false)
       />
     </section>
 
-    <section class="bg-brand-900 pb-12 bg-gradient-to-r from-brand-900 via-brand-500/20 to-brand-900">
+    <section class="bg-brand-900 bg-gradient-to-r from-brand-900 via-brand-500/20 to-brand-900 pb-12">
       <ElementsContainer>
-        <div class="mx-auto pt-12 pb-8">
-          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">
+        <div class="mx-auto pb-8 pt-12">
+          <h1 class="mb-6 text-center text-5xl font-medium leading-tight text-white">
             <Markdown :content="t('highlights.title')" />
           </h1>
         </div>
-        <div class="grid xl:grid-cols-2 gap-6">
+        <div class="grid gap-6 xl:grid-cols-2">
           <PhotoCard
             v-for="event in t('highlights.events')"
             :key="event.title"
@@ -185,9 +185,9 @@ const linkedEventsReady = ref(false)
     </section>
 
     <LayoutStraightSection contentBackgroundClass="!bg-brand-450" contentClass="md:py-12">
-      <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">
+      <PagesHomeInstagramChannels class="mx-auto xl:w-2/3" :brands="instagramChannelsMixup">
         <template #title>
-          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">
+          <h1 class="mb-6 text-center text-5xl font-medium leading-tight text-white">
             <Markdown :content="t('instagram')" />
           </h1>
         </template>

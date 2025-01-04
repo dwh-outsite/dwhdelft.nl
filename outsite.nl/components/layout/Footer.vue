@@ -78,11 +78,11 @@ const links = [
   <div>
     <ElementsContainer class="text-white">
       <div class="md:flex">
-        <div class="md:w-2/3 md:border-r border-gray-600 py-8">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="t('boardTitle')" />
+        <div class="border-gray-600 py-8 md:w-2/3 md:border-r">
+          <h3 class="mb-4 text-xl font-bold uppercase tracking-wider" v-text="t('boardTitle')" />
 
           <div class="md:flex">
-            <div class="flex-1 grid xl:grid-cols-2 auto-rows-min gap-6">
+            <div class="grid flex-1 auto-rows-min gap-6 xl:grid-cols-2">
               <LayoutFooterBoardMember
                 v-for="member in t('board')"
                 :key="member.name"
@@ -94,14 +94,14 @@ const links = [
             <div>
               <img
                 src="~/assets/images/photos/boards/board23.png"
-                class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl mt-8 md:mx-8 md:-mt-8"
+                class="mt-8 w-full shadow-xl md:mx-8 md:-mt-8 md:h-56 md:w-auto lg:h-64 xl:h-80"
               />
             </div>
           </div>
         </div>
 
-        <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="t('contactTitle')" />
+        <div class="py-8 md:ml-4 xl:ml-10">
+          <h3 class="mb-4 text-xl font-bold uppercase tracking-wider" v-text="t('contactTitle')" />
 
           <ContactOptions email="bestuur@outsite.nl" />
 

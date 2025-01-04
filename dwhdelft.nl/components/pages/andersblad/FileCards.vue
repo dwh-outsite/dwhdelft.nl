@@ -20,7 +20,7 @@ const goToFile = (file) => {
 </script>
 
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4">
+  <div class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 lg:grid-cols-5">
     <ElementsActionCard
       v-for="file in filesForDisplay"
       :key="file.id"
@@ -32,9 +32,9 @@ const goToFile = (file) => {
       @click="goToFile(file)"
     >
       <template #header>
-        <img :src="file.thumbnailLink" class="w-full h-full object-cover" />
+        <img :src="file.thumbnailLink" class="size-full object-cover" />
       </template>
-      <p class="text-gray-600 text-base -mt-4">{{ file.publishDate }}</p>
+      <p class="-mt-4 text-base text-gray-600">{{ file.publishDate }}</p>
     </ElementsActionCard>
   </div>
 </template>

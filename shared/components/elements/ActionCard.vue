@@ -28,16 +28,16 @@ const slots = useSlots()
 </script>
 
 <template>
-  <div class="bg-white rounded-xl shadow-md overflow-hidden flex" :class="containerClass">
+  <div class="flex overflow-hidden rounded-xl bg-white shadow-md" :class="containerClass">
     <div v-if="slots.header" :class="[positionBasedHeaderClass, headerClass, clickableHeaderClass]">
       <slot name="header" />
     </div>
-    <div class="flex-1 flex flex-col p-6 text-lg text-gray-700" :class="contentClass">
-      <div v-if="title || slots.button" class="flex justify-between items-center mb-4">
+    <div class="flex flex-1 flex-col p-6 text-lg text-gray-700" :class="contentClass">
+      <div v-if="title || slots.button" class="mb-4 flex items-center justify-between">
         <div class="flex items-center space-x-4">
           <slot name="icon" />
           <div class="flex items-baseline">
-            <h2 class="text-2xl font-bold text-brand-450 uppercase tracking-wider" :class="titleClass" v-text="title" />
+            <h2 class="text-2xl font-bold uppercase tracking-wider text-brand-450" :class="titleClass" v-text="title" />
             <slot name="subtitle" />
           </div>
         </div>

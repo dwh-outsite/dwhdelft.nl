@@ -1,3 +1,5 @@
+import heropatterns from 'tailwind-heropatterns'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -45,7 +47,7 @@ export default {
     },
   },
   plugins: [
-    require('tailwind-heropatterns')({
+    heropatterns({
       // as per tailwind docs you can pass variants
       variants: [],
 

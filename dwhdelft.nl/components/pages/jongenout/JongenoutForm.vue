@@ -22,7 +22,7 @@ const form = useReMemberForm('jongenout', {
   <div v-if="form.state.value === 'success'" class="space-y-4">
     <ElementsFormSuccessMessage :title="$t('forms.success.heading')" :subtitle="t('success')" />
 
-    <a class="underline cursor-pointer block" @click="$emit('cancel')">&laquo; {{ t('cancel') }}</a>
+    <a class="block cursor-pointer underline" @click="$emit('cancel')">&laquo; {{ t('cancel') }}</a>
   </div>
 
   <form v-else ref="formElement" @submit.prevent="form.submit">
@@ -46,8 +46,8 @@ const form = useReMemberForm('jongenout', {
       <ElementsFormTextInput v-model="form.fields.phone_number" />
     </ElementsFormElement>
 
-    <div class="flex justify-between items-center mt-8">
-      <a class="underline cursor-pointer" @click="$emit('cancel')">&laquo; {{ t('cancel') }}</a>
+    <div class="mt-8 flex items-center justify-between">
+      <a class="cursor-pointer underline" @click="$emit('cancel')">&laquo; {{ t('cancel') }}</a>
       <ElementsPrimaryButton type="submit" :disabled="form.state.value === 'loading'">
         {{ $t('forms.buttons.sign_up') }}
       </ElementsPrimaryButton>

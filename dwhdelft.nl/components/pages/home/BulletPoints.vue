@@ -38,7 +38,7 @@ const requireImage = (name) => image(`bullet_${name}`)
 
 <template>
   <ElementsContainer>
-    <div class="grid xl:grid-cols-2 gap-6">
+    <div class="grid gap-6 xl:grid-cols-2">
       <PhotoCard
         v-for="point in t('bullet_points')"
         :key="point.title"

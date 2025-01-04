@@ -48,27 +48,27 @@ onMounted(() => {
 <template>
   <section
     v-if="events && events.length > 0"
-    class="bg-gray-900 py-12 md:pt-0 text-gray-200 bg-gradient-to-b from-gray-900 to-brand-500/10"
+    class="bg-gray-900 bg-gradient-to-b from-gray-900 to-brand-500/10 py-12 text-gray-200 md:pt-0"
   >
     <ElementsContainer>
-      <h1 class="text-center font-medium text-5xl mb-6">
+      <h1 class="mb-6 text-center text-5xl font-medium">
         <Markdown :content="t('events')" />
       </h1>
-      <div class="flex flex-wrap justify-center md:text-center gap-4">
+      <div class="flex flex-wrap justify-center gap-4 md:text-center">
         <div
           v-for="(event, index) in events"
           :key="index"
-          class="w-full md:w-48 p-4 bg-brand-900 rounded-lg shadow-lg flex flex-row-reverse md:flex-col"
+          class="flex w-full flex-row-reverse rounded-lg bg-brand-900 p-4 shadow-lg md:w-48 md:flex-col"
         >
           <div class="flex-1">
-            <div class="text-gray-300 uppercase tracking-wide">
+            <div class="uppercase tracking-wide text-gray-300">
               {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }} - {{ event.startTime }}
             </div>
             <div class="text-xl font-bold md:mb-4">
               {{ event.eventName }}
             </div>
           </div>
-          <div class="flex justify-center items-center min-w-16 mr-2 md:mr-0">
+          <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">
             <img :src="event.icon" alt="Event Icon" class="h-12" />
           </div>
         </div>

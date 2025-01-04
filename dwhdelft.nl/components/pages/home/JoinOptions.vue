@@ -42,15 +42,15 @@ const { t } = useT()
 </script>
 
 <template>
-  <ElementsContainer class="pt-8 md:pt-0 pb-12 md:pb-8">
-    <div class="md:flex justify-center items-start">
-      <div class="flex-1 mx-2 flex items-end pt-4 md:pt-12">
+  <ElementsContainer class="pb-12 pt-8 md:pb-8 md:pt-0">
+    <div class="items-start justify-center md:flex">
+      <div class="mx-2 flex flex-1 items-end pt-4 md:pt-12">
         <div class="text-white">
-          <h1 class="font-medium leading-none text-5xl mb-4">
+          <h1 class="mb-4 text-5xl font-medium leading-none">
             <Markdown :content="t('title')" />
           </h1>
-          <Markdown class="text-lg lg:pr-20 mb-4" :content="t('description')" darkBackground />
-          <Markdown class="text-lg lg:pr-20 mb-6" :content="t('join')" />
+          <Markdown class="mb-4 text-lg lg:pr-20" :content="t('description')" darkBackground />
+          <Markdown class="mb-6 text-lg lg:pr-20" :content="t('join')" />
           <a href="https://my.dwhdelft.nl/signup">
             <ElementsSecondaryButton class="!text-brand-600" arrow>
               {{ t('membership_button') }}
@@ -59,13 +59,13 @@ const { t } = useT()
         </div>
       </div>
       <div
-        class="bg-white rounded-lg md:rounded-t-none p-6 md:p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-0"
+        class="mx-2 mt-6 flex flex-1 flex-col justify-between rounded-lg bg-white p-6 md:mt-0 md:rounded-t-none md:p-8"
       >
         <div class="flex-1">
-          <div class="rounded-full w-16 h-16 p-5 bg-brand-500 mb-8 text-white">
-            <IconBeverage class="w-full h-full" />
+          <div class="mb-8 size-16 rounded-full bg-brand-500 p-5 text-white">
+            <IconBeverage class="size-full" />
           </div>
-          <h2 class="text-xl font-bold mb-4 text-brand-500 uppercase tracking-wider" v-text="t('bar_buddy.heading')" />
+          <h2 class="mb-4 text-xl font-bold uppercase tracking-wider text-brand-500" v-text="t('bar_buddy.heading')" />
           <p class="mb-6 text-lg" v-text="t('bar_buddy.description')" />
           <nuxt-link :to="localePath('barbuddy')">
             <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>

@@ -48,8 +48,8 @@ const instagramChannels = [
 
 <template>
   <LayoutHeader>
-    <h1 class="text-4xl text-white font-normal" v-text="t('hero.title')" />
-    <h2 class="text-2xl text-white mt-2 font-light" v-text="t('hero.subtitle')" />
+    <h1 class="text-4xl font-normal text-white" v-text="t('hero.title')" />
+    <h2 class="mt-2 text-2xl font-light text-white" v-text="t('hero.subtitle')" />
     <div class="mt-8 flex space-x-4">
       <a href="#join-outsite">
         <ElementsPrimaryButton>{{ t('hero.primaryButton') }}</ElementsPrimaryButton>
@@ -60,13 +60,13 @@ const instagramChannels = [
     </div>
   </LayoutHeader>
 
-  <section class="overflow-x-hidden overflow-y-visible pt-48 -mt-48 -mb-40">
-    <div class="container mx-auto pt-12 sm:pt-16 pb-28 md:flex md:justify-between">
-      <div class="md:w-1/2 px-4">
+  <section class="-mb-40 -mt-48 overflow-x-hidden overflow-y-visible pt-48">
+    <div class="container mx-auto pb-28 pt-12 sm:pt-16 md:flex md:justify-between">
+      <div class="px-4 md:w-1/2">
         <PagesHomeIntro />
       </div>
-      <div class="md:w-2/5 overflow-hidden md:overflow-visible relative">
-        <Panda class="relative md:absolute bottom-0 left-5 w-full rotate-[12deg]" />
+      <div class="relative overflow-hidden md:w-2/5 md:overflow-visible">
+        <Panda class="relative bottom-0 left-5 w-full rotate-12 md:absolute" />
       </div>
     </div>
   </section>
@@ -75,13 +75,13 @@ const instagramChannels = [
     <PagesHomeBulletPoints />
 
     <template #background>
-      <div class="bg-gray-400 h-full w-full">
-        <img src="~/assets/images/photos/cover.jpg" class="opacity-50 blur-sm w-full h-full object-cover" />
+      <div class="size-full bg-gray-400">
+        <img src="~/assets/images/photos/cover.jpg" class="size-full object-cover opacity-50 blur-sm" />
       </div>
     </template>
   </LayoutSkewedSectionWithImageBackground>
 
-  <section id="join-outsite" class="bg-brand-200 relative z-10 bg-hero-falling-triangles">
+  <section id="join-outsite" class="relative z-10 bg-brand-200 bg-hero-falling-triangles">
     <ElementsContainer class="py-12">
       <PagesHomeTitle :title="t('join.title')" class="text-center text-white" />
       <PagesHomeJoinOptions />
@@ -90,8 +90,8 @@ const instagramChannels = [
 
   <LayoutSkewedSection class="-mt-48">
     <ElementsContainer class="pt-48">
-      <div class="flex items-center mt-12 mb-8">
-        <h1 class="text-brand-450 font-medium text-5xl leading-none flex-1">
+      <div class="mb-8 mt-12 flex items-center">
+        <h1 class="flex-1 text-5xl font-medium leading-none text-brand-450">
           <Markdown :content="t('highlights.title')" />
         </h1>
         <nuxt-link :to="localePath('highlights')" class="hidden md:block">
@@ -105,11 +105,11 @@ const instagramChannels = [
     </ElementsContainer>
 
     <template #background>
-      <div class="bg-gray-200 h-full w-full" />
+      <div class="size-full bg-gray-200" />
     </template>
   </LayoutSkewedSection>
 
-  <section id="video" class="py-16 mb-20">
+  <section id="video" class="mb-20 py-16">
     <ElementsContainer>
       <PagesHomeTitle :title="t('video.title')" class="text-center" />
       <PagesHomeVideo />
@@ -119,7 +119,7 @@ const instagramChannels = [
   <section>
     <ElementsContainer>
       <div class="relative -mb-56 md:mb-0">
-        <div class="md:absolute w-full -mt-24">
+        <div class="-mt-24 w-full md:absolute">
           <PagesHomeTestimonials class="mx-auto" />
         </div>
       </div>
@@ -127,10 +127,10 @@ const instagramChannels = [
   </section>
 
   <LayoutEmulatedSkewedSection :bottom="false" contentClass="bg-gray-200" triangleClass="border-gray-200">
-    <ElementsContainer class="pt-48 md:pt-8 pb-8">
-      <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
+    <ElementsContainer class="pb-8 pt-48 md:pt-8">
+      <PagesHomeInstagramChannels class="mx-auto xl:w-2/3" :brands="instagramChannels">
         <template #title>
-          <h1 class="tracking-wide font-semibold uppercase text-2xl pt-6 mb-10 text-center">
+          <h1 class="mb-10 pt-6 text-center text-2xl font-semibold uppercase tracking-wide">
             {{ t('instagram.title') }}
           </h1>
         </template>

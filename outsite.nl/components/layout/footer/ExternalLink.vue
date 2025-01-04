@@ -3,8 +3,8 @@ import { IconArrowThinRight } from '@iconify-prerendered/vue-zondicons'
 </script>
 
 <template>
-  <a class="text-white font-bold flex items-center border-b border-white border-dashed">
+  <a class="flex items-center border-b border-dashed border-white font-bold text-white">
     <slot />
-    <IconArrowThinRight class="w-4 ml-1" />
+    <IconArrowThinRight class="ml-1 w-4" />
   </a>
 </template>

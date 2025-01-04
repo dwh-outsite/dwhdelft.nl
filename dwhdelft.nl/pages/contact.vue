@@ -26,14 +26,14 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
   <LayoutSmallHeader>{{ t('title') }}</LayoutSmallHeader>
 
   <section>
-    <ElementsContainer class="py-12 md:flex items-start mb-6 space-y-6 md:space-y-0">
+    <ElementsContainer class="mb-6 items-start space-y-6 py-12 md:flex md:space-y-0">
       <div class="flex-1 md:mb-0"><PagesContactForm /></div>
-      <div class="md:w-1/3 md:border-l md:pl-6 md:ml-6">
+      <div class="md:ml-6 md:w-1/3 md:border-l md:pl-6">
         <ContactOptions email="bestuur@dwhdelft.nl" :dark="true" />
         <a href="https://my.dwhdelft.nl">
           <Announcement class="xl:w-2/3">
             {{ t('my') }}
-            <span class="text-xl font-bold block">my.dwhdelft.nl</span>
+            <span class="block text-xl font-bold">my.dwhdelft.nl</span>
           </Announcement>
         </a>
       </div>
@@ -42,11 +42,11 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
 
   <LayoutEmulatedSkewedSection contentClass="bg-brand-100 py-12" triangleClass="border-brand-100">
     <ElementsContainer class="md:flex md:space-x-16">
-      <div class="md:pt-16 mb-12 md:mb-0">
-        <h2 class="font-semibold text-4xl mb-6" v-text="t('titles.opening_hours')" />
+      <div class="mb-12 md:mb-0 md:pt-16">
+        <h2 class="mb-6 text-4xl font-semibold" v-text="t('titles.opening_hours')" />
         <PagesContactOpeningHours />
       </div>
-      <div class="flex-1 md:-mt-10 pb-16 md:pb-0">
+      <div class="flex-1 pb-16 md:-mt-10 md:pb-0">
         <PagesContactMap class="rounded shadow-xl" />
       </div>
     </ElementsContainer>
@@ -58,10 +58,10 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, '_'))
     :connect="true"
     :bottom="false"
   >
-    <ElementsContainer class="pt-12 pb-4 md:pb-12">
-      <h1 class="text-white font-medium text-5xl mb-12" v-html="t('titles.board')" />
+    <ElementsContainer class="pb-4 pt-12 md:pb-12">
+      <h1 class="mb-12 text-5xl font-medium text-white" v-html="t('titles.board')" />
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+      <div class="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
         <BusinessCard
           v-for="member in boardMembers"
           :key="member.name"

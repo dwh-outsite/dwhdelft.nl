@@ -15,7 +15,7 @@ defineProps({
     :title="name"
     headerPosition="left"
     :headerClass="photo && 'bg-brand-450 md:w-36 overflow-hidden'"
-    contentClass="!text-base"
+    contentClass="text-base"
   >
     <template #header>
       <div

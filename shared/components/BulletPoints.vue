@@ -16,7 +16,7 @@ defineProps({
             <img :src="image(point.image)" class="object-cover w-full h-full" />
           </div>
         </template>
-        <p :class="descriptionClass" class="-mt-3 text-lg leading-snug" v-text="point.description" />
+        <p :class="cn('-mt-3 text-lg leading-snug', descriptionClass)" v-text="point.description" />
       </ElementsActionCard>
     </div>
   </ElementsContainer>

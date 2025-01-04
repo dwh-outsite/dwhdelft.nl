@@ -19,7 +19,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
 </script>
 
 <template>
-  <ElementsActionCard class="md:!rounded-full bg-hero-falling-triangles w-5/6 xl:w-2/3" contentClass="!p-0">
+  <ElementsActionCard class="md:rounded-full bg-hero-falling-triangles w-5/6 xl:w-2/3" contentClass="p-0">
     <Carousel :autoplay="5000" :wrapAround="true">
       <Slide v-for="testimonial in testimonials" :key="testimonial.title">
         <div class="md:flex text-left">

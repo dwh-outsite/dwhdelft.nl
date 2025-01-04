@@ -18,7 +18,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
 <template>
   <LayoutSmallHeader triangleClass="border-brand-100">{{ t('title') }}</LayoutSmallHeader>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-brand-100" contentClass="pt-8 pb-16 space-y-8">
+  <LayoutStraightSection contentBackgroundClass="bg-brand-100" contentClass="pt-8 pb-16 space-y-8">
     <ElementsActionCard
       v-for="(testimonial, index) in testimonials"
       :key="testimonial.name"

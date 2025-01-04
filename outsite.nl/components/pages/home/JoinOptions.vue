@@ -126,7 +126,7 @@ const membershipIcons = {
   <div class="lg:flex justify-center space-y-6 lg:space-y-0 lg:space-x-4">
     <ElementsActionCard
       :title="t('membership.title')"
-      class="flex-1 fade-corners !bg-brand-400"
+      class="flex-1 fade-corners bg-brand-400"
       contentClass="p-8"
       titleClass="text-white"
     >
@@ -139,7 +139,7 @@ const membershipIcons = {
       <p class="text-white text-lg lg:text-xl font-semibold mb-6" v-text="t('membership.description')" />
 
       <a href="https://my.dwhdelft.nl/signup">
-        <ElementsSecondaryButton class="!text-brand-400 hover:!bg-brand-100" arrow>
+        <ElementsSecondaryButton class="text-brand-400 hover:bg-brand-100" arrow>
           {{ t('membership.button') }}
         </ElementsSecondaryButton>
       </a>
@@ -150,8 +150,8 @@ const membershipIcons = {
             v-for="advantage in t('membership.advantages')"
             :key="advantage.title"
             :title="advantage.title"
-            class="!rounded-lg"
-            contentClass="!p-3 !pr-4"
+            class="rounded-lg"
+            contentClass="p-3 pr-4"
             titleClass="text-lg"
           >
             <template #icon>

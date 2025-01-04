@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-white rounded-lg shadow-lg p-6 text-lg flex items-center">
+  <div :class="cn('bg-white rounded-lg shadow-lg p-6 text-lg flex items-center', $attrs.class)">
     <div class="rounded-full w-16 h-16 p-3 bg-brand-500 text-white">
       <IconCheckmarkOutline class="w-10 h-10" />
     </div>

@@ -136,7 +136,7 @@ const instagramChannels = [
     </ElementsContainer>
   </section>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-[#120f82]" contentClass="md:py-12">
+  <LayoutStraightSection contentBackgroundClass="bg-[#120f82]" contentClass="md:py-12">
     <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannels">
       <template #title>
         <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('titles.instagram')" />
@@ -144,7 +144,7 @@ const instagramChannels = [
     </PagesHomeInstagramChannels>
   </LayoutStraightSection>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-[#5e4fff]">
+  <LayoutStraightSection contentBackgroundClass="bg-[#5e4fff]">
     <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('titles.team')" />
     <div class="text-center text-white text-2xl md:w-2/3 mx-auto mb-12">
       <p v-for="paragraph in t('content.team')" :key="paragraph" v-html="paragraph" />

@@ -33,7 +33,7 @@ const { data: barBuddies } = await useAsyncData(() =>
     .find()
 )
 
-const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-brand-300' : '!bg-brand-500'
+const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? 'bg-brand-300' : 'bg-brand-500'
 </script>
 
 <template>
@@ -43,7 +43,7 @@ const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-b
     <p v-text="t('description')" />
   </LayoutPageIntroText>
 
-  <LayoutStraightSection titleClass="!text-brand-450" :contentBackgroundClass="listBackgroundClass">
+  <LayoutStraightSection titleClass="text-brand-450" :contentBackgroundClass="listBackgroundClass">
     <template #title>
       <Markdown :content="t('bar_buddies_title')" />
     </template>

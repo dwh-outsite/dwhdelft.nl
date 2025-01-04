@@ -40,7 +40,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
           <p class="text-gray-500" v-text="tt(event.description)" />
           <p v-if="event.announcement" class="text-brand-500 font-semibold" v-text="tt(event.announcement)" />
           <a v-if="event.link" :href="event.link.url">
-            <ElementsPrimaryButton class="mt-6 !px-5 !py-2 text-sm font-semibold">
+            <ElementsPrimaryButton class="mt-6 px-5 py-2 text-sm font-semibold">
               {{ tt(event.link.name) }}
             </ElementsPrimaryButton>
           </a>
@@ -58,7 +58,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
         v-for="event in openingHoursMonthly"
         :key="event.name"
         :title="event.name"
-        class="!bg-brand-100"
+        class="bg-brand-100"
       >
         <template #header>
           <div class="pt-6 px-6 flex justify-between items-center">
@@ -71,7 +71,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
         </template>
 
         <template #button>
-          <ElementsPrimaryButton v-if="event.link" :href="event.link.url" class="!px-5 !py-2 text-sm font-semibold">
+          <ElementsPrimaryButton v-if="event.link" :href="event.link.url" class="px-5 py-2 text-sm font-semibold">
             {{ tt(event.link.name) }}
           </ElementsPrimaryButton>
         </template>

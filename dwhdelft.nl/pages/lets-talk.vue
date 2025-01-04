@@ -67,7 +67,7 @@ const requireImage = (name) => image(name.toLowerCase().split(' ')[0])
     <p>{{ t('outro_text') }}</p>
   </LayoutPageIntroText>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-gray-200" contentClass="grid xl:grid-cols-2 gap-8">
+  <LayoutStraightSection contentBackgroundClass="bg-gray-200" contentClass="grid xl:grid-cols-2 gap-8">
     <BusinessCard
       v-for="counsellor in counsellors"
       :key="counsellor.name"

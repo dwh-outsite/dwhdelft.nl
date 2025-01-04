@@ -133,12 +133,12 @@ const linkedEventsReady = ref(false)
               </div>
               <div class="md:flex flex-wrap justify-center items-center md:space-x-4 space-y-4 md:space-y-0">
                 <a href="https://my.dwhdelft.nl/signup" class="block">
-                  <ElementsSecondaryButton class="!text-brand-450" arrow>
+                  <ElementsSecondaryButton class="text-brand-450" arrow>
                     {{ t('membership_button') }}
                   </ElementsSecondaryButton>
                 </a>
                 <nuxt-link :to="localePath('barbuddy')" class="block">
-                  <ElementsPrimaryButton class="!text-brand-50" arrow>
+                  <ElementsPrimaryButton class="text-brand-50" arrow>
                     {{ t('barbuddy_button') }}
                   </ElementsPrimaryButton>
                 </nuxt-link>
@@ -159,7 +159,7 @@ const linkedEventsReady = ref(false)
       <BulletPoints
         :bulletPoints="t('bulletPoints')"
         :image="imageOverviews"
-        cardClass="!bg-gray-800/80 backdrop-blur-xl"
+        cardClass="bg-gray-800/80 backdrop-blur-xl"
         descriptionClass="text-gray-200"
         class="py-12"
       />
@@ -184,7 +184,7 @@ const linkedEventsReady = ref(false)
       </ElementsContainer>
     </section>
 
-    <LayoutStraightSection contentBackgroundClass="!bg-brand-450" contentClass="md:py-12">
+    <LayoutStraightSection contentBackgroundClass="bg-brand-450" contentClass="md:py-12">
       <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">
         <template #title>
           <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">

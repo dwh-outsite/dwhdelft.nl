@@ -32,7 +32,7 @@ const otherProfiles = (await useAsyncData(() => queryContent('board/other').find
         :key="profile._path"
         :title="profile.title"
         class="bg-white"
-        contentClass="!text-base"
+        contentClass="text-base"
       >
         <Markdown :content="profile" />
       </ElementsActionCard>
@@ -52,7 +52,7 @@ const otherProfiles = (await useAsyncData(() => queryContent('board/other').find
         :key="profile._path"
         :title="profile.title"
         class="bg-white"
-        contentClass="!text-base"
+        contentClass="text-base"
       >
         <Markdown :content="profile" />
       </ElementsActionCard>

@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint-check": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint-check": "eslint",
     "lint": "npm run lint-check -- --fix"
   },
   "dependencies": {
@@ -22,10 +22,9 @@
     "vue3-carousel": "^0.4.0"
   },
   "devDependencies": {
-    "@dpgradio/eslint-config-vue3": "^0.0.4",
+    "@dpgradio/eslint-config-vue3": "^1.0.0",
     "@nuxtjs/i18n": "^8.5.5",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.0",
     "g-sheets-api": "^2.2.0",
     "nuxt-svgo": "^4.0.6",
     "postcss": "^8.4.47",

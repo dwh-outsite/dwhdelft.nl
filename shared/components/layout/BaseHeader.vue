@@ -102,7 +102,7 @@ const showMenu = ref(false)
       </ElementsContainer>
     </nav>
     <slot name="background" />
-    <div :class="cn('triangle-top absolute bottom-0 border-white', triangleClass)" />
+    <div :class="cn('c-triangle-top absolute bottom-0 border-white', triangleClass)" />
     <div class="relative flex h-full items-center">
       <ElementsContainer class="mb-48 mt-40">
         <slot />

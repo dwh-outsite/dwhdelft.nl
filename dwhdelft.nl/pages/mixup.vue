@@ -103,7 +103,7 @@ const linkedEventsReady = ref(false)
 
 <template>
   <div class="mixup-colors">
-    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-875' : 'border-black'">
+    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-900' : 'border-black'">
       {{ t('title') }}
     </LayoutSmallHeader>
 
@@ -165,7 +165,7 @@ const linkedEventsReady = ref(false)
       />
     </section>
 
-    <section class="bg-brand-900 pb-12">
+    <section class="bg-brand-900 pb-12 bg-gradient-to-r from-brand-900 via-brand-500/20 to-brand-900">
       <ElementsContainer>
         <div class="mx-auto pt-12 pb-8">
           <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">

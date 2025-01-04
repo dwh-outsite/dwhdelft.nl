@@ -46,7 +46,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <section v-if="events && events.length > 0" class="bg-gray-875 py-12 md:pt-0 text-gray-200">
+  <section
+    v-if="events && events.length > 0"
+    class="bg-gray-900 py-12 md:pt-0 text-gray-200 bg-gradient-to-b from-gray-900 to-brand-500/10"
+  >
     <ElementsContainer>
       <h1 class="text-center font-medium text-5xl mb-6">
         <Markdown :content="t('events')" />

@@ -1,7 +1,6 @@
 <i18n lang="yaml">
 en:
   title: MIXUP
-  events: Our UPcoming events
   intro:
     - MIXUP is thé queer nightlife experience of Delft. We open our doors every Saturday at 22:00 and almost
       every week we are more than just a bar. Drag performances of the HAUS of 4D, the city’s best karaoke,
@@ -16,7 +15,7 @@ en:
     time: Every Saturday starting at {0}
   membership_button: Sign up now for DWH
   barbuddy_button: Find a buddy
-  instagram: Our Events and UPdates
+  instagram: MIXUP **Events** and **UPdates**
   bulletPoints:
     - title: Dance Nights
       description: We have drinks together each week and will often have a DJ to get the dance floor moving!
@@ -31,7 +30,7 @@ en:
       description: Karaoke, tastings, vinyl night or a talent show, there is a lot to do on a night at MIXUP.
       image: events-silentdisco
   highlights:
-    title: Our Highlights
+    title: Our **Highlights**
     events:
       - title: MIXUP Origin
         description: The first ever party under the MIXUP branding was MIXUP Origin, the opening party! Miss Abby OMG gave a wonderful performance and people were living!
@@ -42,7 +41,6 @@ en:
 
 nl:
   title: MIXUP
-  events: Onze UPkomende evenementen
   intro:
     - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna
       elke week zijn we meer dan alleen een bar. Drag performances van HAUS of 4D, de beste karaoke van de stad,
@@ -50,14 +48,14 @@ nl:
       klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch
       eens gewoon een bar zijn, is het heel gezellig bijkletsen en misschien een dansje wagen.
     - MIXUP wordt volledig mogelijk gemaakt door een team enthousiaste vrijwilligers van DWH. Ben je enthousiast geworden en wil je
-      bijdragen aan en onderdeel worden van een fantastische community? Wordt dan lid.
+      bijdragen aan en onderdeel worden van een fantastische community? Word dan lid.
     - Bang om alleen te komen? We kunnen je aan een barbuddy koppelen om te leren kennen, die je ook aan anderen kan voorstellen!
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
     time: Elke zaterdag vanaf {0}
   membership_button: Schrijf je nu in bij DWH
   barbuddy_button: Vind een buddy
-  instagram: Onze evenementen en UPdates
+  instagram: MIXUP **Events** en **UPdates**
   bulletPoints:
     - title: Dansavonden
       description: Elke week komen we samen voor drankjes, vaak is er zelfs een DJ om die voetjes op te bewegen!
@@ -72,7 +70,7 @@ nl:
       description: Karaoke, proeverijen, vinyl nachten of een talentenshow, er is veel te beleven op een MIXUP avond.
       image: events-silentdisco
   highlights:
-    title: Onze Hoogtepunten
+    title: Onze **Hoogtepunten**
     events:
       - title: MIXUP Oorsprong
         description: Het allereerste feestje onder de MIXUP banner was MIXUP Origin’s, het openingsfeest! Miss Abby OMG gaf ons een prachtig optreden, het feest was aan!
@@ -99,26 +97,27 @@ const instagramChannelsMixup = [
     instagram: 'mixupdelft',
   },
 ]
+
+const linkedEventsReady = ref(false)
 </script>
 
 <template>
   <div class="mixup-colors">
-    <LayoutSmallHeader triangleClass="border-gray-800">
+    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-900' : 'border-black'">
       {{ t('title') }}
     </LayoutSmallHeader>
 
-    <section>
-      <PagesMixupLinkedEvents />
-    </section>
+    <PagesMixupLinkedEvents @ready="linkedEventsReady = true" />
 
     <section class="bg-brand-900 text-white text-lg mx-auto pt-12 pb-24 md:flex">
       <ElementsContainer>
-        <div class="flex flex-1 px-4 lg:pr-32 space-x-16 lg:space-y-24">
+        <div class="flex px-4 lg:pr-32 space-x-16 lg:space-y-24">
           <div class="space-y-4">
+            <MIXUPLogo class="block md:hidden mx-auto mb-8 h-20" />
             <ElementsParagraphedText :paragraphs="t('intro')" class="md:text-xl md:leading-relaxed space-y-4" />
-            <div>
-              <div class="flex flex-1 flex-wrap justify-center items-center gap-4">
-                <div>
+            <div class="space-y-2">
+              <div class="flex flex-wrap justify-center items-center gap-4">
+                <div class="w-full max-w-md md:w-auto">
                   <p
                     v-if="barOpeningHours.announcement"
                     class="mt-3 mb-4 text-brand-500"
@@ -130,25 +129,19 @@ const instagramChannelsMixup = [
                     :time="t('invite.time', [barOpeningHours.start_time])"
                   />
                 </div>
-                <div>
-                  <MIXUPLogo class="h-20" />
-                </div>
+                <MIXUPLogo class="hidden md:block h-20" />
               </div>
-              <div class="flex flex-1 flex-wrap justify-center items-center space-x-4 mt-2">
-                <div class="m-2">
-                  <a href="https://my.dwhdelft.nl/signup">
-                    <ElementsSecondaryButton class="!text-brand-450" arrow>
-                      {{ t('membership_button') }}
-                    </ElementsSecondaryButton>
-                  </a>
-                </div>
-                <div class="m-2">
-                  <nuxt-link :to="localePath('barbuddy')">
-                    <ElementsPrimaryButton class="!text-brand-50" arrow>
-                      {{ t('barbuddy_button') }}
-                    </ElementsPrimaryButton>
-                  </nuxt-link>
-                </div>
+              <div class="md:flex flex-wrap justify-center items-center md:space-x-4 space-y-4 md:space-y-0">
+                <a href="https://my.dwhdelft.nl/signup" class="block">
+                  <ElementsSecondaryButton class="!text-brand-450" arrow>
+                    {{ t('membership_button') }}
+                  </ElementsSecondaryButton>
+                </a>
+                <nuxt-link :to="localePath('barbuddy')" class="block">
+                  <ElementsPrimaryButton class="!text-brand-50" arrow>
+                    {{ t('barbuddy_button') }}
+                  </ElementsPrimaryButton>
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -161,32 +154,32 @@ const instagramChannelsMixup = [
       </ElementsContainer>
     </section>
 
-    <section class="bg-highlights bg-cover bg-center py-10">
-      <BulletPoints :bulletPoints="t('bulletPoints')" :image="imageOverviews" :descriptionColor="'text-brand-900'" />
+    <section class="relative bg-black">
+      <div class="absolute w-full h-full bg-highlights bg-cover bg-center blur-sm scale-120" />
+      <BulletPoints
+        :bulletPoints="t('bulletPoints')"
+        :image="imageOverviews"
+        cardClass="!bg-gray-800/80 backdrop-blur-xl"
+        descriptionClass="text-gray-200"
+        class="py-12"
+      />
     </section>
 
-    <section class="bg-brand-900 pb-12">
+    <section class="bg-brand-900 pb-12 bg-gradient-to-r from-brand-900 via-brand-500/20 to-brand-900">
       <ElementsContainer>
         <div class="mx-auto pt-12 pb-8">
-          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('highlights.title')" />
+          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">
+            <Markdown :content="t('highlights.title')" />
+          </h1>
         </div>
-        <div class="grid grid-cols-[1fr_minmax(0,1280px)_1fr]">
-          <div
-            v-for="(event, index) in t('highlights.events')"
-            :key="event.name"
-            class="rounded-2xl md:rounded-full mb-6 bg-white p-4 md:flex items-center space-y-2 md:space-y-0 md:space-x-4 shadow-xl space-y-6 max-w-5xl col-start-2"
-            :class="index % 2 !== 0 ? 'ml-auto' : ''"
-          >
-            <div class="rounded-full h-32 w-32 bg-white overflow-hidden">
-              <img :src="imageOverviews(event.image)" class="object-cover h-full" />
-            </div>
-            <div class="flex-1 md:pr-8">
-              <div class="flex space-x-2 items-baseline">
-                <h3 class="text-xl text-brand-450 font-semibold" v-text="event.title" />
-              </div>
-              <p class="text-brand-900 text-lg" v-html="event.description" />
-            </div>
-          </div>
+        <div class="grid xl:grid-cols-2 gap-6">
+          <PhotoCard
+            v-for="event in t('highlights.events')"
+            :key="event.title"
+            :title="event.title"
+            :description="event.description"
+            :image="imageOverviews(event.image)"
+          />
         </div>
       </ElementsContainer>
     </section>
@@ -194,7 +187,9 @@ const instagramChannelsMixup = [
     <LayoutStraightSection contentBackgroundClass="!bg-brand-450" contentClass="md:py-12">
       <PagesHomeInstagramChannels class="xl:w-2/3 mx-auto" :brands="instagramChannelsMixup">
         <template #title>
-          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight" v-html="t('instagram')" />
+          <h1 class="text-center text-white font-medium text-5xl mb-6 leading-tight">
+            <Markdown :content="t('instagram')" />
+          </h1>
         </template>
       </PagesHomeInstagramChannels>
     </LayoutStraightSection>

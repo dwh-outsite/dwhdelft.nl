@@ -1,23 +1,10 @@
-name: ci
+name: lint
 
-on:
-  push:
-    branches:
-      - main
-      - master
-  pull_request:
-    branches:
-      - main
-      - master
+on: push
 
 jobs:
-  ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [22]
+  lint:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎
@@ -26,7 +13,8 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v4.0.3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 22
+          cache: npm
 
       - name: Install dependencies 👨🏻‍💻
         run: npm ci

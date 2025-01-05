@@ -78,15 +78,15 @@ const { image: requireImage } = useDynamicImages(import.meta.glob('~/assets/imag
 </script>
 
 <template>
-  <div class="md:flex md:space-x-16 space-y-6 md:space-y-0 -mb-8 md:mb-0">
-    <div class="md:w-1/3 md:py-12 text-center md:text-left">
-      <DWHLogo class="h-24 fill-current text-white mb-4 md:mb-10 mx-auto md:mx-0" />
-      <p class="text-white text-xl mb-4 md:mb-12">{{ t('description') }}</p>
-      <a href="https://dwhdelft.nl" class="block mx-auto">
+  <div class="-mb-8 space-y-6 md:mb-0 md:flex md:space-x-16 md:space-y-0">
+    <div class="text-center md:w-1/3 md:py-12 md:text-left">
+      <DWHLogo class="mx-auto mb-4 h-24 fill-current text-white md:mx-0 md:mb-10" />
+      <p class="mb-4 text-xl text-white md:mb-12">{{ t('description') }}</p>
+      <a href="https://dwhdelft.nl" class="mx-auto block">
         <ElementsSecondaryButton class="mx-auto md:mx-0" arrow>{{ t('more') }}</ElementsSecondaryButton>
       </a>
     </div>
-    <div class="flex-1 grid md:grid-cols-2 gap-6">
+    <div class="grid flex-1 gap-6 md:grid-cols-2">
       <ElementsActionCard
         v-for="activity in t('activities')"
         :key="activity.title"
@@ -96,9 +96,9 @@ const { image: requireImage } = useDynamicImages(import.meta.glob('~/assets/imag
         @click="goToLink(activity.link)"
       >
         <template #header>
-          <img :src="requireImage(activity.image)" class="w-full h-full object-cover" />
+          <img :src="requireImage(activity.image)" class="size-full object-cover" />
         </template>
-        <p class="-mt-3 text-gray-600 text-lg leading-snug">{{ activity.description }}</p>
+        <p class="-mt-3 text-lg leading-snug text-gray-600">{{ activity.description }}</p>
       </ElementsActionCard>
     </div>
   </div>

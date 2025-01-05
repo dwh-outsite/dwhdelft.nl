@@ -20,17 +20,17 @@ const active = ref(props.brands[0])
 <template>
   <div class="space-y-6">
     <slot name="title">
-      <div class="lg:flex justify-between space-y-4 lg:space-y-0">
-        <h1 class="font-medium text-5xl"><Markdown :content="t('title')" /></h1>
-        <div class="inline-block rounded-full bg-brand-900 p-2">
+      <div class="justify-between space-y-4 lg:flex lg:space-y-0">
+        <h1 class="text-5xl font-medium"><Markdown :content="t('title')" /></h1>
+        <div class="inline-block rounded-full bg-brand-900 p-1 md:p-2">
           <button
             v-for="brand in brands"
             :key="brand.name"
-            class="rounded-full px-4 py-2 leading-none text-lg"
+            class="rounded-full px-2.5 py-3 leading-none md:px-4 md:py-2 md:text-lg"
             :class="active.instagram === brand.instagram ? 'bg-white text-gray-800' : 'text-white'"
             @click="active = brand"
           >
-            <div class="font-semibold">{{ brand.name }}</div>
+            <div class="font-bold md:font-semibold">{{ brand.name }}</div>
             <div class="text-xs">{{ brand.subtitle[$i18n.locale] }}</div>
           </button>
         </div>

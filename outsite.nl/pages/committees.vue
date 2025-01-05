@@ -33,12 +33,12 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
   </LayoutPageIntroText>
 
   <LayoutEmulatedSkewedSection :bottom="false" contentClass="bg-brand-200 py-16" triangleClass="border-brand-200">
-    <ElementsContainer class="md:flex space-y-4 md:space-y-0 md:space-x-6">
+    <ElementsContainer class="space-y-4 md:flex md:space-x-6 md:space-y-0">
       <TabGroup>
-        <TabList class="md:w-1/4 flex md:flex-col space-x-2 md:space-x-0 md:space-y-2 whitespace-nowrap overflow-auto">
+        <TabList class="flex space-x-2 overflow-auto whitespace-nowrap md:w-1/4 md:flex-col md:space-x-0 md:space-y-2">
           <Tab v-for="committee in committees" :key="committee.name + 'tab'" v-slot="{ selected }" as="template">
             <button
-              class="block w-full rounded-lg text-left px-4 py-3 font-semibold shadow text-lg"
+              class="block w-full rounded-lg px-4 py-3 text-left text-lg font-semibold shadow"
               :class="
                 selected ? 'bg-white text-gray-800' : 'bg-brand-900/25 text-white hover:bg-white/50 hover:text-gray-800'
               "
@@ -57,7 +57,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
               headerClass="h-64 md:h-auto md:w-2/5"
             >
               <template #header>
-                <img :src="requireImage(committee.name)" class="object-cover w-full h-full" />
+                <img :src="requireImage(committee.name)" class="size-full object-cover" />
               </template>
 
               <p v-text="committee[`description_${$i18n.locale}`]" />

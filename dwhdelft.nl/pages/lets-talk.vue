@@ -61,13 +61,13 @@ const requireImage = (name) => image(name.toLowerCase().split(' ')[0])
 
   <LayoutPageIntroText>
     <p v-for="text in t('main_text')" :key="text" v-html="text" />
-    <ul class="list-disc list-inside">
+    <ul class="list-inside list-disc">
       <li v-for="text in t('task_list')" :key="text" class="mb-2" v-html="text" />
     </ul>
     <p>{{ t('outro_text') }}</p>
   </LayoutPageIntroText>
 
-  <LayoutStraightSection contentBackgroundClass="!bg-gray-200" contentClass="grid xl:grid-cols-2 gap-8">
+  <LayoutStraightSection contentBackgroundClass="bg-gray-200" contentClass="grid xl:grid-cols-2 gap-8">
     <BusinessCard
       v-for="counsellor in counsellors"
       :key="counsellor.name"

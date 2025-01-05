@@ -6,22 +6,15 @@ const openingHours = (await useAsyncData(() => queryContent('opening_hours').fin
 
 <template>
   <ul class="space-y-4 leading-snug">
-    <li v-for="event in openingHours" :key="event.name" class="flex space-x-2 items-top">
+    <li v-for="event in openingHours" :key="event.name" class="flex space-x-2">
       <div class="w-32">
-        <div class="uppercase font-bold tracking-wide" v-text="tt(event.day)" />
+        <div class="font-bold uppercase tracking-wide" v-text="tt(event.day)" />
         {{ event.name }}
       </div>
       <div>
         <div class="flex space-x-2">
           <div>{{ event.start_time }} - {{ event.end_time }}</div>
-          <div v-if="event.restrictions">
-            <div v-for="restriction in event.restrictions" :key="restriction">
-              <div
-                class="bg-brand-200 px-2 rounded-lg text-xs uppercase tracking-wider inline-flex items-center"
-                v-text="tt(restriction)"
-              />
-            </div>
-          </div>
+          <EventRestrictionLabels :restrictions="event.restrictions" />
         </div>
         <div v-if="event.link">
           <a

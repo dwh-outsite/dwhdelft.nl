@@ -15,23 +15,23 @@ defineProps({
     :title="name"
     headerPosition="left"
     :headerClass="photo && 'bg-brand-450 md:w-36 overflow-hidden'"
-    contentClass="!text-base"
+    contentClass="text-base"
   >
     <template #header>
       <div
         v-if="photo"
-        class="w-32 md:w-full h-32 md:h-full rounded-full md:rounded-none overflow-hidden mx-auto my-4 md:my-0 border-4 md:border-0 border-white"
+        class="mx-auto my-4 size-32 overflow-hidden rounded-full border-4 border-white md:my-0 md:size-full md:rounded-none md:border-0"
       >
-        <img :src="photo" class="object-cover h-full w-full" />
+        <img :src="photo" class="size-full object-cover" />
       </div>
     </template>
     <template #subtitle>
-      <div class="text-gray-500 ml-2">{{ pronouns }}</div>
+      <div class="ml-2 text-gray-500">{{ pronouns }}</div>
     </template>
 
-    <div v-if="role" class="text-gray-600 -mt-4 mb-8">{{ role }}</div>
+    <div v-if="role" class="-mt-4 mb-8 text-gray-600">{{ role }}</div>
 
-    <div v-if="$slots.bio" class="text-gray-500 text-sm -mt-6 mb-4">
+    <div v-if="$slots.bio" class="-mt-6 mb-4 text-sm text-gray-500">
       <slot name="bio" />
     </div>
 

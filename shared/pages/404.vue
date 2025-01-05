@@ -5,15 +5,15 @@ const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
-  <div class="bg-white h-full w-screen">
-    <ElementsContainer class="md:flex justify-center flex-row-reverse items-center py-12">
+  <div class="h-full w-screen bg-white">
+    <ElementsContainer class="flex-row-reverse items-center justify-center py-12 md:flex">
       <div>
-        <h2 class="font-semibold text-4xl mb-6">Oops, there's nothing here!</h2>
+        <h2 class="mb-6 text-4xl font-semibold">Oops, there's nothing here!</h2>
         <ElementsPrimaryButton class="block" @click="handleError">
           &laquo; Go back to the homepage
         </ElementsPrimaryButton>
       </div>
-      <SadPanda class="h-64 m-4 block" />
+      <SadPanda class="m-4 block h-64" />
     </ElementsContainer>
   </div>
 </template>

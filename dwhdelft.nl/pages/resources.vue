@@ -94,22 +94,22 @@ const { t } = useT()
   </LayoutSmallHeader>
 
   <section>
-    <ElementsContainer class="py-8 lg:flex lg:space-x-12 space-y-6 lg:space-y-0">
+    <ElementsContainer class="space-y-6 py-8 lg:flex lg:space-x-12 lg:space-y-0">
       <div class="flex-1">
         <Markdown v-for="paragraph in t('content.intro')" :key="paragraph" :content="paragraph" class="text-2xl" />
 
-        <h2 class="font-medium text-5xl mt-12 mb-6 leading-tight" v-html="t('titles.local')" />
+        <h2 class="mb-6 mt-12 text-5xl font-medium leading-tight" v-html="t('titles.local')" />
         <Markdown
           v-for="paragraph in t('content.local')"
           :key="paragraph"
-          class="text-lg lg:text-xl lg:leading-relaxed text-gray-800 mb-4"
+          class="mb-4 text-lg text-gray-800 lg:text-xl lg:leading-relaxed"
           :content="paragraph"
         />
         <PagesResourcesPurpleFriday />
       </div>
       <div class="lg:w-1/4">
         <Announcement>
-          <h2 class="font-semibold text-4xl mb-2" v-html="t('titles.allies')" />
+          <h2 class="mb-2 text-4xl font-semibold" v-html="t('titles.allies')" />
           <div class="space-y-4">
             <Markdown v-for="paragraph in t('content.allies')" :key="paragraph" :content="paragraph" />
           </div>
@@ -120,7 +120,7 @@ const { t } = useT()
 
   <LayoutStraightSection>
     <div class="space-y-6">
-      <div class="lg:flex lg:space-x-6 space-y-6 lg:space-y-0">
+      <div class="space-y-6 lg:flex lg:space-x-6 lg:space-y-0">
         <div class="flex-1 space-y-6">
           <ElementsActionCard :title="t('titles.trans')">
             <Markdown v-for="paragraph in t('content.trans')" :key="paragraph" :content="paragraph" />

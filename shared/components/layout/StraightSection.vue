@@ -12,14 +12,14 @@ const slots = useSlots()
 <template>
   <section>
     <ElementsContainer v-if="title || slots.title" class="mb-6">
-      <h1 class="text-brand-500 font-medium text-5xl" :class="titleClass">
+      <h1 :class="cn(`text-brand-500 font-medium text-5xl`, titleClass)">
         <slot name="title">
           {{ title }}
         </slot>
       </h1>
     </ElementsContainer>
-    <div class="bg-brand-500" :class="contentBackgroundClass">
-      <ElementsContainer class="py-8" :class="contentClass">
+    <div :class="cn(`bg-brand-500`, contentBackgroundClass)">
+      <ElementsContainer :class="cn(`py-8`, contentClass)">
         <slot />
       </ElementsContainer>
     </div>

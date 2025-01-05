@@ -42,21 +42,21 @@ const menu = t('menu')
       <OutsiteLogo class="h-16 fill-current text-white" />
     </template>
     <template #mobile-menu-extension>
-      <a href="https://dwhdelft.nl" class="flex justify-between items-center space-x-2 py-3 hover:text-gray-500">
+      <a href="https://dwhdelft.nl" class="flex items-center justify-between space-x-2 py-3 hover:text-gray-500">
         <div class="flex items-center space-x-2">
           <span>{{ t('goto') }}</span>
           <DWHLogo class="h-8 fill-current" />
         </div>
-        <IconArrowRight class="w-4 h-4" />
+        <IconArrowRight class="size-4" />
       </a>
     </template>
     <template #menu-extension>
-      <a href="https://dwhdelft.nl" class="hidden md:block text-white">
+      <a href="https://dwhdelft.nl" class="hidden text-white md:block">
         <DWHLogo class="h-8 fill-current" />
       </a>
     </template>
     <template #background>
-      <div class="absolute top-0 bottom-0 w-full h-full overflow-hidden">
+      <div class="absolute inset-y-0 size-full overflow-hidden">
         <video id="headervid" preload="metadata" autoplay muted loop class="opacity-50 blur-sm">
           <source src="../../assets/images/layout/outsite_web_bg.mp4" type="video/mp4" />
         </video>

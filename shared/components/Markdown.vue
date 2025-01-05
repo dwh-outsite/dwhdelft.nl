@@ -24,7 +24,11 @@ if (props.content?._type === 'markdown') {
 </script>
 
 <template>
-  <ContentRendererMarkdown :value="renderableContent" class="content" :class="{ 'dark-background': darkBackground }" />
+  <ContentRendererMarkdown
+    :value="renderableContent"
+    class="content"
+    :class="{ 'c-dark-background': darkBackground }"
+  />
 </template>
 
 <style>
@@ -74,7 +78,7 @@ if (props.content?._type === 'markdown') {
   @apply text-brand-800 underline;
 }
 
-.content.dark-background p a {
+.content.c-dark-background p a {
   @apply text-white font-bold;
 }
 

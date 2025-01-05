@@ -1,10 +1,10 @@
 <template>
   <section>
-    <div class="-skew-y-7 origin-bottom-left">
-      <div class="absolute top-0 w-full h-full">
+    <div class="origin-bottom-left -skew-y-7">
+      <div class="absolute top-0 size-full">
         <slot name="background" />
       </div>
-      <div class="skew-y-7 origin-bottom-left">
+      <div class="origin-bottom-left skew-y-7">
         <div class="relative z-10">
           <slot />
         </div>

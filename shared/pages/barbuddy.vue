@@ -33,7 +33,7 @@ const { data: barBuddies } = await useAsyncData(() =>
     .find()
 )
 
-const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-brand-300' : '!bg-brand-500'
+const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? 'bg-brand-300' : 'bg-brand-500'
 </script>
 
 <template>
@@ -43,12 +43,12 @@ const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-b
     <p v-text="t('description')" />
   </LayoutPageIntroText>
 
-  <LayoutStraightSection titleClass="!text-brand-450" :contentBackgroundClass="listBackgroundClass">
+  <LayoutStraightSection titleClass="text-brand-450" :contentBackgroundClass="listBackgroundClass">
     <template #title>
       <Markdown :content="t('bar_buddies_title')" />
     </template>
 
-    <div class="grid md:grid-cols-2 gap-4">
+    <div class="grid gap-4 md:grid-cols-2">
       <div v-for="buddy in barBuddies" :key="buddy.name">
         <PagesBarbuddyCard :buddy="buddy" />
       </div>
@@ -56,10 +56,10 @@ const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? '!bg-b
   </LayoutStraightSection>
 
   <LayoutStraightSection contentBackgroundClass="bg-gray-200" contentClass="pt-12 pb-20">
-    <h2 class="tracking-wide font-semibold uppercase text-2xl mx-2 text-center">
+    <h2 class="mx-2 text-center text-2xl font-semibold uppercase tracking-wide">
       {{ t('sign_up') }}
     </h2>
-    <div class="md:w-2/3 mt-8 mx-auto">
+    <div class="mx-auto mt-8 md:w-2/3">
       <PagesBarbuddyForm :barBuddies="barBuddies" />
     </div>
   </LayoutStraightSection>

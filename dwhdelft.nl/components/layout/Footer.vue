@@ -1,5 +1,5 @@
 <script setup>
-import { IconLink } from '@iconify-prerendered/vue-zondicons'
+import ExternalLinkIcon from '#shared/assets/images/layout/heroicon_external_link.svg'
 import InstagramIcon from '#shared/assets/images/social/instagram.svg'
 import YouTubeIcon from '#shared/assets/images/social/youtube.svg'
 import GitHubIcon from '#shared/assets/images/social/github.svg'
@@ -28,19 +28,19 @@ const links = linkCategories.map((category) => ({
 </script>
 
 <template>
-  <ElementsContainer class="text-white py-8 md:flex space-y-8 md:space-y-0 md:space-x-8 xl:space-x-16 justify-center">
+  <ElementsContainer class="justify-center space-y-8 py-8 text-white md:flex md:space-x-8 md:space-y-0 xl:space-x-16">
     <div v-for="category in links" :key="category.name">
-      <h3 class="text-xl text-gray-300 font-bold mb-4 uppercase tracking-wider" v-text="tt(category.name)" />
+      <h3 class="mb-4 text-xl font-bold uppercase tracking-wider text-gray-300" v-text="tt(category.name)" />
       <div class="space-y-2">
         <nuxt-link
           v-for="{ url, name, external } in category.items"
           :key="url"
           :to="url"
-          class="font-semibold block items-center text-gray-400 hover:text-white"
+          class="block items-center font-semibold text-gray-400 hover:text-white"
           :target="external ? '_blank' : '_self'"
         >
           {{ tt(name) }}
-          <IconLink v-if="external" class="inline w-4 ml-1" />
+          <ExternalLinkIcon v-if="external" class="ml-1 inline w-4" />
         </nuxt-link>
       </div>
     </div>

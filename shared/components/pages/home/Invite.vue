@@ -9,12 +9,12 @@ defineProps({
 
 <template>
   <div
-    class="flex-1 rounded-lg shadow-xl bg-brand-450 text-lg md:text-xl text-white p-4 relative w-full z-20 md:w-auto md:inline-flex items-center"
+    class="relative z-20 w-full flex-1 items-center rounded-lg bg-brand-450 p-4 text-lg text-white shadow-xl md:inline-flex md:w-auto md:text-xl"
   >
-    <div class="rounded-full w-16 h-16 p-4 bg-white text-brand-450 shadow md:shadow-none absolute -top-8 md:static">
-      <IconExplore class="fill-current w-full h-full" />
+    <div class="absolute -top-8 size-16 rounded-full bg-white p-4 text-brand-450 shadow md:static md:shadow-none">
+      <IconExplore class="size-full fill-current" />
     </div>
-    <div class="pt-6 md:pt-0 md:pl-4">
+    <div class="pt-6 md:pl-4 md:pt-0">
       <p>{{ announcement }}</p>
       <p class="font-bold">{{ time }}</p>
     </div>

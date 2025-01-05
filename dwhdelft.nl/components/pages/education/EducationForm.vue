@@ -21,7 +21,7 @@ const form = useReMemberForm('education', {
   <div>
     <ElementsFormSuccessMessage
       v-if="form.state.value === 'success'"
-      class="!bg-brand-100"
+      class="bg-brand-100"
       :title="$t('forms.success.heading')"
       :subtitle="t('form_success')"
     />

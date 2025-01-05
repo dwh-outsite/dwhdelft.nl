@@ -1,3 +1,4 @@
+<!-- eslint-disable tailwindcss/no-custom-classname -->
 <script setup>
 defineProps({
   widgetId: { type: String, required: true },
@@ -9,10 +10,11 @@ useHead({
 </script>
 
 <template>
+  <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
   <iframe
     :src="`//lightwidget.com/widgets/${widgetId}.html`"
     scrolling="no"
     allowtransparency="true"
-    class="lightwidget-widget w-full border-none overflow-hidden"
+    class="w-full overflow-hidden border-none"
   />
 </template>

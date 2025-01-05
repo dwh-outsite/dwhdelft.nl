@@ -32,19 +32,19 @@ const activeFaculty = computed(() => faculties.value[active.value])
           {{ t('subtitle') }}
         </div>
         <div class="text-2xl">
-          <div class="lg:w-[36rem] xl:w-[44rem] pt-6">
+          <div class="pt-6 lg:w-[36rem] xl:w-[44rem]">
             <div class="flex space-x-2 overflow-auto whitespace-nowrap">
               <div
                 v-for="(faculty, index) in faculties"
                 :key="faculty.name"
                 :class="index === active ? 'bg-brand-800' : 'bg-brand-500 cursor-pointer hover:bg-brand-400'"
-                class="text-white rounded-t-lg p-4 font-semibold tracking-wide z-20 relative"
+                class="relative z-20 rounded-t-lg p-4 font-semibold tracking-wide text-white"
                 @click="active = index"
               >
                 {{ faculty.name }}
               </div>
             </div>
-            <div class="flex-1 bg-brand-800 text-white rounded-b-lg shadow-lg p-6 space-y-2 text-lg">
+            <div class="flex-1 space-y-2 rounded-b-lg bg-brand-800 p-6 text-lg text-white shadow-lg">
               <h2 class="text-2xl font-bold uppercase tracking-wider">
                 {{ activeFaculty.full_name }}
               </h2>

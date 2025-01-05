@@ -8,9 +8,9 @@ const { locale } = useT()
   <section v-if="locale == 'en'" class="flex justify-center">
     <Announcement class="flex items-center space-x-2">
       <div
-        class="rounded-full w-7 h-7 bg-white border-2 border-white flex items-center justify-center overflow-hidden relative"
+        class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white"
       >
-        <GBFlag class="block h-6 w-8 absolute" />
+        <GBFlag class="absolute block h-6 w-8" />
       </div>
       <div class="text-lg font-semibold text-white">This page is only available in Dutch.</div>
     </Announcement>

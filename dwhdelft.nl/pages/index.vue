@@ -55,7 +55,7 @@ const instagramChannels = [
       <a href="#join-dwh" class="block">
         <ElementsPrimaryButton>{{ t('hero.leftButton') }}</ElementsPrimaryButton>
       </a>
-      <a href="#recurring_events" class="block">
+      <a href="#recurring-events" class="block">
         <ElementsSecondaryButton>{{ t('hero.rightButton') }}</ElementsSecondaryButton>
       </a>
     </div>
@@ -88,7 +88,7 @@ const instagramChannels = [
     <PagesHomeJoinOptions />
   </section>
 
-  <section id="recurring_events" class="bg-white">
+  <section id="recurring-events" class="bg-white">
     <PagesHomeRecurringEvents />
   </section>
 

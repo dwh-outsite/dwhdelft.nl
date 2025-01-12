@@ -13,22 +13,22 @@ The app makes heavy use of [Vue.js](https://vuejs.org/) and [Tailwind CSS](https
 ## Requirements
 
 * [Node.js 22](https://nodejs.org/en)
-* NPM
+* [pnpm](https://pnpm.io)
 
 ## Build Setup
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Development
 
 ```bash
-npm run dev <domain>
+pnpm run dev <domain>
 
 # For example:
-npm run dev dwhdelft.nl
-npm run dev outsite.nl
+pnpm run dev dwhdelft.nl
+pnpm run dev outsite.nl
 ```
 
 _The domain argument is actually the subdirectory. We use [Nuxt layers](https://nuxt.com/docs/getting-started/layers) to generate multiple websites from the same codebase._
@@ -47,13 +47,13 @@ _The domain argument is actually the subdirectory. We use [Nuxt layers](https://
 Build the application for production:
 
 ```bash
-npm run build <domain>
+pnpm run build <domain>
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview <domain>
+pnpm run preview <domain>
 ```
 
 Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

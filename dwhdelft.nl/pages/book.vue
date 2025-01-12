@@ -59,7 +59,7 @@ onMounted(() => {
       </div>
 
       <div class="lg:w-1/2">
-        <iframe class="w-full lg:-mt-72" src="http://localhost:5173" />
+        <iframe class="w-full lg:-mt-72" src="https://dwh-bookings.web.app/" />
       </div>
     </ElementsContainer>
   </section>

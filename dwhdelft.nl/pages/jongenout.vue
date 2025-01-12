@@ -45,6 +45,10 @@ nl:
       pronouns: zij/haar of hen/hun
       description:
         - 'Yoyo, ik ben Mo! Op het moment ben ik een van de J&O begeleiders in Delft! Ik vind het heel leuk om van alles en nog wat te organiseren! Ik kijk dus nu al uit naar de volgende activiteit. Zie ik je dan?'
+    - name: Niamh
+      pronouns: zij/haar
+      description:
+        - 'Hey! Ik ben Niamh. Voor mij was Jong & Out de allereerste plek waar ik écht mezelf kon zijn en mijn queerness in alle vrijheid kon verkennen. Als begeleider hoop ik dit andere jongeren ook te geven.'
 </i18n>
 
 <script setup>

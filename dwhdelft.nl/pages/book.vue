@@ -29,27 +29,37 @@ import { IconInformationOutline } from '@iconify-prerendered/vue-zondicons'
 const { t } = useT()
 
 const route = useRoute()
+
+onMounted(() => {
+  window.addEventListener('message', (event) => {
+    if (event.data.source === 'size_alert') {
+      const asd = document.querySelector('iframe')
+      asd.height = event.data.height
+      asd.width = event.data.width
+    }
+  })
+})
 </script>
 
 <template>
   <LayoutSmallHeader bg="bg-brand-450">{{ t('title') }}</LayoutSmallHeader>
 
-  <section class="bg-brand-450 relative">
-    <ElementsContainer class="lg:flex py-8">
+  <section class="relative bg-brand-450">
+    <ElementsContainer class="py-8 lg:flex">
       <div class="flex-1 lg:pr-16">
-        <div v-if="route.query.canceled" class="bg-brand-100 rounded p-4 text-lg flex items-center mb-6 space-x-4">
+        <div v-if="route.query.canceled" class="mb-6 flex items-center space-x-4 rounded bg-brand-100 p-4 text-lg">
           <ElementsIconCircle class="p-5">
-            <IconInformationOutline class="w-6 h-6" />
+            <IconInformationOutline class="size-6" />
           </ElementsIconCircle>
           <h4 class="text-xl leading-tight" v-text="t('canceled')" />
         </div>
 
-        <h1 class="text-6xl text-white font-bold mb-6" v-text="t('intro.title')" />
+        <h1 class="mb-6 text-6xl font-bold text-white" v-text="t('intro.title')" />
         <p class="text-lg leading-normal text-white" v-text="t('intro.body')" />
       </div>
 
       <div class="lg:w-1/2">
-        <PagesBookForm class="lg:-mt-72" />
+        <iframe class="w-full lg:-mt-72" src="http://localhost:5173" />
       </div>
     </ElementsContainer>
   </section>

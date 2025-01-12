@@ -20,20 +20,13 @@ nl:
 </i18n>
 
 <script setup>
-const { t, locale } = useT()
+const { t } = useT()
 
 const runtimeConfig = useRuntimeConfig()
 
-const { data: barBuddies } = await useAsyncData(() =>
-  queryContent('barbuddies')
-    .where({
-      sites: { $contains: runtimeConfig.public.domain },
-      [locale.value]: { $type: 'string' },
-    })
-    .find()
-)
+const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies').find())
 
-const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? 'bg-brand-300' : 'bg-brand-500'
+const listBackgroundClass = runtimeConfig.public.domain === 'outsite.nl' ? 'bg-brand-300' : 'bg-brand-500'
 </script>
 
 <template>
@@ -49,7 +42,12 @@ const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? 'bg-br
     </template>
 
     <div class="grid gap-4 md:grid-cols-2">
-      <div v-for="buddy in barBuddies" :key="buddy.name">
+      <div
+        v-for="buddy in barBuddies.filter(
+          (b) => b.sites.indexOf(runtimeConfig.public.domain) !== -1 && b[$i18n.locale]
+        )"
+        :key="buddy.name"
+      >
         <PagesBarbuddyCard :buddy="buddy" />
       </div>
     </div>
@@ -60,7 +58,9 @@ const listBackgroundClass = runtimeConfig.public.domain == 'outsite.nl' ? 'bg-br
       {{ t('sign_up') }}
     </h2>
     <div class="mx-auto mt-8 md:w-2/3">
-      <PagesBarbuddyForm :barBuddies="barBuddies" />
+      <PagesBarbuddyForm
+        :barBuddies="barBuddies.filter((b) => b.sites.indexOf(runtimeConfig.public.domain) !== -1 && b[$i18n.locale])"
+      />
     </div>
   </LayoutStraightSection>
 </template>

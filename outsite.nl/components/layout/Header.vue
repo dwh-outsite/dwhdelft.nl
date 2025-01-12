@@ -9,6 +9,8 @@ en:
       url: committees
     - title: Testimonials
       url: testimonials
+    - title: EatingOUT
+      url: 'https://dwhdelft.nl/book'
     - title: Contact
       url: '#contact'
   goto: Go to
@@ -22,6 +24,8 @@ nl:
       url: committees
     - title: Ervaringen
       url: testimonials
+    - title: EatingOUT
+      url: 'https://dwhdelft.nl/book'
     - title: Contact
       url: '#contact'
   goto: Ga naar

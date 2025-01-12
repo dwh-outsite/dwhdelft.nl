@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-gray-700 antialiased;
+
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.dwh-colors {
+  --color-brand-50: 253 242 248;
+  --color-brand-100: 250 245 255;
+  --color-brand-200: 233 216 253;
+  --color-brand-300: 214 188 250;
+  --color-brand-400: 183 148 244;
+  --color-brand-450: 159 122 234;
+  --color-brand-500: 159 122 234;
+  --color-brand-600: 128 90 213;
+  --color-brand-700: 107 70 193;
+  --color-brand-800: 85 60 154;
+  --color-brand-900: 68 51 122;
+}
+
+.outsite-colors {
+  --color-brand-50: 252 242 248;
+  --color-brand-100: 255 228 244;
+  --color-brand-200: 255 154 216;
+  --color-brand-300: 249 168 212;
+  --color-brand-350: 249 168 212;
+  --color-brand-400: 252 102 194;
+  --color-brand-450: 252 102 194;
+  --color-brand-500: 236 72 153;
+  --color-brand-600: 219 39 119;
+  --color-brand-700: 190 24 93;
+  --color-brand-800: 157 23 77;
+  --color-brand-900: 131 24 67;
+}
+
+.mixup-colors {
+  --color-brand-50: 253 230 243;
+  --color-brand-100: 254 204 231;
+  --color-brand-200: 254 163 210;
+  --color-brand-300: 253 105 179;
+  --color-brand-350: 247 61 151;
+  --color-brand-400: 231 29 115;
+  --color-brand-450: 231 29 115;
+  --color-brand-500: 201 13 88;
+  --color-brand-600: 166 14 72;
+  --color-brand-700: 138 17 64;
+  --color-brand-800: 138 17 64;
+  --color-brand-900: 10 9 16;
+}

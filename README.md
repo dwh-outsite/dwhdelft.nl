@@ -1,49 +1,59 @@
-# 🌈 Website of DWH
+# 🌈 Websites of DWH
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/267389a7-6a04-4d23-85c1-0956dfd672a1/deploy-status)](https://app.netlify.com/sites/dwh/deploys)
+## Setup
 
-DWH is the independent LGBT+ association of Delft and surroundings. 
+DWH is the independent LGBT+ association of Delft and surroundings.
 We're two things: a meeting place for LGBT+ people and their friends and a group that actively
 pushes for greater LGBT+ rights and acceptance.
 
-The website is a (statically generated) [Nuxt.js](https://nuxtjs.org) app hosted on [Netlify](https://netlify.com).
+The website is a (statically generated) [Nuxt.js](https://nuxtjs.org) app hosted on [Cloudflare](https://cloudflare.com).
 The app makes heavy use of [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 
-## Node version
-Compatible node versions: `(^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0)`.
+## Requirements
 
-We recommend node v16.
-
-For node v17 and up, a [ERR_OSSL_EVP_UNSUPPORTED error](https://stackoverflow.com/questions/69394632/webpack-build-failing-with-err-ossl-evp-unsupported) can arrise. To surpress this, switch to an older version (node v16), or set `NODE_OPTIONS=--openssl-legacy-provider` in your .zshrc.
+* [Node.js 22](https://nodejs.org/en)
+* NPM
 
 ## Build Setup
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+npm install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development
 
-## Page Types
+```bash
+npm run dev <domain>
 
-The "easier" pages are Markdown based and can be found in `content/pages`.
-There are multiple layouts available for these pages.
-The markdown pages can make use of components from `components/globals`.
-See [the documentation of Nuxt Content](https://content.nuxtjs.org/writing) for further details.
+# For example:
+npm run dev dwhdelft.nl
+npm run dev outsite.nl
+```
 
-The more complex pages of the website live in the `pages/` directory and are Vue components,
-supported by the components in `components/`.
-When these pages have content-heavy elements, their content usually comes from markdown files in the
-`content/` directory.
+_The domain argument is actually the subdirectory. We use [Nuxt layers](https://nuxt.com/docs/getting-started/layers) to generate multiple websites from the same codebase._
+
+### Recommended development tools
+
+* [Visual Studio Code](https://code.visualstudio.com)
+  * [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+  * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build <domain>
+```
+
+Locally preview production build:
+
+```bash
+npm run preview <domain>
+```
+
+Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

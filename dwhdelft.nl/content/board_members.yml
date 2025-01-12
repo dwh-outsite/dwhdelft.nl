@@ -1,0 +1,37 @@
+board:
+
+  - name: Laurens Weijs
+    description:
+      nl: Voorzitter
+      en: President
+    pronouns:
+      nl: hij/hem
+      en: he/him
+    email: voorzitter@dwhdelft.nl
+
+  - name: Vanadie
+    description:
+      nl: Secretaris
+      en: Secretary
+    pronouns:
+      nl: die/diens
+      en: they/them
+    email: secretaris@dwhdelft.nl
+
+  - name: Dries Stuij
+    description:
+      nl: Penningmeester
+      en: Treasurer
+    pronouns:
+      nl: hij/hem
+      en: he/him
+    email: penningmeester@dwhdelft.nl
+
+  - name: Thomas Smits
+    description:
+      nl: Algemeen Bestuurslid
+      en: Board Member
+    pronouns:
+      nl: hij/hem
+      en: he/him
+    email: thomas.smits@dwhdelft.nl

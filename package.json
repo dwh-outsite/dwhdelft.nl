@@ -1,47 +1,40 @@
 {
-  "name": "@dwh-sites/base",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
-  "workspaces": [
-    "sites/*"
-  ],
+  "type": "module",
   "scripts": {
-    "dev": "node cli.js dev",
-    "build": "node cli.js build",
-    "start": "node cli.js start",
-    "generate": "node cli.js generate",
-    "production": "node cli.js production",
-    "lint-fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint-check": "eslint",
+    "lint": "npm run lint-check -- --fix"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/i18n": "^7.3.1",
-    "@nuxtjs/svg": "^0.4.0",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "dayjs": "^1.11.0",
-    "nuxt": "^2.16.1",
-    "tailwind-heropatterns": "^0.0.8",
-    "tailwindcss-aspect-ratio": "^3.0.0",
-    "vue-zondicons": "^0.1.10"
+    "@headlessui/vue": "^1.7.23",
+    "@iconify-prerendered/vue-zondicons": "^0.23.1722796219",
+    "@nuxt/content": "^2.13.4",
+    "clsx": "^2.1.1",
+    "nuxt": "^3.13.2",
+    "nuxt-content-assets": "^1.4.4",
+    "tailwind-merge": "^2.6.0",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
+    "vue3-carousel": "^0.4.0"
   },
   "devDependencies": {
-    "@aceforth/nuxt-netlify": "^1.1.0",
-    "@babel/eslint-parser": "^7.19.1",
-    "@nuxtjs/eslint-config": "^12.0.0",
-    "@nuxtjs/eslint-module": "^3.1.0",
-    "@nuxtjs/tailwindcss": "^6.4.1",
-    "commander": "^10.0.0",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "inquirer": "^8.2.1",
-    "prettier": "^2.8.4"
+    "@dpgradio/eslint-config-vue3": "^1.0.0",
+    "@nuxtjs/i18n": "^8.5.5",
+    "autoprefixer": "^10.4.20",
+    "eslint-plugin-tailwindcss": "^3.17.5",
+    "g-sheets-api": "^2.2.0",
+    "nuxt-svgo": "^4.0.6",
+    "postcss": "^8.4.47",
+    "tailwind-heropatterns": "^0.0.8",
+    "tailwindcss": "^3.4.14"
   },
-  "resolutions": {
-    "@nuxt/kit": "3.0.0-rc.13"
+  "imports": {
+    "#shared/*": "./shared/*"
   }
 }

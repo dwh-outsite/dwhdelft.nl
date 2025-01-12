@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint-check": "eslint",
-    "lint": "npm run lint-check -- --fix"
+    "lint": "eslint --fix"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",

@@ -23,12 +23,12 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Outsite - LHBT+ vereniging Delft',
+      title: 'Outsite - LHBTI+ vereniging Delft',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Outsite is er voor jongeren en studenten tot en met 28 jaar die zich identificeren als LHBT+.',
+          content: 'Outsite is er voor jongeren en studenten tot en met 28 jaar die zich identificeren als LHBTI+.',
         },
         { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'Outsite' },
       ],

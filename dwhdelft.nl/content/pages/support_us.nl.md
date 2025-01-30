@@ -22,7 +22,7 @@ Meer informatie en inschrijven kan via deze [link](https://my.dwhdelft.nl/signup
 
 ### Doneren
 Door te doneren aan DWH kunt u ons extra financieel ondersteunen. Extra geld
-kunnen wij altijd goed gebruiken om nog meer te kunnen organiseren voor de LHBT+
+kunnen wij altijd goed gebruiken om nog meer te kunnen organiseren voor de LHBTI+
 gemeenschap in het organiseren van activiteiten, het bieden van een ontmoetingsplek,
 het geven van voorlichting (op scholen) en nog veel meer.
 

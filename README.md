@@ -2,9 +2,9 @@
 
 ## Setup
 
-DWH is the independent LGBT+ association of Delft and surroundings.
-We're two things: a meeting place for LGBT+ people and their friends and a group that actively
-pushes for greater LGBT+ rights and acceptance.
+DWH is the independent LGBTI+ association of Delft and surroundings.
+We're two things: a meeting place for LGBTI+ people and their friends and a group that actively
+pushes for greater LGBTI+ rights and acceptance.
 
 The website is a (statically generated) [Nuxt.js](https://nuxtjs.org) app hosted on [Cloudflare](https://cloudflare.com).
 The app makes heavy use of [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/).

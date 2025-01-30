@@ -16,15 +16,15 @@ The shortened name of the association is DWH.
 RSIN: 807864250
 
 ### Goal
-  DWH is thé association by and for LGBT+ people in Delft that looks out for the LGBT+ community and their needs in
-this city and independently promotes the emancipation and awareness of LGBT+ people. DWH does this as much as
+  DWH is thé association by and for LGBTI+ people in Delft that looks out for the LGBTI+ community and their needs in
+this city and independently promotes the emancipation and awareness of LGBTI+ people. DWH does this as much as
 possible in collaboration with other organisations at a local, national and international level.
 
 The vision of the association is as follows:
-- DWH fights hetero normativity and promotes the acceptation and itegration of LGBT+ lifestyles;
+- DWH fights hetero normativity and promotes the acceptation and itegration of LGBTI+ lifestyles;
 - DWH stimulates societal discussion, awareness and change on issues of homosexuality, bisexuality and
   transgenders;
-- DWH creates a friendly and safe environment as a basis for LGBT+ emancipation;
+- DWH creates a friendly and safe environment as a basis for LGBTI+ emancipation;
 - DWH involves as many people as possible, inside and outside the association, with participation and
   organisation of its activities;
 - DWH connects people. Specifically also the various subgroups in the association.

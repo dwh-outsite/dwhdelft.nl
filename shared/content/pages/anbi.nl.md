@@ -14,16 +14,16 @@ De verkorte naam van de vereniging is DWH.
 RSIN: 807864250
 
 ### Doelstelling
-De Delftse Werkgroep Homoseksualiteit (DWH) is de vereniging van en voor LHBT+’ers in Delft die de belangen van de
-LHBT+ gemeenschap in die stad behartigt en zo onafhankelijk de emancipatie en bewustmaking van LHBT+ personen
+De Delftse Werkgroep Homoseksualiteit (DWH) is de vereniging van en voor LHBTI+’ers in Delft die de belangen van de
+LHBTI+ gemeenschap in die stad behartigt en zo onafhankelijk de emancipatie en bewustmaking van LHBTI+ personen
 bevordert. DWH doet dit zoveel mogelijk in samenwerking met andere organisaties op lokaal, nationaal en
 internationaal niveau.
 
 De visie van de vereniging is als volgt:
-- DWH doorbreekt de heteronormen en het bevordert acceptatie en integratie van LHBT+ levensstijlen;
+- DWH doorbreekt de heteronormen en het bevordert acceptatie en integratie van LHBTI+ levensstijlen;
 - DWH stimuleert maatschappelijke discussie, bewustwording en verandering ter zake van homoseksualiteit,
   biseksualiteit en transgenders;
-- DWH creëert een gezellige en veilige sfeer als basis voor LHBT+ emancipatie;
+- DWH creëert een gezellige en veilige sfeer als basis voor LHBTI+ emancipatie;
 - DWH betrekt bewust zowel binnen als buiten de vereniging zo veel mogelijk mensen bij deelname en organisatie
   van activiteiten;
 - DWH verbindt mensen. Heel specifiek ook de groepen binnen de vereniging.

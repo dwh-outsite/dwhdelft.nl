@@ -97,17 +97,15 @@ const instagramChannelsMixup = [
     instagram: 'mixupdelft',
   },
 ]
-
-const linkedEventsReady = ref(false)
 </script>
 
 <template>
   <div class="mixup-colors">
-    <LayoutSmallHeader :triangleClass="linkedEventsReady ? 'border-gray-900' : 'border-black'">
+    <LayoutSmallHeader triangleClass="border-gray-900">
       {{ t('title') }}
     </LayoutSmallHeader>
 
-    <PagesMixupLinkedEvents @ready="linkedEventsReady = true" />
+    <PagesMixupLinkedEvents />
 
     <section class="mx-auto bg-brand-900 pb-24 pt-12 text-lg text-white md:flex">
       <ElementsContainer>

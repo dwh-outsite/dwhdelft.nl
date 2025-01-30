@@ -37,7 +37,7 @@ nl:
     Naast Outsite organiseert DWH ook activiteiten voor alle leeftijden.
     Denk aan baravonden, voorlichtingen, feesten, eetgroepen en nog veel meer.
     Voor jongeren onder de 18 jaar organiseert DWH Jong&Out meetings.
-  more: Check de DWH website
+  more: Check DWH site
   activities:
     - title: Jong&Out
       description: |

@@ -20,13 +20,17 @@ nl:
 </i18n>
 
 <script setup>
-const { t } = useT()
+const { locale, t } = useT()
 
 const runtimeConfig = useRuntimeConfig()
 
 const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies').find())
 
 const listBackgroundClass = runtimeConfig.public.domain === 'outsite.nl' ? 'bg-brand-300' : 'bg-brand-500'
+
+const buddies = computed(() =>
+  barBuddies.value.filter((b) => b.sites.includes(runtimeConfig.public.domain) && b[locale])
+)
 </script>
 
 <template>
@@ -42,12 +46,7 @@ const listBackgroundClass = runtimeConfig.public.domain === 'outsite.nl' ? 'bg-b
     </template>
 
     <div class="grid gap-4 md:grid-cols-2">
-      <div
-        v-for="buddy in barBuddies.filter(
-          (b) => b.sites.indexOf(runtimeConfig.public.domain) !== -1 && b[$i18n.locale]
-        )"
-        :key="buddy.name"
-      >
+      <div v-for="buddy in buddies" :key="buddy.name">
         <PagesBarbuddyCard :buddy="buddy" />
       </div>
     </div>
@@ -58,9 +57,7 @@ const listBackgroundClass = runtimeConfig.public.domain === 'outsite.nl' ? 'bg-b
       {{ t('sign_up') }}
     </h2>
     <div class="mx-auto mt-8 md:w-2/3">
-      <PagesBarbuddyForm
-        :barBuddies="barBuddies.filter((b) => b.sites.indexOf(runtimeConfig.public.domain) !== -1 && b[$i18n.locale])"
-      />
+      <PagesBarbuddyForm :barBuddies="buddies" />
     </div>
   </LayoutStraightSection>
 </template>

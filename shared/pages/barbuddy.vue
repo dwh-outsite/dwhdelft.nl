@@ -28,9 +28,9 @@ const { data: barBuddies } = await useAsyncData(() => queryContent('barbuddies')
 
 const listBackgroundClass = runtimeConfig.public.domain === 'outsite.nl' ? 'bg-brand-300' : 'bg-brand-500'
 
-function buddies() {
-  return barBuddies.value.filter((b) => b.sites.includes(runtimeConfig.public.domain) && b[locale])
-}
+const buddies = computed(() =>
+  barBuddies.value.filter((b) => b.sites.includes(runtimeConfig.public.domain) && b[locale.value])
+)
 </script>
 
 <template>
@@ -46,7 +46,7 @@ function buddies() {
     </template>
 
     <div class="grid gap-4 md:grid-cols-2">
-      <div v-for="buddy in buddies()" :key="buddy.name">
+      <div v-for="buddy in buddies" :key="buddy.name">
         <PagesBarbuddyCard :buddy="buddy" />
       </div>
     </div>
@@ -57,7 +57,7 @@ function buddies() {
       {{ t('sign_up') }}
     </h2>
     <div class="mx-auto mt-8 md:w-2/3">
-      <PagesBarbuddyForm :barBuddies="buddies()" />
+      <PagesBarbuddyForm :barBuddies="buddies" />
     </div>
   </LayoutStraightSection>
 </template>

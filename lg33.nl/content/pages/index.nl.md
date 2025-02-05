@@ -13,7 +13,7 @@ gegevens te publiceren op haar internetsite. Hier vindt u deze gegevens van LG33
 
 Stichting LG33
 
-RSIN: ???<br>
+RSIN: 855164414<br>
 KVK-nummer: 63273934
 
 Lange Geer 22<br>

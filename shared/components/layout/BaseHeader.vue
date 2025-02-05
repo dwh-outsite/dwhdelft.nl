@@ -5,7 +5,7 @@ import NLFlag from '#shared/assets/images/layout/flags/nl.svg'
 import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
 
 const props = defineProps({
-  menu: { type: Object, default: () => {} },
+  menu: { type: Object, default: () => ({}) },
   small: { type: Boolean, default: false },
   triangleClass: { type: String },
 })

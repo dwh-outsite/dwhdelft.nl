@@ -9,6 +9,8 @@ en:
       url: mixup
     - title: Jong&Out
       url: jongenout
+    - title: EatingOUT
+      url: book
     - title: Education
       url: education
     - title: Andersblad
@@ -25,6 +27,8 @@ nl:
       url: mixup
     - title: Jong&Out
       url: jongenout
+    - title: EatingOUT
+      url: book
     - title: Voorlichting
       url: education
     - title: Andersblad

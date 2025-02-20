@@ -38,7 +38,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
                 selected ? 'bg-white text-gray-800' : 'bg-brand-900/25 text-white hover:bg-white/50 hover:text-gray-800'
               "
             >
-              {{ committee.name }}
+              {{ committee[`name_${$i18n.locale}`] }}
             </button>
           </Tab>
         </TabList>

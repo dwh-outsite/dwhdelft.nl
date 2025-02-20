@@ -1,16 +1,11 @@
 <i18n lang="yaml">
 en:
-  title: Committees
+  title: Activities
   introduction:
-    At Outsite we have many fun and challenging committees. We are of course always looking for new committeemembers,
-    so be sure to check out the various committees we have below. Who knows, you might get to organise a fun activity
-    this year!
+    "At Outsite we have a bunch of different activities for all kinds of interests, all organized by our amazing volunteer committees. We’re always looking for new volunteers, so be sure to come by during a committee interest night for more information. Who knows, maybe you’ll get to organize a fun activity this year!"
 nl:
-  title: Commissies
-  introduction: Bij Outsite hebben we veel commissies en die zijn natuurlijk allemaal hartstikke leuk en
-    gezellig. Uiteraard kan jij je ook aansluiten bij een commissie. Hieronder vind je een
-    mooi overzicht van alle commissies. Kijk maar een beetje rond en zie wat bij je past, wie
-    weet organiseer jij wat leuks komend jaar!
+  title: Activiteiten
+  introduction: "Bij Outsite hebben we veel verschillende activiteiten die allemaal georganiseerd worden door onze vrijwilliger commissies. Uiteraard kan jij je als lid ook aansluiten bij een commissie, wat hartstikke leuk en gezellig is. Wie weet, misschien organiseer jij ook wat leuks komend jaar!"
 </i18n>
 
 <script setup>
@@ -51,7 +46,7 @@ const requireImage = (name) => image(name.toLowerCase().replace(/ /g, ''))
         <TabPanels class="flex-1">
           <TabPanel v-for="committee in committees" :key="committee.name">
             <ElementsActionCard
-              :title="committee.name"
+              :title="committee[`name_${$i18n.locale}`]"
               class="shadow-xl"
               headerPosition="right"
               headerClass="h-64 md:h-auto md:w-2/5"

@@ -1,5 +1,7 @@
 ---
-name: OUTcamp
+name: Camp
+name_en: Camp
+name_nl: Kamp
 description_en:
   "OUTcamp is the committee that organises the spectacular yearly camp for Outsite. The camp is a good introduction
   for new members, but also a lot of fun for people who’ve been to Outsite before. The last few year we’ve had quite

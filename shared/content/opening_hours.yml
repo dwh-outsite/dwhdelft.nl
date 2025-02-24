@@ -133,8 +133,8 @@ events:
       en: Second and fourth Sunday
       nl: Tweede en vierde zondag
     monthly: true
-    start_time: '17:00'
-    end_time: '21:00'
+    start_time: '18:00'
+    end_time: '22:00'
     description:
       en: |-
         Do you like going out but not being loud? Do you want to go out but prefer staying in?

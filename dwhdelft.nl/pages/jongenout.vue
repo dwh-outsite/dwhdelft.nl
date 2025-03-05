@@ -49,6 +49,10 @@ nl:
       pronouns: zij/haar
       description:
         - 'Hey! Ik ben Niamh. Voor mij was Jong & Out de allereerste plek waar ik écht mezelf kon zijn en mijn queerness in alle vrijheid kon verkennen. Als begeleider hoop ik dit andere jongeren ook te geven.'
+    - name: Menne
+      pronouns: die/hun
+      description:
+        - 'Heya, ik ben Menne! Als tiener ben ik ook bij jong en out geweest en ik vind het ontzettend leuk dat ik nu als begeleider kan bijdragen aan deze fijne plek voor jongeren.'
 </i18n>
 
 <script setup>

@@ -5,7 +5,7 @@ import NLFlag from '#shared/assets/images/layout/flags/nl.svg'
 import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
 
 const props = defineProps({
-  menu: { type: Object, required: true },
+  menu: { type: Object, default: () => ({}) },
   small: { type: Boolean, default: false },
   triangleClass: { type: String },
 })
@@ -44,7 +44,7 @@ const showMenu = ref(false)
           <slot name="logo" />
         </nuxt-link>
         <div
-          v-if="showMenu"
+          v-if="menuItems.length && showMenu"
           class="absolute top-16 z-50 w-[calc(100vw-2rem)] rounded-md bg-white/95 px-4 py-1 text-xl text-gray-800 shadow-xl backdrop-blur-xl lg:hidden"
         >
           <nuxt-link
@@ -61,6 +61,7 @@ const showMenu = ref(false)
           <slot name="mobile-menu-extension" />
         </div>
         <div
+          v-if="menuItems.length"
           class="hidden rounded-full bg-white/10 p-1 text-lg font-semibold text-white shadow backdrop-blur-lg lg:flex"
         >
           <nuxt-link
@@ -89,7 +90,10 @@ const showMenu = ref(false)
             </div>
           </div>
           <slot name="menu-extension" />
-          <div class="rounded-full bg-white/10 p-2 shadow backdrop-blur-lg hover:bg-white/25 lg:hidden">
+          <div
+            v-if="menuItems.length"
+            class="rounded-full bg-white/10 p-2 shadow backdrop-blur-lg hover:bg-white/25 lg:hidden"
+          >
             <div
               class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white p-1"
               @click="showMenu = !showMenu"

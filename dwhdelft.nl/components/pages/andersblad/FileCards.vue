@@ -7,9 +7,7 @@ const props = defineProps({
 
 const isUsingLocal = computed(() => !!props.localFiles?.length)
 
-const files = isUsingLocal.value
-  ? ref(props.localFiles)
-  : useGoogleDrive(props.googleDriveId)
+const files = isUsingLocal.value ? ref(props.localFiles) : useGoogleDrive(props.googleDriveId)
 
 const filesForDisplay = computed(() =>
   files.value.map((file) => ({
@@ -27,9 +25,10 @@ const goToFile = (file) => {
 </script>
 
 <template>
-  <div :class="center
-  ? 'flex justify-center max-w-md mx-auto'
-  : 'grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 lg:grid-cols-5'"
+  <div
+    :class="
+      center ? 'flex justify-center max-w-md mx-auto' : 'grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 lg:grid-cols-5'
+    "
   >
     <ElementsActionCard
       v-for="file in filesForDisplay"

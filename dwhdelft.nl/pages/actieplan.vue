@@ -104,7 +104,8 @@ const localFiles = [
   {
     name: 'xRegenboog Actie Plan 2023 - 2026',
     url: '/Actieplan_Delft_Regenboogstad_2023_-_2026.pdf',
-    thumbnailLink: '/Actieplan_Delft_Regenboogstad_2023_-_2026.pdf',
+    // change to '/document-icon.svg' for random doc icon
+    thumbnailLink: '/Actieplan_Delft_Regenboogstad_2023_-_2026-thumbnail.png',
   },
 ]
 </script>
@@ -135,6 +136,6 @@ const localFiles = [
     <template #title>
       <Markdown :content="t('document-title')" />
     </template>
-    <PagesAndersbladFileCards :localFiles="localFiles" center="true" />
+    <PagesAndersbladFileCards :localFiles="localFiles" center="center" />
   </LayoutStraightSection>
 </template>

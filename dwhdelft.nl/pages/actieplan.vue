@@ -44,8 +44,8 @@ nl:
         - 'De gemeente maakt hun LHBT+ beleid en relevante voorzieningen voor de doelgroep zichtbaar op de website (Actie: gemeente Delft)'
     - name: Wijken en geloofsgemeenschappen
       tasks:
-        - 'Delftse Werkgroep Homoseksualiteit en de gemeente voeren gesprekken in wijken en bij diverse geloofsgemeenschappen over LHBT+ (Actie: DWH)'
-        - 'Delftse Werkgroep Homoseksualiteit werkt samen met organisaties in de stad aan LHBT+ zichtbaarheid en activiteiten in de wijken buiten het centrum (Actie: DWH)'
+        - 'DWH en de gemeente voeren gesprekken in wijken en bij diverse geloofsgemeenschappen over LHBT+ (Actie: DWH)'
+        - 'DWH werkt samen met organisaties in de stad aan LHBT+ zichtbaarheid en activiteiten in de wijken buiten het centrum (Actie: DWH)'
   document-title: Documenten
 en:
   title: Rainbow Action Plan

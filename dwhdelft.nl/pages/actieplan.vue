@@ -102,9 +102,9 @@ const { t } = useT()
 
 const localFiles = [
   {
-    name: 'xRegenboog Actie Plan 2023 - 2026',
-    url: '/Actieplan_Delft_Regenboogstad_2023_-_2026.pdf',
-    thumbnailLink: '/Actieplan_Delft_Regenboogstad_2023_-_2026-thumbnail.png',
+    name: ' Regenboog Actie Plan 2023 - 2026',
+    url: '/downloads/Actieplan_Delft_Regenboogstad_2023_-_2026.pdf',
+    thumbnailLink: '/downloads/Actieplan_Delft_Regenboogstad_2023_-_2026-thumbnail.png',
   },
 ]
 </script>

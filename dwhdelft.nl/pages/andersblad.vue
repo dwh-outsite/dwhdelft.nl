@@ -39,7 +39,7 @@ const { t } = useT()
         <Markdown :content="t('list_title')" />
       </template>
 
-      <PagesAndersbladFileCards googleDriveId="1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM" />
+      <FileCards googleDriveId="1z_V_JSdyxX9jGH8CmC1ahMCtRk4tlzfM" />
     </LayoutStraightSection>
   </div>
 </template>

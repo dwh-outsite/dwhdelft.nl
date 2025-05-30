@@ -1,7 +1,7 @@
 <i18n lang="yaml">
 en:
   hero:
-    title: "Delft's LGBT+ Youth Association"
+    title: "Delft's LGBTI+ Youth Association"
     subtitle: for everyone up to 28 years
     primaryButton: Join Outsite
     secondaryButton: Watch Video
@@ -16,7 +16,7 @@ en:
     title: Updates and upcoming activities
 nl:
   hero:
-    title: 'Delftse LHBT+ jongerenvereniging'
+    title: 'Delftse LHBTI+ jongerenvereniging'
     subtitle: voor iedereen t/m 28 jaar
     primaryButton: Kom naar Outsite
     secondaryButton: Bekijk Video

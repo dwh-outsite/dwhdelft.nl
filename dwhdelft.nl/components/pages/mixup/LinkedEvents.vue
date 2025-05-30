@@ -47,14 +47,29 @@ onMounted(() => {
 
 <template>
   <section
-    v-if="events && events.length > 0"
+    v-if="events === null || events.length > 0"
     class="bg-gray-900 bg-gradient-to-b from-gray-900 to-brand-500/10 py-12 text-gray-200 md:pt-0"
   >
     <ElementsContainer>
       <h1 class="mb-6 text-center text-5xl font-medium">
         <Markdown :content="t('events')" />
       </h1>
-      <div class="flex flex-wrap justify-center gap-4 md:text-center">
+      <div v-if="events === null" class="flex flex-wrap justify-center gap-4">
+        <div
+          v-for="index in 5"
+          :key="index"
+          class="flex w-full animate-pulse flex-row-reverse rounded-lg bg-brand-900 p-4 shadow-lg md:w-48 md:flex-col"
+        >
+          <div class="flex-1">
+            <div class="mb-2 h-4 w-24 bg-gray-400/10 md:mx-auto" />
+            <div class="h-7 w-36 animate-pulse bg-gray-200/10 md:mx-auto md:mb-4" />
+          </div>
+          <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">
+            <div class="size-12 animate-pulse rounded-full bg-white/10" />
+          </div>
+        </div>
+      </div>
+      <div v-else class="flex flex-wrap justify-center gap-4 md:text-center">
         <div
           v-for="(event, index) in events"
           :key="index"
@@ -62,7 +77,8 @@ onMounted(() => {
         >
           <div class="flex-1">
             <div class="uppercase tracking-wide text-gray-300">
-              {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }} - {{ event.startTime }}
+              {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
+              {{ event.startTime ? ` - ${event.startTime}` : '' }}
             </div>
             <div class="text-xl font-bold md:mb-4">
               {{ event.eventName }}

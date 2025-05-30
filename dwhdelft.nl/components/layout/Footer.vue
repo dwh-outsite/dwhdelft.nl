@@ -36,7 +36,7 @@ const links = linkCategories.map((category) => ({
           v-for="{ url, name, external } in category.items"
           :key="url"
           :to="url"
-          class="block items-center font-semibold text-gray-400 hover:text-white"
+          class="block items-center font-semibold text-gray-400 hover:text-white transition-colors duration-200"
           :target="external ? '_blank' : '_self'"
         >
           {{ tt(name) }}

@@ -1,7 +1,7 @@
 <i18n lang="yaml">
 en:
   description: |
-    Outsite is the youth department of DWH, the LGBT+ association of Delft and surroundings.
+    Outsite is the youth department of DWH, the LGBTI+ association of Delft and surroundings.
     Besides Outsite, DWH also organizes activities for all ages.
     Think of bar nights, education, parties, eating groups and much more.
     For youth under 18, DWH organizes Jong&Out meetings.
@@ -9,7 +9,7 @@ en:
   activities:
     - title: Jong&Out
       description: |
-        Jong&Out is the LGBT+ youth organization for youth up to 18 years old. Every month
+        Jong&Out is the LGBTI+ youth organization for youth up to 18 years old. Every month
         we organize a meeting in Delft.
       link: https://jongenoutdelft.nl
       image: jongenout
@@ -33,15 +33,15 @@ en:
       image: eatingout
 nl:
   description: |
-    Outsite is het jongerenonderdeel van DWH, de LHBT+ vereniging van Delft en omstreken.
+    Outsite is het jongerenonderdeel van DWH, de LHBTI+ vereniging van Delft en omstreken.
     Naast Outsite organiseert DWH ook activiteiten voor alle leeftijden.
     Denk aan baravonden, voorlichtingen, feesten, eetgroepen en nog veel meer.
     Voor jongeren onder de 18 jaar organiseert DWH Jong&Out meetings.
-  more: Check de DWH website
+  more: Check DWH site
   activities:
     - title: Jong&Out
       description: |
-        Jong&Out is de LHBT+ jongerenorganisatie voor jongeren tot en met 18 jaar. Elke maand
+        Jong&Out is de LHBTI+ jongerenorganisatie voor jongeren tot en met 18 jaar. Elke maand
         organiseren we een meeting in Delft.
       link: https://jongenoutdelft.nl
       image: jongenout

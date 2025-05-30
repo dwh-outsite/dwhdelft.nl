@@ -1,9 +1,13 @@
 <script setup>
 const props = defineProps({
-  googleDriveId: { type: String, required: true },
+  googleDriveId: String,
+  localFiles: Array,
+  center: { type: Boolean, default: false },
 })
 
-const files = useGoogleDrive(props.googleDriveId)
+const isUsingLocal = computed(() => !!props.localFiles?.length)
+
+const files = isUsingLocal.value ? ref(props.localFiles) : useGoogleDrive(props.googleDriveId)
 
 const filesForDisplay = computed(() =>
   files.value.map((file) => ({
@@ -15,12 +19,17 @@ const filesForDisplay = computed(() =>
 )
 
 const goToFile = (file) => {
-  window.open(file.webViewLink, '_blank')
+  const url = file.webViewLink || file.url || file.path
+  window.open(url, '_blank')
 }
 </script>
 
 <template>
-  <div class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 lg:grid-cols-5">
+  <div
+    :class="
+      center ? 'flex justify-center max-w-md mx-auto' : 'grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 lg:grid-cols-5'
+    "
+  >
     <ElementsActionCard
       v-for="file in filesForDisplay"
       :key="file.id"

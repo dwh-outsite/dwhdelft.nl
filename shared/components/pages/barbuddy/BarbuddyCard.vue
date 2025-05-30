@@ -35,7 +35,7 @@ const readMore = () => (expanded.value = !expanded.value)
     <div class="relative text-lg" :class="expanded ? 'pb-8' : 'line-clamp-4'">
       <span class="absolute bottom-0 right-0 z-10 flex">
         <span class="block w-32 bg-gradient-to-r from-white/0 to-white" />
-        <a class="cursor-pointer bg-white text-brand-450" @click="readMore()">
+        <a class="cursor-pointer bg-white text-brand-450 hover:underline" @click.stop="readMore()">
           {{ t(expanded ? 'read_less' : 'read_more') }}
         </a>
       </span>

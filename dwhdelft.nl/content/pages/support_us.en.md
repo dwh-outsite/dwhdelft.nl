@@ -22,8 +22,8 @@ More information and signup form can be found by following this [link](https://m
 
 ### Donating
 By donating you can support DWH financially. Extra funds could always be put to
-good use to organize more activities for the LGBT+ community, offering a meeting
-place for LGBT+ people, giving education on schools and so much more.
+good use to organize more activities for the LGBTI+ community, offering a meeting
+place for LGBTI+ people, giving education on schools and so much more.
 
 You can donate by transferring money to IBAN: NL75 INGB 0003 2492 37 t.n.v.
 DWH ledenadministratie. If you want to gift yearly and put it on paper you can

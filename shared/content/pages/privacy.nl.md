@@ -29,7 +29,7 @@ Seksuele gerichtheid is ook een bijzonder persoonsgegeven. Hoewel DWH de seksuel
 
 DWH heeft niet de intentie om gegevens te verzamelen over personen onder de 16 jaar tenzij er toestemming is van de wettelijk verzorger.
 
-## Met welke doelen en op basis van welke grondslagen wij persoonsgegevens verwerken
+## Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken
 
 DWH verwerkt jouw persoonsgegevens voor de volgende doelen:
 - Naam, geboortedatum en adres om te weten wie lid is
@@ -49,7 +49,7 @@ DWH neemt geen op basis van geautomatiseerde verwerkingen besluiten over zaken d
 
 # Hoe lang we persoonsgegevens bewaren
 
-DWH bewaart je persoonsgegevens niet langer dan strikt nodig is om de doelen te realiseren waarvoor je gegevens worden verzameld. Wij hanteren de volgende bewaartermijnen voor de volgende (categorieën van) persoonsgegevens: Personalia en contactgegevens voor de duur van het lidmaatschap, en daarna bij blijvende interesse in nieuwsbrieven, reünies en dergelijke. Voor bank- en betalingsgegevens hanteren wij een maximale duur van het lidmaatschap plus zeven jaar. DWH is bij wet verplicht om financiële gegevens – zoals transacties – zeven jaar te bewaren. Personalia van mensen die niet langer welkom zijn bewaren we zo lang die sanctie geldt.
+DWH bewaart je persoonsgegevens niet langer dan strikt nodig is om de doelen te realiseren waarvoor je gegevens worden verzameld. Wij hanteren de volgende bewaartermijnen voor de volgende (categorieën van) persoonsgegevens: Voor personalia, adres en contactgegevens bewaren wij gegevens voor de duur van het lidmaatschap, en daarna bij blijvende interesse in nieuwsbrieven, reünies en dergelijke. Voor bank- en betalingsgegevens hanteren wij een maximale duur van het lidmaatschap plus zeven jaar. DWH is bij wet verplicht om financiële gegevens – zoals transacties – zeven jaar te bewaren. Personalia van mensen die niet langer welkom zijn bewaren we zo lang die sanctie geldt.
 
 # Delen van persoonsgegevens met derden
 

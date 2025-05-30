@@ -29,14 +29,19 @@ Seksuele gerichtheid is ook een bijzonder persoonsgegeven. Hoewel DWH de seksuel
 
 DWH heeft niet de intentie om gegevens te verzamelen over personen onder de 16 jaar tenzij er toestemming is van de wettelijk verzorger.
 
-## Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken
+## Met welke doelen en op basis van welke grondslagen wij persoonsgegevens verwerken
 
 DWH verwerkt jouw persoonsgegevens voor de volgende doelen:
-- Het afhandelen van jouw betaling 
-- Verzenden van onze nieuwsbrief
-- Je te kunnen bellen of e-mailen indien dit nodig is om onze dienstverlening uit te kunnen voeren
-- Om je toegang te geven tot events en activiteiten van de vereniging
-- Om je het verenigingsblad toe te kunnen sturen
+- Naam, geboortedatum en adres om te weten wie lid is
+- E-mailadres en telefoonnummer om met je te communiceren over de vereniging en haar activiteiten
+- Adresgegevens voor communicatie over vergaderingen en contributie, en indien gewenst het toezenden van het ledenblad of andere informatie over de activiteiten van DWH
+- Bankrekeningnummer en -naam voor de betaling van contributie of kosten gerelateerd aan activiteiten
+
+DWH verwerkt deze gegevens op basis van volgende grondslagen:
+- Jouw toestemming, gegeven bij aanmelding als lid
+- De wettelijke verplichting om financiële gegevens zeven jaar te bewaren
+- Een gerechtvaardigd belang te bewaren wie wij in de toekomst, vanwege eerdere gedragingen, niet zomaar terug toe willen laten tot de vereniging
+
 
 # Geautomatiseerde besluitvorming
 
@@ -44,7 +49,7 @@ DWH neemt geen op basis van geautomatiseerde verwerkingen besluiten over zaken d
 
 # Hoe lang we persoonsgegevens bewaren
 
-DWH bewaart je persoonsgegevens niet langer dan strikt nodig is om de doelen te realiseren waarvoor je gegevens worden verzameld. Wij hanteren de volgende bewaartermijnen voor de volgende (categorieën) van persoonsgegevens: voor personalia, adres en contactgegevens bewaren wij gegevens voor de duur van het lidmaatschap, voor bank- en betalingsgegevens hanteren wij een maximale duur van het lidmaatschap plus zeven jaar. DWH is bij wet verplicht om financiële gegevens – zoals transacties – 7 jaar te bewaren.
+DWH bewaart je persoonsgegevens niet langer dan strikt nodig is om de doelen te realiseren waarvoor je gegevens worden verzameld. Wij hanteren de volgende bewaartermijnen voor de volgende (categorieën van) persoonsgegevens: Personalia en contactgegevens voor de duur van het lidmaatschap, en daarna bij blijvende interesse in nieuwsbrieven, reünies en dergelijke. Voor bank- en betalingsgegevens hanteren wij een maximale duur van het lidmaatschap plus zeven jaar. DWH is bij wet verplicht om financiële gegevens – zoals transacties – zeven jaar te bewaren. Personalia van mensen die niet langer welkom zijn bewaren we zo lang die sanctie geldt.
 
 # Delen van persoonsgegevens met derden
 
@@ -70,7 +75,7 @@ Je hebt het recht om je persoonsgegevens in te zien, te corrigeren of te verwijd
 
 Wil je gebruik maken van je recht op bezwaar en/of recht op gegevensoverdraagbaarheid of heb je andere vragen/opmerkingen over de gegevensverwerking, stuur dan een gespecificeerd verzoek naar [secretaris@dwhdelft.nl](mailto:secretaris@dwhdelft.nl).
 
-Voor journalistieke publicaties, zoals het Andersblad, geldt een uitzondering. Eenmaal gegeven toestemming, bijvoorbeeld voor een interview, kan in deze gevallen niet worden ingetrokken.
+Voor journalistieke publicaties, zoals het Andersblad, en promotiematerialen geldt een uitzondering. Eenmaal gegeven toestemming, bijvoorbeeld voor een interview of foto, kan in deze gevallen niet worden ingetrokken. Ook gegevens over deelname aan vergaderingen kunnen niet worden ingetrokken.
 
 Om er zeker van te zijn dat het verzoek tot inzage door jou is gedaan, vragen wij jou een kopie van je identiteitsbewijs bij het verzoek mee te sturen. Maak in deze kopie je pasfoto, MRZ (machine readable zone, de strook met nummers onderaan het paspoort), paspoortnummer en Burgerservicenummer (BSN) zwart. Dit ter bescherming van je privacy. DWH zal zo snel mogelijk, maar in ieder geval binnen vier weken, op jouw verzoek reageren.
 

@@ -30,11 +30,11 @@ const nameAsImage = (name, pronouns) => {
 </script>
 
 <template>
-  <div class="leading-tight border border-gray-600 border-l-0 rounded-l-none rounded-2xl pr-4 pb-3 pt-5 relative">
-    <div class="uppercase text-sm tracking-wider font-semibold absolute -top-2.5 bg-gray-700 pr-2">
+  <div class="relative rounded-2xl rounded-l-none border border-l-0 border-gray-600 pb-3 pr-4 pt-5 leading-tight">
+    <div class="absolute -top-2.5 bg-gray-700 pr-2 text-sm font-semibold uppercase tracking-wider">
       {{ role }}
     </div>
     <img class="mb-1" :src="nameAsImage(name, pronouns)" />
-    <div class="text-gray-400 text-sm">{{ email }}</div>
+    <div class="text-sm text-gray-400">{{ email }}</div>
   </div>
 </template>

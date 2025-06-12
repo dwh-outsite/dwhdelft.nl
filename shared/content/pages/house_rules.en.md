@@ -28,9 +28,9 @@ These rules apply within the DWH building and in its immediate surroundings.
 
 # It is not allowed:
 
-1. To bring your own drinks or food inside.
+1. To bring your own drinks or food inside during open bar nights, unless an exception has been arranged,
 2. To cause noise disturbances or litter around the building.
-3. To bring pets inside.
+3. To let any pets or other animals, aside from service animals, enter the building,
 4. To consume food or drinks outside the building (except with permission from the board, the small area in front of the building may be an exception).
 
 # Access may be denied if you:

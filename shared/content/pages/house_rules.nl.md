@@ -26,9 +26,9 @@ Deze regels gelden in het pand van DWH en in de directe omgeving van het pand.
 
 # Het is niet toegestaan:
 
-1. eigen drank of etenswaren mee naar binnen te nemen tijdens open baravonden, tenzij er is afgesproken dat er een uitzondering is,
+1. eigen drank of etenswaren mee naar binnen te nemen,
 2. rondom het pand geluidsoverlast te veroorzaken of afval op grond te gooien,
-3. (huis)dieren, met uitzondering van dienstdoende hulpdieren, het pand te laten betreden,
+3. huisdieren mee naar binnen te nemen,
 4. buiten het pand consumpties te nuttigen (met instemming van het bestuur kan het stoepje voor het pand hierop een uitzondering zijn).
 
 # De toegang kan geweigerd worden als u:

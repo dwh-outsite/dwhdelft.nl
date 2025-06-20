@@ -32,14 +32,14 @@ DWH heeft niet de intentie om gegevens te verzamelen over personen onder de 16 j
 ## Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken
 
 DWH verwerkt jouw persoonsgegevens voor de volgende doelen:
-- Naam, geboortedatum, telefoonnummer en adres om te weten wie lid is,
-- E-mailadres en telefoonnummer om met je te communiceren over de vereniging en haar activiteiten,
-- Adresgegevens voor communicatie over vergaderingen en contributie, en indien gewenst het toezenden van het ledenblad of andere informatie over de activiteiten van DWH,
+- Naam, geboortedatum, telefoonnummer en adres om te weten wie lid is;
+- E-mailadres en telefoonnummer om met je te communiceren over de vereniging en haar activiteiten;
+- Adresgegevens voor communicatie over vergaderingen en contributie, en indien gewenst het toezenden van het ledenblad of andere informatie over de activiteiten van DWH;
 - Bankrekeningnummer en -naam voor de betaling van contributie of kosten gerelateerd aan activiteiten.
 
 DWH verwerkt deze gegevens op basis van volgende grondslagen:
-- Jouw toestemming, gegeven bij aanmelding als lid,
-- De wettelijke verplichting om financiële gegevens zeven jaar te bewaren,
+- Jouw toestemming, gegeven bij aanmelding als lid;
+- De wettelijke verplichting om financiële gegevens [zeven jaar te bewaren](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/administratie_bewaren/);
 - Een gerechtvaardigd belang te bewaren wie wij vanwege eerdere gedragingen niet willen teruglaten tot de vereniging.
 
 

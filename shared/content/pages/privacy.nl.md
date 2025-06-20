@@ -32,15 +32,15 @@ DWH heeft niet de intentie om gegevens te verzamelen over personen onder de 16 j
 ## Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken
 
 DWH verwerkt jouw persoonsgegevens voor de volgende doelen:
-- Naam, geboortedatum en adres om te weten wie lid is
-- E-mailadres en telefoonnummer om met je te communiceren over de vereniging en haar activiteiten
-- Adresgegevens voor communicatie over vergaderingen en contributie, en indien gewenst het toezenden van het ledenblad of andere informatie over de activiteiten van DWH
-- Bankrekeningnummer en -naam voor de betaling van contributie of kosten gerelateerd aan activiteiten
+- Naam, geboortedatum, telefoonnummer en adres om te weten wie lid is,
+- E-mailadres en telefoonnummer om met je te communiceren over de vereniging en haar activiteiten,
+- Adresgegevens voor communicatie over vergaderingen en contributie, en indien gewenst het toezenden van het ledenblad of andere informatie over de activiteiten van DWH,
+- Bankrekeningnummer en -naam voor de betaling van contributie of kosten gerelateerd aan activiteiten.
 
 DWH verwerkt deze gegevens op basis van volgende grondslagen:
-- Jouw toestemming, gegeven bij aanmelding als lid
-- De wettelijke verplichting om financiële gegevens zeven jaar te bewaren
-- Een gerechtvaardigd belang te bewaren wie wij in de toekomst, vanwege eerdere gedragingen, niet zomaar terug toe willen laten tot de vereniging
+- Jouw toestemming, gegeven bij aanmelding als lid,
+- De wettelijke verplichting om financiële gegevens zeven jaar te bewaren,
+- Een gerechtvaardigd belang te bewaren wie wij vanwege eerdere gedragingen niet willen teruglaten tot de vereniging.
 
 
 # Geautomatiseerde besluitvorming
@@ -85,7 +85,7 @@ DWH wil je er tevens op wijzen dat je de mogelijkheid hebt om een klacht in te d
 
 DWH neemt de bescherming van jouw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op via [secretaris@dwhdelft.nl](mailto:secretaris@dwhdelft.nl).
 
-De ledenadministratie is alleen toegankelijk voor het minimaal nodige aantal bestuurs- en commissieleden. Allen hebben hiervoor een geheimhoudingsverklaring getekend. De ledenadministrateur verstrekt op verzoek delen van de administratie aan bestuurs- en commissieleden indien noodzakelijk voor het functioneren van de vereniging. Hierbij kan gedacht worden aan het nalopen van de ledenlijst bij aanvang van de algemene ledenvergadering, of het versturen van e-mails aan leden. De ledenadministratie verstrekt enkel die informatie die nodig is voor het opgegeven doel; in bijna alle gevallen slechts een deel van de administratie. Leden waaraan gegevens verstrekt worden dienen een geheimhoudingsverklaring te hebben ondertekend. Deze administratie wordt enkel versleuteld overgedragen naar en opgeslagen op Europese servers
+De ledenadministratie is alleen toegankelijk voor het minimaal nodige aantal bestuurs- en commissieleden. Allen hebben hiervoor een geheimhoudingsverklaring getekend. De ledenadministrateur verstrekt op verzoek delen van de administratie aan bestuurs- en commissieleden indien noodzakelijk voor het functioneren van de vereniging. Hierbij kan gedacht worden aan het nalopen van de ledenlijst bij aanvang van de algemene ledenvergadering, of het versturen van e-mails aan leden. De ledenadministratie verstrekt enkel die informatie die nodig is voor het opgegeven doel; in bijna alle gevallen slechts een deel van de administratie. Leden waaraan gegevens verstrekt worden dienen een geheimhoudingsverklaring te hebben ondertekend. Deze administratie wordt enkel versleuteld opgeslagen, en alleen op Europese servers.
 
 # Foto’s en video’s
 Tijdens activiteiten van DWH worden regelmatig beeldopnamen gemaakt voor promotiedoeleinden. Mocht je hier geen prijs op stellen dan kun je dat ter plekke aan de fotograaf/filmer kenbaar maken. In alle gevallen gaat DWH terughoudend om met het publiceren van beelden.

@@ -62,6 +62,11 @@ events:
         en: Head to Outsite.nl
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
+    announcement:
+      en: |-
+        Between June 30th and July 7th, Outsite will be closed!
+      nl: |-
+        Tussen 30 juni en 7 juli is Outsite dicht!
 
   - name: Roze Kroeg
     day:
@@ -98,6 +103,11 @@ events:
         en: More on MIXUP
         nl: Meer over MIXUP
       url: https://dwhdelft.nl/mixup
+    announcement:
+      en: |-
+        Between June 30th and July 7th, DWH will be closed!
+      nl: |-
+        Tussen 30 juni en 7 juli is DWH dicht!
 
   - name: Jong&Out
     day:

@@ -48,6 +48,10 @@ if (props.content?._type === 'markdown') {
   @apply mb-4;
 }
 
+.content p:last-child {
+  @apply mb-0;
+}
+
 .content img {
   @apply mb-4;
 }

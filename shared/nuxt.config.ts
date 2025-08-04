@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'url'
-import { dirname, join } from 'path'
+import { dirname, join, resolve } from 'path'
 
 // Workaround for relative paths in shared layers, see https://nuxt.com/docs/guide/going-further/layers#relative-paths-and-aliases
 const relativePath = (path) => join(dirname(fileURLToPath(import.meta.url)), path)
@@ -28,6 +28,9 @@ export default defineNuxtConfig({
     compilation: {
       strictMessage: false,
     },
+  },
+  alias: {
+    '#shared': resolve(__dirname, join('..', 'shared')),
   },
   svgo: {
     defaultImport: 'component',

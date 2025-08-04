@@ -176,7 +176,7 @@ const membershipIcons = {
 
         <p class="mb-6 text-lg lg:text-xl" v-text="t('kmg.description')" />
 
-        <nuxt-link :to="localePath('kmg')" class="text-base">
+        <nuxt-link :to="$localePath('kmg')" class="text-base">
           <ElementsPrimaryButton>{{ t('kmg.action') }}</ElementsPrimaryButton>
         </nuxt-link>
       </ElementsActionCard>
@@ -190,7 +190,7 @@ const membershipIcons = {
 
         <p class="mb-6 text-lg lg:text-xl" v-text="t('bar_buddy.description')" />
 
-        <nuxt-link :to="localePath('barbuddy')" class="text-base">
+        <nuxt-link :to="$localePath('barbuddy')" class="text-base">
           <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>
         </nuxt-link>
       </ElementsActionCard>

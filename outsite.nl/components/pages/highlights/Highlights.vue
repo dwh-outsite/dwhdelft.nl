@@ -39,7 +39,7 @@ const visibleHighlights = props.excerpts
       <div class="flex flex-1 flex-col justify-between">
         <p class="text-xl" v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]" />
 
-        <a v-if="excerpts" :href="localePath('highlights')" class="text-lg text-brand-400 hover:text-brand-500">
+        <a v-if="excerpts" :href="$localePath('highlights')" class="text-lg text-brand-400 hover:text-brand-500">
           {{ t('read_more') }} &raquo;
         </a>
       </div>

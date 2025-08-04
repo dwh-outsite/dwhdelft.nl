@@ -67,7 +67,7 @@ const { t } = useT()
           </div>
           <h2 class="mb-4 text-xl font-bold uppercase tracking-wider text-brand-500" v-text="t('bar_buddy.heading')" />
           <p class="mb-6 text-lg" v-text="t('bar_buddy.description')" />
-          <nuxt-link :to="localePath('barbuddy')">
+          <nuxt-link :to="$localePath('barbuddy')">
             <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>
           </nuxt-link>
         </div>

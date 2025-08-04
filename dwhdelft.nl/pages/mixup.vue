@@ -135,7 +135,7 @@ const instagramChannelsMixup = [
                     {{ t('membership_button') }}
                   </ElementsSecondaryButton>
                 </a>
-                <nuxt-link :to="localePath('barbuddy')" class="block">
+                <nuxt-link :to="$localePath('barbuddy')" class="block">
                   <ElementsPrimaryButton class="text-brand-50" arrow>
                     {{ t('barbuddy_button') }}
                   </ElementsPrimaryButton>

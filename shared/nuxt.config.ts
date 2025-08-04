@@ -10,7 +10,6 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content', 'nuxt-content-assets'],
   i18n: {
     defaultLocale: 'nl',
-    vueI18n: './i18n.config.ts',
     locales: [
       {
         code: 'en',
@@ -23,7 +22,6 @@ export default defineNuxtConfig({
         files: ['nl.js'],
       },
     ],
-    langDir: 'lang/',
     detectBrowserLanguage: false,
     compilation: {
       strictMessage: false,

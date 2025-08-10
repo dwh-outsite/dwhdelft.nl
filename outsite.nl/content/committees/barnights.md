@@ -1,5 +1,5 @@
 ---
-name: (Themed) barnights
+name: barnights
 name_en: (Themed) barnights
 name_nl: (Thema)borrels
 description_en:

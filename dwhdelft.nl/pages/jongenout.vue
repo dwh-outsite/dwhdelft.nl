@@ -33,10 +33,6 @@ nl:
       pronouns: alle voornaamwoorden
       description:
         - 'Hoi !! Ik ben Jaye !! Ik vind het erg leuk om een plek te creëren waar jongeren hunzelf kunnen zijn en hunzelf en andere beter kunnen leren kennen :)'
-    - name: Meander
-      pronouns: die/hun
-      description:
-        - 'Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad. Het was zo’n fijne en vertrouwde omgeving, dat wil ik ook creëren voor de volgende generatie J&O’ers!!'
     - name: Didi
       pronouns: zij/haar
       description:
@@ -49,6 +45,18 @@ nl:
       pronouns: zij/haar
       description:
         - 'Hey! Ik ben Niamh. Voor mij was Jong & Out de allereerste plek waar ik écht mezelf kon zijn en mijn queerness in alle vrijheid kon verkennen. Als begeleider hoop ik dit andere jongeren ook te geven.'
+    - name: Menne
+      pronouns: die/hun
+      description:
+        - 'Heya, ik ben Menne! Als tiener ben ik ook bij jong en out geweest en ik vind het ontzettend leuk dat ik nu als begeleider kan bijdragen aan deze fijne plek voor jongeren.'
+    - name: Jeras
+      pronouns: hij/hem
+      description:
+        - 'Hoi ik ben Jeras en ik vind het gewoon gezellig met jongeren!'
+    - name: Meander
+      pronouns: die/hun
+      description:
+        - 'Hey, ik ben Meander! Zelf heb ik ook mijn J&O tijd gehad. Het was zo’n fijne en vertrouwde omgeving, dat wil ik ook creëren voor de volgende generatie J&O’ers!!'
 </i18n>
 
 <script setup>

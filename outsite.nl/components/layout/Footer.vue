@@ -3,22 +3,28 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Feline (she/her)
+    - name: Feline
+      pronouns: she/her
       role: President
       email: voorzitter
-    - name: Chai (they/them)
+    - name: Chai
+      pronouns: they/them
       role: Vice President
       email: vicevoorzitter
-    - name: Alin (he/they)
+    - name: Alin
+      pronouns: he/they
       role: Secretary
       email: secretaris
-    - name: Nick (he/him)
+    - name: Nick
+      pronouns: he/him
       role: Treasurer
       email: penningmeester
-    - name: Jaye (any/all)
+    - name: Jaye
+      pronouns: any/all
       role: External Affairs
       email: extern
-    - name: Lucia (they/them)
+    - name: Lucia
+      pronouns: they/them
       role: Internal Affairs
       email: intern
   confidential_counsellors: Confidential Counsellors
@@ -30,22 +36,28 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Feline (zij/haar)
+    - name: Feline
+      pronouns: zij/haar
       role: Voorzitter
       email: voorzitter
-    - name: Chai (die/hun)
+    - name: Chai
+      pronouns: die/hun
       role: Vicevoorzitter
       email: vicevoorzitter
-    - name: Alin (hij/die)
+    - name: Alin
+      pronouns: hij/die
       role: Secretaris
       email: secretaris
-    - name: Nick (hij/hem)
+    - name: Nick
+      pronouns: hij/hem
       role: Penningmeester
       email: penningmeester
-    - name: Jaye (alle pronouns)
+    - name: Jaye
+      pronouns: alle pronouns
       role: Commissaris Extern
       email: extern
-    - name: Lucia (die/hun)
+    - name: Lucia
+      pronouns: die/hun
       role: Commissaris Intern
       email: intern
   confidential_counsellors: Vertrouwenspersonen
@@ -86,6 +98,7 @@ const links = [
               <LayoutFooterBoardMember
                 v-for="member in t('board')"
                 :key="member.name"
+                :pronouns="member.pronouns"
                 :role="member.role"
                 :name="member.name"
                 :email="`${member.email}@outsite.nl`"

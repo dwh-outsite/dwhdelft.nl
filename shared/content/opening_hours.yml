@@ -108,11 +108,11 @@ events:
     end_time: '17:00'
     description:
       en: |-
-        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTQ+ youth
+        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTI+ youth
         members. Come around to bake, play games, do a graffity workshop, go to Jumpsquare, and more!
         We also have a camp each year!
       nl: |-
-        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren.
+        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTI+ jongeren.
         Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen,
         naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
     restrictions:
@@ -129,8 +129,8 @@ events:
       en: Second and fourth Sunday
       nl: Tweede en vierde zondag
     monthly: true
-    start_time: '17:00'
-    end_time: '21:00'
+    start_time: '18:00'
+    end_time: '22:00'
     description:
       en: |-
         Do you like going out but not being loud? Do you want to go out but prefer staying in?

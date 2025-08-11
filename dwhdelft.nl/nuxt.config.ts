@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'DWH - LHBT+ vereniging Delft',
+      title: 'DWH - LHBTI+ vereniging Delft',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -31,8 +31,8 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            'DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek ' +
-            'voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie.',
+            'DWH is dé onafhankelijke LHBTI+ vereniging van Delft en omgeving. We zijn twee dingen; een ontmoetingsplek ' +
+            'voor LHBTI+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBTI+ rechten en acceptatie.',
         },
         { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'DWH Delft' },
       ],

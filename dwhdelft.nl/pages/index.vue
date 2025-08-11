@@ -1,13 +1,13 @@
 <i18n lang="yaml">
 en:
   hero:
-    title: LGBT+ in Delft and surroundings
+    title: LGBTI+ in Delft and surroundings
     subtitle: DWH is the community for everyone, to meet up with each other, support each other, and to fight for our rights together.
     leftButton: Check out DWH
     rightButton: Opening Hours
 nl:
   hero:
-    title: LHBT+ in Delft en omgeving
+    title: LHBTI+ in Delft en omgeving
     subtitle: DWH is de community voor iedereen, om elkaar te ontmoeten, elkaar te supporten, en samen voor onze rechten op te komen.
     leftButton: Kom naar DWH
     rightButton: Openingstijden

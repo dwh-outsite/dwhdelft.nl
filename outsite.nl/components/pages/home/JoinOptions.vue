@@ -3,7 +3,7 @@ en:
   kmg:
     title: Introduction Group
     description: Twice a year we organise our introduction groups. These groups are a chance to not only get to know
-      the association but also to become close to other LGBT+ youth, all under supervision of two experienced Outsite
+      the association but also to become close to other LGBTI+ youth, all under supervision of two experienced Outsite
       members. During nine Thursday evenings, you will share coming out stories (if you want to), visit queer parties
       together and much more!
     action: Join the introduction group
@@ -19,7 +19,7 @@ en:
   membership:
     title: Become an Outsite member
     description:
-      Outsite is open to everyone up to 28 who identifies as LGBTQ+. A variety of activities are organized by members,
+      Outsite is open to everyone up to 28 who identifies as LGBTI+. A variety of activities are organized by members,
       from weekly drinks on Thursday evenings, to big dance parties every quarter or going out in other cities. Make
       sure to sign up to always get updates about the latest events!
     button: Sign up now
@@ -66,7 +66,7 @@ nl:
     sign_up: Aanmelden voor een barbuddy
   membership:
     title: Lid worden bij Outsite
-    description: Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
+    description: Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBTI+. Er worden allerlei
       activiteiten georganiseerd, van wekelijkse borrels op de donderdagavond, tot grote dansfeesten en uitgaan in
       andere steden. Schrijf je in zodat je altijd op de hoogte bent van alle activiteiten!
     button: Schrijf je nu in
@@ -176,7 +176,7 @@ const membershipIcons = {
 
         <p class="mb-6 text-lg lg:text-xl" v-text="t('kmg.description')" />
 
-        <nuxt-link :to="localePath('kmg')" class="text-base">
+        <nuxt-link :to="$localePath('kmg')" class="text-base">
           <ElementsPrimaryButton>{{ t('kmg.action') }}</ElementsPrimaryButton>
         </nuxt-link>
       </ElementsActionCard>
@@ -190,7 +190,7 @@ const membershipIcons = {
 
         <p class="mb-6 text-lg lg:text-xl" v-text="t('bar_buddy.description')" />
 
-        <nuxt-link :to="localePath('barbuddy')" class="text-base">
+        <nuxt-link :to="$localePath('barbuddy')" class="text-base">
           <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>
         </nuxt-link>
       </ElementsActionCard>

@@ -8,31 +8,31 @@ nl:
     educators: Onze **Voorlichters**
   content:
     intro:
-      - DWH geeft gastlessen over LHBT+ onderwerpen zoals gender en seksualiteit, met als doel vooroordelen en
+      - DWH geeft gastlessen over LHBTI+ onderwerpen zoals gender en seksualiteit, met als doel vooroordelen en
         stereotypen daarover weg te nemen. Dit doen onze voorlichters in een interactieve sessie, op basis van door
         Movisie effectief bewezen methoden en onze eigen jarenlange ervaring met voorlichting.
     more:
-      - DWH geeft gastlessen over LHBT+ onderwerpen zoals gender en seksualiteit, met als doel vooroordelen en
+      - DWH geeft gastlessen over LHBTI+ onderwerpen zoals gender en seksualiteit, met als doel vooroordelen en
         stereotypen daarover weg te nemen. Dit doen onze voorlichters in een interactieve sessie, op basis van door
         Movisie effectief bewezen methoden en onze eigen jarenlange ervaring met voorlichting.
       - De voorlichters van DWH zijn een enthousiaste en diverse groep vrijwilligers uit de regio. Ze vertellen
-        graag een verhaal over hun ervaring als LHBT+’er, en weten dit te koppelen aan de eigen ervaring die
+        graag een verhaal over hun ervaring als LHBTI+’er, en weten dit te koppelen aan de eigen ervaring die
         leerlingen hebben met vooroordelen of discriminatie. Daarna gaan ze over op een, op de doelgroep afgestemd,
-        spel om positieve associaties te creëren met LHBT+ zijn, en zo een gezamenlijke norm op te bouwen tegen
+        spel om positieve associaties te creëren met LHBTI+ zijn, en zo een gezamenlijke norm op te bouwen tegen
         discriminatie.
       - Wij geven al vele jaren voorlichting op middelbare scholen in Delft, Midden-Delfland, Pijnacker-Nootdorp,
         Rijswijk en incidenteel daarbuiten. Sinds kort geven we ook voorlichting op basisscholen, bij
         sportverenigingen, en op MBO’s.
     jongenout: |-
-      Voor jonge LHBT+’ers van 12 en 18 jaar oud organiseert DWH ook maandelijkse Jong&Out bijeenkomsten op elke derde
+      Voor jonge LHBTI+’ers van 12 en 18 jaar oud organiseert DWH ook maandelijkse Jong&Out bijeenkomsten op elke derde
       zondag van de maand. Elke keer is er een andere activiteit, van levend stratego in de Delftse Hout tot
       spelletjesmiddagen, drag karaoke of waterfietsen.
     voorlichting:
       - Een voorlichting (op het voortgezet onderwijs) wordt gegeven door twee voorlichters, gedurende een of twee
         lesuren.
-      - Met een associatiespel worden leerlingen gevraagd alle termen te roepen die ze met LHBT+ associëren,
+      - Met een associatiespel worden leerlingen gevraagd alle termen te roepen die ze met LHBTI+ associëren,
         zonder dat antwoorden als goed of fout worden aangemerkt – zo blijft het gesprek open. Daarna gaan de
-        voorlichters in op de verschillende termen binnen LHBT+ en op de genoemde vooroordelen. Door hun persoonlijke
+        voorlichters in op de verschillende termen binnen LHBTI+ en op de genoemde vooroordelen. Door hun persoonlijke
         verhalen te koppelen aan soortgelijke ervaringen van leerlingen bouwen we aan wederzijds begrip en het wegnemen
         van vooroordelen.
     contact:
@@ -62,7 +62,7 @@ const { t } = useT()
           />
         </div>
         <div class="lg:w-1/3 xl:w-1/4">
-          <nuxt-link :to="localePath('jongenout')">
+          <nuxt-link :to="$localePath('jongenout')">
             <Announcement>
               <h2 class="mb-2 text-2xl font-semibold"><Markdown :content="t('titles.jongenout')" /></h2>
               <p class="mb-4 text-base" v-html="t('content.jongenout')" />

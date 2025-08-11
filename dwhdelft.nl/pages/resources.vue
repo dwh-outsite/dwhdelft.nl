@@ -12,7 +12,7 @@ en:
     intro:
       - 'The second Friday of December is Purple Friday. A day where we try to convince as many non-queer identifying people as possible to show support by wearing something purple. Will you?'
     local:
-      - 'Are you a LGBT+ youth under 19 or are you still unsure but want to come into contact with other LGBT+ youth with fun activities? Check out [Jong&Out Delft](https://instagram.com/jongenoutdelft/).'
+      - 'Are you a LGBTI+ youth under 19 or are you still unsure but want to come into contact with other LGBTI+ youth with fun activities? Check out [Jong&Out Delft](https://instagram.com/jongenoutdelft/).'
       - 'From 16 to 28 years old you are welcome at [Outsite](https://dwhdelft.nl/outsite), our youth group with a weekly barnight on Thursday, filled with activities and parties. We host a [kennismakingsgroep](https://outsite.nl/kmg) twice a year, where you spend 9 weeks getting to know a group of queer people your age and the queer community.'
       - 'There is also an active queer nightlife scene. DWH has its own weekly open bar in Delft and there are regular parties. There are lots of trips, organised by and for our members, to Pann in Utrecht, Popcake festival or Pride in different cities.'
       - 'Are you an employee of TU Delft? Check the page of [TrueU](https://www.tudelft.nl/over-tu-delft/strategie/strategiedocumenten-tu-delft/diversiteitsbeleid/true-u/); this is the queer network of TU employees, who works on improving acceptance and inclusion at the university.'
@@ -54,7 +54,7 @@ nl:
     intro:
       - 'De tweede vrijdag van december is het Paarse Vrijdag. Dit is een dag waarop we proberen om zoveel mogelijk mensen die zich niet identificeren als queer, te overtuigen hun support te laten zien door iets paars te dragen. Doe jij mee?'
     local:
-      - 'Ben jij een LHBT+ jongere onder de 19 jaar of weet je het nog niet precies maar wil je wel in contact komen met andere LHBT+ jongeren door middel van laagdrempelige activiteiten? Check dan [Jong&Out Delft](https://instagram.com/jongenoutdelft/).'
+      - 'Ben jij een LHBTI+ jongere onder de 19 jaar of weet je het nog niet precies maar wil je wel in contact komen met andere LHBTI+ jongeren door middel van laagdrempelige activiteiten? Check dan [Jong&Out Delft](https://instagram.com/jongenoutdelft/).'
       - 'Van 16 t/m 28 jaar ben je welkom bij [Outsite](https://dwhdelft.nl/outsite), onze jongerenvleugel met een wekelijkse baravond op donderdag vol activiteiten en feesten. Elk half jaar hebben we voor deze leeftijd ook een [kennismakingsgroep](https://outsite.nl/kmg), waar je in negen weken een groep leeftijdsgenoten en de queer community goed leert kennen.'
       - 'Er valt hier ook genoeg queer uit te gaan. In Delft zelf is de bar bij DWH elke week open en zijn er regelmatig feesten. Er worden door en voor onze leden vaak ook uitjes naar Pann, in Utrecht, Popcake festival of Pride in diverse steden georganiseerd.'
       - 'Ben je een medewerker bij de TU Delft? Kijk dan eens op de pagina van [TrueU](https://www.tudelft.nl/over-tu-delft/strategie/strategiedocumenten-tu-delft/diversiteitsbeleid/true-u/); dit is het roze netwerk van TU medewerkers, dat zich inzet om acceptatie binnen de universiteit te vergroten.'
@@ -105,7 +105,6 @@ const { t } = useT()
           class="mb-4 text-lg text-gray-800 lg:text-xl lg:leading-relaxed"
           :content="paragraph"
         />
-        <PagesResourcesPurpleFriday />
       </div>
       <div class="lg:w-1/4">
         <Announcement>

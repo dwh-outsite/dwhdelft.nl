@@ -1,8 +1,8 @@
 <i18n lang="yaml">
 en:
   intro:
-    - "DWH is the independent LGBT+ association of Delft and surroundings. We're two things: a meeting place for
-      LGBT+ people and their friends and a group that actively pushes for greater LGBT+ rights and acceptance. As the
+    - "DWH is the independent LGBTI+ association of Delft and surroundings. We're two things: a meeting place for
+      LGBTI+ people and their friends and a group that actively pushes for greater LGBTI+ rights and acceptance. As the
       latter, we give lectures at schools, have introduction groups for newly out people and organise public events
       arounds dates like coming out day."
     - 'As a meeting place we are open regularly on four nights a week with a weekly dinner, movie night and two bar
@@ -13,8 +13,8 @@ en:
     time: Every Saturday starting at {0}
 nl:
   intro:
-    - 'DWH is dé onafhankelijke LHBT+ vereniging van Delft en omgeving. We zijn twee dingen: een ontmoetingsplek
-      voor LHBT+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBT+ rechten en acceptatie. In die
+    - 'DWH is dé onafhankelijke LHBTI+ vereniging van Delft en omgeving. We zijn twee dingen: een ontmoetingsplek
+      voor LHBTI+ mensen en hun vrienden en een groep die actief strijdt voor meer LHBTI+ rechten en acceptatie. In die
       tweede rol organiseren we voorlichtingen op scholen, introductiegroepen voor jongeren die net uit de kast zijn en
       allerlei openbare events rond dagen als coming out dag.'
     - 'Als ontmoetingsplek zijn we vier dagen per week geopend, met een wekelijkse eettafel, filmavond en twee

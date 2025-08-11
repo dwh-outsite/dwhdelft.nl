@@ -1,7 +1,7 @@
 <i18n lang="yaml">
 en:
   hero:
-    title: "Delft's LGBT+ Youth Association"
+    title: "Delft's LGBTI+ Youth Association"
     subtitle: for everyone up to 28 years
     primaryButton: Join Outsite
     secondaryButton: Watch Video
@@ -16,7 +16,7 @@ en:
     title: Updates and upcoming activities
 nl:
   hero:
-    title: 'Delftse LHBT+ jongerenvereniging'
+    title: 'Delftse LHBTI+ jongerenvereniging'
     subtitle: voor iedereen t/m 28 jaar
     primaryButton: Kom naar Outsite
     secondaryButton: Bekijk Video
@@ -94,7 +94,7 @@ const instagramChannels = [
         <h1 class="flex-1 text-5xl font-medium leading-none text-brand-450">
           <Markdown :content="t('highlights.title')" />
         </h1>
-        <nuxt-link :to="localePath('highlights')" class="hidden md:block">
+        <nuxt-link :to="$localePath('highlights')" class="hidden md:block">
           <ElementsPrimaryButton arrow>
             {{ t('highlights.more') }}
           </ElementsPrimaryButton>

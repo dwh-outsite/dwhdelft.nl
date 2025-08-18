@@ -1,24 +1,79 @@
 <i18n lang="yaml">
 en:
   events: 'DWH Agenda'
+  filters:
+    toggle:
+      show: 'Show filters'
+      hide: 'Hide filters'
+    members:
+      label: 'Open for'
+      options:
+        everyone: 'Everyone'
+        membersOnly: 'Members only'
+    age: 
+      label: 'Age groups'
+      options:
+        all: 'All ages'
+        ages28: '28-'
+        ages18: '12-18'
+    signup: 
+      label: 'Sign-up'
+      options:
+        open: 'Open event'
+        signup: 'Sign-up necessary'
+    location: 
+      label: 'Location'
+      options:
+        pand: 'Our Building'
+        elsewhere: 'Elsewhere'
 nl:
   events: 'DWH Agenda'
+  filters: 
+    toggle:
+      show: 'Toon filters'
+      hide: 'Verberg filters'
+    members:
+      label: 'Open voor'
+      options:
+        everyone: 'Iedereen'
+        membersOnly: 'Alleen leden'
+    age: 
+      label: 'Leeftijdsgroepen'
+      options:
+        all: 'Alle leeftijden'
+        ages28: '28-'
+        ages18: '12-18'
+    signup: 
+      label: 'Aanmelden'
+      options:
+        open: 'Open evenement'
+        signup: 'Aanmelden noodzakelijk'
+    location: 
+      label: 'Locatie'
+      options:
+        pand: 'Ons gebouw'
+        elsewhere: 'Ergens anders'
 </i18n>
 
 <script setup>
-const { t } = useT()
+const { t, tt } = useT()
 import GSheetReader from 'g-sheets-api'
 
 const emit = defineEmits(['ready'])
 
 const { image: imageIcons } = useDynamicImages(
-  import.meta.glob('~/assets/images/photos/mixup/icons/*', { eager: true })
+  import.meta.glob('~/assets/images/photos/agenda/icons/*', { eager: true })
 )
 
 const events = ref(null)
 
+const showFilters = ref(false)
+
 const selectedOpenFor = ref(["Everyone", "Members only"])
 const selectedAgeRestrictions = ref(["All ages", "28-", "12-18"])
+const selectedSignup = ref(["Sign-up", "Open"])
+const selectedLocation = ref(["Pand", "Elsewhere"])
+
 
 const sheetOptions = {
   apiKey: useRuntimeConfig().public.googleKey,
@@ -55,7 +110,7 @@ onMounted(() => {
         membersOnly: row[`Members only`] === 'TRUE',
         jongenout: row[`J&O`] === 'TRUE',
         ageRestricted: row[`Age restricted`] === 'TRUE',
-        icon: imageIcons(row[`Icon`]) || imageIcons('bar'),
+        icon: imageIcons(row[`Icon`]) || imageIcons('dwh'),
       }))
       .filter((event) => !isNaN(event.date) && event.date.getTime() > new Date().getTime())
 
@@ -69,24 +124,120 @@ onMounted(() => {
 <template>
   <section
     v-if="events === null || events.length > 0"
-    class="bg-gray-900 bg-gradient-to-b from-gray-900 to-brand-500/10 py-12 text-gray-200 md:pt-0"
+    class="bg-brand-450 py-12 text-gray-200 md:pt-6"
   >
     <ElementsContainer>
       <h1 class="mb-6 text-center text-5xl font-medium">
         <Markdown :content="t('events')" />
       </h1>
-      <label class="block mb-4">
+      <!-- <label class="block mb-4">
         Open for:
         <select v-model="selectedOpenFor" multiple class="border rounded p-1">
           <option value="Everyone">Everyone</option>
           <option value="Members only">Members only</option>
         </select>
-      </label>
-      <div v-if="filteredEvents === null" class="flex flex-wrap justify-center gap-4">
+      </label> -->
+       <!-- <label class="flex flex-col text-gray-200">
+        {{ t('filters.members.label') }}:
+        <select v-model="selectedOpenFor" multiple class="mt-2 p-2 rounded bg-brand-500 text-gray-200 border border-brand-400">
+            <option :value="'Everyone'">{{ t('filters.members.everyone') }}</option>
+            <option :value="'Members only'">{{ t('filters.members.membersOnly') }}</option>
+        </select>
+        </label>
+
+        <label class="flex flex-col text-gray-200">
+        {{ t('filters.age.label') }}:
+        <select v-model="selectedAgeRestrictions" multiple class="mt-2 p-2 rounded bg-brand-500 text-gray-200 border border-brand-400">
+            <option value="All ages">All ages</option>
+            <option value="28-">28+</option>
+            <option value="12-18">12-18</option>
+        </select>
+        </label> -->
+      <div class="mb-4">
+        <button
+          @click="showFilters = !showFilters"
+          class="bg-brand-500 hover:bg-brand-400 px-4 py-2 rounded text-gray-200 font-semibold shadow"
+        >
+          {{ showFilters ? t('filters.toggle.hide') : t('filters.toggle.show') }}
+        </button>
+      </div>
+      <transition name="fade">
+        <div
+          v-if="showFilters"
+          class="bg-brand-500 p-4 rounded text-gray-200 border border-brand-400 space-y-4"
+        >
+        <!-- Members filter -->
+        <div>
+          <h3 class="font-semibold mb-2">{{ t('filters.members.label') }}</h3>
+          <div class="space-y-1">
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedOpenFor" value="Everyone" class="accent-brand-400">
+              <span>{{ t('filters.members.options.everyone') }}</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedOpenFor" value="Members only" class="accent-brand-400">
+              <span>{{ t('filters.members.options.membersOnly') }}</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Age filter -->
+        <div>
+          <h3 class="font-semibold mb-2">{{ t('filters.age.label') }}</h3>
+          <div class="space-y-1">
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedAgeRestrictions" value="All ages" class="accent-brand-400">
+              <span>{{ t('filters.age.options.all') }}</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedAgeRestrictions" value="28-" class="accent-brand-400">
+              <span>{{ t('filters.age.options.ages28') }}</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedAgeRestrictions" value="12-18" class="accent-brand-400">
+              <span>{{ t('filters.age.options.ages18') }}</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Signup filter -->
+        <div>
+          <h3 class="font-semibold mb-2">{{ t('filters.signup.label') }}</h3>
+          <div class="space-y-1">
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedSignup" value="Sign-up" class="accent-brand-400">
+              <span>{{ t('filters.signup.options.signup') }}</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedSignup" value="Open" class="accent-brand-400">
+              <span>{{ t('filters.signup.options.open') }}</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Location filter -->
+        <div>
+          <h3 class="font-semibold mb-2">{{ t('filters.location.label') }}</h3>
+          <div class="space-y-1">
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedLocation" value="Pand" class="accent-brand-400">
+              <span>{{ t('filters.location.options.pand') }}</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" v-model="selectedLocation" value="Elsewhere" class="accent-brand-400">
+              <span>{{ t('filters.location.options.elsewhere') }}</span>
+            </label>
+          </div>
+        </div>
+      </div>
+     </transition>
+
+
+      <div v-if="events === null" class="flex flex-wrap justify-center gap-4">
         <div
           v-for="index in 5"
           :key="index"
-          class="flex w-full animate-pulse flex-row-reverse rounded-lg bg-brand-900 p-4 shadow-lg md:w-48 md:flex-col"
+          class="flex w-full animate-pulse flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
         >
           <div class="flex-1">
             <div class="mb-2 h-4 w-24 bg-gray-400/10 md:mx-auto" />
@@ -101,7 +252,7 @@ onMounted(() => {
         <div
           v-for="(event, index) in filteredEvents"
           :key="index"
-          class="flex w-full flex-row-reverse rounded-lg bg-brand-900 p-4 shadow-lg md:w-48 md:flex-col"
+          class="flex w-full flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
         >
           <div class="flex-1">
             <div class="uppercase tracking-wide text-gray-300">

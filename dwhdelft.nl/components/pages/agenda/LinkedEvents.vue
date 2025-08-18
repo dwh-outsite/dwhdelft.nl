@@ -84,7 +84,14 @@ const sheetOptions = {
 const filteredEvents = computed(() => {
   if (!events.value) return []
   return events.value.filter((e) =>
-    selectedOpenFor.value.includes(e.membersOnly ? 'Members only' : 'Everyone')
+    {
+      const openForMatches =  selectedOpenFor.value.includes(e.membersOnly ? 'Members only' : 'Everyone')
+      const ageMatches = selectedAgeRestrictions.value.includes(e.ageGroup)
+      const signupMatches = selectedSignup.value.includes(e.signupRequired ? 'Sign-up' : 'Open')
+      const locationMatches = selectedLocation.value.includes(e.location ? 'Pand' : 'Elsewhere')
+      return openForMatches && ageMatches && signupMatches && locationMatches
+    }
+   
   )
 })
 
@@ -108,8 +115,9 @@ onMounted(() => {
             nl: row[`Event description - NL`],
         },
         membersOnly: row[`Members only`] === 'TRUE',
-        jongenout: row[`J&O`] === 'TRUE',
-        ageRestricted: row[`Age restricted`] === 'TRUE',
+        ageGroup: row[`J&O`] === 'TRUE' ? '12-18' :row[`Age restricted`] === 'TRUE' ? '28-' : 'All ages',
+        signupRequired: row[`Sign-up required`] === 'TRUE',
+        location: row[`Location`] ? row[`Location`] : 'Pand',
         icon: imageIcons(row[`Icon`]) || imageIcons('dwh'),
       }))
       .filter((event) => !isNaN(event.date) && event.date.getTime() > new Date().getTime())
@@ -130,29 +138,6 @@ onMounted(() => {
       <h1 class="mb-6 text-center text-5xl font-medium">
         <Markdown :content="t('events')" />
       </h1>
-      <!-- <label class="block mb-4">
-        Open for:
-        <select v-model="selectedOpenFor" multiple class="border rounded p-1">
-          <option value="Everyone">Everyone</option>
-          <option value="Members only">Members only</option>
-        </select>
-      </label> -->
-       <!-- <label class="flex flex-col text-gray-200">
-        {{ t('filters.members.label') }}:
-        <select v-model="selectedOpenFor" multiple class="mt-2 p-2 rounded bg-brand-500 text-gray-200 border border-brand-400">
-            <option :value="'Everyone'">{{ t('filters.members.everyone') }}</option>
-            <option :value="'Members only'">{{ t('filters.members.membersOnly') }}</option>
-        </select>
-        </label>
-
-        <label class="flex flex-col text-gray-200">
-        {{ t('filters.age.label') }}:
-        <select v-model="selectedAgeRestrictions" multiple class="mt-2 p-2 rounded bg-brand-500 text-gray-200 border border-brand-400">
-            <option value="All ages">All ages</option>
-            <option value="28-">28+</option>
-            <option value="12-18">12-18</option>
-        </select>
-        </label> -->
       <div class="mb-4">
         <button
           @click="showFilters = !showFilters"
@@ -231,7 +216,6 @@ onMounted(() => {
         </div>
       </div>
      </transition>
-
 
       <div v-if="events === null" class="flex flex-wrap justify-center gap-4">
         <div

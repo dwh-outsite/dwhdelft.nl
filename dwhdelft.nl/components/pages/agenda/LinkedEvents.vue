@@ -218,7 +218,7 @@ onMounted(() => {
             </div>
           </div>
           <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">
-            <img :src="event.icon" alt="Event Icon" class="h-12" />
+            <img :src="event.icon" alt="Event Icon" class="h-12 w-12 md:w-auto object-contain" />
           </div>
         </div>
       </div>

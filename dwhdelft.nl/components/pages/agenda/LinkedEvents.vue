@@ -151,71 +151,41 @@ onMounted(() => {
           v-if="showFilters"
           class="bg-brand-500 p-4 rounded text-gray-200 border border-brand-400 space-y-4"
         >
-        <!-- Members filter -->
-        <div>
-          <h3 class="font-semibold mb-2">{{ t('filters.members.label') }}</h3>
-          <div class="space-y-1">
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedOpenFor" value="Everyone" class="accent-brand-400">
-              <span>{{ t('filters.members.options.everyone') }}</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedOpenFor" value="Members only" class="accent-brand-400">
-              <span>{{ t('filters.members.options.membersOnly') }}</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Age filter -->
-        <div>
-          <h3 class="font-semibold mb-2">{{ t('filters.age.label') }}</h3>
-          <div class="space-y-1">
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedAgeRestrictions" value="All ages" class="accent-brand-400">
-              <span>{{ t('filters.age.options.all') }}</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedAgeRestrictions" value="28-" class="accent-brand-400">
-              <span>{{ t('filters.age.options.ages28') }}</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedAgeRestrictions" value="12-18" class="accent-brand-400">
-              <span>{{ t('filters.age.options.ages18') }}</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Signup filter -->
-        <div>
-          <h3 class="font-semibold mb-2">{{ t('filters.signup.label') }}</h3>
-          <div class="space-y-1">
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedSignup" value="Sign-up" class="accent-brand-400">
-              <span>{{ t('filters.signup.options.signup') }}</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedSignup" value="Open" class="accent-brand-400">
-              <span>{{ t('filters.signup.options.open') }}</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Location filter -->
-        <div>
-          <h3 class="font-semibold mb-2">{{ t('filters.location.label') }}</h3>
-          <div class="space-y-1">
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedLocation" value="Pand" class="accent-brand-400">
-              <span>{{ t('filters.location.options.pand') }}</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="checkbox" v-model="selectedLocation" value="Elsewhere" class="accent-brand-400">
-              <span>{{ t('filters.location.options.elsewhere') }}</span>
-            </label>
-          </div>
-        </div>
-      </div>
-     </transition>
+          <PagesAgendaFilterBlock
+            :label="t('filters.members.label')"
+            :options="[
+              { label: t('filters.members.options.everyone'), value: 'Everyone' },
+              { label: t('filters.members.options.membersOnly'), value: 'Members only' }
+            ]"
+            v-model="selectedOpenFor"
+          />
+          <PagesAgendaFilterBlock
+            :label="t('filters.age.label')"
+            :options="[
+              { label: t('filters.age.options.all'), value: 'All ages' },
+              { label: t('filters.age.options.ages28'), value: '28-' },
+              { label: t('filters.age.options.ages18'), value: '12-18' }
+            ]"
+            v-model="selectedAgeRestrictions"
+          />
+          <PagesAgendaFilterBlock
+            :label="t('filters.signup.label')"
+            :options="[
+              { label: t('filters.signup.options.open'), value: 'Open' },
+              { label: t('filters.signup.options.signup'), value: 'Sign-up' }
+            ]"
+            v-model="selectedSignup"
+          />
+          <PagesAgendaFilterBlock
+            :label="t('filters.location.label')"
+            :options="[
+              { label: t('filters.location.options.pand'), value: 'Pand' },
+              { label: t('filters.location.options.elsewhere'), value: 'Elsewhere' }
+            ]"
+            v-model="selectedLocation"
+          />
+       </div>
+      </transition>
 
       <div v-if="events === null" class="flex flex-wrap justify-center gap-4">
         <div

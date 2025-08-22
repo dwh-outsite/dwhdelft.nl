@@ -212,9 +212,13 @@ onMounted(() => {
         <div
           v-for="(event, index) in filteredEvents"
           :key="index"
-          class="flex w-full flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
+          class="relative flex w-full flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
         >
-          <div class="flex-1">
+          <div v-if="event.ageGroup !== 'All ages'" class="absolute -top-4 right-0">
+            <img :src="imageIcons(event.ageGroup)" :alt="event.ageGroup" class="h-12 w-12 object-contain" />
+          </div>
+
+          <div class="flex-1 flex flex-col">
             <div class="uppercase tracking-wide text-gray-300">
               {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
               {{ event.startTime ? ` - ${event.startTime}` : '' }}

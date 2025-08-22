@@ -62,6 +62,7 @@ nl:
 <script setup>
 const { t, tt } = useT()
 import GSheetReader from 'g-sheets-api'
+import { computed } from 'vue'
 import { IconAddOutline, IconMinusOutline } from '@iconify-prerendered/vue-zondicons'
 
 const emit = defineEmits(['ready'])
@@ -99,6 +100,10 @@ const filteredEvents = computed(() => {
    
   )
 })
+
+const expandedEvents = computed(() =>
+  (filteredEvents || []).filter(event => event?.showDescription)
+)
 
 onMounted(() => {
   GSheetReader(sheetOptions, (results) => {
@@ -208,40 +213,47 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div v-else class="flex flex-wrap justify-center gap-4 md:text-center">
+      <div v-else class="flex flex-wrap justify-center gap-4 md:text-center items-start">
         <div
           v-for="(event, index) in filteredEvents"
           :key="index"
-          class="relative flex w-full flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
+          class="w-full md:w-48 md:min-h-48"
         >
-          <div v-if="event.ageGroup !== 'All ages'" class="absolute -top-4 right-0">
-            <img :src="imageIcons(event.ageGroup)" :alt="event.ageGroup" class="h-12 w-12 object-contain" />
-          </div>
+          <div class="flex flex-1 relative flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:flex-col md:min-h-44">
+            <div v-if="event.ageGroup !== 'All ages'" class="absolute -top-4 right-0">
+              <img :src="imageIcons(event.ageGroup)" :alt="event.ageGroup" class="h-12 w-12 object-contain" />
+            </div>
 
-          <div class="flex-1 flex flex-col">
-            <div class="uppercase tracking-wide text-gray-300">
-              {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
-              {{ event.startTime ? ` - ${event.startTime}` : '' }}
+            <div class="flex-1 flex flex-col">
+              <div class="uppercase tracking-wide text-gray-300">
+                {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
+                {{ event.startTime ? ` - ${event.startTime}` : '' }}
+              </div>
+              <div class="text-xl font-bold md:mb-4">
+                {{ event.eventName[$i18n.locale] }}
+              </div>
             </div>
-            <div class="text-xl font-bold md:mb-4">
-              {{ event.eventName[$i18n.locale] }}
+
+            <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">
+              <img :src="event.icon" alt="Event Icon" class="h-12 w-12 md:w-auto object-contain" />
             </div>
-            <div v-if="event.eventDescription[$i18n.locale]">
+
+            <div v-if="event.eventDescription?.[$i18n.locale]" class="mt-1 absolute bottom-0 right-1">
               <button
                 @click="event.showDescription = !event.showDescription"
-                class="text-sm text-brand-200 hover:underline mt-1"
+                class="text-sm text-brand-200 hover:underline"
               >
                 <IconMinusOutline v-if="event.showDescription" />
                 <IconAddOutline v-else />
               </button>
-              
-              <div v-if="event.showDescription" class="mt-1 text-gray-300 text-sm">
-                <Markdown :content="event.eventDescription[$i18n.locale]" />
-              </div>
             </div>
           </div>
-          <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">
-            <img :src="event.icon" alt="Event Icon" class="h-12 w-12 md:w-auto object-contain" />
+
+          <div
+            v-if="event.showDescription"
+            class="w-full bg-brand-800 text-gray-300 p-4 rounded-md mt-2 break-words"
+          >
+            <Markdown :content="event.eventDescription[$i18n.locale]" class="content c-dark-background" />
           </div>
         </div>
       </div>

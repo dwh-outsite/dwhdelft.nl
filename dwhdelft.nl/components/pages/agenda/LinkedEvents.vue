@@ -101,6 +101,17 @@ const filteredEvents = computed(() => {
   )
 })
 
+const groupedEvents = computed(() => {
+  if (!filteredEvents.value) return {}
+
+  return filteredEvents.value.reduce((groups, event) => {
+    const monthIndex = event.date.getMonth()
+    if (!groups[monthIndex]) groups[monthIndex] = []
+    groups[monthIndex].push(event)
+    return groups
+  }, {})
+})
+
 const expandedEvents = computed(() =>
   (filteredEvents || []).filter(event => event?.showDescription)
 )
@@ -213,6 +224,39 @@ onMounted(() => {
           </div>
         </div>
       </div>
+
+      <!-- GROUPED BY MONTHS -->
+      <!-- <div v-else>
+        <div 
+          v-for="(events, monthIndex) in groupedEvents" 
+          :key="monthIndex" 
+          class="mb-8"
+        >
+          <h2 class="text-2xl font-bold mb-6 text-center border-b border-brand-800 pb-2 capitalize">
+            {{ $t(`month.${monthIndex}`) }}
+          </h2>
+
+          <div class="flex flex-wrap justify-center gap-4 md:text-center">
+            <div
+              v-for="(event, index) in events"
+              :key="index"
+              class="flex w-full flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
+            >
+              <div class="flex-1 flex flex-col">
+                <div class="uppercase tracking-wide text-gray-300">
+                  {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
+                  {{ event.startTime ? ` - ${event.startTime}` : '' }}
+                </div>
+                <div class="text-xl font-bold md:mb-2">
+                  {{ event.eventName[$i18n.locale] }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- UNGROUPED -->
       <div v-else class="flex flex-wrap justify-center gap-4 md:text-center items-start">
         <div
           v-for="(event, index) in filteredEvents"

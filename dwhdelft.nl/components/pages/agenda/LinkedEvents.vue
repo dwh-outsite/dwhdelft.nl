@@ -5,6 +5,8 @@ en:
     toggle:
       show: 'Show filters'
       hide: 'Hide filters'
+      more: 'Show more'
+      less: 'Show less'
     members:
       label: 'Open for'
       options:
@@ -32,6 +34,8 @@ nl:
     toggle:
       show: 'Toon filters'
       hide: 'Verberg filters'
+      more: 'Meer zien'
+      less: 'Minder zien'
     members:
       label: 'Open voor'
       options:
@@ -58,6 +62,7 @@ nl:
 <script setup>
 const { t, tt } = useT()
 import GSheetReader from 'g-sheets-api'
+import { IconAddOutline, IconMinusOutline } from '@iconify-prerendered/vue-zondicons'
 
 const emit = defineEmits(['ready'])
 
@@ -114,6 +119,7 @@ onMounted(() => {
             en: row[`Event description - EN`],
             nl: row[`Event description - NL`],
         },
+        showDescription: false,
         membersOnly: row[`Members only`] === 'TRUE',
         ageGroup: row[`J&O`] === 'TRUE' ? '12-18' :row[`Age restricted`] === 'TRUE' ? '28-' : 'All ages',
         signupRequired: row[`Sign-up required`] === 'TRUE',
@@ -215,6 +221,19 @@ onMounted(() => {
             </div>
             <div class="text-xl font-bold md:mb-4">
               {{ event.eventName[$i18n.locale] }}
+            </div>
+            <div v-if="event.eventDescription[$i18n.locale]">
+              <button
+                @click="event.showDescription = !event.showDescription"
+                class="text-sm text-brand-200 hover:underline mt-1"
+              >
+                <IconMinusOutline v-if="event.showDescription" />
+                <IconAddOutline v-else />
+              </button>
+              
+              <div v-if="event.showDescription" class="mt-1 text-gray-300 text-sm">
+                <Markdown :content="event.eventDescription[$i18n.locale]" />
+              </div>
             </div>
           </div>
           <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">

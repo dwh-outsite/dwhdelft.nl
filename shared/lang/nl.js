@@ -67,4 +67,24 @@ export default {
     10: 'november',
     11: 'december',
   },
+  weekdays: {
+    short: {
+      0: 'Zo',
+      1: 'Ma',
+      2: 'Di',
+      3: 'Wo',
+      4: 'Do',
+      5: 'Vr',
+      6: 'Za',
+    },
+    long: {
+      0: 'Zondag',
+      1: 'Maandag',
+      2: 'Dinsdag',
+      3: 'Woensdag',
+      4: 'Donderdag',
+      5: 'Vrijdag',
+      6: 'Zaterdag',
+    },
+  }
 }

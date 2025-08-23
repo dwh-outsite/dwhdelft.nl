@@ -105,16 +105,16 @@ const groupedEvents = computed(() => {
   if (!filteredEvents.value) return {}
 
   return filteredEvents.value.reduce((groups, event) => {
-    const monthIndex = event.date.getMonth()
-    if (!groups[monthIndex]) groups[monthIndex] = []
-    groups[monthIndex].push(event)
+    const year = event.date.getFullYear()
+    const month = event.date.getMonth()
+    const key = `${year}-${month}`
+    if (!groups[key]) {
+      groups[key] = []
+    }
+    groups[key].push(event)
     return groups
   }, {})
 })
-
-const expandedEvents = computed(() =>
-  (filteredEvents || []).filter(event => event?.showDescription)
-)
 
 onMounted(() => {
   GSheetReader(sheetOptions, (results) => {
@@ -226,38 +226,61 @@ onMounted(() => {
       </div>
 
       <!-- GROUPED BY MONTHS -->
-      <!-- <div v-else>
-        <div 
-          v-for="(events, monthIndex) in groupedEvents" 
-          :key="monthIndex" 
-          class="mb-8"
-        >
+       <div v-else>
+        <div v-for="(events, key) in groupedEvents" :key="key" class="mb-8">
           <h2 class="text-2xl font-bold mb-6 text-center border-b border-brand-800 pb-2 capitalize">
-            {{ $t(`month.${monthIndex}`) }}
+            {{ $t(`month.${parseInt(key.split('-')[1])}`) }} {{ new Date().getFullYear() === parseInt(key.split('-')[0]) ? '' : key.split('-')[0] }}
           </h2>
 
-          <div class="flex flex-wrap justify-center gap-4 md:text-center">
+          <div class="flex flex-wrap justify-center gap-4 md:text-center items-start">
             <div
               v-for="(event, index) in events"
               :key="index"
-              class="flex w-full flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:w-48 md:flex-col"
+              class="w-full md:w-48 md:min-h-48"
             >
-              <div class="flex-1 flex flex-col">
-                <div class="uppercase tracking-wide text-gray-300">
-                  {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
-                  {{ event.startTime ? ` - ${event.startTime}` : '' }}
+              <div class="flex flex-1 relative flex-row-reverse rounded-lg bg-brand-700 p-4 shadow-lg md:flex-col md:min-h-44">
+                <div v-if="event.ageGroup !== 'All ages'" class="absolute -top-4 right-0">
+                  <img :src="imageIcons(event.ageGroup)" :alt="event.ageGroup" class="h-12 w-12 object-contain" />
                 </div>
-                <div class="text-xl font-bold md:mb-2">
-                  {{ event.eventName[$i18n.locale] }}
+
+                <div class="flex-1 flex flex-col">
+                  <div class="uppercase tracking-wide text-gray-300">
+                    {{ event.date.getDate() }} {{ $t(`month.${event.date.getMonth()}`)?.slice(0, 3) }}
+                    {{ event.startTime ? ` - ${event.startTime}` : '' }}
+                  </div>
+                  <div class="text-xl font-bold md:mb-4">
+                    {{ event.eventName[$i18n.locale] }}
+                  </div>
                 </div>
+
+                <div class="mr-2 flex min-w-16 items-center justify-center md:mr-0">
+                  <img :src="event.icon" alt="Event Icon" class="h-12 w-12 md:w-auto object-contain" />
+                </div>
+
+                <div v-if="event.eventDescription?.[$i18n.locale]" class="mt-1 absolute bottom-0 right-1">
+                  <button
+                    @click="event.showDescription = !event.showDescription"
+                    class="text-sm text-brand-200 hover:underline"
+                  >
+                    <IconMinusOutline v-if="event.showDescription" />
+                    <IconAddOutline v-else />
+                  </button>
+                </div>
+              </div>
+
+              <div
+                v-if="event.showDescription"
+                class="w-full bg-brand-800 text-gray-300 p-4 rounded-md mt-2 break-words"
+              >
+                <Markdown :content="event.eventDescription[$i18n.locale]" class="content c-dark-background" />
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- UNGROUPED -->
-      <div v-else class="flex flex-wrap justify-center gap-4 md:text-center items-start">
+      <!-- <div v-else class="flex flex-wrap justify-center gap-4 md:text-center items-start">
         <div
           v-for="(event, index) in filteredEvents"
           :key="index"
@@ -300,7 +323,7 @@ onMounted(() => {
             <Markdown :content="event.eventDescription[$i18n.locale]" class="content c-dark-background" />
           </div>
         </div>
-      </div>
+      </div> -->
     </ElementsContainer>
   </section>
 </template>

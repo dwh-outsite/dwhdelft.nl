@@ -15,8 +15,6 @@ nl:
 
 <script setup>
 const { t } = useT()
-
-// const sheet = "1ckbpfak1ogVU14ks4tpOSO-KSQrG3Zj7K3bR6qs3ltE"
 </script>
 
 <template>

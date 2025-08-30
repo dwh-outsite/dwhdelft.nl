@@ -8,13 +8,11 @@ en:
       classics, Eurovision watch parties, a spicy Halloween and lots of other themed parties! If you happen to stumble
       upon us when it’s just a barnight, you can have a great chat and perhaps even a dance.
     - MIXUP consists completely of a team of enthusiastic volunteers of DWH. Did we get you excited and do you want
-      to contribute and be part of an amazing community? Become a member.
-    - Scared to come alone? We can match you with a barbuddy to chat with and introduce you to new people!
+      to contribute and be part of an amazing community? [Become a member](https://my.dwhdelft.nl/signup) (not required to visit us).
+    - Scared to come alone? We can [match you with a barbuddy](/en/barbuddy) to chat with and introduce you to new people!
   invite:
     announcement: 'Come by during one of our bar nights:'
     time: Every Saturday starting at {0}
-  membership_button: Sign up now for DWH
-  barbuddy_button: Find a buddy
   instagram: MIXUP **Events** and **UPdates**
   bulletPoints:
     - title: Dance Nights
@@ -48,13 +46,12 @@ nl:
       klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch
       eens gewoon een bar zijn, is het heel gezellig bijkletsen en misschien een dansje wagen.
     - MIXUP wordt volledig mogelijk gemaakt door een team enthousiaste vrijwilligers van DWH. Ben je enthousiast geworden en wil je
-      bijdragen aan en onderdeel worden van een fantastische community? Word dan lid.
-    - Bang om alleen te komen? We kunnen je aan een barbuddy koppelen om te leren kennen, die je ook aan anderen kan voorstellen!
+      bijdragen aan en onderdeel worden van een fantastische community? [Word dan lid](https://my.dwhdelft.nl/signup) (niet verplicht wanneer je ons wilt bezoeken).
+    - Bang om alleen te komen? We kunnen je [aan een barbuddy koppelen](https://my.dwhdelft.nl/barbuddy) om te leren kennen, die je ook aan anderen kan voorstellen!
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
     time: Elke zaterdag vanaf {0}
-  membership_button: Schrijf je nu in bij DWH
-  barbuddy_button: Vind een buddy
+    disclaimer: 'Ook welkom zonder lidmaatschap'
   instagram: MIXUP **Events** en **UPdates**
   bulletPoints:
     - title: Dansavonden
@@ -112,9 +109,12 @@ const instagramChannelsMixup = [
         <div class="flex space-x-16 px-4 lg:space-y-24 lg:pr-32">
           <div class="space-y-4">
             <MIXUPLogo class="mx-auto mb-8 block h-20 md:hidden" />
-            <ElementsParagraphedText :paragraphs="t('intro')" class="space-y-4 md:text-xl md:leading-relaxed" />
+            <div class="space-y-4 md:text-xl md:leading-relaxed">
+              <Markdown v-for="paragraph in t('intro')" :key="paragraph" :content="paragraph" />
+            </div>
             <div class="space-y-2">
               <div class="flex flex-wrap items-center justify-center gap-4">
+                <MIXUPLogo class="hidden h-20 md:block" />
                 <div class="w-full max-w-md md:w-auto">
                   <p
                     v-if="barOpeningHours.announcement"
@@ -127,19 +127,6 @@ const instagramChannelsMixup = [
                     :time="t('invite.time', [barOpeningHours.start_time])"
                   />
                 </div>
-                <MIXUPLogo class="hidden h-20 md:block" />
-              </div>
-              <div class="flex-wrap items-center justify-center space-y-4 md:flex md:space-x-4 md:space-y-0">
-                <a href="https://my.dwhdelft.nl/signup" class="block">
-                  <ElementsSecondaryButton class="text-brand-450" arrow>
-                    {{ t('membership_button') }}
-                  </ElementsSecondaryButton>
-                </a>
-                <nuxt-link :to="$localePath('barbuddy')" class="block">
-                  <ElementsPrimaryButton class="text-brand-50" arrow>
-                    {{ t('barbuddy_button') }}
-                  </ElementsPrimaryButton>
-                </nuxt-link>
               </div>
             </div>
           </div>
@@ -197,5 +184,11 @@ const instagramChannelsMixup = [
 <style scoped>
 .c-bg-highlights {
   background-image: url('~/assets/images/photos/mixup/barvisual.jpg');
+}
+</style>
+
+<style>
+.mixup-colors .content a {
+  @apply text-brand-300;
 }
 </style>

@@ -5,8 +5,8 @@ en:
       url: index
     - title: Join
       url: index#join-outsite
-    - title: Committees
-      url: committees
+    - title: Activities
+      url: activities
     - title: Testimonials
       url: testimonials
     - title: Contact
@@ -18,8 +18,8 @@ nl:
       url: index
     - title: Join
       url: index#join-outsite
-    - title: Commissies
-      url: committees
+    - title: Activiteiten
+      url: activities
     - title: Ervaringen
       url: testimonials
     - title: Contact

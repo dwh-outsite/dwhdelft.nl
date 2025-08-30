@@ -94,7 +94,7 @@ const instagramChannels = [
         <h1 class="flex-1 text-5xl font-medium leading-none text-brand-450">
           <Markdown :content="t('highlights.title')" />
         </h1>
-        <nuxt-link :to="localePath('highlights')" class="hidden md:block">
+        <nuxt-link :to="$localePath('highlights')" class="hidden md:block">
           <ElementsPrimaryButton arrow>
             {{ t('highlights.more') }}
           </ElementsPrimaryButton>

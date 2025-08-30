@@ -49,7 +49,7 @@ const imageOrDefault = (name) => image(name.toLowerCase()) || image('default')
           <div class="absolute bottom-4 right-6 z-10 flex items-center space-x-2 md:bottom-7 md:right-16">
             <Pagination class="!m-0" />
             <a
-              :href="localePath('testimonials')"
+              :href="$localePath('testimonials')"
               class="block text-sm font-bold uppercase tracking-wide text-brand-400"
             >
               {{ t('read_more') }} &raquo;

@@ -48,7 +48,7 @@ const groupedFaqQuestions = computed(() =>
     :top="index % 2 === 0"
     :bottom="index % 2 === 0 && index !== Object.keys(groupedFaqQuestions).length - 1"
     :contentClass="[
-      index % 2 === 0 ? 'bg-brand-450 py-8' : 'bg-white pt-8 pb-24',
+      index % 2 === 0 ? 'bg-brand-450 py-8' : 'bg-white pt-8 pb-12 md:pb-48',
       index === Object.keys(groupedFaqQuestions).length - 1 ? 'pb-24' : '',
     ]"
     triangleClass="border-brand-450"

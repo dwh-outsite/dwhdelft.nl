@@ -1,5 +1,5 @@
 ---
-group: Membership
+group: Activities
 question: Do I need to be a member to join the activities?
 ---
 

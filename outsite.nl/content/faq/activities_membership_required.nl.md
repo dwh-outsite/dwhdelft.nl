@@ -1,5 +1,5 @@
 ---
-group: Lidmaatschap
+group: Activiteiten
 question: Heb ik een lidmaatschap nodig om mee te doen aan de activiteiten?
 ---
 

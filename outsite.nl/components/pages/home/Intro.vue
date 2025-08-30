@@ -10,6 +10,7 @@ en:
   invite:
     announcement: 'Come by during one of our bar nights:'
     time: Every Thursday starting at {0}
+    disclaimer: 'Welcome without membership'
 nl:
   intro:
     - 'Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBTI+. Er worden allerlei
@@ -21,6 +22,7 @@ nl:
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
     time: Elke donderdag vanaf {0}
+    disclaimer: 'Ook welkom zonder lidmaatschap'
 </i18n>
 
 <script setup>
@@ -41,6 +43,7 @@ const barOpeningHours = openingHours.value.events.find((event) => event.day.en =
       class="my-8"
       :announcement="t('invite.announcement')"
       :time="t('invite.time', [barOpeningHours.start_time])"
+      :disclaimer="t('invite.disclaimer')"
     />
   </div>
 </template>

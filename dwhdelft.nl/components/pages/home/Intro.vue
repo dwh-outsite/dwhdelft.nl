@@ -11,6 +11,7 @@ en:
   invite:
     announcement: 'Come by during one of our bar nights:'
     time: Every Saturday starting at {0}
+    disclaimer: 'Welcome without membership'
 nl:
   intro:
     - 'DWH is dé onafhankelijke LHBTI+ vereniging van Delft en omgeving. We zijn twee dingen: een ontmoetingsplek
@@ -23,6 +24,7 @@ nl:
   invite:
     announcement: 'Kom gerust langs op onze baravond:'
     time: Elke zaterdag vanaf {0}
+    disclaimer: 'Ook welkom zonder lidmaatschap'
 </i18n>
 
 <script setup>
@@ -43,6 +45,7 @@ const barOpeningHours = openingHours.value.events.find((event) => event.day.en =
       class="my-8"
       :announcement="t('invite.announcement')"
       :time="t('invite.time', [barOpeningHours.start_time])"
+      :disclaimer="t('invite.disclaimer')"
     />
   </div>
 </template>

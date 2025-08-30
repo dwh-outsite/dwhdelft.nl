@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  title: { type: String, required: true },
+  title: { type: String, required: false },
   titleClass: { type: String, default: '' },
   headerClass: { type: String, default: '' },
   headerPosition: { type: String, default: 'top' },

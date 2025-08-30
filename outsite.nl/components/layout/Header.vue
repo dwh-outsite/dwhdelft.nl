@@ -9,6 +9,8 @@ en:
       url: activities
     - title: Testimonials
       url: testimonials
+    - title: FAQ
+      url: faq
     - title: Contact
       url: '#contact'
   goto: Go to
@@ -22,6 +24,8 @@ nl:
       url: activities
     - title: Ervaringen
       url: testimonials
+    - title: FAQ
+      url: faq
     - title: Contact
       url: '#contact'
   goto: Ga naar

@@ -2,7 +2,7 @@
 en:
   title: MIXUP
   intro:
-    - MIXUP is thé queer nightlife experience of Delft. We open our doors every Saturday at 22:00 and almost
+    - MIXUP is thé queer nightlife experience of Delft. We open our doors every Saturday at {0} and almost
       every week we are more than just a bar. Drag performances of the HAUS of 4D, the city’s best karaoke,
       delicious tastings, MIXUP Alternative with bands, dance nights with popular songs of now and your favorite
       classics, Eurovision watch parties, a spicy Halloween and lots of other themed parties! If you happen to stumble
@@ -40,7 +40,7 @@ en:
 nl:
   title: MIXUP
   intro:
-    - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf 22:00 open en bijna
+    - MIXUP is dé queer uitgaansavond van Delft. Iedere zaterdagavond zijn we vanaf {0} open en bijna
       elke week zijn we meer dan alleen een bar. Drag performances van HAUS of 4D, de beste karaoke van de stad,
       heerlijke proeverijen, MIXUP Alternative met bands, dansavonden met hitjes van nu of juist je favoriete
       klassiekers, een hitsig Halloween en andere themafeesten, Eurovisie watch parties en meer! En als we dan toch
@@ -110,7 +110,11 @@ const instagramChannelsMixup = [
           <div class="space-y-4">
             <MIXUPLogo class="mx-auto mb-8 block h-20 md:hidden" />
             <div class="space-y-4 md:text-xl md:leading-relaxed">
-              <Markdown v-for="paragraph in t('intro')" :key="paragraph" :content="paragraph" />
+              <Markdown
+                v-for="(_, index) in t('intro')"
+                :key="index"
+                :content="t(`intro.${index}`, [barOpeningHours.start_time])"
+              />
             </div>
             <div class="space-y-2">
               <div class="flex flex-wrap items-center justify-center gap-4">

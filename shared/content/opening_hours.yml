@@ -84,8 +84,8 @@ events:
     day:
       en: Saturday
       nl: Zaterdag
-    start_time: '22:00'
-    end_time: '02:00'
+    start_time: '21:00'
+    end_time: '01:00'
     description:
       en: |-
         MIXUP is thé queer bar night of Delft. Meet new people, come dance at our regular

@@ -3,7 +3,7 @@ const { params } = useRoute()
 
 const { locale } = useT()
 
-const slug = params.slug.join('/').replace(/-/g, '_')
+const slug = Array.isArray(params.slug) ? params.slug.join('/').replace(/-/g, '_') : 'index'
 
 const showLanguageWarning = ref(false)
 

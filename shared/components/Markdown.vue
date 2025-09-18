@@ -7,7 +7,7 @@
 import markdownParser from '@nuxt/content/transformers/markdown'
 
 const props = defineProps({
-  content: { type: String, required: true },
+  content: { type: [Object, String], required: true },
   darkBackground: { type: Boolean, default: false },
 })
 

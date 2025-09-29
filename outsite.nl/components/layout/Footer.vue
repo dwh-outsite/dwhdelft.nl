@@ -3,28 +3,28 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Feline
-      pronouns: she/her
+    - name: Jinny
+      pronouns: he/him
       role: President
       email: voorzitter
-    - name: Chai
-      pronouns: they/them
+    - name: Stefano
+      pronouns: he/him
       role: Vice President
       email: vicevoorzitter
-    - name: Alin
-      pronouns: he/they
+    - name: Irina
+      pronouns: she/they
       role: Secretary
       email: secretaris
-    - name: Nick
+    - name: Ramon
       pronouns: he/him
       role: Treasurer
       email: penningmeester
-    - name: Jaye
-      pronouns: any/all
+    - name: Rens
+      pronouns: they/them
       role: External Affairs
       email: extern
-    - name: Lucia
-      pronouns: they/them
+    - name: Aszurah
+      pronouns: she/her
       role: Internal Affairs
       email: intern
   confidential_counsellors: Confidential Counsellors
@@ -36,28 +36,28 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Feline
-      pronouns: zij/haar
+    - name: Jinny
+      pronouns: hij/hem
       role: Voorzitter
       email: voorzitter
-    - name: Chai
-      pronouns: die/hun
+    - name: Stefano
+      pronouns: hij/hem
       role: Vicevoorzitter
       email: vicevoorzitter
-    - name: Alin
-      pronouns: hij/die
+    - name: Irina
+      pronouns: zij/die
       role: Secretaris
       email: secretaris
-    - name: Nick
+    - name: Ramon
       pronouns: hij/hem
       role: Penningmeester
       email: penningmeester
-    - name: Jaye
-      pronouns: alle pronouns
+    - name: Rens
+      pronouns: die/hun
       role: Commissaris Extern
       email: extern
-    - name: Lucia
-      pronouns: die/hun
+    - name: Aszurah
+      pronouns: zij/haar
       role: Commissaris Intern
       email: intern
   confidential_counsellors: Vertrouwenspersonen
@@ -106,7 +106,7 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/board23.png"
+                src="~/assets/images/photos/boards/board24.png"
                 class="mt-8 w-full shadow-xl md:mx-8 md:-mt-8 md:h-56 md:w-auto lg:h-64 xl:h-80"
               />
             </div>

@@ -24,10 +24,11 @@ Lange Geer 22<br>
 Het bestuur van LG33 bestaat uit de volgende leden:
 
 * **Jeroen** Voorzitter
-* **Victor** Secretaris
+* **Sharwin** Secretaris
 * **Rob** Penningmeester
-* **Sharwin** Algemeen Bestuurslid
+* **Evert** Algemeen Bestuurslid
 * **Michael** Algemeen Bestuurslid
+* **Max** Algemeen Bestuurslid
 
 ### Beleidsplan
 
@@ -39,7 +40,7 @@ Voor een verslag van uitgeoefende activiteiten wordt verwezen naar het jaarversl
 jaarverslag vast waarin onder meer verslag wordt gedaan van de uitgeoefende activiteiten over het afgelopen jaar.
 Het meest recente jaarverslag kan hier gevonden worden:
 
-<FilesList folder-id="1SEhPdLmDC-MxwcqiRnaMlAcvoPgnq16a"></FilesList>
+<FilesList folder-id="1I-AgDZJFJc8grumRjNS2pLuvVZ-5SpiD"></FilesList>
 
 ### Financiële verantwoording
 Voor een financiële verantwoording wordt verwezen naar de jaarrekening. Jaarlijks stelt LG33 de jaarrekening vast

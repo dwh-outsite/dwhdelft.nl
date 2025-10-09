@@ -6,8 +6,8 @@ async function fetchFiles(folderId) {
       `https://www.googleapis.com/drive/v3/files` +
       `?orderBy=name desc` +
       `&q='${folderId}'%20in%20parents` +
-        `&supportsAllDrives=true`+
-        `&includeItemsFromAllDrives=true`+
+      `&supportsAllDrives=true` +
+      `&includeItemsFromAllDrives=true` +
       `&fields=files(id, name, webContentLink, webViewLink, iconLink, thumbnailLink)` +
       `&key=${key}`
 

@@ -23,16 +23,18 @@ Lange Geer 22<br>
 
 Het bestuur van LG33 bestaat uit de volgende leden:
 
-* **Jeroen** Voorzitter
-* **Sharwin** Secretaris
-* **Rob** Penningmeester
-* **Evert** Algemeen Bestuurslid
-* **Michael** Algemeen Bestuurslid
-* **Max** Algemeen Bestuurslid
+* **Jeroen Manders** Voorzitter
+* **Sharwin Bobde** Secretaris
+* **Rob Idink** Penningmeester
+* **Evert Windels** Algemeen Bestuurslid
+* **Michael Kraaijeveld** Algemeen Bestuurslid
+* **Max Berdowski** Algemeen Bestuurslid
 
 ### Beleidsplan
 
-Hierworden de hoofdlijnen uit het beleidsplan omschreven.
+Hier zijn de hoofdlijnen uit het beleidsplan.
+
+<FilesList folder-id="1MlXgbjgXGCt82WqX9gzBYboiMoAU-RSx"></FilesList>
 
 ### Verslag uitgeoefende activiteiten
 
@@ -40,18 +42,18 @@ Voor een verslag van uitgeoefende activiteiten wordt verwezen naar het jaarversl
 jaarverslag vast waarin onder meer verslag wordt gedaan van de uitgeoefende activiteiten over het afgelopen jaar.
 Het meest recente jaarverslag kan hier gevonden worden:
 
-<FilesList folder-id="1I-AgDZJFJc8grumRjNS2pLuvVZ-5SpiD"></FilesList>
+<FilesList folder-id="1rNGIocdeKWGksGPrVw5UUFPxqR-zxBh6"></FilesList>
 
 ### Financiële verantwoording
 Voor een financiële verantwoording wordt verwezen naar de jaarrekening. Jaarlijks stelt LG33 de jaarrekening vast
 waarin de financiële verantwoording over het afgelopen jaar wordt vastgelegd.
 
-<FilesList folder-id="1wOt93uBOFba4lHrf6In1YZJPzT4L9Doi"></FilesList>
+<FilesList folder-id="1G4SUvu7yl0E1z7m6ymPUBi9b6Lt6gkJU"></FilesList>
 
 ### Beloningsbeleid
 
-Hier wordt het beloningsbeleid omschreven.
+Het formele beloningsbeleid voor LG33 is dat de bestuurders zijn vrijwillegers, en ze zijn niet gecompenseered voor hun werk met een vaste of variable belooning.
 
 ### Contact
 
-Neem gerust contact op met LG33 via info@lg33.nl
+Neem gerust contact op met LG33 via info@lg33.nl of bestuur@lg33.nl

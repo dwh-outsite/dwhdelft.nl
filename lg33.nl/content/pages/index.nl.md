@@ -32,7 +32,13 @@ Het bestuur van LG33 bestaat uit de volgende leden:
 
 ### Beleidsplan
 
-Hier zijn de hoofdlijnen uit het beleidsplan.
+Hier zijn de hoofdlijnen uit het beleidsplan voor LG33 2025-2030.
+
+<FilesList folder-id="1YrI8FXrVPiVYH8qu81MhrbJQoYOtGzfr"></FilesList>
+
+
+### Jaarplan
+Het jaarplan voor 2025 staat hier.
 
 <FilesList folder-id="1MlXgbjgXGCt82WqX9gzBYboiMoAU-RSx"></FilesList>
 
@@ -52,7 +58,7 @@ waarin de financiële verantwoording over het afgelopen jaar wordt vastgelegd.
 
 ### Beloningsbeleid
 
-Het formele beloningsbeleid voor LG33 is dat de bestuurders zijn vrijwillegers, en ze zijn niet gecompenseered voor hun werk met een vaste of variable belooning.
+Het formele beloningsbeleid voor LG33 is dat de bestuurders vrijwillegers zijn; ze worden niet gecompenseered voor hun werk met een vaste of variable belooning.
 
 ### Contact
 

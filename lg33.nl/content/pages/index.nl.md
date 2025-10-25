@@ -38,7 +38,7 @@ Het beleidsplan van LG33 kan hier gevonden worden:
 
 
 ### Jaarplan
-Het jaarplan voor 2025 staat hier.
+Het jaarplan van LG33 kan hier gevonden worden:
 
 <FilesList folder-id="1MlXgbjgXGCt82WqX9gzBYboiMoAU-RSx"></FilesList>
 

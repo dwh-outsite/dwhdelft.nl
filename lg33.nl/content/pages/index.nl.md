@@ -32,7 +32,7 @@ Het bestuur van LG33 bestaat uit de volgende leden:
 
 ### Beleidsplan
 
-Hier zijn de hoofdlijnen uit het beleidsplan voor LG33 2025-2030.
+Het beleidsplan van LG33 kan hier gevonden worden:
 
 <FilesList folder-id="1YrI8FXrVPiVYH8qu81MhrbJQoYOtGzfr"></FilesList>
 

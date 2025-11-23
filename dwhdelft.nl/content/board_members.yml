@@ -18,15 +18,6 @@ board:
       en: they/them
     email: secretaris@dwhdelft.nl
 
-  - name: Vanadie
-    description:
-      nl: Penningmeester
-      en: Treasurer
-    pronouns:
-      nl: die/diens
-      en: they/them
-    email: penningmeester@dwhdelft.nl
-
   - name: Charlie Verboom
     description:
       nl: Algemeen Bestuurslid

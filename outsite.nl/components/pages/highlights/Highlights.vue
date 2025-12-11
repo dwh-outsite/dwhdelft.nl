@@ -42,6 +42,14 @@ const visibleHighlights = props.excerpts
         <a v-if="excerpts" :href="$localePath('highlights')" class="text-lg text-brand-400 hover:text-brand-500">
           {{ t('read_more') }} &raquo;
         </a>
+
+        <nuxt-link
+          v-if="!excerpts && highlight.image === 'purple_friday'"
+          :to="$localePath('purple-friday')"
+          class="mt-4 inline-block text-lg font-semibold text-brand-400 hover:text-brand-500"
+        >
+          {{ t('read_more') }} &raquo;
+        </nuxt-link>
       </div>
     </ElementsActionCard>
   </div>

@@ -16,8 +16,14 @@ const { image } = useDynamicImages(import.meta.glob('~/assets/images/photos/high
 
 const { data: highlights } = await useAsyncData(() => queryContent('highlights').find())
 
+const shuffle = (items) => [...items].sort(() => 0.5 - Math.random())
+
+const purpleFridayHighlight = highlights.value.find((highlight) => highlight.image === 'purple_friday')
 const visibleHighlights = props.excerpts
-  ? highlights.value.sort(() => 0.5 - Math.random()).slice(0, 3)
+  ? shuffle([
+      ...(purpleFridayHighlight ? [purpleFridayHighlight] : []),
+      ...shuffle(highlights.value.filter((highlight) => highlight.image !== 'purple_friday')).slice(0, 2),
+    ])
   : highlights.value
 </script>
 
@@ -39,9 +45,24 @@ const visibleHighlights = props.excerpts
       <div class="flex flex-1 flex-col justify-between">
         <p class="text-xl" v-text="excerpts ? highlight[`excerpt_${locale}`] : highlight[`description_${locale}`]" />
 
-        <a v-if="excerpts" :href="$localePath('highlights')" class="text-lg text-brand-400 hover:text-brand-500">
+        <nuxt-link
+          v-if="excerpts && highlight.image === 'purple_friday'"
+          :to="$localePath('purple-friday')"
+          class="text-lg font-semibold text-brand-400 hover:text-brand-500"
+        >
+          {{ t('read_more') }} &raquo;
+        </nuxt-link>
+        <a v-else-if="excerpts" :href="$localePath('highlights')" class="text-lg text-brand-400 hover:text-brand-500">
           {{ t('read_more') }} &raquo;
         </a>
+
+        <nuxt-link
+          v-if="!excerpts && highlight.image === 'purple_friday'"
+          :to="$localePath('purple-friday')"
+          class="mt-4 inline-block text-lg font-semibold text-brand-400 hover:text-brand-500"
+        >
+          {{ t('read_more') }} &raquo;
+        </nuxt-link>
       </div>
     </ElementsActionCard>
   </div>

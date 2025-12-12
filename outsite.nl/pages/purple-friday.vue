@@ -1,10 +1,10 @@
 <i18n lang="yaml">
 en:
-  title: Purple Friday 2024
+  title: Purple Friday 2025
   subtitle: Join us for Purple Friday - a day of celebration and awareness for the LGBTQ+ community at TU Delft!
   back_to_highlights: Back to Highlights
 nl:
-  title: Paarse Vrijdag 2024
+  title: Paarse Vrijdag 2025
   subtitle: Doe mee met Paarse Vrijdag - een dag van viering en bewustwording voor de LGBTQ+ gemeenschap aan de TU Delft!
   back_to_highlights: Terug naar Hoogtepunten
 </i18n>

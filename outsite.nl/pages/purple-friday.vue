@@ -1,11 +1,11 @@
 <i18n lang="yaml">
 en:
   title: Purple Friday 2025
-  subtitle: Join us for Purple Friday - a day of celebration and awareness for the LGBTQ+ community at TU Delft!
+  subtitle: Join us for Purple Friday - a day of celebration and awareness for the LGBTI+ community at TU Delft!
   back_to_highlights: Back to Highlights
 nl:
   title: Paarse Vrijdag 2025
-  subtitle: Doe mee met Paarse Vrijdag - een dag van viering en bewustwording voor de LGBTQ+ gemeenschap aan de TU Delft!
+  subtitle: Doe mee met Paarse Vrijdag - een dag van viering en bewustwording voor de LHBTI+ gemeenschap aan de TU Delft!
   back_to_highlights: Terug naar Hoogtepunten
 </i18n>
 
@@ -94,7 +94,7 @@ const activeTab = ref(sortedEvents.length > 0 ? getEventId(sortedEvents[0]) : nu
         <div class="bg-white p-8 md:p-12">
           <div v-for="event in sortedEvents" v-show="activeTab === getEventId(event)" :key="getEventId(event)">
             <div class="mb-6">
-              <span class="inline-block rounded-full bg-purple-600 px-4 py-2 text-lg font-bold text-white">
+              <span class="rounded-lg border-b border-purple-200 bg-purple-600 px-4 py-2 font-semibold text-white">
                 {{ facultyLabels[getEventId(event)] }}
               </span>
             </div>

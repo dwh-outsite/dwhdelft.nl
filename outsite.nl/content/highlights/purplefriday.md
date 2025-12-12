@@ -1,6 +1,6 @@
 ---
-title_en: Purple Friday 2024
-title_nl: Paarse Vrijdag 2024
+title_en: Purple Friday 2025
+title_nl: Paarse Vrijdag 2025
 image: purple_friday
 description_en: |
   Purple Friday is a day of celebration and awareness for the LGBTQ+ community at TU Delft. Throughout the day, various faculties and study associations organise events including Ask Me Anything stands, drag bingo, clothing swaps, cupcake decorating, and drinks.

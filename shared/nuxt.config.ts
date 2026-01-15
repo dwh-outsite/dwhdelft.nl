@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
-      routes: ['/404'],
+      routes: ['/404', '/iva'],
     },
   },
   app: {

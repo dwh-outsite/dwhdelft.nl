@@ -30,7 +30,8 @@ The vision of the association is as follows:
 - DWH connects people. Specifically also the various subgroups in the association.
 
 ### Recompense policy
-The board members as well as other volunteers at DWH are unpaid. The board does have the means to provide
+The board members as well as other volunteers at DWH are unpaid, except for the volunteers who clean the toilets
+and the kitchen, who can get volunteering compensation for that task. The board does have the means to provide
 compensation to members and volunteers for costs they incurred because of the association, which is done in
 accordance with the budget and reasonable bounds of good faith and fair dealing as it is commonly done in broader
 society. In practice only expenses claims pertaining to tasks performed in service of DWH are compensated.

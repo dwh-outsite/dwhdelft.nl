@@ -6,7 +6,7 @@ pronouns:
 email: vertrouwenspersoon-niamh@dwhdelft.nl
 bio:
   nl: |
-    In mijn vrije tijd brengt werken met mijn handen brengt me het meeste plezier, of het nu gaat om
+    In mijn vrije tijd brengt werken met mijn handen me het meeste plezier, of het nu gaat om
     houtbewerking, bierbrouwen of escape rooms ontwerpen. Daarnaast geniet ik van boulderen, wandelen
     met mijn hond en luisteren naar muziek.  Mijn vrienden zullen waarschijnlijk zeggen dat ik een
     beetje verlegen ben, maar laat je daar niet door misleiden! Ik sta altijd open voor een goed

@@ -1,22 +1,31 @@
 board:
 
-  - name: Thomas Smits
+  - name: Rory Baart
     description:
       nl: Voorzitter
       en: President
     pronouns:
-      nl: hij/hem
-      en: he/him
+      nl: die/hen
+      en: they/them
     email: voorzitter@dwhdelft.nl
 
-  - name: Rory Baart
+  - name: Mo
     description:
       nl: Secretaris
       en: Secretary
     pronouns:
-      nl: die/hen
-      en: they/them
+      nl: zij/die
+      en: she/they
     email: secretaris@dwhdelft.nl
+
+  - name: Jasper Smit
+    description:
+      nl: Penningmeester
+      en: Treasurer
+    pronouns:
+      nl: ""
+      en: ""
+    email: penningmeester@dwhdelft.nl
 
   - name: Charlie Verboom
     description:
@@ -35,13 +44,3 @@ board:
       nl: hij/hem
       en: he/him
     email: daan.koek@dwhdelft.nl
-
-  - name: Mo
-    description:
-      nl: Algemeen Bestuurslid
-      en: Board Member
-    pronouns:
-      nl: zij/die
-      en: she/they
-    email: mo.azuguag@dwhdelft.nl
-

@@ -29,7 +29,8 @@ De visie van de vereniging is als volgt:
 - DWH verbindt mensen. Heel specifiek ook de groepen binnen de vereniging.
 
 ### Beloningsbeleid
-De bestuursleden alsmede de andere vrijwilligers van DWH zijn onbezoldigd. Wel heeft het bestuur de mogelijkheid
+De bestuursleden alsmede de andere vrijwilligers van DWH zijn onbezoldigd, behalve de vrijwilligers die de 
+toiletten en keuken schoonmaken, waar een vrijwilligersvergoeding voor staat. Wel heeft het bestuur de mogelijkheid
 om een vergoeding aan leden en vrijwilligers vast te stellen voor de door hen gemaakte kosten vanwege de
 vereniging, zulks rekening houdend met de begroting en binnen de grenzen van redelijkheid en billijkheid als in
 het maatschappelijk verkeer gebruikelijk. In de praktijk worden derhalve uitsluitend kostendeclaraties vergoedt

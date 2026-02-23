@@ -20,7 +20,7 @@ en:
       role: Treasurer
       email: penningmeester
     - name: Rens
-      pronouns: they/them
+      pronouns: she/they
       role: External Affairs
       email: extern
     - name: Aszurah
@@ -53,7 +53,7 @@ nl:
       role: Penningmeester
       email: penningmeester
     - name: Rens
-      pronouns: die/hun
+      pronouns: zij/die
       role: Commissaris Extern
       email: extern
     - name: Aszurah

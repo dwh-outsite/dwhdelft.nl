@@ -53,7 +53,7 @@ nl:
       role: Penningmeester
       email: penningmeester
     - name: Rens
-      pronouns: zij/die
+      pronouns: die/haar
       role: Commissaris Extern
       email: extern
     - name: Aszurah

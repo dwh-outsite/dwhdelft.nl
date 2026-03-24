@@ -16,11 +16,6 @@ events:
     restrictions:
       - en: Members only
         nl: Alleen leden
-    link:
-      name:
-        en: Sign Up
-        nl: Aanmelden
-      url: https://dwhdelft.nl/eatingout
 
   - name: Fillum
     day:

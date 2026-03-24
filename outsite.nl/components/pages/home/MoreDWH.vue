@@ -29,7 +29,6 @@ en:
       description: |
         On Mondays we gather around the dinner table to enjoy a delicious meal cooked by one of our
         members, sometimes with an activity afterwards.
-      link: https://dwhdelft.nl/eatingout
       image: eatingout
 nl:
   description: |

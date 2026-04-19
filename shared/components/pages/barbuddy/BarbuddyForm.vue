@@ -25,10 +25,10 @@ const form = useReMemberForm('barbuddy', {
 
 const formElement = ref(null)
 const submit = async () => {
-  let {buddies, ...fields} = form.fields
+  let { buddies, ...fields } = form.fields
   await form.submit({
     ...fields,
-    barbuddy: buddies.length ? buddies.join(', ') : 'no_preference'
+    barbuddy: buddies.length ? buddies.join(', ') : 'no_preference',
   })
   window.scrollTo({ top: formElement.value.offsetTop, behavior: 'smooth' })
 }

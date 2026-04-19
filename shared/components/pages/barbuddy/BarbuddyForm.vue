@@ -12,24 +12,24 @@ const props = defineProps({
   barBuddies: { type: Array, required: true },
 })
 
-const form = useReMemberForm('barbuddy2', {
+const form = useReMemberForm('barbuddy', {
   name: '',
   age: '',
   language: locale.value === 'nl' ? 'dutch' : 'english',
   email: '',
   phone_number: '',
   pronouns: '',
-  buddy_preferences: 'no_preference',
   buddies: [],
   remarks: '',
 })
 
 const formElement = ref(null)
 const submit = async () => {
-  if (form.fields.buddies.length > 0) {
-    form.fields.buddy_preferences = form.fields.buddies.join(', ')
-  }
-  await form.submit()
+  let {buddies, ...fields} = form.fields
+  await form.submit({
+    ...fields,
+    barbuddy: buddies.length ? buddies.join(', ') : 'no_preference'
+  })
   window.scrollTo({ top: formElement.value.offsetTop, behavior: 'smooth' })
 }
 
@@ -70,7 +70,7 @@ const barBuddyOptions = Object.fromEntries(props.barBuddies.map((buddy) => [budd
           dutch: $t('forms.label.languages.dutch'),
           english: $t('forms.label.languages.english'),
           no_preference: $t('forms.label.languages.no_preference'),
-         }"
+        }"
       />
     </ElementsFormElement>
 
@@ -78,7 +78,7 @@ const barBuddyOptions = Object.fromEntries(props.barBuddies.map((buddy) => [budd
       <ElementsFormTextInput v-model="form.fields.pronouns" />
     </ElementsFormElement>
 
-    <ElementsFormElement name="barbuddy" :errors="form.validationErrors">
+    <ElementsFormElement name="buddies" :errors="form.validationErrors">
       <ElementsFormListboxInput v-model="form.fields.buddies" :options="barBuddyOptions" />
     </ElementsFormElement>
 

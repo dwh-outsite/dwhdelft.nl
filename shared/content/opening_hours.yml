@@ -22,21 +22,6 @@ events:
         nl: Aanmelden
       url: https://dwhdelft.nl/eatingout
 
-  - name: Creative Space
-    day:
-      en: Tuesday
-      nl: Dinsdag
-    start_time: '19:30'
-    end_time: '21:30'
-    description:
-      en: |-
-        On all Tuesdays, we have creative space! The pand is open to paint, knit,
-        create bracelets, and anything creative! (Creative space starts later on the first Tuesday of each month.)
-      nl: |-
-        Elke dinsdag is het tijd voor creative space (creatieve plek)! Het pand is open om te
-        komen schilderen, breien, armbandjes maken, en al het andere creatieve! (Creative space start later op de
-        eerste dinsdag van de maand.)
-
   - name: Fillum
     day:
       en: Wednesday
@@ -61,7 +46,7 @@ events:
       en: Thursday
       nl: Donderdag
     start_time: '21:30'
-    end_time: '01:30'
+    end_time: '01:00'
     description:
       en: |-
         Our bar night for everyone 28 and under. Come have a drink at the bar, and check our Outsite
@@ -78,8 +63,8 @@ events:
         nl: Ga naar Outsite.nl
       url: https://outsite.nl/
     announcement:
-      en: "From 22 February till 25 April the opening hours are 21:30 - 01:30."
-      nl: "Tussen 22 februari en 25 april zijn de openingstijden 21:30 - 01:30 uur."
+      en: "From 19th February the opening hours are 21:30 - 01:30."
+      nl: "Vanaf 19 februari zijn de openingstijden 21:30 - 01:30 uur."
 
   - name: Roze Kroeg
     day:
@@ -102,8 +87,8 @@ events:
     day:
       en: Saturday
       nl: Zaterdag
-    start_time: '22:00'
-    end_time: '02:00'
+    start_time: '21:00'
+    end_time: '01:00'
     description:
       en: |-
         MIXUP is thé queer bar night of Delft. Meet new people, come dance at our regular
@@ -113,9 +98,9 @@ events:
         feesten en doe mee met een van onze vele events!
     link:
       name:
-        en: MIXUP on Instagram
-        nl: MIXUP op Instagram
-      url: https://www.instagram.com/mixupdelft/
+        en: More on MIXUP
+        nl: Meer over MIXUP
+      url: https://dwhdelft.nl/mixup
 
   - name: Jong&Out
     day:
@@ -126,16 +111,16 @@ events:
     end_time: '17:00'
     description:
       en: |-
-        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTQ+ youth
+        Every third Sunday of the month, our Jong&Out group organizes an activity for LGBTI+ youth
         members. Come around to bake, play games, do a graffity workshop, go to Jumpsquare, and more!
         We also have a camp each year!
       nl: |-
-        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTQ+ jongeren.
+        Elke derde zondag van de maand organiseert onze Jong&Out groep een activiteit voor LHBTI+ jongeren.
         Kom gezellig met ons samen bakken, spelletjes spelen, een graffity workshop doen,
         naar Jumpsquare, en nog veel meer leuke dingen! Ook gaan we elk jaar op kamp!
     restrictions:
-      - en: Between 12 and 18 years old
-        nl: Tussen de 12 en 18 jaar oud
+      - en: 12-18 years old
+        nl: 12-18 jaar
     link:
       name:
         en: Find out more
@@ -144,10 +129,11 @@ events:
 
   - name: QT
     day:
-      en: Sunday
-      nl: Zondag
-    start_time: '17:00'
-    end_time: '21:00'
+      en: Second and fourth Sunday
+      nl: Tweede en vierde zondag
+    monthly: true
+    start_time: '18:00'
+    end_time: '22:00'
     description:
       en: |-
         Do you like going out but not being loud? Do you want to go out but prefer staying in?

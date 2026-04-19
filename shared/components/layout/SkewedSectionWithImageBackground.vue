@@ -1,13 +1,13 @@
 <template>
   <section>
-    <div class="-skew-y-7 overflow-hidden -mb-48">
-      <div class="skew-y-7 -mt-48">
-        <div class="pb-48 pt-48 relative z-10">
+    <div class="-mb-48 -skew-y-7 overflow-hidden">
+      <div class="-mt-48 skew-y-7">
+        <div class="relative z-10 py-48">
           <div class="py-20 md:py-40">
             <slot />
           </div>
         </div>
-        <div class="absolute top-0 w-full h-full">
+        <div class="absolute top-0 size-full">
           <slot name="background" />
         </div>
       </div>

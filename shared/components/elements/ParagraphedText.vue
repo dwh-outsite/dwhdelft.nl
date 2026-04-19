@@ -4,13 +4,8 @@ defineProps({
 })
 </script>
 
-
 <template>
   <div>
-    <p
-      v-for="paragraph in paragraphs"
-      :key="paragraph"
-      v-html="paragraph"
-    />
+    <p v-for="paragraph in paragraphs" :key="paragraph" v-html="paragraph" />
   </div>
 </template>

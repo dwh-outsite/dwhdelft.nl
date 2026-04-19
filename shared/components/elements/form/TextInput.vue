@@ -3,6 +3,7 @@ const props = defineProps({
   placeholder: { type: String, required: false },
   type: { type: String, default: 'text' },
   required: { type: Boolean, default: undefined },
+  gray: { type: Boolean, default: false },
 })
 const model = defineModel()
 
@@ -16,7 +17,11 @@ if (parent.type.__name == 'FormElement') {
   required = required !== undefined ? required : parent.props.required
 }
 
-const classes = 'bg-white text-gray-800 rounded-lg block px-4 py-3 w-full'
+const classes = computed(() => ({
+  'text-gray-800 rounded-lg block px-4 py-3 w-full': true,
+  'bg-white': !props.gray,
+  'bg-gray-200': props.gray,
+}))
 </script>
 
 <template>

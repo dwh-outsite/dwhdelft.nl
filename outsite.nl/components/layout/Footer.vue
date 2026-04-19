@@ -3,24 +3,30 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Alexandru
+    - name: Jinny
+      pronouns: he/him
       role: President
       email: voorzitter
-    - name: Robin
+    - name: Stefano
+      pronouns: he/him
+      role: Vice President
+      email: vicevoorzitter
+    - name: Irina
+      pronouns: she/they
       role: Secretary
       email: secretaris
-    - name: Rob
+    - name: Ramon
+      pronouns: he/him
       role: Treasurer
       email: penningmeester
-    - name: Cas
-      role: Internal Affairs
-      email: intern
-    - name: Wieke
+    - name: Rens
+      pronouns: she/they
       role: External Affairs
       email: extern
-    - name: Anna
-      role: Public Relations
-      email: pr
+    - name: Aszurah
+      pronouns: she/her
+      role: Internal Affairs
+      email: intern
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -30,24 +36,30 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Alexandru
+    - name: Jinny
+      pronouns: hij/hem
       role: Voorzitter
       email: voorzitter
-    - name: Robin
+    - name: Stefano
+      pronouns: hij/hem
+      role: Vicevoorzitter
+      email: vicevoorzitter
+    - name: Irina
+      pronouns: zij/die
       role: Secretaris
       email: secretaris
-    - name: Rob
+    - name: Ramon
+      pronouns: hij/hem
       role: Penningmeester
       email: penningmeester
-    - name: Cas
-      role: Commissaris Intern
-      email: intern
-    - name: Wieke
+    - name: Rens
+      pronouns: die/haar
       role: Commissaris Extern
       email: extern
-    - name: Anna
-      role: Commisaris Public Relations
-      email: pr
+    - name: Aszurah
+      pronouns: zij/haar
+      role: Commissaris Intern
+      email: intern
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:
@@ -74,19 +86,19 @@ const links = [
 ]
 </script>
 
-
 <template>
   <div>
     <ElementsContainer class="text-white">
       <div class="md:flex">
-        <div class="md:w-2/3 md:border-r border-gray-600 py-8">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="t('boardTitle')" />
+        <div class="border-gray-600 py-8 md:w-2/3 md:border-r">
+          <h3 class="mb-4 text-xl font-bold uppercase tracking-wider" v-text="t('boardTitle')" />
 
           <div class="md:flex">
-            <div class="flex-1 grid xl:grid-cols-2 auto-rows-min gap-6">
+            <div class="grid flex-1 auto-rows-min gap-6 xl:grid-cols-2">
               <LayoutFooterBoardMember
                 v-for="member in t('board')"
                 :key="member.name"
+                :pronouns="member.pronouns"
                 :role="member.role"
                 :name="member.name"
                 :email="`${member.email}@outsite.nl`"
@@ -94,17 +106,17 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/board22.jpg"
-                class="w-full md:w-auto md:h-56 lg:h-64 xl:h-80 shadow-xl mt-8 md:mx-8 md:-mt-8"
+                src="~/assets/images/photos/boards/board24.png"
+                class="mt-8 w-full shadow-xl md:mx-8 md:-mt-8 md:h-56 md:w-auto lg:h-64 xl:h-80"
               />
             </div>
           </div>
         </div>
 
-        <div class="md:ml-4 xl:ml-10 pt-8 pb-8">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" v-text="t('contactTitle')" />
+        <div class="py-8 md:ml-4 xl:ml-10">
+          <h3 class="mb-4 text-xl font-bold uppercase tracking-wider" v-text="t('contactTitle')" />
 
-          <LayoutFooterContactOptions email="bestuur@outsite.nl" />
+          <ContactOptions email="bestuur@outsite.nl" />
 
           <div class="mb-2 space-y-4">
             <LayoutFooterExternalLink href="https://my.dwhdelft.nl/signup">

@@ -1,30 +1,31 @@
+import heropatterns from 'tailwind-heropatterns'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./**/components/**/*.{js,vue,ts}",
-    "./**/layouts/**/*.vue",
-    "./**/pages/**/*.vue",
-    "./**/plugins/**/*.{js,ts}",
-    "./**/app.vue",
-    "./**/error.vue",
+    './**/components/**/*.{js,vue,ts}',
+    './**/layouts/**/*.vue',
+    './**/pages/**/*.vue',
+    './**/plugins/**/*.{js,ts}',
+    './**/app.vue',
+    './**/error.vue',
+    './**/content/**/*.md',
   ],
   theme: {
     extend: {
       colors: {
         brand: {
-          // For now, everything is pink. Should be made dynamic later.
-          50: '#fdf2f8',
-          100: '#ffe4f4',
-          200: '#ff9ad8',
-          300: '#f9a8d4',
-          350: '#f9a8d4',
-          400: '#FC66C2',
-          450: '#FC66C2',
-          500: '#ec4899',
-          600: '#db2777',
-          700: '#be185d',
-          800: '#9d174d',
-          900: '#831843',
+          50: 'rgb(var(--color-brand-50) / <alpha-value>)',
+          100: 'rgb(var(--color-brand-100) / <alpha-value>)',
+          200: 'rgb(var(--color-brand-200) / <alpha-value>)',
+          300: 'rgb(var(--color-brand-300) / <alpha-value>)',
+          400: 'rgb(var(--color-brand-400) / <alpha-value>)',
+          450: 'rgb(var(--color-brand-450) / <alpha-value>)',
+          500: 'rgb(var(--color-brand-500) / <alpha-value>)',
+          600: 'rgb(var(--color-brand-600) / <alpha-value>)',
+          700: 'rgb(var(--color-brand-700) / <alpha-value>)',
+          800: 'rgb(var(--color-brand-800) / <alpha-value>)',
+          900: 'rgb(var(--color-brand-900) / <alpha-value>)',
         },
         gray: {
           50: '#f9fafb',
@@ -37,7 +38,7 @@ export default {
           700: '#48454b',
           800: '#1f2937',
           900: '#111827',
-        }
+        },
       },
       skew: {
         '-7': '-7deg',
@@ -46,7 +47,7 @@ export default {
     },
   },
   plugins: [
-    require('tailwind-heropatterns')({
+    heropatterns({
       // as per tailwind docs you can pass variants
       variants: [],
 

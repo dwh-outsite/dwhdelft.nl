@@ -8,12 +8,12 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-white rounded-lg shadow-lg p-6 text-lg flex items-center">
-    <div class="rounded-full w-16 h-16 p-3 bg-brand-500 text-white">
-      <IconCheckmarkOutline class="w-10 h-10" />
+  <div :class="cn('bg-white rounded-lg shadow-lg p-6 text-lg flex items-center', $attrs.class)">
+    <div class="size-16 rounded-full bg-brand-500 p-3 text-white">
+      <IconCheckmarkOutline class="size-10" />
     </div>
     <div class="ml-4">
-      <h4 class="font-semibold text-xl text-gray-900" v-text="title" />
+      <h4 class="text-xl font-semibold text-gray-900" v-text="title" />
       <span class="text-gray-700" v-text="subtitle" />
     </div>
   </div>

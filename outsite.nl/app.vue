@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <main class="bg-white relative">
+    <main class="relative bg-white">
       <NuxtPage />
     </main>
     <footer id="contact" class="relative">
@@ -9,3 +9,11 @@
     </footer>
   </NuxtLayout>
 </template>
+
+<script setup>
+useHead({
+  bodyAttrs: {
+    class: 'outsite-colors',
+  },
+})
+</script>

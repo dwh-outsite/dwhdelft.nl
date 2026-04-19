@@ -1,6 +1,5 @@
-
 import { fileURLToPath } from 'url'
-import { dirname, join } from 'path'
+import { dirname, join, resolve } from 'path'
 
 // Workaround for relative paths in shared layers, see https://nuxt.com/docs/guide/going-further/layers#relative-paths-and-aliases
 const relativePath = (path) => join(dirname(fileURLToPath(import.meta.url)), path)
@@ -8,7 +7,7 @@ const relativePath = (path) => join(dirname(fileURLToPath(import.meta.url)), pat
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content'],
+  modules: ['@nuxtjs/i18n', 'nuxt-svgo', '@nuxt/content', 'nuxt-content-assets'],
   i18n: {
     defaultLocale: 'nl',
     locales: [
@@ -23,14 +22,16 @@ export default defineNuxtConfig({
         files: ['nl.js'],
       },
     ],
-    langDir: 'lang/',
     detectBrowserLanguage: false,
     compilation: {
       strictMessage: false,
     },
   },
+  alias: {
+    '#shared': resolve(__dirname, join('..', 'shared')),
+  },
   svgo: {
-    defaultImport: 'component'
+    defaultImport: 'component',
   },
   css: [relativePath('assets/css/main.css')],
   postcss: {
@@ -42,6 +43,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
+      routes: ['/404', '/iva'],
     },
   },
   app: {
@@ -54,5 +56,10 @@ export default defineNuxtConfig({
         },
       ],
     },
-  }
+  },
+  runtimeConfig: {
+    public: {
+      googleKey: process.env.GOOGLE_KEY || 'AIzaSyDwi_l2R3qDWkh2HN8_AmIpy7mk8Ij7nk8',
+    },
+  },
 })

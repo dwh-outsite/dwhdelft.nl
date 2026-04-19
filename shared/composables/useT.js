@@ -33,14 +33,20 @@ export const useT = (options = {}) => {
     return rtableInProduction || rtableInDevelopment
   }
 
-
   const forgivingT = (key, ...args) => {
     const value = t(key, ...args)
 
     if (value === key) {
       const objectValue = tm(key, ...args)
 
-      return unpack(objectValue)
+      const unpackedObjectValue = unpack(objectValue)
+
+      if (Object.keys(unpackedObjectValue).length === 0) {
+        console.warn(`Missing translation for key: ${key}`)
+        return key
+      }
+
+      return unpackedObjectValue
     }
 
     return value
@@ -48,5 +54,5 @@ export const useT = (options = {}) => {
 
   const tt = (data) => data[locale.value]
 
-  return { t: forgivingT, tt, locale }
+  return { t: forgivingT, tt, locale, originalT: t }
 }

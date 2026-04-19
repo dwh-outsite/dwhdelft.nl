@@ -14,7 +14,7 @@ const { t } = useT()
 </script>
 
 <template>
-  <div v-if="Object.keys(errors.value).length > 0" class="text-red-800 bg-red-100 p-4 rounded-lg mb-4">
+  <div v-if="Object.keys(errors.value).length > 0" class="mb-4 rounded-lg bg-red-100 p-4 text-red-800">
     {{ t('message') }}
   </div>
 </template>

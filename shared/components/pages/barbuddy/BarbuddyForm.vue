@@ -1,8 +1,8 @@
 <i18n lang="yaml">
 en:
-  success: The bar buddy you selected will contact you as soon as possible.
+  success: A bar buddy you selected will contact you as soon as possible.
 nl:
-  success: Je barbuddy neemt zo snel mogelijk contact met je op.
+  success: Een barbuddy neemt zo snel mogelijk contact met je op.
 </i18n>
 
 <script setup>
@@ -19,13 +19,13 @@ const form = useReMemberForm('barbuddy', {
   email: '',
   phone_number: '',
   pronouns: '',
-  barbuddy: 'no_preference',
+  buddies: [],
   remarks: '',
 })
 
 const formElement = ref(null)
 const submit = async () => {
-  await form.submit()
+  await form.submit({ barbuddy: form.fields.buddies.join(', ') || 'no_preference' })
   window.scrollTo({ top: formElement.value.offsetTop, behavior: 'smooth' })
 }
 
@@ -74,14 +74,8 @@ const barBuddyOptions = Object.fromEntries(props.barBuddies.map((buddy) => [budd
       <ElementsFormTextInput v-model="form.fields.pronouns" />
     </ElementsFormElement>
 
-    <ElementsFormElement name="barbuddy" :errors="form.validationErrors">
-      <ElementsFormRadioInput
-        v-model="form.fields.barbuddy"
-        :options="{
-          no_preference: $t('forms.label.languages.no_preference'),
-          ...barBuddyOptions,
-        }"
-      />
+    <ElementsFormElement name="buddies" :errors="form.validationErrors">
+      <ElementsFormListboxInput v-model="form.fields.buddies" :options="barBuddyOptions" />
     </ElementsFormElement>
 
     <ElementsFormElement name="remarks" :errors="form.validationErrors">

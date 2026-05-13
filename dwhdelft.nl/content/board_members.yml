@@ -1,5 +1,4 @@
 board:
-
   - name: Rory Baart
     description:
       nl: Voorzitter
@@ -18,13 +17,13 @@ board:
       en: she/they
     email: secretaris@dwhdelft.nl
 
-  - name: Jasper Smit
+  - name: Myra Smit
     description:
       nl: Penningmeester
       en: Treasurer
     pronouns:
-      nl: ""
-      en: ""
+      nl: "zij/haar"
+      en: "she/her"
     email: penningmeester@dwhdelft.nl
 
   - name: Charlie Verboom

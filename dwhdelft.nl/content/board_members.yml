@@ -26,14 +26,14 @@ board:
       en: "she/her"
     email: penningmeester@dwhdelft.nl
 
-  - name: Charlie Verboom
+  - name: Didi Briek
     description:
       nl: Algemeen Bestuurslid
       en: Board Member
     pronouns:
-      nl: hij/hem
-      en: he/him
-    email: charlie.verboom@dwhdelft.nl
+      nl: zij/haar
+      en: she/her
+    email: didi.briek@dwhdelft.nl
 
   - name: Daan Koek
     description:

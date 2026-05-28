@@ -10,9 +10,9 @@ en:
   bar_buddies_title: Our **Bar Buddies**
 nl:
   title: Barbuddies
-  description: Wil jij een keertje langskomen bij een van onze wekelijkse activiteiten, maar ben je nog niet eerder 
-    langsgeweest en ken je nog niemand? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en 
-    outs kan vertellen over ons, maar ook iemand die jou voor kan stellen aan nieuwe mensen. Zo kom je volgende keer 
+  description: Wil jij een keertje langskomen bij een van onze wekelijkse activiteiten, maar ben je nog niet eerder
+    langsgeweest en ken je nog niemand? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en
+    outs kan vertellen over ons, maar ook iemand die jou voor kan stellen aan nieuwe mensen. Zo kom je volgende keer
     gelijk bekenden tegen!
   action: Vind een barbuddy
   sign_up: Aanmelden voor een barbuddy

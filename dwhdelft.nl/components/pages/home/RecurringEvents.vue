@@ -49,7 +49,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
     </table>
 
     <!-- Monthly events -->
-    <h2 class="text-5xl font-medium leading-tight text-brand-500 md:mb-6 md:text-center">
+    <h2 id="recurring-events-monthly" class="text-5xl font-medium leading-tight text-brand-500 md:mb-6 md:text-center">
       <Markdown :content="t('announcement_month')" />
     </h2>
 

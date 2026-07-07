@@ -1,7 +1,18 @@
-<script setup>
-const { tt } = useT()
+<i18n lang="yaml">
+en:
+  monthly_events: Besides the regular opening hours, there are also various [monthly events](/#recurring-events-monthly) at DWH.
+nl:
+  monthly_events: Naast de vaste openingstijden zijn er ook diverse [maandelijkse activiteiten](/#recurring-events-monthly) bij DWH.
+</i18n>
 
-const openingHours = (await useAsyncData(() => queryContent('opening_hours').findOne())).data.value.events
+<script setup>
+import Markdown from '#shared/components/Markdown.vue'
+
+const { t, tt } = useT()
+
+const openingHours = (await useAsyncData(() => queryContent('opening_hours').findOne())).data.value.events.filter(
+  (event) => !('monthly' in event)
+)
 </script>
 
 <template>
@@ -26,4 +37,7 @@ const openingHours = (await useAsyncData(() => queryContent('opening_hours').fin
       </div>
     </li>
   </ul>
+  <div class="mt-6 w-80 text-gray-800">
+    <Markdown :content="t('monthly_events')" />
+  </div>
 </template>

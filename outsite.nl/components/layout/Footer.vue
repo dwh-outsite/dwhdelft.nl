@@ -29,6 +29,7 @@ en:
       email: intern
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
+  also_found_at: Outsite can also be found at www.studentensteden.nl/delft
   links:
     my_dwh: 'My DWH: Log in as a member'
     sign_up: Join DWH as a member
@@ -62,6 +63,7 @@ nl:
       email: intern
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
+  also_found_at: Outsite is ook te vinden op www.studentensteden.nl/delft
   links:
     my_dwh: 'My DWH: Inloggen als lid'
     sign_up: Inschrijven als DWH lid
@@ -135,5 +137,11 @@ const links = [
         {{ t('copyright') }}
       </template>
     </LayoutFooterCopyright>
+
+    <ElementsContainer class="pb-4 text-center text-xs text-gray-400">
+      <a href="https://www.studentensteden.nl/delft" target="_blank" class="hover:text-white">
+        {{ t('also_found_at') }}
+      </a>
+    </ElementsContainer>
   </div>
 </template>

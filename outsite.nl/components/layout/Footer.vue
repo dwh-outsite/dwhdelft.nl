@@ -41,31 +41,31 @@ nl:
   contactTitle: Contact
   board:
     - name: Diana
-      pronouns: she?/they?
+      pronouns: zij?/die?
       role: Promo & Interne Moreel
       email: pr
     - name: Puck
-      pronouns: they/she
+      pronouns: die/zij
       role: First Lady
       email: vicevoorzitter
     - name: Lieke
-      pronouns: she/her
+      pronouns: zij/haar
       role: Externe
       email: extern
     - name: Kaj
-      pronouns: they/them
+      pronouns: die/diens
       role: Voorzitter
       email: voorzitter
     - name: Charlie
-      pronouns: they/them
+      pronouns: die/diens
       role: Interne Betrokkenheid
       email: intern
     - name: Beau
-      pronouns: she/they
+      pronouns: zij/die
       role: Secretaris
       email: secretaris
     - name: Thoma
-      pronouns: any/all
+      pronouns: alle
       role: Penningmeester
       email: penningmeester
   confidential_counsellors: Vertrouwenspersonen

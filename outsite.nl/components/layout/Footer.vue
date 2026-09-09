@@ -3,30 +3,34 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Jinny
-      pronouns: he/him
+    - name: Diana
+      pronouns: she?/they?
+      role: Promo & Morale Internal
+      email: pr
+    - name: Puck
+      pronouns: they/she
+      role: First Lady
+      email: vicevoorzitter
+    - name: Lieke
+      pronouns: she/her
+      role: External
+      email: extern
+    - name: Kaj
+      pronouns: they/them
       role: President
       email: voorzitter
-    - name: Stefano
-      pronouns: he/him
-      role: Vice President
-      email: vicevoorzitter
-    - name: Irina
+    - name: Charlie
+      pronouns: they/them
+      role: Engagement Internal
+      email: intern
+    - name: Beau
       pronouns: she/they
       role: Secretary
       email: secretaris
-    - name: Ramon
-      pronouns: he/him
+    - name: Thoma
+      pronouns: any/all
       role: Treasurer
       email: penningmeester
-    - name: Rens
-      pronouns: she/they
-      role: External Affairs
-      email: extern
-    - name: Aszurah
-      pronouns: she/her
-      role: Internal Affairs
-      email: intern
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -36,30 +40,34 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Jinny
-      pronouns: hij/hem
+    - name: Diana
+      pronouns: zij?/die?
+      role: Promo & Interne Moreel
+      email: pr
+    - name: Puck
+      pronouns: die/zij
+      role: First Lady
+      email: vicevoorzitter
+    - name: Lieke
+      pronouns: zij/haar
+      role: Externe
+      email: extern
+    - name: Kaj
+      pronouns: die/diens
       role: Voorzitter
       email: voorzitter
-    - name: Stefano
-      pronouns: hij/hem
-      role: Vicevoorzitter
-      email: vicevoorzitter
-    - name: Irina
+    - name: Charlie
+      pronouns: die/diens
+      role: Interne Betrokkenheid
+      email: intern
+    - name: Beau
       pronouns: zij/die
       role: Secretaris
       email: secretaris
-    - name: Ramon
-      pronouns: hij/hem
+    - name: Thoma
+      pronouns: alle
       role: Penningmeester
       email: penningmeester
-    - name: Rens
-      pronouns: die/haar
-      role: Commissaris Extern
-      email: extern
-    - name: Aszurah
-      pronouns: zij/haar
-      role: Commissaris Intern
-      email: intern
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:
@@ -106,7 +114,7 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/board24.png"
+                src="~/assets/images/photos/boards/loudmouth.png"
                 class="mt-8 w-full shadow-xl md:mx-8 md:-mt-8 md:h-56 md:w-auto lg:h-64 xl:h-80"
               />
             </div>

@@ -1,5 +1,5 @@
 <script setup>
-import { IconMenu, IconClose } from '@iconify-prerendered/vue-zondicons'
+import { IconMenu, IconClose, IconAdjust, IconBrightnessUp } from '@iconify-prerendered/vue-zondicons'
 import ExternalLinkIcon from '#shared/assets/images/layout/heroicon_external_link.svg'
 import NLFlag from '#shared/assets/images/layout/flags/nl.svg'
 import GBFlag from '#shared/assets/images/layout/flags/gb.svg'
@@ -34,6 +34,7 @@ function constructLocaleUrl(rawUrl) {
 }
 
 const showMenu = ref(false)
+const colorMode = useColorMode()
 </script>
 
 <template>
@@ -87,6 +88,18 @@ const showMenu = ref(false)
               <nuxt-link v-show="locale == 'en'" :to="switchLocalePath('nl')" class="absolute block h-6 w-8">
                 <NLFlag />
               </nuxt-link>
+            </div>
+          </div>
+          <div
+            class="cursor-pointer rounded-full bg-white/10 p-2 shadow backdrop-blur-lg hover:bg-white/25"
+            @click="colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'"
+          >
+            <div
+
+              class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white text-gray-800"
+            >
+              <IconBrightnessUp v-if="colorMode.value === 'dark'" />
+              <IconAdjust v-else />
             </div>
           </div>
           <slot name="menu-extension" />

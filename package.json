@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@dpgradio/eslint-config-vue3": "^1.0.0",
+    "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/i18n": "^10.0.3",
     "autoprefixer": "^10.4.20",
     "eslint-plugin-tailwindcss": "^3.17.5",

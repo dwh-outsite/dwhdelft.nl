@@ -59,14 +59,14 @@ const { t } = useT()
         </div>
       </div>
       <div
-        class="mx-2 mt-6 flex flex-1 flex-col justify-between rounded-lg bg-white p-6 md:mt-0 md:rounded-t-none md:p-8"
+        class="mx-2 mt-6 flex flex-1 flex-col justify-between rounded-lg bg-background-primary p-6 md:mt-0 md:rounded-t-none md:p-8"
       >
         <div class="flex-1">
           <div class="mb-8 size-16 rounded-full bg-brand-500 p-5 text-white">
             <IconBeverage class="size-full" />
           </div>
           <h2 class="mb-4 text-xl font-bold uppercase tracking-wider text-brand-500" v-text="t('bar_buddy.heading')" />
-          <p class="mb-6 text-lg" v-text="t('bar_buddy.description')" />
+          <p class="mb-6 text-lg text-text-primary" v-text="t('bar_buddy.description')" />
           <nuxt-link :to="$localePath('barbuddy')">
             <ElementsPrimaryButton>{{ t('bar_buddy.action') }}</ElementsPrimaryButton>
           </nuxt-link>

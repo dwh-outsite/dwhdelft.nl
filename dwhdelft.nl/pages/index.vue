@@ -67,7 +67,7 @@ const instagramChannels = [
         <PagesHomeIntro />
       </div>
       <div class="hidden lg:block">
-        <div class="relative z-50 -mt-7 mr-8 rotate-[5deg] border bg-white p-4 shadow-lg">
+        <div class="relative z-50 -mt-7 mr-8 rotate-[5deg] border bg-background-primary p-4 shadow-lg">
           <img src="~/assets/images/photos/building.jpg" class="w-96" />
         </div>
       </div>
@@ -88,7 +88,7 @@ const instagramChannels = [
     <PagesHomeJoinOptions />
   </section>
 
-  <section id="recurring_events" class="bg-white">
+  <section id="recurring_events" class="bg-background-primary">
     <PagesHomeRecurringEvents />
   </section>
 

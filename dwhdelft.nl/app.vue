@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <main class="relative bg-white">
+    <main class="relative bg-background-primary">
       <NuxtPage />
     </main>
     <footer id="contact">

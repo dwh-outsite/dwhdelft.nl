@@ -46,7 +46,7 @@ const menu = t('menu')
       <DWHLogo class="h-14 fill-current text-white" />
     </template>
     <template #background>
-      <div class="absolute inset-y-0 size-full overflow-hidden">
+      <div class="absolute inset-y-0 size-full overflow-hidden bg-gray-900 dark:bg-gray-50">
         <img src="../../assets/images/photos/cover.jpg" class="size-full object-cover opacity-50 blur-sm" />
       </div>
     </template>

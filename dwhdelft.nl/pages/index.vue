@@ -93,7 +93,11 @@ const instagramChannels = [
   </section>
 
   <section class="-mt-24">
-    <LayoutEmulatedSkewedSection contentClass="bg-brand-800" triangleClass="border-brand-800" :bottom="false">
+    <LayoutEmulatedSkewedSection
+      contentClass="bg-brand-800 dark:bg-brand-100"
+      triangleClass="border-brand-800 dark:bg-brand-100"
+      :bottom="false"
+    >
       <ElementsContainer class="pb-16 pt-12">
         <PagesHomeInstagramChannels class="text-white" :brands="instagramChannels" />
       </ElementsContainer>

@@ -46,7 +46,7 @@ const colorMode = useColorMode()
         </nuxt-link>
         <div
           v-if="menuItems.length && showMenu"
-          class="absolute top-16 z-50 w-[calc(100vw-2rem)] rounded-md bg-white/95 px-4 py-1 text-xl text-gray-800 shadow-xl backdrop-blur-xl lg:hidden"
+          class="absolute top-16 z-50 w-[calc(100vw-2rem)] rounded-md bg-background-primary/95 px-4 py-1 text-xl text-gray-800 shadow-xl backdrop-blur-xl dark:text-white lg:hidden"
         >
           <nuxt-link
             v-for="item in menuItems"
@@ -95,7 +95,6 @@ const colorMode = useColorMode()
             @click="colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'"
           >
             <div
-
               class="relative flex size-7 items-center justify-center overflow-hidden rounded-full border-2 border-white bg-white text-gray-800"
             >
               <IconBrightnessUp v-if="colorMode.value === 'dark'" />
@@ -119,7 +118,7 @@ const colorMode = useColorMode()
       </ElementsContainer>
     </nav>
     <slot name="background" />
-    <div :class="cn('c-triangle-top absolute bottom-0 border-white', triangleClass)" />
+    <div :class="cn('c-triangle-top absolute bottom-0 border-background-primary', triangleClass)" />
     <div class="relative flex h-full items-center">
       <ElementsContainer class="mb-48 mt-40">
         <slot />

@@ -11,7 +11,7 @@ defineProps({
   <button
     :class="
       cn(
-        'bg-white hover:bg-gray-200 px-6 py-3 rounded-full text-gray-700 uppercase tracking-wider shadow-lg font-semibold transition-colors',
+        'bg-white hover:bg-gray-200 px-6 py-3 rounded-full text-gray-700 dark:text-gray-200 uppercase tracking-wider shadow-lg font-semibold transition-colors',
         arrow && 'flex items-center',
         $attrs.class
       )

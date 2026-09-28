@@ -3,29 +3,33 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Jinny
-      pronouns: he/him
+    - name: Kaj
+      pronouns: they/them
       role: President
       email: voorzitter
-    - name: Stefano
-      pronouns: he/him
-      role: Vice President
+    - name: Puck
+      pronouns: they/she
+      role: First Lady
       email: vicevoorzitter
-    - name: Irina
+    - name: Beau
       pronouns: she/they
       role: Secretary
       email: secretaris
-    - name: Ramon
-      pronouns: he/him
+    - name: Thoma
+      pronouns: any/all
       role: Treasurer
       email: penningmeester
-    - name: Rens
-      pronouns: she/they
-      role: External Affairs
-      email: extern
-    - name: Aszurah
+    - name: Lieke
       pronouns: she/her
-      role: Internal Affairs
+      role: External
+      email: extern
+    - name: Diana
+      pronouns: she?/they?
+      role: Promo & Morale Internal
+      email: pr
+    - name: Charlie
+      pronouns: they/them
+      role: Engagement Internal
       email: intern
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
@@ -36,29 +40,33 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Jinny
-      pronouns: hij/hem
+    - name: Kaj
+      pronouns: die/diens
       role: Voorzitter
       email: voorzitter
-    - name: Stefano
-      pronouns: hij/hem
-      role: Vicevoorzitter
+    - name: Puck
+      pronouns: die/zij
+      role: Presidentsvrouw
       email: vicevoorzitter
-    - name: Irina
+    - name: Beau
       pronouns: zij/die
       role: Secretaris
       email: secretaris
-    - name: Ramon
-      pronouns: hij/hem
+    - name: Thoma
+      pronouns: alle
       role: Penningmeester
       email: penningmeester
-    - name: Rens
-      pronouns: die/haar
-      role: Commissaris Extern
-      email: extern
-    - name: Aszurah
+    - name: Lieke
       pronouns: zij/haar
-      role: Commissaris Intern
+      role: Externe
+      email: extern
+    - name: Diana
+      pronouns: zij?/die?
+      role: Promo & Interne Moreel
+      email: pr
+    - name: Charlie
+      pronouns: die/diens
+      role: Interne Betrokkenheid
       email: intern
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
@@ -106,7 +114,7 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/board24.png"
+                src="~/assets/images/photos/boards/board25.png"
                 class="mt-8 w-full shadow-xl md:mx-8 md:-mt-8 md:h-56 md:w-auto lg:h-64 xl:h-80"
               />
             </div>

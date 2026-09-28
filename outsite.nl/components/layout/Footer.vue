@@ -114,7 +114,7 @@ const links = [
             </div>
             <div>
               <img
-                src="~/assets/images/photos/boards/loudmouth.png"
+                src="~/assets/images/photos/boards/board25.png"
                 class="mt-8 w-full shadow-xl md:mx-8 md:-mt-8 md:h-56 md:w-auto lg:h-64 xl:h-80"
               />
             </div>

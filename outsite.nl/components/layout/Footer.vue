@@ -3,26 +3,14 @@ en:
   boardTitle: Board
   contactTitle: Contact
   board:
-    - name: Diana
-      pronouns: she?/they?
-      role: Promo & Morale Internal
-      email: pr
-    - name: Puck
-      pronouns: they/she
-      role: First Lady
-      email: vicevoorzitter
-    - name: Lieke
-      pronouns: she/her
-      role: External
-      email: extern
     - name: Kaj
       pronouns: they/them
       role: President
       email: voorzitter
-    - name: Charlie
-      pronouns: they/them
-      role: Engagement Internal
-      email: intern
+    - name: Puck
+      pronouns: they/she
+      role: First Lady
+      email: vicevoorzitter
     - name: Beau
       pronouns: she/they
       role: Secretary
@@ -31,6 +19,18 @@ en:
       pronouns: any/all
       role: Treasurer
       email: penningmeester
+    - name: Lieke
+      pronouns: she/her
+      role: External
+      email: extern
+    - name: Diana
+      pronouns: she?/they?
+      role: Promo & Morale Internal
+      email: pr
+    - name: Charlie
+      pronouns: they/them
+      role: Engagement Internal
+      email: intern
   confidential_counsellors: Confidential Counsellors
   copyright: Outsite is a part of
   links:
@@ -40,26 +40,14 @@ nl:
   boardTitle: Bestuur
   contactTitle: Contact
   board:
-    - name: Diana
-      pronouns: zij?/die?
-      role: Promo & Interne Moreel
-      email: pr
-    - name: Puck
-      pronouns: die/zij
-      role: First Lady
-      email: vicevoorzitter
-    - name: Lieke
-      pronouns: zij/haar
-      role: Externe
-      email: extern
     - name: Kaj
       pronouns: die/diens
       role: Voorzitter
       email: voorzitter
-    - name: Charlie
-      pronouns: die/diens
-      role: Interne Betrokkenheid
-      email: intern
+    - name: Puck
+      pronouns: die/zij
+      role: Presidentsvrouw
+      email: vicevoorzitter
     - name: Beau
       pronouns: zij/die
       role: Secretaris
@@ -68,6 +56,18 @@ nl:
       pronouns: alle
       role: Penningmeester
       email: penningmeester
+    - name: Lieke
+      pronouns: zij/haar
+      role: Externe
+      email: extern
+    - name: Diana
+      pronouns: zij?/die?
+      role: Promo & Interne Moreel
+      email: pr
+    - name: Charlie
+      pronouns: die/diens
+      role: Interne Betrokkenheid
+      email: intern
   confidential_counsellors: Vertrouwenspersonen
   copyright: Outsite is onderdeel van
   links:

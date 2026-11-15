@@ -9,7 +9,7 @@ Daarnaast verstrekt LG33 subsidies voor evenementen met een roze karakter, zoals
 evenementen ontvangen doorgaans geen inkomsten uit traditionele sponsoring en hebben startkapitaal nodig. Met deze subsidies ondersteunen we
 ook experimentele projecten.
 
-Verder heeft LG33 van [Ad Schuring](https://nl.wikipedia.org/wiki/Ad_Schuring) een woning geërfd aan de
+Verder heeft LG33 van Ad Schuring een woning geërfd aan de
 Oostsingel 134 in Delft. Deze woning wordt gerenoveerd en omgebouwd tot een woongemeenschap. Zo willen we een
 duurzame oplossing op lange termijn bieden voor queer en LHBTI+ jongeren: een plek waar zij samen kunnen groeien
 en elkaar kunnen steunen.

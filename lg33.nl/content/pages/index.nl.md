@@ -3,11 +3,19 @@ title: Welkom bij LG33
 layout: article
 ---
 
-LG33 is een stichting met het doel het verwerven en beheren van fondsen teneinde extra (financiële)
-ondersteuning te bieden aan [DWH](https://dwhdelft.nl).
+Stichting LG33 verwerft en beheert fondsen om [DWH](https://dwhdelft.nl) extra (financiële) ondersteuning te bieden.
 
-LG33 is door de belastingdienst aangewezen als een algemeen nut beogende instelling. Een ANBI hoort een aantal
-gegevens te publiceren op haar internetsite. Hier vindt u deze gegevens van LG33 overzichtelijk bij elkaar.
+Daarnaast verstrekt LG33 subsidies voor evenementen met een roze karakter, zoals queer evenementen. Zulke
+evenementen ontvangen doorgaans geen inkomsten uit traditionele sponsoring en hebben startkapitaal nodig. Met deze subsidies ondersteunen we
+ook experimentele projecten.
+
+Verder heeft LG33 van [Ad Schuring](https://nl.wikipedia.org/wiki/Ad_Schuring) een woning geërfd aan de
+Oostsingel 134 in Delft. Deze woning wordt gerenoveerd en omgebouwd tot een woongemeenschap. Zo willen we een
+duurzame oplossing op lange termijn bieden voor queer en LHBTI+ jongeren: een plek waar zij samen kunnen groeien
+en elkaar kunnen steunen.
+
+De Belastingdienst heeft LG33 aangewezen als algemeen nut beogende instelling (ANBI). Een ANBI moet een aantal
+gegevens op haar website publiceren. Hieronder vindt u deze gegevens van LG33 overzichtelijk bij elkaar.
 
 ### Gegevens
 
@@ -24,41 +32,42 @@ Lange Geer 22<br>
 Het bestuur van LG33 bestaat uit de volgende leden:
 
 * **Jeroen Manders** Voorzitter
-* **Sharwin Bobde** Secretaris
-* **Rob Idink** Penningmeester
-* **Evert Windels** Algemeen Bestuurslid
+* **Sharwin Bobde** Penningmeester
+* **Evert Windels** Secretaris
+* **Nick Schot** Tweede Penningmeester
 * **Michael Kraaijeveld** Algemeen Bestuurslid
 * **Max Berdowski** Algemeen Bestuurslid
 
 ### Beleidsplan
 
-Het beleidsplan van LG33 kan hier gevonden worden:
+Het beleidsplan van LG33 vindt u hier:
 
 <FilesList folder-id="1YrI8FXrVPiVYH8qu81MhrbJQoYOtGzfr"></FilesList>
 
 
 ### Jaarplan
-Het jaarplan van LG33 kan hier gevonden worden:
+
+Het jaarplan van LG33 vindt u hier:
 
 <FilesList folder-id="1MlXgbjgXGCt82WqX9gzBYboiMoAU-RSx"></FilesList>
 
 ### Verslag uitgeoefende activiteiten
 
-Voor een verslag van uitgeoefende activiteiten wordt verwezen naar het jaarverslag. Jaarlijks stelt LG33 het
-jaarverslag vast waarin onder meer verslag wordt gedaan van de uitgeoefende activiteiten over het afgelopen jaar.
-Het meest recente jaarverslag kan hier gevonden worden:
+Een verslag van onze activiteiten vindt u in het jaarverslag. LG33 stelt dit jaarlijks vast en beschrijft daarin
+onder meer de activiteiten van het afgelopen jaar. Het meest recente jaarverslag vindt u hier:
 
 <FilesList folder-id="1rNGIocdeKWGksGPrVw5UUFPxqR-zxBh6"></FilesList>
 
 ### Financiële verantwoording
-Voor een financiële verantwoording wordt verwezen naar de jaarrekening. Jaarlijks stelt LG33 de jaarrekening vast
-waarin de financiële verantwoording over het afgelopen jaar wordt vastgelegd.
+
+De financiële verantwoording vindt u in de jaarrekening. LG33 stelt deze jaarlijks vast en legt daarin de
+financiën van het afgelopen jaar vast.
 
 <FilesList folder-id="1G4SUvu7yl0E1z7m6ymPUBi9b6Lt6gkJU"></FilesList>
 
 ### Beloningsbeleid
 
-Het formele beloningsbeleid voor LG33 is dat de bestuurders vrijwillegers zijn; ze worden niet gecompenseered voor hun werk met een vaste of variable belooning.
+Volgens het beloningsbeleid van LG33 zijn de bestuurders vrijwilligers. Zij ontvangen geen vaste of variabele vergoeding voor hun werk.
 
 ### Contact
 

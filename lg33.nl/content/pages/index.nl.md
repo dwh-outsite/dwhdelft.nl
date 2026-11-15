@@ -71,4 +71,4 @@ Volgens het beloningsbeleid van LG33 zijn de bestuurders vrijwilligers. Zij ontv
 
 ### Contact
 
-Neem gerust contact op met LG33 via [info@lg33.nl](mailto:info@lg33.nl).
+Neem gerust contact op met LG33 via [bestuur@lg33.nl](mailto:bestuur@lg33.nl).

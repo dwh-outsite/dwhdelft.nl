@@ -57,3 +57,7 @@ npm run preview <domain>
 ```
 
 Check out the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Short links
+
+Short links such as `dwhdelft.nl/discord` are not managed in this repository. They are managed in the DWH content manager at [content.dwhdelft.nl](https://content.dwhdelft.nl) (Sites → Redirects) and served by a Cloudflare Bulk Redirect List.

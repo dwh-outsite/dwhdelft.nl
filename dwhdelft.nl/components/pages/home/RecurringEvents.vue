@@ -10,21 +10,21 @@ nl:
 <script setup>
 const { t, tt } = useT()
 
-const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
+const openingHours = await useOpeningHours()
 
-const openingHoursWeekly = openingHours.value.events.filter((o) => !('monthly' in o))
-const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in o)
+const openingHoursWeekly = computed(() => openingHours.value.filter((night) => !night.monthly))
+const openingHoursMonthly = computed(() => openingHours.value.filter((night) => night.monthly))
 </script>
 
 <template>
   <ElementsContainer class="py-8 md:py-16">
     <!-- Weekly events -->
     <h2 class="text-5xl font-medium leading-tight text-brand-500 md:mb-6 md:text-center">
-      <Markdown :content="t('announcement', { count: openingHoursWeekly.length })" />
+      <Markdown :key="openingHoursWeekly.length" :content="t('announcement', { count: openingHoursWeekly.length })" />
     </h2>
 
     <table class="mx-auto border-separate border-spacing-y-10 md:border-spacing-y-16 lg:w-5/6 xl:w-2/3">
-      <tr v-for="event in openingHoursWeekly" :key="event.name">
+      <tr v-for="event in openingHoursWeekly" :key="event.id">
         <td
           class="mb-2 flex items-center space-x-4 border-b border-gray-300 pb-2 pt-1 align-top md:mb-0 md:table-cell md:space-x-0 md:border-0 md:pb-0"
         >
@@ -54,12 +54,7 @@ const openingHoursMonthly = openingHours.value.events.filter((o) => 'monthly' in
     </h2>
 
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-      <ElementsActionCard
-        v-for="event in openingHoursMonthly"
-        :key="event.name"
-        :title="event.name"
-        class="bg-brand-100"
-      >
+      <ElementsActionCard v-for="event in openingHoursMonthly" :key="event.id" :title="event.name" class="bg-brand-100">
         <template #header>
           <div class="flex items-center justify-between px-6 pt-6">
             <div class="flex space-x-2">

@@ -82,8 +82,8 @@ const { t, tt } = useT()
 
 import MIXUPLogo from '#shared/assets/images/mixup_logo.svg'
 
-const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
-const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Saturday')
+const openingHours = await useOpeningHours()
+const barOpeningHours = computed(() => openingHours.value.find((night) => night.weekday === 6)) // Saturday
 
 const { image: imageOverviews } = useDynamicImages(import.meta.glob('~/assets/images/photos/mixup/*', { eager: true }))
 
@@ -112,8 +112,8 @@ const instagramChannelsMixup = [
             <div class="space-y-4 md:text-xl md:leading-relaxed">
               <Markdown
                 v-for="(_, index) in t('intro')"
-                :key="index"
-                :content="t(`intro.${index}`, [barOpeningHours.start_time])"
+                :key="`${index}-${barOpeningHours?.start_time}`"
+                :content="t(`intro.${index}`, [barOpeningHours?.start_time])"
               />
             </div>
             <div class="space-y-2">
@@ -121,14 +121,15 @@ const instagramChannelsMixup = [
                 <MIXUPLogo class="hidden h-20 md:block" />
                 <div class="w-full max-w-md md:w-auto">
                   <p
-                    v-if="barOpeningHours.announcement"
+                    v-if="barOpeningHours?.announcement"
                     class="mb-4 mt-3 text-brand-500"
                     v-text="tt(barOpeningHours.announcement)"
                   />
                   <PagesHomeInvite
+                    v-if="barOpeningHours"
                     class="my-8 md:my-4"
                     :announcement="t('invite.announcement')"
-                    :time="t('invite.time', [barOpeningHours.start_time])"
+                    :time="t('invite.time', [barOpeningHours?.start_time])"
                   />
                 </div>
               </div>

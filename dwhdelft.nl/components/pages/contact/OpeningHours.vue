@@ -1,12 +1,12 @@
 <script setup>
 const { tt } = useT()
 
-const openingHours = (await useAsyncData(() => queryContent('opening_hours').findOne())).data.value.events
+const openingHours = await useOpeningHours()
 </script>
 
 <template>
   <ul class="space-y-4 leading-snug">
-    <li v-for="event in openingHours" :key="event.name" class="flex space-x-2">
+    <li v-for="event in openingHours" :key="event.id" class="flex space-x-2">
       <div class="w-32">
         <div class="font-bold uppercase tracking-wide" v-text="tt(event.day)" />
         {{ event.name }}

@@ -28,8 +28,8 @@ nl:
 <script setup>
 const { t, tt } = useT()
 
-const { data: openingHours } = await useAsyncData(() => queryContent('opening_hours').findOne())
-const barOpeningHours = openingHours.value.events.find((event) => event.day.en === 'Thursday')
+const openingHours = await useOpeningHours()
+const barOpeningHours = computed(() => openingHours.value.find((night) => night.weekday === 4)) // Thursday
 </script>
 
 <template>
@@ -38,11 +38,16 @@ const barOpeningHours = openingHours.value.events.find((event) => event.day.en =
       :paragraphs="t('intro')"
       class="space-y-4 text-lg text-gray-800 md:text-xl md:leading-relaxed"
     />
-    <p v-if="barOpeningHours.announcement" class="mb-4 mt-3 text-brand-500" v-text="tt(barOpeningHours.announcement)" />
+    <p
+      v-if="barOpeningHours?.announcement"
+      class="mb-4 mt-3 text-brand-500"
+      v-text="tt(barOpeningHours.announcement)"
+    />
     <PagesHomeInvite
+      v-if="barOpeningHours"
       class="my-8"
       :announcement="t('invite.announcement')"
-      :time="t('invite.time', [barOpeningHours.start_time])"
+      :time="t('invite.time', [barOpeningHours?.start_time])"
       :disclaimer="t('invite.disclaimer')"
     />
   </div>
